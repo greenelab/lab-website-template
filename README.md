@@ -1,8 +1,23 @@
-# Labsite Template
+<h1 align="center">Lab Website Template</h1>
+<p align="center"><img height="200" src="https://github.com/greenelab/lab-website-template/blob/master/mascot.png?raw=true"></p>
 
-A customizable, flexible template for lab websites. Includes automatic citations, GitHub tag imports, and more.
+A customizable, flexible website template for [labs](https://www.greenelab.com/). Includes automatic citations, GitHub tag imports, and more.
 
 ## Features
+
+- A **Home** page, where you can highlight the most important things that make your lab special
+- A **Research** page, with a full, sorted, searchable list of your published works
+- Generate citations **automatically** (using [Manubot](https://manubot.org)) from just an identifier (DOI, PubMed ID, and many more)
+- A **Resources** page, where you can show off your software, datasets, or other useful tools
+- Pull in and display tags from GitHub repositories automatically
+- Individual team member pages with bios, assignable roles, and social media links
+- A **Team** page, compiled automatically from individual members
+- A **Join the team** page, where you can put job listings and outreach
+- A **Blog** page, with dated and tagged posts about anything
+- A **Contact** page, where you can specify all the routes for communicating with your lab
+- Social media links to Twitter, Instagram, and Google Scholar
+- Several useful pre-built components for things like figures w/ captions, image galleries, and more
+- Fully customizable, so you can include things like your vision statement, your approach to research, and more
 
 _The main goal of this template is to allow you to spend less time learning and fussing with web technologies, and more time running your lab._
 
@@ -43,15 +58,42 @@ To help you interpret the rest of this readme, here are some (very quick and bas
   This is much better than having to type them all out manually, and re-sort them yourself any time you add or remove one.
   You can almost think of Liquid as (a much more limited) JavaScript for Jekyll, except that Jekyll still outputs a static, complete file at the end.
 
-## Setting up
+## How do I start my own copy of this template?
 
-## FAQ's
+1. [Make a GitHub account](https://github.com/join)
+2. [Create a new repo under your account from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+   We recommend naming your repository `yourlabname-website`, or `yourlabname.com` if you're going to buy a custom domain.
+   Leave `Include all branches` unchecked.
 
-### How do I hook up my site to a custom domain (e.g. mysite.com)?
+## How do I edit a file?
 
-### How do I make a favicon with my lab's logo?
+1. Edit the file [through the GitHub website](https://docs.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository)
 
-## Support
+OR
+
+1. Edit the file [with Git](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-using-the-command-line) on your computer
+
+## How do I publish my site?
+
+1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of the repo
+2. Go where GitHub shows you that your site is published.
+   If you haven't bought a custom domain, it will be at `https://[your-user-name].github.io/the-repo-name/`.
+
+### How do I hook up my site to a custom domain (e.g. theawesomelab.com)?
+
+Follow the instructions [here]([Point the service you chose to GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
+Summarized:
+
+1. Purchase a domain name from a reputable service, such as Google Domains, Namecheap, etc.
+2. Point your domain name provider to GitHub Pages using an `A` record.
+   It's slightly different for each company, so they should have their own instructions on how to do this.
+3. Set the custom domain field in the settings of the repo.
+
+## Template contents
+
+Where to look for specific features and files.
+
+## I need help!
 
 There are a lot of different technologies involved in this template, it's okay if you don't have a deep understanding of them all.
-If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting an issue on this repository](https://github.com/greenelab/labsite-template/issues).
+If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting an issue on this repository](https://github.com/greenelab/lab-website-template/issues).
