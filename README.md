@@ -3,7 +3,7 @@
 
 A customizable, flexible website template for [labs](https://www.greenelab.com/). Includes automatic citations, GitHub tag imports, and more.
 
-## Features
+### Features
 
 - A **Home** page, where you can highlight the most important things that make your lab special
 - A **Research** page, with a full, sorted, searchable list of your published works
@@ -21,9 +21,9 @@ A customizable, flexible website template for [labs](https://www.greenelab.com/)
 
 _The main goal of this template is to allow you to spend less time learning and fussing with web technologies, and more time running your lab._
 
-## Target audience
+### Target audience
 
-## Basic primer
+### Basic primer
 
 Many tutorials take a lot of background knowledge for granted, which can lead to frustration for new users just trying to accomplish something quickly.
 To help you interpret the rest of this readme, here are some (very quick and basic) definitions you should know.
@@ -58,14 +58,14 @@ To help you interpret the rest of this readme, here are some (very quick and bas
   This is much better than having to type them all out manually, and re-sort them yourself any time you add or remove one.
   You can almost think of Liquid as (a much more limited) JavaScript for Jekyll, except that Jekyll still outputs a static, complete file at the end.
 
-## How do I start my own copy of this template?
+### How do I start my own copy of this template?
 
 1. [Make a GitHub account](https://github.com/join)
 2. [Create a new repo under your account from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
    We recommend naming your repository `yourlabname-website`, or `yourlabname.com` if you're going to buy a custom domain.
    Leave `Include all branches` unchecked.
 
-## How do I edit a file?
+### How do I edit a file?
 
 1. Edit the file [through the GitHub website](https://docs.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository)
 
@@ -73,7 +73,7 @@ OR
 
 1. Edit the file [with Git](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-using-the-command-line) on your computer
 
-## How do I publish my site?
+### How do I publish my site?
 
 1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of the repo
 2. Go where GitHub shows you that your site is published.
@@ -89,11 +89,11 @@ Summarized:
    It's slightly different for each company, so they should have their own instructions on how to do this.
 3. Set the custom domain field in the settings of the repo.
 
-## Template contents
+### Template contents
 
 Where to look for specific features and files.
 
-## I need help!
+### I need help!
 
 There are a lot of different technologies involved in this template, it's okay if you don't have a deep understanding of them all.
 If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting an issue on this repository](https://github.com/greenelab/lab-website-template/issues).
