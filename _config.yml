@@ -1,0 +1,17 @@
+# site-wide variables
+title: Name of Lab
+
+# base directory where site is hosted
+baseurl: "/lab-website-template"
+
+# default front matter parameters
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# build settings
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
