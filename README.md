@@ -3,13 +3,18 @@
 
 A customizable, flexible website template for [labs](https://www.greenelab.com/). Includes automatic citations, GitHub tag imports, and more.
 
+### Target audience
+
+People who run labs and have some familiarity with GitHub and web technologies.
+In other words, people who need [these features](#features) and have [this background knowledge](#background-knowledge).
+
 ### Features
 
 - A **Home** page, where you can highlight the most important things that make your lab special
 - A **Research** page, with a full, sorted, searchable list of your published works
-- Generate citations **automatically** (using [Manubot](https://manubot.org)) from just an identifier (DOI, PubMed ID, and many more)
+- **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
 - A **Resources** page, where you can show off your software, datasets, or other useful tools
-- Pull in and display tags from GitHub repositories automatically
+- Automatically pull in and display tags from GitHub repositories
 - Individual team member pages with bios, assignable roles, and social media links
 - A **Team** page, compiled automatically from individual members
 - A **Join the team** page, where you can put job listings and outreach
@@ -19,18 +24,16 @@ A customizable, flexible website template for [labs](https://www.greenelab.com/)
 - Several useful pre-built components for things like figures w/ captions, image galleries, and more
 - Fully customizable, so you can include things like your vision statement, your approach to research, and more
 
-_The main goal of this template is to allow you to spend less time learning and fussing with web technologies, and more time running your lab._
+_The main goal of this template is to allow you to spend less time setting up a website and reinventing the wheel, and more time running your lab._
 
-### Target audience
+### Background knowledge
 
-### Basic primer
-
-Many tutorials take a lot of background knowledge for granted, which can lead to frustration for new users just trying to accomplish something quickly.
-To help you interpret the rest of this readme, here are some (very quick and basic) definitions you should know.
+Here are some (very basic) definitions to help you interpret the rest of the readme.
+If you aren't already somewhat familiar with these, this template might not be for you.
+That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily!
 
 - A **repository** (or repo for short) is a place to store code for a project
-- **[Git](https://git-scm.com/)** is a [command line tool](https://en.wikipedia.org/wiki/Command-line_interface) for and way of tracking changes to code.
-  If you don't have experience using git or your operating system's command line, this template might not be for you, unless you're [willing to learn](https://try.github.io/)!
+- **[Git](https://try.github.io/)** is a [command line tool](https://en.wikipedia.org/wiki/Command-line_interface) for and way of tracking changes to code.
 - **[GitHub](https://github.com/)** is an online place to store, view, track, share, and collaborate on code.
   You can make simple changes to your code on the GitHub website itself, but for most changes you'll need to use [Git](https://git-scm.com/).
 - **[GitHub Pages](https://pages.github.com/)** (or gh-pages for short) is a service built-in to GitHub that can host a website for you, for free.
@@ -81,7 +84,8 @@ OR
 
 ### How do I hook up my site to a custom domain (e.g. theawesomelab.com)?
 
-Follow the instructions [here]([Point the service you chose to GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
+Follow the instructions [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
+
 Summarized:
 
 1. Purchase a domain name from a reputable service, such as Google Domains, Namecheap, etc.
