@@ -2,7 +2,7 @@
   <div class="logo_row">
     {% include logo.svg %}
     <a
-      href="{{ '/' | absolute_url }}"
+      href="{{ '/' | relative_url }}"
       class="logo_text"
       data-tooltip="Home"
       data-placement="bottom"
@@ -12,7 +12,7 @@
   </div>
   <nav class="nav_row">
     <a
-      href="{{ 'research' | absolute_url }}"
+      href="{{ 'research' | relative_url }}"
       class="nav_link"
       data-tooltip="Published works"
       data-placement="bottom"
@@ -20,7 +20,7 @@
       >Research</a
     >
     <a
-      href="{{ 'resources' | absolute_url }}"
+      href="{{ 'resources' | relative_url }}"
       class="nav_link"
       data-tooltip="Tools, datasets, and more"
       data-placement="bottom"
@@ -28,7 +28,7 @@
       >Resources</a
     >
     <a
-      href="{{ 'team' | absolute_url }}"
+      href="{{ 'team' | relative_url }}"
       class="nav_link"
       data-tooltip="About our team"
       data-placement="bottom"
@@ -36,7 +36,7 @@
       >Team</a
     >
     <a
-      href="{{ 'blog' | absolute_url }}"
+      href="{{ 'blog' | relative_url }}"
       class="nav_link"
       data-tooltip="Musings about miscellany"
       data-placement="bottom"
@@ -44,7 +44,7 @@
       >Blog</a
     >
     <a
-      href="{{ 'contact' | absolute_url }}"
+      href="{{ 'contact' | relative_url }}"
       class="nav_link"
       data-tooltip="Email, address, and location"
       data-placement="bottom"
