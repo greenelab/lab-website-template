@@ -1,6 +1,25 @@
 <html>
-  <head> </head>
+  <head>
+    <title>
+      {{ site.title }}{% if page.title %} - {% endif %}{{ page.title }}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include fonts.html %}
+    <!-- site-wide styles -->
+    <link href="{{ 'global.css' | absolute_url }}" rel="stylesheet" />
+    <!-- page-specific styles -->
+    <link href="{{ 'page.css' | absolute_url }}" rel="stylesheet" />
+  </head>
   <body>
-    {{ content }}
+    {% include header.html %}
+    <main>
+      {% include content.html content=content %}
+    </main>
+    {% include footer.html %}
+    <!-- site-wide scripts -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="{{ 'global.js' | absolute_url }}"></script>
+    <!-- page-specific scripts -->
+    <script src="{{ 'page.js' | absolute_url }}"></script>
   </body>
 </html>

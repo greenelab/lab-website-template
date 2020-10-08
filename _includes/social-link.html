@@ -1,0 +1,50 @@
+{% if include.type == "website" %}
+{% assign icon = "fas fa-home" %}
+{% assign text = "Website" %}
+{% assign url = include.url | default: "" %}
+{% endif %}
+
+{% if include.type == "contact" %}
+{% assign icon = "fas fa-envelope" %}
+{% assign text = "Contact" %}
+{% assign url = "contact" | relative_url | default: "" %}
+{% endif %}
+
+{% if include.type == "email" %}
+{% assign icon = "fas fa-envelope" %}
+{% assign text = "Email" %}
+{% assign url = include.url | default: site.email | default: "" | prepend: "mailto:" %}
+{% endif %}
+
+{% if include.type == "google" %}
+{% assign icon = "fab fa-google" %}
+{% assign text = "Google Scholar" %}
+{% assign url = include.url | default: site.google | default: "" | prepend: "https://scholar.google.com/citations?hl=en&user=" %}
+{% endif %}
+
+{% if include.type == "github" %}
+{% assign icon = "fab fa-github" %}
+{% assign text = "GitHub" %}
+{% assign url = include.url | default: site.github | default: "" | prepend: "https://github.com/" %}
+{% endif %}
+
+{% if include.type == "twitter" %}
+{% assign icon = "fab fa-twitter" %}
+{% assign text = "Twitter" %}
+{% assign url = include.url | default: site.twitter | default: "" | prepend: "https://twitter.com/" %}
+{% endif %}
+
+{% if include.type == "instagram" %}
+{% assign icon = "fab fa-instagram" %}
+{% assign text = "Instagram" %}
+{% assign url = include.url | default: site.instagram | default: "" | prepend: "https://instagram.com/" %}
+{% endif %}
+
+<a
+  href="{{ url }}"
+  class="social_link"
+  data-tooltip="{{ text }}"
+  aria-label="{{ text }}"
+>
+  <i class="{{ icon }} {% if include.large %}fa-lg{% endif %}"></i>
+</a>

@@ -10,19 +10,19 @@ In other words, people who need [these features](#features) and have [this backg
 
 ## Features
 
+- **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
+- Automatically pull in and display tags from GitHub repositories
+- Works and looks good on all major desktop and mobile browsers
+- Several useful pre-built components for things like social media links, figures w/ captions, image galleries, and more
+- Fully and easily customizable
 - A **Home** page, where you can highlight the most important things that make your lab special
 - A **Research** page, with a full, sorted, searchable list of your published works
-- **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
 - A **Resources** page, where you can show off your software, datasets, or other useful tools
-- Automatically pull in and display tags from GitHub repositories
 - Individual team member pages with bios, assignable roles, and social media links
 - A **Team** page, compiled automatically from individual members
 - A **Join the team** page, where you can put job listings and outreach
 - A **Blog** page, with dated and tagged posts about anything
 - A **Contact** page, where you can specify all the routes for communicating with your lab
-- Social media links to Twitter, Instagram, and Google Scholar
-- Several useful pre-built components for things like figures w/ captions, image galleries, and more
-- Fully customizable, so you can include things like your vision statement, your approach to research, and more
 
 _The main goal of this template is to allow you to spend less time setting up a website and reinventing the wheel, and more time running your lab._
 
@@ -100,7 +100,7 @@ OR
 4. In your command line, go to the folder where you cloned your site
 5. Start the site by running `bundle exec jekyll serve --livereload`
 6. Open the "server address" it gives you (`http://127.0.0.1:4000/lab-website-template/` by default) in a browser
-7. Any changes you make will automatically rebuild the site and refresh the page
+7. Any changes you make will automatically rebuild the site and refresh the page, except for changes to `_config.yml` which require r-erunning the serve command
 
 ### How do I publish my site?
 

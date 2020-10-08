@@ -1,0 +1,23 @@
+{% comment %}
+Wrap each heading and its succeeding content in sections
+{% endcomment %}
+
+{% capture content %}
+{%- if page.title -%}<h1>{{ page.title }}</h1>{%- endif -%}
+{{- include.content -}}
+{% endcapture %}
+
+{% capture newContent %}
+<section>
+{%- assign content = content | split: "<section" | join: "</section><section" -%}
+{%- assign content = content | split: "<h1" | join: "</section><section><h1" -%}
+{%- assign content = content | split: "<h2" | join: "</section><section><h2" -%}
+{{- content -}}
+</section>
+{% endcapture %}
+
+{% assign newContent = newContent | replace: "<section></section>", "" %}
+{% assign newContent = newContent | replace: "<section>", "<section><div class='section'>" %}
+{% assign newContent = newContent | replace: "</section>", "</div></section>" %}
+
+{{ newContent }}

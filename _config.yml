@@ -1,5 +1,10 @@
 # site-wide variables
-title: Name of Lab
+title: Awesome Lab
+email: jane.smith@gmail.com
+google: jane smith
+github: awesomelab
+twitter: awesomelab
+instagram: awesomelab
 
 # base directory where site is hosted
 baseurl: "/lab-website-template"
