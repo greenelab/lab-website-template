@@ -1,25 +1,10 @@
 <html>
-  <head>
-    <title>
-      {{ site.title }}{% if page.title %} - {% endif %}{{ page.title }}
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% include fonts.html %}
-    <!-- site-wide styles -->
-    <link href="{{ 'global.css' | relative_url }}" rel="stylesheet" />
-    <!-- page-specific styles -->
-    <link href="{{ 'page.css' | relative_url }}" rel="stylesheet" />
-  </head>
+  {% include head.html %}
   <body>
     {% include header.html %}
     <main>
       {% include content.html content=content %}
     </main>
     {% include footer.html %}
-    <!-- site-wide scripts -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="{{ 'global.js' | relative_url }}"></script>
-    <!-- page-specific scripts -->
-    <script src="{{ 'page.js' | relative_url }}"></script>
   </body>
 </html>

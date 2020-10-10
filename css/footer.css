@@ -1,0 +1,16 @@
+footer {
+  box-sizing: border-box;
+  position: relative;
+  padding: 40px;
+  color: var(--white);
+  background: var(--dark-gray);
+  font-family: var(--sans);
+  box-shadow: var(--shadow);
+  text-align: center;
+  z-index: 1;
+}
+footer a {
+  color: var(--white);
+  font-family: var(--sans);
+  text-decoration: none;
+}

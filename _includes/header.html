@@ -1,4 +1,8 @@
 <header>
+  <div
+    class="section_background"
+    style="background-image: url('{{ page.background | relative_url }}');"
+  ></div>
   <div class="logo_row">
     {% include logo.svg %}
     <a
@@ -10,46 +14,5 @@
       >{{ site.title }}</a
     >
   </div>
-  <nav class="nav_row">
-    <a
-      href="{{ 'research' | relative_url }}"
-      class="nav_link"
-      data-tooltip="Published works"
-      data-placement="bottom"
-      data-delay="400"
-      >Research</a
-    >
-    <a
-      href="{{ 'resources' | relative_url }}"
-      class="nav_link"
-      data-tooltip="Tools, datasets, and more"
-      data-placement="bottom"
-      data-delay="400"
-      >Resources</a
-    >
-    <a
-      href="{{ 'team' | relative_url }}"
-      class="nav_link"
-      data-tooltip="About our team"
-      data-placement="bottom"
-      data-delay="400"
-      >Team</a
-    >
-    <a
-      href="{{ 'blog' | relative_url }}"
-      class="nav_link"
-      data-tooltip="Musings about miscellany"
-      data-placement="bottom"
-      data-delay="400"
-      >Blog</a
-    >
-    <a
-      href="{{ 'contact' | relative_url }}"
-      class="nav_link"
-      data-tooltip="Email, address, and location"
-      data-placement="bottom"
-      data-delay="400"
-      >Contact</a
-    >
-  </nav>
+  {% include nav.html %}
 </header>

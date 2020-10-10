@@ -99,7 +99,7 @@ OR
 3. [Install Jekyll](https://jekyllrb.com/) by running `gem install bundler jekyll`
 4. In your command line, go to the folder where you cloned your site
 5. Start the site by running `bundle exec jekyll serve --livereload`
-6. Open the "server address" it gives you (`http://127.0.0.1:4000/lab-website-template/` by default) in a browser
+6. Open the "server address" it gives you (eg. `http://127.0.0.1:4000/lab-website-template/`) in a browser
 7. Any changes you make will automatically rebuild the site and refresh the page, except for changes to `_config.yml` which require r-erunning the serve command
 
 ### How do I publish my site?
@@ -118,6 +118,10 @@ Summarized:
 2. Point your domain name provider to GitHub Pages using an `A` record.
    It's slightly different for each company, so they should have their own instructions on how to do this.
 3. Set the custom domain field in the settings of the repo.
+
+### Acknowledgments
+
+All included photos are licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), found using [Creative Commons Search](https://search.creativecommons.org/).
 
 ### Support
 

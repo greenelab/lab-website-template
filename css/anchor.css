@@ -1,0 +1,30 @@
+.anchor {
+  margin-left: 10px;
+  text-decoration: none;
+}
+.anchor i {
+  padding: 3px;
+  color: var(--light-gray);
+  transition: color var(--fast);
+}
+h1:hover .anchor i,
+h2:hover .anchor i,
+h3:hover .anchor i,
+h4:hover .anchor i,
+.anchor:focus i {
+  color: var(--blue);
+}
+[data-glow="true"] {
+  animation: highlight_glow 2s;
+}
+@keyframes highlight_glow {
+  0% {
+    background: none;
+  }
+  10% {
+    background: var(--light-blue);
+  }
+  100% {
+    background: none;
+  }
+}
