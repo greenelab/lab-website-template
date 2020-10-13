@@ -1,0 +1,22 @@
+---
+---
+
+@import "variables";
+
+.table_wrapper {
+  margin: 20px 0;
+  overflow-x: auto;
+
+  @include trim-margins;
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px 15px;
+      border: solid 1px $light-gray;
+    }
+  }
+}

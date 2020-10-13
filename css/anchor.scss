@@ -4,13 +4,18 @@
 @import "variables";
 
 .anchor {
-  margin-left: 10px;
+  margin-left: 1rem;
   text-decoration: none;
 
   i {
-    padding: 3px;
-    color: $light-gray;
-    transition: color $fast;
+    opacity: 0;
+    transition: opacity $fast;
+  }
+
+  &:focus {
+    i {
+      opacity: 1;
+    }
   }
 }
 
@@ -21,14 +26,8 @@ h4 {
   &:hover {
     .anchor {
       i {
-        color: $blue;
+        opacity: 1;
       }
-    }
-  }
-
-  .anchor:focus {
-    i {
-      color: $blue;
     }
   }
 }

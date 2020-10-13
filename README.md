@@ -30,7 +30,7 @@ _The main goal of this template is to allow you to spend less time setting up a 
 
 Here are some (very basic) definitions to help you interpret the rest of the readme.
 If you aren't already somewhat familiar with these, this template might not be for you.
-That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily!
+That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it.
 
 - A **repository** (or repo for short) is a place to store code for a project
 - **[Git](https://try.github.io/)** is a [command line tool](https://en.wikipedia.org/wiki/Command-line_interface) for and way of tracking changes to code.
@@ -119,11 +119,11 @@ Summarized:
    It's slightly different for each company, so they should have their own instructions on how to do this.
 3. Set the custom domain field in the settings of the repo.
 
-### Acknowledgments
+## Acknowledgments
 
 All included photos are licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), found using [Creative Commons Search](https://search.creativecommons.org/).
 
-### Support
+## Support
 
 There are a lot of different technologies involved in this template, it's okay if you don't have a deep understanding of them all.
 If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting an issue on this repository](https://github.com/greenelab/lab-website-template/issues).

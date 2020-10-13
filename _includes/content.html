@@ -1,11 +1,10 @@
 {% comment %}
-Wrap each heading and its succeeding content in sections
+Script to modify main content of page:
+- wrap each heading and its succeeding content in sections
+- wrap each table in div to allow for scrolling
 {% endcomment %}
 
-{% capture content %}
-{%- if page.title -%}<h1>{{ page.title }}</h1>{%- endif -%}
-{{- include.content -}}
-{% endcapture %}
+{% assign content = include.content %}
 
 {% capture newContent %}
 <section>
@@ -19,5 +18,8 @@ Wrap each heading and its succeeding content in sections
 {% assign newContent = newContent | replace: "<section></section>", "" %}
 {% assign newContent = newContent | replace: "<section>", "<section><div class='section'>" %}
 {% assign newContent = newContent | replace: "</section>", "</div></section>" %}
+
+{% assign newContent = newContent | replace: "<table>", "<div class='table_wrapper'><table>" %}
+{% assign newContent = newContent | replace: "</table>", "</table></div>" %}
 
 {{ newContent }}

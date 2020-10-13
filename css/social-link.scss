@@ -4,8 +4,12 @@
 @import "variables";
 
 .social_row {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   .social_link {
-    display: inline-block;
+    margin: 0 2px;
     padding: 10px;
     transition: opacity $fast;
   }

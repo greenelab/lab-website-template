@@ -20,6 +20,9 @@ defaults:
 sass:
   sass_dir: css
 
+# syntax highlighting
+highlighter: rouge
+
 # build settings
 plugins:
   - jekyll-feed

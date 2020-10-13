@@ -3,16 +3,15 @@
     class="section_background"
     style="background-image: url('{{ page.background | relative_url }}');"
   ></div>
-  <div class="logo_row">
+  <a
+    href="{{ '/' | relative_url }}"  
+    class="logo_row"
+    data-tooltip="Home"
+    data-placement="bottom"
+    data-delay="400"
+  >
     {% include logo.svg %}
-    <a
-      href="{{ '/' | relative_url }}"
-      class="logo_text"
-      data-tooltip="Home"
-      data-placement="bottom"
-      data-delay="400"
-      >{{ site.title }}</a
-    >
-  </div>
+    <span class="logo_text">{{ site.title }}</span>
+  </a>
   {% include nav.html %}
 </header>

@@ -40,6 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 
     .nav_link {
       display: inline-block;
@@ -58,7 +59,7 @@ header {
   }
 
   a {
-    color: $white;
+    color: $white !important;
     font-family: $sans;
     text-decoration: none;
   }

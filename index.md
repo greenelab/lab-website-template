@@ -3,6 +3,8 @@ title: Home
 background: images/test-tube.jpg
 ---
 
+# <i class="fas fa-flask"></i>Home
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Nec sagittis aliquam malesuada bibendum arcu.
 Ut placerat orci nulla pellentesque dignissim enim.
@@ -21,6 +23,7 @@ Scelerisque varius morbi enim nunc faucibus a pellentesque sit.
 ## Feature
 
 A _feature_ component, with an image, a heading, markdown text, and an optional image link.
+Useful for your home page, where you want to highlight key points about your lab.
 
 {% capture text %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -84,10 +87,11 @@ A _gallery_ component with optional tooltips and image links.
 %}
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
+Useful for transparent images, and images that should not be cropped, like logos.
 
 {%
   include gallery.html
-  flat="false"
+  flat="true"
   fit="false"
   image1="images/cell.jpg"
   tooltip1="Cell"
@@ -100,6 +104,45 @@ A _gallery_ component, without fitting the images to squares, and without the im
   image4="images/virus.jpg"
   image5="images/bacteria.jpg"
 %}
+
+## Font Awesome Icons
+
+[Font Awesome](https://fontawesome.com/) is a large professionally-designed library of clean, consistent icons.
+[Find the icon you want](https://fontawesome.com/icons?d=gallery&q=flask), and paste its HTML code right into your markdown:
+
+<i class="fas fa-flask"></i>
+<i class="fas fa-microscope"></i>
+<i class="fas fa-glasses"></i>
+<i class="fas fa-vial"></i>
+<i class="fas fa-bacteria"></i>
+<i class="fas fa-virus"></i>
+
+See the [styling section](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons) of their docs to see some of the easy ways you can modify the look of the icons.
+
+## HTML Components
+
+Table:
+
+| SCORES | Game 1 | Game 2 | Game 3 | Total  |
+|--------|:------:|:------:|:------:|:------:|
+| Anna   | 144    | 123    | 218    | 485    |
+| Bill   | 90     | 175    | 120    | 385    |
+| Cara   | 102    | 214    | 233    | 549    |
+
+Code block:
+
+```javascript
+// maximize popup and add text
+const popup = document.querySelector("#popup");
+popup.style.width = "100%";
+popup.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+```
+
+Inline code:
+
+Lorem ipsum dolor sit amet, `consectetur adipiscing` elit.
+
+# Heading 1
 
 ## Heading 2
 
