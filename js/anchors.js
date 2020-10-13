@@ -3,11 +3,16 @@ const createAnchors = () => {
   // for each heading
   const headings = document.querySelectorAll("h1, h2, h3, h4");
   for (const heading of headings) {
-    // creat anchor link
-    const link = document.createElement("a");
-    link.classList.add("anchor");
-    link.innerHTML = '<i class="fas fa-link fa-sm"></i>';
-    link.href = "#" + heading.id;
+    // replace text nodes in heading with link
+    for (const child of heading.childNodes) {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const link = document.createElement("a");
+        link.classList.add("anchor");
+        link.href = "#" + heading.id;
+        link.innerHTML = child.textContent;
+        heading.replaceChild(link, child);
+      }
+    }
 
     // if heading 1 or 2 (see _includes/content.html)
     if (heading.matches("h1, h2")) {
@@ -17,17 +22,7 @@ const createAnchors = () => {
         section.id = heading.id;
         heading.id = "";
       }
-
-      // if no icon in heading already
-      if (!heading.querySelector("i"))
-        // add invisible link icon to other side to keep heading text centered
-        heading.innerHTML =
-          '<i class="fas fa-link fa-sm" style="visibility: hidden;"></i>' +
-          heading.innerHTML;
     }
-
-    // append anchor to heading
-    heading.appendChild(link);
   }
 };
 

@@ -11,7 +11,7 @@ code * {
 }
 
 // inline code
-*:not(pre) > code {
+code.highlighter-rouge {
   padding: 2px 6px;
   background: $dark-gray;
   color: $white;
@@ -19,12 +19,17 @@ code * {
 }
 
 // code block
-pre {
+div.highlighter-rouge {
   margin: 20px 0;
-  padding: 20px;
   background: $dark-gray;
   overflow-x: auto;
   overflow-y: auto;
+
+  pre.highlight {
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+  }
 
   @include trim-margins;
 }

@@ -1,0 +1,16 @@
+---
+---
+
+@import "variables";
+
+.big_link {
+  display: inline-block;
+  margin: 10px 20px;
+  font-family: $sans;
+  font-weight: $semi-bold;
+  text-decoration: none;
+
+  i {
+    margin-right: 0.5rem;
+  }
+}

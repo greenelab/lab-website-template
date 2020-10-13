@@ -3,22 +3,11 @@ title: Home
 background: images/test-tube.jpg
 ---
 
-# <i class="fas fa-flask"></i>Home
+# <i class="fas fa-flask"></i>Lab Website Template
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Nec sagittis aliquam malesuada bibendum arcu.
-Ut placerat orci nulla pellentesque dignissim enim.
-Eget dolor morbi non arcu risus quis varius quam.
-Augue eget arcu dictum varius duis.
-Consectetur lorem donec massa sapien faucibus et molestie ac feugiat.
+An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 
-Pellentesque elit eget gravida cum sociis natoque penatibus et magnis.
-In dictum non consectetur a.
-Risus in hendrerit gravida rutrum quisque non tellus orci ac.
-Cursus risus at ultrices mi.
-Fermentum posuere urna nec tincidunt praesent semper feugiat nibh.
-Eget felis eget nunc lobortis mattis aliquam faucibus purus.
-Scelerisque varius morbi enim nunc faucibus a pellentesque sit.
+{% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
 ## Feature
 
@@ -105,6 +94,14 @@ Useful for transparent images, and images that should not be cropped, like logos
   image5="images/bacteria.jpg"
 %}
 
+## Big Link
+
+A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
+
+{% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
+{%- include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
+{:.center}
+
 ## Font Awesome Icons
 
 [Font Awesome](https://fontawesome.com/) is a large professionally-designed library of clean, consistent icons.
@@ -117,30 +114,38 @@ Useful for transparent images, and images that should not be cropped, like logos
 <i class="fas fa-bacteria"></i>
 <i class="fas fa-virus"></i>
 
+Use the same [style](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) of icon across your site to maintain a consistent look.
 See the [styling section](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons) of their docs to see some of the easy ways you can modify the look of the icons.
 
-## HTML Components
+## Basic Formatting
 
-Table:
+_italic text_
 
-| SCORES | Game 1 | Game 2 | Game 3 | Total  |
-|--------|:------:|:------:|:------:|:------:|
-| Anna   | 144    | 123    | 218    | 485    |
-| Bill   | 90     | 175    | 120    | 385    |
-| Cara   | 102    | 214    | 233    | 549    |
+**bold text**
 
-Code block:
+A centered paragraph.
+Other elements can also be centered with the same method.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{:.center}
+
+- list item 1
+- list item 2
+- list item 3
+
+| TABLE  | Game 1 | Game 2 | Game 3 | Total |
+| ------ | :----: | :----: | :----: | :---: |
+| Anna   |  144   |  123   |  218   |  485  |
+| Bill   |   90   |  175   |  120   |  385  |
+| Cara   |  102   |  214   |  233   |  549  |
 
 ```javascript
-// maximize popup and add text
+// a code block with syntax highlighting
 const popup = document.querySelector("#popup");
 popup.style.width = "100%";
-popup.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 ```
 
-Inline code:
-
-Lorem ipsum dolor sit amet, `consectetur adipiscing` elit.
+This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
 
 # Heading 1
 

@@ -1,7 +1,7 @@
 <h1 align="center">Lab Website Template</h1>
 <p align="center"><img height="200" src="https://github.com/greenelab/lab-website-template/blob/master/mascot.png?raw=true"></p>
 
-A customizable, flexible website template for [labs](https://www.greenelab.com/). Includes automatic citations, GitHub tag imports, and more.
+An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 
 ## Target audience
 

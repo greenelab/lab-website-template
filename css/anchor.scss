@@ -3,32 +3,32 @@
 
 @import "variables";
 
-.anchor {
-  margin-left: 1rem;
-  text-decoration: none;
-
-  i {
-    opacity: 0;
-    transition: opacity $fast;
-  }
-
-  &:focus {
-    i {
-      opacity: 1;
-    }
-  }
-}
-
 h1,
 h2,
 h3,
 h4 {
-  &:hover {
-    .anchor {
-      i {
-        opacity: 1;
-      }
-    }
+  & > * {
+    position: relative;
+  }
+
+  .anchor {
+    font-family: $sans;
+    color: $black;
+    text-decoration: none;
+  }
+
+  & > *:last-child:after {
+    content: "\f0c1";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: calc(100% + 10px);
+    color: $blue;
+    opacity: 0;
+    transition: opacity $fast;
+  }
+
+  &:hover > *:last-child:after {
+    opacity: 1;
   }
 }
 
