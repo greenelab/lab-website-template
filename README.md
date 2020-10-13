@@ -112,16 +112,16 @@ OR
 
 Follow the instructions [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
-### How do I update my site when this template gets updated?
-
-See [this post](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository) about pulling upstream changes from a template repository.
-
 Summarized:
 
 1. Purchase a domain name from a reputable service, such as Google Domains, Namecheap, etc.
 2. Point your domain name provider to GitHub Pages using an `A` record.
    It's slightly different for each company, so they should have their own instructions on how to do this.
 3. Set the custom domain field in the settings of the repo.
+
+### How do I update my site when this template gets updated?
+
+See [this post](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository) about pulling upstream changes from a template repository.
 
 ## Acknowledgments
 
