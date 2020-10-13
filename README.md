@@ -16,14 +16,13 @@ In other words, people who need [these features](#features) and have [this backg
 - **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
 - Automatically pull in and display tags from GitHub repositories
 - Works and looks good on all major desktop and mobile browsers
-- Several useful pre-built components for things like social media links, figures w/ captions, image galleries, and more
+- A suite pre-built components: social media links, figures w/ captions, image galleries, tags, member portraits, and much more
 - Fully and easily customizable
 - A **Home** page, where you can highlight the most important things that make your lab special
 - A **Research** page, with a full, sorted, searchable list of your published works
 - A **Resources** page, where you can show off your software, datasets, or other useful tools
 - Individual team member pages with bios, assignable roles, and social media links
 - A **Team** page, compiled automatically from individual members
-- A **Join the team** page, where you can put job listings and outreach
 - A **Blog** page, with dated and tagged posts about anything
 - A **Contact** page, where you can specify all the routes for communicating with your lab
 
