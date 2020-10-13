@@ -1,0 +1,27 @@
+<div
+  class="gallery"
+  data-fit="{{ include.fit | default: true }}"
+  data-flat="{{ include.flat | default: false }}"
+>
+  {% for i in (1..100) %}
+    {% assign image = "image" | append: i %}
+    {% assign image = include[image] %}
+    {% assign tooltip = "tooltip" | append: i %}
+    {% assign tooltip = include[tooltip] %}
+    {% assign link = "link" | append: i %}
+    {% assign link = include[link] %}
+    {% if image %}
+      {% if link %}
+      <a href="{{ link | relative_url }}" class="gallery_item" data-tooltip="{{ tooltip }}">
+      {% else %}
+      <div class="gallery_item" data-tooltip="{{ tooltip }}">
+      {% endif %}
+        <img src="{{ image | relative_url }}">
+      {% if link %}
+      </a>
+      {% else %}
+      </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

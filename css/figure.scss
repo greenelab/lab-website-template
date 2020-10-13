@@ -1,0 +1,40 @@
+---
+---
+
+@import "variables";
+
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+
+  @include trim-margins;
+
+  .figure_image {
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      transition: transform $fast;
+
+      &[data-default="true"] {
+        width: 100%;
+        max-width: 400px;
+        max-height: 300px;
+      }
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  .figure_caption {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-style: italic;
+    text-align: center;
+  }
+}

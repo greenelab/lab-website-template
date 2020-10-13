@@ -41,12 +41,18 @@ const createTooltips = () => {
   // loop through elements with data-tooltip attribute
   const targets = document.querySelectorAll("[data-tooltip]");
   for (const target of targets) {
-    target.addEventListener("mouseenter", delayedOpen);
-    target.addEventListener("focus", delayedOpen);
-    target.addEventListener("mouseleave", close);
-    target.addEventListener("blur", close);
+    // if data-tooltip attribute is not empty
+    if ((target.dataset.tooltip || "").trim()) {
+      // add triggers to target
+      target.addEventListener("mouseenter", delayedOpen);
+      target.addEventListener("focus", delayedOpen);
+      target.addEventListener("mouseleave", close);
+      target.addEventListener("blur", close);
+      // add aria label for extra accessibility
+      target.setAttribute("aria-label", target.dataset.tooltip);
+    }
   }
 };
 
-// add triggers
+// start script
 window.addEventListener("load", createTooltips);

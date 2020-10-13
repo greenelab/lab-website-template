@@ -1,6 +1,6 @@
 ---
 title: Home
-background: images/space.jpg
+background: images/test-tube.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -17,6 +17,89 @@ Cursus risus at ultrices mi.
 Fermentum posuere urna nec tincidunt praesent semper feugiat nibh.
 Eget felis eget nunc lobortis mattis aliquam faucibus purus.
 Scelerisque varius morbi enim nunc faucibus a pellentesque sit.
+
+## Feature
+
+A _feature_ component, with an image, a heading, markdown text, and an optional image link.
+
+{% capture text %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Nec sagittis aliquam malesuada bibendum arcu.
+{% endcapture %}
+{%
+  include feature.html
+  image="images/laboratory.jpg"
+  link="resources"
+  heading="Extra, extra, read all about it!"
+  text=text
+%}
+
+{% capture text %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Nec sagittis aliquam malesuada bibendum arcu.
+{% endcapture %}
+{%
+  include feature.html
+  image="images/laboratory.jpg"
+  link="resources"
+  heading="Extra, extra, read all about it!"
+  text=text
+%}
+
+## Figure
+
+A _figure_ component with optional caption and image link.
+
+{%
+  include figure.html
+  image="images/bacteria.jpg"
+  caption="A set-height figure"
+  height="300px"
+  link="team"
+%}
+
+{%
+  include figure.html
+  image="images/bacteria.jpg"
+  caption="A full-width figure"
+  width="100%"
+%}
+
+## Gallery
+
+A _gallery_ component with optional tooltips and image links.
+
+{%
+  include gallery.html
+  image1="images/cell.jpg"
+  tooltip1="Cell"
+  link1="https://cell.com/"
+  image2="images/virus.jpg"
+  tooltip2="Virus"
+  image3="images/cell.jpg"
+  tooltip3="Cell"
+  link3="https://cell.com/"
+  image4="images/virus.jpg"
+  image5="images/bacteria.jpg"
+%}
+
+A _gallery_ component, without fitting the images to squares, and without the image effects.
+
+{%
+  include gallery.html
+  flat="false"
+  fit="false"
+  image1="images/cell.jpg"
+  tooltip1="Cell"
+  link1="https://cell.com/"
+  image2="images/virus.jpg"
+  tooltip2="Virus"
+  image3="images/cell.jpg"
+  tooltip3="Cell"
+  link3="https://cell.com/"
+  image4="images/virus.jpg"
+  image5="images/bacteria.jpg"
+%}
 
 ## Heading 2
 
@@ -66,41 +149,3 @@ Volutpat blandit aliquam etiam erat.
 Varius quam quisque id diam.
 Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
 Pharetra et ultrices neque ornare aenean euismod elementum nisi.
-
-## Heading 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Tortor id aliquet lectus proin nibh nisl.
-Pretium lectus quam id leo in.
-Arcu felis bibendum ut tristique et.
-Et magnis dis parturient montes nascetur.
-Tincidunt lobortis feugiat vivamus at augue eget arcu dictum.
-Auctor urna nunc id cursus metus aliquam eleifend mi.
-Pretium viverra suspendisse potenti nullam.
-
-Gravida cum sociis natoque penatibus et.
-Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.
-Mi bibendum neque egestas congue quisque egestas diam in.
-Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
-Sapien nec sagittis aliquam malesuada.
-Non odio euismod lacinia at quis risus sed vulputate.
-Laoreet id donec ultrices tincidunt arcu non sodales neque.
-
-## Heading 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Tortor id aliquet lectus proin nibh nisl.
-Pretium lectus quam id leo in.
-Arcu felis bibendum ut tristique et.
-Et magnis dis parturient montes nascetur.
-Tincidunt lobortis feugiat vivamus at augue eget arcu dictum.
-Auctor urna nunc id cursus metus aliquam eleifend mi.
-Pretium viverra suspendisse potenti nullam.
-
-Gravida cum sociis natoque penatibus et.
-Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.
-Mi bibendum neque egestas congue quisque egestas diam in.
-Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
-Sapien nec sagittis aliquam malesuada.
-Non odio euismod lacinia at quis risus sed vulputate.
-Laoreet id donec ultrices tincidunt arcu non sodales neque.

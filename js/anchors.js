@@ -14,13 +14,14 @@ const createAnchors = () => {
 const onHashChange = () => {
   const id = window.location.hash.replace("#", "");
   let element = document.getElementById(id);
+  if (!element) return;
   if (element.tagName === "H2") element = element.closest("section");
   if (!element) return;
   element.setAttribute("data-glow", "true");
   window.setTimeout(() => element.removeAttribute("data-glow"), 2000);
 };
 
-// add triggers
+// start script and add triggers
 window.addEventListener("load", createAnchors);
 window.addEventListener("load", onHashChange);
 window.addEventListener("hashchange", onHashChange);

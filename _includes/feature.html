@@ -1,0 +1,9 @@
+<div class="feature">
+  <a class="feature_image thumbnail" href="{{ include.link | relative_url }}">
+    <img src="{{ include.image | relative_url }}" />
+  </a>
+  <div class="feature_text">
+    <p class="feature_heading">{{ include.heading }}</p>
+    {{ include.text | markdownify }}
+  </div>
+</div>

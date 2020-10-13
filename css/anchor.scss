@@ -1,0 +1,50 @@
+---
+---
+
+@import "variables";
+
+.anchor {
+  margin-left: 10px;
+  text-decoration: none;
+
+  i {
+    padding: 3px;
+    color: $light-gray;
+    transition: color $fast;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  &:hover {
+    .anchor {
+      i {
+        color: $blue;
+      }
+    }
+  }
+
+  .anchor:focus {
+    i {
+      color: $blue;
+    }
+  }
+}
+
+[data-glow="true"] {
+  animation: highlight_glow 2s;
+}
+
+@keyframes highlight_glow {
+  0% {
+    background: none;
+  }
+  10% {
+    background: $light-blue;
+  }
+  100% {
+    background: none;
+  }
+}

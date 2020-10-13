@@ -1,0 +1,22 @@
+---
+---
+
+@import "variables";
+
+footer {
+  box-sizing: border-box;
+  position: relative;
+  padding: 40px;
+  color: $white;
+  background: $dark-gray;
+  font-family: $sans;
+  box-shadow: $shadow;
+  text-align: center;
+  z-index: 1;
+
+  a {
+    color: $white;
+    font-family: $sans;
+    text-decoration: none;
+  }
+}

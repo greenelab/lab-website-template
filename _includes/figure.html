@@ -1,0 +1,31 @@
+<figure class="figure">
+  {% if include.link %}
+  <a href="{{ include.link | relative_url }}" class="figure_image">
+  {% else %}
+  <div class="figure_image">
+  {% endif %}
+    <img
+      src="{{ include.image | relative_url }}"
+      alt="{{ include.caption }}"
+      title="{{ include.caption }}"
+      data-default="{% if include.width == nil and include.height == nil %}true{% endif %}"
+      style="
+        {% if include.width %}
+        max-width: {{ include.width }};
+        {% endif %}
+        {% if include.height %}
+        max-height: {{ include.height }};
+        {% endif %}
+      "
+    />
+  {% if include.link %}
+  </a>
+  {% else %}
+  </div>
+  {% endif %}
+  {% if include.caption %}
+  <figcaption class="figure_caption">
+    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+  </figcaption>
+  {% endif %}
+</figure>

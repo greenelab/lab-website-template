@@ -1,3 +1,8 @@
+---
+---
+
+@import "variables";
+
 html,
 body {
   margin: 0;
@@ -10,24 +15,27 @@ body {
   align-items: stretch;
   flex-direction: column;
   font-size: 12pt;
+
+  main {
+    box-sizing: border-box;
+    flex-grow: 1;
+    background: $white;
+
+    section {
+      padding: 40px;
+
+      .section {
+        max-width: $page;
+        margin: 0 auto;
+      }
+
+      &:nth-child(even) {
+        background: $off-white;
+      }
+    }
+  }
 }
-main {
-  box-sizing: border-box;
-  flex-grow: 1;
-  background: var(--white);
-}
-section {
-  /* outer section */
-  padding: 40px;
-}
-.section {
-  /* inner section */
-  max-width: var(--page);
-  margin: 0 auto;
-}
-section:nth-child(even) {
-  background: var(--off-white);
-}
+
 .section_background {
   position: absolute;
   left: 0;
@@ -38,6 +46,6 @@ section:nth-child(even) {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.2;
-  /* filter: blur(10px); */
+  // filter: blur(5px);
   z-index: -1;
 }

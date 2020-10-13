@@ -1,0 +1,20 @@
+---
+---
+
+@import "variables";
+
+.social_row {
+  .social_link {
+    display: inline-block;
+    padding: 10px;
+    transition: opacity $fast;
+  }
+
+  &:hover > .social_link {
+    opacity: 0.25;
+  }
+
+  .social_link:hover {
+    opacity: 1;
+  }
+}

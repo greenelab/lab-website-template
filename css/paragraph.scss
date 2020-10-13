@@ -1,0 +1,12 @@
+---
+---
+
+@import "variables";
+
+p {
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 1.8;
+
+  @include trim-margins;
+}

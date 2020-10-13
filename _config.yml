@@ -16,6 +16,10 @@ defaults:
     values:
       layout: default
 
+# sass settings
+sass:
+  sass_dir: css
+
 # build settings
 plugins:
   - jekyll-feed
