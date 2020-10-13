@@ -2,6 +2,7 @@
 <p align="center"><img height="200" src="https://github.com/greenelab/lab-website-template/blob/master/mascot.png?raw=true"></p>
 
 An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
+Spend less time reinventing the wheel, and more time running your lab.
 
 [**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
 
@@ -25,8 +26,6 @@ In other words, people who need [these features](#features) and have [this backg
 - A **Join the team** page, where you can put job listings and outreach
 - A **Blog** page, with dated and tagged posts about anything
 - A **Contact** page, where you can specify all the routes for communicating with your lab
-
-_The main goal of this template is to allow you to spend less time setting up a website and reinventing the wheel, and more time running your lab._
 
 ## Background knowledge
 

@@ -6,6 +6,7 @@ background: images/test-tube.jpg
 # <i class="fas fa-flask"></i>Lab Website Template
 
 An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
+Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
