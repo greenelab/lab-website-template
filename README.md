@@ -3,6 +3,8 @@
 
 An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 
+[**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
+
 ## Target audience
 
 People who run labs and have some familiarity with GitHub and web technologies.
