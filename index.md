@@ -10,6 +10,65 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
+## Basic Formatting
+
+_italic text_
+
+**bold text**
+
+A centered paragraph with `{:.center}`.
+Other elements can also be centered with the same method.
+{:.center}
+
+- list item 1
+- list item 2
+- list item 3
+
+| TABLE | Game 1 | Game 2 | Game 3 | Total |
+| ----- | :----: | :----: | :----: | :---: |
+| Anna  |  144   |  123   |  218   |  485  |
+| Bill  |   90   |  175   |  120   |  385  |
+| Cara  |  102   |  214   |  233   |  549  |
+
+```javascript
+// a code block with syntax highlighting
+const popup = document.querySelector("#popup");
+popup.style.width = "100%";
+("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+```
+
+This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
+
+# Heading 1
+
+## Heading 2
+
+Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.
+Mi bibendum neque egestas congue quisque egestas diam in.
+Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+Sapien nec sagittis aliquam malesuada.
+Non odio euismod lacinia at quis risus sed vulputate.
+Laoreet id donec ultrices tincidunt arcu non sodales neque.
+
+### Heading 3
+
+Enim ut sem viverra aliquet eget sit amet tellus.
+Commodo ullamcorper a lacus vestibulum sed arcu non.
+Vitae auctor eu augue ut lectus arcu bibendum.
+Sapien pellentesque habitant morbi tristique senectus et netus.
+Pulvinar proin gravida hendrerit lectus.
+Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla.
+
+#### Heading 4
+
+Tristique nulla aliquet enim tortor at auctor.
+Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
+Vulputate sapien nec sagittis aliquam malesuada bibendum.
+Volutpat blandit aliquam etiam erat.
+Varius quam quisque id diam.
+Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
+Pharetra et ultrices neque ornare aenean euismod elementum nisi.
+
 ## Feature
 
 A _feature_ component, with an image, a heading, markdown text, and an optional image link.
@@ -103,9 +162,96 @@ A _big link_ component, useful for emphasizing important links, such as other ke
 {%- include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
 {:.center}
 
+## Card
+
+A multi-size, flexible _card_ component, with an image, a title link, markdown text, and extra rows for special items such as tags.
+
+{% capture largecards %}
+{%
+  include card.html
+  size="large"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Large card"
+  row1="A clickable, truncated row of really long text that is too wide to fit in the card but can still be expanded by clicking/focusing"
+  row2="Another truncated row of really long text"
+  row3="A really long row of text that wraps instead of truncating"
+  truncate=2
+%}
+{% capture html %}
+An example of putting other components in a row:
+{% endcapture %}
+{%
+  include card.html
+  size="large"
+  image="images/typo-in-filename-whoops.jpg"
+  row1="A card with a placeholder image in case the specified image can't be loaded"
+  row2=html
+%}
+{% endcapture %}
+
+{% include container.html html=largecards %}
+
+{% capture mediumcards %}
+{%
+  include card.html
+  size="medium"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Medium card"
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+{%
+  include card.html
+  size="medium"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Medium card"
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+{%
+  include card.html
+  size="medium"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Medium card"
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+{% endcapture %}
+
+{% include container.html html=mediumcards %}
+
+{%
+  include card.html
+  size="small"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Small card"
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+{%
+  include card.html
+  size="small"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
+  heading="Small card"
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+
+## Container
+
+A _container_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
+
+{% capture html %}
+<div style="margin: 0 5px">item 1</div>
+<div style="margin: 0 5px">item 2</div>
+<div style="margin: 0 5px">item 3</div>
+{% endcapture %}
+{% include container.html html=html %}
+
 ## Font Awesome Icons
 
-[Font Awesome](https://fontawesome.com/) is a large professionally-designed library of clean, consistent icons.
+[Font Awesome](https://fontawesome.com/) is a large library of beautiful, clean, consistent, professionally-designed icons.
 [Find the icon you want](https://fontawesome.com/icons?d=gallery&q=flask), and paste its HTML code right into your markdown:
 
 <i class="fas fa-flask"></i>
@@ -117,84 +263,3 @@ A _big link_ component, useful for emphasizing important links, such as other ke
 
 Use the same [style](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) of icon across your site to maintain a consistent look.
 See the [styling section](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons) of their docs to see some of the easy ways you can modify the look of the icons.
-
-## Basic Formatting
-
-_italic text_
-
-**bold text**
-
-A centered paragraph.
-Other elements can also be centered with the same method.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-{:.center}
-
-- list item 1
-- list item 2
-- list item 3
-
-| TABLE  | Game 1 | Game 2 | Game 3 | Total |
-| ------ | :----: | :----: | :----: | :---: |
-| Anna   |  144   |  123   |  218   |  485  |
-| Bill   |   90   |  175   |  120   |  385  |
-| Cara   |  102   |  214   |  233   |  549  |
-
-```javascript
-// a code block with syntax highlighting
-const popup = document.querySelector("#popup");
-popup.style.width = "100%";
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-```
-
-This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
-
-# Heading 1
-
-## Heading 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Tortor id aliquet lectus proin nibh nisl.
-Pretium lectus quam id leo in.
-Arcu felis bibendum ut tristique et.
-Et magnis dis parturient montes nascetur.
-Tincidunt lobortis feugiat vivamus at augue eget arcu dictum.
-Auctor urna nunc id cursus metus aliquam eleifend mi.
-Pretium viverra suspendisse potenti nullam.
-Gravida cum sociis natoque penatibus et.
-
-Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.
-Mi bibendum neque egestas congue quisque egestas diam in.
-Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
-Sapien nec sagittis aliquam malesuada.
-Non odio euismod lacinia at quis risus sed vulputate.
-Laoreet id donec ultrices tincidunt arcu non sodales neque.
-
-### Heading 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.
-Id volutpat lacus laoreet non curabitur gravida arcu ac.
-Purus in mollis nunc sed id semper risus in.
-Enim ut sem viverra aliquet eget sit amet tellus.
-Commodo ullamcorper a lacus vestibulum sed arcu non.
-Vitae auctor eu augue ut lectus arcu bibendum.
-Sapien pellentesque habitant morbi tristique senectus et netus.
-Pulvinar proin gravida hendrerit lectus.
-Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla.
-
-#### Heading 4
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-In aliquam sem fringilla ut.
-Blandit cursus risus at ultrices mi tempus imperdiet.
-Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.
-Vestibulum morbi blandit cursus risus at ultrices mi.
-A arcu cursus vitae congue mauris rhoncus aenean.
-
-Tristique nulla aliquet enim tortor at auctor.
-Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
-Vulputate sapien nec sagittis aliquam malesuada bibendum.
-Volutpat blandit aliquam etiam erat.
-Varius quam quisque id diam.
-Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
-Pharetra et ultrices neque ornare aenean euismod elementum nisi.

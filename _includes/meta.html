@@ -1,0 +1,18 @@
+{% capture title%}
+{{ site.title }}{% if page.title %} - {% endif %}{{ page.title }}
+{% endcapture %}
+
+<!-- https://metatags.io/ -->
+<meta name="title" content="{{ title }}" />
+<meta name="description" content="{{ page.description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.location }}" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{ site.location }}" />
+<meta property="twitter:title" content="{{ title }}" />
+<meta property="twitter:description" content="{{ page.description }}" />
+
+<!-- https://developers.google.com/web/fundamentals/native-hardware/click-to-call#disable_auto-detection_when_necessary -->
+<meta name="format-detection" content="telephone=no" />

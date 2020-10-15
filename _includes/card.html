@@ -1,0 +1,41 @@
+<div class="card" data-size="{{ include.size }}">
+  {% assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url %}
+  <a
+    {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
+    class="card_image"
+  >
+    {%- if include.image -%}
+    <img
+      src="{{ include.image | relative_url }}"
+      onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
+    >
+    {%- else -%}
+    <img src="{{ placeholder }}">
+    {%- endif -%}
+  </a>
+  <div class="card_text">
+    {% if include.heading %}
+    <a href="{{ include.link | relative_url }}" class="card_title">
+      {{- include.heading -}}
+    </a>
+    {% endif %}
+    {% for i in (1..5) %}
+    {% assign row = "row" | append: i %}
+    {% assign row = include[row] %}
+    {% if row %}
+    {% assign truncate = include.truncate | default: 0 %}
+    {% if i <= truncate %}
+    {% assign truncate = true %}
+    {% else %}
+    {% assign truncate = false %}
+    {% endif %}
+    <div
+      class="card_row {% if truncate %}truncate{% endif %}"
+      {% if truncate %}tabindex="0"{% endif %}
+    >
+      {{- row | markdownify | remove: "<p>" | remove: "</p>" -}}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

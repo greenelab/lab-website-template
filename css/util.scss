@@ -6,3 +6,10 @@
 .center {
   text-align: center;
 }
+
+.truncate:not(:focus) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}

@@ -108,6 +108,11 @@ OR
 2. Go where GitHub shows you that your site is published.
    If you haven't set up a custom domain, it will be at `https://your-org-name.github.io/the-repo-name/`.
 
+### How do I use the pre-built components?
+
+The `index.md` file aims to provide a complete listing of all of the included components, and how to use them.
+See its [raw source code](https://github.com/greenelab/lab-website-template/blob/master/index.md) to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
+
 ### How do I hook up a custom domain (e.g. www.theawesomelab.com)?
 
 Follow the instructions [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
