@@ -1,0 +1,23 @@
+---
+---
+
+@import "variables";
+
+.tags {
+  display: inline-flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .tag {
+    max-width: 100%;
+    margin: 5px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: $light-blue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

@@ -4,12 +4,13 @@
 @import "variables";
 
 .card {
+  box-sizing: border-box;
   display: inline-flex;
   max-width: 100%;
-  margin: 20px;
 
   .card_image {
     flex-shrink: 0;
+    max-width: 100%;
     overflow: hidden;
     box-shadow: $shadow;
 
@@ -46,6 +47,7 @@
     align-items: center;
     flex-direction: column;
     width: 300px;
+    margin: 20px;
 
     .card_image {
       width: 300px;
@@ -65,6 +67,7 @@
     align-items: center;
     flex-direction: column;
     width: 200px;
+    margin: 20px;
 
     .card_image {
       width: 200px;
@@ -83,11 +86,30 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    margin: 20px 0;
 
     .card_image {
       width: 100px;
       height: 100px;
       margin-right: 20px;
+    }
+
+    @media (max-width: $phone) {
+      align-items: center;
+      flex-direction: column;
+
+      .card_image {
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      .card_text {
+        .card_title {
+          text-align: center;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,6 @@
+<div class="tags" data-github-tags="{{ include.github }}">
+  {% assign tags = include.tags | split: " " %}
+  {% for tag in tags %}
+  <span class="tag">{{ tag }}</span>
+  {% endfor %}
+</div>

@@ -24,6 +24,10 @@ Other elements can also be centered with the same method.
 - list item 2
 - list item 3
 
+Horizontal rule:
+
+---
+
 | TABLE | Game 1 | Game 2 | Game 3 | Total |
 | ----- | :----: | :----: | :----: | :---: |
 | Anna  |  144   |  123   |  218   |  485  |
@@ -162,9 +166,25 @@ A _big link_ component, useful for emphasizing important links, such as other ke
 {%- include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
 {:.center}
 
+## Tags
+
+A _tags_ component.
+Provide your own list of tags separated by spaces, and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
+You can include this as part of other components, such as the _card_ component.
+
+{%
+  include tags.html
+  tags="ovarian-cancer dataset gene-expression"
+  github="greenelab/lab-website-template"
+%}
+
 ## Card
 
 A multi-size, flexible _card_ component, with an image, a title link, markdown text, and extra rows for special items such as tags.
+
+{% capture tags %}
+{% include tags.html tags="red hammer elephant supercalifragilisticexpialidocious" %}
+{% endcapture %}
 
 {% capture largecards %}
 {%
@@ -186,7 +206,7 @@ An example of putting other components in a row:
   size="large"
   image="images/typo-in-filename-whoops.jpg"
   row1="A card with a placeholder image in case the specified image can't be loaded"
-  row2=html
+  row2=tags
 %}
 {% endcapture %}
 
@@ -207,7 +227,8 @@ An example of putting other components in a row:
   image="images/space.jpg"
   link="https://nasa.gov/"
   heading="Medium card"
-  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  row2=tags
 %}
 {%
   include card.html
@@ -228,6 +249,7 @@ An example of putting other components in a row:
   link="https://nasa.gov/"
   heading="Small card"
   row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+  row2=tags
 %}
 {%
   include card.html
@@ -243,6 +265,7 @@ An example of putting other components in a row:
 A _container_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
 
 {% capture html %}
+
 <div style="margin: 0 5px">item 1</div>
 <div style="margin: 0 5px">item 2</div>
 <div style="margin: 0 5px">item 3</div>
