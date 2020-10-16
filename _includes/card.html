@@ -29,12 +29,12 @@
     {% else %}
     {% assign truncate = false %}
     {% endif %}
-    <div
+    <p
       class="card_row {% if truncate %}truncate{% endif %}"
       {% if truncate %}tabindex="0"{% endif %}
     >
       {{- row | markdownify | remove: "<p>" | remove: "</p>" -}}
-    </div>
+    </p>
     {% endif %}
     {% endfor %}
   </div>

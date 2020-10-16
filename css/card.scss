@@ -27,8 +27,6 @@
   }
 
   .card_text {
-    width: 100%;
-
     .card_title {
       display: block;
       margin-bottom: 20px;
@@ -56,6 +54,8 @@
     }
 
     .card_text {
+      width: 100%;
+
       .card_title {
         text-align: center;
       }
@@ -76,6 +76,8 @@
     }
 
     .card_text {
+      width: 100%;
+
       .card_title {
         text-align: center;
       }
@@ -92,6 +94,11 @@
       width: 100px;
       height: 100px;
       margin-right: 20px;
+    }
+
+    .card_text {
+      width: 0;
+      flex-grow: 1;
     }
 
     @media (max-width: $phone) {

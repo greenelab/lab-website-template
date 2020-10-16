@@ -5,7 +5,6 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
@@ -48,11 +47,23 @@
     }
   }
 
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   @media (max-width: $tablet) {
     grid-template-columns: 1fr 1fr;
   }
 
   @media (max-width: $phone) {
+    grid-template-columns: 1fr !important;
+  }
+
+  &[data-number="2"] {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &[data-number="1"] {
     grid-template-columns: 1fr;
   }
 }

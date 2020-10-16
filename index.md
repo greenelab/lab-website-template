@@ -8,7 +8,7 @@ background: images/test-tube.jpg
 An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
 
-{% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
+{% include big-link.html icon="fab fa-github" text="See the template and manual on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
 ## Basic Formatting
 
@@ -38,7 +38,7 @@ Horizontal rule:
 // a code block with syntax highlighting
 const popup = document.querySelector("#popup");
 popup.style.width = "100%";
-("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+popup.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 ```
 
 This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
@@ -132,11 +132,6 @@ A _gallery_ component with optional tooltips and image links.
   link1="https://cell.com/"
   image2="images/virus.jpg"
   tooltip2="Virus"
-  image3="images/cell.jpg"
-  tooltip3="Cell"
-  link3="https://cell.com/"
-  image4="images/virus.jpg"
-  image5="images/bacteria.jpg"
 %}
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
@@ -193,7 +188,7 @@ A multi-size, flexible _card_ component, with an image, a title link, markdown t
   image="images/space.jpg"
   link="https://nasa.gov/"
   heading="Large card"
-  row1="A clickable, truncated row of really long text that is too wide to fit in the card but can still be expanded by clicking/focusing"
+  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
   row2="Another truncated row of really long text"
   row3="A really long row of text that wraps instead of truncating"
   truncate=2
@@ -258,6 +253,7 @@ An example of putting other components in a row:
   link="https://nasa.gov/"
   heading="Small card"
   row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+  truncate=1
 %}
 
 ## Container

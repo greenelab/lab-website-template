@@ -9,7 +9,7 @@ h3,
 h4 {
   box-sizing: border-box;
   font-family: $sans;
-  font-weight: 600;
+  font-weight: $medium;
   line-height: 1.2;
   margin: 30px 0 20px 0;
   padding: 10px 0;
@@ -29,6 +29,7 @@ h1 {
 }
 h2 {
   font-size: 1.3rem;
+  letter-spacing: 1px;
   text-align: center;
 }
 h3 {
