@@ -1,0 +1,15 @@
+<a
+  href="{{ include.link | relative_url }}"
+  class="portrait"
+  data-mini="{{ include.mini | default: false }}">
+  <span class="portrait_image">
+    <img
+      src="{{ include.image | relative_url }}"
+      title="{{ include.name }}"
+    />
+  </span>
+  {% include role.html type=include.role %}
+  <span class="portrait_name">
+    {{ include.name }}
+  </span>
+</a>

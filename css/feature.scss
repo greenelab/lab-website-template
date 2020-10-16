@@ -4,9 +4,7 @@
 @import "variables";
 
 .feature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   margin: 40px 0;
 
   @include trim-margins;

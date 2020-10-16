@@ -6,9 +6,7 @@
 header {
   box-sizing: border-box;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   padding: 40px;
   color: $white;
   background: $dark-gray;
@@ -16,58 +14,58 @@ header {
   box-shadow: $shadow;
   z-index: 1;
 
-  .logo_row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header_col {
+    @include flex-center;
     flex-grow: 1;
 
-    .logo {
-      max-width: 50px;
-      max-height: 50px;
+    .logo_row {
+      @include inline-flex-center;
+
+      .logo {
+        max-width: 50px;
+        max-height: 50px;
+      }
+
+      .logo_text {
+        font-family: $sans;
+        font-size: 1.5rem;
+        margin: 0 20px;
+        text-align: center;
+        white-space: nowrap;
+      }
     }
 
-    .logo_text {
+    .nav_row {
+      @include inline-flex-center;
+
+      .nav_link {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        transition: opacity $fast;
+      }
+
+      &:hover .nav_link {
+        opacity: 0.25;
+      }
+
+      & .nav_link:hover {
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: $white !important;
       font-family: $sans;
-      font-size: 1.5rem;
-      margin: 0 20px;
-      text-align: center;
-      white-space: nowrap;
+      text-decoration: none;
     }
-  }
-
-  .nav_row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-
-    .nav_link {
-      display: inline-block;
-      padding: 10px;
-      text-align: center;
-      transition: opacity $fast;
-    }
-
-    &:hover .nav_link {
-      opacity: 0.25;
-    }
-
-    & .nav_link:hover {
-      opacity: 1;
-    }
-  }
-
-  a {
-    color: $white !important;
-    font-family: $sans;
-    text-decoration: none;
   }
 
   @media (max-width: $tablet) {
     flex-direction: column;
     align-items: stretch;
   }
+
   @media (max-width: $phone) {
     .logo_row {
       flex-direction: column;
@@ -75,6 +73,7 @@ header {
     }
     .nav_row {
       flex-direction: column;
+      width: 100%;
 
       .nav_link {
         width: 100%;

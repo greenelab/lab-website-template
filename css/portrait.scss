@@ -1,0 +1,71 @@
+---
+---
+
+@import "variables";
+
+.portrait {
+  position: relative;
+  @include inline-flex-center;
+  flex-direction: column;
+  width: 150px;
+  margin: 20px;
+  text-decoration: none;
+
+  .portrait_image {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: transform $fast;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  &[data-mini="true"] {
+    width: 100px;
+
+    .portrait_image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .portrait_name {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    background: $white;
+    color: $gray;
+    border-radius: 999px;
+  }
+  &[data-mini="true"] {
+    .role {
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+{% assign icon = "fas fa-home" %}
+{% assign text = "Default Link" %}
+
 {% if include.type == "website" %}
 {% assign icon = "fas fa-home" %}
 {% assign text = "Website" %}
@@ -5,7 +8,7 @@
 {% endif %}
 
 {% if include.type == "contact" %}
-{% assign icon = "fas fa-envelope" %}
+{% assign icon = "fas fa-at" %}
 {% assign text = "Contact" %}
 {% assign link = "contact" | relative_url | default: "" %}
 {% endif %}
@@ -44,7 +47,6 @@
   href="{{ link }}"
   class="social_link"
   data-tooltip="{{ text }}"
-  aria-label="{{ text }}"
->
+  aria-label="{{ text }}">
   <i class="{{ icon }} {% if include.large %}fa-lg{% endif %}"></i>
 </a>

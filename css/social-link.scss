@@ -3,22 +3,8 @@
 
 @import "variables";
 
-.social_row {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  .social_link {
-    margin: 0 2px;
-    padding: 10px;
-    transition: opacity $fast;
-  }
-
-  &:hover > .social_link {
-    opacity: 0.25;
-  }
-
-  .social_link:hover {
-    opacity: 1;
-  }
+.social_link {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
 }

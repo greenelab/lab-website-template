@@ -4,9 +4,7 @@
 @import "variables";
 
 .figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   margin: 40px 0;
 

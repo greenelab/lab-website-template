@@ -14,6 +14,24 @@ footer {
   text-align: center;
   z-index: 1;
 
+  .footer_row {
+    @include inline-flex-center;
+    flex-grow: 1;
+
+    .social_link {
+      margin: 0 5px;
+      transition: opacity $fast;
+    }
+
+    &:hover .social_link {
+      opacity: 0.25;
+    }
+
+    & .social_link:hover {
+      opacity: 1;
+    }
+  }
+
   a {
     color: $white !important;
     font-family: $sans;

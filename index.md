@@ -38,7 +38,8 @@ Horizontal rule:
 // a code block with syntax highlighting
 const popup = document.querySelector("#popup");
 popup.style.width = "100%";
-popup.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+popup.innerText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 ```
 
 This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
@@ -132,6 +133,11 @@ A _gallery_ component with optional tooltips and image links.
   link1="https://cell.com/"
   image2="images/virus.jpg"
   tooltip2="Virus"
+  image3="images/cell.jpg"
+  tooltip3="Cell"
+  link3="https://cell.com/"
+  image4="images/virus.jpg"
+  image5="images/bacteria.jpg"
 %}
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
@@ -255,6 +261,89 @@ An example of putting other components in a row:
   row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
   truncate=1
 %}
+
+## Social Link
+
+A customizable _social link_ component, with icon and tooltip.
+To see the built-in links and add your own, see `_includes/social-link.html`.
+
+{% capture html %}
+{% include social-link.html type="website" %}
+{% include social-link.html type="contact" %}
+{% include social-link.html type="email" %}
+{% include social-link.html type="google" %}
+{% include social-link.html type="github" %}
+{% include social-link.html type="twitter" %}
+{% include social-link.html type="instagram" %}
+{% endcapture %}
+
+{% include container.html html=html %}
+
+## Role
+
+A customizable _role_ component, with an icon and optional text, useful for quickly indicating what different team members do.
+To see the built-in roles and add your own, see `_includes/role.html`.
+
+{% capture html %}
+{%
+  include role.html
+  type="pi"
+  text=true
+%}
+{%
+  include role.html
+  type="phd"
+  text=true
+%}
+{%
+  include role.html
+  type="programmer"
+  text=true
+%}
+{%
+  include role.html
+  type="pi"
+%}
+{%
+  include role.html
+  type="phd"
+%}
+{%
+  include role.html
+  type="programmer"
+%}
+{% endcapture %}
+
+{% include container.html html=html %}
+
+## Portrait
+
+A multi-size _portrait_ component with an image, name, link, and role icon, useful for team member links.
+
+{% capture html %}
+{%
+  include portrait.html
+  image="images/corgi.jpg"
+  name="Mr. Scruggles"
+  role="pi"
+%}
+{%
+  include portrait.html
+  image="images/corgi.jpg"
+  name="Mr. Scruggles"
+  role="phd"
+  mini=true
+%}
+{%
+  include portrait.html
+  image="images/corgi.jpg"
+  name="Mr. Scruggles"
+  role="programmer"
+  mini=true
+%}
+{% endcapture %}
+
+{% include container.html html=html %}
 
 ## Container
 
