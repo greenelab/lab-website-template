@@ -3,20 +3,14 @@ const createAnchors = () => {
   // for each heading
   const headings = document.querySelectorAll("h1, h2, h3, h4");
   for (const heading of headings) {
-    // replace text nodes in heading with link
-    for (const child of heading.childNodes) {
-      if (child.nodeType === Node.TEXT_NODE) {
-        const link = document.createElement("a");
-        link.classList.add("anchor");
-        link.href = "#" + heading.id;
-        link.innerHTML = child.textContent;
-        heading.replaceChild(link, child);
-      }
-    }
+    // create anchor link
+    const link = document.createElement("a");
+    link.classList.add("fas", "fa-link", "fa-sm", "anchor");
+    link.href = "#" + heading.id;
+    heading.append(link);
 
-    // if heading 1 or 2 (see _includes/content.html)
+    // if heading 1 or 2, move id from heading to parent section instead
     if (heading.matches("h1, h2")) {
-      // move id from heading to parent section instead
       let section = heading.closest("section");
       if (section) {
         section.id = heading.id;

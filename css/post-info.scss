@@ -1,0 +1,25 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+.post_info {
+  @include flex-center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  color: $gray;
+
+  & > * {
+    margin: 0 10px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  &[data-heading="true"] {
+    justify-content: center;
+  }
+}

@@ -5,7 +5,7 @@ const headers = { Accept: "application/vnd.github.mercy-preview+json" };
 
 // fetch and add github tags to any tag section with a specified repo
 const createTags = async () => {
-  // get tag rows/containers with specified repos
+  // get tag rows with specified repos
   const rows = Array.from(document.querySelectorAll("[data-github-tags]"));
 
   // for each repo

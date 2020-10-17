@@ -1,0 +1,32 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+.post_nav {
+  @include flex-center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $gray;
+
+  & > * {
+    width: 45%;
+  }
+
+  & > *:first-child {
+    text-align: left;
+  }
+
+  & > *:last-child {
+    text-align: right;
+  }
+
+  @media (max-width: $phone) {
+    & > * {
+      width: 100%;
+      margin: 10px 0;
+      text-align: center !important;
+    }
+  }
+}

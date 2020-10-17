@@ -1,0 +1,21 @@
+---
+---
+
+header,
+footer {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+    // filter: blur(5px);
+    z-index: -1;
+  }
+}

@@ -2,6 +2,7 @@
 ---
 
 @import "variables";
+@import "mixins";
 
 .figure {
   @include flex-center;

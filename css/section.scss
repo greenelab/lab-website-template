@@ -20,32 +20,18 @@ body {
     box-sizing: border-box;
     flex-grow: 1;
     background: $white;
+  }
+  
+  section {
+    padding: 40px;
 
-    section {
-      padding: 40px;
+    .section {
+      max-width: $page;
+      margin: 0 auto;
+    }
 
-      .section {
-        max-width: $page;
-        margin: 0 auto;
-      }
-
-      &:nth-child(even) {
-        background: $off-white;
-      }
+    &:nth-child(even) {
+      background: $off-white;
     }
   }
-}
-
-.section_background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.2;
-  // filter: blur(5px);
-  z-index: -1;
 }

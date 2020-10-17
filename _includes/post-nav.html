@@ -1,0 +1,24 @@
+<p class="post_nav" data-heading="{{ include.heading }}">
+  <span>
+    {% if include.post.previous %}
+    <i class="fas fa-angle-left"></i> Previous post<br />
+    <a
+      href="{{ include.post.previous.url | relative_url }}"
+      class="truncate"
+      >
+      {{ include.post.previous.title }}
+    </a>
+    {% endif %}
+  </span>
+  <span>
+    {% if include.post.next %}
+    Next post <i class="fas fa-angle-right"></i><br />
+    <a
+      href="{{ include.post.next.url | relative_url }}"
+      class="truncate"
+    >
+      {{ include.post.next.title }}
+    </a>
+    {% endif %}
+  </span>
+</p>

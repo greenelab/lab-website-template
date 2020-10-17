@@ -74,6 +74,18 @@ Varius quam quisque id diam.
 Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
 Pharetra et ultrices neque ornare aenean euismod elementum nisi.
 
+## Centerer
+
+A _centerer_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
+
+{% capture html %}
+<div>item 1</div>
+<div>item 2</div>
+<div>item 3</div>
+{% endcapture %}
+
+{% include centerer.html html=html spaced=true %}
+
 ## Feature
 
 A _feature_ component, with an image, a heading, markdown text, and an optional image link.
@@ -164,7 +176,7 @@ Useful for transparent images, and images that should not be cropped, like logos
 A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
 
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
-{%- include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
+{%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="/collaborators" -%}
 {:.center}
 
 ## Tags
@@ -211,7 +223,7 @@ An example of putting other components in a row:
 %}
 {% endcapture %}
 
-{% include container.html html=largecards %}
+{% include centerer.html html=largecards %}
 
 {% capture mediumcards %}
 {%
@@ -241,7 +253,7 @@ An example of putting other components in a row:
 %}
 {% endcapture %}
 
-{% include container.html html=mediumcards %}
+{% include centerer.html html=mediumcards %}
 
 {%
   include card.html
@@ -265,10 +277,11 @@ An example of putting other components in a row:
 ## Social Link
 
 A customizable _social link_ component, with icon and tooltip.
+Specify custom links, or leave blank to use site defaults  in `_config.yml`.
 To see the built-in links and add your own, see `_includes/social-link.html`.
 
 {% capture html %}
-{% include social-link.html type="website" %}
+{% include social-link.html type="website" link="https://mysite.com/" %}
 {% include social-link.html type="contact" %}
 {% include social-link.html type="email" %}
 {% include social-link.html type="google" %}
@@ -277,7 +290,7 @@ To see the built-in links and add your own, see `_includes/social-link.html`.
 {% include social-link.html type="instagram" %}
 {% endcapture %}
 
-{% include container.html html=html %}
+{% include centerer.html html=html %}
 
 ## Role
 
@@ -314,15 +327,16 @@ To see the built-in roles and add your own, see `_includes/role.html`.
 %}
 {% endcapture %}
 
-{% include container.html html=html %}
+{% include centerer.html html=html %}
 
 ## Portrait
 
-A multi-size _portrait_ component with an image, name, link, and role icon, useful for team member links.
+A multi-size _portrait_ component with an image, link, name, and role icon, useful for team member links.
 
 {% capture html %}
 {%
   include portrait.html
+  link="mr-scruggles"
   image="images/corgi.jpg"
   name="Mr. Scruggles"
   role="pi"
@@ -331,31 +345,22 @@ A multi-size _portrait_ component with an image, name, link, and role icon, usef
   include portrait.html
   image="images/corgi.jpg"
   name="Mr. Scruggles"
-  role="phd"
+  role="programmer"
   mini=true
 %}
 {%
   include portrait.html
   image="images/corgi.jpg"
-  name="Mr. Scruggles"
-  role="programmer"
   mini=true
 %}
 {% endcapture %}
 
-{% include container.html html=html %}
+{% include centerer.html html=html %}
 
-## Container
+## Blog List
 
-A _container_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
-
-{% capture html %}
-
-<div style="margin: 0 5px">item 1</div>
-<div style="margin: 0 5px">item 2</div>
-<div style="margin: 0 5px">item 3</div>
-{% endcapture %}
-{% include container.html html=html %}
+A _blog list_ component, to list and summarize all blog posts on your site.
+Go to [the blog page](blog) to see it in action.
 
 ## Font Awesome Icons
 

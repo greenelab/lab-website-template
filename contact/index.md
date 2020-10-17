@@ -1,5 +1,5 @@
 ---
-background: images/volcano.jpg
+title: Contact
 ---
 
 # <i class="fas fa-envelope"></i>Contact

@@ -7,28 +7,20 @@ h1,
 h2,
 h3,
 h4 {
-  & > * {
-    position: relative;
-  }
-
   .anchor {
-    font-family: $sans;
-    color: $black;
-    text-decoration: none;
-  }
-  
-  & > *:last-child:after {
-    content: "\f0c1";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    left: calc(100% + 10px);
-    color: $blue;
+    display: inline-block;
+    position: relative;
+    width: 0;
+    margin: 0;
+    left: 10px;
+    color: $theme;
     opacity: 0;
-    transition: opacity $fast;
+    text-decoration: none;
+    transition: opacity $fast, color $fast;
   }
 
-  &:hover > *:last-child:after {
+  &:hover .anchor,
+  .anchor:focus {
     opacity: 1;
   }
 }
@@ -42,7 +34,7 @@ h4 {
     background: none;
   }
   10% {
-    background: $light-blue;
+    background: $light-theme;
   }
   100% {
     background: none;

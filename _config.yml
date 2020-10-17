@@ -15,6 +15,15 @@ defaults:
       path: ""
     values:
       layout: default
+      background: images/test-tube.jpg
+  - scope:
+      type: "members"
+    values:
+      layout: member
+  - scope:
+      type: "posts"
+    values:
+      layout: post
 
 # sass settings
 sass:

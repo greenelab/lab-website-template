@@ -2,11 +2,13 @@
 ---
 
 @import "variables";
+@import "mixins";
 
 header {
   box-sizing: border-box;
   position: relative;
   @include flex-center;
+  justify-content: space-between;
   padding: 40px;
   color: $white;
   background: $dark-gray;
@@ -14,63 +16,61 @@ header {
   box-shadow: $shadow;
   z-index: 1;
 
-  .header_col {
-    @include flex-center;
-    flex-grow: 1;
+  .logo_row {
+    @include inline-flex-center;
 
-    .logo_row {
-      @include inline-flex-center;
-
-      .logo {
-        max-width: 50px;
-        max-height: 50px;
-      }
-
-      .logo_text {
-        font-family: $sans;
-        font-size: 1.5rem;
-        margin: 0 20px;
-        text-align: center;
-        white-space: nowrap;
-      }
+    .logo {
+      height: 50px;
     }
 
-    .nav_row {
-      @include inline-flex-center;
-
-      .nav_link {
-        display: inline-block;
-        padding: 10px;
-        text-align: center;
-        transition: opacity $fast;
-      }
-
-      &:hover .nav_link {
-        opacity: 0.25;
-      }
-
-      & .nav_link:hover {
-        opacity: 1;
-      }
-    }
-
-    a {
-      color: $white !important;
+    .logo_text {
       font-family: $sans;
-      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      text-align: center;
+      white-space: nowrap;
     }
+  }
+
+  .nav_row {
+    @include inline-flex-center;
+
+    .nav_link {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      transition: opacity $fast;
+    }
+
+    &:hover .nav_link {
+      opacity: 0.25;
+    }
+
+    & .nav_link:hover {
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: $white !important;
+    font-family: $sans;
+    text-decoration: none;
   }
 
   @media (max-width: $tablet) {
     flex-direction: column;
-    align-items: stretch;
+
+    .logo_row {
+      margin-bottom: 10px;
+    }
   }
 
   @media (max-width: $phone) {
     .logo_row {
-      flex-direction: column;
       margin-bottom: 20px;
+      flex-direction: column;
     }
+
     .nav_row {
       flex-direction: column;
       width: 100%;

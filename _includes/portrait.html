@@ -1,5 +1,5 @@
 <a
-  href="{{ include.link | relative_url }}"
+  {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
   class="portrait"
   data-mini="{{ include.mini | default: false }}">
   <span class="portrait_image">
@@ -8,8 +8,12 @@
       title="{{ include.name }}"
     />
   </span>
+  {% if include.role %}
   {% include role.html type=include.role %}
+  {% endif %}
+  {% if include.name %}
   <span class="portrait_name">
     {{ include.name }}
   </span>
+  {% endif %}
 </a>

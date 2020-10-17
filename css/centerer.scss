@@ -3,9 +3,13 @@
 
 @import "variables";
 
-.container {
+.centerer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  &[data-spaced="true"] > * {
+    margin: 10px;
+  }
 }
