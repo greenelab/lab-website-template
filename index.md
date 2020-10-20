@@ -7,7 +7,7 @@ title: Home
 [Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
 
-{% include big-link.html icon="fab fa-github" text="See the template and manual on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
+{% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
 ## Basic Formatting
 
@@ -328,7 +328,7 @@ To see the built-in roles and add your own, see `/_includes/role.html`.
 %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html html=html spaced=true %}
 
 ## Portrait
 
@@ -337,26 +337,30 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 {% capture html %}
 {%
   include portrait.html
-  link="mr-scruggles"
+  link="/members/anne-chovie"
   image="images/corgi.jpg"
-  name="Mr. Scruggles"
-  role="pi"
+  name="Anne Chovie"
+  role="programmer"
 %}
 {%
   include portrait.html
-  image="images/corgi.jpg"
-  name="Mr. Scruggles"
-  role="programmer"
+  image="images/labrador.jpg"
+  name="Felix Cited"
+  role="pi"
   mini=true
 %}
 {%
   include portrait.html
-  image="images/corgi.jpg"
   mini=true
 %}
 {% endcapture %}
 
 {% include centerer.html html=html %}
+
+## Member List
+
+A _member list_ component, to list, filter, and sort all of the members on your team automatically.
+Go to [the team page]({{ "/team" | relative_url }}) to see it in action.
 
 ## Blog List
 

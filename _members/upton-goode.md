@@ -1,7 +1,8 @@
 ---
 title: Upton O. Goode
-role: programmer
-image: images/corgi.jpg
+role: phd
+group: alum
+image: images/beagle.jpg
 email: upton@ogoode.com
 twitter: faketwitterhandle
 ---

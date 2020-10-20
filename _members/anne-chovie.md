@@ -1,6 +1,6 @@
 ---
 title: Anne Chovie
-role: phd
+role: programmer
 image: images/corgi.jpg
 website: fakewebsite.com
 email: anne@chovie.com

@@ -18,7 +18,6 @@
       transition: transform $fast;
 
       &[data-default="true"] {
-        width: 100%;
         max-width: 400px;
         max-height: 300px;
       }

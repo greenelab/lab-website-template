@@ -1,7 +1,8 @@
 ---
 title: Felix Cited
 role: pi
-image: images/corgi.jpg
+group: current
+image: images/labrador.jpg
 website: fakewebsite.com
 email: felix@cited.com
 twitter: faketwitterhandle
