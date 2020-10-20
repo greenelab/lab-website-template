@@ -179,6 +179,29 @@ OR
 The `index.md` file aims to provide a complete listing of all of the included components, and how to use them.
 See its [raw source code](https://github.com/greenelab/lab-website-template/blob/master/index.md) to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
 
+### Configuring blog post comments
+
+Having comments on blog posts (or elsewhere) isn't a trivial feature to implement.
+There needs to be 1) a plugin on the page that lets users log in, read comments, and post new ones, and 2) a server running to receive, permanently store, and retrieve comments.
+
+It's beyond our purview to give you a built-in solution to this, but luckily there are many third party ones that can be integrated into this template:
+
+- [Disqus](https://disqus.com/)
+- [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)
+- [Hyvor Talk](https://talk.hyvor.com/)
+- [Staticman](https://staticman.net/docs/)
+- [Schnack](https://github.com/schn4ck/schnack)
+- [Remark42](https://github.com/umputun/remark42)
+- [Isso](https://github.com/posativ/isso)
+
+...[to name a few](https://www.google.com/search?q=jekyll+comments).
+Research the options [carefully](https://replyable.com/2017/03/disqus-is-your-data-worth-trading-for-convenience).
+
+Some are full services that take care of the plugin and server for you.
+For these, you usually just have to create an account for your site, then paste the code snippet where you want the comment section, eg at the bottom of `_layouts/post.html`.
+
+Others just give you a plugin and the tools you need to run your own server, giving you greater privacy and security, but requiring more work to set up.
+
 ### Hooking up a custom domain
 
 Follow the instructions [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).

@@ -361,6 +361,11 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 A _blog list_ component, to list and summarize all blog posts on your site.
 Go to [the blog page]({{ "/blog" | relative_url }}) to see it in action.
 
+## Embeds
+
+You can include various social media embeds by pasting the code right into your markdown.
+See some examples on [the blog page]({{ "/blog" | relative_url }}).
+
 ## Font Awesome Icons
 
 [Font Awesome](https://fontawesome.com/) is a large library of beautiful, clean, consistent, professionally-designed icons.
