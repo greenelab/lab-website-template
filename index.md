@@ -280,13 +280,15 @@ Specify custom links, or leave blank to use site defaults  in `_config.yml`.
 To see the built-in links and add your own, see `/_includes/social-link.html`.
 
 {% capture html %}
-{% include social-link.html type="website" link="https://mysite.com/" %}
+
+{% include social-link.html type="website" link=page.website %}
 {% include social-link.html type="contact" %}
 {% include social-link.html type="email" %}
 {% include social-link.html type="google" %}
 {% include social-link.html type="github" %}
 {% include social-link.html type="twitter" %}
 {% include social-link.html type="instagram" %}
+{% include social-link.html type="youtube" %}
 {% endcapture %}
 
 {% include centerer.html html=html %}
@@ -369,7 +371,7 @@ See some examples on [the blog page]({{ "/blog" | relative_url }}).
 ## Font Awesome Icons
 
 [Font Awesome](https://fontawesome.com/) is a large library of beautiful, clean, consistent, professionally-designed icons.
-[Find the icon you want](https://fontawesome.com/icons?d=gallery&q=flask), and paste its HTML code right into your markdown:
+[Find the icon you want](https://fontawesome.com/icons?d=gallery&q=icon&m=free), and paste its HTML code right into your markdown:
 
 <i class="fas fa-flask"></i>
 <i class="fas fa-microscope"></i>

@@ -5,9 +5,8 @@
 @import "mixins";
 
 p {
-  text-align: justify;
-  margin: 20px 0;
-  line-height: 1.8;
-
+  @include block-margins;
   @include trim-margins;
+  text-align: justify;
+  line-height: 1.8;
 }

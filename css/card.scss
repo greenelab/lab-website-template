@@ -35,9 +35,8 @@
     }
     .card_row {
       margin: 10px 0;
-      text-align: justify;
-
       @include trim-margins;
+      text-align: justify;
     }
   }
 
@@ -114,6 +113,8 @@
       }
 
       .card_text {
+        width: 100%;
+
         .card_title {
           text-align: center;
         }

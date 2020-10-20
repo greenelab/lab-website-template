@@ -5,8 +5,9 @@ title: Lab Website Template # title of site, used in tab name and elsewhere
 email: jane.smith@gmail.com # default email
 google: Jane Smith # default name to search on Google Scholar
 github: fakelab # default GitHub user/org, without the @
-twitter: faketwitterhandle # default Twitter handle, withouth the @
-instagram: fakeinstagramhandle # default Instagram handle, withouth the @
+twitter: faketwitterhandle # default Twitter handle, without the @
+instagram: fakeinstagramhandle # default Instagram handle, without the @
+youtube: fakeyoutubechannel # default YouTube channel handle
 
 # base directory where site is hosted
 # set to "" if hosting at a custom domain, eg yoursite.com
@@ -36,6 +37,10 @@ defaults:
       type: "posts"
     values:
       layout: post
+
+collections:
+  members:
+    output: true
 
 # sass settings
 sass:

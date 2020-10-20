@@ -43,6 +43,17 @@
 {% assign link = include.link | default: site.instagram | default: "" | prepend: "https://instagram.com/" %}
 {% endif %}
 
+{% if include.type == "youtube" %}
+{% assign icon = "fab fa-youtube" %}
+{% assign text = "YouTube" %}
+{% assign link = include.link | default: site.youtube | default: "" | prepend: "https://youtube.com/" %}
+{% endif %}
+
+{% comment %}
+To add more options for icons, see:
+https://fontawesome.com/icons?d=gallery&q=icon&m=free
+{% endcomment %}
+
 <a
   href="{{ link }}"
   class="social_link"

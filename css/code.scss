@@ -22,6 +22,7 @@ code.highlighter-rouge {
 // code block
 div.highlighter-rouge {
   margin: 40px 0;
+  @include trim-margins;
   background: $dark-gray;
   overflow-x: auto;
   overflow-y: auto;
@@ -31,8 +32,6 @@ div.highlighter-rouge {
     margin: 0;
     padding: 20px;
   }
-
-  @include trim-margins;
 }
 
 // code block syntax highlighting

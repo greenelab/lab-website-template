@@ -2,12 +2,19 @@
 ---
 
 @import "variables";
+@import "mixins";
 
 .centerer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  @include block-margins;
+  @include trim-margins;
+
+  & > * {
+    text-align: center;
+  }
 
   &[data-spaced="true"] > * {
     margin: 10px;

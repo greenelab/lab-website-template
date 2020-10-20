@@ -5,21 +5,16 @@
 @import "mixins";
 
 .post_info {
-  @include flex-center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  text-align: left;
   color: $gray;
 
-  & > * {
+  & > span {
+    display: inline-block;
     margin: 0 10px;
+    text-align: center;
+    white-space: nowrap;
 
     i {
       margin-right: 10px;
     }
-  }
-
-  &[data-heading="true"] {
-    justify-content: center;
   }
 }
