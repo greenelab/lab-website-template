@@ -206,5 +206,5 @@ All included photos are licensed under [CC0](https://creativecommons.org/share-y
 
 ## Support
 
-There are a lot of different technologies involved in this template, it's okay if you don't have a deep understanding of them all.
-If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting an issue on this repository](https://github.com/greenelab/lab-website-template/issues).
+There are a lot of different technologies involved in this template; it's okay if you don't have a deep understanding of them all.
+If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
