@@ -100,7 +100,7 @@ And `yoursite.com` takes you to the root `index.md`.
 
 _Note:_ When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
 For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
-Pre-built components that have links already do this for you though, so you can just do eg `link="/join"`.
+You don't have to do this for pre-built component links, though; they do it for you (eg you can just do `link="/join"`).
 
 ### Template files and folders
 
@@ -198,7 +198,7 @@ It's beyond our purview to give you a built-in solution to this, but luckily the
 Research the options [carefully](https://replyable.com/2017/03/disqus-is-your-data-worth-trading-for-convenience).
 
 Some are full services that take care of the plugin and server for you.
-For these, you usually just have to create an account for your site, then paste the code snippet where you want the comment section, eg at the bottom of `_layouts/post.html`.
+For these, you usually just have to create an account for your site, then paste the code snippet anywhere you want a comment section, eg at the bottom of `_layouts/post.html`.
 
 Others just give you a plugin and the tools you need to run your own server, giving you greater privacy and security, but requiring more work to set up.
 
@@ -215,7 +215,7 @@ Summarized:
 
 Then:
 
-1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `yournewdomain.com/` instead of eg `github.io/lab-website-template`.
+1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `yourdomain.com/` instead of eg `yourdomain.com/lab-website-template`.
 
 (This is why it's necessary to use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter, as mentioned in [Contents](#contents).)
 
@@ -231,3 +231,5 @@ All included photos are licensed under [CC0](https://creativecommons.org/share-y
 
 There are a lot of different technologies involved in this template; it's okay if you don't have a deep understanding of them all.
 If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
+
+<p align="center"><img height="200" src="https://user-images.githubusercontent.com/8326331/96628877-d1658e00-12e0-11eb-894c-7bb0d7f07632.png" alt="Lab Website Template"></p>
