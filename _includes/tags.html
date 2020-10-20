@@ -1,9 +1,12 @@
+{% assign tags = include.tags | join: " " %}
+{% assign tags = tags | split: " " %}
+{% if tags.size > 0 %}
 <div
   class="tags"
   {% if include.github %}data-github-tags="{{ include.github }}"{% endif %}
 >
-  {% assign tags = include.tags | split: " " %}
   {% for tag in tags %}
   <span class="tag">{{ tag }}</span>
   {% endfor %}
 </div>
+{% endif %}

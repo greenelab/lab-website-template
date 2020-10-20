@@ -16,15 +16,20 @@ In other words, people who need [these features](#features) and have [this backg
 - **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
 - Automatically pull in and display tags from GitHub repositories
 - Works and looks good on all major desktop and mobile browsers
-- A suite pre-built components: social media links, figures w/ captions, image galleries, tags, member portraits, and much more
-- Fully and easily customizable
-- A **Home** page, where you can highlight the most important things that make your lab special
-- A **Research** page, with a full, sorted, searchable list of your published works
-- A **Resources** page, where you can show off your software, datasets, or other useful tools
-- Individual team member pages with bios, assignable roles, and social media links
-- A **Team** page, compiled automatically from individual members
-- A **Blog** page, with dated and tagged posts about anything
-- A **Contact** page, where you can specify all the routes for communicating with your lab
+- A suite of pre-built components:
+  - beautifully formatted tables and code blocks
+  - social media links with icons
+  - figures with captions
+  - image galleries
+  - multi-size cards with image and text
+  - member portraits with assignable role icons
+  - ...and more!
+- A **home page**, where you can highlight the most important things that make your lab special
+- A **research page**, with a sorted, searchable list of all your published works
+- A **blog page**, with a sorted, grouped, tagged list of all your posts
+- A **resources page**, where you can show off your software, datasets, or other useful things
+- Individual **team member pages** with bios, assignable roles, and social media links
+- A **team** page, compiled automatically from individual members
 
 ## Background knowledge
 
@@ -108,8 +113,8 @@ You might want to touch these if you want more customization, but make sure you 
   If you need to add your own custom styles, make a new `.scss` file here and make sure to include it in the site in `/_includes/styles.html`.
 - `/js` - JavaScript "plugins" that add interactive features to the site, such as tooltips.
 - `start.sh` - A convenient script to start and open the site on your computer.
-Quicker to type and easier to remember than the commands it runs.
-Run like `./start.sh`.
+  Quicker to type and easier to remember than the commands it runs.
+  Run like `./start.sh`.
 
 **Under-the-hood**
 
@@ -123,7 +128,7 @@ You should never need to touch these.
 - .gitignore - Files to not be tracked/included in your site's repo.
 - `debug.log` - Jekyll outputs this log when something goes wrong compiling the site.
 - `Gemfile` and `Gemfile.lock` - Files that specify the package dependencies of the project.
-Similar to `package.json` and `package-lock.json` in `npm`.
+  Similar to `package.json` and `package-lock.json` in `npm`.
 
 ## Common tasks
 

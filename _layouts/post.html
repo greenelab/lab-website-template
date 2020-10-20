@@ -8,6 +8,12 @@ layout: default
 
 {% include post-info.html post=page heading=true %}
 
+{% capture html %}
+{% include tags.html tags=page.tags %}
+{% endcapture %}
+
+{% include centerer.html html=html %}
+
 <hr />
 
 {{ content }}
