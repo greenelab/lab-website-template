@@ -113,7 +113,7 @@ You might want to touch these if you want more customization, but make sure you 
 - `/_layouts` - Templates that all pages are built upon.
 - `/css` - Sass styles that determine how the site looks.
   Notably, see `variables.scss` to change things like site-wide colors and fonts.
-  If you need to add your own custom styles, make a new `.scss` file here and make sure to include it in the site in `/_includes/styles.html`.
+  If you need to add your own custom styles, make a new `.scss` file here and make sure to include it in `/_includes/styles.html`.
 - `/js` - JavaScript "plugins" that add interactive features to the site, such as tooltips.
 - `start.sh` - A convenient script to start and open the site on your computer.
   Quicker to type and easier to remember than the commands it runs.
