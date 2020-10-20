@@ -128,7 +128,7 @@ You should never need to touch these.
   Changes to it will get overwritten when the site is rebuilt.
   This folder is also what GitHub reads to make the GitHub Pages site.
 - `/.jekyll-cache` - Cache so that Jekyll can build and re-build the site quickly.
-- .gitignore - Files to not be tracked/included in your site's repo.
+- `.gitignore` - Files to not be tracked/included in your site's repo.
 - `debug.log` - Jekyll outputs this log when something goes wrong compiling the site.
 - `Gemfile` and `Gemfile.lock` - Files that specify the package dependencies of the project.
   Similar to `package.json` and `package-lock.json` in `npm`.
