@@ -19,7 +19,7 @@ header {
   .logo_row {
     @include inline-flex-center;
 
-    .logo {
+    .logo > * {
       height: 50px;
     }
 
@@ -34,11 +34,13 @@ header {
 
   .nav_row {
     @include inline-flex-center;
+    flex-wrap: wrap;
 
     .nav_link {
       display: inline-block;
       padding: 10px;
       text-align: center;
+      white-space: nowrap;
       transition: opacity $fast;
     }
 

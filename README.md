@@ -70,14 +70,16 @@ That said, the template tries to make things as simple as possible, and if you'r
 An overview of the contents of this template and basic notes on how to edit and use them.
 If something is still not clear, try looking for comments in the file of interest.
 
-**Yours**
+### Your files and folders
 
-Folders and files to be edited by you.
+Files and folders to be edited by you.
 
+- `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `yoursite.com/blog`.
+  You can create any folder you want, put an `index.md` in it, and link to it like any other page.
+  To edit the links shown in the site header, see `/_includes/header.html`.
 - `/_posts` - Where your blog posts go.
   Name your post files in the format `YYYY-MM-DD-your-post-title.md`.
   Each file will automatically generate its own page and be listed on the blog page.
-- `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `yoursite.com/blog`.
 - `/icons` - Icons for when your site is bookmarked in a browser, added as an app shortcut on a phone, and shared on social media.
   These are important!
   Replace these images with variations of your own logo, taking care to match the size and cropping.
@@ -85,7 +87,7 @@ Folders and files to be edited by you.
   [realfavicongenerator.net](https://realfavicongenerator.net/) can help you generate all the necessary icon variations, but it goes overboard with support for legacy browsers.
   What's included in this template is a simplified subset that works fine on all of the most common modern browsers.
 - `/images` - A default folder to hold all your site's images.
-  You can organize and place your images however you like though.
+  You can organize and place your images however you want though.
   For example, you could put photos of your team in `/team/photos/` and just refer to them like `team/photos/anna-sun.jpg`.
 - `_config.yml` - The main Jekyll configuration for your site.
   Contains important site-wide things like the site title, the site url, the default email/twitter/etc, the default background image, etc.
@@ -93,20 +95,21 @@ Folders and files to be edited by you.
 - `index.md` - The landing page for your site.
 
 _Note:_ Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
-For example, `yoursite.com/join` actually takes you to `yoursite.com/join/index.html` (generated from `/join/index.md` in our case).
+For example, `yoursite.com/join` actually takes you to `yoursite.com/join/index.md`.
 And `yoursite.com` takes you to the root `index.md`.
 
 _Note:_ When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
 For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
 Pre-built components that have links already do this for you though, so you can just do eg `link="/join"`.
 
-**Template**
+### Template files and folders
 
-Folders and files used by the template.
+Files and folders used by the template.
 You might want to touch these if you want more customization, but make sure you know what you're doing.
 
 - `/_includes` - Reusable, small snippets of HTML that can take parameters, aka _components_.
   See `index.md` for which ones you are meant to use.
+  Notably, see `header.html` to edit the links shown in the site header.
 - `/_layouts` - Templates that all pages are built upon.
 - `/css` - Sass styles that determine how the site looks.
   Notably, see `variables.scss` to change things like site-wide colors and fonts.
@@ -116,9 +119,9 @@ You might want to touch these if you want more customization, but make sure you 
   Quicker to type and easier to remember than the commands it runs.
   Run like `./start.sh`.
 
-**Under-the-hood**
+### Under-the-hood files and folders
 
-Folders and files used internally by Jekyll or other parts the setup.
+Files and folders used internally by Jekyll or other tools in the setup.
 You should never need to touch these.
 
 - `/_site` - The "compiled" output of the entire Jekyll site.
@@ -130,7 +133,7 @@ You should never need to touch these.
 - `Gemfile` and `Gemfile.lock` - Files that specify the package dependencies of the project.
   Similar to `package.json` and `package-lock.json` in `npm`.
 
-## Common tasks
+## FAQ's
 
 ### Starting a copy of this template
 

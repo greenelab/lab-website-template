@@ -49,5 +49,6 @@ $slow: 1s ease;
 
 // sizes
 $page: 800px; // max-width of the main page column
-$tablet: 800px; // screen width cutoff point that changes layout
-$phone: 500px; // screen width cutoff point that changes layout
+// these affect layout of header and other components:
+$tablet: 900px; // screen width cutoff point for tablets
+$phone: 500px; // screen width cutoff point for phones
