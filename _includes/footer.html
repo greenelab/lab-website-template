@@ -1,13 +1,12 @@
 <footer>
-  <div
-    class="section_background"
-    style="background-image: url('{{ page.background | relative_url }}');"
-  ></div>
   <div class="footer_row">
     {% include social-link.html type="contact" large=true %}
     {% include social-link.html type="github" large=true %}
     {% include social-link.html type="twitter" large=true %}
     {% include social-link.html type="instagram" large=true %}
+    {% comment %}
+    {% include social-link.html type="rss" large=true %}
+    {% endcomment %}
   </div>
   <!-- &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }} -->
 </footer>

@@ -1,19 +1,13 @@
-<a
-  {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
-  class="portrait"
-  data-mini="{{ include.mini | default: false }}">
+<a {% if include.link %}href="{{ include.link | relative_url }}"{% endif %} class="portrait" data-mini="{{ include.mini | default: false }}">
   <span class="portrait_image">
-    <img
-      src="{{ include.image | relative_url }}"
-      title="{{ include.name }}"
-    />
+    <img src="{{ include.image | relative_url }}" title="{{ include.name }}" />
   </span>
-  {% if include.role %}
-  {% include role.html type=include.role %}
-  {% endif %}
-  {% if include.name %}
+  {%- if include.role -%}
+  {%- include role.html type=include.role -%}
+  {%- endif -%}
+  {%- if include.name -%}
   <span class="portrait_name">
     {{ include.name }}
   </span>
-  {% endif %}
+  {%- endif -%}
 </a>

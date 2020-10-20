@@ -1,0 +1,9 @@
+{% for member in site.members %}
+{%-
+  include portrait.html
+  name=member.title
+  link=member.url
+  image=member.image
+  role=member.role
+-%}
+{% endfor %}

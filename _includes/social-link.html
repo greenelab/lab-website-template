@@ -1,63 +1,65 @@
-{% assign icon = "fas fa-home" %}
-{% assign text = "Default Link" %}
+{%- assign icon = "fas fa-home" -%}
+{%- assign text = "Default Link" -%}
 
-{% if include.type == "website" %}
-{% assign icon = "fas fa-home" %}
-{% assign text = "Website" %}
-{% assign link = include.link | default: "" %}
-{% endif %}
+{%- if include.type == "website" -%}
+{%- assign icon = "fas fa-home" -%}
+{%- assign text = "Website" -%}
+{%- assign link = include.link | default: "" -%}
+{%- endif -%}
 
-{% if include.type == "contact" %}
-{% assign icon = "fas fa-envelope" %}
-{% assign text = "Contact" %}
-{% assign link = "contact" | relative_url | default: "" %}
-{% endif %}
+{%- if include.type == "contact" -%}
+{%- assign icon = "fas fa-envelope" -%}
+{%- assign text = "Contact" -%}
+{%- assign link = "contact" | relative_url | default: "" -%}
+{%- endif -%}
 
-{% if include.type == "email" %}
-{% assign icon = "fas fa-envelope" %}
-{% assign text = "Email" %}
-{% assign link = include.link | default: site.email | default: "" | prepend: "mailto:" %}
-{% endif %}
+{%- if include.type == "email" -%}
+{%- assign icon = "fas fa-envelope" -%}
+{%- assign text = "Email" -%}
+{%- assign link = include.link | default: site.email | default: "" | prepend: "mailto:" -%}
+{%- endif -%}
 
-{% if include.type == "google" %}
-{% assign icon = "fab fa-google" %}
-{% assign text = "Google Scholar" %}
-{% assign link = include.link | default: site.google | default: "" | prepend: "https://scholar.google.com/citations?hl=en&user=" %}
-{% endif %}
+{%- if include.type == "google" -%}
+{%- assign icon = "fab fa-google" -%}
+{%- assign text = "Google Scholar" -%}
+{%- assign link = include.link | default: site.google | default: "" | prepend: "https://scholar.google.com/citations?hl=en&user=" -%}
+{%- endif -%}
 
-{% if include.type == "github" %}
-{% assign icon = "fab fa-github" %}
-{% assign text = "GitHub" %}
-{% assign link = include.link | default: site.github | default: "" | prepend: "https://github.com/" %}
-{% endif %}
+{%- if include.type == "github" -%}
+{%- assign icon = "fab fa-github" -%}
+{%- assign text = "GitHub" -%}
+{%- assign link = include.link | default: site.github | default: "" | prepend: "https://github.com/" -%}
+{%- endif -%}
 
-{% if include.type == "twitter" %}
-{% assign icon = "fab fa-twitter" %}
-{% assign text = "Twitter" %}
-{% assign link = include.link | default: site.twitter | default: "" | prepend: "https://twitter.com/" %}
-{% endif %}
+{%- if include.type == "twitter" -%}
+{%- assign icon = "fab fa-twitter" -%}
+{%- assign text = "Twitter" -%}
+{%- assign link = include.link | default: site.twitter | default: "" | prepend: "https://twitter.com/" -%}
+{%- endif -%}
 
-{% if include.type == "instagram" %}
-{% assign icon = "fab fa-instagram" %}
-{% assign text = "Instagram" %}
-{% assign link = include.link | default: site.instagram | default: "" | prepend: "https://instagram.com/" %}
-{% endif %}
+{%- if include.type == "instagram" -%}
+{%- assign icon = "fab fa-instagram" -%}
+{%- assign text = "Instagram" -%}
+{%- assign link = include.link | default: site.instagram | default: "" | prepend: "https://instagram.com/" -%}
+{%- endif -%}
 
-{% if include.type == "youtube" %}
-{% assign icon = "fab fa-youtube" %}
-{% assign text = "YouTube" %}
-{% assign link = include.link | default: site.youtube | default: "" | prepend: "https://youtube.com/" %}
-{% endif %}
+{%- if include.type == "youtube" -%}
+{%- assign icon = "fab fa-youtube" -%}
+{%- assign text = "YouTube" -%}
+{%- assign link = include.link | default: site.youtube | default: "" | prepend: "https://youtube.com/" -%}
+{%- endif -%}
 
-{% comment %}
+{%- if include.type == "rss" -%}
+{%- assign icon = "fas fa-rss" -%}
+{%- assign text = "Blog RSS Feed" -%}
+{%- assign link = "/feed.xml" | absolute_url -%}
+{%- endif -%}
+
+{%- comment -%}
 To add more options for icons, see:
 https://fontawesome.com/icons?d=gallery&q=icon&m=free
-{% endcomment %}
+{%- endcomment -%}
 
-<a
-  href="{{ link }}"
-  class="social_link"
-  data-tooltip="{{ text }}"
-  aria-label="{{ text }}">
+<a href="{{ link }}" class="social_link" data-tooltip="{{ text }}" aria-label="{{ text }}">
   <i class="{{ icon }} {% if include.large %}fa-lg{% endif %}"></i>
 </a>

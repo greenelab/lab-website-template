@@ -1,6 +1,6 @@
 ---
 title: Felix Cited
-role: phd
+role: pi
 image: images/corgi.jpg
 website: fakewebsite.com
 email: felix@cited.com

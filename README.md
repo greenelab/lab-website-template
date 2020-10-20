@@ -35,7 +35,7 @@ In other words, people who need [these features](#features) and have [this backg
 
 Here are some (very basic) definitions to help you interpret the rest of the readme.
 If you aren't already somewhat familiar with these, this template might not be for you.
-That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it.
+That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily.
 
 - A **repository** (or repo for short) is a place to store code for a project
 - **[Git](https://try.github.io/)** is a for and way of tracking changes to code through a [command line](https://en.wikipedia.org/wiki/Command-line_interface).
@@ -68,7 +68,6 @@ That said, the template tries to make things as simple as possible, and if you'r
 ## Contents
 
 An overview of the contents of this template and basic notes on how to edit and use them.
-If something is still not clear, try looking for comments in the file of interest.
 
 ### Your files and folders
 
@@ -229,6 +228,11 @@ All included photos are licensed under [CC0](https://creativecommons.org/share-y
 ## Support
 
 There are a lot of different technologies involved in this template; it's okay if you don't have a deep understanding of them all.
-If you need help or have a suggestion for how to make this template easier to understand or use for novice users, please let us know by [making a GitHub account](https://github.com/join) and [posting a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
+
+If you need help, first make sure you search this readme and look through `index.md`.
+Also, we've tried to include comments in all files where we think they're needed, especially where users are likely to want to customize things.
+Look for file names relevant to your question, and you may find that you can achieve what you want just by opening them up and editing them.
+
+If you still need help, or if you have a suggestion for how to make this template easier to use for novices, please [post a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
 
 <p align="center"><img height="200" src="https://user-images.githubusercontent.com/8326331/96628877-d1658e00-12e0-11eb-894c-7bb0d7f07632.png" alt="Lab Website Template"></p>
