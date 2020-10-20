@@ -77,7 +77,7 @@ Folders and files to be edited by you.
 - `/_posts` - Where your blog posts go.
   Name your post files in the format `YYYY-MM-DD-your-post-title.md`.
   Each file will automatically generate its own page and be listed on the blog page.
-- `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `https://greenelab.com/blog`.
+- `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `yoursite.com/blog`.
 - `/icons` - Icons for when your site is bookmarked in a browser, added as an app shortcut on a phone, and shared on social media.
   These are important!
   Replace these images with variations of your own logo, taking care to match the size and cropping.
@@ -186,6 +186,12 @@ Summarized:
 2. Point your domain name provider to GitHub Pages using an `A` record.
    It's slightly different for each company, so they should have their own instructions on how to do this.
 3. Set the custom domain field in the settings of the repo.
+
+Then:
+
+1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `yournewdomain.com/` instead of eg `github.io/lab-website-template`.
+
+(This is why it's necessary to use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter, as mentioned in [Contents](#contents).)
 
 ### Updating your site when this template gets updated
 
