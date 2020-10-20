@@ -1,11 +1,10 @@
 ---
 title: Home
-background: images/test-tube.jpg
 ---
 
-# <i class="fas fa-flask"></i>Lab Website Template
+# <i class="fas fa-flask"></i>Home
 
-An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
+[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template and manual on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
@@ -278,7 +277,7 @@ An example of putting other components in a row:
 
 A customizable _social link_ component, with icon and tooltip.
 Specify custom links, or leave blank to use site defaults  in `_config.yml`.
-To see the built-in links and add your own, see `_includes/social-link.html`.
+To see the built-in links and add your own, see `/_includes/social-link.html`.
 
 {% capture html %}
 {% include social-link.html type="website" link="https://mysite.com/" %}
@@ -295,7 +294,7 @@ To see the built-in links and add your own, see `_includes/social-link.html`.
 ## Role
 
 A customizable _role_ component, with an icon and optional text, useful for quickly indicating what different team members do.
-To see the built-in roles and add your own, see `_includes/role.html`.
+To see the built-in roles and add your own, see `/_includes/role.html`.
 
 {% capture html %}
 {%
@@ -360,7 +359,7 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 ## Blog List
 
 A _blog list_ component, to list and summarize all blog posts on your site.
-Go to [the blog page](blog) to see it in action.
+Go to [the blog page]({{ "/blog" | relative_url }}) to see it in action.
 
 ## Font Awesome Icons
 

@@ -1,3 +1,8 @@
+// GitHub tags plugin
+// fetches tags (aka "topics") from a given GitHub repo and adds them to row
+
+// specify repo in data-github-tags attribute
+
 // github endpoint for getting tags of a certain repo
 const api = "https://api.github.com/repos/REPO/topics";
 // NOTE: the github api to get repo "topics (tags) is still in preview

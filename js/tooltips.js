@@ -1,3 +1,13 @@
+// tooltips plugin
+// shows a popup of text on hover/focus of an element
+
+// specify text to show in data-tooltip attribute
+// specify placement (top, bottom, left, right) in data-tooltip-placement attribute
+// specify custom delay (in ms) in data-tooltip-delay attribute
+
+const defaultPlacement = "top";
+const defaultDelay = 100;
+
 // create tooltip listener on any element with a data-tooltip attribute
 const createTooltips = () => {
   // create tooltip element
@@ -7,7 +17,7 @@ const createTooltips = () => {
 
   // init popper.js library
   let popper = null;
-  let options = ({ placement = "top" }) => ({
+  let options = ({ placement = defaultPlacement }) => ({
     placement,
     modifiers: [
       // https://github.com/popperjs/popper-core/issues/1138
@@ -19,7 +29,7 @@ const createTooltips = () => {
   // open tooltip after delay
   let timer;
   const delayedOpen = ({ target }) => {
-    const delay = target.dataset.delay || 100;
+    const delay = target.dataset.delay || defaultDelay;
     window.clearTimeout(timer);
     timer = window.setTimeout(() => open({ target }), delay);
   };

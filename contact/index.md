@@ -4,8 +4,8 @@ title: Contact
 
 # <i class="fas fa-envelope"></i>Contact
 
-Our lab is part of the [Department of Metaphor](https://www.imdb.com/title/tt0200276/), at the school of [Whimsy and Caprice](https://www.imdb.com/name/nm0815070/).
-We are located on the 13th floor of the [Center for Wit and Sagacity](https://www.imdb.com/title/tt0708773/characters/nm0000883).
+Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
+We are located on the 13th floor of the [Center for Wit and Sagacity]().
 
 {% include figure.html image="images/volcano.jpg" width="100%" %}
 
@@ -20,6 +20,10 @@ We are located on the 13th floor of the [Center for Wit and Sagacity](https://ww
 {:.center}
 
 ## Address
+
+{% comment %}
+Tip: put both a mailing address for mail/deliveries, AND a navigation-friendly address so people can find their way to you easily.
+{% endcomment %}
 
 That St & The Other St  
 Porters Lake, NS B3E 1H3  
