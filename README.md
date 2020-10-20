@@ -95,8 +95,7 @@ Files and folders to be edited by you.
 - `index.md` - The landing page for your site.
 
 _Note:_ Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
-For example, `yoursite.com/join` actually takes you to `yoursite.com/join/index.md`.
-And `yoursite.com` takes you to the root `index.md`.
+For example, `yoursite.com/join` actually takes you to `/join/index.md`, and `yoursite.com` takes you to the root `index.md`.
 
 _Note:_ When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
 For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
