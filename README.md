@@ -44,6 +44,8 @@ That said, the template tries to make things as simple as possible, and if you'r
   No need to buy monthly hosting from GoDaddy or the like!
   Put the source code for your website in a repo, turn on GitHub Pages, and the site will go live.
   Any changes you make to the code will update on the site automatically.
+- **[GitHub Actions](https://github.com/features/actions)** is a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
+  Setting up GitHub Actions is only needed for certain specific tasks that aren't handled automatically by Jekyll or other parts of the template.
 - **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)** is how you write the main content of a web page.
   It tells the browser what to show, like paragraphs of text, tables of numbers, images with captions, etc.
 - **[Markdown](https://en.wikipedia.org/wiki/Markdown)** is a easier way to write certain [basic things from HTML](https://commonmark.org/help/).
@@ -62,7 +64,9 @@ That said, the template tries to make things as simple as possible, and if you'r
   This is much better than having to type them all out manually and re-sort them any time you add or remove one.
   You can almost think of Liquid as (a much more limited) JavaScript for Jekyll, except that it still results in a static file at the end.
 - **[Ruby](https://www.ruby-lang.org/en/)** is a general-purpose programming language.
-  It isn't necessary to know any Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is built on Ruby.
+  You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is built on Ruby.
+- **[Python](https://www.python.org/)** is a general-purpose programming language.
+  You don't need to know Python to use this template, unless you want to understand or modify the behavior of [the automatic citations](#automatic-citations).
 
 ## Contents
 
@@ -114,8 +118,8 @@ Files and folders to be edited by you.
 Files and folders used by the template.
 You might want to touch these if you want more customization, but make sure you know what you're doing.
 
-- `.github` - Files related to [GitHub Actions](https://github.com/features/actions), a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
-  This template uses GitHub Actions particularly to help [build the research page](#automatic-citations).
+- `.github` - Files related to GitHub Actions.
+  This template uses GitHub Actions to help [build the research page](#automatic-citations).
 - `/_includes` - Reusable, small snippets of HTML that can take parameters, aka _components_.
   See `index.md` for which ones you are meant to use.
   Notably, see `header.html` to edit the links shown in the site header.
@@ -191,7 +195,7 @@ See their source code to see how to write the components into your site, and see
 ### Automatic Citations
 
 Automatic citations work a little bit different than the rest of the template.
-Instead of Jekyll automatically building them, we need to run a special [Python](https://www.python.org/) script in `/_data/build-research.py`.
+Instead of Jekyll automatically building them, we need to run a special Python script in `/_data/build-research.py`.
 
 If you're previewing and testing your site on the GitHub website:
 
