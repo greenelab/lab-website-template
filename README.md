@@ -36,23 +36,23 @@ Here are some (very basic) definitions to help you interpret the rest of the rea
 If you aren't already somewhat familiar with these, this template might not be for you.
 That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily.
 
-- A **repository** (or repo for short) is a place to store code for a project
+- A **repository** (or _repo_ for short) is a place to store code for a project
 - **[Git](https://try.github.io/)** is a for and way of tracking changes to code through a [command line](https://en.wikipedia.org/wiki/Command-line_interface).
 - **[GitHub](https://github.com/)** is an online place to store, view, track, share, and collaborate on code.
   You can make simple changes to your code on the GitHub website itself, but for most changes you'll need to use [Git](https://git-scm.com/).
-- **[GitHub Pages](https://pages.github.com/)** (or gh-pages for short) is a service built-in to GitHub that can host a website for you, for free.
+- **[GitHub Pages](https://pages.github.com/)** (or _gh-pages_ for short) is a service built-in to GitHub that can host a website for you, for free.
   No need to buy monthly hosting from GoDaddy or the like!
   Put the source code for your website in a repo, turn on GitHub Pages, and the site will go live.
   Any changes you make to the code will update on the site automatically.
-- **[GitHub Actions](https://github.com/features/actions)** is a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
+- **[GitHub Actions](https://github.com/features/actions)** (or _gh-actions_ for short) is a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
   Setting up GitHub Actions is only needed for certain specific tasks that aren't handled automatically by Jekyll or other parts of the template.
 - **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)** is how you write the main content of a web page.
   It tells the browser what to show, like paragraphs of text, tables of numbers, images with captions, etc.
 - **[Markdown](https://en.wikipedia.org/wiki/Markdown)** is a easier way to write certain [basic things from HTML](https://commonmark.org/help/).
   But browsers can't display markdown directly; it has to be converted to HTML first.
-- **[Sass](https://sass-lang.com/)** (a superset of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)) is how you get a web page to look that way you want it.
+- **[Sass](https://sass-lang.com/)** (a superset of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)) is how you get a web page to look that way you want.
   You can set [positions, margins, colors, fonts, etc](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index), and apply them to certain elements in the HTML with [selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
-- **[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)** (or JS for short) is a programming language to make web pages more interactive.
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)** (or _js_ for short) is a programming language to make web pages more interactive.
   HTML is static/unchanging, but JavaScript allows the page to change dynamically as the user is viewing it.
   For example, JavaScript can hide/show certain paragraphs in the HTML based on what the user types into a search box.
 - **[Jekyll](https://jekyllrb.com/)** is a tool that can automatically generate large HTML sites from much simpler markdown, and with less grunt work and code duplication, allowing you to just focus on the content.
