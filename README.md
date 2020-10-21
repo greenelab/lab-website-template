@@ -185,7 +185,7 @@ OR
 
 ### Using the pre-built components
 
-The various `index.md` files in this repo aim to provide a complete listing of all of the included components, and document how to use them.
+The various `index.md` files in this repo aim to list and document all of the included components.
 See their source code to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
 
 ### Automatic Citations
