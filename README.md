@@ -98,12 +98,17 @@ Files and folders to be edited by you.
 - `404.md` - A fallback page for when a user goes to a page that doesn't exist on your site.
 - `index.md` - The landing page for your site.
 
-_Note:_ Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
-For example, `yoursite.com/join` actually takes you to `/join/index.md`, and `yoursite.com` takes you to the root `index.md`.
+#### General editing notes
 
-_Note:_ When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
-For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
-You don't have to do this for pre-built component links, though; they do it for you (eg you can just do `link="/join"`).
+- Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
+  For example, `yoursite.com/join` actually takes you to `/join/index.md`, and `yoursite.com` takes you to the root `index.md`.
+
+- When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
+  For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
+  You don't have to do this for pre-built component links, though; they do it for you (eg you can just do `link="/join"`).
+
+- Liquid has [special syntax to trim whitespace](https://shopify.github.io/liquid/basics/whitespace/) on either side of Liquid tags.
+  Sometimes this matters, like when you have expressions on separate lines that might evaluate to blank, leading markdown to insert blank paragraphs, messing up layout.
 
 ### Template files and folders
 

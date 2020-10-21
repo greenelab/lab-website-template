@@ -30,11 +30,12 @@
   .card_text {
     .card_title {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-weight: $semi-bold;
     }
-    .card_row {
-      margin: 10px 0;
+
+    & > * {
+      margin: 5px 0;
       @include trim-margins;
       text-align: justify;
     }
@@ -93,13 +94,22 @@
     .card_image {
       width: 100px;
       height: 100px;
-      margin-right: 20px;
+      margin-right: 30px;
     }
 
     .card_text {
       width: 0;
       flex-grow: 1;
-      text-align: left;
+
+      .card_title {
+        text-align: left;
+      }
+
+      @media (min-width: $phone) {
+        .tags {
+          justify-content: flex-start;
+        }
+      }
     }
 
     @media (max-width: $phone) {

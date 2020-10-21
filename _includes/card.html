@@ -36,8 +36,10 @@
     {%- assign firstchar = row | slice: 0 -%}
     {%- if firstchar != "<" -%}
     <p
-      class="card_row {% if truncate %}truncate{% endif %}"
-      {% if truncate %}tabindex="0"{% endif %}
+      {% if truncate %}
+      class="truncate"
+      tabindex="0"
+      {% endif %}
     >
     {%- endif -%}
       {{- row | markdownify | remove: "<p>" | remove: "</p>" -}}

@@ -1,0 +1,99 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="-400 -300 800 600"
+  height="16px"
+  style="overflow: visible;"
+  class="icon_with_text"
+>
+  <!-- logo -->
+  <g transform="scale(0.9)">
+    <!-- M -->
+    <path
+      class="letter"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="50"
+      d="
+        M -125 125 
+        L -125 -125
+        L 0 45
+        L 125 -125
+        L 125 125
+      "
+    />
+    <!-- left bracket -->
+    <path
+      class="bracket"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="50"
+      d="
+        M -200 -250
+        L -330 0 
+        L -200 250
+      "
+    />
+    <!-- right bracket -->
+    <path
+      class="bracket"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="50"
+      d="
+        m 200 250 
+        L 330 0
+        L 200 -250
+      "
+    />
+    <!-- left line -->
+    <path
+      class="line"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-width="50"
+      d="
+        M -330 0
+        L -370 0
+      "
+    />
+    <!-- right line -->
+    <path
+      class="line"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-width="50"
+      d="
+        M 330 0
+        L 370 0
+      "
+    />
+    <!-- left circle -->
+    <circle
+      class="circle"
+      cx="-455"
+      cy="0"
+      r="30"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="30"
+    />
+    <!-- right circle -->
+    <circle
+      class="circle"
+      cx="455"
+      cy="0"
+      r="30"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="30"
+    />
+  </g>
+</svg>
