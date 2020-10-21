@@ -1,4 +1,8 @@
-<div class="card" data-size="{{ include.size }}">
+{% assign size = include.size %}
+{% if size != "large" and size != "medium" and size != "small" %}
+{% assign size = "large" %}
+{% endif %}
+<div class="card" data-size="{{ size }}">
   {% assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url %}
   <a
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
@@ -19,23 +23,28 @@
       {{- include.heading -}}
     </a>
     {% endif %}
-    {% for i in (1..5) %}
-    {% assign row = "row" | append: i %}
-    {% assign row = include[row] %}
-    {% if row %}
-    {% assign truncate = include.truncate | default: 0 %}
-    {% if i <= truncate %}
-    {% assign truncate = true %}
-    {% else %}
-    {% assign truncate = false %}
-    {% endif %}
+    {%- for i in (1..5) -%}
+    {%- assign row = "row" | append: i -%}
+    {%- assign row = include[row] | strip -%}
+    {%- if row != empty -%}
+    {%- assign truncate = include.truncate | default: 0 -%}
+    {%- if i <= truncate -%}
+    {%- assign truncate = true -%}
+    {%- else -%}
+    {%- assign truncate = false -%}
+    {%- endif -%}
+    {%- assign firstchar = row | slice: 0 -%}
+    {%- if firstchar != "<" -%}
     <p
       class="card_row {% if truncate %}truncate{% endif %}"
       {% if truncate %}tabindex="0"{% endif %}
     >
+    {%- endif -%}
       {{- row | markdownify | remove: "<p>" | remove: "</p>" -}}
+    {%- if firstchar != "<" -%}
     </p>
-    {% endif %}
-    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
   </div>
 </div>

@@ -1,0 +1,45 @@
+- title: Voluptate
+  type: featured
+  image: images/space.jpg
+  link: https://nasa.gov/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  repo: greenelab/lab-website-template
+
+- title: Excepteur
+  type: featured
+  image: images/polar-graph.jpg
+  link: https://nasa.gov/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  repo: greenelab/lab-website-template
+
+- title: Incididunt
+  type: other
+  image: images/microscope.jpg
+  link: https://microscope.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- title: Incididunt
+  type: other
+  image: images/microscope.jpg
+  link: https://microscope.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- title: Incididunt
+  type: other
+  image: images/microscope.jpg
+  link: https://microscope.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- title: Laboris
+  type: legacy
+  image: images/test-tube.jpg
+  link: https://greenelab.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+
+- title: Culpa
+  type: legacy
+  image: images/laboratory.jpg
+  link: https://greenelab.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template

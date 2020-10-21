@@ -187,7 +187,7 @@ You can include this as part of other components, such as the _card_ component.
 {%
   include tags.html
   tags="ovarian-cancer dataset gene-expression"
-  github="greenelab/lab-website-template"
+  repo="greenelab/lab-website-template"
 %}
 
 ## Card
@@ -356,6 +356,11 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 {% endcapture %}
 
 {% include centerer.html html=html %}
+
+## Resource List
+
+A _resource list_ component, to list, filter, and sort all of your tools, datasets, etc (specified in `/_data/resources.yml`).
+Go to [the resources page]({{ "/resources" | relative_url }}) to see it in action.
 
 ## Member List
 

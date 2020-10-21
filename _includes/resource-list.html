@@ -1,0 +1,26 @@
+{% assign resources = site.data.resources %}
+
+{% if include.type != nil %}
+{% if include.type == "" %}
+{% assign type = nil %}
+{% else %}
+{% assign type = include.type %}
+{% endif %}
+{% assign resources = resources | where_exp: "resource", "resource.type == type" %}
+{% endif %}
+
+{% for resource in resources %}
+{% capture tags %}
+{% include tags.html repo=resource.repo %}
+{% endcapture %}
+
+{%-
+  include card.html
+  size=include.size
+  heading=resource.title
+  image=resource.image
+  link=resource.link
+  row1=resource.description
+  row2=tags
+-%}
+{% endfor %}

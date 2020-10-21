@@ -76,9 +76,10 @@ Files and folders to be edited by you.
 - `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `yoursite.com/blog`.
   You can create any folder you want, put an `index.md` in it, and link to it like any other page.
   To edit the links shown in the site header, see `/_includes/header.html`.
-- `/_data` - ___
+- `/_data` - A place to put large, ordered lists of data that don't need individual generated pages.
+  Your `research` and `resources` content live here.
 - `/_members` - Where your team member bios go.
-Member bios can include a photo, role, group, and social media links.
+  Member bios can include a photo, role, group, and social media links.
   Each file will automatically generate its own page.
 - `/_posts` - Where your blog posts go.
   Name your post files in the format `YYYY-MM-DD-your-post-title.md`.

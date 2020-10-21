@@ -99,6 +99,7 @@
     .card_text {
       width: 0;
       flex-grow: 1;
+      text-align: left;
     }
 
     @media (max-width: $phone) {
@@ -114,10 +115,6 @@
 
       .card_text {
         width: 100%;
-
-        .card_title {
-          text-align: center;
-        }
       }
     }
   }
