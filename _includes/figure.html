@@ -18,9 +18,9 @@
       "
     />
   </a>
-  {% if include.caption %}
+  {%- if include.caption -%}
   <figcaption class="figure_caption">
-    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    {{- include.caption | markdownify | remove: "<p>" | remove: "</p>" -}}
   </figcaption>
-  {% endif %}
+  {%- endif -%}
 </figure>

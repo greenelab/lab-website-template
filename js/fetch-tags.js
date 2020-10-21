@@ -12,7 +12,6 @@ const headers = { Accept: "application/vnd.github.mercy-preview+json" };
 const createTags = async () => {
   // get tag rows with specified repos
   const rows = Array.from(document.querySelectorAll("[data-repo]"));
-  console.log(rows)
 
   // for each repo
   for (const row of rows) {

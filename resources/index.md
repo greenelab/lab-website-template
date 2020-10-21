@@ -4,6 +4,11 @@ title: Resources
 
 # <i class="fas fa-tools"></i>Resources
 
+## Resource List
+
+A _resource list_ component, to sort and group all of your tools, datasets, etc.
+Can be used on any page, but assumes its content from `/_data/resources.yml`.
+
 {% capture html %}
 {% include resource-list.html type="featured" size="large" %}
 {% endcapture %}

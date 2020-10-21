@@ -1,5 +1,8 @@
 ---
 title: Anne Chovie
+search:
+  - A. Chovie
+  - A Chovie
 role: programmer
 image: images/corgi.jpg
 website: fakewebsite.com

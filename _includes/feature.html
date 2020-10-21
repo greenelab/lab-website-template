@@ -6,9 +6,9 @@
     <img src="{{ include.image | relative_url }}" />
   </a>
   <div class="feature_text">
-    {% if include.heading %}
+    {%- if include.heading -%}
     <p class="feature_heading">{{ include.heading }}</p>
-    {% endif %}
+    {%- endif -%}
     {{ include.text | markdownify }}
   </div>
 </div>

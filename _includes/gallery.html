@@ -1,25 +1,29 @@
-{% assign max = 0 %}
-{% for i in (1..100) %}
+{%- assign max = 0 -%}
+
+{%- for i in (1..100) -%}
 {% assign image = "image" | append: i %}
 {% assign image = include[image] %}
 {% if image %}
 {% assign max = i %}
 {% endif %}
-{% endfor %}
+{%- endfor -%}
+
 <div
   class="gallery"
   data-fit="{{ include.fit | default: true }}"
   data-flat="{{ include.flat | default: false }}"
   data-number="{{ max }}"
 >
-  {% for i in (1..100) %}
-  {% assign image = "image" | append: i %}
-  {% assign image = include[image] %}
-  {% assign tooltip = "tooltip" | append: i %}
-  {% assign tooltip = include[tooltip] %}
-  {% assign link = "link" | append: i %}
-  {% assign link = include[link] %}
-  {% if image %}
+  {%- for i in (1..100) -%}
+
+  {%- assign image = "image" | append: i -%}
+  {%- assign image = include[image] -%}
+  {%- assign tooltip = "tooltip" | append: i -%}
+  {%- assign tooltip = include[tooltip] -%}
+  {%- assign link = "link" | append: i -%}
+  {%- assign link = include[link] -%}
+
+  {%- if image -%}
   <a
     {% if link %}href="{{ link | relative_url }}"{% endif %}
     class="gallery_item"
@@ -27,6 +31,7 @@
   >
     <img src="{{ image | relative_url }}">
   </a>
-  {% endif %}
-  {% endfor %}
+  {%- endif -%}
+
+  {%- endfor -%}
 </div>

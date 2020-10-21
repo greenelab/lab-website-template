@@ -1,5 +1,6 @@
 {% assign tags = include.tags | join: " " %}
 {% assign tags = tags | split: " " %}
+
 {% if tags.size > 0 or include.repo %}
 <div
   class="tags"

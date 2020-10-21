@@ -17,12 +17,11 @@ In other words, people who need [these features](#features) and have [this backg
 - Automatically pull in and display tags from GitHub repositories
 - Works and looks good on all major desktop and mobile browsers
 - A suite of pre-built components:
-  - beautifully formatted tables and code blocks
+  - formatted tables and code blocks
   - social media links with icons
   - figures with captions
   - image galleries
   - multi-size cards with image and text
-  - member portraits with assignable role icons
   - ...and more!
 - A **home page**, where you can highlight the most important things that make your lab special
 - A **research page**, with a sorted, searchable list of all your published works
@@ -115,6 +114,8 @@ Files and folders to be edited by you.
 Files and folders used by the template.
 You might want to touch these if you want more customization, but make sure you know what you're doing.
 
+- `.github` - Files related to [GitHub Actions](https://github.com/features/actions), a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
+  This template uses GitHub Actions particularly to help [build the research page](#automatic-citations).
 - `/_includes` - Reusable, small snippets of HTML that can take parameters, aka _components_.
   See `index.md` for which ones you are meant to use.
   Notably, see `header.html` to edit the links shown in the site header.
@@ -184,8 +185,30 @@ OR
 
 ### Using the pre-built components
 
-The `index.md` file aims to provide a complete listing of all of the included components, and how to use them.
-See its [raw source code](https://github.com/greenelab/lab-website-template/blob/master/index.md) to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
+The various `index.md` files in this repo aim to provide a complete listing of all of the included components, and document how to use them.
+See their source code to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
+
+### Automatic Citations
+
+Automatic citations work a little bit different than the rest of the template.
+Instead of Jekyll automatically building them, we need to run a special [Python](https://www.python.org/) script in `/_data/build-research.py`.
+
+If you're previewing and testing your site on the GitHub website:
+
+1. Add or change the desired papers in `/_data/research-input.yml`
+2. Make a pull request with the changes
+3. GitHub should automatically run the Python script
+4. Citations will be automatically generated and output to `/_data/research-output.yml`
+5. GitHub should automatically commit the output file onto your pull request
+6. The _research list_ component will now (in a pull request preview and when you merge the pull request) show the updated list of papers
+
+If you're previewing and testing your site on your computer:
+
+1. Add or change the desired papers in `/_data/research-input.yml`
+2. [Install Python](https://www.python.org/downloads/)
+3. Run `./build.sh`, which will run the Python script
+4. Citations will be automatically generated and output to `/_data/research-output.yml`
+5. The _research list_ component will now show the updated list of papers
 
 ### Configuring blog post comments
 
@@ -239,7 +262,7 @@ All included photos are licensed under [CC0](https://creativecommons.org/share-y
 
 There are a lot of different technologies involved in this template; it's okay if you don't have a deep understanding of them all.
 
-If you need help, first make sure you search this readme and look through `index.md`.
+If you need help, first make sure you search this readme and look through the various `index.md` files in the repo.
 Also, we've tried to include comments in all files where we think they're needed, especially where users are likely to want to customize things.
 Look for file names relevant to your question, and you may find that you can achieve what you want just by opening them up and editing them.
 

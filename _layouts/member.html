@@ -41,3 +41,29 @@ layout: default
 {% include centerer.html html=html %}
 
 {{ content }}
+
+{% assign names = "" | split: ',' %}
+
+{% if page.search.first %}
+{% assign names = names | concat: page.search %}
+{% elsif page.search %}
+{% assign names = names | push: page.search %}
+{% elsif page.title %}
+{% assign names = names | push: page.title %}
+{% endif %}
+
+{% capture search %}
+{% for name in names %}"{{ name }}" {% endfor %}
+{% endcapture %}
+
+{% assign search =  search | strip | prepend: "/research/?search=" %}
+
+{% capture text %}
+{{ page.title }}'s papers
+{% endcapture %}
+
+{% capture html %}
+{% include big-link.html icon="fas fa-book-open" link=search text=text %}
+{% endcapture %}
+
+{% include centerer.html html=html %}

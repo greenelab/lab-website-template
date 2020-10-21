@@ -1,7 +1,9 @@
 {% assign size = include.size %}
+
 {% if size != "large" and size != "medium" and size != "small" %}
 {% assign size = "large" %}
 {% endif %}
+
 <div class="card" data-size="{{ size }}">
   {% assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url %}
   <a
@@ -23,16 +25,21 @@
       {{- include.heading -}}
     </a>
     {% endif %}
+
     {%- for i in (1..5) -%}
+
     {%- assign row = "row" | append: i -%}
     {%- assign row = include[row] | strip -%}
+
     {%- if row != empty -%}
+
     {%- assign truncate = include.truncate | default: 0 -%}
     {%- if i <= truncate -%}
     {%- assign truncate = true -%}
     {%- else -%}
     {%- assign truncate = false -%}
     {%- endif -%}
+
     {%- assign firstchar = row | slice: 0 -%}
     {%- if firstchar != "<" -%}
     <p
@@ -46,7 +53,10 @@
     {%- if firstchar != "<" -%}
     </p>
     {%- endif -%}
+    
     {%- endif -%}
+
     {%- endfor -%}
+
   </div>
 </div>

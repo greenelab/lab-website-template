@@ -1,5 +1,7 @@
 <a {% if include.link %}href="{{ include.link | relative_url }}"{% endif %} class="portrait" data-mini="{{ include.mini | default: false }}">
-  {% assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url %}
+
+  {%- assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url -%}
+
   <span class="portrait_image">
     {%- if include.image -%}
     <img
@@ -10,12 +12,15 @@
     <img src="{{ placeholder }}">
     {%- endif -%}
   </span>
+
   {%- if include.role -%}
   {%- include role.html type=include.role -%}
   {%- endif -%}
+
   {%- if include.name -%}
   <span class="portrait_name">
     {{ include.name }}
   </span>
   {%- endif -%}
+
 </a>

@@ -1,0 +1,33 @@
+{%- assign byyear = site.posts | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse -%}
+
+{%- for yeargroup in byyear -%}
+
+<hr />
+
+<h3>{{ yeargroup.name }}</h3>
+
+{%- for post in yeargroup.items -%}
+
+<p>
+  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+</p>
+
+{%- include post-info.html post=post -%}
+
+{%- include tags.html tags=post.tags -%}
+
+{%- if forloop.index <= 3 -%}
+{{ post.content | strip_html | truncate: 500 }}
+<p class="center">
+  <a href="{{ post.url | relative_url }}">Read more →</a>
+</p>
+{%- else -%}
+{{ post.content | strip_html | truncate: 200 }}
+{%- endif -%}
+
+{%- if forloop.index < forloop.length -%}
+{%- endif -%}
+
+{%- endfor -%}
+
+{%- endfor -%}

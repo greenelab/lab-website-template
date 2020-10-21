@@ -78,6 +78,7 @@ Pharetra et ultrices neque ornare aenean euismod elementum nisi.
 A _centerer_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
 
 {% capture html %}
+
 <div>item 1</div>
 <div>item 2</div>
 <div>item 3</div>
@@ -170,26 +171,6 @@ Useful for transparent images, and images that should not be cropped, like logos
   image5="images/bacteria.jpg"
 %}
 
-## Big Link
-
-A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
-
-{% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
-{%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="/collaborators" -%}
-{:.center}
-
-## Tags
-
-A _tags_ component.
-Provide your own list of tags separated by spaces, and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
-You can include this as part of other components, such as the _card_ component.
-
-{%
-  include tags.html
-  tags="ovarian-cancer dataset gene-expression"
-  repo="greenelab/lab-website-template"
-%}
-
 ## Card
 
 A multi-size, flexible _card_ component, with an image, a title link, markdown text, and extra rows for special items such as tags.
@@ -205,10 +186,10 @@ A multi-size, flexible _card_ component, with an image, a title link, markdown t
   image="images/space.jpg"
   link="https://nasa.gov/"
   heading="Large card"
+  truncate=2
   row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
   row2="Another truncated row of really long text"
   row3="A really long row of text that wraps instead of truncating"
-  truncate=2
 %}
 {% capture html %}
 An example of putting other components in a row:
@@ -269,18 +250,37 @@ An example of putting other components in a row:
   image="images/space.jpg"
   link="https://nasa.gov/"
   heading="Small card"
-  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
   truncate=1
+  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
+%}
+
+## Big Link
+
+A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
+
+{% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
+{%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="/collaborators" -%}
+{:.center}
+
+## Tags
+
+A _tags_ component.
+Provide your own list of tags separated by spaces, and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
+You can include this as part of other components, such as the _card_ component.
+
+{%
+  include tags.html
+  tags="ovarian-cancer dataset gene-expression"
+  repo="greenelab/lab-website-template"
 %}
 
 ## Social Link
 
 A customizable _social link_ component, with icon and tooltip.
-Specify custom links, or leave blank to use site defaults  in `_config.yml`.
+Specify custom links, or leave blank to use site defaults in `_config.yml`.
 To see the built-in links and add your own, see `/_includes/social-link.html`.
 
 {% capture html %}
-
 {% include social-link.html type="website" link=page.website %}
 {% include social-link.html type="contact" %}
 {% include social-link.html type="email" %}
@@ -289,6 +289,22 @@ To see the built-in links and add your own, see `/_includes/social-link.html`.
 {% include social-link.html type="twitter" %}
 {% include social-link.html type="instagram" %}
 {% include social-link.html type="youtube" %}
+{% endcapture %}
+
+{% include centerer.html html=html %}
+
+## Paper Link
+
+A customizable _paper link_ component, with icon and text.
+Useful for showing supplementary links for a paper.
+To see the built-in links and add your own, see `/_includes/paper-link.html`.
+
+{% capture html %}
+{% include paper-link.html type="website" link="https://greenelab.com/" %}
+{% include paper-link.html type="journal" link="https://greenelab.com/" %}
+{% include paper-link.html type="preprint" link="https://greenelab.com/" %}
+{% include paper-link.html type="app" %}
+{% include paper-link.html type="data" text="Server" %}
 {% endcapture %}
 
 {% include centerer.html html=html %}
@@ -356,26 +372,6 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 {% endcapture %}
 
 {% include centerer.html html=html %}
-
-## Resource List
-
-A _resource list_ component, to list, filter, and sort all of your tools, datasets, etc (specified in `/_data/resources.yml`).
-Go to [the resources page]({{ "/resources" | relative_url }}) to see it in action.
-
-## Member List
-
-A _member list_ component, to list, filter, and sort all of the members on your team automatically.
-Go to [the team page]({{ "/team" | relative_url }}) to see it in action.
-
-## Blog List
-
-A _blog list_ component, to list and summarize all blog posts on your site.
-Go to [the blog page]({{ "/blog" | relative_url }}) to see it in action.
-
-## Embeds
-
-You can include various social media embeds by pasting the code right into your markdown.
-See some examples on [the blog page]({{ "/blog" | relative_url }}).
 
 ## Font Awesome Icons
 

@@ -1,5 +1,6 @@
-{% capture title%} {{ site.title }}{% if page.title %} - {% endif %}{{
-page.title }} {% endcapture %}
+{% capture title%}
+{{ site.title }}{% if page.title %} - {% endif %}{{ page.title }}
+{% endcapture %}
 
 <!-- https://metatags.io/ -->
 <meta name="title" content="{{ title }}" />

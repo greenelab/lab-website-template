@@ -1,0 +1,17 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+.paper_link {
+  @include inline-flex-center;
+  padding: 5px 10px;
+  max-width: 100%;
+  text-decoration: none;
+
+  & > i,
+  & > svg {
+    margin-right: 8px;
+  }
+}

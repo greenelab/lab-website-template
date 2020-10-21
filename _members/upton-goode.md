@@ -1,5 +1,9 @@
 ---
 title: Upton O. Goode
+search:
+  - U. Goode
+  - U. O. Goode
+  - U Goode
 role: phd
 group: alum
 image: images/beagle.jpg

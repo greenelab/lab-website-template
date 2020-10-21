@@ -1,5 +1,8 @@
 ---
 title: Felix Cited
+search:
+  - F. Cited
+  - F Cited
 role: pi
 group: current
 image: images/labrador.jpg

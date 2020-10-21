@@ -4,7 +4,18 @@ title: Blog
 
 # <i class="fas fa-feather-alt"></i>Blog
 
-## News
+## Blog List
+
+A _blog list_ component, to list and summarize all blog posts on your site.
+Can be used on any page, but assumes its content from `/_posts`.
+
+{% include blog-list.html %}
+
+## Embeds
+
+You can include various social media embeds by pasting the code right into your markdown.
+
+### News
 
 <!-- Twitter embeds from https://publish.twitter.com/ -->
 
@@ -15,7 +26,7 @@ title: Blog
 <a href="https://twitter.com/intent/tweet?screen_name=GreeneScientist&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @GreeneScientist</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {:.center}
 
-## Videos
+### Videos
 
 {% capture html %}
 <!-- YouTube embed. Go to a video, click share, then embed. -->
@@ -23,5 +34,3 @@ title: Blog
 {% endcapture %}
 
 {% include centerer.html html=html %}
-
-{% include post-list.html %}

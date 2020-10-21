@@ -1,21 +1,34 @@
 {% assign papers = site.data.research-output | sort: "date" | reverse %}
 {% assign byyear = papers | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
+
 {% for yeargroup in byyear %}
-{:.paper_heading}
-<h2>{{ yeargroup.name }}</h2>
+
+<h3 data-search-hide>{{ yeargroup.name }}</h3>
+
 {% for paper in yeargroup.items %}
+
 {% assign authors = paper.authors | join: ", " %}
+
 {%- capture details -%}
-  {{- paper.publisher -}}
-  &nbsp; · &nbsp;
-  {{- paper.date | date: "%d %b %Y" -}}
+{{- paper.publisher -}}
+&nbsp; · &nbsp;
+{{- paper.date | date: "%d %b %Y" -}}
 {%- endcapture -%}
+
 {% capture tags %}
 {% include tags.html tags=paper.tags repo=paper.repo %}
 {% endcapture %}
+
 {% capture extralinks %}
-{% include paper-links.html links=paper.extra-links %}
+{% if paper.extra-links.size > 0 %}
+<div>
+  {%- for link in paper.extra-links -%}
+  {% include paper-link.html type=link.type link=link.link text=link.text %}
+  {%- endfor -%}
+</div>
+{% endif %}
 {% endcapture %}
+
 {%
   include card.html
   size="small"
@@ -28,5 +41,7 @@
   row3=tags
   row4=extralinks
 %}
+
 {% endfor %}
+
 {% endfor %}

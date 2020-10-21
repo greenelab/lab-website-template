@@ -6,7 +6,6 @@
 
 .card {
   box-sizing: border-box;
-  display: inline-flex;
   max-width: 100%;
 
   .card_image {
@@ -34,14 +33,21 @@
       font-weight: $semi-bold;
     }
 
-    & > * {
+    & > p {
       margin: 5px 0;
       @include trim-margins;
-      text-align: justify;
+    }
+
+    & > div {
+      @include flex-center;
+      flex-wrap: wrap;
+      margin: 10px 0;
+      @include trim-margins;
     }
   }
 
   &[data-size="large"] {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -64,6 +70,7 @@
   }
 
   &[data-size="medium"] {
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -86,6 +93,7 @@
   }
 
   &[data-size="small"] {
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
@@ -106,7 +114,7 @@
       }
 
       @media (min-width: $phone) {
-        .tags {
+        & > div {
           justify-content: flex-start;
         }
       }

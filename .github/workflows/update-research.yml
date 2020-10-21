@@ -1,0 +1,29 @@
+name: Update research page
+
+on:
+  pull_request:
+    paths:
+      - "_data/research-input.yml"
+
+jobs:
+  update_research:
+    name: Update Manubot-generated citations on research page
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install Manubot
+        run: pip install --upgrade manubot
+      - name: Build updated research output file
+        run: python _data/build-research.py
+      - name: Commit new research output file
+        uses: EndBug/add-and-commit@v4
+        with:
+          add: "_data/research-output.yml"
+          message: "update Manubot-generated citations on research page"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
