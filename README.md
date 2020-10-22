@@ -184,8 +184,9 @@ OR
 ### Publishing your site
 
 1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of the repo
-2. Go where GitHub shows you that your site is published.
-   If you haven't set up a custom domain, it will be at `https://your-org-name.github.io/the-repo-name/`.
+2. Your site should be live within a minute or two
+3. Go where GitHub shows you that your site is published.
+   If you haven't set up a custom domain, it will be at `https://your-org-name.github.io/the-repo-name/` by default.
 
 ### Using the pre-built components
 
@@ -200,11 +201,11 @@ Instead of Jekyll automatically building them, we need to run a special Python s
 If you're previewing and testing your site on the GitHub website:
 
 1. Add or change the desired papers in `/_data/research-input.yml`
-2. Make a pull request with the changes
+2. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes
 3. GitHub should automatically run the Python script
 4. Citations will be automatically generated and output to `/_data/research-output.yml`
 5. GitHub should automatically commit the output file onto your pull request
-6. The _research list_ component will now (in a pull request preview and when you merge the pull request) show the updated list of papers
+6. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications/#github-commit-statuses) and when you merge the pull request) show the updated list of papers
 
 If you're previewing and testing your site on your computer:
 
