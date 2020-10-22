@@ -1,3 +1,25 @@
+# List your resources here. Read by the resources list component.
+
+# PARAMETERS:
+
+# title:
+# Heading to show
+
+# type:
+# An arbitrary type that the resource list component can filter by.
+
+# image:
+# Url to a striking image of the resource
+
+# link:
+# Url to link to
+
+# description:
+# Description text to show
+
+# repo:
+# A GitHub repo to automatically fetch tags (aka "topics") from.
+
 - title: Voluptate
   type: featured
   image: images/space.jpg

@@ -8,6 +8,7 @@ title: Team
 
 A _team list_ component, to sort and group all of the members on your team automatically.
 Can be used on any page, but assumes its content from `/_members`.
+Uses the _portrait_ component.
 
 All team members, sorted alphabetically by file name:
 
