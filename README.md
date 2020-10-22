@@ -169,7 +169,10 @@ OR
 
 1. [Make a Netlify account](https://app.netlify.com/signup) for your organization
 2. [Hook up Netlify to your repo](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings)
-3. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to your repo, and a live preview website of the changes will be automatically built and [shown in the pull request](https://docs.netlify.com/site-deploys/notifications/#github-commit-statuses)
+3. [Set the deploy notifications you want](https://docs.netlify.com/site-deploys/notifications/).
+A bunch are enabled by default.
+We recommend deleting them all, then adding just `GitHub commit status → Deploy Preview succeeded`, `GitHub commit status → Deploy Preview failed`, `GitHub pull request commnent → Deploy Preview succeeded`, and `GitHub pull request commnent → Deploy Preview failed`.
+4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to your repo, and a live preview website of the changes will be automatically built and shown in the pull request according to your notifications.
 
 ### Previewing and testing changes on your computer
 
