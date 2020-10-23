@@ -1,4 +1,4 @@
-# a script to build the full bibliography of papers for the research page
+# a script to automatically generate citations for papers the research list component
 
 # before running:
 # install python                    https://www.python.org/downloads/
