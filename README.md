@@ -208,15 +208,17 @@ If you're previewing and testing your site on the GitHub website:
 3. GitHub should automatically run the Python script
 4. Citations will be automatically generated and output to `/_data/research-output.yml`
 5. GitHub should automatically commit the output file onto your pull request
-6. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications/#github-commit-statuses) and when you merge the pull request) show the updated list of papers
+6. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications) and when you merge the pull request) show the updated list of papers
 
 If you're previewing and testing your site on your computer:
 
 1. Add or change the desired papers in `/_data/research-input.yml`
 2. [Install Python](https://www.python.org/downloads/)
-3. Run `./build.sh`, which will run the Python script
-4. Citations will be automatically generated and output to `/_data/research-output.yml`
-5. The _research list_ component will now show the updated list of papers
+3. [Install pip](https://pip.pypa.io/en/stable/installing/)
+4. [Install Manubot](https://github.com/manubot/manubot#installation)
+5. Run `./build.sh`, which will run the Python script
+6. Citations will be automatically generated and output to `/_data/research-output.yml`
+7. The _research list_ component will now show the updated list of papers
 
 ### Configuring blog post comments
 
