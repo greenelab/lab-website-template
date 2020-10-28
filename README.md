@@ -171,7 +171,8 @@ OR
 2. [Hook up Netlify to your repo](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings)
 3. [Set the deploy notifications you want](https://docs.netlify.com/site-deploys/notifications/).
 A bunch are enabled by default.
-We recommend deleting them all, then adding just `GitHub commit status → Deploy Preview succeeded`, `GitHub commit status → Deploy Preview failed`, `GitHub pull request commnent → Deploy Preview succeeded`, and `GitHub pull request commnent → Deploy Preview failed`.
+We recommend deleting them all, then adding just `GitHub commit status → Deploy Preview succeeded`, `GitHub commit status → Deploy Preview failed`, `GitHub pull request comment → Deploy Preview succeeded`, and `GitHub pull request comment → Deploy Preview failed`.
+With these, when you open or update a PR, Netlify will post a comment with a link to the preview and its status, and also add a [check](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-status-checks)/[status](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-status-checks) for the preview.
 4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to your repo, and a live preview website of the changes will be automatically built and shown in the pull request according to your notifications.
 
 ### Previewing and testing changes on your computer
