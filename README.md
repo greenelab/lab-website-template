@@ -203,7 +203,7 @@ Instead of Jekyll automatically building them, we need to run a special Python s
 
 **Having GitHub run the script for you (previewing and testing on the GitHub website):**
 
-**Warning:** When possible, make pull requests from branches on the main repo rather than from forks.
+When possible, make pull requests from branches on the main repo rather than from forks.
 GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-auto-commit-action/issues/117) and [limitations](https://github.com/stefanzweifel/git-auto-commit-action#using-the-action-in-forks-from-public-repositories) with forks, so the following process will be more reliable with branches.
 
 1. Make sure that [GitHub Actions is enabled](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) on the main repo
@@ -213,14 +213,14 @@ GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-a
 5. GitHub should automatically run the Python script
 6. Citations will be automatically generated and output to `/_data/research-output.yml`
 7. GitHub should automatically commit the output file onto your pull request
-8. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications) and when you merge the pull request) show the updated list of papers
+8. The _research list_ component will now (in [pull request previews](#previewing-and-testing-changes-on-the-github-website) and when you merge the pull request) show the updated list of papers
 
 **Running the script manually (previewing and testing on your computer):**
 
-1. Add or change the desired papers in `/_data/research-input.yml`
-2. [Install Python](https://www.python.org/downloads/)
-3. [Install pip](https://pip.pypa.io/en/stable/installing/)
-4. [Install Manubot](https://github.com/manubot/manubot#installation)
+1. [Install Python](https://www.python.org/downloads/)
+2. [Install pip](https://pip.pypa.io/en/stable/installing/)
+3. [Install Manubot](https://github.com/manubot/manubot#installation)
+4. Add or change the desired papers in `/_data/research-input.yml`
 5. Run `./build.sh`, which will run the Python script
 6. Citations will be automatically generated and output to `/_data/research-output.yml`
 7. The _research list_ component will now show the updated list of papers
