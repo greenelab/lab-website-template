@@ -204,7 +204,7 @@ Instead of Jekyll automatically building them, we need to run a special Python s
 If you're previewing and testing your site on the GitHub website:
 
 1. Add or change the desired papers in `/_data/research-input.yml`
-2. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes
+2. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) from a branch (not a fork - forks won't build due to github permissions issues) with the changes
 3. GitHub should automatically run the Python script
 4. Citations will be automatically generated and output to `/_data/research-output.yml`
 5. GitHub should automatically commit the output file onto your pull request
