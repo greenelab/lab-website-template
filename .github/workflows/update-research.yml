@@ -1,7 +1,13 @@
 name: Update research data
 
 on:
+  push:
+    paths:
+      - "_data/research-input.yml"
   pull_request:
+    paths:
+      - "_data/research-input.yml"
+  pull_request_target:
     paths:
       - "_data/research-input.yml"
 
@@ -21,9 +27,7 @@ jobs:
       - name: Build updated research output file
         run: python _data/build-research.py
       - name: Commit new research output file
-        uses: EndBug/add-and-commit@v5
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          add: "_data/research-output.yml"
-          message: "update Manubot-generated citations in research data"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          file_pattern: "_data/research-output.yml"
+          commit_message: "Update Manubot-generated citations in research data"

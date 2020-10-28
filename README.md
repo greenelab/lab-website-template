@@ -201,16 +201,20 @@ See their source code to see how to write the components into your site, and see
 Automatic citations work a little bit different than the rest of the template.
 Instead of Jekyll automatically building them, we need to run a special Python script in `/_data/build-research.py`.
 
-If you're previewing and testing your site on the GitHub website:
+**Having GitHub run the script for you (previewing and testing on the GitHub website):**
 
-1. Add or change the desired papers in `/_data/research-input.yml`
-2. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes
-3. GitHub should automatically run the Python script
-4. Citations will be automatically generated and output to `/_data/research-output.yml`
-5. GitHub should automatically commit the output file onto your pull request
-6. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications) and when you merge the pull request) show the updated list of papers
+**Note:** When possible, make pull requests from branches on the main repo rather than from forks.
+GitHub Actions has certain quirks and limitations when using forks, which makes the following process more prone to error [[1](https://github.com/stefanzweifel/git-auto-commit-action#using-the-action-in-forks-from-public-repositories), [2](https://github.com/stefanzweifel/git-auto-commit-action/issues/117)].
 
-If you're previewing and testing your site on your computer:
+1. If making changes from a fork, [enable GitHub Actions](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) in the fork repo's settings
+2. Add or change the desired papers in `/_data/research-input.yml`
+3. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes
+4. GitHub should automatically run the Python script
+5. Citations will be automatically generated and output to `/_data/research-output.yml`
+6. GitHub should automatically commit the output file onto your pull request
+7. The _research list_ component will now (in any [pull request preview](https://docs.netlify.com/site-deploys/notifications) and when you merge the pull request) show the updated list of papers
+
+**Running the script manually (previewing and testing on your computer):**
 
 1. Add or change the desired papers in `/_data/research-input.yml`
 2. [Install Python](https://www.python.org/downloads/)
