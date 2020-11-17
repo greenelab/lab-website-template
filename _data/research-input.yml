@@ -48,6 +48,13 @@
 # Url to link to. If not specified, defaults to the url that Manubot returns for
 # the citation.
 
+- id: doi:10.1101/2020.11.06.371963
+  thumbnail: https://www.biorxiv.org/content/biorxiv/early/2020/11/07/2020.11.06.371963/F4.medium.gif
+  tags:
+    - cancer
+    - single cell
+    - ovarian cancer
+
 - id: doi:10.1098/rsif.2017.0387
   image: https://royalsocietypublishing.org/cms/asset/1b0430b1-5a66-4523-83be-29b435eddf86/rsif20170387f01.jpg
   extra-links:

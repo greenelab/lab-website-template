@@ -1,5 +1,23 @@
-# AUTOMATICALLY GENERATED. DO NOT TOUCH.
-
+- title: Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer
+    facilitates effective experimental design
+  authors:
+  - Lukas M. Weber
+  - Ariel A. Hippen
+  - Peter F. Hickey
+  - Kristofer C. Berrett
+  - Jason Gertz
+  - Jennifer Anne Doherty
+  - Casey S. Greene
+  - Stephanie C. Hicks
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-11-07'
+  link: https://doi.org/ghjkzq
+  id: doi:10.1101/2020.11.06.371963
+  thumbnail: https://www.biorxiv.org/content/biorxiv/early/2020/11/07/2020.11.06.371963/F4.medium.gif
+  tags:
+  - cancer
+  - single cell
+  - ovarian cancer
 - title: Opportunities and obstacles for deep learning in biology and medicine
   authors:
   - Travers Ching
@@ -39,7 +57,7 @@
   - Anthony Gitter
   - Casey S. Greene
   publisher: Journal of The Royal Society Interface
-  date: 2018-4-4
+  date: '2018-04-04'
   link: https://doi.org/gddkhn
   id: doi:10.1098/rsif.2017.0387
   image: https://royalsocietypublishing.org/cms/asset/1b0430b1-5a66-4523-83be-29b435eddf86/rsif20170387f01.jpg
@@ -58,7 +76,7 @@
   - Casey S. Greene
   - Anthony Gitter
   publisher: PLOS Computational Biology
-  date: 2019-6-24
+  date: '2019-06-24'
   link: https://doi.org/c7np
   id: doi:10.1371/journal.pcbi.1007128
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
@@ -75,7 +93,7 @@
   - David N. Nicholson
   - Casey S. Greene
   publisher: Computational and Structural Biotechnology Journal
-  date: 2020-6-2
+  date: '2020-06-02'
   link: https://doi.org/gg7m48
   id: doi:10.1016/j.csbj.2020.05.017
   image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
@@ -94,7 +112,7 @@
   - Bastian Greshake Tzovaras
   - Casey S Greene
   publisher: eLife
-  date: 2018-3-1
+  date: '2018-03-01'
   link: https://doi.org/ckcj
   id: doi:10.7554/eLife.32822
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp

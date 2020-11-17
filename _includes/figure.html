@@ -1,4 +1,4 @@
-<figure class="figure">
+<figure class="figure" data-flat="{{ include.flat | default: false }}">
   <a 
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="figure_image"

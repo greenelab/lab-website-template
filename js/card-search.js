@@ -2,23 +2,23 @@
 // pairs with "card search" component
 // filters cards on page based on what is typed in search box
 
-let searchBox;
-let searchInfo;
+let searchInput;
+let searchCount;
 let cards;
 let hide;
 
 const createSearch = () => {
   // get important elements
-  searchBox = document.querySelector("[data-search-box]");
-  searchInfo = document.querySelector("[data-search-info]");
+  searchInput = document.querySelector(".card_search_input");
+  searchCount = document.querySelector(".card_search_count");
   cards = Array.from(document.querySelectorAll(".card"));
-  hide = Array.from(document.querySelectorAll("[data-search-hide]"));
+  hide = Array.from(document.querySelectorAll(".card_search_hide"));
 
   // don't run script if necessary elements aren't present
-  if (!searchBox || !cards.length) return;
+  if (!searchInput || !cards.length) return;
 
   // attach filter function to search box input
-  searchBox.addEventListener("input", debounce(filterCards, 50));
+  searchInput.addEventListener("input", debounce(filterCards, 50));
 
   // get url param and search
   loadUrlSearch();
@@ -55,7 +55,7 @@ const parseQuery = (string) =>
 // filter cards
 const filterCards = () => {
   // get search box text
-  const query = parseQuery(searchBox.value);
+  const query = parseQuery(searchInput.value);
 
   // reset highlights
   resetHighlights();
@@ -77,8 +77,8 @@ const filterCards = () => {
   hide.forEach((heading) => (heading.dataset.hide = anyFiltering));
 
   // update results info
-  if (searchInfo)
-    searchInfo.innerHTML =
+  if (searchCount)
+    searchCount.innerHTML =
       count.toLocaleString() + " of " + cards.length.toLocaleString();
 };
 
@@ -106,7 +106,7 @@ const debounce = (func, delay) => () => {
 const loadUrlSearch = () => {
   const query = new URLSearchParams(window.location.search).get("search") || "";
   if (!query.trim()) return;
-  searchBox.value = query;
+  searchInput.value = query;
 };
 
 // start script and add triggers
