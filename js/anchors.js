@@ -13,7 +13,7 @@ const createAnchors = () => {
     heading.append(link);
 
     // if first heading in the section, move id from heading to parent section
-    if (heading === heading.parent.firstElementChild) {
+    if (heading.matches(":first-child")) {
       let section = heading.closest("section");
       if (section) {
         section.id = heading.id;

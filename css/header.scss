@@ -21,7 +21,6 @@ header {
 
     .logo > * {
       height: 50px;
-      margin: -5px;
     }
 
     .logo_text {
@@ -35,6 +34,10 @@ header {
   .nav_row {
     @include inline-flex-center;
     flex-wrap: wrap;
+    font-size: 0.9rem;
+    font-weight: $medium;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
     .nav_link {
       display: inline-block;

@@ -12,7 +12,7 @@ h4 {
   font-family: $sans;
   font-weight: $medium;
   line-height: 1.2;
-  margin: 30px 0 20px 0;
+  margin: 40px 0 20px 0;
   @include trim-margins;
   padding: 10px 0;
 
@@ -26,6 +26,10 @@ h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+
+  & + p {
+    margin-top: 40px;
+  }
 }
 h2 {
   font-size: 1.3rem;

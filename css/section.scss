@@ -23,11 +23,11 @@ body {
   }
   
   section {
-    padding: 40px;
-
     .section {
+      box-sizing: border-box;
       max-width: $page;
       margin: 0 auto;
+      padding: 40px;
     }
 
     &:nth-child(even) {
