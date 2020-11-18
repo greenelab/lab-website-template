@@ -34,6 +34,7 @@
 
   &[data-mini="true"] {
     width: 100px;
+    margin: 10px;
 
     .portrait_image {
       width: 100px;
@@ -61,12 +62,13 @@
     color: $gray;
     border-radius: 999px;
   }
+
   &[data-mini="true"] {
     .role {
       left: 0;
       top: 0;
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
     }
   }
 }

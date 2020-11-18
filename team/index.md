@@ -38,10 +38,10 @@ Team members filtered and sorted by group:
 
 {% include centerer.html html=html %}
 
-Team members in a specific order:
+Team members in a specific order and in a mini size:
 
 {% capture html %}
-{% include team-list.html order="team-order" %}
+{% include team-list.html order="team-order" mini=true %}
 {% endcapture %}
 
 {% include centerer.html html=html %}
