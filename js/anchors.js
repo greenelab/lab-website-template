@@ -1,10 +1,10 @@
 // anchors plugin
 // creates clickable icon next to each heading that links to that section
 
-// create section links next to each heading 1 through 4
+// create section links next to each heading 1 through 4 that have unique ids
 const createAnchors = () => {
   // for each heading
-  const headings = document.querySelectorAll("h1, h2, h3, h4");
+  const headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id]");
   for (const heading of headings) {
     // create anchor link
     const link = document.createElement("a");
@@ -12,13 +12,12 @@ const createAnchors = () => {
     link.href = "#" + heading.id;
     heading.append(link);
 
-    // if heading 1 or 2, move id from heading to parent section instead
-    // why? see /_includes/content.html
-    if (heading.matches("h1, h2")) {
+    // if first heading in the section, move id from heading to parent section
+    if (heading === heading.parent.firstElementChild) {
       let section = heading.closest("section");
       if (section) {
         section.id = heading.id;
-        heading.id = "";
+        heading.removeAttribute("id");
       }
     }
   }

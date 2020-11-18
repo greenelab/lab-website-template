@@ -1,9 +1,11 @@
-{% assign papers = site.data.research-output | sort: "date" | reverse %}
+{% assign papers = site.data.research-output %}
+{% assign papers = papers | sort: "date" | reverse %}
 {% assign byyear = papers | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
 
 {% for yeargroup in byyear %}
 
-<h3 data-search-hide>{{ yeargroup.name }}</h3>
+### {{ yeargroup.name }}
+{:.card_search_hide}
 
 {% for paper in yeargroup.items %}
 

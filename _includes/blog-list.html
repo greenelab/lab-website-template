@@ -1,33 +1,31 @@
-{%- assign byyear = site.posts | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse -%}
+{% assign byyear = site.posts | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
 
-{%- for yeargroup in byyear -%}
+{% for yeargroup in byyear %}
 
-<hr />
+<!-- section break -->
 
-<h3>{{ yeargroup.name }}</h3>
+### {{ yeargroup.name }}
 
-{%- for post in yeargroup.items -%}
+{% for post in yeargroup.items %}
 
-<p>
-  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-</p>
+[{{ post.title }}]({{ post.url | relative_url }})
 
-{%- include post-info.html post=post -%}
+{% include post-info.html post=post %}
 
-{%- include tags.html tags=post.tags -%}
+{% include tags.html tags=post.tags %}
 
-{%- if forloop.index <= 3 -%}
+{% if forloop.index <= 3 %}
 {{ post.content | strip_html | truncate: 500 }}
-<p class="center">
-  <a href="{{ post.url | relative_url }}">Read more →</a>
-</p>
-{%- else -%}
+{% else %}
 {{ post.content | strip_html | truncate: 200 }}
-{%- endif -%}
+{% endif %}
 
-{%- if forloop.index < forloop.length -%}
-{%- endif -%}
+{% if forloop.index < forloop.length %}
+---
+{% endif %}
 
-{%- endfor -%}
+{% endfor %}
 
-{%- endfor -%}
+{% endfor %}
+
+<!-- section break -->

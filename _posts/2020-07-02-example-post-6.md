@@ -1,6 +1,9 @@
 ---
 title: Venenatis tellus in metus vulputate
-tags: "amet parturient ultricies"
+tags: 
+  - amet
+  - parturient
+  - ultricies
 author: Upton O. Goode
 member-page: upton-goode
 ---

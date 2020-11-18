@@ -7,9 +7,6 @@ on:
   pull_request:
     paths:
       - "_data/research-input.yml"
-  pull_request_target:
-    paths:
-      - "_data/research-input.yml"
 
 jobs:
   update_research:

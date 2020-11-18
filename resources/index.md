@@ -4,6 +4,8 @@ title: Resources
 
 # <i class="fas fa-tools"></i>Resources
 
+<!-- section break -->
+
 ## Resource List
 
 A _resource list_ component, to sort and group all of your tools, datasets, etc.

@@ -9,6 +9,8 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
+<!-- section break -->
+
 ## Basic Formatting
 
 _italic text_
@@ -43,6 +45,14 @@ popup.innerText =
 
 This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
 
+---
+
+Put in a `<!-- section break -->` where you want to start a new section.
+Sections are the alternating white and light-gray backgrounds that span the entire width of the page.
+We recommend putting a section break before every `# Heading 1` and `## Heading 2`.
+
+<!-- section break -->
+
 # Heading 1
 
 ## Heading 2
@@ -73,6 +83,8 @@ Varius quam quisque id diam.
 Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
 Pharetra et ultrices neque ornare aenean euismod elementum nisi.
 
+<!-- section break -->
+
 ## Centerer
 
 A _centerer_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
@@ -85,6 +97,8 @@ A _centerer_ component, an alternative method for centering arbitrary items that
 {% endcapture %}
 
 {% include centerer.html html=html spaced=true %}
+
+<!-- section break -->
 
 ## Feature
 
@@ -115,6 +129,8 @@ Nec sagittis aliquam malesuada bibendum arcu.
   text=text
 %}
 
+<!-- section break -->
+
 ## Figure
 
 A _figure_ component with optional caption and image link.
@@ -133,6 +149,15 @@ A _figure_ component with optional caption and image link.
   caption="A full-width figure"
   width="100%"
 %}
+
+{%
+  include figure.html
+  image="images/bacteria.jpg"
+  caption="A flat figure, without the effects. Useful for transparent images that you want to blend in with the background."
+  flat="true"
+%}
+
+<!-- section break -->
 
 ## Gallery
 
@@ -171,12 +196,14 @@ Useful for transparent images, and images that should not be cropped, like logos
   image5="images/bacteria.jpg"
 %}
 
+<!-- section break -->
+
 ## Card
 
 A multi-size, flexible _card_ component, with an image, a title link, markdown text, and extra rows for special items such as tags.
 
 {% capture tags %}
-{% include tags.html tags="red hammer elephant supercalifragilisticexpialidocious" %}
+{% include tags.html tags="red, hammer, elephant, supercalifragilisticexpialidocious" %}
 {% endcapture %}
 
 {% capture largecards %}
@@ -254,6 +281,8 @@ An example of putting other components in a row:
   row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
 %}
 
+<!-- section break -->
+
 ## Big Link
 
 A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
@@ -262,17 +291,21 @@ A _big link_ component, useful for emphasizing important links, such as other ke
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="/collaborators" -%}
 {:.center}
 
+<!-- section break -->
+
 ## Tags
 
 A _tags_ component.
-Provide your own list of tags separated by spaces, and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
+Provide your own list of tags (as an array or as a comma-separated string), and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
 You can include this as part of other components, such as the _card_ component.
 
 {%
   include tags.html
-  tags="ovarian-cancer dataset gene-expression"
+  tags="ovarian cancer, dataset, gene expression"
   repo="greenelab/lab-website-template"
 %}
+
+<!-- section break -->
 
 ## Social Link
 
@@ -293,6 +326,8 @@ To see the built-in links and add your own, see `/_includes/social-link.html`.
 
 {% include centerer.html html=html %}
 
+<!-- section break -->
+
 ## Paper Link
 
 A customizable _paper link_ component, with icon and text.
@@ -308,6 +343,8 @@ To see the built-in links and add your own, see `/_includes/paper-link.html`.
 {% endcapture %}
 
 {% include centerer.html html=html %}
+
+<!-- section break -->
 
 ## Role
 
@@ -346,6 +383,8 @@ To see the built-in roles and add your own, see `/_includes/role.html`.
 
 {% include centerer.html html=html spaced=true %}
 
+<!-- section break -->
+
 ## Portrait
 
 A multi-size _portrait_ component with an image, link, name, and role icon, useful for team member links.
@@ -372,6 +411,8 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 {% endcapture %}
 
 {% include centerer.html html=html %}
+
+<!-- section break -->
 
 ## Font Awesome Icons
 

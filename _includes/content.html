@@ -6,20 +6,13 @@ Script to modify main content of page:
 
 {%- assign content = include.content -%}
 
-{%- capture newContent -%}
+{%- assign content = content | replace: "<!-- section break -->", "</div></section><section><div class='section'>" -%}
+
+{%- assign content = content | replace: "<table>", "<div class='table_wrapper'><table>" -%}
+{%- assign content = content | replace: "</table>", "</table></div>" -%}
+
 <section>
-{%- assign content = content | split: "<section" | join: "</section><section" -%}
-{%- assign content = content | split: "<h1" | join: "</section><section><h1" -%}
-{%- assign content = content | split: "<h2" | join: "</section><section><h2" -%}
-{{- content -}}
+  <div class='section'>
+    {{ content }}
+  </div>
 </section>
-{%- endcapture -%}
-
-{%- assign newContent = newContent | replace: "<section></section>", "" -%}
-{%- assign newContent = newContent | replace: "<section>", "<section><div class='section'>" -%}
-{%- assign newContent = newContent | replace: "</section>", "</div></section>" -%}
-
-{%- assign newContent = newContent | replace: "<table>", "<div class='table_wrapper'><table>" -%}
-{%- assign newContent = newContent | replace: "</table>", "</table></div>" -%}
-
-{{ newContent }}

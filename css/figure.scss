@@ -11,20 +11,9 @@
   @include trim-margins;
 
   .figure_image {
-    overflow: hidden;
-    box-shadow: $shadow;
-
-    img {
-      transition: transform $fast;
-
-      &[data-default="true"] {
-        max-width: 400px;
-        max-height: 300px;
-      }
-    }
-
-    &:hover img {
-      transform: scale(1.1);
+    img[data-default="true"] {
+      max-width: 400px;
+      max-height: 300px;
     }
   }
 
@@ -33,5 +22,20 @@
     margin-bottom: 0;
     font-style: italic;
     text-align: center;
+  }
+
+  &[data-flat="false"] {
+    .figure_image {
+      overflow: hidden;
+      box-shadow: $shadow;
+
+      img {
+        transition: transform $fast;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
   }
 }

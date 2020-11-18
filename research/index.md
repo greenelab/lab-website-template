@@ -4,6 +4,8 @@ title: Research
 
 # <i class="fas fa-microscope"></i>Research
 
+<!-- section break -->
+
 ## Card Search
 
 A _card search_ component, a search box to find all _card_ components on the page that contain certain words/names.
@@ -14,6 +16,8 @@ Search words will be highlighted in the results (if they're longer than 2 charac
 Searching is case insensitive.
 
 {% include card-search.html subject="papers" %}
+
+<!-- section break -->
 
 ## Research List
 

@@ -10,6 +10,7 @@ import os
 import json
 import yaml
 import subprocess
+from datetime import datetime
 
 # input and output files
 current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -76,6 +77,8 @@ for index, input_paper in enumerate(input_papers, start=1):
 print("\nCopying additional metadata from input to output.")
 for index, new_paper in enumerate(new_papers):
     new_paper.update(input_papers[index])
+    # ensure date in proper format (w/ leading 0's) for correct date sorting
+    new_paper["date"] = datetime.strptime(new_paper["date"], "%Y-%m-%d").strftime("%Y-%m-%d")
 
 # write new list of papers to output file
 with open(output_file, mode="w") as file:
