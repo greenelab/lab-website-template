@@ -287,8 +287,8 @@ An example of putting other components in a row:
 
 A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
 
-{% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="/join" -%}
-{%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="/collaborators" -%}
+{% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
+{%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
 {:.center}
 
 <!-- section break -->
@@ -392,7 +392,7 @@ A multi-size _portrait_ component with an image, link, name, and role icon, usef
 {% capture html %}
 {%
   include portrait.html
-  link="/members/anne-chovie"
+  link="members/anne-chovie"
   image="images/corgi.jpg"
   name="Anne Chovie"
   role="programmer"
