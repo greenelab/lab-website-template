@@ -186,7 +186,7 @@ With these, when you open or update a PR, Netlify will post a comment with a lin
 1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of your repo
 2. Your site should be live within a minute or two
 3. Go where GitHub shows you that your site is published.
-   If you haven't set up a custom domain, it should be at `https://your-org-name.github.io/the-repo-name/` by default.
+   If you haven't set up a custom domain, it should be at `https://your-lab.github.io/lab-website/` by default.
 
 ### Using the pre-built components
 
@@ -258,9 +258,7 @@ Summarized:
 
 Then:
 
-1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `yourdomain.com/` instead of eg `yourdomain.com/lab-website-template`.
-
-(This is why it's necessary to use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter, as mentioned in [Contents](#contents).)
+1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `your-new-domain.com/` instead of eg `your-lab.github.io/lab-website`.
 
 ### Updating your site when this template gets updated
 

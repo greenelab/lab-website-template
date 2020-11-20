@@ -17,8 +17,8 @@ _italic text_
 
 **bold text**
 
-A centered paragraph with `{:.center}`.
-Other elements can also be centered with the same method.
+A centered paragraph with `{:.center}`.  
+Other elements can also be centered in the same way.
 {:.center}
 
 - list item 1
@@ -44,6 +44,28 @@ popup.innerText =
 ```
 
 This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
+
+---
+
+Linking to pages within the site:
+
+{% comment %}
+Don't put a slash before the page you want to link to. This makes it relative to
+the current page rather than the root, ensuring your links will work regardless
+of your site's baseurl.
+
+For example, if you link to [Team](/team) and your site is hosted at 
+your-lab.github.io/lab-website, that link would lead to
+your-lab.github.io/team instead of your-lab.github.io/lab-website/team.
+
+If you have a more complex folder hierarchy, you may also need to use the Jekyll
+relative_url filter when linking to pages:
+https://jekyllrb.com/docs/liquid/filters/
+{% endcomment %}
+
+[Home page]()  
+[Team page](team)  
+[Blog page](blog)  
 
 ---
 
