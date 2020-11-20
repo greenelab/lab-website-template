@@ -37,34 +37,33 @@ If you aren't already somewhat familiar with these, this template might not be f
 That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily.
 
 - A **repository** (or _repo_ for short) is a place to store code for a project
-- **[Git](https://try.github.io/)** is a for and way of tracking changes to code through a [command line](https://en.wikipedia.org/wiki/Command-line_interface).
-- **[GitHub](https://github.com/)** is an online place to store, view, track, share, and collaborate on code.
+- **[Git](https://try.github.io/)** is a way of tracking changes to code in repos through a [command line](https://en.wikipedia.org/wiki/Command-line_interface).
+- **[GitHub](https://github.com/)** is an online place to store, view, track, share, and collaborate on code in repos.
   You can make simple changes to your code on the GitHub website itself, but for most changes you'll need to use [Git](https://git-scm.com/).
 - **[GitHub Pages](https://pages.github.com/)** (or _gh-pages_ for short) is a service built-in to GitHub that can host a website for you, for free.
-  No need to buy monthly hosting from GoDaddy or the like!
+  No need to buy monthly hosting from GoDaddy!
   Put the source code for your website in a repo, turn on GitHub Pages, and the site will go live.
   Any changes you make to the code will update on the site automatically.
-- **[GitHub Actions](https://github.com/features/actions)** (or _gh-actions_ for short) is a feature of GitHub that (among other things) can automatically run scripts and other actions when changes are made to a repo.
+- **[GitHub Actions](https://github.com/features/actions)** (or _gh-actions_ for short) is a feature of GitHub that can (among other things) automatically run scripts and other actions when changes are made to a repo.
   Setting up GitHub Actions is only needed for certain specific tasks that aren't handled automatically by Jekyll or other parts of the template.
 - **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)** is how you write the main content of a web page.
   It tells the browser what to show, like paragraphs of text, tables of numbers, images with captions, etc.
 - **[Markdown](https://en.wikipedia.org/wiki/Markdown)** is a easier way to write certain [basic things from HTML](https://commonmark.org/help/).
   But browsers can't display markdown directly; it has to be converted to HTML first.
 - **[Sass](https://sass-lang.com/)** (a superset of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)) is how you get a web page to look that way you want.
-  You can set [positions, margins, colors, fonts, etc](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index), and apply them to certain elements in the HTML with [selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+  You can set [positions, margins, colors, fonts, etc](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index), and apply them to certain elements (tables, images, etc) in the HTML with [selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 - **[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)** (or _js_ for short) is a programming language to make web pages more interactive.
   HTML is static/unchanging, but JavaScript allows the page to change dynamically as the user is viewing it.
-  For example, JavaScript can hide/show certain paragraphs in the HTML based on what the user types into a search box.
+  For example, JavaScript can be used to hide/show certain paragraphs in the HTML based on what the user types into a search box.
 - **[Jekyll](https://jekyllrb.com/)** is a tool that can automatically generate large HTML sites from much simpler markdown, and with less grunt work and code duplication, allowing you to just focus on the content.
-  It does all this fancy work in a "pre-process" step, before you open the site.
+  It does all this fancy work in a "pre-process" step, before you view the site.
   When you make a change, Jekyll compiles everything together into the final product which can then be viewed or uploaded.
   Jekyll also integrates very nicely with GitHub Pages, so almost no set up is required.
-- **[Liquid](https://shopify.github.io/liquid/)** is a [templating language](https://en.wikipedia.org/wiki/Template_processor) that allows you to insert repetitive chunks of content automatically and define logic for how your site is built by Jekyll.
-  For example, you could provide Jekyll with a simple list of items, then use Liquid to sort them and [automatically](https://shopify.github.io/liquid/tags/iteration/) put each one in their own table row.
-  This is much better than having to type them all out manually and re-sort them any time you add or remove one.
+- **[Liquid](https://shopify.github.io/liquid/)** is a [templating language](https://en.wikipedia.org/wiki/Template_processor) built-in to Jekyll that allows you to insert repetitive chunks of content automatically and define logic for how your site is built by Jekyll.
+  For example, you could provide Jekyll with a simple list of items, then use Liquid to sort them and [automatically](https://shopify.github.io/liquid/tags/iteration/) put each one in their own formatted table row.
   You can almost think of Liquid as (a much more limited) JavaScript for Jekyll, except that it still results in a static file at the end.
 - **[Ruby](https://www.ruby-lang.org/en/)** is a general-purpose programming language.
-  You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is built on Ruby.
+  You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is written in Ruby.
 - **[Python](https://www.python.org/)** is a general-purpose programming language.
   You don't need to know Python to use this template, unless you want to understand or modify the behavior of [the automatic citations](#automatic-citations).
 
@@ -76,13 +75,12 @@ An overview of the contents of this template and basic notes on how to edit and 
 
 Files and folders to be edited by you.
 
-- `/blog`, `/contact`, etc - A sub-folder to make in the resulting site, eg `yoursite.com/blog`.
-  You can create any folder you want, put an `index.md` in it, and link to it like any other page.
-  To edit the links shown in the site header, see `/_includes/header.html`.
+- `/blog`, `/contact`, etc - A sub-folder to create in the resulting site, eg `yoursite.com/blog`.
+  You can name a folder anything you want, put an `index.md` in it, and link to it like any other page.
 - `/_data` - A place to put large, ordered lists of data that don't need individual generated pages.
   Your `research` and `resources` content live here.
 - `/_members` - Where your team member bios go.
-  Member bios can include a photo, role, group, and social media links.
+  Member bios can include a photo, role (researcher/programmer/etc), group (current/alumni/etc), and social media links.
   Each file will automatically generate its own page.
 - `/_posts` - Where your blog posts go.
   Name your post files in the format `YYYY-MM-DD-your-post-title.md`.
@@ -91,7 +89,7 @@ Files and folders to be edited by you.
   These are important!
   Replace these images with variations of your own logo, taking care to match the size and cropping.
   They can be transparent, but make sure they can be distinguished on any background, dark or light.
-  [realfavicongenerator.net](https://realfavicongenerator.net/) can help you generate all the necessary icon variations, but it goes overboard with support for legacy browsers.
+  [realfavicongenerator.net](https://realfavicongenerator.net/) can help you generate all the necessary icon variations, but it goes overboard with its support for unused legacy browsers like Internet Explorer.
   What's included in this template is a simplified subset that works fine on all of the most common modern browsers.
 - `/images` - A default folder to hold all your site's images.
   You can organize and place your images however you want though.
@@ -99,19 +97,18 @@ Files and folders to be edited by you.
 - `_config.yml` - The main Jekyll configuration for your site.
   Contains important site-wide things like the site title, the site url, the default email/twitter/etc, the default background image, etc.
 - `404.md` - A fallback page for when a user goes to a page that doesn't exist on your site.
-- `index.md` - The landing page for your site.
+- `index.md` - The landing/"home" page for your site.
+- `start.sh` - A convenient script to start and open the site on your computer.
+  Run like `./start.sh`.
 
 #### General editing notes
 
 - Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
-  For example, `yoursite.com/join` actually takes you to `/join/index.md`, and `yoursite.com` takes you to the root `index.md`.
-
-- When manually linking to other pages on your site, use the Jekyll [`relative_url`](https://jekyllrb.com/docs/liquid/filters/) filter to make sure links always work no matter where you're hosting your site from.
-  For example, instead of `[Join the team](/join)`, do `[Join the team]({{ "/join" | relative_url }})`.
-  You don't have to do this for pre-built component links, though; they do it for you (eg you can just do `link="/join"`).
+  For example, `yoursite.com/join` actually takes you to `/join/index.html` (generated from `/join/index.md`), and `yoursite.com` takes you to the root `index.html` (generated from `index.md`).
 
 - Liquid has [special syntax to trim whitespace](https://shopify.github.io/liquid/basics/whitespace/) on either side of Liquid tags.
   Sometimes this matters, like when you have expressions on separate lines that might evaluate to blank, leading markdown to insert blank paragraphs, messing up layout.
+  We recommend only adding the trim syntax when you observe unwanted whitespace/paragraphs in your resulting site.
 
 ### Template files and folders
 
@@ -122,15 +119,13 @@ You might want to touch these if you want more customization, but make sure you 
   This template uses GitHub Actions to help [build the research page](#automatic-citations).
 - `/_includes` - Reusable, small snippets of HTML that can take parameters, aka _components_.
   See `index.md` for which ones you are meant to use.
-  Notably, see `header.html` to edit the links shown in the site header.
+  Notably, see `header.html` to change the links that appear in the header on every page.
 - `/_layouts` - Templates that all pages are built upon.
+  See `member.html` and `post.html` to change how the individual team member and blog post pages look.
 - `/css` - Sass styles that determine how the site looks.
   Notably, see `variables.scss` to change things like site-wide colors and fonts.
-  If you need to add your own custom styles, make a new `.scss` file here and make sure to include it in `/_includes/styles.html`.
+  If you need to add your own custom styles, make a new `.scss` file here and make sure to list it in `/_includes/styles.html`.
 - `/js` - JavaScript "plugins" that add interactive features to the site, such as tooltips.
-- `start.sh` - A convenient script to start and open the site on your computer.
-  Quicker to type and easier to remember than the commands it runs.
-  Run like `./start.sh`.
 
 ### Under-the-hood files and folders
 
@@ -138,7 +133,7 @@ Files and folders used internally by Jekyll or other tools in the setup.
 You should never need to touch these.
 
 - `/_site` - The "compiled" output of the entire Jekyll site.
-  Changes to it will get overwritten when the site is rebuilt.
+  Changes to it will get overwritten every time the site is rebuilt.
   This folder is also what GitHub reads to make the GitHub Pages site.
 - `/.jekyll-cache` - Cache so that Jekyll can build and re-build the site quickly.
 - `.gitignore` - Files to not be tracked/included in your site's repo.
@@ -179,18 +174,19 @@ With these, when you open or update a PR, Netlify will post a comment with a lin
 
 1. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 2. [Install RubyGems](https://rubygems.org/pages/download)
-3. [Install Jekyll](https://jekyllrb.com/) by running `gem install bundler jekyll`
-4. In your command line, go to the folder where you cloned your site
-5. Start the site by running `./start.sh`
-6. The site should automatically open in a browser.
-   Any changes you make will automatically rebuild the site and refresh the page, except for changes to `_config.yml` which require re-running the start script.
+3. Open your command line
+4. [Install Jekyll](https://jekyllrb.com/) by running `gem install bundler jekyll`
+5. Go to the folder where you cloned your site, eg `cd lab-website-template`
+6. Start the site by running `./start.sh`
+7. The site should automatically open in a browser.
+   Any changes you make should automatically rebuild the site and refresh the page, except for changes to `_config.yml` which require re-running the start script.
 
 ### Publishing your site
 
-1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of the repo
+1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of your repo
 2. Your site should be live within a minute or two
 3. Go where GitHub shows you that your site is published.
-   If you haven't set up a custom domain, it will be at `https://your-org-name.github.io/the-repo-name/` by default.
+   If you haven't set up a custom domain, it should be at `https://your-org-name.github.io/the-repo-name/` by default.
 
 ### Using the pre-built components
 
@@ -207,10 +203,10 @@ Instead of Jekyll automatically building them, we need to run a special Python s
 When possible, make pull requests from branches on the main repo rather than from forks.
 GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-auto-commit-action/issues/117) and [limitations](https://github.com/stefanzweifel/git-auto-commit-action#using-the-action-in-forks-from-public-repositories) with forks, so the following process will be more reliable with branches.
 
-1. Make sure that [GitHub Actions is enabled](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) on the main repo
+1. Make sure that [GitHub Actions is enabled](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) on your main website repo
 2. If making changes from a fork, make sure GitHub Actions is also enabled on the fork repo
 3. Add or change the desired papers in `/_data/research-input.yml`
-4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes
+4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes 
 5. GitHub should automatically run the Python script
 6. Citations will be automatically generated and output to `/_data/research-output.yml`
 7. GitHub should automatically commit the output file onto your pull request
@@ -231,7 +227,7 @@ GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-a
 Having comments on blog posts (or elsewhere) isn't a trivial feature to implement.
 There needs to be 1) a plugin on the page that lets users log in, read comments, and post new ones, and 2) a server running to receive, permanently store, and retrieve comments.
 
-It's beyond our purview to give you a built-in solution to this, but luckily there are many third party ones that can be integrated into this template:
+It's beyond the purview of this template to build in solution for this, but luckily there are many third party ones that can be easily integrated:
 
 - [Disqus](https://disqus.com/)
 - [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)
@@ -245,7 +241,7 @@ It's beyond our purview to give you a built-in solution to this, but luckily the
 Research the options [carefully](https://replyable.com/2017/03/disqus-is-your-data-worth-trading-for-convenience).
 
 Some are full services that take care of the plugin and server for you.
-For these, you usually just have to create an account for your site, then paste the code snippet anywhere you want a comment section, eg at the bottom of `_layouts/post.html`.
+Usually for these, you just create an account the paste the code snippet they give you anywhere you want a comment section to appear, eg at the bottom of `/_layouts/post.html`.
 
 Others just give you a plugin and the tools you need to run your own server, giving you greater privacy and security, but requiring more work to set up.
 
