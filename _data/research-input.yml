@@ -1,4 +1,4 @@
-# List your research papers here. The "build research" python script takes this
+# List your research papers here. The "build research" Python script takes this
 # file and uses Manubot to generate a fully-cited "output research" file, which
 # is then read by the research list component.
 
