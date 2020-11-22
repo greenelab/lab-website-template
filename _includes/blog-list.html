@@ -8,7 +8,7 @@
 
 {% for post in yeargroup.items %}
 
-[{{ post.title }}]({{ post.url | relative_url }})
+[**{{ post.title }}**]({{ post.url | relative_url }})
 
 {% include post-info.html post=post %}
 
