@@ -200,11 +200,11 @@ Instead of Jekyll automatically building them, we need to run a special Python s
 
 **Having GitHub run the script for you (previewing and testing on the GitHub website):**
 
-When possible, make pull requests from branches on the main repo rather than from forks.
+When possible, make pull requests from branches on your main website repo rather than from forks of it.
 GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-auto-commit-action/issues/117) and [limitations](https://github.com/stefanzweifel/git-auto-commit-action#using-the-action-in-forks-from-public-repositories) with forks, so the following process will be more reliable with branches.
 
 1. Make sure that [GitHub Actions is enabled](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) on your main website repo
-2. If making changes from a fork, make sure GitHub Actions is also enabled on the fork repo
+2. If making changes from a fork of your main website repo, make sure GitHub Actions is also enabled on the fork
 3. Add or change the desired papers in `/_data/research-input.yml`
 4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes 
 5. GitHub should automatically run the Python script
