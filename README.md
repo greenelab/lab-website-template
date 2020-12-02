@@ -6,10 +6,43 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 [**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
 
+---
+
+<h3 align="center">🔔 We need testers! 🔔</h3>
+
+**Please help us by trying out the template to create your own site!
+We need feedback on how easy and flexible it is to use, and how easy the documentation is to follow.**
+
+---
+
+## Gallery
+
+Sites made with _Lab Website Template_.
+See how the flexibility of the template can accommodate a wide variety of designs.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://greenelab.com/">
+        <img src="https://greenelab.com/icons/share-thumbnail.jpg" height="100px" /><br>
+        GreeneLab.com
+      </a>
+    </td>
+    <td>more coming soon...</td>
+    <td>more coming soon...</td>
+    <td>more coming soon...</td>
+    <td>more coming soon...</td>
+  </tr>
+</table>
+
+---
+
 ## Target audience
 
 People who run labs and have some familiarity with GitHub and web technologies.
 In other words, people who need [these features](#features) and have [this background knowledge](#background-knowledge).
+
+---
 
 ## Features
 
@@ -29,6 +62,8 @@ In other words, people who need [these features](#features) and have [this backg
 - A **resources page**, where you can show off your software, datasets, or other useful things
 - Individual **team member pages** with bios, assignable roles, and social media links
 - A **team** page, compiled automatically from individual members
+
+---
 
 ## Background knowledge
 
@@ -66,6 +101,8 @@ That said, the template tries to make things as simple as possible, and if you'r
   You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is written in Ruby.
 - **[Python](https://www.python.org/)** is a general-purpose programming language.
   You don't need to know Python to use this template, unless you want to understand or modify the behavior of [the automatic citations](#automatic-citations).
+
+---
 
 ## Contents
 
@@ -264,9 +301,13 @@ Then:
 
 See [this post](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository) about pulling upstream changes from a template repository.
 
+---
+
 ## Acknowledgments
 
 All included photos are licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), found using [Creative Commons Search](https://search.creativecommons.org/).
+
+---
 
 ## Support
 
@@ -276,6 +317,6 @@ If you need help, first make sure you search this readme and look through the va
 Also, we've tried to include comments in all files where we think they're needed, especially where users are likely to want to customize things.
 Look for file names relevant to your question, and you may find that you can achieve what you want just by opening them up and editing them.
 
-If you still need help, or if you have a suggestion for how to make this template easier to use for novices, please [post a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
+If you still need help, or if you have a suggestion for how to make this template easier to use or understand for novices, please [post a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
 
 <p align="center"><img height="200" src="https://user-images.githubusercontent.com/8326331/96628877-d1658e00-12e0-11eb-894c-7bb0d7f07632.png" alt="Lab Website Template"></p>
