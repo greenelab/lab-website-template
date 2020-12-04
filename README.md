@@ -6,14 +6,10 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 [**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
 
----
-
 <h3 align="center">🔔 We need testers! 🔔</h3>
 
 **Please help us by trying out the template to create your own site!
 We need feedback on how easy and flexible it is to use, and how easy the documentation is to follow.**
-
----
 
 ## Gallery
 
@@ -35,14 +31,10 @@ See how the flexibility of the template can accommodate a wide variety of design
   </tr>
 </table>
 
----
-
 ## Target audience
 
 People who run labs and have some familiarity with GitHub and web technologies.
 In other words, people who need [these features](#features) and have [this background knowledge](#background-knowledge).
-
----
 
 ## Features
 
@@ -62,8 +54,6 @@ In other words, people who need [these features](#features) and have [this backg
 - A **resources page**, where you can show off your software, datasets, or other useful things
 - Individual **team member pages** with bios, assignable roles, and social media links
 - A **team** page, compiled automatically from individual members
-
----
 
 ## Background knowledge
 
@@ -101,8 +91,6 @@ That said, the template tries to make things as simple as possible, and if you'r
   You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is written in Ruby.
 - **[Python](https://www.python.org/)** is a general-purpose programming language.
   You don't need to know Python to use this template, unless you want to understand or modify the behavior of [the automatic citations](#automatic-citations).
-
----
 
 ## Contents
 
@@ -301,13 +289,9 @@ Then:
 
 See [this post](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository) about pulling upstream changes from a template repository.
 
----
-
 ## Acknowledgments
 
 All included photos are licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), found using [Creative Commons Search](https://search.creativecommons.org/).
-
----
 
 ## Support
 
