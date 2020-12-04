@@ -4,12 +4,16 @@
 An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
 
-[**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
+<h4 align="center"><a href="https://greenelab.github.io/lab-website-template/">⭐ <b>See the demo</b> ⭐</a></h4>
+
+---
 
 <h3 align="center">🔔 We need testers! 🔔</h3>
 
 **Please help us by trying out the template to create your own site!
 We need feedback on how easy and flexible it is to use, and how easy the documentation is to follow.**
+
+---
 
 ## Gallery
 
