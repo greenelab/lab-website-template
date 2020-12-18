@@ -1,17 +1,6 @@
-{% comment %}
-Put SVGs you wish to inline in "/_includes" like this. Inlining an SVG means
-putting its source code directly into the page, instead of using an <img> tag.
-
-Inlining allows you to style an SVG (things like fill color, stroke width, etc)
-from outside of it, in a separate CSS file. This way you can use the same image
-in multiple different contexts without duplicating it. For example, you can have
-a single logo file, and color it white when on a dark background, and color it
-black when on a light background.
-{% endcomment %}
-
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="-25 -25 150 150"
+  viewBox="0 0 100 100"
   style="overflow: visible;"
 >
   <style>
