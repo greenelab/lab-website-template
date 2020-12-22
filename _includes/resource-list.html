@@ -1,12 +1,12 @@
 {% assign resources = site.data.resources %}
 
-{% if include.type != nil %}
-{% if include.type == "" %}
-{% assign type = nil %}
+{% if include.group != nil %}
+{% if include.group == "" %}
+{% assign group = nil %}
 {% else %}
-{% assign type = include.type %}
+{% assign group = include.group %}
 {% endif %}
-{% assign resources = resources | where_exp: "resource", "resource.type == type" %}
+{% assign resources = resources | where_exp: "resource", "resource.group == group" %}
 {% endif %}
 
 {% for resource in resources %}

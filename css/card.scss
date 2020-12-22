@@ -5,7 +5,6 @@
 @import "mixins";
 
 .card {
-  box-sizing: border-box;
   max-width: 100%;
 
   .card_image {
@@ -30,7 +29,7 @@
     .card_title {
       display: block;
       margin-bottom: 10px;
-      font-weight: $medium;
+      font-weight: $semi-bold;
     }
 
     & > p {

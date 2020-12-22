@@ -3,7 +3,7 @@
     "short_name": "",
     "icons": [
         {
-            "src": "icons/android.png",
+            "src": "favicons/android.png",
             "sizes": "512x512",
             "type": "image/png"
         }

@@ -5,7 +5,7 @@
 @import "mixins";
 
 .tags {
-  @include flex-center;
+  @include inline-flex-center;
   flex-wrap: wrap;
   max-width: 100%;
 

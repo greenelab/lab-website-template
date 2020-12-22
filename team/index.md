@@ -4,21 +4,12 @@ title: Team
 
 # <i class="fas fa-users"></i>Team
 
-## Team List
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-A _team list_ component, to sort and group all of the members on your team automatically.
-Can be used on any page, but assumes its content from `/_members`.
-Uses the _portrait_ component.
-
-All team members, sorted alphabetically by file name:
-
-{% capture html %}
-{% include team-list.html %}
-{% endcapture %}
-
-{% include centerer.html html=html %}
-
-Team members filtered and sorted by role:
+<!-- section break -->
 
 {% capture html %}
 {% include team-list.html role="pi" %}
@@ -28,20 +19,14 @@ Team members filtered and sorted by role:
 
 {% include centerer.html html=html %}
 
-Team members filtered and sorted by group:
+<!-- section break -->
 
-{% capture html %}
-{% include team-list.html group="current" %}
-{% include team-list.html group="" %}
-{% include team-list.html group="alum" %}
-{% endcapture %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-{% include centerer.html html=html %}
-
-Team members in a specific order and in a mini size:
-
-{% capture html %}
-{% include team-list.html order="team-order" mini=true %}
-{% endcapture %}
-
-{% include centerer.html html=html %}
+{%
+  include big-link.html
+  icon="fas fa-hands-helping"
+  text="Join the Team"
+  link="join"
+%}{:.center}
