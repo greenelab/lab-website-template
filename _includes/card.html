@@ -4,24 +4,29 @@
 {% assign size = "large" %}
 {% endif %}
 
-<div class="card" data-size="{{ size }}">
-  {% assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url %}
+<div
+  class="card"
+  data-size="{{ size }}"
+>
+  {% assign placeholder = "images/placeholder.svg" | relative_url %}
   <a
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="card_image"
   >
-    {%- if include.image -%}
     <img
       src="{{ include.image | relative_url }}"
       onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
     >
-    {%- else -%}
-    <img src="{{ placeholder }}">
-    {%- endif -%}
   </a>
   <div class="card_text">
     {% if include.heading %}
-    <a href="{{ include.link | relative_url }}" class="card_title">
+    <a
+      href="{{ include.link | relative_url }}"
+      class="card_title"
+      data-tooltip="{{ include.tooltip }}"
+      data-delay="500"
+      data-placement="top-start"
+    >
       {{- include.heading -}}
     </a>
     {% endif %}

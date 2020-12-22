@@ -7,22 +7,30 @@ title: Contact
 Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
 We are located on the 13th floor of the [Center for Wit and Sagacity]().
 
-{% include figure.html image="images/volcano.jpg" width="100%" %}
+{%
+  include figure.html
+  image="images/photo.jpg"
+  width="100%"
+  caption="The Center for Wit and Sagacity"
+%}
 
-## Email
+<!-- section break -->
+
+### Email
 
 [scrooge@mcduck.com](mailto:scrooge@mcduck.com)
 {:.center}
 
-## Phone
+### Phone
 
 [(555) 867-5309](tel:+1-555-867-5309)
 {:.center}
 
-## Address
+### Address
 
 {% comment %}
-Tip: put both a mailing address for mail/deliveries, AND a navigation-friendly address so people can find their way to you easily.
+Tip: Put both a mailing address for mail/deliveries, AND a navigation-friendly
+address so people can find their way to you easily.
 {% endcomment %}
 
 That St & The Other St  

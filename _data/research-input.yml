@@ -1,67 +1,11 @@
-# List your research papers here. The "build research" Python script takes this
-# file and uses Manubot to generate a fully-cited "output research" file, which
-# is then read by the research list component.
-
-# NOTES:
-
-# Using the research list component, papers will be displayed in order of and
-# grouped by date, regardless of how they are listed here.
-
-# Any property that Manubot returns can be manually overridden by putting it
-# here, such as "date", "publisher", etc. Use the output file as a reference
-# for the expected format (eg dates should be YYYY-MM-DD).
-
-# If a paper is already in the output file (matched by id), that existing
-# citation data will be used instead of calling Manubot again. To clear this
-# "cache", remove that output entry, or simply delete the whole output file.
-
-# PARAMETERS:
-
-# id:
-# An identifier string that Manubot can understand and cite. Also used to
-# determine if a paper already exists in the output.
-
-# image:
-# Url to a striking image. Use a figure from your paper, or if there are none,
-# use a journal logo or issue cover.
-
-# tags:
-# A list of key topics/themes of your paper. Aim for 2 to 5. look at other
-# papers and try to use similar tags.
-
-# repo:
-# A GitHub repo to automatically fetch tags (aka "topics") from.
-
-# extra-links:
-# A list of additional links - beyond the main paper link that Manubot returns
-# - that will show under your paper citation.
-
-# type:
-# Determines link icon and default text. Look in "/_includes/paper-links.html"
-# to see what unique types can be specified.
-
-# text:
-# Text to show next to icon. If not specified, defaults to some text that
-# matches type (see "type")
-
-# link:
-# Url to link to. If not specified, defaults to the url that Manubot returns for
-# the citation.
-
-- id: doi:10.1101/2020.11.06.371963
-  thumbnail: https://www.biorxiv.org/content/biorxiv/early/2020/11/07/2020.11.06.371963/F4.medium.gif
-  tags:
-    - cancer
-    - single cell
-    - ovarian cancer
-
-- id: doi:10.1098/rsif.2017.0387
-  image: https://royalsocietypublishing.org/cms/asset/1b0430b1-5a66-4523-83be-29b435eddf86/rsif20170387f01.jpg
+- id: doi:10.1016/j.csbj.2020.05.017
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  date: 2020-6-2
   extra-links:
-    - type: preprint
-      link: https://doi.org/10.1101/142760
-    - type: source
-      link: http://github.com/greenelab/deep-review
+    - type: manubot
+      link: https://greenelab.github.io/knowledge-graph-review/
+  tags:
+    - knowledge graphs
 
 - id: doi:10.1371/journal.pcbi.1007128
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
@@ -74,14 +18,6 @@
     - type: website
       link: http://manubot.org/
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  date: 2020-6-2
-  extra-links:
-    - type: manubot
-      link: https://greenelab.github.io/knowledge-graph-review/
-  tags:
-    - knowledge graphs
 
 - id: doi:10.7554/eLife.32822
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp

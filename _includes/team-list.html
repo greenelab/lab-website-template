@@ -1,17 +1,5 @@
 {% assign members = site.members %}
 
-{% if include.order and site.data[include.order] %}
-{% assign members = "" | split: "" %}
-{% for name in site.data[include.order] %}
-{% assign path = name | append: ".html" %}
-{% for member in site.members %}
-{% if member.url contains path %}
-{% assign members = members | push: member %}
-{% endif %}
-{% endfor %}
-{% endfor %}
-{% endif %}
-
 {% if include.role != nil %}
 {% if include.role == "" %}
 {% assign role = nil %}

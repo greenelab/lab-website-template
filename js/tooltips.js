@@ -2,8 +2,8 @@
 // shows a popup of text on hover/focus of an element
 
 // specify text to show in data-tooltip attribute
-// specify placement (top, bottom, left, right) in data-tooltip-placement attribute
-// specify custom delay (in ms) in data-tooltip-delay attribute
+// specify placement (top, bottom, left, right) in data-placement attribute
+// specify custom delay (in ms) in data-delay attribute
 
 const defaultPlacement = "top";
 const defaultDelay = 100;

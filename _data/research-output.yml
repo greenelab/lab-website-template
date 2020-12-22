@@ -1,71 +1,17 @@
-- title: Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer
-    facilitates effective experimental design
+- title: Constructing knowledge graphs and their biomedical applications
   authors:
-  - Lukas M. Weber
-  - Ariel A. Hippen
-  - Peter F. Hickey
-  - Kristofer C. Berrett
-  - Jason Gertz
-  - Jennifer Anne Doherty
+  - David N. Nicholson
   - Casey S. Greene
-  - Stephanie C. Hicks
-  publisher: Cold Spring Harbor Laboratory
-  date: '2020-11-07'
-  link: https://doi.org/ghjkzq
-  id: doi:10.1101/2020.11.06.371963
-  thumbnail: https://www.biorxiv.org/content/biorxiv/early/2020/11/07/2020.11.06.371963/F4.medium.gif
-  tags:
-  - cancer
-  - single cell
-  - ovarian cancer
-- title: Opportunities and obstacles for deep learning in biology and medicine
-  authors:
-  - Travers Ching
-  - Daniel S. Himmelstein
-  - Brett K. Beaulieu-Jones
-  - Alexandr A. Kalinin
-  - Brian T. Do
-  - Gregory P. Way
-  - Enrico Ferrero
-  - Paul-Michael Agapow
-  - Michael Zietz
-  - Michael M. Hoffman
-  - Wei Xie
-  - Gail L. Rosen
-  - Benjamin J. Lengerich
-  - Johnny Israeli
-  - Jack Lanchantin
-  - Stephen Woloszynek
-  - Anne E. Carpenter
-  - Avanti Shrikumar
-  - Jinbo Xu
-  - Evan M. Cofer
-  - Christopher A. Lavender
-  - Srinivas C. Turaga
-  - Amr M. Alexandari
-  - Zhiyong Lu
-  - David J. Harris
-  - Dave DeCaprio
-  - Yanjun Qi
-  - Anshul Kundaje
-  - Yifan Peng
-  - Laura K. Wiley
-  - Marwin H. S. Segler
-  - Simina M. Boca
-  - S. Joshua Swamidass
-  - Austin Huang
-  - Anthony Gitter
-  - Casey S. Greene
-  publisher: Journal of The Royal Society Interface
-  date: '2018-04-04'
-  link: https://doi.org/gddkhn
-  id: doi:10.1098/rsif.2017.0387
-  image: https://royalsocietypublishing.org/cms/asset/1b0430b1-5a66-4523-83be-29b435eddf86/rsif20170387f01.jpg
+  publisher: Computational and Structural Biotechnology Journal
+  date: '2020-06-02'
+  link: https://doi.org/gg7m48
+  id: doi:10.1016/j.csbj.2020.05.017
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   extra-links:
-  - type: preprint
-    link: https://doi.org/10.1101/142760
-  - type: source
-    link: http://github.com/greenelab/deep-review
+  - type: manubot
+    link: https://greenelab.github.io/knowledge-graph-review/
+  tags:
+  - knowledge graphs
 - title: Open collaborative writing with Manubot
   authors:
   - Daniel S. Himmelstein
@@ -88,20 +34,6 @@
     link: https://github.com/greenelab/meta-review
   - type: website
     link: http://manubot.org/
-- title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-06-02'
-  link: https://doi.org/gg7m48
-  id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  extra-links:
-  - type: manubot
-    link: https://greenelab.github.io/knowledge-graph-review/
-  tags:
-  - knowledge graphs
 - title: Sci-Hub provides access to nearly all scholarly literature
   authors:
   - Daniel S Himmelstein

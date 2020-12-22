@@ -1,31 +1,23 @@
-# https://jekyllrb.com/docs/configuration/
-
 # site-wide variables
-title: Lab Website Template # title of site, used in tab name and elsewhere
-email: jane.smith@gmail.com # default email
-google: Jane Smith # default name to search on Google Scholar
-github: fakelab # default GitHub user/org, without the @
-twitter: faketwitterhandle # default Twitter handle, without the @
-instagram: fakeinstagramhandle # default Instagram handle, without the @
-youtube: fakeyoutubechannel # default YouTube channel handle
+title: Lab Website Template
+email: jane.smith@your-lab.com
+google: Jane Smith
+github: your-lab
+twitter: YourLabHandle
+instagram: YourLabHandle
+youtube: YourLabChannel
 
 # base directory where site is hosted
-# set to "" if hosting at a custom domain, eg yoursite.com
 baseurl: /lab-website-template
 
 # default front matter parameters for markdown files
-# defaults can be overridden on a particular page, eg:
-# ---
-# description: Description unique to this page
-# background: images/different-bg-for-this-page.jpg
-# ---
 defaults:
   # all markdown files
   - scope:
       path: ""
     values:
-      description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more. # description that will show under search engine results
-      background: images/test-tube.jpg # background image in header and footer
+      description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+      background: images/background.jpg
       layout: default
   # markdown files in /_members
   - scope:
@@ -38,6 +30,7 @@ defaults:
     values:
       layout: post
 
+# collections
 collections:
   members:
     output: true
