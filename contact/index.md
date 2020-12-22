@@ -7,7 +7,12 @@ title: Contact
 Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
 We are located on the 13th floor of the [Center for Wit and Sagacity]().
 
-{% include figure.html image="images/photo.jpg" width="100%" %}
+{%
+  include figure.html
+  image="images/photo.jpg"
+  width="100%"
+  caption="The Center for Wit and Sagacity"
+%}
 
 <!-- section break -->
 

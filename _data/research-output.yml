@@ -6,7 +6,7 @@
   date: '2020-06-02'
   link: https://doi.org/gg7m48
   id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  bump: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   extra-links:
   - type: manubot
     link: https://greenelab.github.io/knowledge-graph-review/

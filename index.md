@@ -9,6 +9,10 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
 
+> bro what's up text text text text text text text text text text text text text text text text text text
+> text text text text text text text text text text text text text text
+> text text
+
 <!-- section break -->
 
 # Highlights
