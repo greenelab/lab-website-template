@@ -1,4 +1,4 @@
-# packages
+# import packages
 import sys
 import os
 import json
@@ -7,39 +7,92 @@ import subprocess
 from datetime import datetime
 from yaml.loader import SafeLoader
 
-# allow printing ANSI color codes
-os.system("")
-
-# yaml loader with line numbering
-# https://stackoverflow.com/questions/13319067/parsing-yaml-return-with-line-number
-class SafeLineLoader(SafeLoader):
-    def construct_mapping(self, node, deep=False):
-        mapping = super(SafeLineLoader, self).construct_mapping(node, deep=deep)
-        if node.start_mark.column == 2:
-            mapping["__line_number__"] = node.start_mark.line + 1
-        return mapping
+####################
+# variables
+####################
 
 # input and output files
 current_dir = os.path.dirname(os.path.realpath(__file__))
 input_file = os.path.join(current_dir, "research-input.yml")
 output_file = os.path.join(current_dir, "research-output.yml")
 
-# log wih color
+# input papers
+input_papers = []
+
+# existing output papers
+output_papers = []
+
+# new output papers
+new_papers = []
+
+# error flag
+with_errors = False
+
+# default paper date, year month day
+default_date = [1900, 1, 1]
+
+# colors for logging
+palette = {
+    "white": "\033[97m",
+    "red": "\033[91m",
+    "blue": "\033[94m",
+    "green": "\033[92m",
+    "yellow": "\033[93m",
+    "reset": "\033[0m"
+}
+
+####################
+# functions
+####################
+
 def log(message, color="white"):
-    palette = {
-        "white": "\033[97m",
-        "red": "\033[91m",
-        "blue": "\033[94m",
-        "green": "\033[92m",
-        "yellow": "\033[93m",
-        "reset": "\033[0m"
-    }
+    """
+    log wih color
+    """
     print(f"{palette[color]}{message}{palette['reset']}")
 
-# log and exit
 def exit(message):
+    """
+    log and exit
+    """
     log(message, "red")
     sys.exit(1)
+
+class SafeLineLoader(SafeLoader):
+    """
+    yaml loader with line numbering
+    https://stackoverflow.com/questions/13319067/parsing-yaml-return-with-line-number
+    """
+    def construct_mapping(self, node, deep=False):
+        mapping = super().construct_mapping(node, deep=deep)
+        if node.start_mark.column == 2:
+            mapping["__line_number__"] = node.start_mark.line + 1
+        return mapping
+
+def date_part(citation, index):
+    """
+    get date parts from Manubot citation
+    """
+    try:
+        return citation.get("issued").get("date-parts")[0][index]
+    except Exception:
+        return default_date[index]
+
+def clean_date(date):
+    """
+    format date string with leading 0's
+    """
+    try:
+        return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
+    except Exception:
+        return "-".join(str(part) for part in default_date)
+
+####################
+# setup
+####################
+
+# allow printing ANSI color codes
+os.system("")
 
 # check that input file exists
 if not os.path.isfile(input_file):
@@ -65,18 +118,14 @@ try:
     with open(output_file, encoding="utf8") as file:
         output_papers = yaml.load(file, Loader=SafeLineLoader)
         if type(output_papers) != list:
-            raise
+            raise Exception()
 except Exception:
+    log("Problem with existing research-output.yml", "yellow")
     output_papers = []
 
-# new output papers
-new_papers = []
-
-# error flag
-with_errors = False
-
-# default paper date, year month day
-default_date = [1900, 1, 1]
+####################
+# generate citations
+####################
 
 # go through input papers
 for input_index, input_paper in enumerate(input_papers):
@@ -154,12 +203,9 @@ for input_index, input_paper in enumerate(input_papers):
             new_paper["publisher"] = container or publisher or collection
 
             # date
-            def part(index):
-                try:
-                    return citation.get("issued").get("date-parts")[0][index]
-                except Exception:
-                    return default_date[index]
-            year, month, day = part(0), part(1), part(2)
+            year = date_part(citation, 0)
+            month = date_part(citation, 1)
+            day = date_part(citation, 2)
             new_paper["date"] = f"{year}-{month}-{day}"
 
             # link
@@ -177,15 +223,12 @@ for input_index, input_paper in enumerate(input_papers):
         log("")
         with_errors = True
 
+####################
+# finish up
+####################
+
 log("------------------------------------------------------------")
 log("")
-
-# format date string with leading 0's
-def clean_date(date):
-    try:
-        return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
-    except Exception:
-        return "-".join(str(part) for part in default_date)
 
 # go through new output papers
 for new_index, new_paper in enumerate(new_papers):
