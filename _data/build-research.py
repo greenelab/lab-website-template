@@ -42,7 +42,7 @@ palette = {
 with_errors = False
 
 ####################
-# functions and classes
+# functions, classes
 ####################
 
 def log(message, color="white"):
@@ -135,7 +135,7 @@ for input_index, input_paper in enumerate(input_papers):
     log(f"Paper {input_index + 1} of {len(input_papers)}")
     log(f"Line number {input_paper.get('__line_number__')}")
 
-    # catch errors
+    # catch errors in processing paper
     try:
 
         # check that paper entry is dictionary/object
