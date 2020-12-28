@@ -25,9 +25,6 @@ output_papers = []
 # new output papers
 new_papers = []
 
-# error flag
-with_errors = False
-
 # default paper date, year month day
 default_date = [1900, 1, 1]
 
@@ -40,6 +37,9 @@ palette = {
     "yellow": "\033[93m",
     "reset": "\033[0m"
 }
+
+# flag for "done with errors"
+with_errors = False
 
 ####################
 # functions
