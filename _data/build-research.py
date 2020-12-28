@@ -25,7 +25,7 @@ input_file = os.path.join(current_dir, "research-input.yml")
 output_file = os.path.join(current_dir, "research-output.yml")
 
 # log wih color
-def log(message, color="white", exit=False):
+def log(message, color="white"):
     palette = {
         "white": "\033[97m",
         "red": "\033[91m",
@@ -54,7 +54,7 @@ try:
         except Exception:
             exit("Can't parse research-input.yml. Make sure it's valid YAML.")
 except Exception:
-    exit("Can't open research-input.yml", True)
+    exit("Can't open research-input.yml")
 
 # check that top level of input yaml is list/array
 if type(input_papers) != list:
