@@ -12,9 +12,11 @@ from yaml.loader import SafeLoader
 ####################
 
 # input and output files
+input_file = "research-input.yml"
+output_file = "research-output.yml"
 current_dir = os.path.dirname(os.path.realpath(__file__))
-input_file = os.path.join(current_dir, "research-input.yml")
-output_file = os.path.join(current_dir, "research-output.yml")
+input_path = os.path.join(current_dir, input_file)
+output_path = os.path.join(current_dir, output_file)
 
 # input papers
 input_papers = []
@@ -95,27 +97,27 @@ def clean_date(date):
 os.system("")
 
 # check that input file exists
-if not os.path.isfile(input_file):
-    exit("Can't find research-input.yml")
+if not os.path.isfile(input_path):
+    exit(f"Can't find {input_file}")
 
 # try to open input file
 try:
-    with open(input_file, encoding="utf8") as file:
+    with open(input_path, encoding="utf8") as file:
         # try to parse input file as yaml
         try:
             input_papers = yaml.load(file, Loader=SafeLineLoader)
         except Exception:
-            exit("Can't parse research-input.yml. Make sure it's valid YAML.")
+            exit(f"Can't parse {input_file}. Make sure it's valid YAML.")
 except Exception:
-    exit("Can't open research-input.yml")
+    exit(f"Can't open {input_file}")
 
 # check that top level of input yaml is list/array
 if type(input_papers) != list:
-    exit("research-input.yml not in expected format")
+    exit(f"{input_file} not in expected format")
 
 # try to open existing output file and parse as yaml
 try:
-    with open(output_file, encoding="utf8") as file:
+    with open(output_path, encoding="utf8") as file:
         output_papers = yaml.load(file, Loader=SafeLineLoader)
         if type(output_papers) != list:
             raise Exception()
@@ -240,10 +242,10 @@ for new_index, new_paper in enumerate(new_papers):
 
 # write new list of papers to output file
 try:
-    with open(output_file, mode="w") as file:
+    with open(output_path, mode="w") as file:
         yaml.dump(new_papers, file, default_flow_style=False, sort_keys=False)
 except Exception:
-    exit("Can't save research-output.yml")
+    exit(f"Can't save {output_file}")
 
 if with_errors:
     log("Done, with errors", "yellow")
