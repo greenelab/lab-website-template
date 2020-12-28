@@ -1,85 +1,209 @@
-# a script to automatically generate citations for papers the research list component
-
-# before running:
-# install python                    https://www.python.org/downloads/
-# install pip                       https://pip.pypa.io/en/stable/installing/
-# install manubot                   https://github.com/manubot/manubot#installation
-
+# packages
 import sys
 import os
 import json
 import yaml
 import subprocess
 from datetime import datetime
+from yaml.loader import SafeLoader
+
+# allow printing ANSI color codes
+os.system("")
+
+# yaml loader with line numbering
+# https://stackoverflow.com/questions/13319067/parsing-yaml-return-with-line-number
+class SafeLineLoader(SafeLoader):
+    def construct_mapping(self, node, deep=False):
+        mapping = super(SafeLineLoader, self).construct_mapping(node, deep=deep)
+        if node.start_mark.column == 2:
+            mapping["__line_number__"] = node.start_mark.line + 1
+        return mapping
 
 # input and output files
 current_dir = os.path.dirname(os.path.realpath(__file__))
 input_file = os.path.join(current_dir, "research-input.yml")
 output_file = os.path.join(current_dir, "research-output.yml")
 
-# load input papers as yaml
-try:
-    with open(input_file, encoding="utf8") as file:
-        input_papers = yaml.load(file, Loader=yaml.FullLoader)
-except Exception:
-    print("Problem with input file.")
+# log wih color
+def log(message, color="white", exit=False):
+    palette = {
+        "white": "\033[97m",
+        "red": "\033[91m",
+        "blue": "\033[94m",
+        "green": "\033[92m",
+        "yellow": "\033[93m",
+        "reset": "\033[0m"
+    }
+    print(f"{palette[color]}{message}{palette['reset']}")
+
+# log and exit
+def exit(message):
+    log(message, "red")
     sys.exit(1)
 
-# load existing output papers as yaml
+# check that input file exists
+if not os.path.isfile(input_file):
+    exit("Can't find research-input.yml")
+
+# try to open input file
+try:
+    with open(input_file, encoding="utf8") as file:
+        # try to parse input file as yaml
+        try:
+            input_papers = yaml.load(file, Loader=SafeLineLoader)
+        except Exception:
+            exit("Can't parse research-input.yml. Make sure it's valid YAML.")
+except Exception:
+    exit("Can't open research-input.yml", True)
+
+# check that top level of input yaml is list/array
+if type(input_papers) != list:
+    exit("research-input.yml not in expected format")
+
+# try to open existing output file and parse as yaml
 try:
     with open(output_file, encoding="utf8") as file:
-        output_papers = yaml.load(file, Loader=yaml.FullLoader)
+        output_papers = yaml.load(file, Loader=SafeLineLoader)
+        if type(output_papers) != list:
+            raise
 except Exception:
     output_papers = []
 
-# get citation metadata for each paper
+# new output papers
 new_papers = []
-for index, input_paper in enumerate(input_papers, start=1):
+
+# error flag
+with_errors = False
+
+# default paper date, year month day
+default_date = [1900, 1, 1]
+
+# go through input papers
+for input_index, input_paper in enumerate(input_papers):
     # show progress
-    print("\n------------------------------")
-    print(f"Paper {index} of {len(input_papers)}")
-    print("------------------------------\n")
+    log("------------------------------------------------------------")
+    log("")
+    log(f"Paper {input_index + 1} of {len(input_papers)}")
+    log(f"Line number {input_paper.get('__line_number__')}")
 
-    # if input paper already exists in output, use that citation info to save time
-    matches = [p for p in output_papers if p.get("id", "") == input_paper.get("id", "")]
-    if len(matches) > 0:
-        print("Paper already in output. Using existing citation.")
-        new_papers.append(matches[0])
+    # catch errors
+    try:
 
-    # otherwise, run manubot to get new citation metadata
-    else:
-        print("Paper not in output. Running Manubot to generate citation.\n")
-        commands = ["manubot", "cite", input_paper["id"], "--log-level", "DEBUG"]
-        output = subprocess.Popen(commands, stdout=subprocess.PIPE)
-        citation = json.loads(output.communicate()[0])[0]
+        # check that paper entry is dictionary/object
+        if type(input_paper) != dict:
+            raise Exception("Entry not in expected format. Skipping.")
 
-        # take only the needed info from the citation
-        new_paper = {}
-        # output_ title
-        new_paper["title"] = citation.get("title", "")
-        # output_ authors
-        new_paper["authors"] = []
-        for author in citation.get("author", []):
-            new_author = author.get("given", "") + " " + author.get("family", "")
-            new_paper["authors"].append(new_author)
-        # output_ publisher
-        new_paper["publisher"] = citation.get("container-title", citation.get("publisher", citation.get("collection-title", "")))
-        # output_ date
-        date_parts = citation.get("issued").get("date-parts")[0]
-        date_parts += (3 - len(date_parts)) * [1] # default month and day to 1
-        new_paper["date"] = "-".join([str(part) for part in date_parts])
-        # output_ link
-        new_paper["link"] = citation.get("URL", "")
-        # add to list
-        new_papers.append(new_paper)
+        # get paper entry identifier
+        input_id = input_paper.get("id")
+        if not input_id:
+            raise Exception("Entry has no id field. Skipping.")
+        log(input_id)
+        log("")
 
-# merge any extra properties specified in the input papers into the final output
-print("\nCopying additional metadata from input to output.")
-for index, new_paper in enumerate(new_papers):
-    new_paper.update(input_papers[index])
-    # ensure date in proper format (w/ leading 0's) for correct date sorting
-    new_paper["date"] = datetime.strptime(new_paper["date"], "%Y-%m-%d").strftime("%Y-%m-%d")
+        # find duplicate entries
+        for duplicate_index, duplicate_paper in enumerate(input_papers):
+            if duplicate_paper.get("id") == input_id:
+                # don't count first instance of id as duplicate
+                if input_index > duplicate_index:
+                    raise Exception("Entry is a duplicate. Skipping.")
+
+        # find same paper in existing output
+        existing_paper = None
+        for output_paper in output_papers:
+            if output_paper.get("id") == input_id:
+                existing_paper = output_paper
+                break
+
+        # if already in output, use existing paper to save time
+        if existing_paper:
+            log("Already in output. Using existing citation.", "blue")
+            log("")
+            new_papers.append(existing_paper)
+
+        # if not already in output, run Manubot to get citation info
+        else:
+            log("Running Manubot to generate citation")
+            log("")
+
+            # run Manubot and get results as json
+            try:
+                commands = ["manubot", "cite", input_id, '--log-level=ERROR']
+                output = subprocess.Popen(commands, stdout=subprocess.PIPE)
+                citation = json.loads(output.communicate()[0])[0]
+            except Exception:
+                log("")
+                raise Exception("Manubot could not generate citation")
+
+            # new paper info, with only needed info from citation
+            new_paper = {}
+
+            # title
+            new_paper["title"] = citation.get("title", "")
+
+            # authors
+            new_paper["authors"] = []
+            for author in citation.get("author", []):
+                given = author.get("given", "")
+                family = author.get("family", "")
+                new_paper["authors"].append(given + " " + family)
+
+            # publisher
+            container = citation.get("container-title", "")
+            collection = citation.get("collection-title", "")
+            publisher = citation.get("publisher", "")
+            new_paper["publisher"] = container or publisher or collection
+
+            # date
+            def part(index):
+                try:
+                    return citation.get("issued").get("date-parts")[0][index]
+                except Exception:
+                    return default_date[index]
+            year, month, day = part(0), part(1), part(2)
+            new_paper["date"] = f"{year}-{month}-{day}"
+
+            # link
+            new_paper["link"] = citation.get("URL", "")
+
+            # add new paper to list
+            new_papers.append(new_paper)
+
+            log("Citation generated", "green")
+            log("")
+
+    # catch errors
+    except Exception as message:
+        log(message, "red")
+        log("")
+        with_errors = True
+
+log("------------------------------------------------------------")
+log("")
+
+# format date string with leading 0's
+def clean_date(date):
+    try:
+        return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
+    except Exception:
+        return "-".join(str(part) for part in default_date)
+
+# go through new output papers
+for new_index, new_paper in enumerate(new_papers):
+    # merge properties from input paper into new output paper
+    new_paper.update(input_papers[new_index])
+    # delete __line_number__ field
+    del new_paper["__line_number__"]
+    # ensure date in proper format for correct date sorting
+    new_paper["date"] = clean_date(new_paper.get("date"))
 
 # write new list of papers to output file
-with open(output_file, mode="w") as file:
-    yaml.dump(new_papers, file, default_flow_style=False, sort_keys=False)
+try:
+    with open(output_file, mode="w") as file:
+        yaml.dump(new_papers, file, default_flow_style=False, sort_keys=False)
+except Exception:
+    exit("Can't save research-output.yml")
+
+if with_errors:
+    log("Done, with errors", "yellow")
+else:
+    log("Done!", "green")
