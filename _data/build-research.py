@@ -42,7 +42,7 @@ palette = {
 with_errors = False
 
 ####################
-# functions
+# functions and classes
 ####################
 
 def log(message, color="white"):
