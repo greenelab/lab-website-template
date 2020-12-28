@@ -120,7 +120,6 @@ try:
         if type(output_papers) != list:
             raise Exception()
 except Exception:
-    log("Problem with existing research-output.yml", "yellow")
     output_papers = []
 
 ####################
