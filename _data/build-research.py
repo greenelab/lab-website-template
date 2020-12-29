@@ -160,7 +160,7 @@ for input_index, input_paper in enumerate(input_papers):
         # find same paper in existing output
         existing_paper = None
         for output_paper in output_papers:
-            if output_paper.get("id") == input_id:
+            if type(output_paper) == dict and output_paper.get("id") == input_id:
                 existing_paper = output_paper
                 break
 
