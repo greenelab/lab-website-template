@@ -20,6 +20,9 @@ const createSearch = () => {
   // attach filter function to search box input
   searchInput.addEventListener("input", debounce(filterCards, 50));
 
+  // enable search input to indicate that script has finished loading
+  searchInput.removeAttribute("disabled");
+
   // get url param and search
   loadUrlSearch();
   filterCards();

@@ -7,7 +7,7 @@ title: Home
 [Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
 
-{% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
+{% include big-link.html icon="fab fa-github" text="See the template on GitHub" link="https://github.com/greenelab/lab-website-template" %}{% include big-link.html icon="fas fa-book" text="See the documentation" link="https://github.com/greenelab/lab-website-template/wiki" %}{:.center}
 
 <!-- section break -->
 
