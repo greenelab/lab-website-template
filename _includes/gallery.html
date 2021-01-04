@@ -29,7 +29,7 @@
     class="gallery_item"
     data-tooltip="{{ tooltip }}"
   >
-    <img src="{{ image | relative_url }}">
+    <img src="{{ image | relative_url }}" loading="lazy">
   </a>
   {%- endif -%}
 

@@ -16,6 +16,7 @@
     <img
       src="{{ include.image | relative_url }}"
       onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
+      loading="lazy"
     >
   </a>
   <div class="card_text">
@@ -54,7 +55,7 @@
       {% endif %}
     >
     {%- endif -%}
-      {{- row | markdownify | remove: "<p>" | remove: "</p>" -}}
+      {{- row -}}
     {%- if firstchar != "<" -%}
     </p>
     {%- endif -%}
