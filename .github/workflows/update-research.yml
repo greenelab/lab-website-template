@@ -1,7 +1,9 @@
-name: Update research data
+name: Automatically generate citations
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "_data/research-input.yml"
   pull_request:
@@ -10,7 +12,7 @@ on:
 
 jobs:
   update_research:
-    name: Update Manubot-generated citations in research data
+    name: Automatically generate citations
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -27,4 +29,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: "_data/research-output.yml"
-          commit_message: "Update Manubot-generated citations in research data"
+          commit_message: "Automatically generate citations"
