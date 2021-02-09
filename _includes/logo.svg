@@ -1,130 +1,78 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 100 100"
-  style="overflow: visible;"
->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100" style="overflow: visible">
   <style>
-    .experiment_liquid {
-      animation: experiment_liquid 2s ease-in-out forwards infinite;
+  circle {
+    animation: float 2s ease-out forwards infinite,
+    fade 2s ease-out forwards infinite;
+  }
+  circle:nth-of-type(1) {
+    animation-delay: 0.1s;
+  }
+  circle:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  circle:nth-of-type(3) {
+    animation-delay: 0.7s;
+  }
+  @keyframes float {
+    50% {
+      transform: translateY(0);
     }
-    @keyframes experiment_liquid {
-      0% {
-        transform: translateY(100px) scaleY(1) translateY(-100px);
-      }
-      20% {
-        transform: translateY(100px) scaleY(0.7) translateY(-100px);
-      }
-      80% {
-        transform: translateY(100px) scaleY(1.3) translateY(-100px);
-      }
-      100% {
-        transform: translateY(100px) scaleY(1) translateY(-100px);
-      }
+    100% {
+      transform: translateY(-60px);
     }
-    .experiment_liquid[data-number="1"] {
-      animation-delay: 0s;
+  }
+  @keyframes fade {
+    75% {
+      opacity: 1;
     }
-    .experiment_liquid[data-number="2"] {
-      animation-delay: 0.5s;
+    100% {
+      opacity: 0;
     }
-    .experiment_bubble {
-      animation: experiment_bubble 2s ease forwards infinite;
-    }
-    @keyframes experiment_bubble {
-      0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-110px);
-      }
-    }
-    .experiment_bubble[data-number="1"] {
-      animation-delay: 0s;
-    }
-    .experiment_bubble[data-number="2"] {
-      animation-delay: 0.5s;
-    }
-    .experiment_bubble[data-number="3"] {
-      animation-delay: 1s;
-    }
+  }
   </style>
+  <circle fill="#b3e5fc" cx="0" cy="0" r="4"/>
+  <circle fill="#b3e5fc" cx="0" cy="0" r="3"/>
+  <circle fill="#b3e5fc" cx="0" cy="0" r="2"/>
   <path
-    fill="none"
-    stroke="currentColor"
-    stroke-width="7.5"
+    fill="#81d4fa"
     d="
-      M 10 5
-      L 10 80
-      A 12 12 0 0 0 34 80
-      L 34 5
-      z
-      M 0 5
-      L 45 5
-    "
-  />
-  <path
-    class="experiment_liquid"
-    data-number="1"
-    fill="currentColor"
-    d="
-      M 10 45
-      L 10 80
-      A 12 12 0 0 0 34 80
-      L 34 45
+      M 0.0 -15.0
+      L -21.7 -2.5
+      L -21.7 22.5
+      L -0.0 35.0
+      L 21.7 22.5
+      L 21.7 -2.5
       z
     "
   />
   <path
-    fill="none"
-    stroke="currentColor"
-    stroke-width="7.5"
+    fill="#b3e5fc"
     d="
-      M 65 5
-      L 65 80
-      A 12 12 0 0 0 89 80
-      L 89 5
+      M 0.0 -15.0
+      L -21.7 -2.5
+      L 0 10
+      L 21.7 -2.5
       z
-      M 55 5
-      L 100 5
     "
   />
   <path
-    class="experiment_liquid"
-    data-number="2"
-    fill="currentColor"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
     d="
-      M 65 65
-      L 65 80
-      A 12 12 0 0 0 89 80
-      L 89 65
-      z
+      M -15 -43
+      L -10 -43
+      L -10 -19.2
+      L -30.3 -7.5
+      L -30.3 27.5
+      L -0 45
+      L 30.3 27.5
+      L 30.3 -7.5
+      L 10 -19.2
+      L 10 -43
+      L 15 -43
     "
-  />
-  <circle
-    class="experiment_bubble"
-    data-number="1"
-    fill="currentColor"
-    cx="22"
-    cy="80"
-    r="5"
-    transform="scale(0)"
-  />
-  <circle
-    class="experiment_bubble"
-    data-number="2"
-    fill="currentColor"
-    cx="77"
-    cy="80"
-    r="5"
-    transform="scale(0)"
-  />
-  <circle
-    class="experiment_bubble"
-    data-number="3"
-    fill="currentColor"
-    cx="77"
-    cy="80"
-    r="5"
-    transform="scale(0)"
   />
 </svg>

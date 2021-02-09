@@ -8,7 +8,7 @@ header {
   position: relative;
   @include flex-center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 30px;
   color: $white;
   background: $dark-gray;
   font-family: $sans;
@@ -20,8 +20,8 @@ header {
 
     .logo > * {
       max-width: 100%;
-      height: 30px;
-      margin: 10px;
+      height: 40px;
+      margin: 5px;
     }
     
     .logo_text {
