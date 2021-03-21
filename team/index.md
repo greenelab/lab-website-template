@@ -9,17 +9,17 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<!-- section break -->
+{% include section.html %}
 
-{% capture html %}
+{% capture content %}
 {% include team-list.html role="pi" %}
 {% include team-list.html role="phd" %}
 {% include team-list.html role="programmer" %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}
 
-<!-- section break -->
+{% include section.html dark=true background="images/photo.jpg" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -29,9 +29,10 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   icon="fas fa-hands-helping"
   text="Join the Team"
   link="join"
+  button=true
 %}{:.center}
 
-<!-- section break -->
+{% include section.html %}
 
 ## Funding
 

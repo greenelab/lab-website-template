@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 html,
 body {
@@ -20,8 +22,11 @@ body {
     flex-grow: 1;
     background: $white;
   }
-  
+
   section {
+    position: relative;
+    z-index: 1;
+
     .section {
       max-width: $page;
       margin: 0 auto;
@@ -29,11 +34,33 @@ body {
     }
 
     &:nth-child(even) {
-      background: $off-white;
+      background: $gray-50;
     }
 
     &:last-child {
       flex-grow: 1;
+    }
+
+    &[data-dark="true"] {
+      background: $gray-800;
+      color: $white;
+    }
+
+    // background
+    &[data-background="true"]:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: var(--background);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      opacity: 0.2;
+      // filter: blur(5px);
+      z-index: -1;
     }
   }
 }

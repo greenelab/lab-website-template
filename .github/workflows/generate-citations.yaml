@@ -1,18 +1,20 @@
-name: Automatically generate citations
+name: Generate citations
 
 on:
   push:
     branches:
       - main
     paths:
-      - "_data/research-input.yml"
+      - "_data/research.yml"
+      - "!_data/research-output.yml"
   pull_request:
     paths:
-      - "_data/research-input.yml"
+      - "_data/research.yml"
+      - "!_data/research-output.yml"
 
 jobs:
   update_research:
-    name: Automatically generate citations
+    name: Generate citations
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,9 +26,9 @@ jobs:
       - name: Install Manubot
         run: pip install --upgrade manubot
       - name: Build updated research output file
-        run: python _data/build-research.py
+        run: python _data/generate-citations.py
       - name: Commit new research output file
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: "_data/research-output.yml"
-          commit_message: "Automatically generate citations"
+          commit_message: "Generate citations"

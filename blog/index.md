@@ -6,7 +6,7 @@ title: Blog
 
 {% include blog-list.html %}
 
-<!-- section break -->
+{% include section.html %}
 
 ## News
 

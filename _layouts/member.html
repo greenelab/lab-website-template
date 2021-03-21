@@ -8,37 +8,24 @@ layout: default
 
 {% include figure.html image=page.image %}
 
-{% capture html %}
+{% capture content %}
 {% include role.html type=page.role text=true %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}
 
-{% capture html %}
-{% if page.website %}
+{% capture content %}
 {% include social-link.html type="website" link=page.website %}
-{% endif %}
-{% if page.email %}
 {% include social-link.html type="email" link=page.email %}
-{% endif %}
-{% if page.google %}
-{% include social-link.html type="google" link=page.google %}
-{% endif %}
-{% if page.github %}
+{% include social-link.html type="google-scholar" link=page.google-scholar %}
 {% include social-link.html type="github" link=page.github %}
-{% endif %}
-{% if page.twitter %}
 {% include social-link.html type="twitter" link=page.twitter %}
-{% endif %}
-{% if page.instagram %}
 {% include social-link.html type="instagram" link=page.instagram %}
-{% endif %}
-{% if page.youtube %}
 {% include social-link.html type="youtube" link=page.youtube %}
-{% endif %}
+{% include social-link.html type="linkedin" link=page.linkedin %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}
 
 {{ content }}
 
@@ -62,8 +49,8 @@ layout: default
 {{ page.title }}'s papers
 {% endcapture %}
 
-{% capture html %}
+{% capture content %}
 {% include big-link.html icon="fas fa-book-open" link=search text=text %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}

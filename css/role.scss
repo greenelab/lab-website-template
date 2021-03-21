@@ -1,11 +1,13 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 .role {
   display: inline-block;
-  color: $gray;
+  color: $gray-500;
 
   .role_text {
     margin-left: 10px;

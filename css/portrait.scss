@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 .portrait {
@@ -45,7 +46,7 @@
   .portrait_name {
     margin-top: 10px;
     text-align: center;
-    line-height: 1.2;
+    line-height: $spacing - 0.3;
   }
 
   .role {
@@ -59,7 +60,7 @@
     width: 35px;
     height: 35px;
     background: $white;
-    color: $gray;
+    color: $gray-500;
     border-radius: 999px;
   }
 

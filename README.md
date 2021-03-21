@@ -5,6 +5,9 @@ An easy-to-use, flexible website template for labs, with automatic citations, Gi
 Spend less time reinventing the wheel, and more time running your lab.
 
 <br>
+<p align="center"><img height="400" src="https://user-images.githubusercontent.com/8326331/111819766-1e14bb80-88b7-11eb-8d9f-967de4739086.png" alt="screenshot"></p>
+
+<br>
 <h4 align="center">🔔 Still in pre-release/preview. We need testers! 🔔</h4>
 
 Please help us out!
@@ -13,6 +16,8 @@ How flexible is it?
 How's our documentation?
 
 <br>
+
+
 
 ## Documentation
 

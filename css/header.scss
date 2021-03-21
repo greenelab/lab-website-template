@@ -1,19 +1,44 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
+
+$logo: 430px; // full width of logo_row
+$nav: 530px; // full width of nav_row
 
 header {
   position: relative;
   @include flex-center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 30px;
   color: $white;
-  background: $dark-gray;
-  font-family: $sans;
+  background: $gray-800;
   box-shadow: $shadow;
   z-index: 1;
+
+  & * {
+    font-family: $sans;
+  }
+
+  // background
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+    // filter: blur(5px);
+    z-index: -1;
+  }
 
   .logo_row {
     @include inline-flex-center;
@@ -23,10 +48,9 @@ header {
       height: 40px;
       margin: 5px;
     }
-    
+
     .logo_text {
       margin: 10px;
-      font-family: $sans;
       font-size: 1.5rem;
       text-align: center;
     }
@@ -34,7 +58,7 @@ header {
 
   .nav_row {
     @include inline-flex-center;
-    flex-wrap: wrap;
+    justify-content: flex-end;
     font-size: 0.9rem;
     font-weight: $medium;
     text-transform: uppercase;
@@ -59,26 +83,34 @@ header {
 
   a {
     color: $white !important;
-    font-family: $sans;
     text-decoration: none;
   }
 
-  @media (max-width: $tablet) {
+  // screen width where nav bar wraps to under logo
+  // adjust based on length of your lab title and # of nav links
+  @media (max-width: 900px) {
     flex-direction: column;
-
+    justify-content: center;
+    
     .logo_row {
-      margin-bottom: 10px;
+      justify-content: center;
+    }
+
+    .nav_row {
+      justify-content: center;
     }
   }
-
-  @media (max-width: $phone) {
+  
+  // screen width where logo and nav bar go from horizontal to vertical
+  // adjust based on length of your lab title and # of nav links
+  @media (max-width: 600px) {
     .logo_row {
-      margin-bottom: 20px;
       flex-direction: column;
     }
 
     .nav_row {
       flex-direction: column;
+      justify-content: center;
       width: 100%;
 
       .nav_link {

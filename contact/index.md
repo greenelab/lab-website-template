@@ -14,7 +14,7 @@ We are located on the 13th floor of the [Center for Wit and Sagacity]().
   caption="The Center for Wit and Sagacity"
 %}
 
-<!-- section break -->
+{% include section.html %}
 
 ### Email
 

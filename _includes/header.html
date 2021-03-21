@@ -7,36 +7,17 @@
     data-delay="400"
   >
     <span class="logo">
-      {%- include logo.svg -%}
-      <!-- <img src="{{ "images/logo.png" | relative_url }}" /> -->
+      <img src="{{ site.logo | relative_url }}" />
     </span>
     <span class="logo_text">{{ site.title }}</span>
   </a>
   <nav class="nav_row">
-    {% 
-      include nav-link.html
-      link="research"
-      tooltip="Published works"
-    %}
-    {% 
-      include nav-link.html
-      link="resources"
-      tooltip="Tools, datasets, and more"
-    %}
-    {% 
-      include nav-link.html
-      link="team"
-      tooltip="About our team"
-    %}
-    {% 
-      include nav-link.html
-      link="blog"
-      tooltip="Musings and miscellany"
-    %}
-    {% 
-      include nav-link.html
-      link="contact"
-      tooltip="Email, address, and location"
-    %}
+    {% for nav in site.nav %}
+      {% 
+        include nav-link.html
+        link=nav.link
+        tooltip=nav.tooltip
+      %}
+    {% endfor %}
   </nav>
 </header>

@@ -1,6 +1,3 @@
-{%- assign icon = "fas fa-user" -%}
-{%- assign text = "Default Role" -%}
-
 {%- if include.type == "pi" -%}
 {%- assign icon = "fas fa-microscope" -%}
 {%- assign text = "Principal Investigator" -%}
@@ -41,9 +38,11 @@ To add more options for icons, see:
 https://fontawesome.com/icons?d=gallery&q=icon&m=free
 {%- endcomment -%}
 
+{% if include.text %}
 <span href="{{ link }}" class="role" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}">
   <i class="{{ icon }} {%- if include.large -%}fa-lg{%- endif -%}"></i>
   {%- if include.text -%}
   <span class="role_text">{{- text -}}</span>
   {%- endif -%}
 </span>
+{% endif %}

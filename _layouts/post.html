@@ -6,29 +6,29 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% capture html %}
+{% capture content %}
 {% include post-info.html post=page %}
 {% endcapture %}
 
 {% assign html = html | strip %}
 {% if html != empty %}
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}
 {% endif %}
 
-{% capture html %}
+{% capture content %}
 {% include tags.html tags=page.tags %}
 {% endcapture %}
 
 {% assign html = html | strip %}
 {% if html != empty %}
-{% include centerer.html html=html %}
+{% include centerer.html content=content %}
 {% endif %}
 
-<!-- section break -->
+{% include section.html %}
 
 {{ content }}
 
-<!-- section break -->
+{% include section.html %}
 
 {% include post-nav.html post=page %}
 

@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 h1,
 h2,
@@ -13,7 +15,7 @@ h4 {
     width: 0;
     margin: 0;
     left: 10px;
-    color: $theme;
+    color: $accent;
     opacity: 0;
     text-decoration: none;
     transition: opacity $fast, color $fast;
@@ -34,7 +36,7 @@ h4 {
     background: none;
   }
   10% {
-    background: $light-theme;
+    background: $light-accent;
   }
   100% {
     background: none;

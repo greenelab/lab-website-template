@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 .table_wrapper {
@@ -16,7 +17,7 @@
     th,
     td {
       padding: 10px 15px;
-      border: solid 1px $light-gray;
+      border: solid 1px $gray-500;
     }
   }
 }
