@@ -6,13 +6,11 @@
 @import "mixins";
 
 footer {
-  position: relative;
   padding: 40px;
   color: $white;
   background: $gray-800;
   box-shadow: $shadow;
   text-align: center;
-  z-index: 1;
 
   & * {
     font-family: $sans;
@@ -51,7 +49,7 @@ footer {
   }
 
   a {
-    color: $white !important;
+    color: currentColor;
     text-decoration: none;
   }
 }

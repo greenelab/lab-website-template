@@ -1,6 +1,6 @@
-{% assign content = include.content | strip %}
-{% if content != "" %}
+{% assign contents = include.contents | strip %}
+{% if contents != "" %}
 <div class="centerer" data-spaced="{{ include.spaced }}">
-  {{ content }}
+  {{ contents }}
 </div>
 {% endif %}

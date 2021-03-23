@@ -5,48 +5,26 @@
 @import "theme";
 @import "mixins";
 
-$logo: 430px; // full width of logo_row
-$nav: 530px; // full width of nav_row
-
 header {
-  position: relative;
-  @include flex-center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding: 30px;
   color: $white;
   background: $gray-800;
   box-shadow: $shadow;
-  z-index: 1;
 
   & * {
     font-family: $sans;
   }
 
-  // background
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--background);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.2;
-    // filter: blur(5px);
-    z-index: -1;
-  }
-
   .logo_row {
     @include inline-flex-center;
 
-    .logo > * {
+    .logo {
       max-width: 100%;
-      height: 40px;
-      margin: 5px;
+      height: 50px;
     }
 
     .logo_text {
@@ -58,7 +36,6 @@ header {
 
   .nav_row {
     @include inline-flex-center;
-    justify-content: flex-end;
     font-size: 0.9rem;
     font-weight: $medium;
     text-transform: uppercase;
@@ -82,25 +59,21 @@ header {
   }
 
   a {
-    color: $white !important;
+    color: currentColor;
     text-decoration: none;
   }
 
   // screen width where nav bar wraps to under logo
   // adjust based on length of your lab title and # of nav links
   @media (max-width: 900px) {
-    flex-direction: column;
-    justify-content: center;
-    
-    .logo_row {
-      justify-content: center;
-    }
+    align-content: center;
 
+    .logo_row,
     .nav_row {
-      justify-content: center;
+      width: 100%;
     }
   }
-  
+
   // screen width where logo and nav bar go from horizontal to vertical
   // adjust based on length of your lab title and # of nav links
   @media (max-width: 600px) {

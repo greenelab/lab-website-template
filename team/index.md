@@ -9,17 +9,20 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{% include section.html %}
+<!-- section break -->
 
-{% capture content %}
+{% capture contents %}
 {% include team-list.html role="pi" %}
 {% include team-list.html role="phd" %}
 {% include team-list.html role="programmer" %}
 {% endcapture %}
 
-{% include centerer.html content=content %}
+{% include centerer.html contents=contents %}
 
-{% include section.html dark=true background="images/photo.jpg" %}
+<!-- section break -->
+
+<!-- section dark -->
+<!-- section background images/photo.jpg -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -32,7 +35,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   button=true
 %}{:.center}
 
-{% include section.html %}
+<!-- section break -->
 
 ## Funding
 

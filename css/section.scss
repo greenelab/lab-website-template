@@ -20,17 +20,17 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background: $white;
   }
 
   section {
-    position: relative;
-    z-index: 1;
-
     .section {
       max-width: $page;
       margin: 0 auto;
       padding: 40px;
+    }
+
+    &:nth-child(even) {
+      background: $white;
     }
 
     &:nth-child(even) {
@@ -44,23 +44,6 @@ body {
     &[data-dark="true"] {
       background: $gray-800;
       color: $white;
-    }
-
-    // background
-    &[data-background="true"]:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-image: var(--background);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      opacity: 0.2;
-      // filter: blur(5px);
-      z-index: -1;
     }
   }
 }

@@ -1,7 +1,4 @@
-<a
-  {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
-  class="big_link"
-  data-button="{{ include.button }}">
+<a {% if include.link %}href="{{ include.link | relative_url }}"{% endif %} class="big_link" data-button="{{ include.button }}">
   {%- if include.icon -%}
   <i class="{{ include.icon }}"></i>
   {%- endif -%}

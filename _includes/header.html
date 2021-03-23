@@ -1,4 +1,10 @@
-<header>
+{% if page.header == "none" %}
+{% assign background = nil %}
+{% else %}
+{% assign background = page.header | default: site.header | default: nil %}
+{% endif %}
+
+<header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}>
   <a
     href="{{ '/' | relative_url }}"
     class="logo_row"
@@ -6,18 +12,11 @@
     data-placement="bottom"
     data-delay="400"
   >
-    <span class="logo">
-      <img src="{{ site.logo | relative_url }}" />
-    </span>
+    <img src="{{ site.logo | relative_url }}" class="logo" />
     <span class="logo_text">{{ site.title }}</span>
   </a>
   <nav class="nav_row">
-    {% for nav in site.nav %}
-      {% 
-        include nav-link.html
-        link=nav.link
-        tooltip=nav.tooltip
-      %}
-    {% endfor %}
+    {% for nav in site.nav %} {% include nav-link.html link=nav.link
+    tooltip=nav.tooltip %} {% endfor %}
   </nav>
 </header>

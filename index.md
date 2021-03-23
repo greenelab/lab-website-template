@@ -1,6 +1,13 @@
 ---
 title: Home
+header: none
 ---
+
+<!-- section full -->
+
+{% include banner.html image="images/photo.jpg" %}
+
+<!-- section break -->
 
 # Your Lab Slogan
 
@@ -9,7 +16,7 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include big-link.html icon="fab fa-github" text="See the template on GitHub" link="https://github.com/greenelab/lab-website-template" %}{% include big-link.html icon="fas fa-book" text="See the documentation" link="https://github.com/greenelab/lab-website-template/wiki" %}{:.center}
 
-{% include section.html %}
+<!-- section break -->
 
 # Highlights
 

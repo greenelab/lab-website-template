@@ -1,5 +1,6 @@
 ---
 title: Contact
+header: images/photo.jpg
 ---
 
 # <i class="fas fa-envelope"></i>Contact
@@ -14,7 +15,7 @@ We are located on the 13th floor of the [Center for Wit and Sagacity]().
   caption="The Center for Wit and Sagacity"
 %}
 
-{% include section.html %}
+<!-- section break -->
 
 ### Email
 

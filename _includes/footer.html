@@ -1,4 +1,10 @@
-<footer>
+{% if page.footer == "none" %}
+{% assign background = nil %}
+{% else %}
+{% assign background = page.footer | default: site.footer | default: nil %}
+{% endif %}
+
+<footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}>
   <div class="footer_row">
     {% include social-link.html type="email" link=site.email large=true %}
     {% include social-link.html type="google-scholar" link=site.google-scholar large=true %}

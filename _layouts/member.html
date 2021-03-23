@@ -8,13 +8,13 @@ layout: default
 
 {% include figure.html image=page.image %}
 
-{% capture content %}
+{% capture contents %}
 {% include role.html type=page.role text=true %}
 {% endcapture %}
 
-{% include centerer.html content=content %}
+{% include centerer.html contents=contents %}
 
-{% capture content %}
+{% capture contents %}
 {% include social-link.html type="website" link=page.website %}
 {% include social-link.html type="email" link=page.email %}
 {% include social-link.html type="google-scholar" link=page.google-scholar %}
@@ -25,7 +25,7 @@ layout: default
 {% include social-link.html type="linkedin" link=page.linkedin %}
 {% endcapture %}
 
-{% include centerer.html content=content %}
+{% include centerer.html contents=contents %}
 
 {{ content }}
 
@@ -49,8 +49,8 @@ layout: default
 {{ page.title }}'s papers
 {% endcapture %}
 
-{% capture content %}
+{% capture contents %}
 {% include big-link.html icon="fas fa-book-open" link=search text=text %}
 {% endcapture %}
 
-{% include centerer.html content=content %}
+{% include centerer.html contents=contents %}

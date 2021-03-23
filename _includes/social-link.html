@@ -57,14 +57,8 @@ To add more options for icons, see:
 https://fontawesome.com/icons?d=gallery&q=icon&m=free
 {%- endcomment -%}
 
-{% if include.link and icon and tooltip and link %}
-<a
-href="{{ link }}"
-  class="social_link"
-  data-tooltip="{{ tooltip }}"
-  aria-label="{{ tooltip }}"
-  data-large="{{ include.large }}"
->
+{%- if include.link and icon and tooltip and link -%}
+<a href="{{ link }}" class="social_link" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}" data-large="{{ include.large }}">
   <i class="{{ icon }} {% if include.large %}fa-lg{% endif %} fa-fw"></i>
 </a>
-{% endif %}
+{%- endif -%}

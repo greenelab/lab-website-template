@@ -4,10 +4,7 @@
 {% assign size = "large" %}
 {% endif %}
 
-<div
-  class="card"
-  data-size="{{ size }}"
->
+<div class="card" data-size="{{ size }}">
   {% assign placeholder = "images/placeholder.svg" | relative_url %}
   <a
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}

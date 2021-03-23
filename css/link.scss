@@ -9,6 +9,7 @@ a {
   color: $accent;
   transition: color $fast;
 }
+
 a:hover {
-  color: $black;
+  color: currentColor;
 }
