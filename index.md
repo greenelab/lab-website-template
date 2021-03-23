@@ -1,13 +1,6 @@
 ---
 title: Home
-header: none
 ---
-
-<!-- section full -->
-
-{% include banner.html image="images/photo.jpg" %}
-
-<!-- section break -->
 
 # Your Lab Slogan
 
@@ -66,3 +59,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   title="Our Team"
   text=text
 %}
+
+<!-- section break -->
+
+<!-- section full -->
+
+{% include banner.html image="images/banner.jpg" %}
