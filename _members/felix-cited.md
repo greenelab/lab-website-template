@@ -1,11 +1,11 @@
 ---
 title: Felix Cited
-search:
-  - F. Cited
-  - F Cited
+image: images/member.jpg
 role: phd
 group: alum
-image: images/member.jpg
+variations:
+  - F. Cited
+  - F Cited
 website: felixcited.com
 email: felix@cited.com
 twitter: felixcited

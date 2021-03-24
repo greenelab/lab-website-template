@@ -1,10 +1,10 @@
 ---
 title: Anne Chovie
-search:
+image: images/member.jpg
+role: programmer
+variations:
   - A. Chovie
   - A Chovie
-role: programmer
-image: images/member.jpg
 website: annechovie.com
 email: anne@chovie.com
 github: anne-chovie

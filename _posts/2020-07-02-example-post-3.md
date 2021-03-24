@@ -4,7 +4,7 @@ tags:
   - biology
   - medicine
 author: Upton O. Goode
-member-page: upton-goode
+member: upton-goode
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

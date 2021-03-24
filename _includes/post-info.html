@@ -2,11 +2,11 @@
   {%- if include.post.author -%}
   <span>
     <i class="fas fa-feather-alt icon_with_text"></i>
-    {%- if include.post.member-page -%}
-    <a href="{{ include.post.member-page | prepend: "members/" | relative_url }}">
+    {%- if include.post.member -%}
+    <a href="{{ include.post.member | prepend: "members/" | relative_url }}">
     {%- endif -%}
       {{- include.post.author -}}
-    {%- if include.post.member-page -%}
+    {%- if include.post.member -%}
     </a>
     {%- endif -%}
   </span>

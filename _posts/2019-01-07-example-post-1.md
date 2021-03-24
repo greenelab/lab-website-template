@@ -5,7 +5,7 @@ tags:
   - medicine
   - big data
 author: Anne Chovie
-member-page: anne-chovie
+member: anne-chovie
 ---
 
 # Heading 1
