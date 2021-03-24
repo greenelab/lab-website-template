@@ -17,8 +17,6 @@ How's our documentation?
 
 <br>
 
-
-
 ## Documentation
 
 [🏠 Docs Home](https://github.com/greenelab/lab-website-template/wiki/Home)
@@ -31,70 +29,12 @@ How's our documentation?
 
 [▶️ Get Started](https://github.com/greenelab/lab-website-template/wiki/Get-Started)
 
-<details>
-<summary><a href="https://github.com/greenelab/lab-website-template/wiki/Basic-Editing">📝 Basic Editing</a></summary>
+[📝 Basic Editing](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing)
 
-- [📁 Generic Folders](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#generic-folders)
-- [📝 Index Files](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#index-files)
-- [🗚 Basic Formatting](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#basic-formatting)
-- [🌐 Logo](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#logo)
-- [🖼️ Images](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#images)
-- [📜 Input Papers](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#input-papers)
-- [🤖 Generate Citations](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#generate-citations)
-- [📜 Output Papers](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#display-papers)
-- [🧰 Resources](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#resources)
-- [👥 Team Members](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#team-members)
-- [🖊️ Blog Posts](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#blog-posts)
-- [🎭 Favicons](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#favicons)
-- [⚙️ Config File](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#config-file)
-- [💻 Start Script](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#start-script)
-- [💻 Build Script](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing#build-script)
+[⚙️ Customization](https://github.com/greenelab/lab-website-template/wiki/Customization)
 
-</details>
+[🧱 Components](https://github.com/greenelab/lab-website-template/wiki/Components)
 
-<details>
-<summary><a href="https://github.com/greenelab/lab-website-template/wiki/Customization">⚙️ Customization</a></summary>
-
-- [💬 Blog Post Comments](https://github.com/greenelab/lab-website-template/wiki/Customization#blog-post-comments)
-- [🎞️ Layouts](https://github.com/greenelab/lab-website-template/wiki/Customization#layouts)
-- [🎨 Styles](https://github.com/greenelab/lab-website-template/wiki/Customization#styles)
-- [🧱 Includes](https://github.com/greenelab/lab-website-template/wiki/Customization#includes)
-- [🔌 Plugins](https://github.com/greenelab/lab-website-template/wiki/Customization#plugins)
-- [📁 Collection Folders](https://github.com/greenelab/lab-website-template/wiki/Customization#collection-folders)
-- [⬜ Whitespace Quirks](https://github.com/greenelab/lab-website-template/wiki/Customization#whitespace-quirks)
-- [⚙️ Under the Hood](https://github.com/greenelab/lab-website-template/wiki/Customization#under-the-hodo)
-
-</details>
-
-<details>
-<summary><a href="https://github.com/greenelab/lab-website-template/wiki/Components">🧱 Components</a></summary>
-
-- [🖼️ Figure](https://github.com/greenelab/lab-website-template/wiki/Components#figure)
-- [📷 Gallery](https://github.com/greenelab/lab-website-template/wiki/Components#gallery)
-- [📰 Feature](https://github.com/greenelab/lab-website-template/wiki/Components#feature)
-- [🔗 Big Link](https://github.com/greenelab/lab-website-template/wiki/Components#big-link)
-- [💠 Centerer](https://github.com/greenelab/lab-website-template/wiki/Components#centerer)
-- [🎩 Header](https://github.com/greenelab/lab-website-template/wiki/Components#header)
-- [🦶 Footer](https://github.com/greenelab/lab-website-template/wiki/Components#footer)
-- [🔍 Card Search](https://github.com/greenelab/lab-website-template/wiki/Components#card-search)
-- [🔬 Research List](https://github.com/greenelab/lab-website-template/wiki/Components#research-list)
-- [🧰 Resource List](https://github.com/greenelab/lab-website-template/wiki/Components#resource-list)
-- [👥 Team List](https://github.com/greenelab/lab-website-template/wiki/Components#team-list)
-- [🖊️ Blog List](https://github.com/greenelab/lab-website-template/wiki/Components#blog-list)
-- [▶️ Embeds](https://github.com/greenelab/lab-website-template/wiki/Components#embeds)
-
-</details>
-
-<details>
-<summary><a href="https://github.com/greenelab/lab-website-template/wiki/Extra-Components">🧱 Extra Components</a></summary>
-
-- [🃏 Card](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#card)
-- [🏷️ Tags](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#tags)
-- [📱 Social Link](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#social-link)
-- [📜 Paper Link](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#paper-link)
-- [🎓 Role](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#role)
-- [🖼️ Portrait](https://github.com/greenelab/lab-website-template/wiki/Extra-Components#portrait)
-
-</details>
+[🧱 Extra Components](https://github.com/greenelab/lab-website-template/wiki/Extra-Components)
 
 [❓ Support](https://github.com/greenelab/lab-website-template/wiki/Support)
