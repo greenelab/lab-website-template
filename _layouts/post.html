@@ -10,8 +10,8 @@ layout: default
 {% include post-info.html post=page %}
 {% endcapture %}
 
-{% assign html = html | strip %}
-{% if html != empty %}
+{% assign contents = contents | strip %}
+{% if contents != empty %}
 {% include centerer.html contents=contents %}
 {% endif %}
 
@@ -19,8 +19,8 @@ layout: default
 {% include tags.html tags=page.tags %}
 {% endcapture %}
 
-{% assign html = html | strip %}
-{% if html != empty %}
+{% assign contents = contents | strip %}
+{% if contents != empty %}
 {% include centerer.html contents=contents %}
 {% endif %}
 
