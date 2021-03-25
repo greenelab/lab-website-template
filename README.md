@@ -14,26 +14,26 @@ How's our documentation?
 
 ## Gallery
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png">
-        <img src="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png" height="200px" alt="Screenshot" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://greenelab.github.io/lab-website-template/">
-        <img src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/favicons/share-thumbnail.jpg?raw=true" height="200px" alt="Lab Website Template" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://greenelab.com/">
-        <img src="https://greenelab.com/favicons/share-thumbnail.jpg" height="200px" alt="GreeneLab.com" />        
-      </a>
-    </td>
-    <td>more coming soon...</td>
-  </tr>
-</table>
+<kbd>
+  <a href="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png">
+    <img src="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png" height="150px" alt="Screenshot" />
+  </a>
+</kbd>
+
+<kbd>
+  <a href="https://greenelab.github.io/lab-website-template/">
+    <img src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/favicons/share-thumbnail.jpg?raw=true" height="150px" alt="Lab Website Template" />
+  </a>
+</kbd>
+
+<kbd>
+  <a href="https://greenelab.com/">
+    <img src="https://greenelab.com/favicons/share-thumbnail.jpg" height="150px" alt="GreeneLab.com" />
+  </a>
+</kbd>
+
+more coming soon...
+
 
 ## Features
 
