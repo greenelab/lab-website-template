@@ -5,12 +5,10 @@ on:
     branches:
       - main
     paths:
-      - "_data/research.yml"
-      - "!_data/research-output.yml"
+      - "_data/research.yaml"
   pull_request:
     paths:
-      - "_data/research.yml"
-      - "!_data/research-output.yml"
+      - "_data/research.yaml"
 
 jobs:
   update_research:
@@ -30,5 +28,5 @@ jobs:
       - name: Commit new research output file
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: "_data/research-output.yml"
+          file_pattern: "_data/research-output.yaml"
           commit_message: "Generate citations"

@@ -12,8 +12,8 @@ from yaml.loader import SafeLoader
 ####################
 
 # input and output files
-input_file = "research-input.yml"
-output_file = "research-output.yml"
+input_file = "research.yaml"
+output_file = "research-output.yaml"
 current_dir = os.path.dirname(os.path.realpath(__file__))
 input_path = os.path.join(current_dir, input_file)
 output_path = os.path.join(current_dir, output_file)
