@@ -11,16 +11,22 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 <!-- section break -->
 
-{% capture html %}
+{% capture contents %}
 {% include team-list.html role="pi" %}
 {% include team-list.html role="phd" %}
 {% include team-list.html role="programmer" %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}
 
 <!-- section break -->
 
+<!-- section dark -->
+<!-- section background images/banner.jpg -->
+
+
+<br>
+<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -29,7 +35,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   icon="fas fa-hands-helping"
   text="Join the Team"
   link="join"
+  button=true
 %}{:.center}
+<br>
 
 <!-- section break -->
 

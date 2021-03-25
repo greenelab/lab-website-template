@@ -1,12 +1,15 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 a {
-  color: $theme;
+  color: $accent;
   transition: color $fast;
 }
+
 a:hover {
-  color: $black;
+  color: currentColor;
 }

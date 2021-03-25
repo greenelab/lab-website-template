@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 .big_link {
   display: inline-block;
@@ -12,5 +14,17 @@
 
   i {
     margin-right: 0.5rem;
+  }
+
+  &[data-button="true"] {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: $accent;
+    color: $white;
+    transition: background $fast;
+
+    &:hover {
+      background: $gray-500;
+    }
   }
 }

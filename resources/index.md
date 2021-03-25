@@ -13,28 +13,28 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 ## Featured
 
-{% capture html %}
+{% capture contents %}
 {% include resource-list.html group="featured" size="large" %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}
 
 <!-- section break -->
 
 ## More
 
-{% capture html %}
+{% capture contents %}
 {% include resource-list.html group="more" size="medium" %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}
 
 <!-- section break -->
 
 ## Legacy
 
-{% capture html %}
+{% capture contents %}
 {% include resource-list.html group="legacy" size="small" %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}

@@ -1,12 +1,21 @@
-<footer>
+{% if page.footer == "none" %}
+{% assign background = nil %}
+{% else %}
+{% assign background = page.footer | default: site.footer | default: nil %}
+{% endif %}
+
+<footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}>
   <div class="footer_row">
-    {%- include social-link.html type="contact" large=true -%}
-    {%- include social-link.html type="github" large=true -%}
-    {%- include social-link.html type="twitter" large=true -%}
-    {%- include social-link.html type="instagram" large=true -%}
-    {%- comment -%}
-    {%- include social-link.html type="rss" large=true -%}
-    {%- endcomment -%}
+    {% include social-link.html type="email" link=site.email large=true %}
+    {% include social-link.html type="google-scholar" link=site.google-scholar large=true %}
+    {% include social-link.html type="github" link=site.github large=true %}
+    {% include social-link.html type="twitter" link=site.twitter large=true %}
+    {% include social-link.html type="instagram" link=site.instagram large=true %}
+    {% include social-link.html type="youtube" link=site.youtube large=true %}
+    {% include social-link.html type="linkedin" link=site.linkedin large=true %}
+    {% include social-link.html type="rss" link=site.rss large=true %}
   </div>
-  <!-- &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }} -->
+  <!-- <div class="footer_row">
+    &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }}
+  </div> -->
 </footer>

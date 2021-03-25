@@ -1,4 +1,10 @@
-<header>
+{% if page.header == "none" %}
+{% assign background = nil %}
+{% else %}
+{% assign background = page.header | default: site.header | default: nil %}
+{% endif %}
+
+<header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}>
   <a
     href="{{ '/' | relative_url }}"
     class="logo_row"
@@ -6,37 +12,11 @@
     data-placement="bottom"
     data-delay="400"
   >
-    <span class="logo">
-      {%- include logo.svg -%}
-      <!-- <img src="{{ "images/logo.png" | relative_url }}" /> -->
-    </span>
+    <img src="{{ site.logo | relative_url }}" class="logo" />
     <span class="logo_text">{{ site.title }}</span>
   </a>
   <nav class="nav_row">
-    {% 
-      include nav-link.html
-      link="research"
-      tooltip="Published works"
-    %}
-    {% 
-      include nav-link.html
-      link="resources"
-      tooltip="Tools, datasets, and more"
-    %}
-    {% 
-      include nav-link.html
-      link="team"
-      tooltip="About our team"
-    %}
-    {% 
-      include nav-link.html
-      link="blog"
-      tooltip="Musings and miscellany"
-    %}
-    {% 
-      include nav-link.html
-      link="contact"
-      tooltip="Email, address, and location"
-    %}
+    {% for nav in site.nav %} {% include nav-link.html link=nav.link
+    tooltip=nav.tooltip %} {% endfor %}
   </nav>
 </header>

@@ -1,8 +1,14 @@
 ---
 ---
 
-header,
-footer {
+@import "colors";
+@import "theme";
+@import "mixins";
+
+.background {
+  position: relative;
+  z-index: 1;
+
   &:before {
     content: "";
     position: absolute;

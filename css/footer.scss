@@ -1,27 +1,43 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 footer {
-  position: relative;
   padding: 40px;
   color: $white;
-  background: $dark-gray;
-  font-family: $sans;
+  background: $gray-800;
   box-shadow: $shadow;
   text-align: center;
-  z-index: 1;
+
+  & * {
+    font-family: $sans;
+  }
+
+  // background
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+    // filter: blur(5px);
+    z-index: -1;
+  }
 
   .footer_row {
-    @include inline-flex-center;
-    flex-grow: 1;
-
-    .social_link {
-      margin: 0 5px;
-      transition: opacity $fast;
-    }
+    @include flex-center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    @include trim-margins;
 
     &:hover .social_link {
       opacity: 0.25;
@@ -33,8 +49,7 @@ footer {
   }
 
   a {
-    color: $white !important;
-    font-family: $sans;
+    color: currentColor;
     text-decoration: none;
   }
 }

@@ -1,11 +1,13 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 hr {
   margin: 40px 0;
-  background: $light-gray;
+  background: $gray-300;
   border: none;
   height: 1px;
 }

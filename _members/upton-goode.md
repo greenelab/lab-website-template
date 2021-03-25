@@ -1,11 +1,11 @@
 ---
 title: Upton O. Goode
-search:
+image: images/member.jpg
+role: pi
+variations:
   - U. Goode
   - U. O. Goode
   - U Goode
-role: pi
-image: images/member.jpg
 email: upton@ogoode.com
 twitter: uptonogoode
 ---

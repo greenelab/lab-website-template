@@ -11,14 +11,14 @@
     animation-delay: 0.4s;
   }
   circle:nth-of-type(3) {
-    animation-delay: 0.7s;
+    animation-delay: 1.1s;
   }
   @keyframes float {
     50% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-60px);
+      transform: translateY(-45px);
     }
   }
   @keyframes fade {
@@ -30,9 +30,9 @@
     }
   }
   </style>
-  <circle fill="#b3e5fc" cx="0" cy="0" r="4"/>
   <circle fill="#b3e5fc" cx="0" cy="0" r="3"/>
-  <circle fill="#b3e5fc" cx="0" cy="0" r="2"/>
+  <circle fill="#b3e5fc" cx="0" cy="0" r="3"/>
+  <circle fill="#b3e5fc" cx="0" cy="0" r="3"/>
   <path
     fill="#81d4fa"
     d="

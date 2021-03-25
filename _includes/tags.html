@@ -1,9 +1,6 @@
 {% assign tags = include.tags | join: "," | split: "," %}
 {% if tags.size > 0 or include.repo %}
-<div
-  class="tags"
-  {% if include.repo %}data-repo="{{ include.repo }}"{% endif %}
->
+<div class="tags" {% if include.repo %}data-repo="{{ include.repo }}"{% endif %}>
   {% for tag in tags %}
   <span class="tag">{{- tag -}}</span>
   {% endfor %}

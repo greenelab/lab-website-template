@@ -1,10 +1,12 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 blockquote {
   margin: 0;
   padding: 10px 20px;
-  border: dotted 2px $gray;
+  border: dotted 2px $gray-500;
 }

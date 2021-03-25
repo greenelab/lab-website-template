@@ -1,8 +1,10 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
+@import "mixins";
 
 mark {
-  background: $yellow;
+  background: $yellow-500;
 }

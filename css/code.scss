@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 pre,
@@ -14,16 +15,16 @@ code * {
 // inline code
 code.highlighter-rouge {
   padding: 2px 6px;
-  background: $dark-gray;
+  background: $gray-800;
   color: $white;
-  line-height: 1.5;
+  line-height: $spacing;
 }
 
 // code block
 div.highlighter-rouge {
   margin: 40px 0;
   @include trim-margins;
-  background: $dark-gray;
+  background: $gray-500;
   overflow-x: auto;
   overflow-y: auto;
 
@@ -44,52 +45,52 @@ pre.highlight {
 
   // Comment
   .c {
-    color: $gray;
+    color: $gray-500;
   }
   // Error
   .err {
-    color: $pink;
+    color: $pink-200;
   }
   // Keyword
   .k {
-    color: $light-purple;
+    color: $purple-200;
   }
   // Literal
   .l {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Name
   .n,
   .h {
-    color: $off-white;
+    color: $gray-50;
   }
   // Operator
   .o {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Punctuation
   .p {
-    color: $off-white;
+    color: $gray-50;
   }
   // Comment.Multiline
   .cm {
-    color: $gray;
+    color: $gray-500;
   }
   // Comment.Preproc
   .cp {
-    color: $gray;
+    color: $gray-500;
   }
   // Comment.Single
   .c1 {
-    color: $gray;
+    color: $gray-500;
   }
   // Comment.Special
   .cs {
-    color: $gray;
+    color: $gray-500;
   }
   // Generic.Deleted
   .gd {
-    color: $pink;
+    color: $pink-200;
   }
   // Generic.Emph
   .ge {
@@ -97,16 +98,16 @@ pre.highlight {
   }
   // Generic.Heading
   .gh {
-    color: $off-white;
+    color: $gray-50;
     font-weight: bold;
   }
   // Generic.Inserted
   .gi {
-    color: $light-green;
+    color: $green-200;
   }
   // Generic.Prompt
   .gp {
-    color: $gray;
+    color: $gray-500;
     font-weight: bold;
   }
   // Generic.Strong
@@ -115,187 +116,187 @@ pre.highlight {
   }
   // Generic.Subheading
   .gu {
-    color: $light-blue;
+    color: $blue-200;
     font-weight: bold;
   }
   // Keyword.Constant
   .kc {
-    color: $light-purple;
+    color: $purple-200;
   }
   // Keyword.Declaration
   .kd {
-    color: $light-purple;
+    color: $purple-200;
   }
   // Keyword.Namespace
   .kn {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Keyword.Pseudo
   .kp {
-    color: $light-purple;
+    color: $purple-200;
   }
   // Keyword.Reserved
   .kr {
-    color: $light-purple;
+    color: $purple-200;
   }
   // Keyword.Type
   .kt {
-    color: $yellow;
+    color: $yellow-500;
   }
   // Literal.Date
   .ld {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.Number
   .m {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.String
   .s {
-    color: $light-green;
+    color: $green-200;
   }
   // Name.Attribute
   .na {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Name.Builtin
   .nb {
-    color: $off-white;
+    color: $gray-50;
   }
   // Name.Class
   .nc {
-    color: $yellow;
+    color: $yellow-500;
   }
   // Name.Constant
   .no {
-    color: $pink;
+    color: $pink-200;
   }
   // Name.Decorator
   .nd {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Name.Entity
   .ni {
-    color: $off-white;
+    color: $gray-50;
   }
   // Name.Exception
   .ne {
-    color: $pink;
+    color: $pink-200;
   }
   // Name.Function
   .nf {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Name.Label
   .nl {
-    color: $off-white;
+    color: $gray-50;
   }
   // Name.Namespace
   .nn {
-    color: $yellow;
+    color: $yellow-500;
   }
   // Name.Other
   .nx {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Name.Property
   .py {
-    color: $off-white;
+    color: $gray-50;
   }
   // Name.Tag
   .nt {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Name.Variable
   .nv {
-    color: $pink;
+    color: $pink-200;
   }
   // Operator.Word
   .ow {
-    color: $light-blue;
+    color: $blue-200;
   }
   // Text.Whitespace
   .w {
-    color: $off-white;
+    color: $gray-50;
   }
   // Literal.Number.Float
   .mf {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.Number.Hex
   .mh {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.Number.Integer
   .mi {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.Number.Oct
   .mo {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.String.Backtick
   .sb {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Char
   .sc {
-    color: $off-white;
+    color: $gray-50;
   }
   // Literal.String.Doc
   .sd {
-    color: $gray;
+    color: $gray-500;
   }
   // Literal.String.Double
   .s2 {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Escape
   .se {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.String.Heredoc
   .sh {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Interpol
   .si {
-    color: $light-orange;
+    color: $orange-200;
   }
   // Literal.String.Other
   .sx {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Regex
   .sr {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Single
   .s1 {
-    color: $light-green;
+    color: $green-200;
   }
   // Literal.String.Symbol
   .ss {
-    color: $light-green;
+    color: $green-200;
   }
   // Name.Builtin.Pseudo
   .bp {
-    color: $off-white;
+    color: $gray-50;
   }
   // Name.Variable.Class
   .vc {
-    color: $pink;
+    color: $pink-200;
   }
   // Name.Variable.Global
   .vg {
-    color: $pink;
+    color: $pink-200;
   }
   // Name.Variable.Instance
   .vi {
-    color: $pink;
+    color: $pink-200;
   }
   // Literal.Number.Integer.Long
   .il {
-    color: $light-orange;
+    color: $orange-200;
   }
 }

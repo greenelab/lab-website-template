@@ -59,3 +59,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   title="Our Team"
   text=text
 %}
+
+<!-- section break -->
+
+<!-- section full -->
+
+{% include banner.html image="images/banner.jpg" %}

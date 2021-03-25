@@ -1,32 +1,34 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 header {
-  position: relative;
-  @include flex-center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 30px;
   color: $white;
-  background: $dark-gray;
-  font-family: $sans;
+  background: $gray-800;
   box-shadow: $shadow;
-  z-index: 1;
+
+  & * {
+    font-family: $sans;
+  }
 
   .logo_row {
     @include inline-flex-center;
 
-    .logo > * {
+    .logo {
       max-width: 100%;
-      height: 40px;
-      margin: 5px;
+      height: 50px;
     }
-    
+
     .logo_text {
       margin: 10px;
-      font-family: $sans;
       font-size: 1.5rem;
       text-align: center;
     }
@@ -34,7 +36,6 @@ header {
 
   .nav_row {
     @include inline-flex-center;
-    flex-wrap: wrap;
     font-size: 0.9rem;
     font-weight: $medium;
     text-transform: uppercase;
@@ -58,27 +59,31 @@ header {
   }
 
   a {
-    color: $white !important;
-    font-family: $sans;
+    color: currentColor;
     text-decoration: none;
   }
 
-  @media (max-width: $tablet) {
-    flex-direction: column;
+  // screen width where nav bar wraps to under logo
+  // adjust based on length of your lab title and # of nav links
+  @media (max-width: 900px) {
+    align-content: center;
 
-    .logo_row {
-      margin-bottom: 10px;
+    .logo_row,
+    .nav_row {
+      width: 100%;
     }
   }
 
-  @media (max-width: $phone) {
+  // screen width where logo and nav bar go from horizontal to vertical
+  // adjust based on length of your lab title and # of nav links
+  @media (max-width: 600px) {
     .logo_row {
-      margin-bottom: 20px;
       flex-direction: column;
     }
 
     .nav_row {
       flex-direction: column;
+      justify-content: center;
       width: 100%;
 
       .nav_link {

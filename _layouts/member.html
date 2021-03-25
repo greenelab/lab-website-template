@@ -8,62 +8,49 @@ layout: default
 
 {% include figure.html image=page.image %}
 
-{% capture html %}
+{% capture contents %}
 {% include role.html type=page.role text=true %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}
 
-{% capture html %}
-{% if page.website %}
+{% capture contents %}
 {% include social-link.html type="website" link=page.website %}
-{% endif %}
-{% if page.email %}
 {% include social-link.html type="email" link=page.email %}
-{% endif %}
-{% if page.google %}
-{% include social-link.html type="google" link=page.google %}
-{% endif %}
-{% if page.github %}
+{% include social-link.html type="google-scholar" link=page.google-scholar %}
 {% include social-link.html type="github" link=page.github %}
-{% endif %}
-{% if page.twitter %}
 {% include social-link.html type="twitter" link=page.twitter %}
-{% endif %}
-{% if page.instagram %}
 {% include social-link.html type="instagram" link=page.instagram %}
-{% endif %}
-{% if page.youtube %}
 {% include social-link.html type="youtube" link=page.youtube %}
-{% endif %}
+{% include social-link.html type="linkedin" link=page.linkedin %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}
 
 {{ content }}
 
-{% assign names = "" | split: ',' %}
+{% assign variations = "" | split: ',' %}
 
-{% if page.search.first %}
-{% assign names = names | concat: page.search %}
-{% elsif page.search %}
-{% assign names = names | push: page.search %}
+{% if page.variations.first %}
+{% assign variations = variations | concat: page.variations %}
+{% elsif page.variations %}
+{% assign variations = variations | push: page.variations %}
 {% elsif page.title %}
-{% assign names = names | push: page.title %}
+{% assign variations = variations | push: page.title %}
 {% endif %}
 
 {% capture search %}
-{% for name in names %}"{{ name }}" {% endfor %}
+{% for name in variations %}"{{ name }}" {% endfor %}
 {% endcapture %}
 
-{% assign search =  search | strip | prepend: "/research/?search=" %}
+{% assign search = search | strip | prepend: "/research/?search=" %}
 
 {% capture text %}
 {{ page.title }}'s papers
 {% endcapture %}
 
-{% capture html %}
+{% capture contents %}
 {% include big-link.html icon="fas fa-book-open" link=search text=text %}
 {% endcapture %}
 
-{% include centerer.html html=html %}
+{% include centerer.html contents=contents %}

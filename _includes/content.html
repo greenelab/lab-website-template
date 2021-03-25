@@ -1,18 +1,48 @@
 {%- comment -%}
 Script to modify main content of page:
-- add section breaks where specified
+- add section breaks
+- attach section properties
 - wrap each table in div to allow for scrolling
 {%- endcomment -%}
 
-{%- assign content = include.content -%}
-
-{%- assign content = content | replace: "<!-- section break -->", "</div></section><section><div class='section'>" -%}
+{%- assign content = .include.content -%}
 
 {%- assign content = content | replace: "<table>", "<div class='table_wrapper'><table>" -%}
 {%- assign content = content | replace: "</table>", "</table></div>" -%}
 
-<section>
-  <div class='section'>
-    {{ content }}
+{% assign sections = content | split: "<!-- section break -->" %}
+
+{% for section in sections %}
+
+{% assign full = false %}
+{% if section contains "<!-- section full -->" %}
+{% assign full = true %}
+{% endif %}
+
+{% assign dark = false %}
+{% if section contains "<!-- section dark -->" %}
+{% assign dark = true %}
+{% endif %}
+
+{% assign background = false %}
+{% if section contains "<!-- section background" and section contains "-->" %}
+{% assign background = section | split: "<!-- section background" | last | split: "-->" | first | strip_newlines | strip %}
+{% endif %}
+
+<section
+  {% if dark %}data-dark="true"{% endif %}
+  {% if background %}
+  class="background"
+  style="--background: url('{{ background | relative_url }}')"
+  {% endif %}
+>
+  {% if full == false %}
+  <div class="section">
+  {% endif %}
+    {{ section }}
+  {% if full == false %}
   </div>
+  {% endif %}
 </section>
+
+{% endfor %}

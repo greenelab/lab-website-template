@@ -1,11 +1,12 @@
 ---
 ---
 
-@import "variables";
+@import "colors";
+@import "theme";
 @import "mixins";
 
 .post_info {
-  color: $gray;
+  color: $gray-500;
 
   & > span {
     display: inline-block;
