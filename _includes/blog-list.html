@@ -1,4 +1,7 @@
-{% assign byyear = site.posts | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
+{% assign nothing = "" | split: "," %}
+{% assign posts = site.posts | default: nothing %}
+
+{% assign byyear = posts | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
 
 {% for yeargroup in byyear %}
 

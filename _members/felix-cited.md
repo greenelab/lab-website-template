@@ -3,7 +3,7 @@ title: Felix Cited
 image: images/member.jpg
 role: phd
 group: alum
-variations:
+aliases:
   - F. Cited
   - F Cited
 website: felixcited.com

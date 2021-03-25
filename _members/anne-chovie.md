@@ -2,7 +2,7 @@
 title: Anne Chovie
 image: images/member.jpg
 role: programmer
-variations:
+aliases:
   - A. Chovie
   - A Chovie
 website: annechovie.com

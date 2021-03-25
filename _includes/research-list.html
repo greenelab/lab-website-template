@@ -1,4 +1,6 @@
-{% assign papers = site.data.research-output %}
+{% assign nothing = "" | split: "," %}
+{% assign papers = site.data.research-output | default: nothing %}
+
 {% assign papers = papers | sort: "date" | reverse %}
 {% assign byyear = papers | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
 

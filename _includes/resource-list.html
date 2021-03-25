@@ -1,4 +1,5 @@
-{% assign resources = site.data.resources %}
+{% assign nothing = "" | split: "," %}
+{% assign resources = site.data.resources | default: nothing %}
 
 {% if include.group != nil %}
 {% if include.group == "" %}

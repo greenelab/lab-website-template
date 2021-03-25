@@ -1,4 +1,5 @@
-{% assign members = site.members %}
+{% assign nothing = "" | split: "," %}
+{% assign members = site.members | default: nothing %}
 
 {% if include.role != nil %}
 {% if include.role == "" %}

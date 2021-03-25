@@ -2,7 +2,7 @@
 title: Upton O. Goode
 image: images/member.jpg
 role: pi
-variations:
+aliases:
   - U. Goode
   - U. O. Goode
   - U Goode

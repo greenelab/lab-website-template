@@ -29,18 +29,18 @@ layout: default
 
 {{ content }}
 
-{% assign variations = "" | split: ',' %}
+{% assign aliases = "" | split: ',' %}
 
-{% if page.variations.first %}
-{% assign variations = variations | concat: page.variations %}
-{% elsif page.variations %}
-{% assign variations = variations | push: page.variations %}
+{% if page.aliases.first %}
+{% assign aliases = aliases | concat: page.aliases %}
+{% elsif page.aliases %}
+{% assign aliases = aliases | push: page.aliases %}
 {% elsif page.title %}
-{% assign variations = variations | push: page.title %}
+{% assign aliases = aliases | push: page.title %}
 {% endif %}
 
 {% capture search %}
-{% for name in variations %}"{{ name }}" {% endfor %}
+{% for name in aliases %}"{{ name }}" {% endfor %}
 {% endcapture %}
 
 {% assign search = search | strip | prepend: "/research/?search=" %}
