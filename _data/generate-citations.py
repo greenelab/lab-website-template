@@ -197,7 +197,7 @@ for index, paper in enumerate(papers):
 
         if cached:
             # use existing citation to save time
-            info("Already in output. Using existing citation.")
+            info("Using existing citation")
             new_citations.append(cached)
 
         else:
@@ -258,9 +258,9 @@ for index, paper in enumerate(papers):
 
 section()
 
-# go through new output papers
+# go through new citations
 for citation in new_citations:
-    # merge properties from input paper into new output paper
+    # merge in properties from input paper
     citation.update(find_match(citation, papers))
 
     # delete line number field
