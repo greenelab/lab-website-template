@@ -25,7 +25,6 @@ github: your-lab
 twitter: YourLabHandle
 instagram: YourLabHandle
 youtube: YourLabChannel
-rss: feed.xml
 
 # base directory where site is hosted
 baseurl: /lab-website-template

@@ -1,20 +1,21 @@
-# GENERATED AUTOMATICALLY FROM RESEARCH.YAML, DO NOT EDIT
+# GENERATED AUTOMATICALLY, DO NOT EDIT
 
-- title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1016/j.csbj.2020.05.017
+  title: Constructing knowledge graphs and their biomedical applications
   authors:
   - David N. Nicholson
   - Casey S. Greene
   publisher: Computational and Structural Biotechnology Journal
   date: '2020-06-02'
   link: https://doi.org/gg7m48
-  id: doi:10.1016/j.csbj.2020.05.017
   image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   extra-links:
   - type: manubot
     link: https://greenelab.github.io/knowledge-graph-review/
   tags:
   - knowledge graphs
-- title: Open collaborative writing with Manubot
+- id: doi:10.1371/journal.pcbi.1007128
+  title: Open collaborative writing with Manubot
   authors:
   - Daniel S. Himmelstein
   - Vincent Rubinetti
@@ -26,7 +27,6 @@
   publisher: PLOS Computational Biology
   date: '2019-06-24'
   link: https://doi.org/c7np
-  id: doi:10.1371/journal.pcbi.1007128
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
   repo: greenelab/meta-review
   extra-links:
@@ -36,7 +36,8 @@
     link: https://github.com/greenelab/meta-review
   - type: website
     link: http://manubot.org/
-- title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.7554/eLife.32822
+  title: Sci-Hub provides access to nearly all scholarly literature
   authors:
   - Daniel S Himmelstein
   - Ariel Rodriguez Romero
@@ -48,7 +49,6 @@
   publisher: eLife
   date: '2018-03-01'
   link: https://doi.org/ckcj
-  id: doi:10.7554/eLife.32822
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
   extra-links:
   - type: preprint

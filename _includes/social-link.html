@@ -46,12 +46,6 @@
 {%- assign link = include.link | default: "" | prepend: "https://www.linkedin.com/in/" -%}
 {%- endif -%}
 
-{%- if include.type == "rss" -%}
-{%- assign icon = "fas fa-rss" -%}
-{%- assign tooltip = "RSS Feed" -%}
-{%- assign link = include.link | absolute_url -%}
-{%- endif -%}
-
 {%- comment -%}
 To add more options for icons, see:
 https://fontawesome.com/icons?d=gallery&q=icon&m=free
