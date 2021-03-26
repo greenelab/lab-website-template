@@ -27,24 +27,17 @@ default_date = [1900, 1, 1]
 # allow printing ANSI color codes
 os.system("")
 
-# colors
-palette = {
-    "red": "\033[91m", # error
-    "yellow": "\033[93m", # warning
-    "green": "\033[92m", # success
-    "blue": "\033[94m", # info
-    "reset": "\033[0m" # default
-}
-
-# log wih color
-def log(message, color="reset"):
-    print(f"{palette[color]}{message}{palette['reset']}")
+# colored logging
+def error(message): print(f"\033[91m{message}\033[0m"); sys.exit(1) # red
+def warning(message): print(f"\033[93m{message}\033[0m") # yellow
+def success(message): print(f"\033[92m{message}\033[0m") # green
+def info(message): print(f"\033[94m{message}\033[0m") # blue
 
 # log a section divider
 def section():
-    log("")
-    log("------------------------------------------------------------")
-    log("")
+    print("")
+    print("------------------------------------------------------------")
+    print("")
 
 # yaml loader with line numbering
 # https://stackoverflow.com/questions/13319067/parsing-yaml-return-with-line-number
@@ -52,7 +45,7 @@ class SafeLineLoader(SafeLoader):
     def construct_mapping(self, node, deep=False):
         mapping = super().construct_mapping(node, deep=deep)
         if node.start_mark.column == 2:
-            mapping["__line_number__"] = node.start_mark.line + 1
+            mapping["_line_"] = node.start_mark.line + 1
         return mapping
 
 # current working directory
@@ -98,51 +91,20 @@ def write_yaml(filename, data):
     except Exception:
         raise Exception(f"Can't dump as YAML")
 
-    # write warning to top of file
-    warning = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
+    # write warning note to top of file
+    note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
     try:
         with open(path, 'r') as file:
             data = file.read()
         with open(path, 'w') as file:
-            file.write(f"{warning}\n\n{data}")
+            file.write(f"{note}\n\n{data}")
     except Exception:
         raise Exception(f"Can't write to file")
-
-# check that yaml data has expected structure
-def check_structure(data):
-    # is top level array
-    if type(data) != list:
-        raise Exception ("Top level of file is not a list")
-
-    # current or most recent line number
-    line_number = 1
-
-    # paper ids already found
-    ids = []
-
-    for paper in data:
-        # is every paper a dictionary
-        if type(paper) != dict:
-            raise Exception(f"Paper after line {line_number} is not a dictionary")
-
-        # update line number
-        line_number = paper.get("__line_number__", line_number)
-
-        # does every paper have an id field
-        if not paper.get("id"):
-            raise Exception(f"Paper at line {line_number} has no id field")
-
-        # is paper a duplicate
-        if paper.get("id") in ids:
-            raise Exception(f"Paper at line {line_number} is a duplicate")
-
-        # add paper id to found list
-        ids.append(paper.get("id"))
 
 # find item in list that matches entry by id
 def find_match(entry, list):
     for item in list:
-        if item.get("id") == entry.get("id"):
+        if type(item) == dict and item.get("id") == entry.get("id"):
             return item
     return {}
 
@@ -165,23 +127,28 @@ def clean_date(date):
 # load and parse
 ####################
 
+section()
+
 # load papers
-log(f"Loading {papers_file}")
+print(f"Loading {papers_file}")
 try:
     papers = read_yaml(papers_file)
-    check_structure(papers)
+    # is top level array
+    if type(papers) != list:
+        raise Exception ("Top level is not a list")
 except Exception as message:
-    log(message, "red")
-    sys.exit(1)
+    error(message)
 
 # load citations
-log(f"Loading {citations_file}")
+print(f"Loading {citations_file}")
 try:
     citations = read_yaml(citations_file)
-    check_structure(citations)
+    # is top level array
+    if type(citations) != list:
+        raise Exception ("Top level is not a list")
 except Exception as message:
-    log(message, "yellow")
-    log("Starting from scratch")
+    warning(message)
+    print("Starting from scratch")
     citations = []
 
 ####################
@@ -191,74 +158,99 @@ except Exception as message:
 # list of new citations to overwrite existing citations
 new_citations = []
 
+# paper ids already found
+ids = []
+
 # go through input papers
 for index, paper in enumerate(papers):
-    # show progress
-    section()
-    log(f"Paper {index + 1} of {len(papers)}")
-    log(f"Line number {paper.get('__line_number__')}")
+    try:
+        section()
 
-    log("")
+        # show progress
+        print(f"Paper {index + 1} of {len(papers)}")
 
-    # find same paper in existing citations
-    cached = find_match(paper, citations)
+        # is entry a dictionary
+        if type(paper) != dict:
+            print("")
+            raise Exception("Entry is not a dictionary")
 
-    if cached:
-        # use existing citation to save time
-        log("Already in output. Using existing citation.", "blue")
-        new_citations.append(cached)
-
-    else:
-        # run Manubot to get citation info
-        log("Running Manubot to generate citation")
+        # show line number in yaml for reference
+        print(f"Line number {paper.get('_line_', '???')}")
+        print("")
 
         # paper id
         paper_id = paper.get("id")
 
-        # run Manubot and get results as json
-        try:
-            commands = ["manubot", "cite", paper_id, '--log-level=ERROR']
-            output = subprocess.Popen(commands, stdout=subprocess.PIPE)
-            manubot = json.loads(output.communicate()[0])[0]
-        except Exception:
-            log("Manubot could not generate citation", "red")
-            sys.exit(1)
+        # does entry have an id field
+        if not paper_id:
+            raise Exception("Entry has no id field")
 
-        # new citation info, with only needed info from Manubot
-        citation = {}
+        # is entry a duplicate
+        if paper_id in ids:
+            raise Exception("Entry is a duplicate")
 
-        # original id
-        citation["id"] = paper_id
+        # add paper id to found list
+        ids.append(paper_id)
 
-        # title
-        citation["title"] = manubot.get("title", "")
+        # find same paper in existing citations
+        cached = find_match(paper, citations)
 
-        # authors
-        citation["authors"] = []
-        for author in manubot.get("author", []):
-            given = author.get("given", "")
-            family = author.get("family", "")
-            citation["authors"].append(given + " " + family)
+        if cached:
+            # use existing citation to save time
+            info("Already in output. Using existing citation.")
+            new_citations.append(cached)
 
-        # publisher
-        container = manubot.get("container-title", "")
-        collection = manubot.get("collection-title", "")
-        publisher = manubot.get("publisher", "")
-        citation["publisher"] = container or publisher or collection
+        else:
+            # run Manubot to get citation info
+            print("Running Manubot to generate citation")
 
-        # date
-        year = date_part(manubot, 0)
-        month = date_part(manubot, 1)
-        day = date_part(manubot, 2)
-        citation["date"] = f"{year}-{month}-{day}"
+            # run Manubot and get results as json
+            try:
+                commands = ["manubot", "cite", paper_id, '--log-level=ERROR']
+                output = subprocess.Popen(commands, stdout=subprocess.PIPE)
+                manubot = json.loads(output.communicate()[0])[0]
+            except Exception:
+                raise Exception("Manubot could not generate citation")
 
-        # link
-        citation["link"] = manubot.get("URL", "")
+            # new citation info, with only needed info from Manubot
+            citation = {}
 
-        # add new citation to list
-        new_citations.append(citation)
+            # original id
+            citation["id"] = paper_id
 
-        log("Citation generated", "green")
+            # title
+            citation["title"] = manubot.get("title", "")
+
+            # authors
+            citation["authors"] = []
+            for author in manubot.get("author", []):
+                given = author.get("given", "")
+                family = author.get("family", "")
+                citation["authors"].append(given + " " + family)
+
+            # publisher
+            container = manubot.get("container-title", "")
+            collection = manubot.get("collection-title", "")
+            publisher = manubot.get("publisher", "")
+            citation["publisher"] = container or publisher or collection
+
+            # date
+            year = date_part(manubot, 0)
+            month = date_part(manubot, 1)
+            day = date_part(manubot, 2)
+            citation["date"] = f"{year}-{month}-{day}"
+
+            # link
+            citation["link"] = manubot.get("URL", "")
+
+            # add new citation to list
+            new_citations.append(citation)
+
+            success("Citation generated")
+
+    # catch any errors and exit            
+    except Exception as message:
+        error(message)
 
 ####################
 # finish up
@@ -271,20 +263,20 @@ for citation in new_citations:
     # merge properties from input paper into new output paper
     citation.update(find_match(citation, papers))
 
-    # delete __line_number__ field
-    del citation["__line_number__"]
+    # delete line number field
+    del citation["_line_"]
 
     # ensure date in proper format for correct date sorting
     citation["date"] = clean_date(citation.get("date"))
 
 # save new citations
-log(f"Saving {citations_file}")
+print(f"Saving {citations_file}")
 try:
     write_yaml(citations_file, new_citations)
 except Exception as message:
-    log(message, "red")
-    sys.exit(1)
+    error(message)
+
+section()
 
 # done
-log("")
-log("Done!", "green")
+success("Done!")
