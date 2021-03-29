@@ -30,3 +30,4 @@ jobs:
         with:
           file_pattern: "_data/research-output.yaml"
           commit_message: "Generate citations"
+          push_options: --force
