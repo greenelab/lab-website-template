@@ -24,9 +24,6 @@ default_date = [1900, 1, 1]
 # util
 ####################
 
-# allow printing ANSI color codes
-os.system("")
-
 # colored logging
 def error(message): print(f"\033[91m{message}\033[0m"); sys.exit(1) # red
 def warning(message): print(f"\033[93m{message}\033[0m") # yellow
