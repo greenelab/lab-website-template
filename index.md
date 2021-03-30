@@ -2,6 +2,10 @@
 title: Home
 ---
 
+# Translational and Integrative Sciences Lab
+
+<!-- section break -->
+
 <!-- section full -->
 
 {% include banner.html image="images/banner.png" %}

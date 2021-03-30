@@ -1,9 +1,11 @@
 # site settings
 title: TIS Lab
-description: Translational and Integrative Sciences Lab
 logo: images/logo.svg
-header: images/background.jpg
-footer: images/background.jpg
+
+# page defaults
+description: Translational and Integrative Sciences Lab
+header: images/bg-dna.jpg
+footer: images/bg-dna.jpg
 
 # site nav bar
 nav:
