@@ -24,9 +24,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 <!-- section dark -->
 <!-- section background images/banner.jpg -->
 
-
-<br>
-<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -37,7 +34,6 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   link="join"
   button=true
 %}{:.center}
-<br>
 
 <!-- section break -->
 

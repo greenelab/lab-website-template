@@ -23,7 +23,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {%
   include feature.html
-  image="images/banner.jpg"
+  image="images/photo.jpg"
   link="research"
   title="Our Research"
   text=text

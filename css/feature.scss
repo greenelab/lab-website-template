@@ -12,7 +12,7 @@
   @include trim-margins;
 
   .feature_image {
-    width: 350px;
+    width: $page * 0.4;
     flex-shrink: 0;
     overflow: hidden;
     box-shadow: $shadow;
