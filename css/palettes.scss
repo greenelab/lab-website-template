@@ -1,3 +1,17 @@
+// large "palettes" of enumerated font weights, colors, etc.
+
+// font weights
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+// colors
 // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 $red-50: #ffebee;
 $red-100: #ffcdd2;
