@@ -1,6 +1,5 @@
 ---
 title: Contact
-header: images/photo.jpg
 ---
 
 # <i class="fas fa-envelope"></i>Contact
