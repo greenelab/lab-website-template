@@ -2,6 +2,7 @@
 // see colors.scss for available colors
 $accent: $light-blue-500;
 $light-accent: $light-blue-200;
+$dark-accent: $light-blue-900;
 
 // font types
 // also see /_includes/fonts.html to change fonts
@@ -26,6 +27,6 @@ $shadow: 0 0 10px 0 #00000040;
 
 // screen widths
 // used by various components
-$page: 1000px; // max-width of the main page column
+$page: 900px; // max-width of the main page column
 $tablet: 800px; // screen width cutoff point for tablets
 $phone: 500px; // screen width cutoff point for phones
