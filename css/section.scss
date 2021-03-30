@@ -40,10 +40,5 @@ body {
     &:last-child {
       flex-grow: 1;
     }
-
-    &[data-dark="true"] {
-      background: $gray-800;
-      color: $white;
-    }
   }
 }
