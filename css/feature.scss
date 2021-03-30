@@ -7,20 +7,18 @@
 
 .feature {
   @include flex-center;
+  // align-items: flex-start;
   margin: 40px 0;
   @include trim-margins;
 
   .feature_image {
-    width: 350px;
-    height: 250px;
+    width: $page * 0.4;
     flex-shrink: 0;
     overflow: hidden;
     box-shadow: $shadow;
 
     img {
-      object-fit: cover;
       width: 100%;
-      height: 100%;
       transition: transform $fast;
     }
 
@@ -44,6 +42,7 @@
   }
 
   .feature_title {
+    // color: $dark-accent;
     font-family: $sans;
     font-weight: $medium;
     text-align: center;
