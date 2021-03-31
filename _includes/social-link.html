@@ -28,6 +28,12 @@
 {%- assign link = include.link | default: "" | prepend: "https://twitter.com/" -%}
 {%- endif -%}
 
+{%- if include.type == "facebook" -%}
+{%- assign icon = "fab fa-facebook" -%}
+{%- assign tooltip = "Facebook" -%}
+{%- assign link = include.link | default: "" | prepend: "https://facebook.com/" -%}
+{%- endif -%}
+
 {%- if include.type == "instagram" -%}
 {%- assign icon = "fab fa-instagram" -%}
 {%- assign tooltip = "Instagram" -%}
@@ -52,7 +58,7 @@ https://fontawesome.com/icons?d=gallery&q=icon&m=free
 {%- endcomment -%}
 
 {%- if include.link and icon and tooltip and link -%}
-<a href="{{ link }}" class="social_link" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}" data-large="{{ include.large }}">
-  <i class="{{ icon }} {% if include.large %}fa-lg{% endif %} fa-fw"></i>
+<a href="{{ link }}" class="social_link" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}">
+  <i class="{{ icon }} fa-lg fa-fw"></i>
 </a>
 {%- endif -%}
