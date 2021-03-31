@@ -14,16 +14,10 @@
   .feature_image {
     width: $page * 0.4;
     flex-shrink: 0;
-    overflow: hidden;
-    box-shadow: $shadow;
+    // box-shadow: $shadow;
 
     img {
       width: 100%;
-      transition: transform $fast;
-    }
-
-    &:hover img {
-      transform: scale(1.1);
     }
   }
 
