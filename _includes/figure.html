@@ -1,16 +1,50 @@
+{% assign width = include.width %}
+{% assign height = include.height %}
+
+{% if width contains "px" %}
+
+  {% capture link %}
+  {% endcapture %}
+
+  {% capture img %}
+  width: {{ width }};
+  {% endcapture %}
+
+{% elsif width contains "%" %}
+
+  {% capture link %}
+  width: {{ width }};
+  {% endcapture %}
+
+  {% capture img %}
+  width: 100%;
+  {% endcapture %}
+
+{% elsif height contains "px" %}
+
+  {% capture link %}
+  {% endcapture %}
+  
+  {% capture img %}
+  {% if include.image contains ".svg" %}
+  width: 100%;
+  {% endif %}
+  max-height: {{ height }};
+  {% endcapture %}
+
+{% endif %}
+
 <figure class="figure">
-  {% assign width = include.width | default: "unset" %}
-  {% assign height = include.height | default: "unset" %}
   <a 
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="figure_image"
-    style="width: {{ width }}; max-height: {{ height }};"
+    style="{{ link }}"
   >
     <img
       src="{{ include.image | relative_url }}"
       alt="{{ include.caption }}"
       title="{{ include.caption }}"
-      style="width: 100%; height: {{ height }};"
+      style="{{ img }}"
       loading="lazy"
     />
   </a>
