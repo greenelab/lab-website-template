@@ -44,7 +44,6 @@ Our work is made possible by funding from several organizations.
 
 {%
   include gallery.html
-  flat="true"
   fit="false"
 
   image1="images/photo.jpg"
