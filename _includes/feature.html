@@ -1,4 +1,4 @@
-<div class="feature">
+<div class="feature" data-flat="{{ include.flat | default: false }}">
   <a 
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="feature_image"
