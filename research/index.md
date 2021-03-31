@@ -12,7 +12,7 @@ title: Research
   include figure.html
   image="images/monarch.png"
   link="https://monarchinitiative.org/"
-  width="400px"
+  height="100px"
 %}
 
 Over the last 20 years, the genomic revolution has provided tremendous amounts of knowledge in nearly all scientific fields, especially genomic medicine.
@@ -30,9 +30,9 @@ Monarch is a collaboration among members TISLab, Lawrence Berkeley National Labo
 **Funding**: NIH grant # 1R24OD011883-01 and NHGRI 1RM1HG010860-01
 
 {% capture contents %}
-{% include social-link.html type="website" link="http://monarchinitiative.org/" large=true %}
-{% include social-link.html type="github" link="monarch-initiative" large=true %}
-{% include social-link.html type="twitter" link="monarchinit" large=true %}
+{% include social-link.html type="website" link="http://monarchinitiative.org/" %}
+{% include social-link.html type="github" link="monarch-initiative" %}
+{% include social-link.html type="twitter" link="monarchinit" %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
@@ -44,7 +44,8 @@ Monarch is a collaboration among members TISLab, Lawrence Berkeley National Labo
 {%
   include figure.html
   image="images/phenomics.png"
-  width="400px"
+  caption="test test test test test test test test test test test test test test test test test test"
+  height="100px"
 %}
 
 The human genome has been sequenced, and yet so much is unknown about what it does; what we do know is scattered across multiple, heterogeneous data sources that are difficult to integrate.
@@ -66,7 +67,7 @@ This project forms the basis of a Center of Excellence in Genomic Science, a pro
 {%
   include figure.html
   image="images/translational-science.png"
-  width="400px"
+  height="100px"
 %}
 
 TISLab is revolutionizing our understanding of how genes are transformed into organism traits in a changing environment.
@@ -80,9 +81,9 @@ TISLab is leading this effort to innovate in computer science and biology to com
 **Funding**: Office of Advanced Cyberinfrastructure (OAC), NSF Award #1940062
 
 {% capture contents %}
-{% include social-link.html type="website" link="https://genophenoenvo.github.io/" large=true %}
-{% include social-link.html type="github" link="genophenoenvo" large=true %}
-{% include social-link.html type="twitter" link="GenoPhenoEnvo" large=true %}
+{% include social-link.html type="website" link="https://genophenoenvo.github.io/" %}
+{% include social-link.html type="github" link="genophenoenvo" %}
+{% include social-link.html type="twitter" link="GenoPhenoEnvo" %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
@@ -108,7 +109,7 @@ TISLab is creating new discoveries by planning and hosting workshops for creatin
 {%
   include figure.html
   image="images/ccdh-wheel.png"
-  width="400px"
+  height="100px"
 %}
 
 TISLab is leading development of a data-powered support infrastructure to cure and treat cancer.
@@ -121,8 +122,8 @@ To address these issues TISLab is taking a leading role in the Center for Cancer
 **Funding**: NCI / Leidos contract # HHSN261201500003I
 
 {% capture contents %}
-{% include social-link.html type="website" link="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh/" large=true %}
-{% include social-link.html type="github" link="cancerDHC" large=true %}
+{% include social-link.html type="website" link="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh/" %}
+{% include social-link.html type="github" link="cancerDHC" %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
@@ -134,7 +135,7 @@ To address these issues TISLab is taking a leading role in the Center for Cancer
 {%
   include figure.html
   image="images/kids-first.png"
-  width="400px"
+  height="100px"
 %}
 
 TISLab is fighting pediatric cancer by supporting The Kids First Data Resource Portal, one of the largest collections of integrated genomic and clinical data for some childhood diseases, which previously were studied largely in isolation.
@@ -146,10 +147,135 @@ Additional work is being done in collaboration with the INCLUDE (INvestigation o
 **Funding**: NIH grant # 5U2CHL138346 and The Kids First supplement is funded by NIH grant # 3200670520-03S1
 
 {% capture contents %}
-{% include social-link.html type="website" link="https://kidsfirstdrc.org/" large=true %}
-{% include social-link.html type="github" link="kids-first" large=true %}
-{% include social-link.html type="twitter" link="kidsfirstDRC" large=true %}
-{% include social-link.html type="youtube" link="channel/UCK9sPu0j4_ci4m3nNFa6gVw" large=true %}
+{% include social-link.html type="website" link="https://kidsfirstdrc.org/" %}
+{% include social-link.html type="github" link="kids-first" %}
+{% include social-link.html type="twitter" link="kidsfirstDRC" %}
+{% include social-link.html type="youtube" link="channel/UCK9sPu0j4_ci4m3nNFa6gVw" %}
+{% include social-link.html type="facebook" link="kidsfirstDRC" %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### Biomedical Data Translator Program
+
+{%
+  include figure.html
+  image="images/translator.jpg"
+  height="100px"
+%}
+
+NCATS studies translation on a system-wide level as a scientific and operational problem.
+TISLab convenes expert teams from diverse scientific disciplines — including, among others, efficacy, toxicity, data sharing, biomarkers and clinical application — to reduce, remove or bypass significant bottlenecks across the entire continuum of translation and to train the future translational science workforce.
+
+**Contact**: [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
+**Funding**: NCATS grant # 3 OT3 TR002019 01S2
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://ncats.nih.gov/translator/" %}
+{% include social-link.html type="github" link="NCATSTranslator" %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### CD2H: Harmonizing the Informatics Community
+
+{%
+  include figure.html
+  image="images/cd2h.png"
+  height="100px"
+%}
+
+TISLab is leading the National Center for Data to Health (CD2H) using team science and translational research to improve patient care.
+CD2H accelerates advancements in informatics by using findable, accessible, interoperable, and reusable (FAIR) principles to promote collaboration across the Clinical and Translational Science Awards (CTSA) Program community.
+CD2H tools and resources make it simple and valuable for CTSA Program members to get engaged, connect with peers, and contribute.
+By promoting collaboration, CD2H fosters a robust translational science informatics ecosystem that collectively develops solutions to solve clinical problems faster, more efficiently, and more effectively.
+CTSA Program members are poised to lead this charge by harnessing collective expertise and strengths to solve key informatics challenges.
+
+**Contact**: [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
+**Funding**: NCATS grant # U24TR002306
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://cd2h.org/" %}
+{% include social-link.html type="github" link="data2health" %}
+{% include social-link.html type="twitter" link="data2health" %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### National COVID Cohort Collaborative (N3C)
+
+{%
+  include figure.html
+  image="images/n3c.png"
+  height="100px"
+%}
+
+The [National Center for Advancing Translational Sciences (NCATS)](https://ncats.nih.gov/) and the [National Center for Data to Health (CD2H)](https://cd2h.org/) have created the [National COVID Cohort Collaborative (N3C)](https://covid.cd2h.org/) Data Enclave.
+The N3C aims to aggregate, harmonize, and make accessible vast amounts of data from healthcare providers nationwide to accelerate advances in COVID-19 research and clinical care.
+With the uncertainty of the COVID-19 global pandemic, the scientific community and Clinical and [Translational Science Awards (CTSA)](https://ncats.nih.gov/ctsa) Program created the N3C partnership to overcome technical, regulatory, policy, and governance barriers to harmonizing and sharing individual-level clinical data.
+
+N3C welcomes researchers and citizen scientists to sign up and register for access to this nationwide, comprehensive health records dataset.
+Learn more at the [CD2H N3C page](https://covid.cd2h.org/).
+
+**Contact**: [Melissa Haendel](mailto:melissa@tislab.org)  
+**Funding**: National Institutes of Health's National Center for Advancing Translational Sciences, Grant Number U24TR002306
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://ncats.nih.gov/n3c/" %}
+{% include social-link.html type="github" link="National-COVID-Cohort-Collaborative" %}
+{% include social-link.html type="twitter" link="N3C" %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### Flatten the Curve
+
+{%
+  include figure.html
+  image="images/flatten-the-curve.svg"
+  height="100px"
+%}
+
+We can all slow the spread of COVID-19 and “Flatten the Curve” together.
+Flatten the Curve provides reliable information reviewed by scientists delivered in as many languages as possible to help.
+
+**Contact**: [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
+**Funding**: NIH U24TR002306
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://www.flattenthecurve.com/" %}
+{% include social-link.html type="github" link="flattenthecurve" %}
+{% include social-link.html type="twitter" link="FlattenCurve" %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### Integrated Health Sciences Facility Core
+
+{%
+  include figure.html
+  image="images/tehr.png"
+  height="100px"
+%}
+
+In collaboration with Oregon State’s [Environmental Health Sciences Center](https://ehsc.oregonstate.edu/) the [Linus Pauling Institute](https://lpi.oregonstate.edu/), TISLab is developing a new vision for the EHSC’s Integrated Health Sciences Facility Core, dedicated to connecting researchers and community stakeholders through technology and data.
+By building tools like an interactive, searchable Discovery Index to identify interest and expertise, we can quickly build cross-disciplinary teams to tackle new challenges, and connect existing teams to the communities their work impacts.
+
+**Contact**: [Anne Thessen](mailto:annethessen@gmail.com)  
+**Funding**: NIEHS 1P30ES030287-01A1
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://ehsc.oregonstate.edu/" %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
