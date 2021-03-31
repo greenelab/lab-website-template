@@ -12,7 +12,7 @@ title: Research
   include figure.html
   image="images/monarch.png"
   link="https://monarchinitiative.org/"
-  height="100px"
+  width="400px"
 %}
 
 Over the last 20 years, the genomic revolution has provided tremendous amounts of knowledge in nearly all scientific fields, especially genomic medicine.
@@ -44,8 +44,7 @@ Monarch is a collaboration among members TISLab, Lawrence Berkeley National Labo
 {%
   include figure.html
   image="images/phenomics.png"
-  caption="test test test test test test test test test test test test test test test test test test"
-  height="100px"
+  width="400px"
 %}
 
 The human genome has been sequenced, and yet so much is unknown about what it does; what we do know is scattered across multiple, heterogeneous data sources that are difficult to integrate.
@@ -67,7 +66,7 @@ This project forms the basis of a Center of Excellence in Genomic Science, a pro
 {%
   include figure.html
   image="images/translational-science.png"
-  height="100px"
+  height="250px"
 %}
 
 TISLab is revolutionizing our understanding of how genes are transformed into organism traits in a changing environment.
@@ -109,7 +108,7 @@ TISLab is creating new discoveries by planning and hosting workshops for creatin
 {%
   include figure.html
   image="images/ccdh-wheel.png"
-  height="100px"
+  height="250px"
 %}
 
 TISLab is leading development of a data-powered support infrastructure to cure and treat cancer.
@@ -135,7 +134,7 @@ To address these issues TISLab is taking a leading role in the Center for Cancer
 {%
   include figure.html
   image="images/kids-first.png"
-  height="100px"
+  width="400px"
 %}
 
 TISLab is fighting pediatric cancer by supporting The Kids First Data Resource Portal, one of the largest collections of integrated genomic and clinical data for some childhood diseases, which previously were studied largely in isolation.
@@ -163,7 +162,7 @@ Additional work is being done in collaboration with the INCLUDE (INvestigation o
 {%
   include figure.html
   image="images/translator.jpg"
-  height="100px"
+  width="400px"
 %}
 
 NCATS studies translation on a system-wide level as a scientific and operational problem.
@@ -186,7 +185,7 @@ TISLab convenes expert teams from diverse scientific disciplines — including, 
 {%
   include figure.html
   image="images/cd2h.png"
-  height="100px"
+  height="250px"
 %}
 
 TISLab is leading the National Center for Data to Health (CD2H) using team science and translational research to improve patient care.
@@ -213,7 +212,7 @@ CTSA Program members are poised to lead this charge by harnessing collective exp
 {%
   include figure.html
   image="images/n3c.png"
-  height="100px"
+  width="400px"
 %}
 
 The [National Center for Advancing Translational Sciences (NCATS)](https://ncats.nih.gov/) and the [National Center for Data to Health (CD2H)](https://cd2h.org/) have created the [National COVID Cohort Collaborative (N3C)](https://covid.cd2h.org/) Data Enclave.
@@ -241,7 +240,7 @@ Learn more at the [CD2H N3C page](https://covid.cd2h.org/).
 {%
   include figure.html
   image="images/flatten-the-curve.svg"
-  height="100px"
+  height="250px"
 %}
 
 We can all slow the spread of COVID-19 and “Flatten the Curve” together.
@@ -265,7 +264,7 @@ Flatten the Curve provides reliable information reviewed by scientists delivered
 {%
   include figure.html
   image="images/tehr.png"
-  height="100px"
+  height="250px"
 %}
 
 In collaboration with Oregon State’s [Environmental Health Sciences Center](https://ehsc.oregonstate.edu/) the [Linus Pauling Institute](https://lpi.oregonstate.edu/), TISLab is developing a new vision for the EHSC’s Integrated Health Sciences Facility Core, dedicated to connecting researchers and community stakeholders through technology and data.
