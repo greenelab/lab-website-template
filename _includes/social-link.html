@@ -28,6 +28,12 @@
 {%- assign link = include.link | default: "" | prepend: "https://twitter.com/" -%}
 {%- endif -%}
 
+{%- if include.type == "facebook" -%}
+{%- assign icon = "fab fa-facebook" -%}
+{%- assign tooltip = "Facebook" -%}
+{%- assign link = include.link | default: "" | prepend: "https://facebook.com/" -%}
+{%- endif -%}
+
 {%- if include.type == "instagram" -%}
 {%- assign icon = "fab fa-instagram" -%}
 {%- assign tooltip = "Instagram" -%}
