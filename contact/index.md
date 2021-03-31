@@ -9,7 +9,6 @@ We are a geographically distributed team that is headquartered on the 6th Floor 
 
 {%
   include figure.html
-  flat="true"
   image="images/anschutz-logo.png"
   width="400px"
   link="https://medschool.cuanschutz.edu/"

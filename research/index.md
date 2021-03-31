@@ -13,7 +13,6 @@ title: Research
   image="images/monarch.png"
   link="https://monarchinitiative.org/"
   width="400px"
-  flat=true
 %}
 
 Over the last 20 years, the genomic revolution has provided tremendous amounts of knowledge in nearly all scientific fields, especially genomic medicine.
@@ -46,7 +45,6 @@ Monarch is a collaboration among members TISLab, Lawrence Berkeley National Labo
   include figure.html
   image="images/phenomics.png"
   width="400px"
-  flat=true
 %}
 
 The human genome has been sequenced, and yet so much is unknown about what it does; what we do know is scattered across multiple, heterogeneous data sources that are difficult to integrate.
@@ -69,7 +67,6 @@ This project forms the basis of a Center of Excellence in Genomic Science, a pro
   include figure.html
   image="images/translational-science.png"
   width="400px"
-  flat=true
 %}
 
 TISLab is revolutionizing our understanding of how genes are transformed into organism traits in a changing environment.
@@ -119,3 +116,40 @@ The data that researchers need to develop new life saving therapies spans discip
 Currently, integrating data ranging from genomes and cellular components to patients and symptoms is a significant barrier to research.
 
 To address these issues TISLab is taking a leading role in the Center for Cancer Data Harmonization (CCDH) whose mission is to bring data together across the various nodes of NCI’s Cancer Research Data Commons (CRDC) and make them accessible to researchers of any discipline in the fight against cancer.
+
+**Contact**: [Monica Munoz-Torres](mailto:munoztmo@oregonstate.edu)  
+**Funding**: NCI / Leidos contract # HHSN261201500003I
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh/" large=true %}
+{% include social-link.html type="github" link="cancerDHC" large=true %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
+
+<!-- section break -->
+
+### Gabriella Miller Kids First Pediatric Data Resource Center
+
+{%
+  include figure.html
+  image="images/kids-first.png"
+  width="400px"
+%}
+
+TISLab is fighting pediatric cancer by supporting The Kids First Data Resource Portal, one of the largest collections of integrated genomic and clinical data for some childhood diseases, which previously were studied largely in isolation.
+Kids First brings together heterogeneous data from childhood cancers and structural birth defects to support research, study, and collaboration built on top of an unprecedented collection of genetic and phenotypic data from pediatric patients.
+The data in the Data Resource Portal is curated and structured using biomedical ontologies, including the Human Phenotype Ontology (HPO) and Mondo Disease Ontology to allow for query and retrieval of symptoms, findings and disease features across the cohorts.
+Additional work is being done in collaboration with the INCLUDE (INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromE) project to augment the Kids First Data Resource Center’s ability to integrate survey data for assessment of Down Syndrome-related clinical data and neurobehavior.
+
+**Contact**: [Nicole Vasilevsky](mailto:nicole@tislab.org)  
+**Funding**: NIH grant # 5U2CHL138346 and The Kids First supplement is funded by NIH grant # 3200670520-03S1
+
+{% capture contents %}
+{% include social-link.html type="website" link="https://kidsfirstdrc.org/" large=true %}
+{% include social-link.html type="github" link="kids-first" large=true %}
+{% include social-link.html type="twitter" link="kidsfirstDRC" large=true %}
+{% include social-link.html type="youtube" link="channel/UCK9sPu0j4_ci4m3nNFa6gVw" large=true %}
+{% endcapture %}
+
+{% include centerer.html contents=contents %}
