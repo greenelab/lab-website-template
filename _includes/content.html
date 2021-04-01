@@ -30,9 +30,9 @@ Script to modify main content of page:
 {% endif %}
 
 <section
+  class="background"
   {% if dark %}data-dark="true"{% endif %}
   {% if background %}
-  class="background"
   style="--background: url('{{ background | relative_url }}')"
   {% endif %}
 >
