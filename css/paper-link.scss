@@ -11,8 +11,8 @@
   max-width: 100%;
   text-decoration: none;
 
-  & > i,
-  & > svg {
+  & > #{$icon},
+  & > svg { 
     margin-right: 7.5px;
   }
 }
