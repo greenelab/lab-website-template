@@ -2,39 +2,32 @@
 title: Resources
 ---
 
-# <i class="fas fa-tools"></i>Resources
+# <i class="fas fa-tools"></i>Tools
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Ontologies
 
-<!-- section break -->
+- [Human Phenotype Ontology (HPO)](https://hpo.jax.org/app/)
+- [Uber Anatomy Ontology (Uberon)](http://uberon.github.io/)
+- [Unified Phenotype Ontology (uPheno)](https://github.com/obophenotype/upheno)
+- [GENO ontology](https://github.com/monarch-initiative/GENO-ontology)
+- [Monarch Disease Ontology (MONDO)](https://github.com/monarch-initiative/mondo)
+- [Scientific Evidence and Provenance Information Ontology (SEPIO)](https://github.com/monarch-initiative/SEPIO-ontology)
 
-## Featured
+Click [here](http://obofoundry.org/resources) for ontology tutorials and resources
 
-{% capture contents %}
-{% include resource-list.html group="featured" size="large" %}
-{% endcapture %}
+## Data Tools and Algorithms
 
-{% include centerer.html contents=contents %}
+- [Dipper:](https://github.com/monarch-initiative/dipper) Dipper is a Python package to generate RDF triples from common scientific resources.
+- [Biolink API:](https://api.monarchinitiative.org/api/) API integration layer for linked biological objects.
+- [Exomiser:](https://monarch-exomiser-web-dev.monarchinitiative.org/exomiser/) The Exomiser is a Java program that functionally annotates variants from whole-exome sequencing data in VCF 4 format.
 
-<!-- section break -->
+## Monarch web
 
-## More
+- [Phenogrid](https://monarchinitiative.org/page/phenogrid)
+- [Hippo:](https://hippo.monarchinitiative.org/#/) A search browser written in React JS to provide a user interface for Phenomics backend services (Phantom).
+- [Analyze Phenotypes:](https://monarchinitiative.org/analyze/phenotypes) The Phenotype Analysis Tool enables you search our database using the OwlSim Semantic Similarity analysis engine to find phenotypically similar diseases or genes in a variety of organisms, then visualize their overlap.
+- [Text mining:](https://monarchinitiative.org/annotate/text) Text Annotator provided by the [SciGraph](https://github.com/SciGraph/SciGraph) Annotation Service
 
-{% capture contents %}
-{% include resource-list.html group="more" size="medium" %}
-{% endcapture %}
+## Evaluation tools
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
-
-## Legacy
-
-{% capture contents %}
-{% include resource-list.html group="legacy" size="small" %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}
+- [Reusable Data Licensing Rubric:](http://reusabledata.org/) The (Re)usable Data Project created a rubric to evaluate resources on how well we believe a resource's data may build upon, edited, modified, and redistributed.

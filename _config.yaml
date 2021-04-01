@@ -17,6 +17,8 @@ nav:
     tooltip: About our team
   - link: education
     tooltip: Teaching and educational materials
+  - link: faq
+    tooltip: Frequently asked questions
   - link: contact
     tooltip: Email, address, and location
 

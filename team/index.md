@@ -4,17 +4,17 @@ title: Team
 
 # <i class="fas fa-users"></i>Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Translational and Integrative Science Center (TISC) reimagines data to change the world.
+The center supports the translation of insights from data files to implemented solutions.
+From the diagnosis of rare diseases and improving food systems and nutrition, to revealing patterns of biodiversity in response to climate change, TISC embodies an interdisciplinary, distributed collaboration model of science.
+In TISC, we are committed to the belief that shared, open science is the best way to solve problems and advance society.
+Bringing people and their data together across fields brings new discoveries and the ability to solve real world problems.
+Not only are we changing the world, we are also changing science itself.
 
 <!-- section break -->
 
 {% capture contents %}
-{% include team-list.html role="pi" %}
-{% include team-list.html role="phd" %}
-{% include team-list.html role="programmer" %}
+{% include team-list.html %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
