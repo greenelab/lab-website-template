@@ -15,11 +15,6 @@ h4 {
   margin: 40px 0 20px 0;
   @include trim-margins;
   padding: 10px 0;
-
-  & > i {
-    color: $gray-300;
-    margin-right: 1rem;
-  }
 }
 
 h1 {

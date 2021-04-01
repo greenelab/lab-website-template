@@ -14,8 +14,6 @@ We are a geographically distributed team that is headquartered on the 6th Floor 
   link="https://medschool.cuanschutz.edu/"
 %}
 
-<!-- section break -->
-
 ### Email
 
 [info@tislab.org](mailto:info@tislab.org)
