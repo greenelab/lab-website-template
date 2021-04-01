@@ -58,6 +58,8 @@ more coming soon...
 
 [▶️ Get Started](https://github.com/greenelab/lab-website-template/wiki/Get-Started)
 
+[🗚 Basic Formatting](https://github.com/greenelab/lab-website-template/wiki/Basic-Formatting)
+
 [📝 Basic Editing](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing)
 
 [⚙️ Advanced Editing](https://github.com/greenelab/lab-website-template/wiki/Advanced-Editing)

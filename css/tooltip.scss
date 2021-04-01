@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -11,7 +11,7 @@
   top: -999px;
   width: max-content;
   max-width: 260px;
-  padding: 8px 12px;
+  padding: 7.5px 15px;
   background: $black;
   color: $white;
   border-radius: 5px;

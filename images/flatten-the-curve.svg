@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 130">
+	<defs>
+		<style>
+			.red {
+				fill: #ee4338;
+			}
+
+			.blue {
+				fill: #2196f3;
+			}
+
+			.dark-blue {
+				fill: #198eeb;
+			}
+
+			.label {
+				font-size: 8px;
+				font-family: Roboto-Regular, Roboto, sans-serif;
+				fill: #000000;
+				text-anchor: end;
+			}
+
+			.white {
+				font-size: 8px;
+				font-family: Roboto-Regular, Roboto, sans-serif;
+				color: #ffffff;
+				text-align: center;
+			}
+
+			.line {
+				fill: none;
+				stroke: #000000;
+			}
+
+			.dashed {
+				stroke-dasharray:3 3;
+			}
+		</style>
+	</defs>
+	<path class="blue" d="M154.58,116.78h209.3c-65.87,0-109.78-57.39-175.65-57.39-23.41,0-44,7.25-63.88,16.6C131.76,98.19,140.3,116.78,154.58,116.78Z"/>
+	<path class="red" d="M83.58,2c-35.5,0-35.5,114.77-71,114.78C55,116.78,88.37,92.93,124.35,76,113.33,43,104.8,2,83.58,2Z"/>
+	<path class="dark-blue" d="M124.35,76C88.37,92.93,55,116.78,12.58,116.78h142C140.3,116.78,131.76,98.19,124.35,76Z"/>
+	<line class="dashed line" x1="12" y1="59" x2="364" y2="59"/>
+	<line class="line" x1="364" y1="117" x2="12" y2="117"/>
+
+	<!-- translated text in strings.yml goes from here-->
+	<text class="label" x="364" y="53">Health care system capacity</text>
+	<text class="label" x="364" y="128">Time since first case</text>
+	<text class="label" x="0" y="8" transform="rotate(-90)">Quantity of cases</text>
+	<foreignObject x="54" y="25" width="60" height="75">
+	    <div xmlns="http://www.w3.org/1999/xhtml" class="white">Without protective measures</div>
+  	</foreignObject>
+  	<foreignObject x="128" y="80" width="120" height="75">
+	    <div xmlns="http://www.w3.org/1999/xhtml" class="white">With protective measures</div>
+  	</foreignObject>
+	<!-- to here -->
+
+</svg>

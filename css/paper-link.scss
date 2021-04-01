@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -11,8 +11,8 @@
   max-width: 100%;
   text-decoration: none;
 
-  & > i,
-  & > svg {
-    margin-right: 8px;
+  & > #{$icon},
+  & > svg { 
+    margin-right: 7.5px;
   }
 }

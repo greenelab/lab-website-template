@@ -1,17 +1,13 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
 .social_link {
   display: inline-block;
-  padding: 10px;
+  padding: 12px;
   text-decoration: none;
   transition: color $fast, opacity $fast;
-
-  &[data-large="true"]{
-    padding: 15px;
-  }
 }

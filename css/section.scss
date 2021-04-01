@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -24,9 +24,10 @@ body {
 
   section {
     .section {
+      box-sizing: content-box;
       max-width: $page;
       margin: 0 auto;
-      padding: 40px;
+      padding: 60px 40px;
     }
 
     &:nth-child(even) {
@@ -39,11 +40,6 @@ body {
 
     &:last-child {
       flex-grow: 1;
-    }
-
-    &[data-dark="true"] {
-      background: $gray-800;
-      color: $white;
     }
   }
 }

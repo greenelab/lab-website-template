@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -14,7 +14,7 @@
     text-align: center;
     white-space: nowrap;
 
-    i {
+    #{$icon} {
       margin-right: 10px;
     }
   }

@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -37,7 +37,7 @@ header {
   .nav_row {
     @include inline-flex-center;
     font-size: 0.9rem;
-    font-weight: $medium;
+    font-weight: $regular;
     text-transform: uppercase;
     letter-spacing: 1px;
 

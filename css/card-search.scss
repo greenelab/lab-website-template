@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -21,7 +21,7 @@
   .card_search_box {
     position: relative;
 
-    i {
+    #{$icon} {
       @include inline-flex-center;
       position: absolute;
       right: 0;

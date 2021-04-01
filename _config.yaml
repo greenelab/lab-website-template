@@ -1,34 +1,35 @@
 # site settings
-title: Lab Website Template
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+title: TIS Lab
 logo: images/logo.svg
-header: images/background.jpg
-footer: images/background.jpg
+
+# page defaults
+description: Translational and Integrative Sciences Lab
+header: images/bg-dna.jpg
+footer: images/bg-dna.jpg
 
 # site nav bar
 nav:
   - link: research
     tooltip: Published works
-  - link: resources
+  - link: tools
     tooltip: Tools, datasets, and more
   - link: team
     tooltip: About our team
-  - link: blog
-    tooltip: Musings and miscellany
+  - link: education
+    tooltip: Teaching and educational materials
+  - link: faq
+    tooltip: Frequently asked questions
   - link: contact
     tooltip: Email, address, and location
 
 # site social media
-email: jane.smith@your-lab.com
-google-scholar: Jane Smith
-github: your-lab
-twitter: YourLabHandle
-instagram: YourLabHandle
-youtube: YourLabChannel
-rss: feed.xml
+email: info@tislabs.org
+google-scholar: Melissa Haendel
+github: tis-lab
+twitter: ontowonka
 
 # base directory where site is hosted
-baseurl: /lab-website-template
+baseurl: /tislab.org-new
 
 # default front matter parameters for markdown files
 defaults:

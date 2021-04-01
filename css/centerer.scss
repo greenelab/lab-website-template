@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -15,9 +15,5 @@
 
   & > * {
     text-align: center;
-  }
-
-  &[data-spaced="true"] > * {
-    margin: 10px;
   }
 }

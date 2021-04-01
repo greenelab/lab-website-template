@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -15,12 +15,8 @@ h4 {
   margin: 40px 0 20px 0;
   @include trim-margins;
   padding: 10px 0;
-
-  & > i {
-    color: $gray-300;
-    margin-right: 1rem;
-  }
 }
+
 h1 {
   font-size: 1.4rem;
   letter-spacing: 2px;
@@ -31,16 +27,20 @@ h1 {
     margin-top: 40px;
   }
 }
+
 h2 {
   font-size: 1.3rem;
   letter-spacing: 1px;
   text-align: center;
 }
+
 h3 {
   font-size: 1.2rem;
   text-align: center;
 }
+
 h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: $medium;
   text-align: left;
 }

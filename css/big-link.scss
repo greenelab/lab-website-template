@@ -1,23 +1,24 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
 .big_link {
   display: inline-block;
-  margin: 10px 20px;
+  padding: 10px 15px;
   font-family: $sans;
   font-weight: $medium;
   text-decoration: none;
 
-  i {
+  #{$icon} {
     margin-right: 0.5rem;
   }
 
   &[data-button="true"] {
-    padding: 8px 15px;
+    margin: 10px 15px;
+    padding: 7.5px 15px;
     border-radius: 5px;
     background: $accent;
     color: $white;

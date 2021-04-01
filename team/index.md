@@ -4,17 +4,17 @@ title: Team
 
 # <i class="fas fa-users"></i>Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Translational and Integrative Science Center (TISC) reimagines data to change the world.
+The center supports the translation of insights from data files to implemented solutions.
+From the diagnosis of rare diseases and improving food systems and nutrition, to revealing patterns of biodiversity in response to climate change, TISC embodies an interdisciplinary, distributed collaboration model of science.
+In TISC, we are committed to the belief that shared, open science is the best way to solve problems and advance society.
+Bringing people and their data together across fields brings new discoveries and the ability to solve real world problems.
+Not only are we changing the world, we are also changing science itself.
 
 <!-- section break -->
 
 {% capture contents %}
-{% include team-list.html role="pi" %}
-{% include team-list.html role="phd" %}
-{% include team-list.html role="programmer" %}
+{% include team-list.html %}
 {% endcapture %}
 
 {% include centerer.html contents=contents %}
@@ -22,23 +22,19 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 <!-- section break -->
 
 <!-- section dark -->
-<!-- section background images/banner.jpg -->
 
-
-<br>
-<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Whether you are a scientist looking to step into an emerging field with your data, an organization interested in investing in this work, or if you are simply curious and would like to stay informed about how translational science will evolve, we welcome your partnership. We work with leading scientists around the world and are funded by large national grants and institutions with new discoveries emerging every day.
 
 {%
   include big-link.html
   icon="fas fa-hands-helping"
   text="Join the Team"
-  link="join"
+  link="contact"
   button=true
 %}{:.center}
-<br>
 
+
+{% comment %}
 <!-- section break -->
 
 ## Funding
@@ -48,7 +44,6 @@ Our work is made possible by funding from several organizations.
 
 {%
   include gallery.html
-  flat="true"
   fit="false"
 
   image1="images/photo.jpg"
@@ -75,3 +70,4 @@ Our work is made possible by funding from several organizations.
   link6="https://nasa.gov/"
   tooltip6="Cool Initiative"
 %}
+{% endcomment %}

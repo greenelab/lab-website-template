@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colors";
+@import "palettes";
 @import "theme";
 @import "mixins";
 
@@ -12,10 +12,9 @@
   @include trim-margins;
 
   .figure_image {
-    img[data-default="true"] {
-      max-width: 400px;
-      max-height: 300px;
-    }
+    max-width: 100%;
+    max-height: 100%;
+    // box-shadow: $shadow;
   }
 
   .figure_caption {
@@ -23,20 +22,5 @@
     margin-bottom: 0;
     font-style: italic;
     text-align: center;
-  }
-
-  &[data-flat="false"] {
-    .figure_image {
-      overflow: hidden;
-      box-shadow: $shadow;
-
-      img {
-        transition: transform $fast;
-      }
-
-      &:hover img {
-        transform: scale(1.1);
-      }
-    }
   }
 }
