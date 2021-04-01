@@ -12,7 +12,7 @@
   font-weight: $medium;
   text-decoration: none;
 
-  i {
+  #{$icon} {
     margin-right: 0.5rem;
   }
 
