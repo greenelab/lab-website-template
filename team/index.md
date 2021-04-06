@@ -37,6 +37,18 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <!-- section break -->
 
+## Alumni 
+
+Text about alumni...
+
+{% capture contents %}
+  {% include team-list.html role="pi" group="alumni" mini=true %}
+  {% include team-list.html role="phd" group="alumni" mini=true %}
+  {% include team-list.html role="programmer" group="alumni" mini=true %}
+  {% endcapture %}
+
+{% include centerer.html contents=contents %}
+
 ## Funding
 
 Our work is made possible by funding from several organizations.
