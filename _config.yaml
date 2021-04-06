@@ -1,5 +1,5 @@
 # site settings
-title: Lab Website Template
+title: Quantitative Marine Ecology Lab
 logo: images/logo.svg
 
 # page defaults
@@ -21,7 +21,7 @@ nav:
     tooltip: Email, address, and location
 
 # site social media
-email: jane.smith@your-lab.com
+email: Easton.White@unh.edu 
 google-scholar: Jane Smith
 github: your-lab
 twitter: YourLabHandle
@@ -29,7 +29,7 @@ instagram: YourLabHandle
 youtube: YourLabChannel
 
 # base directory where site is hosted
-baseurl: /lab-website-template
+baseurl: /quantmarineecolab.github.io
 
 # default front matter parameters for markdown files
 defaults:
