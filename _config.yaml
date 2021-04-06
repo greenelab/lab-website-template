@@ -29,7 +29,7 @@ instagram: YourLabHandle
 youtube: YourLabChannel
 
 # base directory where site is hosted
-baseurl: quantmarineecolab.github.io
+baseurl: 
 
 # default front matter parameters for markdown files
 defaults:
