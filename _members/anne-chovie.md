@@ -2,6 +2,7 @@
 title: Anne Chovie
 image: images/member.jpg
 role: programmer
+group: alum
 aliases:
   - A. Chovie
   - A Chovie
