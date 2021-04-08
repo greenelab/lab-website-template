@@ -7,7 +7,8 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% include figure.html image=page.image image:height?width=250 %}
+{% imagesize source:size?height=200 %}
+{% include figure.html image=page.image %}
 
 {% capture contents %}
 {% include role.html type=page.role text=true %}
