@@ -4,11 +4,10 @@
 layout: default
 ---
 
-img { max-height: 50px; }
 
 <h1>{{ page.title }}</h1>
 
-{% include figure.html image=page.image %}
+{% include figure.html image=page.image image:height?width=250 %}
 
 {% capture contents %}
 {% include role.html type=page.role text=true %}
