@@ -5,9 +5,10 @@ role: programmer
 aliases:
   - A. Chovie
   - A Chovie
-website: annechovie.com
-email: anne@chovie.com
-github: anne-chovie
+links:
+  home-page: annechovie.com
+  email: anne@chovie.com
+  github: anne-chovie
 ---
 
 Anne is a good dog.

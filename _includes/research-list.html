@@ -26,8 +26,12 @@
 {% capture extralinks %}
 {% if paper.extra-links.size > 0 %}
 <div>
-  {%- for link in paper.extra-links -%}
-  {% include paper-link.html type=link.type link=link.link text=link.text %}
+  {%- for extra in paper.extra-links -%}
+  {% assign type = extra.type %}
+  {% assign icon = extra.icon | default: "" %}
+  {% assign text = extra.text | default: "" %}
+  {% assign link = extra.link %}
+  {% include link.html type=type icon=icon text=text link=link %}
   {%- endfor -%}
 </div>
 {% endif %}

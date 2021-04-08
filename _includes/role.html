@@ -1,50 +1,19 @@
-{% assign showtext = include.text %}
+{%- assign type = site.data.types.roles[include.type] -%}
 
-{%- if include.type == "pi" -%}
-{%- assign icon = "fas fa-microscope" -%}
-{%- assign text = "Principal Investigator" -%}
-{%- endif -%}
+{% if type -%}
 
-{%- if include.type == "postdoc" -%}
-{%- assign icon = "fas fa-glasses" -%}
-{%- assign text = "Postdoctoral Researcher" -%}
-{%- endif -%}
-
-{%- if include.type == "phd" -%}
-{%- assign icon = "fas fa-graduation-cap" -%}
-{%- assign text = "PhD Student" -%}
-{%- endif -%}
-
-{%- if include.type == "undergrad" -%}
-{%- assign icon = "fas fa-user-graduate" -%}
-{%- assign text = "Undergraduate Student" -%}
-{%- endif -%}
-
-{%- if include.type == "programmer" -%}
-{%- assign icon = "fas fa-code" -%}
-{%- assign text = "Programmer" -%}
-{%- endif -%}
-
-{%- if include.type == "mascot" -%}
-{%- assign icon = "fas fa-dog" -%}
-{%- assign text = "Mascot" -%}
-{%- endif -%}
-
-{%- if include.text -%}
-{%- else -%}
-{%- assign tooltip = text -%}
-{%- endif -%}
-
-{%- comment -%}
-To add more options for icons, see:
-https://fontawesome.com/icons?d=gallery&q=icon&m=free
-{%- endcomment -%}
-
-{%- if text -%}
-<span href="{{ link }}" class="role" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}">
-  <i class="{{ icon }}"></i>
-  {%- if showtext -%}
-  <span class="role_text">{{ text }}</span>
+  {%- assign icon = type.icon -%}
+  
+  {%- if include.text -%}
+    {%- assign text = type.text -%}
+  {%- else -%}
+    {%- assign tooltip = type.text -%}
   {%- endif -%}
-</span>
-{%- endif -%}
+
+  <span class="role" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}>
+    <i class="{{ icon }}"></i>
+    {%- if text -%}
+      <span class="role_text">{{ text }}</span>
+    {%- endif -%}
+  </span>
+{%- endif %}

@@ -1,27 +1,25 @@
 ---
-# inherits from default layout and builds on top of it
-# this file's contents get inserted into default.html's content
 layout: default
 ---
 
 <h1>{{ page.title }}</h1>
 
 {% capture contents %}
-{% include post-info.html post=page %}
+  {% include post-info.html post=page %}
 {% endcapture %}
 
 {% assign contents = contents | strip %}
 {% if contents != empty %}
-{% include centerer.html contents=contents %}
+  {% include centerer.html contents=contents %}
 {% endif %}
 
 {% capture contents %}
-{% include tags.html tags=page.tags %}
+  {% include tags.html tags=page.tags %}
 {% endcapture %}
 
 {% assign contents = contents | strip %}
 {% if contents != empty %}
-{% include centerer.html contents=contents %}
+  {% include centerer.html contents=contents %}
 {% endif %}
 
 <!-- section break -->
@@ -31,8 +29,3 @@ layout: default
 <!-- section break -->
 
 {% include post-nav.html post=page %}
-
-{% comment %}
-Put comment service plugin code here. If a plugin requires a unique page
-identifier, use "{{ page.url | absolute_url }}", with the quotes.
-{% endcomment %}

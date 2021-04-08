@@ -9,7 +9,7 @@
   @include flex-center;
   // align-items: flex-start;
   margin: 40px 0;
-  @include trim-margins;
+  @include trim-v-margins;
 
   .feature_image {
     width: $page * 0.4;

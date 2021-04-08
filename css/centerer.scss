@@ -11,7 +11,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   @include block-margins;
-  @include trim-margins;
+  @include trim-v-margins;
 
   & > * {
     text-align: center;

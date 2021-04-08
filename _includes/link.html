@@ -1,0 +1,33 @@
+{%- assign type = site.data.types.links[include.type] -%}
+{%- assign link = include.link -%}
+
+{% if type and link -%}
+
+  {%- assign icon = include.icon -%}
+  {%- if icon == "" -%}
+    {%- assign icon = type.icon -%}
+  {%- endif -%}
+
+  {%- assign text = include.text -%}
+  {%- if text == "" -%}
+    {%- assign text = type.text -%}
+  {%- endif -%}
+
+  {%- assign tooltip = include.tooltip -%}
+  {%- if tooltip == "" -%}
+    {%- assign tooltip = type.tooltip -%}
+  {%- endif -%}
+
+  {%- assign link = type.link | replace: "$LINK", link -%}
+
+  <a class="link" href="{{ link | relative_url }}" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %} data-style="{{ include.style | default: '' }}">
+    {%- if icon contains "fa-" -%}
+      <i class="{{ icon }} fa-lg fa-fw"></i>
+    {%- elsif icon -%}
+      {% include {{ icon }} %}
+    {%- endif -%}
+    {%- if text -%}
+      <span>{{ text }}</span>
+    {%- endif -%}
+  </a>
+{%- endif %}

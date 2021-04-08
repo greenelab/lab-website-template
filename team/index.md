@@ -28,11 +28,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
-  include big-link.html
+  include link.html
   icon="fas fa-hands-helping"
   text="Join the Team"
   link="join"
-  button=true
+  style="button"
 %}{:.center}
 
 <!-- section break -->

@@ -13,3 +13,34 @@ a {
 a:hover {
   color: currentColor;
 }
+
+.link {
+  @include inline-flex-center;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color $fast, opacity $fast;
+  
+  span {
+    text-align: center;
+    font-family: $sans;
+    font-weight: $medium;
+  }
+  
+  &[data-style="big"] {
+    font-size: 1.1rem;
+  }
+
+  &[data-style="button"] {
+    margin: 10px 15px;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    background: $accent;
+    color: $white;
+    transition: background $fast;
+
+    &:hover {
+      background: $gray-500;
+    }
+  }
+}

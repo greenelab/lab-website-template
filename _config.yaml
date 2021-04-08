@@ -1,6 +1,7 @@
 # site settings
 title: Lab Website Template
 logo: images/logo.svg
+baseurl: /lab-website-template
 
 # page defaults
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
@@ -20,16 +21,14 @@ nav:
   - link: contact
     tooltip: Email, address, and location
 
-# site social media
-email: jane.smith@your-lab.com
-google-scholar: Jane Smith
-github: your-lab
-twitter: YourLabHandle
-instagram: YourLabHandle
-youtube: YourLabChannel
-
-# base directory where site is hosted
-baseurl: /lab-website-template
+# site social media and other links
+links:
+  email: jane.smith@your-lab.com
+  google-scholar: Jane Smith
+  github: your-lab
+  twitter: YourLabHandle
+  instagram: YourLabHandle
+  youtube: YourLabChannel
 
 # default front matter parameters for markdown files
 defaults:

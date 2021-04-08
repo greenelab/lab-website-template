@@ -37,13 +37,13 @@ footer {
     @include flex-center;
     flex-wrap: wrap;
     margin: 20px 0;
-    @include trim-margins;
+    @include trim-v-margins;
 
-    &:hover .social_link {
+    &:hover .link {
       opacity: 0.25;
     }
 
-    & .social_link:hover {
+    .link:hover {
       opacity: 1;
     }
   }

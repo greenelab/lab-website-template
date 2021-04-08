@@ -9,7 +9,7 @@
   @include flex-center;
   flex-direction: column;
   @include block-margins;
-  @include trim-margins;
+  @include trim-v-margins;
 
   .card_search_box,
   .card_search_info {

@@ -6,9 +6,10 @@ group: alum
 aliases:
   - F. Cited
   - F Cited
-website: felixcited.com
-email: felix@cited.com
-twitter: felixcited
+links:
+  home-page: felixcited.com
+  email: felix@cited.com
+  twitter: felixcited
 ---
 
 Felix is a good dog.

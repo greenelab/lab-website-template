@@ -13,14 +13,11 @@
 
 <footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <div class="footer_row">
-    {% include social-link.html type="email" link=site.email %}
-    {% include social-link.html type="google-scholar" link=site.google-scholar %}
-    {% include social-link.html type="github" link=site.github %}
-    {% include social-link.html type="twitter" link=site.twitter %}
-    {% include social-link.html type="facebook" link=site.facebook %}
-    {% include social-link.html type="instagram" link=site.instagram %}
-    {% include social-link.html type="youtube" link=site.youtube %}
-    {% include social-link.html type="linkedin" link=site.linkedin %}
+    {% for entry in site.links %}
+      {% assign key = entry[0] %}
+      {% assign value = entry[1] %}
+      {% include link.html type=key icon="" tooltip="" link=value %}
+    {% endfor %}
   </div>
   <!-- <div class="footer_row">
     &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }}

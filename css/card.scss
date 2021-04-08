@@ -30,14 +30,14 @@
 
     & > p {
       margin: 5px 0;
-      @include trim-margins;
+      @include trim-v-margins;
     }
 
     & > div {
       @include flex-center;
       flex-wrap: wrap;
       margin: 10px 0;
-      @include trim-margins;
+      @include trim-v-margins;
     }
   }
 

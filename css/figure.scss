@@ -9,7 +9,7 @@
   @include flex-center;
   flex-direction: column;
   margin: 40px 0;
-  @include trim-margins;
+  @include trim-v-margins;
 
   .figure_image {
     max-width: 100%;
