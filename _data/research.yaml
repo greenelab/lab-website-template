@@ -5,15 +5,6 @@
       link: https://doi.org/10.7287/peerj.preprints.3100v1
     - type: pdf
       link: https://greenelab.github.io/scihub-manuscript/
-    - type: source
-      link: https://github.com/greenelab/scihub-manuscript
-      text: Manuscript source
-    - type: source
-      link: https://github.com/greenelab/scihub
-      text: Analyses source
-  tags:
-    - monitoring
-    
     
 
 - id: doi:10.1111/faf.12525
