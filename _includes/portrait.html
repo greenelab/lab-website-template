@@ -2,6 +2,10 @@
 
   {%- assign placeholder = "images/placeholder.svg" | relative_url -%}
 
+  {%- if include.role -%}
+    {%- include role.html type=include.role -%}
+  {%- endif -%}
+
   <span class="portrait_image">
     <img
       src="{{ include.image | relative_url }}"
@@ -10,14 +14,16 @@
     >
   </span>
 
-  {%- if include.role -%}
-  {%- include role.html type=include.role -%}
+  {%- if include.name -%}
+    <span class="portrait_name">
+      {{ include.name }}
+    </span>
   {%- endif -%}
 
-  {%- if include.name -%}
-  <span class="portrait_name">
-    {{ include.name }}
-  </span>
+  {%- if include.description -%}
+    <span class="portrait_description">
+      {{ include.description }}
+    </span>
   {%- endif -%}
 
 </a>

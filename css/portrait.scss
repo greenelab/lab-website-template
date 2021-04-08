@@ -11,6 +11,8 @@
   flex-direction: column;
   width: 150px;
   margin: 20px;
+  text-align: center;
+  line-height: $spacing;
   text-decoration: none;
 
   .portrait_image {
@@ -38,10 +40,17 @@
     }
   }
 
+  .portrait_name,
+  .portrait_description {
+    font-family: $sans;
+  }
+
   .portrait_name {
+    font-weight: $medium;
+  }
+
+  .portrait_image + span {
     margin-top: 10px;
-    text-align: center;
-    line-height: $spacing - 0.3;
   }
 
   .role {

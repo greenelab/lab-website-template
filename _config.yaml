@@ -12,8 +12,8 @@ footer: images/background.jpg
 nav:
   - link: research
     tooltip: Published works
-  - link: resources
-    tooltip: Tools, datasets, and more
+  - link: tools
+    tooltip: Software, datasets, and more
   - link: team
     tooltip: About our team
   - link: blog

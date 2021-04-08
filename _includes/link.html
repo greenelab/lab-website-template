@@ -1,7 +1,8 @@
-{%- assign type = site.data.types.links[include.type] -%}
+{%- assign type = include.type | default: "link" -%}
+{%- assign type = site.data.types.links[type] -%}
 {%- assign link = include.link -%}
 
-{% if type and link -%}
+{%- if type and link -%}
 
   {%- assign icon = include.icon -%}
   {%- if icon == "" -%}
@@ -30,4 +31,4 @@
       <span>{{ text }}</span>
     {%- endif -%}
   </a>
-{%- endif %}
+{%- endif -%}

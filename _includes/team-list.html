@@ -22,7 +22,8 @@
 {% for member in members %}
 {%-
   include portrait.html
-  name=member.title
+  name=member.name
+  description=member.description
   link=member.url
   image=member.image
   role=member.role

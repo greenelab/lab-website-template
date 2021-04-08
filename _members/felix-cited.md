@@ -1,6 +1,7 @@
 ---
-title: Felix Cited
+name: Felix Cited
 image: images/member.jpg
+description: Treat Researcher
 role: phd
 group: alum
 aliases:

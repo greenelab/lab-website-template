@@ -33,7 +33,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   text="Join the Team"
   link="join"
   style="button"
-%}{:.center}
+%}
+{:.center}
 
 <!-- section break -->
 
