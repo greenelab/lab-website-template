@@ -21,7 +21,7 @@
 
   {%- assign link = type.link | replace: "$LINK", link -%}
 
-  <a class="link" href="{{ link | relative_url }}" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %} data-style="{{ include.style | default: '' }}">
+  <a class="link" href="{{ link | relative_url }}" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %} {% if icon %}data-icon="true"{% endif %} {% if text %}data-text="true"{% endif %} data-style="{{ include.style | default: '' }}">
     {%- if icon contains "fa-" -%}
       <i class="{{ icon }} fa-lg fa-fw"></i>
     {%- elsif icon -%}

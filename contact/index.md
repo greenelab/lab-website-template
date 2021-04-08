@@ -7,36 +7,48 @@ title: Contact
 Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
 We are located on the 13th floor of the [Center for Wit and Sagacity]().
 
+{% capture contents %}
+  {%
+    include link.html
+    type="email"
+    icon=""
+    text="scrooge@mcduck.com"
+    tooltip=""
+    link="scrooge@mcduck.com"
+    style="button"
+  %}
+  {%
+    include link.html
+    type="phone"
+    icon=""
+    text="(555) 867-5309"
+    tooltip=""
+    link="+1-555-867-5309"
+    style="button"
+  %}
+  {%
+    include link.html
+    type="address"
+    icon=""
+    text="Google Maps"
+    tooltip="Our location on Google Maps for easy navigation"
+    link="https://www.google.com/maps/place/That+St+%26+The+Other+St,+Porters+Lake,+NS+B3E+1H3,+Canada/@44.7389237,-63.3033296,20.78z/data=!4m5!3m4!1s0x4b5a31023bb02565:0xb9505694e83a53d7!8m2!3d44.7389353!4d-63.3030828"
+    style="button"
+  %}
+{% endcapture %}
+
+{% include centerer.html contents=contents spaced=true %}
+
+### <i class="fas fa-mail-bulk"></i>Mailing Address
+
+That St & The Other St  
+Porters Lake, NS B3E 1H3  
+Canada
+{:.center}
+
 {%
   include figure.html
   image="images/photo.jpg"
   width="75%"
   caption="The Center for Wit and Sagacity"
 %}
-
-<!-- section break -->
-
-### Email
-
-[scrooge@mcduck.com](mailto:scrooge@mcduck.com)
-{:.center}
-
-### Phone
-
-[(555) 867-5309](tel:+1-555-867-5309)
-{:.center}
-
-### Address
-
-{% comment %}
-Tip: Put both a mailing address for mail/deliveries, AND a navigation-friendly
-address so people can find their way to you easily.
-{% endcomment %}
-
-That St & The Other St  
-Porters Lake, NS B3E 1H3  
-Canada  
-{:.center}
-
-[<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps/place/That+St+%26+The+Other+St,+Porters+Lake,+NS+B3E+1H3,+Canada/@44.7389237,-63.3033296,20.78z/data=!4m5!3m4!1s0x4b5a31023bb02565:0xb9505694e83a53d7!8m2!3d44.7389353!4d-63.3030828)
-{:.center}

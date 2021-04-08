@@ -20,19 +20,19 @@ a:hover {
   font-size: 0.9rem;
   text-decoration: none;
   transition: color $fast, opacity $fast;
-  
+
   span {
     text-align: center;
     font-family: $sans;
     font-weight: $medium;
   }
-  
-  &[data-style="big"] {
-    font-size: 1.1rem;
+
+  &[data-icon][data-text]:not([data-style="button"]) {
+    margin: 0 5px;
   }
 
   &[data-style="button"] {
-    margin: 10px 15px;
+    margin: 10px;
     padding: 7.5px 15px;
     border-radius: 5px;
     background: $accent;

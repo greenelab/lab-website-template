@@ -6,7 +6,7 @@ link:
   tooltip: Link
   link: $LINK
 
-external-link:
+external:
   icon: fas fa-external-link-alt
   text: External Link
   tooltip: External link
@@ -23,6 +23,18 @@ email:
   text: Email
   tooltip: Email
   link: mailto:$LINK
+
+phone:
+  icon: fas fa-phone
+  text: Phone Number
+  tooltip: Phone number
+  link: tel:$LINK
+
+address:
+  icon: fas fa-map-marked-alt
+  text: Address
+  tooltip: Address
+  link: $LINK
 
 # social media
 
