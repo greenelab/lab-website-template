@@ -63,4 +63,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- section full -->
 
-{% include banner.html image="images/banner.jpg" %}
+{% include banner.html image="images/homepage_bottom.png" %}
