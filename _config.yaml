@@ -16,17 +16,17 @@ nav:
   - link: team
     tooltip: About our team
   - link: blog
-    tooltip: Musings and miscellany
+    tooltip: News and commentary
+  - link: join
+    tooltip: Join the lab
   - link: contact
     tooltip: Email, address, and location
 
 # site social media
 email: Easton.White@unh.edu 
-google-scholar: Jane Smith
-github: your-lab
-twitter: YourLabHandle
-instagram: YourLabHandle
-youtube: YourLabChannel
+google-scholar: Easton R. White
+github: quantmarineecolab
+twitter: eastonrwhite
 
 # base directory where site is hosted
 baseurl: /
