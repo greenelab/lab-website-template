@@ -30,9 +30,13 @@ We are located on the 1st floor of the Spaulding Life Sciences Center.
 ### Address
 
 Department of Biological Sciences
+
 University of New Hampshire
+
 Spaulding Hall
+
 38 Academic Way
+
 Durham, NH 03824, USA
 {:.center}
 
