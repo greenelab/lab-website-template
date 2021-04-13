@@ -27,8 +27,14 @@ a:hover {
     font-weight: $medium;
   }
 
-  &[data-icon][data-text]:not([data-style="button"]) {
-    margin: 0 5px;
+  &[data-icon][data-text] {
+    & > *:first-child {
+      margin-right: 0.75em;
+    }
+
+    &:not([data-style="button"]) {
+      margin: 0 5px;
+    }
   }
 
   &[data-style="button"] {

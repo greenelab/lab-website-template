@@ -1,13 +1,20 @@
-{% assign size = include.size %}
-
-{% if size != "large" and size != "medium" and size != "small" %}
-{% assign size = "large" %}
+{% if include.style == "small" %}
+  {% assign width = 250 %}
+{% else %}
+  {% assign width = 350 %}
 {% endif %}
 
-<div class="card" data-size="{{ size }}">
+<div class="card" style="--width: {{ width }}px">
   {% assign placeholder = "images/placeholder.svg" | relative_url %}
-  <a
-    {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
+
+  {% if include.link %}
+    {% assign tag = "a" %}
+  {% else %}
+    {% assign tag = "span" %}
+  {% endif %}
+
+  <{{ tag }}
+    href="{{ include.link | relative_url }}"
     class="card_image"
   >
     <img
@@ -15,51 +22,34 @@
       onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
       loading="lazy"
     >
-  </a>
+  </{{ tag }}>
+
   <div class="card_text">
-    {% if include.heading %}
-    <a
-      href="{{ include.link | relative_url }}"
-      class="card_title"
-      data-tooltip="{{ include.tooltip }}"
-      data-delay="500"
-      data-placement="top-start"
-    >
-      {{- include.heading -}}
-    </a>
+
+    {% if include.name %}
+      <{{ tag }}
+        href="{{ include.link | relative_url }}"
+        {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %}
+        class="card_name"
+      >
+        {{- include.name -}}
+      </{{ tag }}>
     {% endif %}
 
-    {%- for i in (1..5) -%}
+    {% if include.description %}
+      {% assign firstchar = include.description | slice: 0 %}
+      {%- if firstchar != "<" -%}
+      <p>
+      {%- endif -%}
+        {{- include.description -}}
+      {%- if firstchar != "<" -%}
+      </p>
+      {%- endif -%}
+    {% endif %}
 
-    {%- assign row = "row" | append: i -%}
-    {%- assign row = include[row] | strip -%}
-
-    {%- if row != empty -%}
-
-    {%- assign truncate = include.truncate | default: 0 -%}
-    {%- if i <= truncate -%}
-    {%- assign truncate = true -%}
-    {%- else -%}
-    {%- assign truncate = false -%}
-    {%- endif -%}
-
-    {%- assign firstchar = row | slice: 0 -%}
-    {%- if firstchar != "<" -%}
-    <p
-      {% if truncate %}
-      class="truncate"
-      tabindex="0"
-      {% endif %}
-    >
-    {%- endif -%}
-      {{- row -}}
-    {%- if firstchar != "<" -%}
-    </p>
-    {%- endif -%}
-    
-    {%- endif -%}
-
-    {%- endfor -%}
+    {% if include.tag or include.repo %}
+      {% include tags.html tags=include.tags repo=include.repo %}      
+    {% endif %}
 
   </div>
 </div>

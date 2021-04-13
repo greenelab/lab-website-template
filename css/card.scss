@@ -6,11 +6,20 @@
 @import "mixins";
 
 .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: var(--width);
   max-width: 100%;
+  margin: 20px;
 
   .card_image {
     flex-shrink: 0;
+    width: var(--width);
+    height: calc(2 / 3 * var(--width));
     max-width: 100%;
+    margin-bottom: 20px;
     overflow: hidden;
     box-shadow: $shadow;
 
@@ -22,113 +31,13 @@
   }
 
   .card_text {
-    .card_title {
+    width: 100%;
+
+    .card_name {
       display: block;
       margin-bottom: 10px;
+      text-align: center;
       font-weight: $semi-bold;
-    }
-
-    & > p {
-      margin: 5px 0;
-      @include trim-v-margins;
-    }
-
-    & > div {
-      @include flex-center;
-      flex-wrap: wrap;
-      margin: 10px 0;
-      @include trim-v-margins;
-    }
-  }
-
-  &[data-size="large"] {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    margin: 20px;
-
-    .card_image {
-      width: 300px;
-      height: 200px;
-      margin-bottom: 20px;
-    }
-
-    .card_text {
-      width: 100%;
-
-      .card_title {
-        text-align: center;
-      }
-    }
-  }
-
-  &[data-size="medium"] {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 200px;
-    margin: 20px;
-
-    .card_image {
-      width: 200px;
-      height: 133px;
-      margin-bottom: 20px;
-    }
-
-    .card_text {
-      width: 100%;
-
-      .card_title {
-        text-align: center;
-      }
-    }
-  }
-
-  &[data-size="small"] {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    margin: 20px 0;
-
-    .card_image {
-      width: 120px;
-      height: 120px;
-      margin-right: 40px;
-    }
-
-    .card_text {
-      width: 0;
-      flex-grow: 1;
-
-      .card_title {
-        text-align: left;
-      }
-
-      @media (min-width: $phone) {
-        & > div {
-          justify-content: flex-start;
-        }
-      }
-    }
-
-    @media (max-width: $phone) {
-      align-items: center;
-      flex-direction: column;
-
-      .card_image {
-        width: 200px;
-        height: 150px;
-        margin: 0;
-        margin-bottom: 20px;
-      }
-
-      .card_text {
-        width: 100%;
-      }
     }
   }
 }

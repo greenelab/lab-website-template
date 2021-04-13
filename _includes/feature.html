@@ -6,8 +6,8 @@
     <img src="{{ include.image | relative_url }}" loading="lazy" />
   </a>
   <div class="feature_text">
-    {%- if include.title -%}
-    <p class="feature_title">{{ include.title }}</p>
+    {%- if include.headline -%}
+    <p class="feature_headline">{{ include.headline }}</p>
     {%- endif -%}
     {{ include.text | markdownify }}
   </div>

@@ -7,29 +7,29 @@
   {% endcapture %}
 
   {% capture img %}
-  width: {{ width }};
+    width: {{ width }};
   {% endcapture %}
 
 {% elsif width contains "%" %}
 
   {% capture link %}
-  width: {{ width }};
+    width: {{ width }};
   {% endcapture %}
 
   {% capture img %}
-  width: 100%;
+    width: 100%;
   {% endcapture %}
 
 {% elsif height contains "px" %}
 
   {% capture link %}
-  {% if include.image contains ".svg" %}
-  width: 100%;
-  {% endif %}
+    {% if include.image contains ".svg" %}
+      width: 100%;
+    {% endif %}
   {% endcapture %}
   
   {% capture img %}
-  max-height: {{ height }};
+    max-height: {{ height }};
   {% endcapture %}
 
 {% endif %}

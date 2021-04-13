@@ -8,7 +8,7 @@ const createAnchors = () => {
   for (const heading of headings) {
     // create anchor link
     const link = document.createElement("a");
-    link.classList.add("fas", "fa-link", "fa-sm", "anchor");
+    link.classList.add("fas", "fa-link", "anchor");
     link.href = "#" + heading.id;
     heading.append(link);
 

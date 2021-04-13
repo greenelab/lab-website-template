@@ -23,7 +23,7 @@
 
   <a class="link" href="{{ link | relative_url }}" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %} {% if icon %}data-icon="true"{% endif %} {% if text %}data-text="true"{% endif %} data-style="{{ include.style | default: '' }}">
     {%- if icon contains "fa-" -%}
-      <i class="{{ icon }} fa-lg fa-fw"></i>
+      <i class="{{ icon }} fa-lg {% if text == nil %}fa-fw{% endif %}"></i>
     {%- elsif icon -%}
       {% include {{ icon }} %}
     {%- endif -%}

@@ -7,10 +7,6 @@
 
 #{$icon} {
   display: inline;
-
-  & + * {
-    margin-left: 0.75rem;
-  }
 }
 
 h1,
@@ -19,6 +15,6 @@ h3,
 h4 {
   #{$icon}:first-child {
     color: $light-accent;
-    margin-right: 1rem;
+    margin-right: 1em;
   }
 }
