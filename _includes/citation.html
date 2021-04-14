@@ -1,30 +1,63 @@
-<div class="citation">
-  <div class="citation_image">
-    <a href="{{ include.link }}">
-      <img src="{{ include.image }}" data-tooltip="{{ include.id }}"/>
-    </a>
-  </div>
-  <div class="citation_text">
-    <div class="citation_title">
-      <a href="{{ include.link }}">
-        {{ include.title }}
+{% assign emptyarray = "" | split: "," %}
+{% assign id = include.id | default: "" %}
+{% assign citation = site.data.citations | default: emptyarray | find: "id", include.id %}
+
+{% assign link = citation.link | default: "" %}
+{% assign image = citation.image | default: "" %}
+{% assign title = citation.title | default: "" %}
+{% assign authors = citation.authors | default: emptyarray %}
+{% assign publisher = citation.publisher | default: "" %}
+{% assign date = citation.date | default: "1900-01-01" %}
+{% assign tags = citation.tags | default: emptyarray %}
+{% assign repo = citation.repo | default: "" %}
+{% assign extra-links = citation.extra-links | default: emptyarray %}
+
+{% if include.style == "rich" %}
+  {% assign rich = true %}
+{% endif %}
+
+{% assign placeholder = "images/placeholder.svg" | relative_url %}
+
+<div class="citation" data-style="{{ include.style }}">
+  {% if rich %}
+    <div class="citation_image">
+      <a href="{{ link }}">
+        <img
+          src="{{ image | relative_url }}"
+          onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
+          data-tooltip="{{ id }}"
+          loading="lazy"
+        >
       </a>
     </div>
-    <div class="citation_authors truncate" tabindex="0">
-      {{ include.authors | join: ", " }}
+  {% endif %}
+
+  <div class="citation_text">
+    <div class="citation_title">
+      <a href="{{ link }}">
+        {{ title }}
+      </a>
+    </div>
+    <div
+      class="citation_authors {% if rich %}truncate{% endif %}"
+      {% if rich %}tabindex="0"{% endif %}
+    >
+      {{ authors | join: ", " }}
     </div>
     <div class="citation_details">
-      {{ include.publisher }}&nbsp; · &nbsp;{{ include.date | date: "%d %b %Y" }}
+      {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
     </div>
-    {% include tags.html tags=include.tags repo=include.repo %}
-    <div class="citation_links">
-      {%- for extra in include.extra-links -%}
-        {% assign type = extra.type | default: "" %}
-        {% assign icon = extra.icon | default: "" %}
-        {% assign text = extra.text | default: "" %}
-        {% assign link = extra.link %}
-        {% include link.html type=type icon=icon text=text link=link %}
-      {%- endfor -%}
-    </div>
+    {% if rich %}
+      {% include tags.html tags=tags repo=repo %}
+      <div class="citation_links">
+        {%- for extra in include.extra-links -%}
+          {% assign type = extra.type | default: "" %}
+          {% assign icon = extra.icon | default: "" %}
+          {% assign text = extra.text | default: "" %}
+          {% assign link = extra.link %}
+          {% include link.html type=type icon=icon text=text link=link %}
+        {%- endfor -%}
+      </div>
+    {% endif %}
   </div>
 </div>

@@ -4,15 +4,15 @@
   {% assign width = 350 %}
 {% endif %}
 
+{% assign placeholder = "images/placeholder.svg" | relative_url %}
+
+{% if include.link %}
+  {% assign tag = "a" %}
+{% else %}
+  {% assign tag = "span" %}
+{% endif %}
+
 <div class="card" style="--width: {{ width }}px">
-  {% assign placeholder = "images/placeholder.svg" | relative_url %}
-
-  {% if include.link %}
-    {% assign tag = "a" %}
-  {% else %}
-    {% assign tag = "span" %}
-  {% endif %}
-
   <{{ tag }}
     href="{{ include.link | relative_url }}"
     class="card_image"

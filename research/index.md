@@ -13,4 +13,4 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {% include item-search.html subject="papers" %}
 
-{% include list.html data="citations" component="citation" %}
+{% include list.html data="citations" component="citation" style="rich" %}

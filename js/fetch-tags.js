@@ -15,7 +15,10 @@ const createTags = async () => {
 
   // for each repo
   for (const row of rows) {
-    const tags = await fetchTags(row.dataset.repo);
+    // get tags from github
+    const repo = row.dataset.repo.trim();
+    if (!repo) continue;
+    const tags = (await fetchTags(repo)) || [];
 
     // add tag elements to section
     for (const tag of tags) {
@@ -24,6 +27,9 @@ const createTags = async () => {
       span.innerHTML = tag;
       row.append(span);
     }
+
+    // delete tags container if empty
+    if (!row.innerText.trim()) row.remove();
   }
 };
 

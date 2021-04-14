@@ -1,5 +1,5 @@
-{% assign nothing = "" | split: "," %}
-{% assign data = site.data[include.data] | default: site[include.data] | default: nothing %}
+{% assign emptyarray = "" | split: "," %}
+{% assign data = site.data[include.data] | default: site[include.data] | default: emptyarray %}
 {% assign component = include.component | append: ".html" %}
 
 {% assign filters = include.filters | split: "," %}
@@ -34,7 +34,6 @@
   {%
     include {{ component }}
     author=d.author
-    authors=d.authors
     caption=d.caption
     content=d.content
     date=d.date
@@ -47,7 +46,6 @@
     image=d.image
     link=link
     name=d.name
-    publisher=d.publisher
     repo=d.repo
     role=d.role
     style=style
