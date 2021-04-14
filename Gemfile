@@ -6,9 +6,9 @@ gem "jekyll"
 gem "jekyll-redirect-from"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
-gem "jekyll-github-metadata"
 
 # potentially useful plugins
+# gem "jekyll-github-metadata"
 # gem 'jekyll-avatar'
 # gem 'jekyll-gist'
 # gem 'jekyll-mentions'

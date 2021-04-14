@@ -12,10 +12,10 @@ from yaml.loader import SafeLoader
 ####################
 
 # filename for input sources
-sources_file = "/_data/sources.yaml"
+sources_file = "_data/sources.yaml"
 
 # filename for output citations
-citations_file = "/_data/citations.yaml"
+citations_file = "_data/citations.yaml"
 
 # fallback year, month, day
 default_date = [1900, 1, 1]
