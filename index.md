@@ -26,6 +26,12 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 <!-- section break -->
 
+<!-- section full -->
+
+{% include banner.html image="images/banner.jpg" %}
+
+<!-- section break -->
+
 # Highlights
 
 {% capture text %}
@@ -74,9 +80,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   headline="Our Team"
   text=text
 %}
-
-<!-- section break -->
-
-<!-- section full -->
-
-{% include banner.html image="images/banner.jpg" %}

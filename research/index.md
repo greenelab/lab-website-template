@@ -1,5 +1,8 @@
 ---
 title: Research
+nav:
+  order: 1
+  tooltip: Published works
 ---
 
 # <i class="fas fa-microscope"></i>Research

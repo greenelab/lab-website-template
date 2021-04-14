@@ -21,8 +21,11 @@
     <span class="logo_text">{{ site.title }}</span>
   </a>
   <nav class="nav_row">
-    {% for nav in site.nav %}
-    {% include link.html type="link" text=nav.link tooltip=nav.tooltip link=nav.link %}
+    {% assign pages = site.pages | sort: "nav.order" %}
+    {% for page in pages %}
+      {% if page.nav %}
+        {% include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir %}
+      {% endif %}
     {% endfor %}
   </nav>
 </header>

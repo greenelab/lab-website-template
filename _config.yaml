@@ -1,25 +1,11 @@
-# site settings
-title: Lab Website Template
-logo: images/logo.svg
-baseurl: /lab-website-template
+### basic settings
 
-# page defaults
+# site properties and page defaults
+title: Lab Website Template
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
-
-# site nav bar
-nav:
-  - link: research
-    tooltip: Published works
-  - link: tools
-    tooltip: Software, datasets, and more
-  - link: team
-    tooltip: About our team
-  - link: blog
-    tooltip: Musings and miscellany
-  - link: contact
-    tooltip: Email, address, and location
 
 # site social media and other links
 links:
@@ -29,6 +15,8 @@ links:
   twitter: YourLabHandle
   instagram: YourLabHandle
   youtube: YourLabChannel
+
+### advanced settings
 
 # default front matter parameters for markdown files
 defaults:
@@ -60,7 +48,14 @@ sass:
 # syntax highlighting
 highlighter: rouge
 
-# build settings
+# plugins
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  # - jekyll-avatar
+  # - jekyll-gist
+  # - jekyll-mentions
+  # - jekyll-relative-links
+  # - jemoji
