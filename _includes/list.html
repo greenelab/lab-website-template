@@ -1,37 +1,37 @@
-{% assign emptyarray = "" | split: "," %}
-{% assign data = site.data[include.data] | default: site[include.data] | default: emptyarray %}
-{% assign component = include.component | append: ".html" %}
+{%- assign emptyarray = "" | split: "," -%}
+{%- assign data = site.data[include.data] | default: site[include.data] | default: emptyarray -%}
+{%- assign component = include.component | append: ".html" -%}
 
-{% assign filters = include.filters | split: "," %}
-{% for filter in filters %}
-  {% assign entry = filter | split: ":" %}
-  {% assign key = entry[0] | strip %}
-  {% assign value = entry[1] | strip | default: nil %}
-  {% if value contains "~" %}
-    {% assign value = value | remove: "~" %}
-    {% assign data = data | where_exp: "d", "d[key] contains value" %}
-  {% else %}
-    {% assign data = data | where_exp: "d", "d[key] == value" %}
-  {% endif %}
-{% endfor %}
+{%- assign filters = include.filters | split: "," -%}
+{%- for filter in filters -%}
+  {%- assign entry = filter | split: ":" -%}
+  {%- assign key = entry[0] | strip -%}
+  {%- assign value = entry[1] | strip | default: nil -%}
+  {%- if value contains "~" -%}
+    {%- assign value = value | remove: "~" -%}
+    {%- assign data = data | where_exp: "d", "d[key] contains value" -%}
+  {%- else -%}
+    {%- assign data = data | where_exp: "d", "d[key] == value" -%}
+  {%- endif -%}
+{%- endfor -%}
 
-{% assign data = data | sort: "date" | reverse %}
+{%- assign data = data | sort: "date" | reverse -%}
 
-{% assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse %}
+{%- assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse -%}
 
-{% for year in years %}
+{%- for year in years -%}
 
 {%- if years.size > 1 -%}
   <!-- section break -->
   <h3 id="{{ year.name }}">{{ year.name }}</h3>
 {%- endif -%}
 
-{% for d in year.items %}
+{%- for d in year.items -%}
 
-  {% assign link = d.link | default: d.url %}
-  {% assign style = d.style | default: include.style %}
+  {%- assign link = d.link | default: d.url -%}
+  {%- assign style = d.style | default: include.style -%}
 
-  {%
+  {%-
     include {{ component }}
     author=d.author
     caption=d.caption
@@ -56,8 +56,8 @@
     type=d.type
     url=d.url
     width=d.width
-  %}
+  -%}
 
-{% endfor %}
+{%- endfor -%}
 
-{% endfor %}
+{%- endfor -%}

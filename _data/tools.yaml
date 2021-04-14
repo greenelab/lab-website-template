@@ -2,10 +2,9 @@
   group: featured
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Lorem ipsum dolor sit [test](test) amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   tags: extra tag A, extra tag B
   repo: greenelab/lab-website-template
-  date: '2020-06-02'
 
 - name: Cool Dataset
   group: featured

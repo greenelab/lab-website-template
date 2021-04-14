@@ -6,7 +6,7 @@
 @import "mixins";
 
 .table_wrapper {
-  margin: 40px 0;
+  @include big-margins;
   @include trim-v-margins;
   overflow-x: auto;
 

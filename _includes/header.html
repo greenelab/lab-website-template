@@ -1,15 +1,15 @@
-{% assign background = page.header | default: site.header | default: "none" %}
-{% if background == "none" %}
-{% assign background = nil %}
-{% endif %}
+{%- assign background = page.header | default: site.header | default: "none" -%}
+{%- if background == "none" -%}
+  {%- assign background = nil -%}
+{%- endif -%}
 
-{% assign dark = page.header-dark %}
-{% if dark == nil %}
-{% assign dark = site.header-dark %}
-{% endif %}
-{% if dark == nil %}
-{% assign dark = true %}
-{% endif %}
+{%- assign dark = page.header-dark -%}
+{%- if dark == nil -%}
+  {%- assign dark = site.header-dark -%}
+{%- endif -%}
+{%- if dark == nil -%}
+  {%- assign dark = true -%}
+{%- endif -%}
 
 <header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <a
@@ -21,11 +21,11 @@
     <span class="logo_text">{{ site.title }}</span>
   </a>
   <nav class="nav_row">
-    {% assign pages = site.pages | sort: "nav.order" %}
-    {% for page in pages %}
-      {% if page.nav %}
-        {% include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir %}
-      {% endif %}
-    {% endfor %}
+    {%- assign pages = site.pages | sort: "nav.order" -%}
+    {%- for page in pages -%}
+      {%- if page.nav -%}
+        {%- include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir -%}
+      {%- endif -%}
+    {%- endfor -%}
   </nav>
 </header>

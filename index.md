@@ -14,7 +14,8 @@ Spend less time reinventing the wheel, and more time running your lab.
   text="See the template on GitHub"
   link="greenelab/lab-website-template"
   style="button"
-%}{%
+%}
+{%
   include link.html
   type="docs"
   icon=""

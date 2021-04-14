@@ -1,12 +1,13 @@
-{% assign tags = include.tags | join: "," | split: "," %}
-{% assign repo = include.repo | strip %}
-{% if repo == "" %}
-  {% assign repo = nil %}
-{% endif %}
-{% if tags.size > 0 or repo %}
+{%- assign tags = include.tags | join: "," | split: "," -%}
+{%- assign repo = include.repo | strip -%}
+{%- if repo == "" -%}
+  {%- assign repo = nil -%}
+{%- endif -%}
+
+{%- if tags.size > 0 or repo -%}
   <div class="tags" {% if repo %}data-repo="{{ repo }}"{% endif %}>
-    {% for tag in tags %}
+    {%- for tag in tags -%}
       <span class="tag">{{- tag -}}</span>
-    {% endfor %}
+    {%- endfor -%}
   </div>
-{% endif %}
+{%- endif -%}

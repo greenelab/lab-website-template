@@ -10,7 +10,7 @@
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  @include big-margins;
   @include trim-v-margins;
 
   .gallery_item {

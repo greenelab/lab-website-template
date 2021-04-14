@@ -14,13 +14,25 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 <!-- section break -->
 
-{% capture contents %}
-  {% include list.html data="members" component="portrait" filters="role: pi" %}
-  {% include list.html data="members" component="portrait" filters="role: phd" %}
-  {% include list.html data="members" component="portrait" filters="role: programmer" %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: pi"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: phd"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: programmer"
+%}
+{:.center}
 
 <!-- section break -->
 

@@ -4,23 +4,9 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% capture contents %}
-  {% include post-info.html post=page %}
-{% endcapture %}
+{%- include post-info.html post=page -%}
 
-{% assign contents = contents | strip %}
-{% if contents != empty %}
-  {% include centerer.html contents=contents %}
-{% endif %}
-
-{% capture contents %}
-  {% include tags.html tags=page.tags %}
-{% endcapture %}
-
-{% assign contents = contents | strip %}
-{% if contents != empty %}
-  {% include centerer.html contents=contents %}
-{% endif %}
+{%- include tags.html tags=page.tags -%}
 
 <!-- section break -->
 
@@ -28,4 +14,4 @@ layout: default
 
 <!-- section break -->
 
-{% include post-nav.html post=page %}
+{%- include post-nav.html post=page -%}

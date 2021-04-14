@@ -16,28 +16,16 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 ## Featured
 
-{% capture contents %}
 {% include list.html component="card" data="tools" filters="group: featured" %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}
 
 <!-- section break -->
 
 ## More
 
-{% capture contents %}
 {% include list.html component="card" data="tools" filters="group: more" %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}
 
 <!-- section break -->
 
 ## Legacy
 
-{% capture contents %}
 {% include list.html component="card" data="tools" filters="group: legacy" style="small" %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}

@@ -8,7 +8,7 @@
 .figure {
   @include flex-center;
   flex-direction: column;
-  margin: 40px 0;
+  @include big-margins;
   @include trim-v-margins;
 
   .figure_image {

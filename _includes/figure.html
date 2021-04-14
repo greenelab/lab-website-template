@@ -1,38 +1,38 @@
-{% assign width = include.width %}
-{% assign height = include.height %}
+{%- assign width = include.width -%}
+{%- assign height = include.height -%}
 
-{% if width contains "px" %}
+{%- if width contains "px" -%}
 
-  {% capture link %}
-  {% endcapture %}
+  {%- capture link -%}
+  {%- endcapture -%}
 
-  {% capture img %}
+  {%- capture img -%}
     width: {{ width }};
-  {% endcapture %}
+  {%- endcapture -%}
 
-{% elsif width contains "%" %}
+{%- elsif width contains "%" -%}
 
-  {% capture link %}
+  {%- capture link -%}
     width: {{ width }};
-  {% endcapture %}
+  {%- endcapture -%}
 
-  {% capture img %}
+  {%- capture img -%}
     width: 100%;
-  {% endcapture %}
+  {%- endcapture -%}
 
-{% elsif height contains "px" %}
+{%- elsif height contains "px" -%}
 
-  {% capture link %}
-    {% if include.image contains ".svg" %}
+  {%- capture link -%}
+    {%- if include.image contains ".svg" -%}
       width: 100%;
-    {% endif %}
-  {% endcapture %}
+    {%- endif -%}
+  {%- endcapture -%}
   
-  {% capture img %}
+  {%- capture img -%}
     max-height: {{ height }};
-  {% endcapture %}
+  {%- endcapture -%}
 
-{% endif %}
+{%- endif -%}
 
 <figure class="figure">
   <a 
@@ -49,8 +49,8 @@
     />
   </a>
   {%- if include.caption -%}
-  <figcaption class="figure_caption">
-    {{- include.caption | markdownify | remove: "<p>" | remove: "</p>" -}}
-  </figcaption>
+    <figcaption class="figure_caption">
+      {{- include.caption | markdownify | remove: "<p>" | remove: "</p>" -}}
+    </figcaption>
   {%- endif -%}
 </figure>

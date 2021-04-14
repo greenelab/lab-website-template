@@ -1,7 +1,7 @@
 [**{{ include.title }}**]({{ include.url | relative_url }})
 
-{% include post-info.html post=include %}
+{% include post-info.html post=include %}{:.left}
 
-{% include tags.html tags=include.tags %}
+{% include tags.html tags=include.tags %}{:.left}
 
 {{ include.content | strip_html | truncate: 500 }}

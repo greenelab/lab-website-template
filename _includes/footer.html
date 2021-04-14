@@ -1,23 +1,23 @@
-{% assign background = page.footer | default: site.footer | default: "none" %}
-{% if background == "none" %}
-{% assign background = nil %}
-{% endif %}
+{%- assign background = page.footer | default: site.footer | default: "none" -%}
+{%- if background == "none" -%}
+  {%- assign background = nil -%}
+{%- endif -%}
 
-{% assign dark = page.footer-dark %}
-{% if dark == nil %}
-{% assign dark = site.footer-dark %}
-{% endif %}
-{% if dark == nil %}
-{% assign dark = true %}
-{% endif %}
+{%- assign dark = page.footer-dark -%}
+{%- if dark == nil -%}
+  {%- assign dark = site.footer-dark -%}
+{%- endif -%}
+{%- if dark == nil -%}
+  {%- assign dark = true -%}
+{%- endif -%}
 
 <footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <div class="footer_row">
-    {% for entry in site.links %}
-      {% assign key = entry[0] %}
-      {% assign value = entry[1] %}
-      {% include link.html type=key icon="" tooltip="" link=value %}
-    {% endfor %}
+    {%- for entry in site.links -%}
+      {%- assign key = entry[0] -%}
+      {%- assign value = entry[1] -%}
+      {%- include link.html type=key icon="" tooltip="" link=value -%}
+    {%- endfor -%}
   </div>
   <!-- <div class="footer_row">
     &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }}

@@ -1,8 +1,8 @@
-{% if include.style == "small" %}
-  {% assign width = 100 %}
-{% else %}
-  {% assign width = 200 %}
-{% endif %}
+{%- if include.style == "small" -%}
+  {%- assign width = 100 -%}
+{%- else -%}
+  {%- assign width = 200 -%}
+{%- endif -%}
 
 <a {% if include.link %}href="{{ include.link | relative_url }}"{% endif %} class="portrait" style="--width: {{ width }}px">
 
