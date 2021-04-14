@@ -1,4 +1,5 @@
-{% assign data = site.data[include.data] | default: site[include.data] %}
+{% assign nothing = "" | split: "," %}
+{% assign data = site.data[include.data] | default: site[include.data] | default: nothing %}
 {% assign component = include.component | append: ".html" %}
 
 {% assign filters = include.filters | split: "," %}
@@ -6,50 +7,59 @@
   {% assign entry = filter | split: ":" %}
   {% assign key = entry[0] | strip %}
   {% assign value = entry[1] | strip | default: nil %}
-  {% assign data = data | where_exp: "d", "d[key] == value" %}
+  {% if value contains "~" %}
+    {% assign value = value | remove: "~" %}
+    {% assign data = data | where_exp: "d", "d[key] contains value" %}
+  {% else %}
+    {% assign data = data | where_exp: "d", "d[key] == value" %}
+  {% endif %}
 {% endfor %}
 
-{% for d in data %}
+{% assign data = data | sort: "date" | reverse %}
 
-  {% assign caption = d.caption %}
-  {% assign description = d.description %}
-  {% assign headline = d.headline %}
-  {% assign height = d.height %}
-  {% assign icon = d.icon %}
-  {% assign image = d.image %}
+{% assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse %}
+
+{% for year in years %}
+
+{%- if years.size > 1 -%}
+  <!-- section break -->
+  <h3 id="{{ year.name }}">{{ year.name }}</h3>
+{%- endif -%}
+
+{% for d in year.items %}
+
   {% assign link = d.link | default: d.url %}
-  {% assign mini = d.mini %}
-  {% assign name = d.name %}
-  {% assign repo = d.repo %}
-  {% assign role = d.role %}
   {% assign style = d.style | default: include.style %}
-  {% assign tags = d.tags %}
-  {% assign text = d.text %}
-  {% assign tooltip = d.tooltip %}
-  {% assign truncate = d.truncate %}
-  {% assign type = d.type %}
-  {% assign width = d.width %}
 
   {%
     include {{ component }}
-    caption=caption
-    description=description
-    headline=headline
-    height=height
-    icon=icon
-    image=image
+    author=d.author
+    authors=d.authors
+    caption=d.caption
+    content=d.content
+    date=d.date
+    description=d.description
+    extra-links=d.extra-links
+    headline=d.headline
+    height=d.height
+    icon=d.icon
+    id=d.id
+    image=d.image
     link=link
-    name=name
-    repo=repo
-    role=role
+    name=d.name
+    publisher=d.publisher
+    repo=d.repo
+    role=d.role
     style=style
-    tags=tags
-    title=title
-    text=text
-    tooltip=tooltip
-    truncate=truncate
-    type=type
-    width=width
+    tags=d.tags
+    title=d.title
+    text=d.text
+    tooltip=d.tooltip
+    type=d.type
+    url=d.url
+    width=d.width
   %}
+
+{% endfor %}
 
 {% endfor %}

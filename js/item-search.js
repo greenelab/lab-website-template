@@ -1,48 +1,46 @@
-// card search plugin
-// pairs with "card search" component
-// filters cards on page based on what is typed in search box
+// item search plugin
+// pairs with "item search" component
+// filters items on page based on what is typed in search box
 
-let searchInput;
-let searchCount;
-let cards;
-let hide;
+let searchInput = ".item_search_input"; // search box
+let searchCount = ".item_search_count"; // "showing X of N results"
+let items = ".card, .citation"; // items to filter
 
 const createSearch = () => {
   // get important elements
-  searchInput = document.querySelector(".card_search_input");
-  searchCount = document.querySelector(".card_search_count");
-  cards = Array.from(document.querySelectorAll(".card"));
-  hide = Array.from(document.querySelectorAll(".card_search_hide"));
+  searchInput = document.querySelector(searchInput);
+  searchCount = document.querySelector(searchCount);
+  items = Array.from(document.querySelectorAll(items));
 
   // don't run script if necessary elements aren't present
-  if (!searchInput || !cards.length) return;
+  if (!searchInput || !items.length) return;
 
   // attach filter function to search box input
-  searchInput.addEventListener("input", debounce(filterCards, 50));
+  searchInput.addEventListener("input", debounce(filterItems, 50));
 
   // enable search input to indicate that script has finished loading
   searchInput.removeAttribute("disabled");
 
   // get url param and search
   loadUrlSearch();
-  filterCards();
+  filterItems();
 };
 
 // determine if string is a term (single word) or phrase (quoted multiple words)
 const isPhrase = (str) => /\s/g.test(str);
 
-// determine if card should show up in results based on query
-const showCard = (card, query) => {
+// determine if item should show up in results based on query
+const showItem = (item, query) => {
   // if nothing searched, show
   if (!query.length) return true;
-  // get card text content
-  card = card.innerText.toLowerCase();
+  // get item text content
+  item = item.innerText.toLowerCase();
   // get arrays of terms and phrases
   let terms = query.filter((string) => !isPhrase(string));
   let phrases = query.filter((string) => isPhrase(string));
-  // func to check if string is in card text
-  const includes = (string) => card.includes(string);
-  // show card if all terms match, and at least one phrase matches
+  // func to check if string is in item text
+  const includes = (string) => item.includes(string);
+  // show item if all terms match, and at least one phrase matches
   // pass test if terms or phrases empty
   terms = terms.length ? terms.every(includes) : true;
   phrases = phrases.length ? phrases.some(includes) : true;
@@ -55,45 +53,41 @@ const parseQuery = (string) =>
     .map((string) => string.split('"').join("").trim().toLowerCase())
     .filter((string) => string);
 
-// filter cards
-const filterCards = () => {
+// filter items
+const filterItems = () => {
   // get search box text
   const query = parseQuery(searchInput.value);
 
   // reset highlights
   resetHighlights();
 
-  // hide/show cards
+  // hide/show items
   let count = 0;
-  for (const card of cards) {
-    if (showCard(card, query)) {
-      card.dataset.hide = false;
+  for (const item of items) {
+    if (showItem(item, query)) {
+      item.dataset.hide = false;
       // count if shown
       count++;
       // highlight query words
-      highlightTerms(card, query);
-    } else card.dataset.hide = true;
+      highlightTerms(item, query);
+    } else item.dataset.hide = true;
   }
-
-  // hide any elements marked with data-search-hide if there was any filtering
-  const anyFiltering = count < cards.length;
-  hide.forEach((heading) => (heading.dataset.hide = anyFiltering));
 
   // update results info
   if (searchCount)
     searchCount.innerHTML =
-      count.toLocaleString() + " of " + cards.length.toLocaleString();
+      count.toLocaleString() + " of " + items.length.toLocaleString();
 };
 
 // reset mark.js highlights
 const resetHighlights = () => new Mark(document.body).unmark();
 
 // highlight search terms with mark.js
-const highlightTerms = (card, query) => {
+const highlightTerms = (item, query) => {
   // to avoid slowdown, only highlight if more than a few letters typed in
   for (const string of query)
     if (string.length > 2) {
-      new Mark(card).mark(string, {
+      new Mark(item).mark(string, {
         separateWordSearch: isPhrase(string) ? false : true,
       });
     }
@@ -101,8 +95,8 @@ const highlightTerms = (card, query) => {
 
 // util func to debounce search box
 const debounce = (func, delay) => () => {
-  window.clearTimeout(window["card_search_timer"]);
-  window["card_search_timer"] = window.setTimeout(func, delay);
+  window.clearTimeout(window["item_search_timer"]);
+  window["item_search_timer"] = window.setTimeout(func, delay);
 };
 
 // populate search box based on url param

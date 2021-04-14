@@ -1,0 +1,30 @@
+<div class="citation">
+  <div class="citation_image">
+    <a href="{{ include.link }}">
+      <img src="{{ include.image }}" data-tooltip="{{ include.id }}"/>
+    </a>
+  </div>
+  <div class="citation_text">
+    <div class="citation_title">
+      <a href="{{ include.link }}">
+        {{ include.title }}
+      </a>
+    </div>
+    <div class="citation_authors truncate" tabindex="0">
+      {{ include.authors | join: ", " }}
+    </div>
+    <div class="citation_details">
+      {{ include.publisher }}&nbsp; · &nbsp;{{ include.date | date: "%d %b %Y" }}
+    </div>
+    {% include tags.html tags=include.tags repo=include.repo %}
+    <div class="citation_links">
+      {%- for extra in include.extra-links -%}
+        {% assign type = extra.type | default: "" %}
+        {% assign icon = extra.icon | default: "" %}
+        {% assign text = extra.text | default: "" %}
+        {% assign link = extra.link %}
+        {% include link.html type=type icon=icon text=text link=link %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+[**{{ include.title }}**]({{ include.url | relative_url }})
+
+{% include post-info.html post=include %}
+
+{% include tags.html tags=include.tags %}
+
+{{ include.content | strip_html | truncate: 500 }}

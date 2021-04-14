@@ -11,6 +11,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 <!-- section break -->
 
-{% include card-search.html subject="papers" %}
+{% include item-search.html subject="papers" %}
 
-{% include research-list.html %}
+{% include list.html data="citations" component="citation" %}

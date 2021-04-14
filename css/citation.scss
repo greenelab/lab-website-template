@@ -1,0 +1,80 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+.citation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 30px 0;
+  @include trim-v-margins;
+
+  .citation_image {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    margin-right: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .citation_text {
+    width: 0;
+    flex-grow: 1;
+
+    & > * {
+      @include trim-v-margins;
+    }
+
+    .citation_title {
+      margin-bottom: 15px;
+      font-weight: $semi-bold;
+    }
+
+    .citation_authors {
+      margin-bottom: 15px;
+    }
+
+    .citation_details {
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      margin-bottom: 5px;
+    }
+
+    .citation_links {
+      .link {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  @media (max-width: $phone) {
+    align-items: center;
+    flex-direction: column;
+
+    .citation_image {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .citation_text {
+      width: 100%;
+    }
+  }
+}

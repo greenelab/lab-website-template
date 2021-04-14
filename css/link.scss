@@ -31,10 +31,6 @@ a:hover {
     & > *:first-child {
       margin-right: 0.75em;
     }
-
-    &:not([data-style="button"]) {
-      margin: 0 5px;
-    }
   }
 
   &[data-style="button"] {

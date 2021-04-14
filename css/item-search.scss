@@ -5,20 +5,20 @@
 @import "theme";
 @import "mixins";
 
-.card_search {
+.item_search {
   @include flex-center;
   flex-direction: column;
   @include block-margins;
   @include trim-v-margins;
 
-  .card_search_box,
-  .card_search_info {
+  .item_search_box,
+  .item_search_info {
     width: 300px;
     height: 40px;
     max-width: 100%;
   }
 
-  .card_search_box {
+  .item_search_box {
     position: relative;
 
     #{$icon} {
@@ -29,7 +29,7 @@
       height: 100%;
     }
 
-    .card_search_input {
+    .item_search_input {
       width: 100%;
       height: 100%;
       padding: 0 40px 0 10px;
@@ -38,7 +38,7 @@
     }
   }
 
-  .card_search_info {
+  .item_search_info {
     margin-top: 10px;
     color: $gray-500;
     text-align: center;
