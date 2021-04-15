@@ -15,21 +15,28 @@ const createTags = async () => {
 
   // for each repo
   for (const row of rows) {
-    // get tags from github
+    // get props from tag row
     const repo = row.dataset.repo.trim();
+    const link = row.dataset.link.trim();
+
+    // get tags from github
     if (!repo) continue;
     const tags = (await fetchTags(repo)) || [];
 
     // add tag elements to section
     for (const tag of tags) {
-      const span = document.createElement("span");
-      span.classList.add("tag");
-      span.innerHTML = tag;
-      row.append(span);
+      const a = document.createElement("a");
+      a.classList.add("tag");
+      a.innerHTML = tag;
+      a.href = `${link}?search="tag: ${tag}"`;
+      row.append(a);
     }
 
     // delete tags container if empty
     if (!row.innerText.trim()) row.remove();
+
+    // emit "tags done" event for other plugins to listen to
+    window.dispatchEvent(new Event("tagsfetched"));
   }
 };
 

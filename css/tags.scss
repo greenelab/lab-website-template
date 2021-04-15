@@ -14,9 +14,16 @@
     margin: 5px;
     padding: 5px 15px;
     border-radius: 999px;
+    color: $black;
     background: $light-accent;
+    text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: background $fast;
+
+    &:hover {
+      background: $gray-500;
+    }
   }
 }

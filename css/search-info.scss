@@ -1,0 +1,14 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+.search_info {
+  @include margins;
+  @include trim-v-margins;
+  color: $gray-500;
+  text-align: center;
+  font-style: italic;
+}

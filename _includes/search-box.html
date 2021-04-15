@@ -1,0 +1,11 @@
+<div class="search_box">
+  <input
+    class="search_input"
+    oninput="searchItems(this.value); this.nextElementSibling.querySelector('i').className = this.value.length ? 'fas fa-times' : 'fas fa-search';"
+  />
+  <button
+    onclick="this.previousElementSibling.value = ''; this.previousElementSibling.dispatchEvent(new Event('input'));"
+  >
+    <i class="fas fa-search"></i>
+  </button>
+</div>

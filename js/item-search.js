@@ -3,9 +3,11 @@
 // syntax: term1 term2 "full phrase 1" "full phrase 2" "tag: tag 1"
 
 // items to filter
-const itemQuery = ".card, .citation";
+const itemQuery = ".card, .citation, .post_excerpt";
+// search box element
+const boxQuery = ".search_box input";
 // results info element
-const countQuery = ".item_search_count";
+const infoQuery = ".search_info";
 
 // normalize tag string to lower-case, single-space-separated, trimmed, etc
 const cleanTag = (tag) =>
@@ -71,8 +73,7 @@ const debounce = (func, delay) => (...args) => {
 // search and filter items
 const searchItems = debounce((query) => {
   // split query into parts
-  query = splitQuery(query);
-  console.log(query);
+  const parts = splitQuery(query);
 
   // reset highlights
   resetHighlights();
@@ -81,21 +82,30 @@ const searchItems = debounce((query) => {
   let count = 0;
   const items = document.querySelectorAll(itemQuery);
   for (const item of items) {
-    if (showItem(item, query)) {
+    if (showItem(item, parts)) {
       item.dataset.hide = false;
       // count if shown
       count++;
       // highlight query words
-      highlightTerms(item, query);
-    } else item.dataset.hide = true;
+      highlightTerms(item, parts);
+    } else {
+      item.dataset.hide = true;
+    }
   }
 
+  // update search box
+  const updateBox = (element) => (element.value = query);
+  document.querySelectorAll(boxQuery).forEach(updateBox);
+
   // update results info
-  count = count.toLocaleString() + " of " + items.length.toLocaleString();
-  document
-    .querySelectorAll(countQuery)
-    .forEach((element) => (element.innerHTML = count));
-}, 50);
+  const updateInfo = (element) => {
+    element.innerHTML = element.dataset.text
+      .replace(/\X/g, count.toLocaleString())
+      .replace(/\N/g, items.length.toLocaleString());
+    element.dataset.hide = false;
+  };
+  document.querySelectorAll(infoQuery).forEach(updateInfo);
+}, 200);
 
 // reset mark.js highlights
 const resetHighlights = () => new Mark(document.body).unmark();
@@ -119,3 +129,4 @@ const urlSearch = () => {
 
 // start script and add triggers
 window.addEventListener("load", urlSearch);
+window.addEventListener("tagsfetched", urlSearch);

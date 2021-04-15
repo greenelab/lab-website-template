@@ -30,17 +30,17 @@ body {
       padding: 60px 40px;
       text-align: center;
     }
+  }
 
-    &:nth-child(even) {
-      background: $white;
-    }
+  section:nth-of-type(even) {
+    background: $white;
+  }
 
-    &:nth-child(even) {
-      background: $gray-100;
-    }
+  section:nth-of-type(even) {
+    background: $gray-100;
+  }
 
-    &:last-child {
-      flex-grow: 1;
-    }
+  section:last-of-type {
+    flex-grow: 1;
   }
 }

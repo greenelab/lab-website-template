@@ -28,8 +28,8 @@ const onHashChange = () => {
   const id = window.location.hash.replace("#", "");
   let element = document.getElementById(id);
   if (!element) return;
-  element.setAttribute("data-glow", "true");
-  window.setTimeout(() => element.removeAttribute("data-glow"), 2000);
+  element.dataset.glow = true;
+  window.setTimeout(() => (element.dataset.glow = false), 2000);
 };
 
 // start script and add triggers
