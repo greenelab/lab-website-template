@@ -1,68 +1,85 @@
 // item search plugin
-// pairs with "item search" component
-// filters items on page based on what is typed in search box
+// filters items on page based on url or search box
+// syntax: term1 term2 "full phrase 1" "full phrase 2" "tag: tag 1"
 
-let searchInput = ".item_search_input"; // search box
-let searchCount = ".item_search_count"; // "showing X of N results"
-let items = ".card, .citation"; // items to filter
+// items to filter
+const itemQuery = ".card, .citation";
+// results info element
+const countQuery = ".item_search_count";
 
-const createSearch = () => {
-  // get important elements
-  searchInput = document.querySelector(searchInput);
-  searchCount = document.querySelector(searchCount);
-  items = Array.from(document.querySelectorAll(items));
+// normalize tag string to lower-case, single-space-separated, trimmed, etc
+const cleanTag = (tag) =>
+  tag
+    .toLowerCase()
+    .split(/\s|-|,|tag:/g)
+    .map((w) => w.trim())
+    .filter((w) => w)
+    .join(" ");
 
-  // don't run script if necessary elements aren't present
-  if (!searchInput || !items.length) return;
-
-  // attach filter function to search box input
-  searchInput.addEventListener("input", debounce(filterItems, 50));
-
-  // enable search input to indicate that script has finished loading
-  searchInput.removeAttribute("disabled");
-
-  // get url param and search
-  loadUrlSearch();
-  filterItems();
-};
-
-// determine if string is a term (single word) or phrase (quoted multiple words)
-const isPhrase = (str) => /\s/g.test(str);
-
-// determine if item should show up in results based on query
-const showItem = (item, query) => {
-  // if nothing searched, show
-  if (!query.length) return true;
-  // get item text content
-  item = item.innerText.toLowerCase();
-  // get arrays of terms and phrases
-  let terms = query.filter((string) => !isPhrase(string));
-  let phrases = query.filter((string) => isPhrase(string));
-  // func to check if string is in item text
-  const includes = (string) => item.includes(string);
-  // show item if all terms match, and at least one phrase matches
-  // pass test if terms or phrases empty
-  terms = terms.length ? terms.every(includes) : true;
-  phrases = phrases.length ? phrases.some(includes) : true;
-  return terms && phrases;
-};
-
-// split search string into array of terms and phrases
-const parseQuery = (string) =>
-  (string.match(/(".*?"|[^"\s]+)(?=\s*|\s*$)/g) || [])
-    .map((string) => string.split('"').join("").trim().toLowerCase())
+// split search query into terms, phrases, and tags
+const splitQuery = (query) => {
+  // split into parts by spaces but preserve quoted sub-strings
+  const parts = (query.match(/(".*?"|[^"\s]+)(?=\s*|\s*$)/g) || [])
+    .map((string) => string.trim().toLowerCase())
     .filter((string) => string);
 
-// filter items
-const filterItems = () => {
-  // get search box text
-  const query = parseQuery(searchInput.value);
+  // bins
+  const terms = [];
+  const phrases = [];
+  const tags = [];
+
+  // put parts into bins
+  for (let part of parts) {
+    if (part.includes('"')) {
+      part = part.split('"').join("");
+      if (part.indexOf("tag:") === 0) tags.push(cleanTag(part));
+      else phrases.push(part);
+    } else {
+      terms.push(part);
+    }
+  }
+
+  return { terms, phrases, tags };
+};
+
+// determine if item should show up in results based on query
+const showItem = (item, { terms, phrases, tags }) => {
+  // tag elements within item
+  const itemTags = Array.from(item.querySelectorAll(".tag"));
+
+  // check if text content exists in item
+  const hasText = (string) => item.innerText.toLowerCase().includes(string);
+  // check if text matches a tag in item
+  const hasTag = (string) =>
+    itemTags.some((tag) => cleanTag(tag.innerText) === string);
+
+  // show item if it has:
+  // all terms AND at least one phrase AND at least one tag
+  return (
+    (terms.every(hasText) || !terms.length) &&
+    (phrases.some(hasText) || !phrases.length) &&
+    (tags.some(hasTag) || !tags.length)
+  );
+};
+
+// util func to debounce search
+const debounce = (func, delay) => (...args) => {
+  window.clearTimeout(window.item_search_timer);
+  window.item_search_timer = window.setTimeout(() => func(...args), delay);
+};
+
+// search and filter items
+const searchItems = debounce((query) => {
+  // split query into parts
+  query = splitQuery(query);
+  console.log(query);
 
   // reset highlights
   resetHighlights();
 
   // hide/show items
   let count = 0;
+  const items = document.querySelectorAll(itemQuery);
   for (const item of items) {
     if (showItem(item, query)) {
       item.dataset.hide = false;
@@ -74,37 +91,31 @@ const filterItems = () => {
   }
 
   // update results info
-  if (searchCount)
-    searchCount.innerHTML =
-      count.toLocaleString() + " of " + items.length.toLocaleString();
-};
+  count = count.toLocaleString() + " of " + items.length.toLocaleString();
+  document
+    .querySelectorAll(countQuery)
+    .forEach((element) => (element.innerHTML = count));
+}, 50);
 
 // reset mark.js highlights
 const resetHighlights = () => new Mark(document.body).unmark();
 
 // highlight search terms with mark.js
-const highlightTerms = (item, query) => {
-  // to avoid slowdown, only highlight if more than a few letters typed in
-  for (const string of query)
-    if (string.length > 2) {
-      new Mark(item).mark(string, {
-        separateWordSearch: isPhrase(string) ? false : true,
-      });
-    }
+const highlightTerms = (item, { terms, phrases, tags }) => {
+  // to avoid slowdown, only highlight if more than a few letters searched
+  for (const term of terms)
+    if (term.length > 2)
+      new Mark(item).mark(term, { separateWordSearch: true });
+  for (const phrase of phrases)
+    if (phrase.length > 2)
+      new Mark(item).mark(phrase, { separateWordSearch: false });
 };
 
-// util func to debounce search box
-const debounce = (func, delay) => () => {
-  window.clearTimeout(window["item_search_timer"]);
-  window["item_search_timer"] = window.setTimeout(func, delay);
-};
-
-// populate search box based on url param
-const loadUrlSearch = () => {
+// search based on url param
+const urlSearch = () => {
   const query = new URLSearchParams(window.location.search).get("search") || "";
-  if (!query.trim()) return;
-  searchInput.value = query;
+  searchItems(query.trim());
 };
 
 // start script and add triggers
-window.addEventListener("load", createSearch);
+window.addEventListener("load", urlSearch);
