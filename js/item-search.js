@@ -80,7 +80,7 @@ const searchItems = debounce((query) => {
 
   // hide/show items
   let count = 0;
-  const items = document.querySelectorAll(itemQuery);
+  let items = document.querySelectorAll(itemQuery);
   for (const item of items) {
     if (showItem(item, parts)) {
       item.dataset.hide = false;
@@ -98,24 +98,30 @@ const searchItems = debounce((query) => {
   document.querySelectorAll(boxQuery).forEach(updateBox);
 
   // update results info
+  count = count.toLocaleString();
+  items = items.length.toLocaleString();
+  const tags = parts.tags.map((tag) => `"${tag}"`).join(", ");
   const updateInfo = (element) => {
-    element.innerHTML = element.dataset.text
-      .replace(/\X/g, count.toLocaleString())
-      .replace(/\N/g, items.length.toLocaleString());
-    element.dataset.hide = false;
+    const [row1, row2] = element.children;
+    row1.innerHTML = `Showing tag(s) ${tags}`;
+    row2.innerHTML = `${count} of ${items} results`;
+    element.dataset.hide = window.location.search ? false : true;
   };
   document.querySelectorAll(infoQuery).forEach(updateInfo);
 }, 200);
 
-// reset mark.js highlights
+// reset highlights
 const resetHighlights = () => new Mark(document.body).unmark();
 
-// highlight search terms with mark.js
-const highlightTerms = (item, { terms, phrases, tags }) => {
+// highlight search terms
+const highlightTerms = (item, { terms, phrases }) => {
+  // highlight terms
   // to avoid slowdown, only highlight if more than a few letters searched
   for (const term of terms)
     if (term.length > 2)
       new Mark(item).mark(term, { separateWordSearch: true });
+
+  // highlight phrases
   for (const phrase of phrases)
     if (phrase.length > 2)
       new Mark(item).mark(phrase, { separateWordSearch: false });

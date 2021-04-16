@@ -25,5 +25,9 @@
     &:hover {
       background: $gray-500;
     }
+
+    &[data-highlight="true"] {
+      background: $accent;
+    }
   }
 }

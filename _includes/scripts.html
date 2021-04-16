@@ -1,22 +1,23 @@
+<!-- set dummy classes in case third party scripts cant load to avoid errors -->
+<script>
+  window.Popper = {
+    createPopper: () => {
+      destroy: () => null;
+    },
+  };
+  class Mark {
+    unmark() {
+      return null;
+    }
+    mark() {
+      return null;
+    }
+  }
+</script>
+
 <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-
-<!-- set dummy functions in case third party scripts cant load to avoid errors -->
-<script>
-  if (typeof Popper === "undefined") {
-    Popper = {
-      createPopper: () => {
-        destroy: () => null;
-      },
-    };
-  }
-  if (typeof Mark === "undefined")
-    Mark = {
-      unmark: () => null,
-      mark: () => null,
-    };
-</script>
 
 <!-- site-wide javascript scripts -->
 <script src="{{ 'js/anchors.js' | relative_url }}"></script>

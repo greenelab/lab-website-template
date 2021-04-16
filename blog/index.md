@@ -7,7 +7,10 @@ nav:
 
 # <i class="fas fa-feather-alt"></i>Blog
 
+{% include search-info.html %}
+
 {% include list.html data="posts" component="post-excerpt" %}
+
 
 <!-- section break -->
 
