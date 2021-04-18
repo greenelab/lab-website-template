@@ -4,15 +4,13 @@ logo: images/lab_logo_bw.png
 
 # page defaults
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-header: images/background.jpg
-footer: images/background.jpg
+header: images/homepage_bottom.png
+footer: images/homepage_bottom.png
 
 # site nav bar
 nav:
-  - link: research
+  - link: publications
     tooltip: Published works
-  - link: resources
-    tooltip: Tools, datasets, and more
   - link: team
     tooltip: About our team
   - link: blog
