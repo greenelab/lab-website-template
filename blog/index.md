@@ -7,8 +7,9 @@ nav:
 
 # <i class="fas fa-feather-alt"></i>Blog
 
-{% include list.html data="posts" component="post-excerpt" %}
+{% include search-info.html smart-hide=true %}
 
+{% include list.html data="posts" component="post-excerpt" %}
 
 <!-- section break -->
 

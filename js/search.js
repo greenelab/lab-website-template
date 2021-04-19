@@ -128,16 +128,23 @@ const updateBox = (query) => {
 
 // update search results info
 const updateInfo = (x, n, t) => {
-  x = x.toLocaleString();
-  n = n.toLocaleString();
-  t = t.map((tag) => `"${tag}"`);
-
   const infos = document.querySelectorAll(infoQuery);
   for (const info of infos) {
+    // reset to blank
     info.innerHTML = "";
-    info.innerHTML += `Showing ${x} of ${n}<br>`;
-    if (t.length)
-      info.innerHTML += `With tag${t.length > 1 ? "s" : ""} ${t.join(", ")}`;
+
+    // smart hide
+    const hide = Boolean(info.getAttribute("data-smart-hide"));
+    if (hide) info.dataset.hide = !(x < n || t.length);
+    else info.dataset.hide = false;
+
+    // info template
+    info.innerHTML += `Showing ${x.toLocaleString()} of ${n.toLocaleString()}<br>`;
+    if (t.length) {
+      const s = t.length > 1 ? "s" : "";
+      t = t.map((tag) => `"${tag}"`).join(", ");
+      info.innerHTML += `With tag${s} ${t}`;
+    }
   }
 };
 
