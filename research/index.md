@@ -16,6 +16,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {% include search-box.html %}
 
-{% include search-info.html text="Showing X of N publications" %}
+{% include search-info.html %}
 
 {% include list.html data="citations" component="citation" style="rich" %}

@@ -5,6 +5,6 @@
 @import "theme";
 @import "mixins";
 
-* {
-  box-sizing: border-box;
+input {
+  font-family: $sans;
 }

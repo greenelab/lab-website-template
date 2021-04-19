@@ -1,26 +1,10 @@
-<!-- set dummy classes in case third party scripts cant load to avoid errors -->
-<script>
-  window.Popper = {
-    createPopper: () => {
-      destroy: () => null;
-    },
-  };
-  class Mark {
-    unmark() {
-      return null;
-    }
-    mark() {
-      return null;
-    }
-  }
-</script>
-
 <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
 
 <!-- site-wide javascript scripts -->
-<script src="{{ 'js/anchors.js' | relative_url }}"></script>
-<script src="{{ 'js/fetch-tags.js' | relative_url }}"></script>
-<script src="{{ 'js/item-search.js' | relative_url }}"></script>
-<script src="{{ 'js/tooltips.js' | relative_url }}"></script>
+{% for file in site.static_files %}
+  {%- if file.path contains "/js" -%}
+    <script src="{{ file.path | relative_url }}"></script>
+  {% endif -%}
+{% endfor %}
