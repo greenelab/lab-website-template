@@ -1,0 +1,55 @@
+body {
+  --rotateX: 65deg;
+  --rotateZ: 0deg;
+
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%) scale(1.25);
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  body {
+    transform: translate(-50%, -45%) scale(1);
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    transform: translate(-50%, -47.5%) scale(0.5);
+  }
+}
+
+#map {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  perspective: 1000px;
+}
+
+#view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rotateX)) rotateZ(var(--rotateZ));
+  transition: transform 0.1s linear;
+}
+
+#view > * {
+  position: absolute;
+  overflow: visible;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

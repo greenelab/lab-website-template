@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -500 1000 1000">
+  <style>
+    .grid {
+      fill: none;
+      stroke-width: 5;
+      opacity: 0;
+      transform: scale(0.7071067811865475) rotate(45deg);
+      animation: fade 1s linear forwards;
+    }
+  </style>
+
+  <defs>
+    <radialGradient id="gradient" r="50%">
+      <stop offset="0%" style="stop-color: #000000; stop-opacity: 0.1" />
+      <stop offset="100%" style="stop-color: #000000; stop-opacity: 0" />
+    </radialGradient>
+  </defs>
+
+  <path class="grid" stroke="url(#gradient)" d="" />
+
+  <script>
+    {% include map/grid.js %}
+  </script>
+</svg>

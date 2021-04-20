@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -500 1000 1000">
+  <style>
+    .line {
+      fill: none;
+      stroke-width: 5;
+      stroke-linejoin: round;
+      opacity: 0;
+      animation: fade 1s linear forwards;
+      animation-delay: 0.5s;
+    }
+
+  .red {
+    stroke: #e91e63;
+  }
+  .yellow {
+    stroke: #ffc107;
+  }
+  .green {
+    stroke: #009688;
+  }
+  .blue {
+    stroke: #2196f3;
+  }
+  .purple {
+    stroke: #9c27b0;
+  }
+</style>
+
+<path
+  class="line red"
+  d="
+      M -1500 -200
+      L -200 -200
+      L -100 -100
+      L 100 100
+      L 1000 1000
+    "
+/>
+
+<path
+  class="line purple"
+  d="
+    M -700 500
+    L -200 0
+    L -100 -100
+    L -100 -1500
+  "
+/>
+
+<path
+  class="line green"
+  d="
+    M -100 -100
+    L 0 -200
+    L 0 -1500
+  "
+/>
+
+<path
+  class="line yellow"
+  d="
+    M -1000 1000
+    L 0 0
+    L 200 -200
+    L 1500 -200
+  "
+/>
+
+<path
+  class="line blue"
+  d="
+    M -900 1000
+    L 0 100
+    L 0 -100
+    L 1400 -1500
+  "
+/>
+
+<path
+  class="line red"
+  d="
+    M 1000 800
+    L 200 0
+    L 200 -1500
+  "
+/>
+</svg>

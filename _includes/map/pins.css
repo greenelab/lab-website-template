@@ -1,0 +1,60 @@
+.pin {
+  width: 100px;
+  transform-origin: top left;
+  transform: rotateZ(calc(-1 * var(--rotateZ)))
+    rotateX(calc(-1 * var(--rotateX))) translate(-50%, -100%) !important;
+  transition: transform 0.1s linear;
+}
+
+#fish {
+  left: 300px;
+  top: 500px;
+}
+#virus {
+  left: 400px;
+  top: 400px;
+}
+#bird {
+  left: 500px;
+  top: 500px;
+}
+#brain {
+  left: 600px;
+  top: 600px;
+}
+#frog {
+  left: 700px;
+  top: 500px;
+}
+
+.drop {
+  opacity: 0;
+  animation: drop 0.5s ease forwards;
+}
+
+#fish .drop {
+  animation-delay: 2.5s;
+}
+#virus .drop {
+  animation-delay: 2.75s;
+}
+#bird .drop {
+  animation-delay: 3s;
+}
+#brain .drop {
+  animation-delay: 3.25s;
+}
+#frog .drop {
+  animation-delay: 3.5s;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
