@@ -1,8 +1,10 @@
-{%- assign type = site.data.types.roles[include.type] -%}
+{%- assign type = site.data.roles[include.type] -%}
 
 {% if type -%}
 
   {%- assign icon = type.icon -%}
+
+  {%- assign description = include.description -%}
   
   {%- if include.text -%}
     {%- assign text = type.text -%}
@@ -14,6 +16,10 @@
     <i class="{{ icon }}"></i>
     {%- if text -%}
       <span class="role_text">{{ text }}</span>
+      {%- if description -%}
+        <br />
+        <span>{{ description }}</span>
+      {%- endif -%}
     {%- endif -%}
   </span>
 

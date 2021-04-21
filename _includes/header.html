@@ -11,6 +11,11 @@
   {%- assign dark = true -%}
 {%- endif -%}
 
+{%- assign title = site.logo-text -%}
+{%- if title == nil -%}
+  {%- assign title = site.title -%}
+{%- endif -%}
+
 <header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <a
     href="{{ '/' | relative_url }}"
@@ -18,7 +23,9 @@
     data-tooltip="Home"
   >
     <img src="{{ site.logo | relative_url }}" class="logo" />
-    <span class="logo_text">{{ site.title }}</span>
+    {% if title and title != "" %}
+      <span class="logo_text">{{ title }}</span>
+    {% endif %}
   </a>
   <nav class="nav_row">
     {%- assign pages = site.pages | sort: "nav.order" -%}

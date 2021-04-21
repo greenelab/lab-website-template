@@ -8,10 +8,10 @@
 .role {
   display: inline-block;
   color: $gray-500;
+  font-family: $sans;
+  font-weight: $medium;
 
   .role_text {
     margin-left: 10px;
-    font-family: $sans;
-    font-weight: $medium;
   }
 }

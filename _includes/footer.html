@@ -19,7 +19,9 @@
       {%- include link.html type=key icon="" tooltip="" link=value -%}
     {%- endfor -%}
   </div>
-  <!-- <div class="footer_row">
-    &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }}
-  </div> -->
+  <!--
+  <div class="footer_row">
+    &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+  </div>
+  -->
 </footer>

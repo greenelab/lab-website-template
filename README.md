@@ -34,7 +34,6 @@ How's our documentation?
 
 more coming soon...
 
-
 ## Features
 
 - **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
@@ -46,13 +45,14 @@ more coming soon...
   - figures with captions
   - image galleries
   - multi-size cards with image and text
+  - citations
   - ...[[and more | Components]]!
 - A **home page**, where you can highlight the most important things that make your lab special
 - A **research page**, with a sorted, searchable list of all your published works
-- A **blog page**, with a sorted, grouped, tagged list of all your posts
-- A **resources page**, where you can show off your software, datasets, or other useful things
-- Individual **team member pages** with bios, assignable roles, and social media links
+- A **tools page**, where you can show off your software, datasets, or other useful things
 - A **team** page, compiled automatically from individual members
+- Individual **team member pages** with bios, assignable roles, and social media links
+- A **blog page**, with a sorted, grouped, tagged list of all your posts
 
 ## Documentation
 
@@ -66,8 +66,8 @@ more coming soon...
 
 [🧱 Components](https://github.com/greenelab/lab-website-template/wiki/Components)
 
-[🧱 Extra Components](https://github.com/greenelab/lab-website-template/wiki/Extra-Components)
-
 [🧠 Background Knowledge](https://github.com/greenelab/lab-website-template/wiki/Background-Knowledge)
+
+[💡 Tips](https://github.com/greenelab/lab-website-template/wiki/Tips)
 
 [❓ Support](https://github.com/greenelab/lab-website-template/wiki/Support)
