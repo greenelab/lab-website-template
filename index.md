@@ -25,13 +25,11 @@ Spend less time reinventing the wheel, and more time running your lab.
 %}
 {:.center}
 
-<!-- section break -->
-
-<!-- section full -->
+{% include section.html full=true %}
 
 {% include banner.html image="images/banner.jpg" %}
 
-<!-- section break -->
+{% include section.html %}
 
 # Highlights
 

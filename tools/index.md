@@ -14,19 +14,19 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {% include search-info.html smart-hide=true %}
 
-<!-- section break -->
+{% include section.html %}
 
 ## Featured
 
 {% include list.html component="card" data="tools" filters="group: featured" %}
 
-<!-- section break -->
+{% include section.html %}
 
 ## More
 
 {% include list.html component="card" data="tools" filters="group: more" %}
 
-<!-- section break -->
+{% include section.html %}
 
 ## Legacy
 

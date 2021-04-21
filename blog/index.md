@@ -11,7 +11,7 @@ nav:
 
 {% include list.html data="posts" component="post-excerpt" %}
 
-<!-- section break -->
+{% include section.html %}
 
 ## News
 
