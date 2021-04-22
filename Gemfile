@@ -1,19 +1,20 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+group :jekyll_plugins do
+  # definitely useful plugins
+  gem "jekyll-redirect-from"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
 
-# definitely useful plugins
-gem "jekyll-redirect-from"
-gem "jekyll-feed"
-gem "jekyll-sitemap"
-
-# potentially useful plugins
-# gem "jekyll-github-metadata"
-# gem 'jekyll-avatar'
-# gem 'jekyll-gist'
-# gem 'jekyll-mentions'
-# gem 'jekyll-relative-links'
-# gem 'jemoji'
+  # potentially useful plugins
+  # gem "jekyll-github-metadata"
+  # gem 'jekyll-avatar'
+  # gem 'jekyll-gist'
+  # gem 'jekyll-mentions'
+  # gem 'jekyll-relative-links'
+  # gem 'jemoji'
+end
 
 # Windows stuff
 platforms :mingw, :x64_mingw, :mswin, :jruby do
