@@ -13,7 +13,10 @@
   {%- endif -%}
 
   <span class="role" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}>
-    <i class="{{ icon }}"></i>
+    {%- if icon -%}
+      <i class="{{ icon }}"></i>
+    {%- endif -%}
+
     {%- if text -%}
       <span class="role_text">{{ text }}</span>
       {%- if description -%}

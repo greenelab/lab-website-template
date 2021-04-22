@@ -50,7 +50,7 @@
     {%- if rich -%}
       {%- include tags.html tags=tags repo=repo -%}
       <div class="citation_links">
-        {%- for extra in include.extra-links -%}
+        {%- for extra in extra-links -%}
           {%- assign type = extra.type | default: "" -%}
           {%- assign icon = extra.icon | default: "" -%}
           {%- assign text = extra.text | default: "" -%}
