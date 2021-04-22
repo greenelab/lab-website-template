@@ -12,18 +12,20 @@
     {%- assign tooltip = type.text -%}
   {%- endif -%}
 
-  <span class="role" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}>
+  <div class="role" {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}>
     {%- if icon -%}
       <i class="{{ icon }}"></i>
     {%- endif -%}
 
     {%- if text -%}
       <span class="role_text">{{ text }}</span>
-      {%- if description -%}
-        <br />
-        <span>{{ description }}</span>
-      {%- endif -%}
     {%- endif -%}
-  </span>
+
+    {%- if description -%}
+      <span class="role_description">{{ description }}</span>
+    {%- endif -%}
+  </div>
+
+  
 
 {%- endif %}

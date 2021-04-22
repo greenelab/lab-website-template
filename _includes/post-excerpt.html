@@ -2,8 +2,13 @@
   <p>
     <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
   </p>
-  {% include post-info.html post=include %}
-  {% include tags.html tags=include.tags link="blog" %}
+  {%
+    include post-info.html
+    author=include.author
+    member=include.member
+    date=include.date
+    tags=include.tags
+  %}
   <p>
     {{ include.content | strip_html | truncate: 500 }}
   </p>

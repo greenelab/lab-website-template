@@ -7,6 +7,8 @@ nav:
 
 # <i class="fas fa-feather-alt"></i>Blog
 
+{% include section.html %}
+
 {% include search-info.html smart-hide=true %}
 
 {% include list.html data="posts" component="post-excerpt" %}
