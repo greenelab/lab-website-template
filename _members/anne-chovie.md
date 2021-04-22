@@ -1,13 +1,15 @@
 ---
-title: Anne Chovie
+name: Anne Chovie
 image: images/member.jpg
+description: Bark Ops Engineer
 role: programmer
 aliases:
   - A. Chovie
   - A Chovie
-website: annechovie.com
-email: anne@chovie.com
-github: anne-chovie
+links:
+  home-page: annechovie.com
+  email: anne@chovie.com
+  github: anne-chovie
 ---
 
 Anne is a good dog.

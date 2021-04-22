@@ -9,14 +9,16 @@
   position: relative;
   @include inline-flex-center;
   flex-direction: column;
-  width: 150px;
+  width: var(--width);
   margin: 20px;
+  text-align: center;
+  line-height: $spacing;
   text-decoration: none;
 
   .portrait_image {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: var(--width);
+    height: var(--width);
     border-radius: 999px;
     overflow: hidden;
     box-shadow: $shadow;
@@ -28,20 +30,17 @@
     }
   }
 
-  &[data-mini="true"] {
-    width: 100px;
-    margin: 10px;
-
-    .portrait_image {
-      width: 100px;
-      height: 100px;
-    }
+  .portrait_name,
+  .portrait_description {
+    font-family: $sans;
   }
 
   .portrait_name {
+    font-weight: $medium;
+  }
+
+  .portrait_image + span {
     margin-top: 10px;
-    text-align: center;
-    line-height: $spacing - 0.3;
   }
 
   .role {
@@ -49,22 +48,14 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: calc(0.14 * var(--width));
+    top: calc(0.14 * var(--width));
     margin: 0;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background: $white;
     color: $gray-500;
     border-radius: 999px;
-  }
-
-  &[data-mini="true"] {
-    .role {
-      left: 0;
-      top: 0;
-      width: 30px;
-      height: 30px;
-    }
+    transform: translate(-50%, -50%);
   }
 }

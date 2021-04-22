@@ -22,8 +22,8 @@ code.highlighter-rouge {
 
 // code block
 div.highlighter-rouge {
-  margin: 40px 0;
-  @include trim-margins;
+  @include big-margins;
+  @include trim-v-margins;
   background: $gray-500;
   overflow-x: auto;
   overflow-y: auto;

@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 debug.log
+start.sh

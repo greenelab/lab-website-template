@@ -1,46 +1,47 @@
-- title: Cool Software
+- name: Cool Software
+  group: featured
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tags: extra tag A, extra tag B
+  repo: greenelab/lab-website-template
+
+- name: Cool Dataset
   group: featured
   image: images/photo.jpg
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
 
-- title: Cool Dataset
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-
-- title: Cool Tool
+- name: Cool Tool
   group: more
   image: images/photo.jpg
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
 
-- title: Cool Tutorial
+- name: Cool Tutorial
   group: more
   image: images/photo.jpg
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
 
-- title: Cool Package
+- name: Cool Package
   group: more
   image: images/photo.jpg
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
 
-- title: Cool Web App
+- name: Cool Web App
   group: legacy
   image: images/photo.jpg
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
 
-- title: Cool Web Server
+- name: Cool Web Server
   group: legacy
   image: images/photo.jpg
   link: https://github.com/

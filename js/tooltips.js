@@ -6,14 +6,15 @@
 // specify custom delay (in ms) in data-delay attribute
 
 const defaultPlacement = "top";
-const defaultDelay = 100;
+const defaultDelay = 200;
 
 // create tooltip listener on any element with a data-tooltip attribute
 const createTooltips = () => {
-  // create tooltip element
-  const tooltip = document.createElement("div");
-  tooltip.classList.add("tooltip");
-  document.body.append(tooltip);
+  // make sure Popper library available
+  if (typeof Popper === "undefined") return;
+
+  // get tooltip element
+  const tooltip = document.querySelector(".tooltip");
 
   // init popper.js library
   let popper = null;
@@ -23,6 +24,7 @@ const createTooltips = () => {
       // https://github.com/popperjs/popper-core/issues/1138
       { name: "computeStyles", options: { adaptive: false } },
       { name: "offset", options: { offset: [0, 10] } },
+      { name: "arrow", options: { padding: 10 } },
     ],
   });
 
@@ -39,7 +41,8 @@ const createTooltips = () => {
     if (popper) popper.destroy();
     popper = Popper.createPopper(target, tooltip, options(target.dataset));
     tooltip.dataset.show = true;
-    tooltip.innerHTML = target.dataset.tooltip;
+    tooltip.querySelector(".tooltip_content").innerHTML =
+      target.dataset.tooltip;
   };
 
   // close tooltip

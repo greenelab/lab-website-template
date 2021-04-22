@@ -6,13 +6,13 @@
 @import "mixins";
 
 ul {
-  @include block-margins;
-  @include trim-margins;
+  @include margins;
+  @include trim-v-margins;
   padding-left: 20px;
   list-style-type: square;
 
   li {
     margin: 10px 0;
-    @include trim-margins;
+    @include trim-v-margins;
   }
 }

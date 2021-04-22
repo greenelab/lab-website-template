@@ -1,0 +1,19 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+.post_excerpt {
+  @include margins;
+  @include trim-v-margins;
+
+  & > *:first-child {
+    font-weight: $semi-bold;
+  }
+
+  & > div {
+    text-align: left;
+  }
+}

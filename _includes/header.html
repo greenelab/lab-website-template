@@ -1,29 +1,38 @@
-{% assign background = page.header | default: site.header | default: "none" %}
-{% if background == "none" %}
-{% assign background = nil %}
-{% endif %}
+{%- assign background = page.header | default: site.header | default: "none" -%}
+{%- if background == "none" -%}
+  {%- assign background = nil -%}
+{%- endif -%}
 
-{% assign dark = page.header-dark %}
-{% if dark == nil %}
-{% assign dark = site.header-dark %}
-{% endif %}
-{% if dark == nil %}
-{% assign dark = true %}
-{% endif %}
+{%- assign dark = page.header-dark -%}
+{%- if dark == nil -%}
+  {%- assign dark = site.header-dark -%}
+{%- endif -%}
+{%- if dark == nil -%}
+  {%- assign dark = true -%}
+{%- endif -%}
+
+{%- assign title = site.logo-text -%}
+{%- if title == nil -%}
+  {%- assign title = site.title -%}
+{%- endif -%}
 
 <header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <a
     href="{{ '/' | relative_url }}"
     class="logo_row"
     data-tooltip="Home"
-    data-placement="bottom"
-    data-delay="400"
   >
     <img src="{{ site.logo | relative_url }}" class="logo" />
-    <span class="logo_text">{{ site.title }}</span>
+    {% if title and title != "" %}
+      <span class="logo_text">{{ title }}</span>
+    {% endif %}
   </a>
   <nav class="nav_row">
-    {% for nav in site.nav %} {% include nav-link.html link=nav.link
-    tooltip=nav.tooltip %} {% endfor %}
+    {%- assign pages = site.pages | sort: "nav.order" -%}
+    {%- for page in pages -%}
+      {%- if page.nav -%}
+        {%- include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir -%}
+      {%- endif -%}
+    {%- endfor -%}
   </nav>
 </header>

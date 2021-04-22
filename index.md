@@ -6,10 +6,30 @@ title: Home
 
 [Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
 Spend less time reinventing the wheel, and more time running your lab.
+  
+{%
+  include link.html
+  type="github"
+  icon=""
+  text="See the template on GitHub"
+  link="greenelab/lab-website-template"
+  style="button"
+%}
+{%
+  include link.html
+  type="docs"
+  icon=""
+  text="See the documentation"
+  link="https://github.com/greenelab/lab-website-template/wiki"
+  style="button"
+%}
+{:.center}
 
-{% include big-link.html icon="fab fa-github" text="See the template on GitHub" link="https://github.com/greenelab/lab-website-template" %}{% include big-link.html icon="fas fa-book" text="See the documentation" link="https://github.com/greenelab/lab-website-template/wiki" %}{:.center}
+{% include section.html full=true %}
 
-<!-- section break -->
+{% include banner.html image="images/banner.jpg" %}
+
+{% include section.html %}
 
 # Highlights
 
@@ -25,7 +45,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   include feature.html
   image="images/photo.jpg"
   link="research"
-  title="Our Research"
+  headline="Our Research"
   text=text
 %}
 
@@ -41,7 +61,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
   include feature.html
   image="images/photo.jpg"
   link="resources"
-  title="Our Resources"
+  headline="Our Resources"
   text=text
 %}
 
@@ -56,12 +76,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="Our Team"
+  headline="Our Team"
   text=text
 %}
-
-<!-- section break -->
-
-<!-- section full -->
-
-{% include banner.html image="images/banner.jpg" %}

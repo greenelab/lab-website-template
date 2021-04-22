@@ -6,8 +6,8 @@
 @import "mixins";
 
 p {
-  @include block-margins;
-  @include trim-margins;
+  @include margins;
+  @include trim-v-margins;
   text-align: justify;
   line-height: $spacing + 0.3;
 }

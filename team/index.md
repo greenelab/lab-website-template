@@ -1,5 +1,8 @@
 ---
 title: Team
+nav:
+  order: 3
+  tooltip: About our team
 ---
 
 # <i class="fas fa-users"></i>Team
@@ -9,33 +12,43 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<!-- section break -->
+{% include section.html %}
 
-{% capture contents %}
-{% include team-list.html role="pi" %}
-{% include team-list.html role="phd" %}
-{% include team-list.html role="programmer" %}
-{% endcapture %}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: pi"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: phd"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: programmer"
+%}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
-
-<!-- section dark -->
-<!-- section background images/banner.jpg -->
+{% include section.html background="images/banner.jpg" dark=true%}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
-  include big-link.html
+  include link.html
   icon="fas fa-hands-helping"
   text="Join the Team"
   link="join"
-  button=true
-%}{:.center}
+  style="button"
+%}
+{:.center}
 
-<!-- section break -->
+{% include section.html %}
 
 ## Funding
 
