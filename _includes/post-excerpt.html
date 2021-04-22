@@ -6,8 +6,8 @@
     include post-info.html
     author=include.author
     member=include.member
-    date=include.date
     tags=include.tags
+    date=include.date
   %}
   <p>
     {{ include.content | strip_html | truncate: 500 }}
