@@ -28,7 +28,7 @@
     {% endif %}
   </a>
   <nav class="nav_row">
-    {%- assign pages = site.pages | sort: "nav.order" -%}
+    {%- assign pages = site.pages | where_exp: "page", "page.nav" | sort: "nav.order" -%}
     {%- for page in pages -%}
       {%- if page.nav -%}
         {%- include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir -%}

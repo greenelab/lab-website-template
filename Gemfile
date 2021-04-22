@@ -1,13 +1,18 @@
 source "https://rubygems.org"
 
+# jekyll
 gem "jekyll"
+
+# GitHub Pages (optional)
+gem 'github-pages', group: :jekyll_plugins # makes Jekyll build environment more closely match that of GitHub Pages
+
+# plugins
 group :jekyll_plugins do
-  # definitely useful plugins
   gem "jekyll-redirect-from"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
 
-  # potentially useful plugins
+  # other potentially useful plugins
   # gem "jekyll-github-metadata"
   # gem 'jekyll-avatar'
   # gem 'jekyll-gist'
