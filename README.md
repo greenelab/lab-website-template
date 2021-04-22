@@ -46,7 +46,7 @@ more coming soon...
   - image galleries
   - multi-size cards with image and text
   - citations
-  - ...[[and more | Components]]!
+  - ...[and more](https://github.com/greenelab/lab-website-template/wiki/Components)!
 - A **home page**, where you can highlight the most important things that make your lab special
 - A **research page**, with a sorted, searchable list of all your published works
 - A **tools page**, where you can show off your software, datasets, or other useful things
