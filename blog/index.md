@@ -9,7 +9,7 @@ nav:
 
 {% include section.html %}
 
-{% include search-info.html smart-hide=true %}
+{% include search-info.html %}
 
 {% include list.html data="posts" component="post-excerpt" %}
 

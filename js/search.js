@@ -8,6 +8,8 @@ const componentQuery = ".card, .citation, .post_excerpt";
 const boxQuery = ".search_box";
 // results info element
 const infoQuery = ".search_info";
+// show info only if some items filtered or tags searched
+const smartInfo = true;
 
 // normalize tag string to lower-case, single-space-separated, trimmed, etc
 const cleanTag = (tag) =>
@@ -128,24 +130,26 @@ const updateBox = (query) => {
 
 // update search results info
 const updateInfo = (x, n, t) => {
-  const infos = document.querySelectorAll(infoQuery);
-  for (const info of infos) {
-    // reset to blank
-    info.innerHTML = "";
+  // hide all info boxes
+  window.trueHide(infoQuery);
 
-    // smart hide
-    const hide = Boolean(info.getAttribute("data-smart-hide"));
-    if (hide) info.dataset.hide = !(x < n || t.length);
-    else info.dataset.hide = false;
+  // smart hide/show info
+  if (smartInfo && !(x < n || t.length)) return;
 
-    // info template
-    info.innerHTML += `Showing ${x.toLocaleString()} of ${n.toLocaleString()}<br>`;
-    if (t.length) {
-      const s = t.length > 1 ? "s" : "";
-      t = t.map((tag) => `"${tag}"`).join(", ");
-      info.innerHTML += `With tag${s} ${t}`;
-    }
+  // show
+  window.trueShow(infoQuery);
+
+  // info template
+  let info = "";
+  info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()}<br>`;
+  if (t.length) {
+    const s = t.length > 1 ? "s" : "";
+    t = t.map((tag) => `"${tag}"`).join(", ");
+    info += `With tag${s} ${t}`;
   }
+
+  // set info HTML string
+  document.querySelectorAll(infoQuery).forEach((el) => (el.innerHTML = info));
 };
 
 // util func to debounce search
