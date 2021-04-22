@@ -60,3 +60,6 @@ plugins:
   # - jekyll-mentions
   # - jekyll-relative-links
   # - jemoji
+
+# jekyll theme
+theme: null
