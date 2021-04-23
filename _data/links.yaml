@@ -59,7 +59,7 @@ google-scholar:
 github:
   icon: fab fa-github
   text: GitHub
-  tooltip: Google Scholar
+  tooltip: GitHub
   link: https://github.com/$LINK
 
 twitter:
