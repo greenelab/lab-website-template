@@ -10,7 +10,7 @@
   @include inline-flex-center;
   flex-direction: column;
   width: var(--width);
-  margin: 20px;
+  margin: calc(20 * var(--width) / 150);
   text-align: center;
   line-height: $spacing;
   text-decoration: none;
@@ -33,6 +33,7 @@
   .portrait_name,
   .portrait_description {
     font-family: $sans;
+    font-size: 0.9rem;
   }
 
   .portrait_name {
@@ -48,15 +49,15 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: calc(0.14 * var(--width));
-    top: calc(0.14 * var(--width));
+    left: calc(0.13 * var(--width));
+    top: calc(0.13 * var(--width));
     margin: 0;
-    width: 30px;
-    height: 30px;
+    width: calc(0.25 * var(--width));
+    height: calc(0.25 * var(--width));
+    font-size: calc(16 * var(--width) / 150);
     background: $white;
     color: $gray-500;
     border-radius: 999px;
-    font-size: 1em;
     transform: translate(-50%, -50%);
   }
 }
