@@ -1,6 +1,13 @@
 {%- assign emptyarray = "" | split: "," -%}
 {%- assign id = include.id | default: "" -%}
-{%- assign citation = site.data.citations | default: emptyarray | find: "id", include.id -%}
+{%- assign citations = site.data.citations | default: emptyarray -%} 
+
+{%- assign citation = nil -%}
+{%- for c in citations -%}
+  {%- if c.id == id -%}
+    {%- assign citation = c -%}
+  {%- endif -%}
+{%- endfor -%}
 
 {%- assign link = citation.link | default: "" -%}
 {%- assign image = citation.image | default: "" -%}
