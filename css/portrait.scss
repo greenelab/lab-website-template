@@ -51,11 +51,12 @@
     left: calc(0.14 * var(--width));
     top: calc(0.14 * var(--width));
     margin: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: $white;
     color: $gray-500;
     border-radius: 999px;
+    font-size: 1em;
     transform: translate(-50%, -50%);
   }
 }
