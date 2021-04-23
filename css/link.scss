@@ -16,12 +16,13 @@ a:hover {
 
 .link {
   @include inline-flex-center;
+  max-width: 100%;
   padding: 10px;
   font-size: 0.9rem;
   text-decoration: none;
   vertical-align: bottom;
   transition: background $fast, color $fast, opacity $fast;
-
+  
   span {
     text-align: center;
     font-family: $sans;
@@ -35,6 +36,8 @@ a:hover {
   }
 
   &[data-style="button"] {
+    max-width: calc(100% - 10px - 10px);
+    min-height: 40px;
     margin: 10px;
     padding: 7.5px 15px;
     border-radius: 5px;

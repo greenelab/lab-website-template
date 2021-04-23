@@ -36,6 +36,12 @@ address:
   tooltip: Address
   link: $LINK
 
+search:
+  icon: fas fa-search
+  text: Search
+  tooltip: Search
+  link: $LINK
+
 # social media
 
 orcid:
