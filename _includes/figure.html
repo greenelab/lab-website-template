@@ -32,6 +32,14 @@
     max-height: {{ height }};
   {%- endcapture -%}
 
+{%- else -%}
+
+  {%- capture link -%}
+  {%- endcapture -%}
+
+  {%- capture img -%}
+  {%- endcapture -%}
+
 {%- endif -%}
 
 <figure class="figure">

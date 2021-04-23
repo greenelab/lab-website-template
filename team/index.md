@@ -57,7 +57,7 @@ Our work is made possible by funding from several organizations.
 
 {%
   include gallery.html
-  fit="false"
+  style="square"
 
   image1="images/photo.jpg"
   link1="https://nasa.gov/"

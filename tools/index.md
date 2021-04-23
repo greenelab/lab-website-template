@@ -24,10 +24,4 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 ## More
 
-{% include list.html component="card" data="tools" filters="group: more" %}
-
-{% include section.html %}
-
-## Legacy
-
-{% include list.html component="card" data="tools" filters="group: legacy" style="small" %}
+{% include list.html component="card" data="tools" filters="group: more" style="small" %}

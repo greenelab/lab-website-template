@@ -1,9 +1,9 @@
 {%- assign tags = include.tags | join: "," | split: "," -%}
 {%- assign repo = include.repo | strip -%}
-{%- assign link = include.link | default: page.dir | absolute_url -%}
 {%- if repo == "" -%}
   {%- assign repo = nil -%}
 {%- endif -%}
+{%- assign link = include.link | default: page.dir | absolute_url -%}
 
 {%- if tags.size > 0 or repo -%}
   <div class="tags" {% if repo %}data-repo="{{ repo }}"{% endif %} {% if link %}data-link="{{ link }}"{% endif %}>

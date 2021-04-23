@@ -8,7 +8,7 @@
   {%- endif -%}
 {%- endfor -%}
 
-<div class="gallery" data-fit="{{ include.fit | default: true }}" data-number="{{ max }}">
+<div class="gallery" data-style="{{ include.style }}" data-number="{{ max }}">
   {%- for i in (1..100) -%}
 
     {%- assign image = "image" | append: i -%}
