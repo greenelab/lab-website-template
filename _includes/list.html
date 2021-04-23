@@ -15,17 +15,18 @@
   {%- endif -%}
 {%- endfor -%}
 
-{%- assign data = data | sort: "date" | reverse -%}
-
 {%- assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse -%}
 
 {%- for year in years -%}
 
+{%- assign items = year.items -%}
+
 {%- if years.size > 1 -%}
   <h3 id="{{ year.name }}">{{ year.name }}</h3>
+  {%- assign items = items | sort: "date" | reverse -%}
 {%- endif -%}
 
-{%- for d in year.items -%}
+{%- for d in items -%}
 
   {%- assign link = d.link | default: d.url -%}
   {%- assign style = d.style | default: include.style -%}

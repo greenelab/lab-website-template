@@ -3,9 +3,6 @@ source "https://rubygems.org"
 # jekyll
 gem "jekyll"
 
-# GitHub Pages (optional)
-gem 'github-pages', group: :jekyll_plugins # makes Jekyll build environment more closely match that of GitHub Pages
-
 # plugins
 group :jekyll_plugins do
   gem "jekyll-redirect-from"

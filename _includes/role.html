@@ -6,6 +6,8 @@
 
   {%- assign description = include.description -%}
   
+  {%- assign text = nil -%}
+  {%- assign tooltip = nil -%}
   {%- if include.text -%}
     {%- assign text = type.text -%}
   {%- else -%}

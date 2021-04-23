@@ -12,6 +12,7 @@
 {%- assign repo = citation.repo | default: "" -%}
 {%- assign extra-links = citation.extra-links | default: emptyarray -%}
 
+{%- assign rich = false -%}
 {%- if include.style == "rich" -%}
   {%- assign rich = true -%}
 {%- endif -%}
