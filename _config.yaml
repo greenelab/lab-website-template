@@ -1,35 +1,21 @@
-# site settings
-title: TIS Lab
-logo: images/logo.svg
+### basic settings
 
-# page defaults
+# site properties and page defaults
+title: TIS Lab
 description: Translational and Integrative Sciences Lab
+logo: images/logo.svg
 header: images/bg-dna.jpg
 footer: images/bg-dna.jpg
-
-# site nav bar
-nav:
-  - link: research
-    tooltip: Published works
-  - link: tools
-    tooltip: Tools, datasets, and more
-  - link: team
-    tooltip: About our team
-  - link: education
-    tooltip: Teaching and educational materials
-  - link: faq
-    tooltip: Frequently asked questions
-  - link: contact
-    tooltip: Email, address, and location
-
-# site social media
-email: info@tislabs.org
-google-scholar: Melissa Haendel
-github: tis-lab
-twitter: ontowonka
-
-# base directory where site is hosted
 baseurl: /tislab.org-new
+
+# site social media and other links
+links:
+  email: info@tislabs.org
+  google-scholar: Melissa Haendel
+  github: tis-lab
+  twitter: ontowonka
+
+### advanced settings
 
 # default front matter parameters for markdown files
 defaults:
@@ -61,7 +47,17 @@ sass:
 # syntax highlighting
 highlighter: rouge
 
-# build settings
+# plugins
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  # - jekyll-github-metadata
+  # - jekyll-avatar
+  # - jekyll-gist
+  # - jekyll-mentions
+  # - jekyll-relative-links
+  # - jemoji
+
+# jekyll theme
+theme: null

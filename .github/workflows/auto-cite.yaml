@@ -1,0 +1,33 @@
+name: Auto Cite
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_data/sources.yaml"
+  pull_request:
+    paths:
+      - "_data/sources.yaml"
+
+jobs:
+  update_research:
+    name: Auto Cite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install Manubot
+        run: pip install --upgrade manubot
+      - name: Build updated citations
+        run: python auto-cite.py
+      - name: Commit updated citations
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: "_data/citations.yaml"
+          commit_message: "Generate citations"
+          push_options: --force

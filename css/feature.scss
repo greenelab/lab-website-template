@@ -7,9 +7,8 @@
 
 .feature {
   @include flex-center;
-  align-items: flex-start;
-  margin: 40px 0;
-  @include trim-margins;
+  @include big-margins;
+  @include trim-v-margins;
 
   .feature_image {
     width: $page * 0.4;
@@ -35,7 +34,7 @@
     }
   }
 
-  .feature_title {
+  .feature_headline {
     // color: $dark-accent;
     font-family: $sans;
     font-weight: $medium;

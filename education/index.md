@@ -1,10 +1,13 @@
 ---
 title: Education
+nav:
+  order: 4
+  tooltip: Teaching and educational materials
 ---
 
 # <i class="fas fa-graduation-cap"></i>Education
 
-<!-- section break -->
+{% include section.html %}
 
 ## Materials
 
@@ -26,7 +29,7 @@ Feedback is welcome via our [GitHub tracker](https://github.com/OHSUBD2K/BDK14-O
 
 **Funding:** The project was funded in part by the BD2K OER NIH grant # 1R25GM114820.
 
-<!-- section break -->
+{% include section.html %}
 
 ## Opportunities
 
@@ -41,7 +44,7 @@ Join us to write your first line of code, learn new data management and analysis
 
 **Funding:** Sponsored by the OHSU Library and OHSU DMICE.
 
-<!-- section break -->
+{% include section.html %}
 
 ## Past Classes, Workshops and Training
 

@@ -41,19 +41,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    .nav_link {
-      display: inline-block;
-      padding: 10px;
-      text-align: center;
-      white-space: nowrap;
-      transition: opacity $fast;
-    }
-
-    &:hover .nav_link {
+    &:hover .link {
       opacity: 0.25;
     }
 
-    & .nav_link:hover {
+    .link:hover {
       opacity: 1;
     }
   }
@@ -86,7 +78,7 @@ header {
       justify-content: center;
       width: 100%;
 
-      .nav_link {
+      .link {
         width: 100%;
       }
     }

@@ -1,0 +1,151 @@
+# general
+
+link:
+  icon: fas fa-globe
+  text: Link
+  tooltip: Link
+  link: $LINK
+
+external:
+  icon: fas fa-external-link-alt
+  text: External Link
+  tooltip: External link
+  link: $LINK
+
+home-page:
+  icon: fas fa-home
+  text: Home Page
+  tooltip: Home page
+  link: $LINK
+
+email:
+  icon: fas fa-envelope
+  text: Email
+  tooltip: Email
+  link: mailto:$LINK
+
+phone:
+  icon: fas fa-phone
+  text: Phone Number
+  tooltip: Phone number
+  link: tel:$LINK
+
+address:
+  icon: fas fa-map-marked-alt
+  text: Address
+  tooltip: Address
+  link: $LINK
+
+search:
+  icon: fas fa-search
+  text: Search
+  tooltip: Search
+  link: $LINK
+
+# social media
+
+orcid:
+  icon: orcid-logo.svg
+  text: ORCID
+  tooltip: ORCID
+  link: https://orcid.org/$LINK
+
+google-scholar:
+  icon: fab fa-google
+  text: Google Scholar
+  tooltip: Google Scholar
+  link: https://scholar.google.com/citations?hl=en&user=$LINK
+
+github:
+  icon: fab fa-github
+  text: GitHub
+  tooltip: GitHub
+  link: https://github.com/$LINK
+
+twitter:
+  icon: fab fa-twitter
+  text: Twitter
+  tooltip: Twitter
+  link: https://twitter.com/$LINK
+
+facebook:
+  icon: fab fa-facebook
+  text: Facebook
+  tooltip: Facebook
+  link: https://facebook.com/$LINK
+
+instagram:
+  icon: fab fa-instagram
+  text: Instagram
+  tooltip: Instagram
+  link: https://instagram.com/$LINK
+
+youtube:
+  icon: fab fa-youtube
+  text: YouTube
+  tooltip: YouTube
+  link: https://youtube.com/$LINK
+
+linkedin:
+  icon: fab fa-linkedin
+  text: LinkedIn
+  tooltip: LinkedIn
+  link: https://www.linkedin.com/in/$LINK
+
+# publications
+
+journal:
+  icon: far fa-newspaper
+  text: Journal
+  tooltip: Journal
+  link: $LINK
+
+preprint:
+  icon: far fa-eye
+  text: Preprint
+  tooltip: Preprint
+  link: $LINK
+
+manubot:
+  icon: manubot-logo.svg
+  text: Manubot
+  tooltip: Manubot
+  link: $LINK
+
+# software
+
+docs:
+  icon: fas fa-book
+  text: Docs
+  tooltip: Documentation
+  link: $LINK
+
+source:
+  icon: fas fa-code
+  text: Source
+  tooltip: Source code
+  link: $LINK
+
+server:
+  icon: fas fa-server
+  text: Server
+  tooltip: Server
+  link: $LINK
+
+app:
+  icon: fas fa-hand-pointer
+  text: App
+  tooltip: App
+  link: $LINK
+
+data:
+  icon: fas fa-database
+  text: Data
+  tooltip: Data
+  link: $LINK
+
+package:
+  icon: fas fa-box
+  text: Package
+  tooltip: Package
+  link: $LINK

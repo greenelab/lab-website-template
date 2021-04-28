@@ -1,5 +1,8 @@
 ---
 title: Contact
+nav:
+  order: 6
+  tooltip: Email, address, and location
 ---
 
 # <i class="fas fa-envelope"></i>Contact
@@ -8,28 +11,37 @@ Our lab is part of the [University of Colorado School of Medicine](https://medsc
 We are a geographically distributed team that is headquartered on the 6th Floor of the [Anschutz Health Sciences Building](https://www.ucdenver.edu/about/departments/FacilitiesManagement/FacilitiesProjects/ActiveProjects/Pages/AnschutzHealthSciencesBldg.aspx).
 
 {%
+  include link.html
+  type="email"
+  icon=""
+  text="info@tislab.org"
+  tooltip=""
+  link="info@tislab.org"
+  style="button"
+%}
+{%
+  include link.html
+  type="phone"
+  icon=""
+  text="(541) 737-7150"
+  tooltip=""
+  link="+1-541-737-7150"
+  style="button"
+%}
+{%
+  include link.html
+  type="address"
+  icon=""
+  text="Google Maps"
+  tooltip="Our location on Google Maps for easy navigation"
+  link="https://www.google.com/maps/place/That+St+%26+The+Other+St,+Porters+Lake,+NS+B3E+1H3,+Canada/@44.7389237,-63.3033296,20.78z/data=!4m5!3m4!1s0x4b5a31023bb02565:0xb9505694e83a53d7!8m2!3d44.7389353!4d-63.3030828"
+  style="button"
+%}
+{:.center}
+
+{%
   include figure.html
   image="images/anschutz-logo.png"
   width="400px"
   link="https://medschool.cuanschutz.edu/"
 %}
-
-### Email
-
-[info@tislab.org](mailto:info@tislab.org)
-{:.center}
-
-### Phone
-
-[(541) 737-7150](tel:+1-541-737-7150)
-{:.center}
-
-### Address
-
-OHSU  
-3181 SW Sam Jackson Park Road  
-Portland, OR 97217  
-{:.center}
-
-[<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps/place/Fitzsimons,+Aurora,+CO+80045/@39.7451033,-104.8419821,146m/data=!3m1!1e3!4m5!3m4!1s0x876c634db1dab039:0x437fc6e3d33aafef!8m2!3d39.7452864!4d-104.8417066)
-{:.center}

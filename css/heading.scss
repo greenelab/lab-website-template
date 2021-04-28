@@ -13,7 +13,7 @@ h4 {
   font-weight: $medium;
   line-height: $spacing - 0.3;
   margin: 40px 0 20px 0;
-  @include trim-margins;
+  @include trim-v-margins;
   padding: 10px 0;
 }
 

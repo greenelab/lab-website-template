@@ -4,9 +4,7 @@ title: Home
 
 # Trans<wbr>lational and Inte<wbr>grative Sciences Lab
 
-<!-- section break -->
-
-<!-- section full -->
+{% include section.html full=true %}
 
 <style>
   iframe {
@@ -18,7 +16,7 @@ title: Home
   
 <iframe src="map" width="100%" height="300px"></iframe>
 
-<!-- section break -->
+{% include section.html %}
 
 {% capture text %}
 Translational science breaks down traditional silos between discreet disciplines of science empowering innovation.
@@ -27,26 +25,32 @@ On the front lines of this emerging field, TISLab applies these varied disciplin
 
 {%
   include feature.html
-  image="images/translational-science.png"
+  image="images/research/translational-science.png"
   link="team"
-  title="What is Translational Science?"
+  headline="What is Translational Science?"
   text=text
 %}
 
 {% capture text %}
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+TISLab is unique in that it focuses on unifying data across sources, disciplines and forms to make them informative for new kinds of translational questions.
+It brings together people and their data across extremely diverse disciplinary divides, leading advances in science that aim to:
 
-{% capture contents %}
-{% include big-link.html link="research" text="Learn More" button=true %}
-{% endcapture %}
-{% include centerer.html contents=contents %}
+- Cope with Climate Change
+- Facilitate knowledge discovery for Covid-19
+- Improve Rare Disease Diagnosis and Treatment
+- Accelerate Cancer Research
+- Promote Healthy Lifestyles
+
+This means that the research done in TISLab depends upon partnership and collaboration, across multiple disciplines both within the College of Agricultural Sciences and in other areas such as the Office of Institutional Diversity and the Chief Technology Office.
+
+{% include link.html link="research" text="Learn More" style="button" %}
+{:.center}
 {% endcapture %}
 
 {%
   include feature.html
-  image="images/research.png"
+  image="images/research/research.png"
   link="research"
-  title="Our Research"
+  headline="Our Research"
   text=text
 %}

@@ -1,8 +1,13 @@
 ---
-title: Melissa Haendel
+name: Melissa Haendel
 image: images/team/melissa-haendel.jpg
-role: Director
-website: https://orcid.org/0000-0001-9114-8737
+tier: first
+description: Director
+links:
+  orcid: 0000-0001-9114-8737
+  twitter: ontowonka
+  github: mellybelly
+  linkedin: melissa-haendel-bb97232
 ---
 
 ### Roles

@@ -1,16 +1,19 @@
 ---
 title: Research
+nav:
+  order: 1
+  tooltip: Published works
 ---
 
 # <i class="fas fa-microscope"></i>Research
 
-<!-- section break -->
+{% include section.html %}
 
 ### Monarch Initiative: Disease diagnosis and discovery
 
 {%
   include figure.html
-  image="images/monarch.png"
+  image="images/research/monarch.png"
   link="https://monarchinitiative.org/"
   width="400px"
 %}
@@ -29,21 +32,18 @@ Monarch is a collaboration among members TISLab, Lawrence Berkeley National Labo
 **Contact:** [Monica Munoz-Torres](mailto:munoztmo@oregonstate.edu)  
 **Funding:** NIH grant # 1R24OD011883-01 and NHGRI 1RM1HG010860-01
 
-{% capture contents %}
-{% include social-link.html type="website" link="http://monarchinitiative.org/" %}
-{% include social-link.html type="github" link="monarch-initiative" %}
-{% include social-link.html type="twitter" link="monarchinit" %}
-{% endcapture %}
+{% include link.html type="home-page" link="http://monarchinitiative.org/" icon="" text="" %}
+{% include link.html type="github" link="monarch-initiative" icon="" text="" %}
+{% include link.html type="twitter" link="monarchinit" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Phenomics-First Resource
 
 {%
   include figure.html
-  image="images/phenomics.png"
+  image="images/research/phenomics.png"
   width="400px"
 %}
 
@@ -59,13 +59,13 @@ This project forms the basis of a Center of Excellence in Genomic Science, a pro
 **Contact:** [Monica Munoz-Torres](mailto:munoztmo@oregonstate.edu)  
 **Funding:** NHGRI
 
-<!-- section break -->
+{% include section.html %}
 
 ### Converging Genomics, Phenomics, and Environments Using Interpretable Machine Learning Models
 
 {%
   include figure.html
-  image="images/translational-science.png"
+  image="images/research/translational-science.png"
   height="250px"
 %}
 
@@ -79,15 +79,12 @@ TISLab is leading this effort to innovate in computer science and biology to com
 **Contact:** [Anne Thessen](mailto:annethessen@gmail.com)  
 **Funding:** Office of Advanced Cyberinfrastructure (OAC), NSF Award #1940062
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://genophenoenvo.github.io/" %}
-{% include social-link.html type="github" link="genophenoenvo" %}
-{% include social-link.html type="twitter" link="GenoPhenoEnvo" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://genophenoenvo.github.io/" icon="" text="" %}
+{% include link.html type="github" link="genophenoenvo" icon="" text="" %}
+{% include link.html type="twitter" link="GenoPhenoEnvo" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Forums for Integrative Phenomics
 
@@ -101,13 +98,13 @@ TISLab is creating new discoveries by planning and hosting workshops for creatin
 **Contact:** [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
 **Funding:** NIH grant # 1 U13 CA221044-01
 
-<!-- section break -->
+{% include section.html %}
 
 ### Center for Cancer Data Harmonization
 
 {%
   include figure.html
-  image="images/ccdh-wheel.png"
+  image="images/research/ccdh-wheel.png"
   height="250px"
 %}
 
@@ -120,20 +117,17 @@ To address these issues TISLab is taking a leading role in the Center for Cancer
 **Contact:** [Monica Munoz-Torres](mailto:munoztmo@oregonstate.edu)  
 **Funding:** NCI / Leidos contract # HHSN261201500003I
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh/" %}
-{% include social-link.html type="github" link="cancerDHC" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh/" icon="" text="" %}
+{% include link.html type="github" link="cancerDHC" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Gabriella Miller Kids First Pediatric Data Resource Center
 
 {%
   include figure.html
-  image="images/kids-first.png"
+  image="images/research/kids-first.png"
   width="400px"
 %}
 
@@ -145,23 +139,20 @@ Additional work is being done in collaboration with the INCLUDE (INvestigation o
 **Contact:** [Nicole Vasilevsky](mailto:nicole@tislab.org)  
 **Funding:** NIH grant # 5U2CHL138346 and The Kids First supplement is funded by NIH grant # 3200670520-03S1
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://kidsfirstdrc.org/" %}
-{% include social-link.html type="github" link="kids-first" %}
-{% include social-link.html type="twitter" link="kidsfirstDRC" %}
-{% include social-link.html type="youtube" link="channel/UCK9sPu0j4_ci4m3nNFa6gVw" %}
-{% include social-link.html type="facebook" link="kidsfirstDRC" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://kidsfirstdrc.org/" icon="" text="" %}
+{% include link.html type="github" link="kids-first" icon="" text="" %}
+{% include link.html type="twitter" link="kidsfirstDRC" icon="" text="" %}
+{% include link.html type="youtube" link="channel/UCK9sPu0j4_ci4m3nNFa6gVw" icon="" text="" %}
+{% include link.html type="facebook" link="kidsfirstDRC" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Biomedical Data Translator Program
 
 {%
   include figure.html
-  image="images/translator.jpg"
+  image="images/research/translator.jpg"
   width="400px"
 %}
 
@@ -171,20 +162,17 @@ TISLab convenes expert teams from diverse scientific disciplines — including, 
 **Contact:** [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
 **Funding:** NCATS grant # 3 OT3 TR002019 01S2
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://ncats.nih.gov/translator/" %}
-{% include social-link.html type="github" link="NCATSTranslator" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://ncats.nih.gov/translator/" icon="" text="" %}
+{% include link.html type="github" link="NCATSTranslator" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### CD2H: Harmonizing the Informatics Community
 
 {%
   include figure.html
-  image="images/cd2h.png"
+  image="images/research/cd2h.png"
   height="250px"
 %}
 
@@ -197,21 +185,18 @@ CTSA Program members are poised to lead this charge by harnessing collective exp
 **Contact:** [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
 **Funding:** NCATS grant # U24TR002306
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://cd2h.org/" %}
-{% include social-link.html type="github" link="data2health" %}
-{% include social-link.html type="twitter" link="data2health" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://cd2h.org/" icon="" text="" %}
+{% include link.html type="github" link="data2health" icon="" text="" %}
+{% include link.html type="twitter" link="data2health" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### National COVID Cohort Collaborative (N3C)
 
 {%
   include figure.html
-  image="images/n3c.png"
+  image="images/research/n3c.png"
   width="400px"
 %}
 
@@ -225,21 +210,18 @@ Learn more at the [CD2H N3C page](https://covid.cd2h.org/).
 **Contact:** [Melissa Haendel](mailto:melissa@tislab.org)  
 **Funding:** National Institutes of Health's National Center for Advancing Translational Sciences, Grant Number U24TR002306
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://ncats.nih.gov/n3c/" %}
-{% include social-link.html type="github" link="National-COVID-Cohort-Collaborative" %}
-{% include social-link.html type="twitter" link="N3C" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://ncats.nih.gov/n3c/" icon="" text="" %}
+{% include link.html type="github" link="National-COVID-Cohort-Collaborative" icon="" text="" %}
+{% include link.html type="twitter" link="N3C" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Flatten the Curve
 
 {%
   include figure.html
-  image="images/flatten-the-curve.svg"
+  image="images/research/flatten-the-curve.svg"
   height="250px"
 %}
 
@@ -249,21 +231,18 @@ Flatten the Curve provides reliable information reviewed by scientists delivered
 **Contact:** [Julie McMurry](mailto:mcmurryj@oregonstate.edu)  
 **Funding:** NIH U24TR002306
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://www.flattenthecurve.com/" %}
-{% include social-link.html type="github" link="flattenthecurve" %}
-{% include social-link.html type="twitter" link="FlattenCurve" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://www.flattenthecurve.com/" icon="" text="" %}
+{% include link.html type="github" link="flattenthecurve" icon="" text="" %}
+{% include link.html type="twitter" link="FlattenCurve" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Integrated Health Sciences Facility Core
 
 {%
   include figure.html
-  image="images/tehr.png"
+  image="images/research/tehr.png"
   height="250px"
 %}
 
@@ -273,13 +252,10 @@ By building tools like an interactive, searchable Discovery Index to identify in
 **Contact:** [Anne Thessen](mailto:annethessen@gmail.com)  
 **Funding:** NIEHS 1P30ES030287-01A1
 
-{% capture contents %}
-{% include social-link.html type="website" link="https://ehsc.oregonstate.edu/" %}
-{% endcapture %}
+{% include link.html type="home-page" link="https://ehsc.oregonstate.edu/" icon="" text="" %}
+{:.center}
 
-{% include centerer.html contents=contents %}
-
-<!-- section break -->
+{% include section.html %}
 
 ### Environmental Health Sciences Vocabulary
 
@@ -288,11 +264,11 @@ TISLab is laying the foundation for a new community-driven effort to build data 
 **Contact:** [Anne Thessen](mailto:annethessen@gmail.com)  
 **Funding:** NIEHS
 
-<!-- section break -->
+{% include section.html %}
 
 # <i class="fas fa-microscope"></i>Past Research
 
-<!-- section break -->
+{% include section.html %}
 
 ### [Undiagnosed Diseases Network (UDN)](https://undiagnosed.hms.harvard.edu/)
 
