@@ -7,7 +7,7 @@
 
 .feature {
   @include flex-center;
-  @include big-margins;
+  margin: 40px 0;
   @include trim-v-margins;
 
   .feature_image {
