@@ -1,5 +1,8 @@
 ---
-title: Publications
+title: Research
+nav:
+  order: 1
+  tooltip: Published works
 ---
 
 # <i class="fas fa-microscope"></i>Publications
@@ -9,8 +12,10 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<!-- section break -->
+{% include section.html %}
 
-{% include card-search.html subject="papers" %}
+{% include search-box.html %}
 
-{% include research-list.html %}
+{% include search-info.html %}
+
+{% include list.html data="citations" component="citation" style="rich" %}

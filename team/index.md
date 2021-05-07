@@ -1,10 +1,14 @@
 ---
 title: Team
+nav:
+  order: 3
+  tooltip: About our team
 ---
 
 # <i class="fas fa-users"></i>Team
 
 Our lab is made up of a highly engaged and collaborative team of researchers. We recognize that diverse teams do better research. We foster an environment where team members are treated equally, and where we respect and admire our differences. The team includes postdocs, students at all levels, staff, and our lab mascots.
+
 
 {% capture contents %} {% include team-list.html role="pi" group="" %} {% include team-list.html role="postdoc" group="" %} {% include team-list.html role="phd" group="" %} {% include team-list.html role="undergrad" group="" %} {% include team-list.html role="programmer" group="" %} {% include team-list.html role="mascot" group="" %} {% endcapture %}
 
@@ -16,7 +20,31 @@ We work with a wide range of outstanding groups from around the world, and we're
 
 <!-- section break -->
 
-## Alumni 
+
+{% include section.html %}
+
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: pi"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: phd"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: programmer"
+%}
+{:.center}
+
+{% include section.html background="images/banner.jpg" dark=true%}
+
 
 Text about alumni...
 {% capture contents %} {% include team-list.html role="pi" group="alum" mini="true" %} {% include team-list.html role="postdoc" group="alum" mini="true" %} {% include team-list.html role="phd" group="alum" mini="true" %} {% include team-list.html role="undergrad" group="alum" mini="true" %} {% include team-list.html role="programmer" group="alum" mini="true" %} {% include team-list.html role="mascot" group="alum" mini="true" %} {% endcapture %}
@@ -25,6 +53,18 @@ Text about alumni...
 
 
 
+
+{%
+  include link.html
+  icon="fas fa-hands-helping"
+  text="Join the Team"
+  link="join"
+  style="button"
+%}
+{:.center}
+
+{% include section.html %}
+
 ## Funding
 
 Our work is made possible by funding from several organizations.
@@ -32,7 +72,7 @@ Our work is made possible by funding from several organizations.
 
 {%
   include gallery.html
-  fit="false"
+  style="square"
 
   image1="images/photo.jpg"
   link1="https://nasa.gov/"

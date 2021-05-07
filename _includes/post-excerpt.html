@@ -1,0 +1,15 @@
+<div class="post_excerpt">
+  <p>
+    <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
+  </p>
+  {%
+    include post-info.html
+    author=include.author
+    member=include.member
+    tags=include.tags
+    date=include.date
+  %}
+  <p>
+    {{ include.content | strip_html | truncate: 500 }}
+  </p>
+</div>

@@ -4,11 +4,15 @@ title: Home
 
 # Quantitative tools to address ocean challenges
 
+
 The Quantitative Marine Ecology lab at the [University of New Hampshire](https://colsa.unh.edu/biological-sciences) is a team of scientists using mathematical and statistical tools to address the most pressing issues in the oceans. 
 
-{% include big-link.html icon="fab fa-github" text="See the template on GitHub" link="https://github.com/greenelab/lab-website-template" %}{% include big-link.html icon="fas fa-book" text="See the documentation" link="https://github.com/greenelab/lab-website-template/wiki" %}{:.center}
 
-<!-- section break -->
+{% include section.html full=true %}
+
+{% include banner.html image="images/banner.jpg" %}
+
+{% include section.html %}
 
 # Highlights
 
@@ -24,7 +28,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   include feature.html
   image="images/photo.jpg"
   link="research"
-  title="Our Research"
+  headline="Our Research"
   text=text
 %}
 
@@ -40,7 +44,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
   include feature.html
   image="images/photo.jpg"
   link="resources"
-  title="Our Resources"
+  headline="Our Resources"
   text=text
 %}
 
@@ -55,9 +59,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="Our Team"
+  headline="Our Team"
   text=text
 %}
+
 
 <!-- section break -->
 

@@ -5,14 +5,21 @@
 @import "theme";
 @import "mixins";
 
-ul {
-  @include block-margins;
-  @include trim-margins;
-  padding-left: 20px;
-  list-style-type: square;
+ul,
+ol {
+  @include margins;
+  @include trim-v-margins;
+  padding-left: 40px;
 
   li {
     margin: 10px 0;
-    @include trim-margins;
+    @include trim-v-margins;
+    padding-left: 10px;
+    text-align: justify;
+    line-height: $spacing + 0.3;
   }
+}
+
+ul {
+  list-style-type: square;
 }

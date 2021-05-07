@@ -13,3 +13,39 @@ a {
 a:hover {
   color: currentColor;
 }
+
+.link {
+  @include inline-flex-center;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  vertical-align: bottom;
+  transition: background $fast, color $fast, opacity $fast;
+  
+  span {
+    text-align: center;
+    font-family: $sans;
+    font-weight: $medium;
+  }
+
+  &[data-icon][data-text] {
+    & > *:first-child {
+      margin-right: 0.75em;
+    }
+  }
+
+  &[data-style="button"] {
+    max-width: calc(100% - 10px - 10px);
+    min-height: 40px;
+    margin: 10px;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    background: $accent;
+    color: $white;
+
+    &:hover {
+      background: $gray-500;
+    }
+  }
+}
