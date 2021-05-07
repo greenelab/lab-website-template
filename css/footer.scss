@@ -16,34 +16,17 @@ footer {
     font-family: $sans;
   }
 
-  // background
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--background);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.2;
-    // filter: blur(5px);
-    z-index: -1;
-  }
-
   .footer_row {
     @include flex-center;
     flex-wrap: wrap;
-    margin: 20px 0;
-    @include trim-margins;
+    @include margins;
+    @include trim-v-margins;
 
-    &:hover .social_link {
+    &:hover .link {
       opacity: 0.25;
     }
 
-    & .social_link:hover {
+    .link:hover {
       opacity: 1;
     }
   }

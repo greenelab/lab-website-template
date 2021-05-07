@@ -6,6 +6,8 @@
 @import "mixins";
 
 .post_info {
+  @include margins;
+  @include trim-v-margins;
   color: $gray-500;
 
   & > span {
@@ -15,7 +17,7 @@
     white-space: nowrap;
 
     #{$icon} {
-      margin-right: 10px;
+      margin-right: 0.75em;
     }
   }
 }

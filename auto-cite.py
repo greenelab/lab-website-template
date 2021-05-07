@@ -11,13 +11,13 @@ from yaml.loader import SafeLoader
 # settings
 ####################
 
-# filename for input papers
-papers_file = "research.yaml"
+# filename for input sources
+sources_file = "_data/sources.yaml"
 
-# filename for existing citations
-citations_file = "research-output.yaml"
+# filename for output citations
+citations_file = "_data/citations.yaml"
 
-# fallback paper date, year month day
+# fallback year, month, day
 default_date = [1900, 1, 1]
 
 ####################
@@ -126,12 +126,12 @@ def clean_date(date):
 
 section()
 
-# load papers
-print(f"Loading {papers_file}")
+# load sources
+print(f"Loading {sources_file}")
 try:
-    papers = read_yaml(papers_file)
+    sources = read_yaml(sources_file)
     # is top level array
-    if type(papers) != list:
+    if type(sources) != list:
         raise Exception ("Top level is not a list")
 except Exception as message:
     error(message)
@@ -155,42 +155,42 @@ except Exception as message:
 # list of new citations to overwrite existing citations
 new_citations = []
 
-# paper ids already found
+# source ids already found
 ids = []
 
-# go through input papers
-for index, paper in enumerate(papers):
+# go through input sources
+for index, source in enumerate(sources):
     try:
         section()
 
         # show progress
-        print(f"Paper {index + 1} of {len(papers)}")
+        print(f"Source {index + 1} of {len(sources)}")
 
         # is entry a dictionary
-        if type(paper) != dict:
+        if type(source) != dict:
             print("")
             raise Exception("Entry is not a dictionary")
 
         # show line number in yaml for reference
-        print(f"Line number {paper.get('_line_', '???')}")
+        print(f"Line number {source.get('_line_', '???')}")
         print("")
 
-        # paper id
-        paper_id = paper.get("id")
+        # source id
+        source_id = source.get("id")
 
         # does entry have an id field
-        if not paper_id:
+        if not source_id:
             raise Exception("Entry has no id field")
 
         # is entry a duplicate
-        if paper_id in ids:
+        if source_id in ids:
             raise Exception("Entry is a duplicate")
 
-        # add paper id to found list
-        ids.append(paper_id)
+        # add source id to found list
+        ids.append(source_id)
 
-        # find same paper in existing citations
-        cached = find_match(paper, citations)
+        # find same source in existing citations
+        cached = find_match(source, citations)
 
         if cached:
             # use existing citation to save time
@@ -203,7 +203,7 @@ for index, paper in enumerate(papers):
 
             # run Manubot and get results as json
             try:
-                commands = ["manubot", "cite", paper_id, '--log-level=ERROR']
+                commands = ["manubot", "cite", source_id, '--log-level=ERROR']
                 output = subprocess.Popen(commands, stdout=subprocess.PIPE)
                 manubot = json.loads(output.communicate()[0])[0]
             except Exception:
@@ -213,7 +213,7 @@ for index, paper in enumerate(papers):
             citation = {}
 
             # original id
-            citation["id"] = paper_id
+            citation["id"] = source_id
 
             # title
             citation["title"] = manubot.get("title", "")
@@ -257,8 +257,8 @@ section()
 
 # go through new citations
 for citation in new_citations:
-    # merge in properties from input paper
-    citation.update(find_match(citation, papers))
+    # merge in properties from input source
+    citation.update(find_match(citation, sources))
 
     # delete line number field
     del citation["_line_"]

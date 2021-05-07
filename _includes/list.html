@@ -1,0 +1,63 @@
+{%- assign emptyarray = "" | split: "," -%}
+{%- assign data = site.data[include.data] | default: site[include.data] | default: emptyarray -%}
+{%- assign component = include.component | append: ".html" -%}
+
+{%- assign filters = include.filters | split: "," -%}
+{%- for filter in filters -%}
+  {%- assign entry = filter | split: ":" -%}
+  {%- assign key = entry[0] | strip -%}
+  {%- assign value = entry[1] | strip | default: nil -%}
+  {%- if value contains "~" -%}
+    {%- assign value = value | remove: "~" -%}
+    {%- assign data = data | where_exp: "d", "d[key] contains value" -%}
+  {%- else -%}
+    {%- assign data = data | where_exp: "d", "d[key] == value" -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse -%}
+
+{%- for year in years -%}
+
+{%- assign items = year.items -%}
+
+{%- if years.size > 1 -%}
+  <h3 id="{{ year.name }}">{{ year.name }}</h3>
+  {%- assign items = items | sort: "date" | reverse -%}
+{%- endif -%}
+
+{%- for d in items -%}
+
+  {%- assign link = d.link | default: d.url -%}
+  {%- assign style = d.style | default: include.style -%}
+
+  {%-
+    include {{ component }}
+    author=d.author
+    caption=d.caption
+    content=d.content
+    date=d.date
+    description=d.description
+    extra-links=d.extra-links
+    headline=d.headline
+    height=d.height
+    icon=d.icon
+    id=d.id
+    image=d.image
+    link=link
+    name=d.name
+    repo=d.repo
+    role=d.role
+    style=style
+    tags=d.tags
+    title=d.title
+    text=d.text
+    tooltip=d.tooltip
+    type=d.type
+    url=d.url
+    width=d.width
+  -%}
+
+{%- endfor -%}
+
+{%- endfor -%}

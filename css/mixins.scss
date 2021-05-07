@@ -12,11 +12,14 @@
   align-items: center;
 }
 
-@mixin block-margins {
+@mixin margins {
   margin: 20px 0;
 }
+@mixin big-margins {
+  margin: 40px 0;
+}
 
-@mixin trim-margins {
+@mixin trim-v-margins {
   &:first-child {
     margin-top: 0;
   }
@@ -27,4 +30,4 @@
 }
 
 // font awesome icon selectors
-$icon: "i.fas, i.far, i.fab, i.fal, i.fad";
+$icon: "i.fas, i.far, i.fab, i.fal, i.fad, svg";

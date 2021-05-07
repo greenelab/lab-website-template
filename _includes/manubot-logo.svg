@@ -1,9 +1,8 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="-400 -300 800 600"
-  height="16px"
-  style="overflow: visible;"
-  class="icon_with_text"
+  height="1.5em"
+  style="overflow: visible"
 >
   <!-- logo -->
   <g transform="scale(0.9)">

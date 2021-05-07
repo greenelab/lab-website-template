@@ -1,0 +1,71 @@
+{%- assign emptyarray = "" | split: "," -%}
+{%- assign id = include.id | default: "" -%}
+{%- assign citations = site.data.citations | default: emptyarray -%} 
+
+{%- assign citation = nil -%}
+{%- for c in citations -%}
+  {%- if c.id == id -%}
+    {%- assign citation = c -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign link = citation.link | default: "" -%}
+{%- assign image = citation.image | default: "" -%}
+{%- assign title = citation.title | default: "" -%}
+{%- assign authors = citation.authors | default: emptyarray -%}
+{%- assign publisher = citation.publisher | default: "" -%}
+{%- assign date = citation.date | default: "1900-01-01" -%}
+{%- assign tags = citation.tags | default: emptyarray -%}
+{%- assign repo = citation.repo | default: "" -%}
+{%- assign extra-links = citation.extra-links | default: emptyarray -%}
+
+{%- assign rich = false -%}
+{%- if include.style == "rich" -%}
+  {%- assign rich = true -%}
+{%- endif -%}
+
+{%- assign placeholder = "images/placeholder.svg" | relative_url -%}
+
+<div class="citation" data-style="{{ include.style }}">
+  {%- if rich -%}
+    <div class="citation_image">
+      <a href="{{ link }}">
+        <img
+          src="{{ image | relative_url }}"
+          onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
+          data-tooltip="{{ id }}"
+          loading="lazy"
+        >
+      </a>
+    </div>
+  {%- endif -%}
+
+  <div class="citation_text">
+    <div class="citation_title">
+      <a href="{{ link }}">
+        {{ title }}
+      </a>
+    </div>
+    <div
+      class="citation_authors {% if rich %}truncate{% endif %}"
+      {% if rich %}tabindex="0"{% endif %}
+    >
+      {{ authors | join: ", " }}
+    </div>
+    <div class="citation_details">
+      {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
+    </div>
+    {%- if rich -%}
+      {%- include tags.html tags=tags repo=repo -%}
+      <div class="citation_links">
+        {%- for extra in extra-links -%}
+          {%- assign type = extra.type | default: "" -%}
+          {%- assign icon = extra.icon | default: "" -%}
+          {%- assign text = extra.text | default: "" -%}
+          {%- assign link = extra.link -%}
+          {%- include link.html type=type icon=icon text=text link=link -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

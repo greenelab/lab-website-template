@@ -1,58 +1,47 @@
 ---
-# inherits from default layout and builds on top of it
-# this file's contents get inserted into default.html's content
 layout: default
 ---
 
 
 <h1>{{ page.title }}</h1>
 
-{% include figure.html image=page.image width="200px" %}
+{%- include figure.html image=page.image -%}
 
-{% capture contents %}
-{% include role.html type=page.role text=true %}
-{% endcapture %}
+<p class="center">
+  {%- include role.html type=page.role text=true description=page.description -%}
+</p>
 
-{% include centerer.html contents=contents %}
-
-{% capture contents %}
-{% include social-link.html type="website" link=page.website %}
-{% include social-link.html type="email" link=page.email %}
-{% include social-link.html type="google-scholar" link=page.google-scholar %}
-{% include social-link.html type="github" link=page.github %}
-{% include social-link.html type="twitter" link=page.twitter %}
-{% include social-link.html type="facebook" link=page.facebook %}
-{% include social-link.html type="instagram" link=page.instagram %}
-{% include social-link.html type="youtube" link=page.youtube %}
-{% include social-link.html type="linkedin" link=page.linkedin %}
-{% endcapture %}
-
-{% include centerer.html contents=contents %}
+<p class="center">
+  {%- for entry in page.links -%}
+    {%- assign key = entry[0] -%}
+    {%- assign value = entry[1] -%}
+    {%- include link.html type=key icon="" text="" tooltip="" link=value -%}
+  {%- endfor -%}
+</p>
 
 {{ content }}
 
-{% assign aliases = "" | split: ',' %}
+{%- assign aliases = "" | split: ',' -%}
 
-{% if page.aliases.first %}
-{% assign aliases = aliases | concat: page.aliases %}
-{% elsif page.aliases %}
-{% assign aliases = aliases | push: page.aliases %}
-{% elsif page.title %}
-{% assign aliases = aliases | push: page.title %}
-{% endif %}
+{%- if page.aliases.first -%}
+  {%- assign aliases = aliases | concat: page.aliases -%}
+{%- elsif page.aliases -%}
+  {%- assign aliases = aliases | push: page.aliases -%}
+{%- elsif page.title -%}
+  {%- assign aliases = aliases | push: page.title -%}
+{%- endif -%}
 
-{% capture search %}
-{% for name in aliases %}"{{ name }}" {% endfor %}
-{% endcapture %}
+{%- capture search -%}
+  {%- for name in aliases -%}"{{ name }}" {%- endfor -%}
+{%- endcapture -%}
 
-{% assign search = search | strip | prepend: "/research/?search=" %}
+{%- assign search = search | strip | prepend: "/research/?search=" -%}
 
-{% capture text %}
-{{ page.title }}'s papers
-{% endcapture %}
+{%- capture text -%}
+  {{ page.title }}'s papers
+{%- endcapture -%}
 
-{% capture contents %}
-{% include big-link.html icon="fas fa-book-open" link=search text=text %}
-{% endcapture %}
 
-{% include centerer.html contents=contents %}
+<p class="center">
+  {%- include link.html icon="fas fa-book-open" text=text link=search style="button" -%}
+</p>

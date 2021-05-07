@@ -13,8 +13,8 @@ h1,
 h2,
 h3,
 h4 {
-  #{$icon}:first-of-type {
+  #{$icon}:first-child {
     color: $light-accent;
-    margin-right: 1rem;
+    margin-right: 1em;
   }
 }

@@ -1,11 +1,8 @@
-# site settings
+# site properties and page defaults
 title: Quantitative Marine Ecology Lab
-logo: images/lab_logo_bw.png
-
-# page defaults
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-header: images/homepage_bottom.png
-footer: images/homepage_bottom.png
+description: Lab description here
+header: images/background.jpg
+footer: images/background.jpg
 
 # site nav bar
 nav:
@@ -20,14 +17,21 @@ nav:
   - link: contact
     tooltip: Email, address, and location
 
-# site social media
-email: Easton.White@unh.edu 
-google-scholar: Easton R. White
-github: quantmarineecolab
-twitter: eastonrwhite
 
 # base directory where site is hosted
+logo: images/lab_logo_bw.png
+header: images/background.jpg
+footer: images/background.jpg
 baseurl: /
+
+# site social media and other links
+links:
+  email: Easton.White@unh.edu 
+  google-scholar: Easton R. White
+  github: quantmarineecolab
+  twitter: eastonrwhite
+
+### advanced settings
 
 # default front matter parameters for markdown files
 defaults:
@@ -59,7 +63,17 @@ sass:
 # syntax highlighting
 highlighter: rouge
 
-# build settings
+# plugins
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  # - jekyll-github-metadata
+  # - jekyll-avatar
+  # - jekyll-gist
+  # - jekyll-mentions
+  # - jekyll-relative-links
+  # - jemoji
+
+# jekyll theme
+theme: null

@@ -7,17 +7,17 @@
 
 .gallery {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
-  @include trim-margins;
+  @include big-margins;
+  @include trim-v-margins;
 
   .gallery_item {
     // box-shadow: $shadow;
   }
 
-  &[data-fit="true"] {
+  &[data-style="square"] {
     .gallery_item {
       position: relative;
 
@@ -29,6 +29,7 @@
 
       img {
         position: absolute;
+        left: 0;
         top: 0;
         object-fit: cover;
         min-width: 100%;

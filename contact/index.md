@@ -1,44 +1,56 @@
 ---
 title: Contact
+nav:
+  order: 5
+  tooltip: Email, address, and location
 ---
 
 # <i class="fas fa-envelope"></i>Contact
 
-Our lab is part of the [Department of Biological Sciences](https://colsa.unh.edu/biological-sciences), at the [University of New Hampshire](https://unh.edu/).
-We are located on the 1st floor of the Spaulding Life Sciences Center.
+Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
+We are located on the 13th floor of the [Center for Wit and Sagacity]().
+
+{%
+  include link.html
+  type="email"
+  icon=""
+  text="scrooge@mcduck.com"
+  tooltip=""
+  link="scrooge@mcduck.com"
+  style="button"
+%}
+{%
+  include link.html
+  type="phone"
+  icon=""
+  text="(555) 867-5309"
+  tooltip=""
+  link="+1-555-867-5309"
+  style="button"
+%}
+{%
+  include link.html
+  type="address"
+  icon=""
+  text="Google Maps"
+  tooltip="Our location on Google Maps for easy navigation"
+  link="https://www.google.com/maps/place/That+St+%26+The+Other+St,+Porters+Lake,+NS+B3E+1H3,+Canada/@44.7389237,-63.3033296,20.78z/data=!4m5!3m4!1s0x4b5a31023bb02565:0xb9505694e83a53d7!8m2!3d44.7389353!4d-63.3030828"
+  style="button"
+%}
+{:.center}
+
+{% include section.html %}
+
+### <i class="fas fa-mail-bulk"></i>Mailing Address
+
+That St & The Other St  
+Porters Lake, NS B3E 1H3  
+Canada
+{:.center}
 
 {%
   include figure.html
-  image="images/thompson.jpg"
+  image="images/photo.jpg"
   width="75%"
-  caption="UNH"
+  caption="The Center for Wit and Sagacity"
 %}
-
-<!-- section break -->
-
-### Email
-
-[Easton.White@unh.edu](mailto:Easton.White@unh.edu)
-{:.center}
-
-<!--
-### Phone
-[(555) 867-5309](tel:+1-555-867-5309)
-{:.center}
--->
-
-### Address
-
-Department of Biological Sciences
-
-University of New Hampshire
-
-Spaulding Hall
-
-38 Academic Way
-
-Durham, NH 03824, USA
-{:.center}
-
-[<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps/place/Spaulding+Life+Sciences+Center/@43.1352016,-70.9345249,15z/data=!4m2!3m1!1s0x0:0x187c7c86bbc71bd1?sa=X&ved=2ahUKEwj9gv_P0u_vAhUeGFkFHRxXBQ4Q_BIwG3oECCMQBQ)
-{:.center}
