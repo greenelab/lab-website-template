@@ -11,7 +11,7 @@ def main():
     filename = "../_data/orcid.yaml"
 
     # load input data
-    data = load_data(filename)
+    data = load_data(filename, strict=False)
 
     # ORCID API
     endpoint = 'https://pub.orcid.org/v2.0/$ID/works'
