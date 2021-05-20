@@ -72,7 +72,7 @@ def clean_date(date):
 
 
 # read data from yaml file
-def load_data(filename):
+def load_data(filename, type_check=True):
     # full file path
     path = os.path.join(directory, filename)
 
@@ -93,14 +93,15 @@ def load_data(filename):
     except Exception:
         raise Exception(f"Can't parse {filename}. Make sure it's valid YAML.")
 
-    # is top level array
-    if type(data) != list:
-        raise Exception(f"Top level of {filename} is not a list")
+    if type_check:
+        # is top level array
+        if type(data) != list:
+            raise Exception(f"Top level of {filename} is not a list")
 
-    # is each entry a dict
-    for entry in data:
-        if type(entry) != dict:
-            raise Exception(f"Not all entries in {filename} are dictionaries")
+        # is each entry a dict
+        for entry in data:
+            if type(entry) != dict:
+                raise Exception(f"Not all entries in {filename} are dictionaries")
 
     # if no errors, return data
     return data

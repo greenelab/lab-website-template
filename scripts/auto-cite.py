@@ -1,38 +1,54 @@
-# main auto-cite script
-
-# packages
 from util import *
+import importlib
 
-# auto-cite plugins
-from orcid import orcid as orcid_plugin
-from sources import sources as sources_plugin
-
-# filename for output citations
-filename = "../_data/citations.yaml"
-
-# plugins to run, in order
-plugins = [orcid_plugin, sources_plugin]
+# config info for input/output files and plugins
+config = {}
+try:
+    config = load_data("./config.yaml", type_check=False)
+except Exception as message:
+    log(message, 3, "red")
+    exit(1)
 
 log("Compiling list of sources to cite")
 
 # compile master list of sources from various plugins
 sources = []
-for plugin in plugins:
-    log(f"Running {plugin.__name__} plugin")
 
-    plugin_sources = plugin()
+# loop through plugins
+for plugin in config.get("plugins", []):
+    # get plugin props
+    name = plugin.get("name", "-")
+    files = plugin.get("input", "")
 
-    log(f"Got {len(plugin_sources)} sources", 2, "green")
+    # show progress
+    log(f"Running {name} plugin")
 
-    for source in plugin_sources:
-        sources.append(source)
+    # loop through plugin input files
+    for file in files:
+        # show progress
+        log(file, 2)
+
+        # get data in file
+        data = []
+        try:
+            data = load_data(file)
+        except Exception as message:
+            log(message, 3, "red")
+            exit(1)
+
+        plugin_sources = importlib.import_module(f"plugins.{name}").main(data)
+
+        log(f"Got {len(plugin_sources)} sources", 2, "green")
+
+        for source in plugin_sources:
+            sources.append(source)
 
 log("Generating citations for sources")
 
 # load existing citations
 citations = []
 try:
-    citations = load_data(filename)
+    citations = load_data(config["output"])
 except Exception as message:
     log(message, 2, "yellow")
 
@@ -75,7 +91,7 @@ log(f"Exported {len(new_citations)} citations", 2, "green")
 
 # save new citations
 try:
-    save_data(filename, new_citations)
+    save_data(config["output"], new_citations)
 except Exception as message:
     log(message, 2, "red")
     exit(1)
