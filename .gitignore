@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 debug.log
-scripts/__pycache__
+__pycache__
