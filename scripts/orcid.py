@@ -34,6 +34,8 @@ def main():
                 new_entry.append({ "id": f'{id_type}:{id_value}' })
 
         print(f"Found {len(new_entry)} sources")
+        for source in new_entry:
+            print(source.get("id", "")) 
         return new_entry
 
     # resulting sources
