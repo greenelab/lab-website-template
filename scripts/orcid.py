@@ -23,7 +23,12 @@ def orcid():
         log(file, 2)
 
         # get metasources in file
-        metasources = load_data(file)
+        metasources = []
+        try:
+            metasources = load_data(file)
+        except Exception as message:
+            log(message, 3, "red")
+            exit(1)
 
         for index, metasource in enumerate(metasources):
             # show progress

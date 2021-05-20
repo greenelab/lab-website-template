@@ -16,7 +16,12 @@ def sources():
         log(file, 2)
 
         # get sources in file
-        sources = load_data(file)
+        sources = []
+        try:
+            sources = load_data(file)
+        except Exception as message:
+            log(message, 3, "red")
+            exit(1)
 
         for source in sources:
             # show progress

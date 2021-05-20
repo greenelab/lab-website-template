@@ -30,7 +30,11 @@ for plugin in plugins:
 log("Generating citations for sources")
 
 # load existing citations
-citations = load_data(filename)
+citations = []
+try:
+    citations = load_data(filename)
+except Exception as message:
+    log(message, 2, "yellow")
 
 # list of new citations to overwrite existing citations
 new_citations = []
@@ -51,7 +55,11 @@ for index, source in enumerate(sources):
     else:
         # use Manubot to generate new citation
         log("Using Manubot to generate new citation", 3)
-        new_citations.append(cite_with_manubot(source))
+        try:
+            new_citations.append(cite_with_manubot(source))
+        except Exception as message:
+            log(message, 3, "")
+            exit(1)
 
 log("Exporting citations")
 
@@ -66,6 +74,10 @@ for citation in new_citations:
 log(f"Exported {len(new_citations)} citations", 2, "green")
 
 # save new citations
-save_data(filename, new_citations)
+try:
+    save_data(filename, new_citations)
+except Exception as message:
+    log(message, 2, "red")
+    exit(1)
 
 log("Done!")

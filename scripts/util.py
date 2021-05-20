@@ -78,29 +78,29 @@ def load_data(filename):
 
     # check if file exists
     if not os.path.isfile(path):
-        raise Exception("Can't find file")
+        raise Exception(f"Can't find {filename}")
 
     # try to open file
     try:
         file = open(path, encoding="utf8")
     except Exception as message:
-        raise Exception(message or "Can't open file")
+        raise Exception(message or f"Can't open {filename}")
 
     # try to parse as yaml
     try:
         with file:
             data = yaml.load(file, Loader=SafeLoader)
     except Exception:
-        raise Exception("Can't parse file. Make sure it's valid YAML.")
+        raise Exception(f"Can't parse {filename}. Make sure it's valid YAML.")
 
     # is top level array
     if type(data) != list:
-        raise Exception("Top level is not a list")
+        raise Exception(f"Top level of {filename} is not a list")
 
     # is each entry a dict
     for entry in data:
         if type(entry) != dict:
-            raise Exception("Not all entries are dictionaries")
+            raise Exception(f"Not all entries in {filename} are dictionaries")
 
     # if no errors, return data
     return data
@@ -115,14 +115,14 @@ def save_data(filename, data):
     try:
         file = open(path, mode="w")
     except Exception:
-        raise Exception("Can't open file for writing")
+        raise Exception(f"Can't open {filename} for writing")
 
     # try to save data as yaml
     try:
         with file:
             yaml.dump(data, file, default_flow_style=False, sort_keys=False)
     except Exception:
-        raise Exception(f"Can't dump as YAML")
+        raise Exception(f"Can't dump {filename} as YAML")
 
     # write warning note to top of file
     note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
@@ -132,7 +132,7 @@ def save_data(filename, data):
         with open(path, "w") as file:
             file.write(f"{note}\n\n{data}")
     except Exception:
-        raise Exception(f"Can't write to file")
+        raise Exception(f"Can't write to {filename}")
 
 
 # generate citation for source with Manubot

@@ -1,7 +1,6 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
-- &id001
-  id: doi:10.1093/gigascience/giaa117
+- id: doi:10.1093/gigascience/giaa117
   title: Correcting for experiment-specific variability in expression compendia can
     remove underlying signals
   authors:
@@ -15,8 +14,7 @@
   link: https://doi.org/ghhtpf
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id002
-  id: doi:10.1101/2020.05.03.066597
+- id: doi:10.1101/2020.05.03.066597
   title: Correcting for experiment-specific variability in expression compendia can
     remove underlying signals
   authors:
@@ -30,8 +28,7 @@
   link: https://doi.org/gg7m5s
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id003
-  id: doi:10.1073/pnas.1917576117
+- id: doi:10.1073/pnas.1917576117
   title: <i>Pseudomonas aeruginosa lasR</i> mutant fitness in microoxia is supported
     by an Anr-regulated oxygen-binding hemerythrin
   authors:
@@ -51,8 +48,7 @@
   link: https://doi.org/gg7m49
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id004
-  id: doi:10.1186/s13059-019-1835-8
+- id: doi:10.1186/s13059-019-1835-8
   title: The CAFA challenge reports improved protein function prediction and new functional
     annotations for hundreds of genes through experimental screens
   authors:
@@ -228,8 +224,7 @@
   link: https://doi.org/ggnxpz
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id005
-  id: doi:10.1002/cyto.a.23371
+- id: doi:10.1002/cyto.a.23371
   title: 'DAFi: A directed recursive data filtering and clustering approach for improving
     and interpreting data clustering identification of cell populations from polychromatic
     flow cytometry data'
@@ -249,8 +244,7 @@
   link: https://doi.org/gjttz9
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id006
-  id: doi:10.1186/s12859-017-1977-1
+- id: doi:10.1186/s12859-017-1977-1
   title: Cell type discovery and representation in the era of high-content single
     cell phenotyping
   authors:
@@ -274,8 +268,7 @@
   link: https://doi.org/gjtt2c
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id007
-  id: doi:10.3389/fimmu.2017.00858
+- id: doi:10.3389/fimmu.2017.00858
   title: Automated Analysis of Flow Cytometry Data to Reduce Inter-Lab Variation in
     the Detection of Major Histocompatibility Complex Multimer-Binding T Cells
   authors:
@@ -300,8 +293,7 @@
   link: https://doi.org/gbrjrh
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id008
-  id: doi:10.1371/journal.pone.0178199
+- id: doi:10.1371/journal.pone.0178199
   title: Identification of diagnostic peptide regions that distinguish Zika virus
     from related mosquito-borne Flaviviruses
   authors:
@@ -314,8 +306,7 @@
   link: https://doi.org/f98x5r
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id009
-  id: doi:10.1093/nar/gkw857
+- id: doi:10.1093/nar/gkw857
   title: 'Influenza Research Database: An integrated bioinformatics resource for influenza
     virus research'
   authors:
@@ -352,8 +343,7 @@
   link: https://doi.org/f9v64m
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id010
-  id: doi:10.1093/ve/vew015
+- id: doi:10.1093/ve/vew015
   title: Genetic changes found in a distinct clade of Enterovirus D68 associated with
     paralysis during the 2014 outbreak
   authors:
@@ -373,8 +363,7 @@
   link: https://doi.org/gjtt2b
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id011
-  id: doi:10.1128/jvi.03636-14
+- id: doi:10.1128/jvi.03636-14
   title: Diversifying Selection Analysis Predicts Antigenic Evolution of 2009 Pandemic
     H1N1 Influenza A Virus in Humans
   authors:
@@ -392,8 +381,7 @@
   link: https://doi.org/gjttz8
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id012
-  id: doi:10.1145/2792745.2792750
+- id: doi:10.1145/2792745.2792750
   title: FlowGate
   authors:
   - Yu Qian
@@ -411,8 +399,7 @@
   link: https://doi.org/gjttz7
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- &id013
-  id: isbn:9781450337205
+- id: isbn:9781450337205
   title: 'Proceedings of the XSEDE15 Conference: Scientific Advancements Enabled by
     Enhanced Cyberinfrastructure : July 26-30, 2015, Renaissance St. Louis Grand Hotel,
     St. Louis, Missouri, USA'
@@ -428,19 +415,6 @@
   link: https://doi.org/10.1145/2792745
   orcid: 0000-0002-0208-3730
   page: alex-lee
-- *id001
-- *id002
-- *id003
-- *id004
-- *id005
-- *id006
-- *id007
-- *id008
-- *id009
-- *id010
-- *id011
-- *id012
-- *id013
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:
