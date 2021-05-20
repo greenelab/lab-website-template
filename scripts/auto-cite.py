@@ -1,55 +1,59 @@
-# auto-cite core runner
+# main auto-cite script
 
 # packages
 from util import *
 
 # auto-cite plugins
-from orcid import main as orcid
-from sources import main as sources
+from orcid import orcid as orcid_plugin
+from sources import sources as sources_plugin
 
 # filename for output citations
 filename = "../_data/citations.yaml"
 
-# plugin order
-plugins = [orcid, sources]
+# plugins to run, in order
+plugins = [orcid_plugin, sources_plugin]
 
-section()
+log("Compiling list of sources to cite")
 
-info("Compiling sources")
-
-# compile input sources from various plugins
+# compile master list of sources from various plugins
 sources = []
 for plugin in plugins:
-    for entry in plugin():
-        sources.append(entry)
+    log(f"Running {plugin.__name__} plugin")
 
-section()
+    plugin_sources = plugin()
 
-info("Generating citations")
+    log(f"Got {len(plugin_sources)} sources", 2, "green")
+
+    for source in plugin_sources:
+        sources.append(source)
+
+log("Generating citations for sources")
 
 # load existing citations
-citations = load_data(filename, strict=False)
+citations = load_data(filename)
 
 # list of new citations to overwrite existing citations
 new_citations = []
 
-# go through input sources
-def process(source):
+# go through sources
+for index, source in enumerate(sources):
+    # show progress
+    log(f"Source {index + 1} of {len(sources)} - {source.get('id', '-')}", 2)
+
     # find same source in existing citations
     cached = find_match(source, citations)
 
     if cached:
         # use existing citation to save time
-        info("Using existing citation")
+        log("Using existing citation", 3)
         new_citations.append(cached)
 
     else:
         # use Manubot to generate new citation
+        log("Using Manubot to generate new citation", 3)
         new_citations.append(cite_with_manubot(source))
 
-process_data(sources, process)
-
-section()
+log("Exporting citations")
 
 # go through new citations
 for citation in new_citations:
@@ -59,9 +63,9 @@ for citation in new_citations:
     # ensure date in proper format for correct date sorting
     citation["date"] = clean_date(citation.get("date"))
 
+log(f"Exported {len(new_citations)} citations", 2, "green")
+
 # save new citations
 save_data(filename, new_citations)
 
-# finish
-section()
-success("Done!")
+log("Done!")

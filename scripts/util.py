@@ -18,15 +18,34 @@ default_date = [1900, 1, 1]
 # allow printing ANSI color codes on Windows
 os.system("")
 
-# colored logging
-def error(message): print(f"\033[91m{message}\033[0m"); exit(1) # red
-def warning(message): print(f"\033[93m{message}\033[0m") # yellow
-def success(message): print(f"\033[92m{message}\033[0m") # green
-def info(message): print(f"\033[94m{message}\033[0m") # blue
+# colors for logging
+palette = {
+    "white": "\033[97m",
+    "red": "\033[91m",
+    "green": "\033[92m",
+    "yellow": "\033[93m",
+    "blue": "\033[94m",
+    "purple": "\033[95m",
+    "cyan": "\033[96m",
+    "reset": "\033[0m",
+}
 
-# log a section divider
-def section():
-    print("")
+# level colors
+levels = {1: "purple", 2: "cyan", 3: "white"}
+
+# colored logging
+def log(message="", level=1, color=""):
+    if not color:
+        color = levels[level]
+
+    if color != "white":
+        print("")
+
+    if level == 1:
+        message = message.upper()
+
+    print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}")
+
 
 # find item in list that matches entry by id
 def find_match(entry, list):
@@ -35,12 +54,14 @@ def find_match(entry, list):
             return item
     return {}
 
+
 # get date parts from Manubot citation
 def date_part(citation, index):
     try:
         return citation.get("issued").get("date-parts")[0][index]
     except Exception:
         return default_date[index]
+
 
 # format date string with leading 0's
 def clean_date(date):
@@ -49,152 +70,79 @@ def clean_date(date):
     except Exception:
         return "-".join(str(part) for part in default_date)
 
+
 # read data from yaml file
-def load_data(filename, strict=True):
-    section()
+def load_data(filename):
+    # full file path
+    path = os.path.join(directory, filename)
 
-    print(f"Loading {filename}")
-    
+    # check if file exists
+    if not os.path.isfile(path):
+        raise Exception("Can't find file")
+
+    # try to open file
     try:
-        # full file path
-        path = os.path.join(directory, filename)
-
-        # check if file exists
-        if not os.path.isfile(path):
-            raise Exception("Can't find file")
-
-        # try to open file
-        try:
-            file = open(path, encoding="utf8")
-        except Exception as message:
-            raise Exception(message or "Can't open file")
-
-        # try to parse as yaml
-        try:
-            with file:
-                data = yaml.load(file, Loader=SafeLoader)
-        except Exception:
-            raise Exception("Can't parse file. Make sure it's valid YAML.")
-
-        # is top level array
-        if type(data) != list:
-            raise Exception ("Top level is not a list")
-
-        # if no errors, return data
-        return data
-
-    # catch any errors
+        file = open(path, encoding="utf8")
     except Exception as message:
-        if strict:
-            error(message)
-        else:
-            warning(message)
-            print("Starting from scratch")
-            return []
+        raise Exception(message or "Can't open file")
+
+    # try to parse as yaml
+    try:
+        with file:
+            data = yaml.load(file, Loader=SafeLoader)
+    except Exception:
+        raise Exception("Can't parse file. Make sure it's valid YAML.")
+
+    # is top level array
+    if type(data) != list:
+        raise Exception("Top level is not a list")
+
+    # is each entry a dict
+    for entry in data:
+        if type(entry) != dict:
+            raise Exception("Not all entries are dictionaries")
+
+    # if no errors, return data
+    return data
+
 
 # write yaml data to file
 def save_data(filename, data):
-    section()
+    # full file path
+    path = os.path.join(directory, filename)
 
-    print(f"Saving {filename}")
-
+    # try to open file
     try:
-        # full file path
-        path = os.path.join(directory, filename)
+        file = open(path, mode="w")
+    except Exception:
+        raise Exception("Can't open file for writing")
 
-        # try to open file
-        try:
-            file = open(path, mode="w")
-        except Exception:
-            raise Exception("Can't open file for writing")
+    # try to save data as yaml
+    try:
+        with file:
+            yaml.dump(data, file, default_flow_style=False, sort_keys=False)
+    except Exception:
+        raise Exception(f"Can't dump as YAML")
 
-        # try to save data as yaml
-        try:
-            with file:
-                yaml.dump(data, file, default_flow_style=False, sort_keys=False)
-        except Exception:
-            raise Exception(f"Can't dump as YAML")
+    # write warning note to top of file
+    note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
+    try:
+        with open(path, "r") as file:
+            data = file.read()
+        with open(path, "w") as file:
+            file.write(f"{note}\n\n{data}")
+    except Exception:
+        raise Exception(f"Can't write to file")
 
-        # write warning note to top of file
-        note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
-        try:
-            with open(path, 'r') as file:
-                data = file.read()
-            with open(path, 'w') as file:
-                file.write(f"{note}\n\n{data}")
-        except Exception:
-            raise Exception(f"Can't write to file")
-
-    # catch any errors
-    except Exception as message:
-        error(message)
-
-# identity function
-def identity(yep):
-    return yep;
-
-# load, type check, de-duplicate, and process list of data
-def process_data(data, process=identity):
-    # entry ids already found
-    ids = []
-
-    # new processed data to return
-    new_data = []
-
-    # loop through data entries
-    for index, entry in enumerate(data):
-        try:
-            section()
-
-            # show progress
-            print(f"Entry {index + 1} of {len(data)}")
-
-            # is entry a dictionary
-            if type(entry) != dict:
-                raise Exception("Entry is not a dictionary")
-
-            # entry id
-            id = entry.get("id")
-
-            # does entry have an id field
-            if not id:
-                raise Exception("Entry has no id field")
-
-            print(id)
-
-            # is entry a duplicate
-            if id in ids:
-                raise Exception("Entry is a duplicate")
-
-            # add entry id to found list
-            ids.append(id)
-
-            # run process on entry
-            new_entries = process(entry)
-
-            # add processed entry (or entries, if multiple returned) to new data
-            if isinstance(new_entries, list):
-                for new_entry in new_entries:
-                    new_data.append(new_entry)
-            else:
-                new_data.append(new_entries)
-
-        # catch any errors         
-        except Exception as message:
-            warning(message)
-
-    return new_data
 
 # generate citation for source with Manubot
 def cite_with_manubot(source):
-    print("Running Manubot to generate citation")
-
     # source id
     id = source.get("id")
 
     # run Manubot and get results as json
     try:
-        commands = ["manubot", "cite", id, '--log-level=ERROR']
+        commands = ["manubot", "cite", id, "--log-level=ERROR"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE)
         manubot = json.loads(output.communicate()[0])[0]
     except Exception:
@@ -232,5 +180,4 @@ def cite_with_manubot(source):
     citation["link"] = manubot.get("URL", "")
 
     # add new citation to list
-    success("Citation generated")
     return citation
