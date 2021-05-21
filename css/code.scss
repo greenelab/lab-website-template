@@ -22,7 +22,7 @@ code.highlighter-rouge {
 
 // code block
 div.highlighter-rouge {
-  @include big-margins;
+  margin: 40px 0;
   @include trim-v-margins;
   background: $gray-500;
   overflow-x: auto;

@@ -12,13 +12,6 @@
   align-items: center;
 }
 
-@mixin margins {
-  margin: 20px 0;
-}
-@mixin big-margins {
-  margin: 40px 0;
-}
-
 @mixin trim-v-margins {
   &:first-child {
     margin-top: 0;

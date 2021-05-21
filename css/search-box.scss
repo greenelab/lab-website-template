@@ -7,7 +7,7 @@
 
 .search_box {
   position: relative;
-  @include margins;
+  margin: 20px 0;
   margin-left: auto;
   margin-right: auto;
   @include trim-v-margins;

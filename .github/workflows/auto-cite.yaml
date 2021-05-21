@@ -24,7 +24,7 @@ jobs:
       - name: Install Manubot
         run: pip install --upgrade manubot
       - name: Build updated citations
-        run: python auto-cite.py
+        run: python ./scripts/auto-cite.py
       - name: Commit updated citations
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

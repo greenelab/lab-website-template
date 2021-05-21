@@ -11,7 +11,7 @@
   align-items: flex-start;
   width: 100%;
   max-width: 100%;
-  @include margins;
+  margin: 30px 0;
   @include trim-v-margins;
   padding: 20px;
   border: solid 2px $gray-300;

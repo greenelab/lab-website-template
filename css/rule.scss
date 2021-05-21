@@ -6,7 +6,7 @@
 @import "mixins";
 
 hr {
-  @include big-margins;
+  margin: 40px 0;
   background: $gray-300;
   border: none;
   height: 1px;

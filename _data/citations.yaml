@@ -1,5 +1,420 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
+- id: doi:10.1093/gigascience/giaa117
+  title: Correcting for experiment-specific variability in expression compendia can
+    remove underlying signals
+  authors:
+  - Alexandra J Lee
+  - YoSon Park
+  - Georgia Doing
+  - Deborah A Hogan
+  - Casey S Greene
+  publisher: GigaScience
+  date: '2020-11-03'
+  link: https://doi.org/ghhtpf
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1101/2020.05.03.066597
+  title: Correcting for experiment-specific variability in expression compendia can
+    remove underlying signals
+  authors:
+  - Alexandra J. Lee
+  - YoSon Park
+  - Georgia Doing
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-05-03'
+  link: https://doi.org/gg7m5s
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1073/pnas.1917576117
+  title: <i>Pseudomonas aeruginosa lasR</i> mutant fitness in microoxia is supported
+    by an Anr-regulated oxygen-binding hemerythrin
+  authors:
+  - Michelle E. Clay
+  - John H. Hammond
+  - Fangfang Zhong
+  - Xiaolei Chen
+  - Caitlin H. Kowalski
+  - Alexandra J. Lee
+  - Monique S. Porter
+  - Thomas H. Hampton
+  - Casey S. Greene
+  - Ekaterina V. Pletneva
+  - Deborah A. Hogan
+  publisher: Proceedings of the National Academy of Sciences
+  date: '2020-02-11'
+  link: https://doi.org/gg7m49
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1186/s13059-019-1835-8
+  title: The CAFA challenge reports improved protein function prediction and new functional
+    annotations for hundreds of genes through experimental screens
+  authors:
+  - Naihui Zhou
+  - Yuxiang Jiang
+  - Timothy R. Bergquist
+  - Alexandra J. Lee
+  - Balint Z. Kacsoh
+  - Alex W. Crocker
+  - Kimberley A. Lewis
+  - George Georghiou
+  - Huy N. Nguyen
+  - Md Nafiz Hamid
+  - Larry Davis
+  - Tunca Dogan
+  - Volkan Atalay
+  - Ahmet S. Rifaioglu
+  - "Alperen Dalk\u0131ran"
+  - Rengul Cetin Atalay
+  - Chengxin Zhang
+  - Rebecca L. Hurto
+  - Peter L. Freddolino
+  - Yang Zhang
+  - Prajwal Bhat
+  - Fran Supek
+  - "Jos\xE9 M. Fern\xE1ndez"
+  - Branislava Gemovic
+  - Vladimir R. Perovic
+  - "Radoslav S. Davidovi\u0107"
+  - Neven Sumonja
+  - Nevena Veljkovic
+  - Ehsaneddin Asgari
+  - Mohammad R.K. Mofrad
+  - Giuseppe Profiti
+  - Castrense Savojardo
+  - Pier Luigi Martelli
+  - Rita Casadio
+  - Florian Boecker
+  - Heiko Schoof
+  - Indika Kahanda
+  - Natalie Thurlby
+  - Alice C. McHardy
+  - Alexandre Renaux
+  - Rabie Saidi
+  - Julian Gough
+  - Alex A. Freitas
+  - Magdalena Antczak
+  - Fabio Fabris
+  - Mark N. Wass
+  - Jie Hou
+  - Jianlin Cheng
+  - Zheng Wang
+  - Alfonso E. Romero
+  - Alberto Paccanaro
+  - Haixuan Yang
+  - Tatyana Goldberg
+  - Chenguang Zhao
+  - Liisa Holm
+  - "Petri T\xF6r\xF6nen"
+  - Alan J. Medlar
+  - Elaine Zosa
+  - Itamar Borukhov
+  - Ilya Novikov
+  - Angela Wilkins
+  - Olivier Lichtarge
+  - Po-Han Chi
+  - Wei-Cheng Tseng
+  - Michal Linial
+  - Peter W. Rose
+  - Christophe Dessimoz
+  - Vedrana Vidulin
+  - Saso Dzeroski
+  - Ian Sillitoe
+  - Sayoni Das
+  - Jonathan Gill Lees
+  - David T. Jones
+  - Cen Wan
+  - Domenico Cozzetto
+  - Rui Fa
+  - Mateo Torres
+  - Alex Warwick Vesztrocy
+  - Jose Manuel Rodriguez
+  - Michael L. Tress
+  - Marco Frasca
+  - Marco Notaro
+  - Giuliano Grossi
+  - Alessandro Petrini
+  - Matteo Re
+  - Giorgio Valentini
+  - Marco Mesiti
+  - Daniel B. Roche
+  - Jonas Reeb
+  - David W. Ritchie
+  - Sabeur Aridhi
+  - Seyed Ziaeddin Alborzi
+  - Marie-Dominique Devignes
+  - Da Chen Emily Koo
+  - Richard Bonneau
+  - "Vladimir Gligorijevi\u0107"
+  - Meet Barot
+  - Hai Fang
+  - Stefano Toppo
+  - Enrico Lavezzo
+  - Marco Falda
+  - Michele Berselli
+  - Silvio C.E. Tosatto
+  - Marco Carraro
+  - Damiano Piovesan
+  - Hafeez Ur Rehman
+  - Qizhong Mao
+  - Shanshan Zhang
+  - Slobodan Vucetic
+  - Gage S. Black
+  - Dane Jo
+  - Erica Suh
+  - Jonathan B. Dayton
+  - Dallas J. Larsen
+  - Ashton R. Omdahl
+  - Liam J. McGuffin
+  - Danielle A. Brackenridge
+  - Patricia C. Babbitt
+  - Jeffrey M. Yunes
+  - Paolo Fontana
+  - Feng Zhang
+  - Shanfeng Zhu
+  - Ronghui You
+  - Zihan Zhang
+  - Suyang Dai
+  - Shuwei Yao
+  - Weidong Tian
+  - Renzhi Cao
+  - Caleb Chandler
+  - Miguel Amezola
+  - Devon Johnson
+  - Jia-Ming Chang
+  - Wen-Hung Liao
+  - Yi-Wei Liu
+  - Stefano Pascarelli
+  - Yotam Frank
+  - Robert Hoehndorf
+  - Maxat Kulmanov
+  - Imane Boudellioua
+  - Gianfranco Politano
+  - Stefano Di Carlo
+  - Alfredo Benso
+  - Kai Hakala
+  - Filip Ginter
+  - Farrokh Mehryary
+  - Suwisa Kaewphan
+  - "Jari Bj\xF6rne"
+  - Hans Moen
+  - Martti E.E. Tolvanen
+  - Tapio Salakoski
+  - Daisuke Kihara
+  - Aashish Jain
+  - "Tomislav \u0160muc"
+  - Adrian Altenhoff
+  - Asa Ben-Hur
+  - Burkhard Rost
+  - Steven E. Brenner
+  - Christine A. Orengo
+  - Constance J. Jeffery
+  - Giovanni Bosco
+  - Deborah A. Hogan
+  - Maria J. Martin
+  - "Claire O\u2019Donovan"
+  - Sean D. Mooney
+  - Casey S. Greene
+  - Predrag Radivojac
+  - Iddo Friedberg
+  publisher: Genome Biology
+  date: '2019-11-19'
+  link: https://doi.org/ggnxpz
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1002/cyto.a.23371
+  title: 'DAFi: A directed recursive data filtering and clustering approach for improving
+    and interpreting data clustering identification of cell populations from polychromatic
+    flow cytometry data'
+  authors:
+  - Alexandra J. Lee
+  - Ivan Chang
+  - Julie G. Burel
+  - Cecilia S. Lindestam Arlehamn
+  - Aishwarya Mandava
+  - Daniela Weiskopf
+  - Bjoern Peters
+  - Alessandro Sette
+  - Richard H. Scheuermann
+  - Yu Qian
+  publisher: Cytometry Part A
+  date: '2018-06-01'
+  link: https://doi.org/gjttz9
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1186/s12859-017-1977-1
+  title: Cell type discovery and representation in the era of high-content single
+    cell phenotyping
+  authors:
+  - Trygve Bakken
+  - Lindsay Cowell
+  - Brian D. Aevermann
+  - Mark Novotny
+  - Rebecca Hodge
+  - Jeremy A. Miller
+  - Alexandra Lee
+  - Ivan Chang
+  - Jamison McCorrison
+  - Bali Pulendran
+  - Yu Qian
+  - Nicholas J. Schork
+  - Roger S. Lasken
+  - Ed S. Lein
+  - Richard H. Scheuermann
+  publisher: BMC Bioinformatics
+  date: '2017-12-21'
+  link: https://doi.org/gjtt2c
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.3389/fimmu.2017.00858
+  title: Automated Analysis of Flow Cytometry Data to Reduce Inter-Lab Variation in
+    the Detection of Major Histocompatibility Complex Multimer-Binding T Cells
+  authors:
+  - Natasja Wulff Pedersen
+  - P. Anoop Chandran
+  - Yu Qian
+  - Jonathan Rebhahn
+  - Nadia Viborg Petersen
+  - Mathilde Dalsgaard Hoff
+  - Scott White
+  - Alexandra J. Lee
+  - Rick Stanton
+  - Charlotte Halgreen
+  - Kivin Jakobsen
+  - Tim Mosmann
+  - "C\xE9cile Gouttefangeas"
+  - Cliburn Chan
+  - Richard H. Scheuermann
+  - Sine Reker Hadrup
+  publisher: Frontiers in Immunology
+  date: '2017-07-26'
+  link: https://doi.org/gbrjrh
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1371/journal.pone.0178199
+  title: Identification of diagnostic peptide regions that distinguish Zika virus
+    from related mosquito-borne Flaviviruses
+  authors:
+  - Alexandra J. Lee
+  - Roshni Bhattacharya
+  - Richard H. Scheuermann
+  - Brett E. Pickett
+  publisher: PLOS ONE
+  date: '2017-05-31'
+  link: https://doi.org/f98x5r
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1093/nar/gkw857
+  title: 'Influenza Research Database: An integrated bioinformatics resource for influenza
+    virus research'
+  authors:
+  - Yun Zhang
+  - Brian D. Aevermann
+  - Tavis K. Anderson
+  - David F. Burke
+  - Gwenaelle Dauphin
+  - Zhiping Gu
+  - Sherry He
+  - Sanjeev Kumar
+  - Christopher N. Larsen
+  - Alexandra J. Lee
+  - Xiaomei Li
+  - Catherine Macken
+  - Colin Mahaffey
+  - Brett E. Pickett
+  - Brian Reardon
+  - Thomas Smith
+  - Lucy Stewart
+  - Christian Suloway
+  - Guangyu Sun
+  - Lei Tong
+  - Amy L. Vincent
+  - Bryan Walters
+  - Sam Zaremba
+  - Hongtao Zhao
+  - Liwei Zhou
+  - Christian Zmasek
+  - Edward B. Klem
+  - Richard H. Scheuermann
+  publisher: Nucleic Acids Research
+  date: '2017-01-04'
+  link: https://doi.org/f9v64m
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1093/ve/vew015
+  title: Genetic changes found in a distinct clade of Enterovirus D68 associated with
+    paralysis during the 2014 outbreak
+  authors:
+  - Yun Zhang
+  - Jing Cao
+  - Song Zhang
+  - Alexandra J. Lee
+  - Guangyu Sun
+  - Christopher N. Larsen
+  - Hongtao Zhao
+  - Zhiping Gu
+  - Sherry He
+  - Edward B. Klem
+  - Richard H. Scheuermann
+  publisher: Virus Evolution
+  date: '2016-06-21'
+  link: https://doi.org/gjtt2b
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1128/jvi.03636-14
+  title: Diversifying Selection Analysis Predicts Antigenic Evolution of 2009 Pandemic
+    H1N1 Influenza A Virus in Humans
+  authors:
+  - Alexandra J. Lee
+  - Suman R. Das
+  - Wei Wang
+  - Theresa Fitzgerald
+  - Brett E. Pickett
+  - Brian D. Aevermann
+  - David J. Topham
+  - Ann R. Falsey
+  - Richard H. Scheuermann
+  publisher: Journal of Virology
+  date: '2015-05-15'
+  link: https://doi.org/gjttz8
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: doi:10.1145/2792745.2792750
+  title: FlowGate
+  authors:
+  - Yu Qian
+  - Richard H. Scheuermann
+  - Hyunsoo Kim
+  - Shweta Purawat
+  - Jianwu Wang
+  - Rick Stanton
+  - Alexandra Lee
+  - Weijia Xu
+  - Ilkay Altintas
+  - Robert Sinkovits
+  publisher: Association for Computing Machinery (ACM)
+  date: '2015-01-01'
+  link: https://doi.org/gjttz7
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
+- id: isbn:9781450337205
+  title: 'Proceedings of the XSEDE15 Conference: Scientific Advancements Enabled by
+    Enhanced Cyberinfrastructure : July 26-30, 2015, Renaissance St. Louis Grand Hotel,
+    St. Louis, Missouri, USA'
+  authors:
+  - ' Conference on Extreme Science and Engineering Discovery Environment'
+  - Gregory D Peterson
+  - Robert Sinkovits
+  - ' SIGAPP'
+  - ' Intel Corporation'
+  - ' Association for Computing Machinery'
+  publisher: ''
+  date: '2015-01-01'
+  link: https://doi.org/10.1145/2792745
+  orcid: 0000-0002-0208-3730
+  page: alex-lee
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:

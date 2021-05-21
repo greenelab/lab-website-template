@@ -6,7 +6,7 @@
 @import "mixins";
 
 .post_excerpt {
-  @include margins;
+  margin: 20px 0;
   @include trim-v-margins;
 
   & > *:first-child {

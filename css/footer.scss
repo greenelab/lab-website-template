@@ -19,7 +19,7 @@ footer {
   .footer_row {
     @include flex-center;
     flex-wrap: wrap;
-    @include margins;
+    margin: 20px 0;
     @include trim-v-margins;
 
     &:hover .link {
