@@ -11,6 +11,11 @@
     {%- assign value = value | remove: "~" -%}
     {%- assign data = data | where_exp: "d", "d[key] contains value" -%}
   {%- else -%}
+    {%- assign tonumber = value | plus: 0 -%}
+    {%- capture numbertostring -%}{{- tonumber -}}{%- endcapture -%}
+    {%- if value == numbertostring -%}
+      {%- assign value = tonumber -%}
+    {%- endif -%}
     {%- assign data = data | where_exp: "d", "d[key] == value" -%}
   {%- endif -%}
 {%- endfor -%}
@@ -48,6 +53,7 @@
     name=d.name
     repo=d.repo
     role=d.role
+    slug=d.slug
     style=style
     tags=d.tags
     title=d.title

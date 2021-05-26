@@ -1,15 +1,33 @@
+{% assign emptyarray = "" | split: "," %}
+{% assign id = include.slug | default: include.id | default: "" %}
+{% assign posts = site.posts | default: emptyarray %}
+
+{% assign post = nil %}
+{% for p in posts %}
+  {% if p.slug == id %}
+    {% assign post = p %}
+  {% endif %}
+{% endfor %}
+
 <div class="post_excerpt">
+  {% assign url = post.url | default: "" %}
+  {% assign title = post.title | default: "" %}
   <p>
-    <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
+    <a href="{{ url | relative_url }}">{{ title }}</a>
   </p>
+
+  {% assign author = post.author | default: "" %}
+  {% assign tags = post.tags | default: emptyarray %}
+  {% assign date = post.date | default: "" %}
   {%
     include post-info.html
-    author=include.author
-    member=include.member
-    tags=include.tags
-    date=include.date
+    author=author
+    tags=tags
+    date=date
   %}
+
+  {% assign content = post.content | default: "" %}
   <p>
-    {{ include.content | strip_html | truncate: 500 }}
+    {{ content | strip_html | truncate: 500 }}
   </p>
 </div>
