@@ -9,16 +9,6 @@
   {%- endif -%}
 {%- endfor -%}
 
-{%- assign link = citation.link | default: "" -%}
-{%- assign image = citation.image | default: "" -%}
-{%- assign title = citation.title | default: "" -%}
-{%- assign authors = citation.authors | default: emptyarray -%}
-{%- assign publisher = citation.publisher | default: "" -%}
-{%- assign date = citation.date | default: "1900-01-01" -%}
-{%- assign tags = citation.tags | default: emptyarray -%}
-{%- assign repo = citation.repo | default: "" -%}
-{%- assign extra-links = citation.extra-links | default: emptyarray -%}
-
 {%- assign rich = false -%}
 {%- if include.style == "rich" -%}
   {%- assign rich = true -%}
@@ -27,6 +17,8 @@
 {%- assign placeholder = "images/placeholder.svg" | relative_url -%}
 
 <div class="citation" data-style="{{ include.style }}">
+  {%- assign link = citation.link | default: "" -%}
+  {%- assign image = citation.image | default: "" -%}
   {%- if rich -%}
     <div class="citation_image">
       <a href="{{ link }}">
@@ -41,21 +33,33 @@
   {%- endif -%}
 
   <div class="citation_text">
+    {%- assign title = citation.title | default: "" -%}
     <div class="citation_title">
       <a href="{{ link }}">
         {{ title }}
       </a>
     </div>
+
+    {%- assign authors = citation.authors | default: emptyarray -%}
     <div
       class="citation_authors {% if rich %}truncate{% endif %}"
       {% if rich %}tabindex="0"{% endif %}
     >
       {{ authors | join: ", " }}
     </div>
+
+    {%- assign publisher = citation.publisher | default: "" -%}
+    {%- assign date = citation.date | default: "1900-01-01" -%}
     <div class="citation_details">
       {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
     </div>
+
     {%- if rich -%}
+
+      {%- assign tags = citation.tags | default: emptyarray -%}
+      {%- assign repo = citation.repo | default: "" -%}
+      {%- assign extra-links = citation.extra-links | default: emptyarray -%}
+
       {%- include tags.html tags=tags repo=repo -%}
       <div class="citation_links">
         {%- for extra in extra-links -%}
