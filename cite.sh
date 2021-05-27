@@ -1,1 +1,1 @@
-python ./scripts/auto-cite.py
+python ./auto-cite/auto-cite.py
