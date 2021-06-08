@@ -7,6 +7,8 @@ links:
   twitter: n_vasilevsky
   github: nicolevasilevsky
   linkedin: nicole-vasilevsky-a5302b4
+redirect_from:
+  - /nvasilevsky
 ---
 
 Nicole's research focuses on development and application of semantic technologies to facilitate new knowledge discovery and promote scientific reproducibility.
