@@ -17,6 +17,14 @@ links:
   instagram: YourLabHandle
   youtube: YourLabChannel
 
+# automatic citations
+auto-cite:
+  plugins:
+    - name: sources
+      input:
+        - ../_data/sources.yaml
+  output: ../_data/citations.yaml
+
 ### advanced settings
 
 # default front matter parameters for markdown files

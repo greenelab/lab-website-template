@@ -1,10 +1,12 @@
 from util import *
-import importlib
+from importlib import import_module
 
 # config info for input/output files and plugins
 config = {}
 try:
-    config = load_data("./config.yaml", type_check=False)
+    config = load_data("../_config.yaml", type_check=False).get("auto-cite")
+    if not config:
+        raise Exception("Couldn't find auto-cite config")
 except Exception as message:
     log(message, 3, "red")
     exit(1)
@@ -36,7 +38,7 @@ for plugin in config.get("plugins", []):
             log(message, 3, "red")
             exit(1)
 
-        plugin_sources = importlib.import_module(f"plugins.{name}").main(data)
+        plugin_sources = import_module(f"plugins.{name}").main(data)
 
         log(f"Got {len(plugin_sources)} sources", 2, "green")
 
