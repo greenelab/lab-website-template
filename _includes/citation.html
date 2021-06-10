@@ -1,6 +1,7 @@
 {%- assign emptyarray = "" | split: "," -%}
 {%- assign id = include.id | default: "" -%}
-{%- assign citations = site.data.citations | default: emptyarray -%} 
+{%- assign output = site.auto-cite.output | default: "citations" | split: "/" | last | split: "." | pop | join: "" -%}
+{%- assign citations = site.data[output] | default: emptyarray -%} 
 
 {%- assign citation = nil -%}
 {%- for c in citations -%}
