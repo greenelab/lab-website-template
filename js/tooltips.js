@@ -40,6 +40,7 @@ const createTooltips = () => {
   const open = ({ target }) => {
     if (popper) popper.destroy();
     popper = Popper.createPopper(target, tooltip, options(target.dataset));
+    tooltip.style.display = "";
     tooltip.dataset.show = true;
     tooltip.querySelector(".tooltip_content").innerHTML =
       target.dataset.tooltip;
@@ -49,6 +50,11 @@ const createTooltips = () => {
   const close = () => {
     window.clearTimeout(timer);
     tooltip.dataset.show = false;
+    tooltip.addEventListener(
+      "transitionend",
+      () => (tooltip.style.display = "none"),
+      { once: true }
+    );
   };
 
   // loop through elements with data-tooltip attribute
