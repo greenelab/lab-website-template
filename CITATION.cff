@@ -1,11 +1,13 @@
+# GitHub citation metadata for lab-website-template itself
+
 cff-version: 1.2.0
 authors:
-- family-names: "Rubinetti"
-  given-names: "Vincent"
-  orcid: "https://orcid.org/0000-0002-4655-3773"
-- family-names: "Greene"
-  given-names: "Casey"
-  orcid: "https://orcid.org/0000-0001-8713-9213"
+  - family-names: "Rubinetti"
+    given-names: "Vincent"
+    orcid: "https://orcid.org/0000-0002-4655-3773"
+  - family-names: "Greene"
+    given-names: "Casey"
+    orcid: "https://orcid.org/0000-0001-8713-9213"
 title: "Lab Website Template"
 version: 0.4.1
 date-released: 2021-08-23

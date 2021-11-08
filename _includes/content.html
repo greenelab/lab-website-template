@@ -35,16 +35,11 @@
 
     <section
       class="background"
+      {% if full %}data-full="true"{% endif %}
       {% if dark %}data-dark="true"{% endif %}
       {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %}
     >
-      {%- if full == false -%}
-      <div class="section">
-      {%- endif -%}
-        {{ section }}
-      {%- if full == false -%}
-      </div>
-      {%- endif -%}
+      {{- section -}}
     </section>
 
   {%- endunless -%}

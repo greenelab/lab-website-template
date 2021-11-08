@@ -18,6 +18,10 @@
     img {
       width: 100%;
     }
+
+    .feature_text {
+      flex-grow: 1;
+    }
   }
 
   &:nth-child(odd) {
@@ -46,13 +50,13 @@
 
     .feature_image {
       order: unset !important;
-      width: unset !important;
+      width: unset;
       margin: 0 !important;
       margin-bottom: 20px !important;
+    }
 
-      .feature_text {
-        width: unset !important;
-      }
+    .feature_text {
+      width: 100%;
     }
   }
 }
