@@ -1,0 +1,25 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+button {
+  @include inline-flex-center;
+  max-width: calc(100% - 10px - 10px);
+  min-height: 40px;
+  margin: 0;
+  padding: 7.5px 15px;
+  border: none;
+  border-radius: 5px;
+  background: $accent;
+  color: $white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background $fast;
+
+  &:hover {
+    background: $gray-500;
+  }
+}

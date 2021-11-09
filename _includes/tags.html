@@ -1,4 +1,12 @@
-{%- assign tags = include.tags | join: "," | split: "," -%}
+{%- assign tags = "" | split: "," -%}
+{%- assign input = include.tags | join: "," | split: "," -%}
+{%- for tag in input -%}
+  {%- assign tag = tag | strip -%}
+  {%- if tag != "" -%}
+    {%- assign tags = tags | push: tag -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {%- assign repo = include.repo | strip -%}
 {%- if repo == "" -%}
   {%- assign repo = nil -%}

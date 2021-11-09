@@ -36,7 +36,7 @@ header {
 
   .nav_row {
     @include inline-flex-center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: $regular;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -56,8 +56,8 @@ header {
   }
 
   // screen width where nav bar wraps to under logo
-  // adjust based on length of your lab title and # of nav links
-  @media (max-width: 900px) {
+  // adjust based on width of your lab name and width of your nav bar
+  @media (max-width: 1000px) {
     align-content: center;
 
     .logo_row,
@@ -67,8 +67,8 @@ header {
   }
 
   // screen width where logo and nav bar go from horizontal to vertical
-  // adjust based on length of your lab title and # of nav links
-  @media (max-width: 600px) {
+  // adjust based on width of your lab name and width of your nav bar
+  @media (max-width: 700px) {
     .logo_row {
       flex-direction: column;
     }

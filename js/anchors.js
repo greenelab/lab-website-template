@@ -10,15 +10,14 @@ const createAnchors = () => {
     const link = document.createElement("a");
     link.classList.add("fas", "fa-link", "anchor");
     link.href = "#" + heading.id;
+    link.setAttribute("aria-label", "Link to this section");
     heading.append(link);
 
     // if first heading in the section, move id from heading to parent section
-    if (heading.matches(":first-child")) {
-      let section = heading.closest("section");
-      if (section) {
-        section.id = heading.id;
-        heading.removeAttribute("id");
-      }
+    const parent = heading.parentElement;
+    if (parent.matches("section")) {
+      parent.id = heading.id;
+      heading.removeAttribute("id");
     }
   }
 };

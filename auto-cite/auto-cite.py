@@ -6,7 +6,7 @@ config = {}
 try:
     config = load_data("../_config.yaml", type_check=False).get("auto-cite")
     if not config:
-        raise Exception("Couldn't find auto-cite config")
+        raise Exception("Couldn't find auto-cite key in config")
 except Exception as message:
     log(message, 3, "red")
     exit(1)
