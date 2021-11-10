@@ -12,64 +12,6 @@ How easy is the template to use?
 How flexible is it?
 How's our documentation?
 
-## Gallery
-
-<kbd>
-  <a href="https://greenelab.github.io/lab-website-template/">
-    <img src="https://user-images.githubusercontent.com/8326331/140773232-0c0f0780-a6ae-4fea-838b-b68f117d8ba0.png" height="150px" />
-    <br>
-    Lab Website Template
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://tislab.org/">
-    <img src="https://user-images.githubusercontent.com/8326331/140774758-58d13120-c091-41ea-87e3-d2219a90f1d9.png" height="150px" />
-    <br>
-    Translational and Integrative Sciences Lab
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://greenelab.com/">
-    <img src="https://user-images.githubusercontent.com/8326331/140775456-aa6afad1-ba72-48f6-803e-279f8c1011e9.png" height="150px" />
-    <br>
-    Greene Lab
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://www.waysciencelab.com/">
-    <img src="https://user-images.githubusercontent.com/8326331/140776192-80a802d5-be4f-4aeb-b159-f473bbb10fbe.png" height="150px" />
-    <br>
-    Way Lab
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://fong-lab.github.io/">
-    <img src="https://user-images.githubusercontent.com/8326331/140777326-e1da4b0f-053b-4355-823d-077fc1078a5b.png" height="150px" />
-    <br>
-    Fong Lab
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://mmv-lab.github.io/">
-    <img src="https://user-images.githubusercontent.com/8326331/140778499-787f6d7f-f07f-43ee-9942-5ac8f955443a.png" height="150px" />
-    <br>
-    Microscopy Machine Vision Lab
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://quantmarineecolab.github.io/">
-    <img src="https://user-images.githubusercontent.com/8326331/140778904-42abe18d-bcbe-4861-8993-911c95e6b6f6.png" height="150px" />
-    <br>
-    Quantitative Marine Ecology Lab
-  </a>
-</kbd>
-
 ## Features
 
 - **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
@@ -89,6 +31,10 @@ How's our documentation?
 - A **team** page, compiled automatically from individual members
 - Individual **team member pages** with bios, assignable roles, and social media links
 - A **blog page**, with a sorted, grouped, tagged list of all your posts
+
+## Gallery
+
+[🖼️ See who else is using the template and what it can do!](https://github.com/greenelab/lab-website-template/wiki/Gallery)
 
 ## Documentation
 

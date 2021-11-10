@@ -24,7 +24,11 @@
         class="gallery_item"
         data-tooltip="{{ tooltip }}"
       >
-        <img src="{{ image | relative_url }}" loading="lazy">
+        <img
+          src="{{ image | relative_url }}"
+          loading="lazy"
+          alt="{{ tooltip | default: ''  }}"
+        />
       </a>
     {%- endif -%}
 
