@@ -12,6 +12,16 @@
   align-items: center;
 }
 
+@mixin trim-h-margins {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 @mixin trim-v-margins {
   &:first-child {
     margin-top: 0;

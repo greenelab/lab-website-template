@@ -41,6 +41,10 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 
+    .link {
+      margin: 0 10px;
+    }
+
     &:hover .link {
       opacity: 0.25;
     }
