@@ -5,7 +5,7 @@
 const onSiteSearchSubmit = (event) => {
   event.preventDefault();
   const google = "https://www.google.com/search?q=site:";
-  const site = event.target.getAttribute("data-site");
+  const site = window.location.href;
   const query = event.target.elements.query.value;
   window.location = google + site + " " + query;
 };
