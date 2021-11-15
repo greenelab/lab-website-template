@@ -60,7 +60,7 @@ header {
   }
 
   // screen width where nav bar wraps to under logo
-  // adjust based on width of your lab name and width of your nav bar
+  // adjust based on width of your lab name and nav bar
   @media (max-width: 1000px) {
     align-content: center;
 
@@ -71,7 +71,7 @@ header {
   }
 
   // screen width where logo and nav bar go from horizontal to vertical
-  // adjust based on width of your lab name and width of your nav bar
+  // adjust based on width of your lab name and nav bar
   @media (max-width: 700px) {
     .logo_row {
       flex-direction: column;
