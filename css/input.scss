@@ -8,11 +8,11 @@
 input {
   width: $page / 3;
   height: 40px;
-  max-width: calc(100% - 10px - 10px);
-  margin: 10px;
+  max-width: 100%;
+  margin: 0;
   padding: 5px 10px;
   border: solid 1px $gray-800;
   border-radius: 5px;
   font-family: $sans;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }

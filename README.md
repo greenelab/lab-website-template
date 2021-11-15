@@ -12,28 +12,6 @@ How easy is the template to use?
 How flexible is it?
 How's our documentation?
 
-## Gallery
-
-<kbd>
-  <a href="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png">
-    <img src="https://user-images.githubusercontent.com/8326331/112500343-acc58480-8d5e-11eb-9795-9592625872fc.png" height="150px" alt="Screenshot" />
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://greenelab.github.io/lab-website-template/">
-    <img src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/favicons/share-thumbnail.jpg?raw=true" height="150px" alt="Lab Website Template" />
-  </a>
-</kbd>
-
-<kbd>
-  <a href="https://greenelab.com/">
-    <img src="https://greenelab.com/favicons/share-thumbnail.jpg" height="150px" alt="GreeneLab.com" />
-  </a>
-</kbd>
-
-more coming soon...
-
 ## Features
 
 - **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
@@ -46,13 +24,17 @@ more coming soon...
   - image galleries
   - multi-size cards with image and text
   - citations
-  - ...[and more](https://github.com/greenelab/lab-website-template/wiki/Components)!
+  - ...[and many more](https://github.com/greenelab/lab-website-template/wiki/Components)!
 - A **home page**, where you can highlight the most important things that make your lab special
 - A **research page**, with a sorted, searchable list of all your published works
 - A **tools page**, where you can show off your software, datasets, or other useful things
 - A **team** page, compiled automatically from individual members
 - Individual **team member pages** with bios, assignable roles, and social media links
 - A **blog page**, with a sorted, grouped, tagged list of all your posts
+
+## Gallery
+
+[🖼️ See who else is using the template and what it can do!](https://github.com/greenelab/lab-website-template/wiki/Gallery)
 
 ## Documentation
 

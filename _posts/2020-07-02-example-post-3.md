@@ -1,8 +1,6 @@
 ---
 title: Example post 3
-tags: 
-  - biology
-  - medicine
+tags: biology, medicine
 author: Upton O. Goode
 member: upton-goode
 ---

@@ -11,10 +11,6 @@
   {%- assign dark = true -%}
 {%- endif -%}
 
-{%- assign title = site.logo-text -%}
-{%- if title == nil -%}
-  {%- assign title = site.title -%}
-{%- endif -%}
 
 <header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
   <a
@@ -22,9 +18,9 @@
     class="logo_row"
     data-tooltip="Home"
   >
-    <img src="{{ site.logo | relative_url }}" class="logo" />
-    {% if title and title != "" %}
-      <span class="logo_text">{{ title }}</span>
+    <img src="{{ site.logo | relative_url }}" class="logo" alt="Logo image" />
+    {% if site.logo-text != false %}
+      <span class="logo_text">{{ site.title }}</span>
     {% endif %}
   </a>
   <nav class="nav_row">

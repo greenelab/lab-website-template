@@ -17,8 +17,9 @@ a:hover {
 .link {
   @include inline-flex-center;
   max-width: 100%;
-  padding: 10px;
-  font-size: 0.9rem;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1rem;
   text-decoration: none;
   vertical-align: bottom;
   transition: background $fast, color $fast, opacity $fast;

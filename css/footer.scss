@@ -21,6 +21,7 @@ footer {
     flex-wrap: wrap;
     margin: 20px 0;
     @include trim-v-margins;
+    line-height: $spacing + 0.3;
 
     &:hover .link {
       opacity: 0.25;
@@ -33,6 +34,5 @@ footer {
 
   a {
     color: currentColor;
-    text-decoration: none;
   }
 }

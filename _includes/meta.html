@@ -1,6 +1,15 @@
-{% capture title%}
-{{ site.title }}{% if page.title %} - {% endif %}{{ page.title }}
-{% endcapture %}
+{% assign title = "" | split: "," %}
+{% if site.title %}
+  {% assign title = title | push: site.title %}
+{% endif %}
+{% if page.title %}
+  {% assign title = title | push: page.title %}
+{% endif %}
+{% assign title = title | join: " - " %}
+
+<title>{{ title }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- https://metatags.io/ -->
 <meta name="title" content="{{ title }}" />

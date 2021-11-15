@@ -26,17 +26,18 @@
   {%- if role -%}
     {%- include role.html type=role -%}
   {%- endif -%}
-
+  
+  {%- assign name = member.name | default: "" -%}
   {%- assign image = member.image | default: "" -%}
   <span class="portrait_image">
     <img
       src="{{ image | relative_url }}"
       onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
       loading="lazy"
+      alt="{{ name | default: 'Member portrait' }}"
     >
   </span>
 
-  {%- assign name = member.name | default: "" -%}
   {%- if name -%}
     <span class="portrait_name">
       {{ name }}

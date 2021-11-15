@@ -5,8 +5,16 @@
   rel="stylesheet"
 />
 
-<!-- Font Awesome (icons) -->
+<!-- Font Awesome icons (load asynchronously due to size) -->
 <link
   href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-  rel="stylesheet"
+  rel="preload"
+  as="style"
+  onload="this.onload = null; this.rel = 'stylesheet';"
 />
+<noscript>
+  <link
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    rel="stylesheet"
+  />
+</noscript>
