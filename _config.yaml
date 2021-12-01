@@ -3,9 +3,9 @@
 # site properties and page defaults
 title: Lab Website
 description: An easy-to-use, flexible website for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-logo: images/animated_logo.svg
-header: images/background.jpg
-footer: images/background.jpg
+logo: images/animated_logo_white.svg
+header: images/background.png
+footer: images/background.png
 baseurl: /mmb-bioit
 
 # site social media and other links
