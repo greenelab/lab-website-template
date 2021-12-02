@@ -51,7 +51,7 @@ The Netherlands
 {% capture col1 %}
 {%
   include figure.html
-  image="images/UMCU.jpg"
+  image="images/UMCU_banner.jpg"
   caption=""
 %}
 {% endcapture %}
