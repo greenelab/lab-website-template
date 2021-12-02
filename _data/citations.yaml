@@ -1,35 +1,5 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2019-06-24'
-  link: https://doi.org/c7np
-  tags:
-  - test
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-06-02'
-  link: https://doi.org/gg7m48
-  image: null
-  extra-links:
-  - type: null
-    link: null
-  tags:
-  - test
-  - test2
 - id: doi:10.1186/s13073-020-00825-3
   title: Mode and dynamics of vanA-type vancomycin resistance dissemination in Dutch
     hospitals
@@ -42,3 +12,94 @@
   publisher: Genome Medicine
   date: '2021-01-20'
   link: https://doi.org/gm5t64
+  tags:
+  - Plasmid
+  - Enterococcus
+- id: doi:10.3390/microorganisms9081613
+  title: Recovering Escherichia coli Plasmids in the Absence of Long-Read Sequencing
+    Data
+  authors:
+  - Julian A. Paganini
+  - Nienke L. Plantinga
+  - Sergio Arredondo-Alonso
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Microorganisms
+  date: '2021-07-28'
+  link: https://doi.org/gnn36g
+- id: doi:10.1093/jac/dkaa534
+  title: "Comparative genomics of ESBL-producing <i>Escherichia coli</i> (ESBL-Ec)\
+    \ reveals a similar distribution of the 10 most prevalent ESBL-Ec clones and ESBL\
+    \ genes among human community faecal and extra-intestinal infection isolates in\
+    \ the Netherlands (2014\u201317)"
+  authors:
+  - T D Verschuuren
+  - D van Hout
+  - S Arredondo-Alonso
+  - A C Fluit
+  - E A Reuland
+  - J Top
+  - "A C Sch\xFCrch"
+  - T Bosch
+  - M J M Bonten
+  - J A J W Kluytmans
+  - R J L Willems
+  publisher: Journal of Antimicrobial Chemotherapy
+  date: '2021-01-11'
+  link: https://doi.org/gnn36h
+- id: doi:10.1038/s41467-021-21749-5
+  title: Apparent nosocomial adaptation of Enterococcus faecalis predates the modern
+    hospital era
+  authors:
+  - "Anna K. P\xF6ntinen"
+  - Janetta Top
+  - Sergio Arredondo-Alonso
+  - Gerry Tonkin-Hill
+  - Ana R. Freitas
+  - Carla Novais
+  - Rebecca A. Gladstone
+  - Maiju Pesonen
+  - Rodrigo Meneses
+  - Henri Pesonen
+  - John A. Lees
+  - Dorota Jamrozy
+  - Stephen D. Bentley
+  - Val F. Lanza
+  - Carmen Torres
+  - Luisa Peixe
+  - Teresa M. Coque
+  - Julian Parkhill
+  - "Anita C. Sch\xFCrch"
+  - Rob J. L. Willems
+  - Jukka Corander
+  publisher: Nature Communications
+  date: '2021-03-09'
+  link: https://doi.org/gkr3gx
+- id: doi:10.1099/mgen.0.000488
+  title: Genomic rearrangements uncovered by genome-wide co-evolution analysis of
+    a major nosocomial pathogen, Enterococcus faecium
+  authors:
+  - Janetta Top
+  - Sergio Arredondo-Alonso
+  - "Anita C. Sch\xFCrch"
+  - Santeri Puranen
+  - Maiju Pesonen
+  - Johan Pensar
+  - Rob J. L. Willems
+  - Jukka Corander
+  publisher: Microbial Genomics
+  date: 1900-1-1
+  link: https://doi.org/gmsjnb
+- id: doi:10.1093/bioinformatics/btaa233
+  title: 'gplas: a comprehensive tool for plasmid analysis using short-read graphs'
+  authors:
+  - Sergio Arredondo-Alonso
+  - Martin Bootsma
+  - "Ya\xEFr Hein"
+  - Malbert R C Rogers
+  - Jukka Corander
+  - Rob J L Willems
+  - "Anita C Sch\xFCrch"
+  publisher: Bioinformatics
+  date: '2020-06-01'
+  link: https://doi.org/gg8s4b
