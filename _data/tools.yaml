@@ -4,6 +4,11 @@
   link: https://gitlab.com/sirarredondo/gplas
   description: gplas is a tool to bin plasmid-predicted contigs based on sequence composition, coverage and assembly graph information. This tool extends the possibility of accurately binning predicted plasmid contigs into several discrete plasmid components.
   repo: sirarredondo/gplas
+  tags: 
+    - Plasmid
+    - Tool
+    - Machine Learning
+    - WGS
 
 - name: mlplasmids
   group: tool
@@ -11,6 +16,11 @@
   link: https://gitlab.com/sirarredondo/mlplasmids
   description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. 
   repo: aschuerch/mlplasmids
+  tags:
+    - Plasmid
+    - Tool
+    - Machine Learning
+    - WGS
 
 - name: MetaMobilePicker
   group: tool
@@ -18,6 +28,12 @@
   link: https://gitlab.com/jkerkvliet/metamobilepicker
   description: MetaMobilePicker is a computational pipeline designed to identify mobile genetic elements and antimicrobial resistance genes in metagenomics samples. Currently it identifies plasmids, insertion sequences and bacteriophages. 
   repo: jkerkvliet/metamobilepicker
+  tags:
+    - Plasmids
+    - MGEs
+    - AMR
+    - Metagenomics
+    - Tool
 
 
 - name: plasmidEC - plasmid Ensemble Classifier
@@ -26,6 +42,10 @@
   link: https://github.com/lisavader/plasmidEC
   description: "plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future."
   repo: lisavader/plasmidec
+  tags:
+    - Plasmids
+    - WGS
+    - Tool
 
 - name: Bactofidia
   group: tool
@@ -33,6 +53,7 @@
   link: https://gitlab.com/aschuerch/bactofidia
   description: bactofidia is a bacterial assembly and basic analysis pipeline using Snakemake and bioconda. It is currently written for paired-end Illumina data with length 250 or 150. The pipeline is written to ensure reproducibility, and creates virtual software environments with the software versions that are used for analysis.
   repo: aschuerch/bactofidia
+ 
 
 
 - name: VREfidia
