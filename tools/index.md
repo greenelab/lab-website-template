@@ -16,12 +16,12 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {% include section.html %}
 
-## Featured
+## Tools
 
 {% include list.html component="card" data="tools" filters="group: tool" %}
 
 {% include section.html %}
 
-## More
+## Educational resources
 
 {% include list.html component="card" data="tools" filters="group: education" %}
