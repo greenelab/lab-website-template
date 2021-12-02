@@ -5,7 +5,10 @@
     - Enterococcus
   
 - id: doi:10.3390/microorganisms9081613
-  date: 2021-7-28    
+  date: 2021-7-28
+  tags:
+    - Plasmid
+    - WGS
     
 - id: doi:10.1093/jac/dkaa534
   date: 2021-1-11
