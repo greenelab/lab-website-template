@@ -12,3 +12,5 @@ links:
   github: 
   linkedin: 
 ---
+
+Jesse's bio.

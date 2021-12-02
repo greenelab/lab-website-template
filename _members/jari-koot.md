@@ -12,3 +12,5 @@ links:
   github: 
   linkedin: 
 ---
+
+Jari's bio.
