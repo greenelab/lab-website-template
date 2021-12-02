@@ -7,10 +7,7 @@ nav:
 
 # <i class="fas fa-microscope"></i>Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Our research interest is to find patterns in DNA sequencing data and to apply this knowledge to the genomic epidemiology of organisms causing infectious diseases. We are interested in the genomics of plasmids and other mobile genetic elements. Our group provides bioinformatics support for a medical microbiology department of an academic hospital. We design, write and maintain pipelines and databases for genomic or metagenomic analyses, carry out or advise on analysis of high-throughput sequencing data and provide bioinformatics education and consultation.
 
 {% include section.html %}
 
