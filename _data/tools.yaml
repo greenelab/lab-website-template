@@ -76,4 +76,7 @@
   link: https://mmb-umcu.github.io/genomics-workshop/
   description: Three day course on microbial genomics from commandline to SNP analyses using data from the Lenski Long Term Evolution experiment.
   repo: aschuerch/MolecularEpidemiology_AnalysisWGS
+  tags:
+    - Course
+    - Genomics
 
