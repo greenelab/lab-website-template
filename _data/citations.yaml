@@ -13,6 +13,7 @@
   publisher: PLOS Computational Biology
   date: '2019-06-24'
   link: https://doi.org/c7np
+  tags: test
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:
