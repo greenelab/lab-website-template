@@ -1,15 +1,193 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.1186/s13073-020-00825-3
+  title: Mode and dynamics of vanA-type vancomycin resistance dissemination in Dutch
+    hospitals
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
+  - Sergio Arredondo-Alonso
+  - Janetta Top
+  - Jukka Corander
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Genome Medicine
+  date: '2021-01-20'
+  link: https://doi.org/gm5t64
+  tags:
+  - Plasmid
+  - Enterococcus
+  - Antimicrobial resistance
+- id: doi:10.3390/microorganisms9081613
+  title: Recovering Escherichia coli Plasmids in the Absence of Long-Read Sequencing
+    Data
+  authors:
+  - Julian A. Paganini
+  - Nienke L. Plantinga
+  - Sergio Arredondo-Alonso
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Microorganisms
+  date: '2021-07-28'
+  link: https://doi.org/gnn36g
+  tags:
+  - Plasmid
+  - WGS
+  - E.coli
+- id: doi:10.1093/jac/dkaa534
+  title: "Comparative genomics of ESBL-producing <i>Escherichia coli</i> (ESBL-Ec)\
+    \ reveals a similar distribution of the 10 most prevalent ESBL-Ec clones and ESBL\
+    \ genes among human community faecal and extra-intestinal infection isolates in\
+    \ the Netherlands (2014\u201317)"
+  authors:
+  - T D Verschuuren
+  - D van Hout
+  - S Arredondo-Alonso
+  - A C Fluit
+  - E A Reuland
+  - J Top
+  - "A C Sch\xFCrch"
+  - T Bosch
+  - M J M Bonten
+  - J A J W Kluytmans
+  - R J L Willems
+  publisher: Journal of Antimicrobial Chemotherapy
+  date: '2021-01-11'
+  link: https://doi.org/gnn36h
+  tags:
+  - WGS
+  - E.coli
+  - Antimicrobial resistance
+- id: doi:10.1038/s41467-021-21749-5
+  title: Apparent nosocomial adaptation of Enterococcus faecalis predates the modern
+    hospital era
+  authors:
+  - "Anna K. P\xF6ntinen"
+  - Janetta Top
+  - Sergio Arredondo-Alonso
+  - Gerry Tonkin-Hill
+  - Ana R. Freitas
+  - Carla Novais
+  - Rebecca A. Gladstone
+  - Maiju Pesonen
+  - Rodrigo Meneses
+  - Henri Pesonen
+  - John A. Lees
+  - Dorota Jamrozy
+  - Stephen D. Bentley
+  - Val F. Lanza
+  - Carmen Torres
+  - Luisa Peixe
+  - Teresa M. Coque
+  - Julian Parkhill
+  - "Anita C. Sch\xFCrch"
+  - Rob J. L. Willems
+  - Jukka Corander
+  publisher: Nature Communications
+  date: '2021-03-09'
+  link: https://doi.org/gkr3gx
+  tags:
+  - Enterococcus
+- id: doi:10.1099/mgen.0.000488
+  title: Genomic rearrangements uncovered by genome-wide co-evolution analysis of
+    a major nosocomial pathogen, Enterococcus faecium
+  authors:
+  - Janetta Top
+  - Sergio Arredondo-Alonso
+  - "Anita C. Sch\xFCrch"
+  - Santeri Puranen
+  - Maiju Pesonen
+  - Johan Pensar
+  - Rob J. L. Willems
+  - Jukka Corander
+  publisher: Microbial Genomics
+  date: '2020-03-09'
+  link: https://doi.org/gmsjnb
+  tags:
+  - Enterococcus
+- id: doi:10.1093/bioinformatics/btaa233
+  title: 'gplas: a comprehensive tool for plasmid analysis using short-read graphs'
+  authors:
+  - Sergio Arredondo-Alonso
+  - Martin Bootsma
+  - "Ya\xEFr Hein"
+  - Malbert R C Rogers
+  - Jukka Corander
+  - Rob J L Willems
+  - "Anita C Sch\xFCrch"
+  publisher: Bioinformatics
+  date: '2020-06-01'
+  link: https://doi.org/gg8s4b
+  tags:
+  - Plasmid
+  - Tool
+  extra-links:
+  - type: source
+    link: https://gitlab.com/sirarredondo/gplas
+- id: doi:10.1128/mBio.03284-19
+  title: Plasmids Shaped the Recent Emergence of the Major Nosocomial Pathogen Enterococcus
+    faecium
+  authors:
+  - S. Arredondo-Alonso
+  - J. Top
+  - A. McNally
+  - S. Puranen
+  - M. Pesonen
+  - J. Pensar
+  - P. Marttinen
+  - J. C. Braat
+  - M. R. C. Rogers
+  - W. van Schaik
+  - S. Kaski
+  - R. J. L. Willems
+  - J. Corander
+  - "A. C. Sch\xFCrch"
+  publisher: mBio
+  date: '2020-02-11'
+  link: https://doi.org/gjzbrg
+  tags:
+  - Plasmid
+  - Enterococcus
+  - WGS
+- id: doi:10.1371/journal.pone.0227604
+  title: "Extended-spectrum beta-lactamase (ESBL)-producing and non-ESBL-producing\
+    \ Escherichia coli isolates causing bacteremia in the Netherlands (2014 \u2013\
+    \ 2016) differ in clonal distribution, antimicrobial resistance gene and virulence\
+    \ gene content"
+  authors:
+  - Denise van Hout
+  - Tess D. Verschuuren
+  - Patricia C. J. Bruijning-Verhagen
+  - Thijs Bosch
+  - "Anita C. Sch\xFCrch"
+  - Rob J. L. Willems
+  - Marc J. M. Bonten
+  - Jan A. J. W. Kluytmans
+  publisher: PLOS ONE
+  date: '2020-01-14'
+  link: https://doi.org/gnn4jq
+  tags:
+  - E.coli
+  - WGS
+  - Antimicrobial resistance
+- id: doi:10.1099/mgen.0.000224
+  title: 'mlplasmids: a user-friendly tool to predict plasmid- and chromosome-derived
+    sequences for single species'
+  authors:
+  - Sergio Arredondo-Alonso
+  - Malbert R. C. Rogers
+  - Johanna C. Braat
+  - Tess D. Verschuuren
+  - Janetta Top
+  - Jukka Corander
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Microbial Genomics
+  date: '2018-11-01'
+  link: https://doi.org/gnn4jr
+  tags:
+  - Plasmid
+  - Tool
+  extra-links:
+  - type: source
+    link: https://gitlab.com/sirarredondo/mlplasmids
+  - type: app
+    link: https://sarredondo.shinyapps.io/mlplasmids

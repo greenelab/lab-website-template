@@ -1,1 +1,64 @@
-- id: doi:10.7554/eLife.32822
+- id: doi:10.1186/s13073-020-00825-3
+  date: 2021-1-20
+  tags:
+    - Plasmid
+    - Enterococcus
+    - Antimicrobial resistance
+  
+- id: doi:10.3390/microorganisms9081613
+  date: 2021-7-28
+  tags:
+    - Plasmid
+    - WGS
+    - E.coli
+    
+- id: doi:10.1093/jac/dkaa534
+  date: 2021-1-11
+  tags:
+    - WGS
+    - E.coli
+    - Antimicrobial resistance
+        
+- id: doi:10.1038/s41467-021-21749-5
+  date: 2021-3-9
+  tags:
+    - Enterococcus
+        
+- id: doi:10.1099/mgen.0.000488
+  date: 2020-3-9
+  tags:
+    - Enterococcus
+        
+- id: doi:10.1093/bioinformatics/btaa233
+  date: 2020-6-1
+  tags:
+    - Plasmid
+    - Tool
+  extra-links:
+    - type: source
+      link: https://gitlab.com/sirarredondo/gplas
+      
+- id: doi:10.1128/mBio.03284-19
+  date: 2020-2-11
+  tags:
+    - Plasmid
+    - Enterococcus
+    - WGS
+  
+- id: doi:10.1371/journal.pone.0227604
+  date: 2020-1-14
+  tags:
+    - E.coli
+    - WGS
+    - Antimicrobial resistance
+  
+- id: doi:10.1099/mgen.0.000224
+  date: 2018-11-1
+  tags:
+    - Plasmid
+    - Tool
+  extra-links:
+    - type: source
+      link: https://gitlab.com/sirarredondo/mlplasmids
+    - type: app
+      link: https://sarredondo.shinyapps.io/mlplasmids
