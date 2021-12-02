@@ -32,10 +32,39 @@
 - id: doi:10.1093/bioinformatics/btaa233
   date: 2020-6-1
   tags:
-    - Tool
     - Plasmid
+    - Tool
   extra-links:
     - type: source
       link: https://gitlab.com/sirarredondo/gplas
+      
+- id: doi:10.1128/mBio.03284-19
+  date: 2020-2-11
+  tags:
+    - Plasmid
+    - Enterococcus
+    - WGS
+  
+- id: doi:10.1371/journal.pone.0227604
+  date: 2020-1-14
+  tags:
+    - E.coli
+    - WGS
+    - Antimicrobial resistance
+  
+- id: doi: 10.1099/mgen.0.000224
+  date: 2018-11-1
+  tags:
+    - Plasmid
+    - Tool
+  extra-links:
+    - type: source
+      link: https://gitlab.com/sirarredondo/mlplasmids
+    - type: web-app
+      link: https://sarredondo.shinyapps.io/mlplasmids
+  
+  
+  
+   
         
 
