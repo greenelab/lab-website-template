@@ -14,8 +14,8 @@ external:
 
 home-page:
   icon: fas fa-home
-  text: Home Page
-  tooltip: Home page
+  text: Personal Site
+  tooltip: Personal site
   link: $LINK
 
 email:
@@ -61,6 +61,12 @@ github:
   text: GitHub
   tooltip: GitHub
   link: https://github.com/$LINK
+  
+gitlab:
+  icon: fab fa-github
+  text: GitLab
+  tooltip: GitLab
+  link: https://gitlab.com/$LINK
 
 twitter:
   icon: fab fa-twitter
