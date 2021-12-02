@@ -27,7 +27,7 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/UMCU_banner.jpeg" %}
+{% include banner.html image="images/UMCU_banner_cropped.jpeg" %}
 
 {% include section.html %}
 
@@ -72,7 +72,7 @@ We are a group of enthusiastic scientists with different interests and backgroun
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/BioIT_group_picture.png"
   link="team"
   headline="Our Team"
   text=text
