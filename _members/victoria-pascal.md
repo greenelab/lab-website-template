@@ -8,7 +8,6 @@ aliases:
   - V Pascal
   - V. Pascal 
 links:
-  home-page: victoriapascal.github.io
   email: v.pascalandreu@umcutrecht.nl
   orcid: 0000-0001-9609-9401
   github: victoriapascal
