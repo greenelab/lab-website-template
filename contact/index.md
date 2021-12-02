@@ -5,7 +5,7 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# <i class="fas fa-en
+# <i class="fas fa-envelope"></i>Contact
 Our lab is part of the group of [Prof. Rob Willems](https://www.umcutrecht.nl/en/Research/Researchers/Willems-Rob-RJL) of the [Department of Medical Microbiology](https://www.umcutrecht.nl/nl/over-ons-medische-microbiologie?lang=en), at the Division Laboratories, Pharmacy and Biomedical Genetics, [University Medical Center Utrecht](https://www.umcutrecht.nl/en).
   
 
@@ -13,9 +13,9 @@ Our lab is part of the group of [Prof. Rob Willems](https://www.umcutrecht.nl/en
   include link.html
   type="email"
   icon=""
-  text="scrooge@mcduck.com"
+  text="a.c.schurch@umcutrecht.nl"
   tooltip=""
-  link="scrooge@mcduck.com"
+  link="a.c.schurch@umcutrecht.nl"
   style="button"
 %}
 {%
