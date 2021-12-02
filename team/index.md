@@ -36,7 +36,6 @@ nav:
 
 ## Join
 
-#### Post Dogtoral Researcher
 
 
 {% include link.html type="external" link="https://google.com/" text="Apply Now" icon="" style="button" %}
