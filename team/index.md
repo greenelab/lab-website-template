@@ -19,13 +19,25 @@ nav:
   include list.html
   data="members"
   component="portrait"
+  filters="role: programmer"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filters="role: postdoc"
+%}
+{%
+  include list.html
+  data="members"
+  component="portrait"
   filters="role: phd"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
-  filters="role: programmer"
+  filters="role: student"
 %}
 {:.center}
 
