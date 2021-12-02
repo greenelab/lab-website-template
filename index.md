@@ -27,15 +27,14 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/UMCU_banner.jpg" %}
+{% include banner.html image="images/UMCU_banner.jpeg" %}
 
 {% include section.html %}
 
 # Highlights
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The emergence of antibiotic resistant bacterial infections worldwide highlights the importance of monitoring these outbreaks. We analyse and provide tools to characterize these bacteria, their mobile genetic elements and their transmission patterns.
 
 [See what we've published &nbsp;→](research)
 {:.center}
@@ -50,23 +49,22 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 %}
 
 {% capture text %}
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We also release data and software to enable reproducible computational biology analyses following the FAIR (Findable, Accessible, Interoperable and Reusable) principles. Find more about our tools in the link below.
 
-[See our resources &nbsp;→](resources)
+[See our tools &nbsp;→](resources)
 {:.center}
 {% endcapture %}
 
 {%
   include feature.html
-  image="images/tools_picture.jpg"
+  image="images/tools_picture.png"
   link="resources"
-  headline="Our Resources"
+  headline="Our Tools"
   text=text
 %}
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We are a group of enthusiastic scientists with different interests and backgrounds that work in close collaboration with experimentalists and clinicians.
 
 [Meet our team &nbsp;→](team)
 {:.center}
@@ -80,5 +78,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   text=text
 %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
