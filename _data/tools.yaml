@@ -1,6 +1,51 @@
+- nameGplas
+  group: featured
+  image: images/gplas_logo.png
+  link: https://gitlab.com/sirarredondo/gplas
+  description: gplas is a tool to bin plasmid-predicted contigs based on sequence composition, coverage and assembly graph information. This tool extends the possibility of accurately binning predicted plasmid contigs into several discrete plasmid components.
+  repo: sirarredondo/gplas
+
+- name: mlplasmids
+  group: featured
+  image: images/mlplasmids_logo.png
+  link: https://gitlab.com/sirarredondo/mlplasmids
+  description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. Further species will be added in the future. The provided classifiers are Support Vector Machines which were previously optimized and selected versus other existing machine-learning techniques (Logistic regression, Random Forest…, see also Reference). The classifiers use pentamer frequencies (n = 1,024) to infer whether a particular contig is plasmid- or chromosome- derived.
+  repo: aschuerch/mlplasmids
+
+- name: MetaMobilePicker
+  group: featured
+  image: images/MMP_logo.png
+  link: https://gitlab.com/jkerkvliet/metamobilepicker
+  description: MetaMobilePicker is a computational pipeline designed to identify mobile genetic elements and antimicrobial resistance genes in metagenomics samples. Currently it identifies plasmids, insertion sequences and bacteriophages. 
+  repo: jkerkvliet/metamobilepicker
+
+
 - name: plasmidEC - plasmid Ensemble Classifier
   group: featured
   image: images/logo.png
-  link: https://github.com/
-  description: plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future.
+  link: https://github.com/lisavader/plasmidEC
+  description: "plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future."
   repo: lisavader/plasmidec
+
+- name: Bactofidia
+  group: featured
+  image: images/bactofidia_logo.png
+  link: https://gitlab.com/aschuerch/bactofidia
+  description: bactofidia is a bacterial assembly and basic analysis pipeline using Snakemake and bioconda. It is currently written for paired-end Illumina data with length 250 or 150. The pipeline is written to ensure reproducibility, and creates virtual software environments with the software versions that are used for analysis.
+  repo: aschuerch/bactofidia
+
+
+- name: VREfidia
+  group: featured
+  image: images/logo.png
+  link: https://gitlab.com/aschuerch/vrefidia
+  Description: 
+  repo: lisavader/plasmidec
+
+- name: Molecular Epidemiology of Infectious Diseases - computer practical
+  group: more
+  image: images/education_logo_mmbioit.svg
+  link: https://aschuerch.github.io/MolecularEpidemiology_AnalysisWGS/
+  description: Three day graduate level course on molecular epidemiology teaching the command line, WGS, annotation and pangenomics.
+  repo: aschuerch/MolecularEpidemiology_AnalysisWGS
+
