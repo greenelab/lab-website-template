@@ -37,14 +37,14 @@
 
 - name: VREfidia
   group: featured
-  image: images/tools/plasmidEC.jpg
+  image: images/tools/logo.png
   link: https://gitlab.com/aschuerch/vrefidia
   Description: 
   repo: lisavader/plasmidec
 
 - name: Molecular Epidemiology of Infectious Diseases - computer practical
-  group: education
-  image: images/MEoID.jpg
+  group: more
+  image: images/logo.png
   link: https://aschuerch.github.io/MolecularEpidemiology_AnalysisWGS/
   description: Three day graduate level course on molecular epidemiology teaching the command line, WGS, annotation and pangenomics.
   repo: aschuerch/MolecularEpidemiology_AnalysisWGS
