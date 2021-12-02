@@ -27,7 +27,7 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/banner.jpg" %}
+{% include banner.html image="images/UMCU_banner.jpg" %}
 
 {% include section.html %}
 
@@ -43,7 +43,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research_picture.jpg"
   link="research"
   headline="Our Research"
   text=text
@@ -59,7 +59,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/tools_picture.jpg"
   link="resources"
   headline="Our Resources"
   text=text
