@@ -43,10 +43,13 @@ Our lab is part of the group of [Prof. Rob Willems](https://www.umcutrecht.nl/en
 ### <i class="fas fa-mail-bulk"></i>Mailing Address
 
 Heidelberglaan 100
+{:.center}
 
 3584 CX Utrecht
+{:.center}
 
 Internal mail no. G04.614
+{:.center}
 
 The Netherlands
 {:.center}
