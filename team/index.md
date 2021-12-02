@@ -4,7 +4,7 @@ nav:
   order: 3
   tooltip: About our team
 ---
-{% include party.html}
+{% include party.html %}
 # <i class="fas fa-users"></i>Team
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
