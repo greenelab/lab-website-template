@@ -60,11 +60,6 @@
   extra-links:
     - type: source
       link: https://gitlab.com/sirarredondo/mlplasmids
-    - type: website
+    - type: source
       link: https://sarredondo.shinyapps.io/mlplasmids
-  
-  
-  
-   
-        
-
+      text: website
