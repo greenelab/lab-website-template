@@ -6,7 +6,8 @@ description: An easy-to-use, flexible website for labs, with automatic citations
 logo: images/animated_logo_white.svg
 header: images/background.png
 footer: images/background.png
-baseurl: ""
+baseurl: /mmb-bioit
+
 
 # site social media and other links
 links:
