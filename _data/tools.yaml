@@ -38,7 +38,7 @@
 
 - name: plasmidEC - plasmid Ensemble Classifier
   group: tool
-  image: images/plasmidEC_logo_1_square.svg
+  image: images/plasmidEC_logo_2.svg
   link: https://github.com/lisavader/plasmidEC
   description: "plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future."
   repo: lisavader/plasmidec
