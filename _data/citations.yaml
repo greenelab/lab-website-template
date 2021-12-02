@@ -27,6 +27,9 @@
   publisher: Microorganisms
   date: '2021-07-28'
   link: https://doi.org/gnn36g
+  tags:
+  - Plasmid
+  - WGS
 - id: doi:10.1093/jac/dkaa534
   title: "Comparative genomics of ESBL-producing <i>Escherichia coli</i> (ESBL-Ec)\
     \ reveals a similar distribution of the 10 most prevalent ESBL-Ec clones and ESBL\
