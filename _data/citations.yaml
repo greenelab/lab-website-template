@@ -13,7 +13,8 @@
   publisher: PLOS Computational Biology
   date: '2019-06-24'
   link: https://doi.org/c7np
-  tags: test
+  tags:
+  - test
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:
@@ -29,3 +30,15 @@
   tags:
   - test
   - test2
+- id: doi:10.1186/s13073-020-00825-3
+  title: Mode and dynamics of vanA-type vancomycin resistance dissemination in Dutch
+    hospitals
+  authors:
+  - Sergio Arredondo-Alonso
+  - Janetta Top
+  - Jukka Corander
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Genome Medicine
+  date: 1900-1-1
+  link: https://doi.org/gm5t64
