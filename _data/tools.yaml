@@ -1,4 +1,4 @@
-- nameGplas
+- name: Gplas
   group: featured
   image: images/gplas_logo.png
   link: https://gitlab.com/sirarredondo/gplas
