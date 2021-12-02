@@ -56,9 +56,11 @@
   date: 2018-11-1
   tags:
     - Plasmid
-    - Tool
+    - Tooll
   extra-links:
     - type: source
       link: https://gitlab.com/sirarredondo/mlplasmids
-    - type: app
+      text: source
+    - type: source
       link: https://sarredondo.shinyapps.io/mlplasmids
+      text: shiny app
