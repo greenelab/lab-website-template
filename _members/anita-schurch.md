@@ -4,11 +4,9 @@ image: images/people/anita-schurch.jpg
 description: Head of Lab
 role: pi
 aliases:
-  - 
+  - A C Schurch 
 links:
-  home-page: 
-  email: @umcutrecht.nl
-  orcid: 
-  github: 
-  linkedin: 
+  email: a.c.schurch@umcutrecht.nl
 ---
+
+Anita's bio.
