@@ -60,7 +60,7 @@
   group: tool
   image: images/VREfidia_logo.png
   link: https://gitlab.com/aschuerch/vrefidia
-  Description: VREfidia is a bacterial assembly and basic analysis pipeline for vancomycin-resistant Enterococcus faecium (VRE) using Snakemake and bioconda. It is designed for paired-end Illumina data.
+  description: VREfidia is a bacterial assembly and basic analysis pipeline for vancomycin-resistant Enterococcus faecium (VRE) using Snakemake and bioconda. It is designed for paired-end Illumina data.
   repo: lisavader/plasmidec
 
 - name: Molecular Epidemiology of Infectious Diseases - computer practical
