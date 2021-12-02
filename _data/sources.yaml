@@ -1,10 +1,15 @@
 - id: doi:10.1371/journal.pcbi.1007128
   date: 2019-6-24
-  tags: test
+  tags: 
+    - test
 
 - id: doi:10.1016/j.csbj.2020.05.017
   date: 2020-6-2
   tags: 
     - test
     - test2
+    
+- id: doi:10.1186/s13073-020-00825-3
+  date: 20-1-2021
+  
 
