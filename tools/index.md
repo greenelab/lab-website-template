@@ -5,12 +5,14 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# <i class="fas fa-tools"></i>Tools
+# <i class="fas fa-tools"></i>Tools & Education
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hello fellow scientist! Welcome to our ‘Tools and Education’ section!
+
+In MMBioIT we actively develop tools for bacterial genomics, focusing on providing software that is easy to install and use. We strongly believe in transparent and collaborative science, and therefore all our tools are completely open-source. We encourage you to try our tools and, if you dare, suggest improvements for them.
+
+Are you a wet-labber? Are you interested in learning bioinformatics? Then you should check our Education section! You will find free courses to improve your bioinformatics skills.
+
 
 {% include search-info.html %}
 
