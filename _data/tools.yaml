@@ -9,7 +9,7 @@
   group: tool
   image: images/mlplasmids_logo.png
   link: https://gitlab.com/sirarredondo/mlplasmids
-  description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. Further species will be added in the future. The provided classifiers are Support Vector Machines which were previously optimized and selected versus other existing machine-learning techniques (Logistic regression, Random Forest…, see also Reference). The classifiers use pentamer frequencies (n = 1,024) to infer whether a particular contig is plasmid- or chromosome- derived.
+  description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. 
   repo: aschuerch/mlplasmids
 
 - name: MetaMobilePicker
@@ -22,7 +22,7 @@
 
 - name: plasmidEC - plasmid Ensemble Classifier
   group: tool
-  image: images/logo.png
+  image: images/plasmidEC_logo_1.svg
   link: https://github.com/lisavader/plasmidEC
   description: "plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future."
   repo: lisavader/plasmidec
