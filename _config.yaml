@@ -12,10 +12,9 @@ baseurl: /mmb-bioit
 links:
   email: a.c.schurch@umcutrecht.nl
   google-scholar: Anita C. Schurch
-  github: https://gitlab.com/mmb-umcu
+  github: mmb-umcu
+  gitlab: mmb-umcu
   twitter: AnitaSchurch
-  instagram: YourLabHandle
-  youtube: YourLabChannel
 
 ### advanced settings
 
