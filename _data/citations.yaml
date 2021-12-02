@@ -20,10 +20,12 @@
   - David N. Nicholson
   - Casey S. Greene
   publisher: Computational and Structural Biotechnology Journal
-  date: '1900-01-01'
+  date: '2020-06-02'
   link: https://doi.org/gg7m48
   image: null
   extra-links:
   - type: null
     link: null
-  tags: null
+  tags:
+  - test
+  - test2
