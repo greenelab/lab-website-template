@@ -1,6 +1,6 @@
 ---
 name: Rodrigo Meneses
-image: images/rodrigo-meneses.jpg
+image: images/people/rodrigo-meneses.jpg
 description: Support Bioinformatician
 role: programmer
 aliases:
@@ -8,7 +8,7 @@ aliases:
   - R. Meneses
   - R Meneses
 links:
-  home-page: groodri.github.io
+  home-page: https://groodri.github.io
   email: rsilvame@umcutrecht.nl
   orcid: 0000-0002-1632-1752
   github: groodri
