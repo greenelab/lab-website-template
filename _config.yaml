@@ -1,8 +1,8 @@
 ### basic settings
 
 # site properties and page defaults
-title: MMB-BioIT Website
-description: Website of the Medical Microbiology Bioinformatics group of the UMCU.
+title: MMB-BioIT
+description: Website of the Medical Microbiology Bioinformatics group (MMB-BioIT) of the UMCU.
 logo: images/animated_logo_white.svg
 header: images/background.png
 footer: images/background.png
@@ -13,7 +13,7 @@ links:
   email: a.c.schurch@umcutrecht.nl
   google-scholar: Anita Schurch
   github: https://gitlab.com/mmb-umcu
-  twitter: YourLabHandle
+  twitter: anitaschurch
   instagram: YourLabHandle
   youtube: YourLabChannel
 
