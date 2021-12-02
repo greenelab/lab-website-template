@@ -1,15 +1,23 @@
-- id: doi:10.1371/journal.pcbi.1007128
-  date: 2019-6-24
-  tags: 
-    - test
-
-- id: doi:10.1016/j.csbj.2020.05.017
-  date: 2020-6-2
-  tags: 
-    - test
-    - test2
-    
-- id: doi:10.1186/s13073-020-00825-3
-  date: 2021-1-20
+  - id: doi:10.1186/s13073-020-00825-3
+    date: 2021-1-20
+    tags: 
+      - Plasmid
+      - Enterococcus
   
+  - id: doi:10.3390/microorganisms9081613
+    date: 2021-7-28
+    
+    
+  - id: doi:10.1093/jac/dkaa534
+    date: 2021-1-11
+        
+  - id: 10.1038/s41467-021-21749-5
+    date: 2021-3-9
+        
+  - id: doi:10.1099/mgen.0.000488
+    date: 2020-11-30
+        
+  - id: doi: 10.1093/bioinformatics/btaa233
+    date: 2020-6-1
+        
 
