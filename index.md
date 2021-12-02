@@ -2,10 +2,9 @@
 title: Home
 ---
 
-# Your Lab Slogan...
+# MMB-BioIT
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
-Spend less time reinventing the wheel, and more time running your lab.
+The MMB-BioIT Lab is a team of researchers with different backgrounds, part of the Medical Microbiology department at the UMCU (Utrecht, the Netherlands). Our efforts are dedicated to develop tools and analyze data to track local and global transmission of bacterial pathogens and to provide information on the acquisition of determinants that contribute to virulence, resistance to antibiotics or other fitness traits.
 
 {%
   include link.html
@@ -27,7 +26,7 @@ Spend less time reinventing the wheel, and more time running your lab.
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/UMCU_banner_cropped.jpeg" %}
+{% include banner.html image="images/UMCU.jpeg" %}
 
 {% include section.html %}
 
@@ -72,7 +71,7 @@ We are a group of enthusiastic scientists with different interests and backgroun
 
 {%
   include feature.html
-  image="images/BioIT_group_picture.png"
+  image="images/group.png"
   link="team"
   headline="Our Team"
   text=text
