@@ -9,7 +9,7 @@ $(document).ready(
         $(".portrait").each(function(){
              console.log($(this).attr("href"));
              var img = $(this).find("img").attr("src");
-             var partyImage = img.replace(".jpg","_party.jpg");
+             img.replace(".jpg","_party.jpg");
              $(this).find("img").attr('src',partyImage);
         });
           
