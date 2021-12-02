@@ -1,3 +1,5 @@
+# GENERATED AUTOMATICALLY, DO NOT EDIT
+
 - id: doi:10.1186/s13073-020-00825-3
   title: Mode and dynamics of vanA-type vancomycin resistance dissemination in Dutch
     hospitals
@@ -97,7 +99,7 @@
   - Rob J. L. Willems
   - Jukka Corander
   publisher: Microbial Genomics
-  date: 1900-1-1
+  date: '2020-03-09'
   link: https://doi.org/gmsjnb
   tags:
   - Enterococcus
@@ -183,11 +185,9 @@
   link: https://doi.org/gnn4jr
   tags:
   - Plasmid
-  - Tooll
+  - Tool
   extra-links:
   - type: source
     link: https://gitlab.com/sirarredondo/mlplasmids
-    text: source
-  - type: source
+  - type: app
     link: https://sarredondo.shinyapps.io/mlplasmids
-    text: shiny app
