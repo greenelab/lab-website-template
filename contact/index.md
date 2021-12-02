@@ -58,8 +58,8 @@ The Netherlands
 {% capture col2 %}
 {%
   include figure.html
-  image="images/photo.jpg"
-  caption="Department of Metaphor"
+  image="images/utrecht.jpg"
+  caption="Utrecht (made by: [Zscout370 - Eigen werk, Publiek domein](https://commons.wikimedia.org/w/index.php?curid=363168))
 %}
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}
