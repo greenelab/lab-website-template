@@ -1,8 +1,8 @@
 ### basic settings
 
 # site properties and page defaults
-title: Lab Website
-description: An easy-to-use, flexible website for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+title: MMB-BioIT
+description: Website of the Medical Microbiology Bioinformatics group (MMB-BioIT) of the UMCU.
 logo: images/animated_logo_white.svg
 header: images/background.png
 footer: images/background.png
@@ -10,12 +10,11 @@ baseurl: /mmb-bioit
 
 # site social media and other links
 links:
-  email: jane.smith@your-lab.com
-  google-scholar: Jane Smith
-  github: your-lab
-  twitter: YourLabHandle
-  instagram: YourLabHandle
-  youtube: YourLabChannel
+  email: a.c.schurch@umcutrecht.nl
+  google-scholar: xh5gN60AAAAJ
+  github: mmb-umcu
+  gitlab: mmb-umcu
+  twitter: AnitaSchurch
 
 ### advanced settings
 
