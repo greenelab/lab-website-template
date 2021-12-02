@@ -15,6 +15,7 @@
   tags:
   - Plasmid
   - Enterococcus
+  - Antimicrobial resistance
 - id: doi:10.3390/microorganisms9081613
   title: Recovering Escherichia coli Plasmids in the Absence of Long-Read Sequencing
     Data
@@ -30,6 +31,7 @@
   tags:
   - Plasmid
   - WGS
+  - E.coli
 - id: doi:10.1093/jac/dkaa534
   title: "Comparative genomics of ESBL-producing <i>Escherichia coli</i> (ESBL-Ec)\
     \ reveals a similar distribution of the 10 most prevalent ESBL-Ec clones and ESBL\
@@ -50,6 +52,10 @@
   publisher: Journal of Antimicrobial Chemotherapy
   date: '2021-01-11'
   link: https://doi.org/gnn36h
+  tags:
+  - WGS
+  - E.coli
+  - Antimicrobial resistance
 - id: doi:10.1038/s41467-021-21749-5
   title: Apparent nosocomial adaptation of Enterococcus faecalis predates the modern
     hospital era
@@ -78,6 +84,8 @@
   publisher: Nature Communications
   date: '2021-03-09'
   link: https://doi.org/gkr3gx
+  tags:
+  - Enterococcus
 - id: doi:10.1099/mgen.0.000488
   title: Genomic rearrangements uncovered by genome-wide co-evolution analysis of
     a major nosocomial pathogen, Enterococcus faecium
@@ -93,6 +101,8 @@
   publisher: Microbial Genomics
   date: 1900-1-1
   link: https://doi.org/gmsjnb
+  tags:
+  - Enterococcus
 - id: doi:10.1093/bioinformatics/btaa233
   title: 'gplas: a comprehensive tool for plasmid analysis using short-read graphs'
   authors:
@@ -106,3 +116,6 @@
   publisher: Bioinformatics
   date: '2020-06-01'
   link: https://doi.org/gg8s4b
+  tags:
+  - Tool
+  - Plasmid
