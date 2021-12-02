@@ -60,7 +60,5 @@
   extra-links:
     - type: source
       link: https://gitlab.com/sirarredondo/mlplasmids
-      text: source
-    - type: source
+    - type: app
       link: https://sarredondo.shinyapps.io/mlplasmids
-      text: shiny app
