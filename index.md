@@ -8,7 +8,7 @@ The MMB-BioIT Lab is a team of researchers with different backgrounds, part of t
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/banner.jpg" %}
+{% include banner.html image="images/UMCU.jpg" %}
 
 {% include section.html %}
 
@@ -53,7 +53,7 @@ We are a group of enthusiastic scientists with different interests and backgroun
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/group.jpg"
   link="team"
   headline="Our Team"
   text=text
