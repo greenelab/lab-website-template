@@ -1,5 +1,3 @@
-(function($) {
-    "use strict";
    $(document).ready(function(){
      console.log("Ready!");
      function check_image() {
@@ -18,4 +16,3 @@
        
    }
 });
-}(jQuery));
