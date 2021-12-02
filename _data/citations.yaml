@@ -189,5 +189,5 @@
   extra-links:
   - type: source
     link: https://gitlab.com/sirarredondo/mlplasmids
-  - type: website
+  - type: app
     link: https://sarredondo.shinyapps.io/mlplasmids
