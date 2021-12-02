@@ -117,8 +117,72 @@
   date: '2020-06-01'
   link: https://doi.org/gg8s4b
   tags:
-  - Tool
   - Plasmid
+  - Tool
   extra-links:
   - type: source
     link: https://gitlab.com/sirarredondo/gplas
+- id: doi:10.1128/mBio.03284-19
+  title: Plasmids Shaped the Recent Emergence of the Major Nosocomial Pathogen Enterococcus
+    faecium
+  authors:
+  - S. Arredondo-Alonso
+  - J. Top
+  - A. McNally
+  - S. Puranen
+  - M. Pesonen
+  - J. Pensar
+  - P. Marttinen
+  - J. C. Braat
+  - M. R. C. Rogers
+  - W. van Schaik
+  - S. Kaski
+  - R. J. L. Willems
+  - J. Corander
+  - "A. C. Sch\xFCrch"
+  publisher: mBio
+  date: '2020-02-11'
+  link: https://doi.org/gjzbrg
+  tags:
+  - Plasmid
+  - Enterococcus
+  - WGS
+- id: doi:10.1371/journal.pone.0227604
+  title: "Extended-spectrum beta-lactamase (ESBL)-producing and non-ESBL-producing\
+    \ Escherichia coli isolates causing bacteremia in the Netherlands (2014 \u2013\
+    \ 2016) differ in clonal distribution, antimicrobial resistance gene and virulence\
+    \ gene content"
+  authors:
+  - Denise van Hout
+  - Tess D. Verschuuren
+  - Patricia C. J. Bruijning-Verhagen
+  - Thijs Bosch
+  - "Anita C. Sch\xFCrch"
+  - Rob J. L. Willems
+  - Marc J. M. Bonten
+  - Jan A. J. W. Kluytmans
+  publisher: PLOS ONE
+  date: '2020-01-14'
+  link: https://doi.org/gnn4jq
+  tags:
+  - E.coli
+  - WGS
+  - Antimicrobial resistance
+- id: doi:10.1099/mgen.0.000224
+  title: 'mlplasmids: a user-friendly tool to predict plasmid- and chromosome-derived
+    sequences for single species'
+  authors:
+  - Sergio Arredondo-Alonso
+  - Malbert R. C. Rogers
+  - Johanna C. Braat
+  - Tess D. Verschuuren
+  - Janetta Top
+  - Jukka Corander
+  - Rob J. L. Willems
+  - "Anita C. Sch\xFCrch"
+  publisher: Microbial Genomics
+  date: '2018-11-01'
+  link: https://doi.org/gnn4jr
+  tags:
+  - Plasmid
+  - Tool
