@@ -8,11 +8,11 @@ $(document).ready(
         
         $(".portrait").each(function(){
              console.log($(this).attr("href"));
-             var img = new File($(this).find("img").attr("src"));
-             var partyimg = new File(img.replace(".jpg","_party.jpg"));
-             if img.exists(){
+             var img =$(this).find("img").attr("src");
+             var partyimg = img.replace(".jpg","_party.jpg");
+             console.log(partyimg, checkFileExists(partyimg));
              $(this).find("img").attr('src',partyimg);
-             }
+             
         });
           
      }else{
@@ -22,3 +22,16 @@ $(document).ready(
      
       
 });
+
+
+function checkFileExist(urlToFile) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+     
+    if (xhr.status == "404") {
+        return false;
+    } else {
+        return true;
+    }
+}
