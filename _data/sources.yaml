@@ -37,7 +37,7 @@
   extra-links:
     - type: source
       link: https://gitlab.com/sirarredondo/gplas
-      
+    
 - id: doi:10.1128/mBio.03284-19
   date: 2020-2-11
   tags:
@@ -51,6 +51,39 @@
     - E.coli
     - WGS
     - Antimicrobial resistance
+    
+- id: doi.org/10.2807/1560-7917.ES.2019.24.41.1800594
+  date: 2019-10-10
+  tags:
+    - Antimicrobial resistance
+
+- id: doi.org/10.1128/AAC.01204-19
+  date: 2019-11-21
+  tags:
+    - Plasmid
+    - Antimicrobial resistance
+    
+- id: doi.org/10.1128/MRA.00243-19
+  date: 2019-07-06
+  tags:
+    - WGS
+
+- id: doi.org/10.1099/mgen.0.000128
+  date: 2017-10-01
+  tags:
+    - Plasmid
+    - WGS
+ 
+- id: doi.org/10.1111/nyas.13310
+  date: 2017-01-30
+  tags:
+    - WGS
+    - Antimicrobial resistance
+    
+- id: doi.org/10.1016/j.cmi.2017.12.016
+  date: 2018-04-01
+  tags:
+    - WGS
   
 - id: doi:10.1099/mgen.0.000224
   date: 2018-11-1
