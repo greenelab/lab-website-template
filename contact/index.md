@@ -13,9 +13,9 @@ Our lab is part of the group of [Prof. Rob Willems](https://www.umcutrecht.nl/en
   include link.html
   type="email"
   icon=""
-  text="a.c.schurch@umcutrecht.nl"
+  text="mmbbioit@umcutrecht.nl"
   tooltip=""
-  link="a.c.schurch@umcutrecht.nl"
+  link="mmbbioit@umcutrecht.nl"
   style="button"
 %}
 {%
