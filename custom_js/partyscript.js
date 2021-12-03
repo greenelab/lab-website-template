@@ -1,25 +1,22 @@
 $(document).ready(
      function(){
-     console.log("Ready!");
-     var day_night = new Date().getHours();
-     console.log(day_night);
-     if (day_night > 12 && day_night <= 18) {
-       /*$('.advance-link>img')*/
-        
-        $(".portrait").each(function(){
-             var img =$(this).find("img").attr("src");
-             var partyimg = img.replace(".jpg","_party.jpg");
-             if (checkFileExist(partyimg){
-                 $(this).find("img").attr('src',partyimg);
-                 }
+          console.log("Ready!");
+          var day_night = new Date().getHours();
+          console.log(day_night);
+          if (day_night > 12 && day_night <= 18) {
+
+               $(".portrait").each(function(){
+                    var img =$(this).find("img").attr("src");
+                    var partyimg = img.replace(".jpg","_party.jpg");
+                    if (checkFileExist(partyimg)){
+                         $(this).find("img").attr('src',partyimg);
+                    }
 
              
-        });
+               });
           
-     }
-          
-     
-      
+          }
+              
 });
 
 
