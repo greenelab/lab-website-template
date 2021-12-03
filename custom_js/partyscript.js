@@ -3,7 +3,7 @@ $(document).ready(
           console.log("Ready!");
           var day_night = new Date().getHours();
           console.log(day_night);
-          if (day_night > 12 && day_night <= 14) {
+          if (day_night > 12 && day_night <= 23) {
 
                $(".portrait").each(function(){
                     var img =$(this).find("img").attr("src");
