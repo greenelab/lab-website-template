@@ -8,9 +8,9 @@ $(document).ready(
         
         $(".portrait").each(function(){
              console.log($(this).attr("href"));
-             var img = $(this).find("img").attr("src");
+             var img = new File($(this).find("img").attr("src"));
              var partyimg = new File(img.replace(".jpg","_party.jpg"));
-             if partyimg.exists(){
+             if img.exists(){
              $(this).find("img").attr('src',partyimg);
              }
         });
