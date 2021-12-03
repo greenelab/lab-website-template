@@ -4,7 +4,7 @@ title: Home
 
 # MMB-BioIT
 
-The MMB-BioIT Lab is a team of researchers with different backgrounds, part of the Medical Microbiology department at the UMCU (Utrecht, the Netherlands). Our efforts are dedicated to develop tools and analyze data to track local and global transmission of bacterial pathogens and to provide information on the acquisition of determinants that contribute to virulence, resistance to antibiotics or other fitness traits.
+The MMB-BioIT Lab is a team of researchers with different backgrounds, part of the Medical Microbiology department at the UMCU (Utrecht, the Netherlands). Our efforts are dedicated to develop bioinformatic tools and analyze data to track local and global transmission of bacterial pathogens and to provide information on the acquisition of determinants that contribute to resistance to antibiotics, virulence or other fitness traits.
 
 {% include section.html full=true %}
 
