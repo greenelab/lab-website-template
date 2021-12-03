@@ -7,16 +7,15 @@ $(document).ready(
        /*$('.advance-link>img')*/
         
         $(".portrait").each(function(){
-             console.log($(this).attr("href"));
              var img =$(this).find("img").attr("src");
              var partyimg = img.replace(".jpg","_party.jpg");
-             console.log(partyimg, checkFileExist(partyimg));
-             $(this).find("img").attr('src',partyimg);
+             if (checkFileExist(partyimg){
+                 $(this).find("img").attr('src',partyimg);
+                 }
+
              
         });
           
-     }else{
-     $(".portrait_image>img").attr('src','/images/member.jpg');
      }
           
      
