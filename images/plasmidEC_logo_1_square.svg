@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="plasmidEC_logo_1_square.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72337261"
+     inkscape:cx="251.59924"
+     inkscape:cy="443.0635"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     height="210mm" />
+  <defs
+     id="defs2">
+    <rect
+       x="39.398781"
+       y="237.08389"
+       width="531.53796"
+       height="172.11047"
+       id="rect1688" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g21982"
+       transform="matrix(1.5141158,0,0,1.5141158,-22.703075,-29.697351)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,12.801724,15.446192)"
+         id="text1686"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:Normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1688)"><tspan
+           x="39.398438"
+           y="296.76348"
+           id="tspan21999"><tspan
+             style="font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+             id="tspan21997">plasmidEC</tspan></tspan></text>
+      <g
+         id="g19864"
+         transform="translate(0,1.9397542)">
+        <circle
+           style="fill:#a9f71a;fill-opacity:0.7;fill-rule:evenodd;stroke-width:0.264583"
+           id="path5270"
+           cx="121.58277"
+           cy="82.319031"
+           r="12.070197" />
+        <circle
+           style="fill:#27d700;fill-opacity:0.5;fill-rule:evenodd;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path5270-2"
+           cx="132.03261"
+           cy="82.319031"
+           r="12.070197" />
+        <circle
+           style="fill:#30be2c;fill-opacity:0.497976;fill-rule:evenodd;stroke-width:0.264583"
+           id="path5270-22"
+           cx="126.80769"
+           cy="91.723587"
+           r="12.070197" />
+      </g>
+    </g>
+  </g>
+</svg>

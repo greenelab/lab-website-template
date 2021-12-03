@@ -2,40 +2,20 @@
 title: Home
 ---
 
-# Your Lab Slogan...
+# MMB-BioIT
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
-Spend less time reinventing the wheel, and more time running your lab.
-
-{%
-  include link.html
-  type="github"
-  icon=""
-  text="See the template on GitHub"
-  link="greenelab/lab-website-template"
-  style="button"
-%}
-{%
-  include link.html
-  type="docs"
-  icon=""
-  text="See the documentation"
-  link="https://github.com/greenelab/lab-website-template/wiki"
-  style="button"
-%}
-{:.center}
+The MMB-BioIT Lab is a team of researchers with different backgrounds, part of the Medical Microbiology department at the UMCU (Utrecht, the Netherlands). Our efforts are dedicated to develop bioinformatic tools and analyze data to track local and global transmission of bacterial pathogens and to provide information on the acquisition of determinants that contribute to resistance to antibiotics, virulence or other fitness traits.
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/banner.jpg" %}
+{% include banner.html image="images/UMCU.jpg" %}
 
 {% include section.html %}
 
 # Highlights
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The emergence of antibiotic resistant bacterial infections worldwide highlights the importance of monitoring these outbreaks. We analyse and provide tools to characterize these bacteria, their mobile genetic elements and their transmission patterns.
 
 [See what we've published &nbsp;→](research)
 {:.center}
@@ -43,30 +23,29 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research_picture.jpg"
   link="research"
   headline="Our Research"
   text=text
 %}
 
 {% capture text %}
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We also release data and software to enable reproducible computational biology analyses following the FAIR (Findable, Accessible, Interoperable and Reusable) principles. Find more about our tools in the link below.
 
-[See our resources &nbsp;→](resources)
+[See our tools &nbsp;→](resources)
 {:.center}
 {% endcapture %}
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/tools_picture.png"
   link="resources"
-  headline="Our Resources"
+  headline="Our Tools"
   text=text
 %}
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We are a group of enthusiastic scientists with different interests and backgrounds that work in close collaboration with experimentalists and clinicians.
 
 [Meet our team &nbsp;→](team)
 {:.center}
@@ -74,11 +53,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/group.jpg"
   link="team"
   headline="Our Team"
   text=text
 %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
