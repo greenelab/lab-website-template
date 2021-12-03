@@ -8,7 +8,7 @@
 
 <!-- site-wide javascript scripts -->
 {% for file in site.static_files %}
-  {%- if file.path contains "/js" and file.path not contains "dontrun" -%}
+  {%- if file.path contains "/js" -%}
     <script src="{{ file.path | relative_url }}" defer></script>
   {% endif -%}
 {% endfor %}
