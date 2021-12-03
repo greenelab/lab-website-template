@@ -4,13 +4,14 @@ image: images/people/jari-koot.jpg
 description: Student
 role: student
 aliases:
-  - 
-links:
-  home-page: 
-  email: @umcutrecht.nl
-  orcid: 
-  github: 
-  linkedin: 
+  - Jari Koot
+  - J.M.A. Koot
+links: 
+  home-page: https://github.com/JariKoot
+  email: j.m.a.koot-2@umcutrecht.nl
+  github: JariKoot
+  linkedin: jari koot
 ---
 
-Jari's bio.
+Hey there! I'm Jari, a 20 year old Life Science student. With a passion for programming and biology. This year I am doing my internship at the UMC Utrecht. 
+Currently I'm working on a metagenomics pipeline that creates a visualization of WGS data. I think it's very important to document all my work and to use a reproducible workflow.
