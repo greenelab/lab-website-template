@@ -10,7 +10,7 @@ $(document).ready(
              console.log($(this).attr("href"));
              var img =$(this).find("img").attr("src");
              var partyimg = img.replace(".jpg","_party.jpg");
-             console.log(partyimg, checkFileExists(partyimg));
+             console.log(partyimg, checkFileExist(partyimg));
              $(this).find("img").attr('src',partyimg);
              
         });
