@@ -9,8 +9,8 @@ $(document).ready(
         $(".portrait").each(function(){
              console.log($(this).attr("href"));
              var img = $(this).find("img").attr("src");
-             img.replace(".jpg","_party.jpg");
-             $(this).find("img").attr('src',img);
+             partyimg = img.replace(".jpg","_party.jpg");
+             $(this).find("img").attr('src',partyimg);
         });
           
      }else{
