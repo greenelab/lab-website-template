@@ -168,6 +168,79 @@
   - E.coli
   - WGS
   - Antimicrobial resistance
+- id: doi:10.1128/AAC.01204-19
+  title: Sequence-Based Epidemiology of an OXA-48 Plasmid during a Hospital Outbreak
+  authors:
+  - Laura Hidalgo
+  - Mark de Been
+  - Malbert R. C. Rogers
+  - "Anita C. Sch\xFCrch"
+  - Jelle Scharringa
+  - Anneke van der Zee
+  - Marc J. M. Bonten
+  - Ad C. Fluit
+  publisher: Antimicrobial Agents and Chemotherapy
+  date: '2019-09-21'
+  link: https://doi.org/gnpv9g
+  tags:
+  - Plasmid
+  - Antimicrobial resistance
+- id: doi:10.1128/MRA.00243-19
+  title: Draft Genome Sequence of Haemophilus haemolyticus Strain 16/010 O, Isolated
+    from a Sputum Sample from a Cystic Fibrosis Patient
+  authors:
+  - Ad C. Fluit
+  - Jumamurat R. Bayjanov
+  - Michael Tunney
+  - J. Stuart Elborn
+  - Malbert R. C. Rogers
+  - "Anita C. Sch\xFCrch"
+  - Miquel B. Ekkelenkamp
+  publisher: Microbiology Resource Announcements
+  date: '2019-07-06'
+  link: https://doi.org/gnpv9h
+  tags:
+  - WGS
+- id: doi:10.1099/mgen.0.000128
+  title: On the (im)possibility of reconstructing plasmids from whole-genome short-read
+    sequencing data
+  authors:
+  - Sergio Arredondo-Alonso
+  - Rob J. Willems
+  - Willem van Schaik
+  - "Anita C. Sch\xFCrch"
+  publisher: Microbial Genomics
+  date: '2017-09-01'
+  link: https://doi.org/gf6b63
+  tags:
+  - Plasmid
+  - WGS
+- id: doi:10.1111/nyas.13310
+  title: Challenges and opportunities for whole-genome sequencing-based surveillance
+    of antibiotic resistance
+  authors:
+  - "Anita C. Sch\xFCrch"
+  - Willem van Schaik
+  publisher: Annals of the New York Academy of Sciences
+  date: '2017-01-30'
+  link: https://doi.org/f9pcc4
+  tags:
+  - WGS
+  - Antimicrobial resistance
+- id: doi:10.1016/j.cmi.2017.12.016
+  title: "Whole genome sequencing options for bacterial strain typing and epidemiologic\
+    \ analysis based on single nucleotide polymorphism versus gene-by-gene\u2013based\
+    \ approaches"
+  authors:
+  - "A.C. Sch\xFCrch"
+  - S. Arredondo-Alonso
+  - R.J.L. Willems
+  - R.V. Goering
+  publisher: Clinical Microbiology and Infection
+  date: '2018-04-01'
+  link: https://doi.org/gc9nkx
+  tags:
+  - WGS
 - id: doi:10.1099/mgen.0.000224
   title: 'mlplasmids: a user-friendly tool to predict plasmid- and chromosome-derived
     sequences for single species'
