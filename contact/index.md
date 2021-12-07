@@ -57,15 +57,15 @@ The Netherlands
 {% capture col1 %}
 {%
   include figure.html
-  image="images/UMCU_banner.jpeg"
-  caption=""
+  image="images/UMCU.jpg"
+  caption="UMC Utrecht"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
   image="images/utrecht.jpg"
-  caption="Utrecht - made by: Zscout370 - Wikimedia Commons, curid=363168"
+  caption="Utrecht"
 %}
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}
