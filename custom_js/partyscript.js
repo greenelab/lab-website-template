@@ -4,11 +4,12 @@ $(document).ready(
           var today = new Date();
           var month = today.getMonth()
           var day = today.getDay()
-          var partydates = JSON.parse(party);
+          var partydates = JSON.parse(partydates);
           for(var i = 0; i < partydates.length; i++) {
                var obj = partydates[i];
                console.log(obj.month, obj.day);
           }
+          var day_night = 13;
           if (day_night > 12 && day_night <= 23) {
 
                $(".portrait").each(function(){
