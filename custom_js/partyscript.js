@@ -1,8 +1,14 @@
 $(document).ready(
      function(){
           console.log("Ready!");
-          var day_night = new Date().getHours();
-          console.log(day_night);
+          var today = new Date();
+          var month = today.getMonth()
+          var day = today.getDay()
+          var partydates = JSON.parse(party);
+          for(var i = 0; i < partydates.length; i++) {
+               var obj = partydates[i];
+               console.log(obj.month, obj.day);
+          }
           if (day_night > 12 && day_night <= 23) {
 
                $(".portrait").each(function(){
