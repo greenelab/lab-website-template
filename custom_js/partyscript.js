@@ -8,7 +8,7 @@ $(document).ready(
           var md = day+"-"+month;
           console.log(md);
           var day_night = 13;
-          if (partydates.include(md)){
+          if (partydates.includes(md)){
 
                $(".portrait").each(function(){
                     var img =$(this).find("img").attr("src");
