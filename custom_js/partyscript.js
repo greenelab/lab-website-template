@@ -1,14 +1,14 @@
-var partydates = '[{"month":12,"day":1},{"month":10,"day":18},{"month":12,"day":9}]';
+var partydates = '["1-12","18-10","9-12"]';
 $(document).ready(
      function(){
           console.log("Ready!",partydates);
           var today = new Date();
           var month = today.getMonth()+1;
-          var day = today.getDay();
+          var day = today.getDate();
           var md = day+"-"+month;
           console.log(md);
           var day_night = 13;
-          if (day_night > 12 && day_night <= 23) {
+          if (partydates.include(md)){
 
                $(".portrait").each(function(){
                     var img =$(this).find("img").attr("src");
