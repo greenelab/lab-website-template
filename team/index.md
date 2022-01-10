@@ -4,7 +4,7 @@ nav:
   order: 3
   tooltip: About our team
 ---
-
+{% include party.html %}
 # <i class="fas fa-users"></i>Team
 
 {% include section.html %}
