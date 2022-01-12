@@ -6,16 +6,16 @@ description: Website of the Medical Microbiology Bioinformatics group (MMB-BioIT
 logo: images/animated_logo_white.svg
 header: images/background.png
 footer: images/background.png
-baseurl: /mmb-bioit
+baseurl: 
 
 
 # site social media and other links
 links:
-  email: a.c.schurch@umcutrecht.nl
+  email: mmb-bioit@umcutrecht.nl
   google-scholar: xh5gN60AAAAJ
   github: mmb-umcu
   gitlab: mmb-umcu
-  twitter: AnitaSchurch
+  twitter: mmbbioit
 
 ### advanced settings
 
