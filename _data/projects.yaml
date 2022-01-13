@@ -4,6 +4,7 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: postgres
 
 - name: Cool Package
   group: featured
@@ -11,6 +12,7 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: react
 
 - name: Cool Tutorial
   group: more
@@ -18,6 +20,7 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: website
 
 - name: Cool Web App
   group: more
@@ -25,6 +28,7 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: website, vue
 
 - name: Cool Web Server
   group: more
@@ -32,3 +36,4 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: django
