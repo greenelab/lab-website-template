@@ -4,6 +4,7 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags: resource, website
 
 - name: Cool Package
   group: featured
