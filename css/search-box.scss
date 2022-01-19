@@ -16,7 +16,9 @@
   max-width: 100%;
 
   button {
-    @include inline-flex-center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0;
     width: 40px;

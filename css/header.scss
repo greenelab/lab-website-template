@@ -20,7 +20,9 @@ header {
   }
 
   .logo_row {
-    @include inline-flex-center;
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
     .logo {
       max-width: 100%;
@@ -35,7 +37,9 @@ header {
   }
 
   .nav_row {
-    @include inline-flex-center;
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
     font-size: 1rem;
     font-weight: $regular;
     text-transform: uppercase;
