@@ -27,8 +27,9 @@
     white-space: nowrap;
     transition: background $fast;
 
-    &:hover {
-      background: $gray-500;
+    &:hover,
+    &[data-active="true"] {
+      background: $gray-400;
     }
 
     &[data-highlight="true"] {

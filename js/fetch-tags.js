@@ -25,8 +25,8 @@ const createTags = async () => {
 
     // filter out tags already present in row
     let existing = Array.from(row.querySelectorAll(".tag"));
-    existing = existing.map((tag) => tag.innerText.trim());
-    tags = tags.filter((tag) => !existing.includes(tag));
+    existing = existing.map((tag) => normalizeString(tag.innerText));
+    tags = tags.filter((tag) => !existing.includes(normalizeString(tag)));
 
     // add tag elements to section
     for (const tag of tags) {
@@ -34,7 +34,7 @@ const createTags = async () => {
       a.classList.add("tag");
       a.innerHTML = tag;
       a.href = `${link}?search="tag: ${tag}"`;
-      a.setAttribute("data-tooltip", `Show items with the tag ${tag}`);
+      a.dataset.tooltip = `Show items with the tag ${tag}`;
       row.append(a);
     }
 
