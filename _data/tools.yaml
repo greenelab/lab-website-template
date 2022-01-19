@@ -4,7 +4,8 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
-  tags: resource, website
+  tags:
+    - resource
 
 - name: Cool Package
   group: featured
@@ -12,6 +13,8 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags:
+    - resource
 
 - name: Cool Tutorial
   group: more
@@ -19,6 +22,9 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags:
+    - resource
+    - publication
 
 - name: Cool Web App
   group: more
@@ -26,6 +32,8 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+  tags:
+    - software
 
 - name: Cool Web Server
   group: more
@@ -33,3 +41,4 @@
   link: https://github.com/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   repo: greenelab/lab-website-template
+    - software

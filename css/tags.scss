@@ -6,12 +6,12 @@
 @import "mixins";
 
 .tags {
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 100%;
   margin: 10px 0;
   @include trim-v-margins;
 
