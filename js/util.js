@@ -8,3 +8,9 @@ const normalizeString = (string) =>
     .map((word) => word.trim())
     .filter((word) => word)
     .join(" ");
+
+// run a function after a delay
+const debounce = (func, delay, key) => {
+  window.clearTimeout(window[key]);
+  window[key] = window.setTimeout(func, delay);
+};

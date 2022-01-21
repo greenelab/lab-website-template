@@ -107,7 +107,7 @@ const highlightTerms = (component, { terms, phrases }) => {
 };
 
 // update search box
-const updateBox = (query) => {
+const updateBox = (query = "") => {
   const boxes = document.querySelectorAll(boxSelector);
   for (const box of boxes) {
     const input = box.querySelector("input");
@@ -154,41 +154,41 @@ const updateTags = (query) => {
     );
 };
 
-// util func to debounce search
-const debounce =
-  (func, delay) =>
-  (...args) => {
-    window.clearTimeout(window.searchTimer);
-    window.searchTimer = window.setTimeout(() => func(...args), delay);
-  };
-
 // search and filter components
-const searchComponents = debounce((query) => {
+const searchComponents = (query = "") => {
   resetHighlights();
   const parts = splitQuery(query);
   const [x, n, tags] = filterComponents(parts);
   updateBox(query);
   updateInfo(x, n, tags);
   updateTags(query);
-}, 200);
+};
+
+// update url from search
+const updateUrl = (query = "") => {
+  const { origin, pathname } = window.location;
+  const url = origin + pathname + (query ? "?search=" + query : "");
+  window.history.replaceState(null, null, url);
+};
 
 // search based on url param
-const urlSearch = () => {
+const searchFromUrl = () => {
   const query = new URLSearchParams(window.location.search).get("search") || "";
   searchComponents(query);
 };
 
 // when user types into search box
 const onSearchInput = (target) => {
-  searchComponents(target.value);
+  debounce(() => searchComponents(target.value), 200, "searchDebounce");
+  debounce(() => updateUrl(target.value), 500, "urlDebounce");
 };
 
 // when user clears search box with button
 const onSearchClear = () => {
-  searchComponents("");
+  debounce(searchComponents, 100, "searchDebounce");
+  debounce(updateUrl, 100, "urlDebounce");
 };
 
 // start script and add triggers
-window.addEventListener("load", urlSearch);
-window.addEventListener("load", () => updateBox(""));
-window.addEventListener("tagsfetched", urlSearch);
+window.addEventListener("load", searchFromUrl);
+window.addEventListener("tagsfetched", searchFromUrl);
