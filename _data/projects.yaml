@@ -22,7 +22,7 @@
   repo: greenelab/word-lapse
   tags: website
 
-- name: https://github.com/monarch-initiative/monarch-ui-new
+- name: Monarch Initiative User Interface "3.0"
   group: more
   image: images/photo.jpg
   link: https://github.com/monarch-initiative/monarch-ui-new
