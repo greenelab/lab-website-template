@@ -1,18 +1,18 @@
-- name: Cool Dataset
+- name: Center for Health AI, Software Engineering
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags: postgres
+  image: images/hsb.png
+  link: https://cuhealthai.github.io/set-website/
+  description: The software engineering team for the Center for Health AI works with labs, departments, and other teams to help bring amazing software to the world.
+  repo: CUHealthAI/set-website
+  tags: jekyll, website
 
-- name: Cool Package
+- name: Greene Lab Website Template
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://github.com/greenelab/lab-website-template
+  description: An easy-to-use, flexible website template for labs, including automatic citations, GitHub tag imports, pre-built components, and more. Spend less time reinventing the wheel and more time running your lab.
   repo: greenelab/lab-website-template
-  tags: react
+  tags: website, template, jekyll
 
 - name: Cool Tutorial
   group: more
