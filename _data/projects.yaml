@@ -14,26 +14,19 @@
   repo: greenelab/lab-website-template
   tags: website, template, jekyll
 
-- name: Cool Tutorial
+- name: Biomedical Literature "Word Lapse" Single Page App
   group: more
   image: images/photo.jpg
-  link: https://github.com/
+  link: https://github.com/greenelab/word-lapse
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  repo: greenelab/word-lapse
   tags: website
 
-- name: Cool Web App
+- name: https://github.com/monarch-initiative/monarch-ui-new
   group: more
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  link: https://github.com/monarch-initiative/monarch-ui-new
+  description: Updating the Monarch UI to a new standard, the "3.0" release promises a modern front-end with accessibility and utility.
+  repo: monarch-initiative/monarch-ui-new
   tags: website, vue
 
-- name: Cool Web Server
-  group: more
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags: django
