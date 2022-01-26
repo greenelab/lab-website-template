@@ -6,7 +6,9 @@
 @import "mixins";
 
 .feature {
-  @include flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 40px 0;
   @include trim-v-margins;
 

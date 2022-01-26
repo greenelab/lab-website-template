@@ -20,7 +20,9 @@ header {
   }
 
   .logo_row {
-    @include inline-flex-center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
     .logo {
       max-width: 100%;
@@ -35,14 +37,17 @@ header {
   }
 
   .nav_row {
-    @include inline-flex-center;
-    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     font-weight: $regular;
     text-transform: uppercase;
     letter-spacing: 1px;
-
+    
     .link {
-      margin: 0 10px;
+      margin: 0;
+      font-size: 1rem;
     }
 
     &:hover .link {
@@ -63,6 +68,10 @@ header {
   // adjust based on width of your lab name and nav bar
   @media (max-width: 1000px) {
     align-content: center;
+
+    .nav_row {
+      margin-top: 10px;
+    }
 
     .logo_row,
     .nav_row {

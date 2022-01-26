@@ -6,7 +6,9 @@
 @import "mixins";
 
 button {
-  @include inline-flex-center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   max-width: calc(100% - 10px - 10px);
   min-height: 40px;
   margin: 0;

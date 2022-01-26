@@ -6,10 +6,14 @@ const createTooltips = () => {
   // make sure tippy library available
   if (typeof tippy === "undefined") return;
 
+  // add tooltip to elements
   tippy("[data-tooltip]", {
     content: (element) => {
       const content = element.getAttribute("data-tooltip");
+      // add aria label for screen readers
       element.setAttribute("aria-label", content);
+      // remove tooltip attribute to mark element as already-tooltipped
+      element.removeAttribute("data-tooltip");
       return content;
     },
   });
@@ -17,3 +21,4 @@ const createTooltips = () => {
 
 // start script
 window.addEventListener("load", createTooltips);
+window.addEventListener("tagsfetched", createTooltips);
