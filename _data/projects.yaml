@@ -30,3 +30,10 @@
   repo: monarch-initiative/monarch-ui-new
   tags: website, vue
 
+- name: Monarch Initiative Cloud Migration
+  group: more
+  image: images/photo.jpg
+  link: https://api.monarchinitiative.org/api
+  description: Migration of the Monarch backend and associated services from OSU to Google Cloud, including automated provisioning and deployment via Terraform, Ansible, and Docker Swarm.
+  repo: monarch-initiative/monarch-stack
+  tags: api, iac, terraform, ansible, docker-swarm
