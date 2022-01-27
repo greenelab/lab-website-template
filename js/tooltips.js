@@ -11,11 +11,12 @@ const createTooltips = () => {
     content: (element) => {
       const content = element.getAttribute("data-tooltip");
       // add aria label for screen readers
-      element.setAttribute("aria-label", content);
+      element.setAttribute("aria-label", element.innerText + " - " + content);
       // remove tooltip attribute to mark element as already-tooltipped
       element.removeAttribute("data-tooltip");
       return content;
     },
+    delay: [200, 0],
   });
 };
 

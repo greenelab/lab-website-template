@@ -5,9 +5,13 @@
 @import "theme";
 @import "mixins";
 
-
 .tippy-box {
+  background: $gray-900;
   font-family: $sans;
   padding: 7.5px;
   font-size: 0.9rem;
+}
+
+.tippy-arrow:before {
+  color: $gray-900;
 }
