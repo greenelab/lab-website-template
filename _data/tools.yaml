@@ -1,4 +1,4 @@
-- name: Cool Dataset
+- title: Cool Dataset
   group: featured
   image: images/photo.jpg
   link: https://github.com/
@@ -7,7 +7,7 @@
   tags:
     - resource
 
-- name: Cool Package
+- title: Cool Package
   group: featured
   image: images/photo.jpg
   link: https://github.com/
@@ -16,7 +16,7 @@
   tags:
     - resource
 
-- name: Cool Tutorial
+- title: Cool Tutorial
   group: more
   image: images/photo.jpg
   link: https://github.com/
@@ -26,7 +26,7 @@
     - resource
     - publication
 
-- name: Cool Web App
+- title: Cool Web App
   group: more
   image: images/photo.jpg
   link: https://github.com/
@@ -35,7 +35,7 @@
   tags:
     - software
 
-- name: Cool Web Server
+- title: Cool Web Server
   group: more
   image: images/photo.jpg
   link: https://github.com/

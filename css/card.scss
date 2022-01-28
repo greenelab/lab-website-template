@@ -33,15 +33,16 @@
   .card_text {
     width: 100%;
 
-    .card_name {
+    .card_title {
       display: block;
-      margin-bottom: 10px;
-      text-align: center;
-      font-weight: $semi-bold;
+      font-family: $sans;
+      font-weight: $medium;
     }
 
-    .tags {
-      text-align: center;
+    .card_subtitle {
+      display: block;
+      margin-top: 5px;
+      font-style: italic;
     }
   }
 }

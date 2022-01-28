@@ -10,8 +10,8 @@
     />
   </a>
   <div class="feature_text">
-    {%- if include.headline -%}
-      <p class="feature_headline">{{ include.headline }}</p>
+    {%- if include.title -%}
+      <p class="feature_title">{{ include.title }}</p>
     {%- endif -%}
     {{ include.text | markdownify }}
   </div>
