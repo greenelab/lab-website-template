@@ -2,13 +2,50 @@
 title: Home
 ---
 
-The software engineering team (SET) of the Center for Health AI at the University of Colorado Anschutz
-
-## Our Projects
+{% capture text %}
+We are a small group of dedicated software developers with the [Center for Health AI](https://medschool.cuanschutz.edu/ai) at the [University of Colorado Anschutz](https://www.cuanschutz.edu/).
 
 {%
-  include tags.html
-  tags="website, react, vue, django, postgres"
+  include link.html
+  link="about"
+  title="Who we are"
+  text="Learn more about us"
+  icon="fas fa-arrow-right"
+  flip=true
+  style="button"
+%}
+{:.center}
+{% endcapture %}
+
+{% 
+  include feature.html
+  image="images/hsb.jpg"
+  title="Who we are"
+  text=text
+  link="about"
 %}
 
-{% include list.html component="card" data="projects" %}
+{% include section.html %}
+
+{% capture text %}
+We support the labs and individuals within the Center by developing high quality web applications, web servers, data visualizations, data pipelines, and much more.
+
+{%
+  include link.html
+  link="portfolio"
+  text="Our portfolio"
+  icon="fas fa-arrow-right"
+  flip=true
+  style="button"
+%}
+{:.center}
+{% endcapture %}
+
+{% 
+  include feature.html
+  image="images/code.jpg"
+  title="What we do"
+  text=text
+  link="portfolio"
+  flip=true
+%}

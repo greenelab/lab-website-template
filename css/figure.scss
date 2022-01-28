@@ -6,7 +6,9 @@
 @import "mixins";
 
 .figure {
-  @include flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 40px 0;
   @include trim-v-margins;

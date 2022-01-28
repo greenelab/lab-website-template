@@ -23,17 +23,21 @@
     >
   </{{ tag }}>
   <span class="card_text">
-    {%- if include.name -%}
-      <{{ tag }} href="{{ include.link | relative_url }}" {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %} class="card_name">
-        {{- include.name -}}
+    {%- if include.title -%}
+      <{{ tag }} href="{{ include.link | relative_url }}" {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %} class="card_title">
+        {{- include.title -}}
       </{{ tag }}>
+    {%- endif -%}
+
+    {%- if include.subtitle -%}
+      <span class="card_subtitle">{{- include.subtitle -}}</span>
     {%- endif -%}
 
     {%- if include.description -%}
       {{- include.description | markdownify -}}
     {%- endif -%}
 
-    {%- if include.tag or include.repo -%}
+    {%- if include.tags or include.repo -%}
       {%- include tags.html tags=include.tags repo=include.repo -%}      
     {%- endif -%}
   </span>

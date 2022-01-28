@@ -20,7 +20,12 @@
   >
     <img src="{{ site.logo | relative_url }}" class="logo" alt="Logo image" />
     {% if site.logo-text != false %}
-      <span class="logo_text">{{ site.title }}</span>
+      <span class="logo_text">
+        <span class="logo_title">{{ site.title }}</span>
+        {% if site.subtitle %}
+          <span class="logo_subtitle">{{ site.subtitle }}</span>
+        {% endif %}
+      </span>
     {% endif %}
   </a>
   <nav class="nav_row">

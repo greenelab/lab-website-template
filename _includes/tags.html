@@ -16,7 +16,13 @@
 {%- if tags.size > 0 or repo -%}
   <div class="tags" {% if repo %}data-repo="{{ repo }}"{% endif %} {% if link %}data-link="{{ link }}"{% endif %}>
     {%- for tag in tags -%}
-      <a {% if link %}href='{{ link }}?search="tag:{{ tag }}"'{% endif %} class="tag" data-tooltip='Show items with the tag "{{ tag }}"'>{{- tag -}}</a>
+      <a
+        {% if link %}href='{{ link }}?search="tag: {{ tag }}"'{% endif %}
+        class="tag"
+        data-tooltip='Show items with the tag "{{ tag }}"'
+      >
+        {{- tag -}}
+      </a>
     {%- endfor -%}
   </div>
 {%- endif -%}

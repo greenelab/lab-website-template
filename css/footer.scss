@@ -17,11 +17,18 @@ footer {
   }
 
   .footer_row {
-    @include flex-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
     margin: 20px 0;
     @include trim-v-margins;
     line-height: $spacing + 0.3;
+
+    .link {
+      margin: 0;
+    }
 
     &:hover .link {
       opacity: 0.25;

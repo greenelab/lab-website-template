@@ -6,13 +6,18 @@
 @import "mixins";
 
 .tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   max-width: 100%;
+  margin: 10px 0;
+  @include trim-v-margins;
 
   .tag {
-    display: inline-block;
     max-width: 100%;
-    margin: 5px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 999px;
     color: $black;
     background: $light-accent;
@@ -22,8 +27,9 @@
     white-space: nowrap;
     transition: background $fast;
 
-    &:hover {
-      background: $gray-500;
+    &:hover,
+    &[data-active="true"] {
+      background: $gray-400;
     }
 
     &[data-highlight="true"] {

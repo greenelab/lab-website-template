@@ -1,8 +1,9 @@
 ### basic settings
 
 # site properties and page defaults
-title: CHAI SET
-description: The software engineering team (SET) of the Center for Health AI at the University of Colorado Anschutz
+title: Software Engineering Team
+subtitle: Center for Health AI
+description: The software engineering team of the Center for Health AI at the University of Colorado Anschutz
 logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
