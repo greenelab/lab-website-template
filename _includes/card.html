@@ -37,7 +37,7 @@
       {{- include.description | markdownify -}}
     {%- endif -%}
 
-    {%- if include.tag or include.repo -%}
+    {%- if include.tags or include.repo -%}
       {%- include tags.html tags=include.tags repo=include.repo -%}      
     {%- endif -%}
   </span>
