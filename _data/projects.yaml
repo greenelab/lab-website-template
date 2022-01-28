@@ -12,7 +12,7 @@
   link: https://github.com/greenelab/lab-website-template
   description: An easy-to-use, flexible website template for labs, including automatic citations, GitHub tag imports, pre-built components, and more. Spend less time reinventing the wheel and more time running your lab.
   repo: greenelab/lab-website-template
-  tags: website, template, jekyll
+  tags: jekyll
 
 - name: Biomedical Literature "Word Lapse" Single Page App
   group: featured
@@ -52,4 +52,4 @@
   link: https://github.com/manubot/manubot
   description: Manubot is a workflow and set of tools for the next generation of scholarly publishing.
   repo: manubot/manubot
-  tags: bibliography, python, pandoc
+  tags: bibliography, citations
