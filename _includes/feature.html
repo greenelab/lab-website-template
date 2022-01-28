@@ -1,4 +1,4 @@
-<div class="feature">
+<div class="feature" {% if include.flip %}data-flip="true"{% endif %}>
   <a 
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="feature_image"

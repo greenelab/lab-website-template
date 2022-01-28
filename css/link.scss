@@ -26,12 +26,16 @@ a:hover {
   text-decoration: none;
   vertical-align: bottom;
   transition: background $fast, color $fast, opacity $fast;
-  
+
   span {
     text-align: center;
     font-family: $sans;
     font-weight: $medium;
     line-height: 1;
+  }
+
+  &[data-flip="true"] {
+    flex-direction: row-reverse;
   }
 
   &[data-style="button"] {

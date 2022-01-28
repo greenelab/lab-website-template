@@ -37,7 +37,13 @@ Spend less time reinventing the wheel, and more time running your lab.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-[See what we've published &nbsp;→](research)
+{%
+  include link.html
+  link="research"
+  text="See what we've published"
+  icon="fas fa-arrow-right"
+  flip=true
+%}
 {:.center}
 {% endcapture %}
 
@@ -53,7 +59,13 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-[See our resources &nbsp;→](resources)
+{%
+  include link.html
+  link="tools"
+  text="Browse our tools"
+  icon="fas fa-arrow-right"
+  flip=true
+%}
 {:.center}
 {% endcapture %}
 
@@ -62,13 +74,20 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
   image="images/photo.jpg"
   link="resources"
   headline="Our Resources"
+  flip=true
   text=text
 %}
 
 {% capture text %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-[Meet our team &nbsp;→](team)
+{%
+  include link.html
+  link="team"
+  text="Meet our team"
+  icon="fas fa-arrow-right"
+  flip=true
+%}
 {:.center}
 {% endcapture %}
 
