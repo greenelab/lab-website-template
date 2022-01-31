@@ -21,6 +21,7 @@
     display: inline-block;
     width: var(--width);
     height: var(--width);
+    margin-bottom: 10px;
     border-radius: 999px;
     overflow: hidden;
     box-shadow: $shadow;
@@ -42,10 +43,6 @@
     font-weight: $medium;
   }
 
-  .portrait_image + span {
-    margin-top: 10px;
-  }
-
   .role {
     display: flex;
     justify-content: center;
@@ -61,5 +58,6 @@
     color: $gray-500;
     border-radius: 999px;
     transform: translate(-50%, -50%);
+    box-shadow: $shadow;
   }
 }

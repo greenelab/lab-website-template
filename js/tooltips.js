@@ -6,13 +6,13 @@ const createTooltips = () => {
   // make sure tippy library available
   if (typeof tippy === "undefined") return;
 
-  // get non-empty tooltips
-  const tooltips = Array.from(
+  // get elements with non-empty tooltips
+  const elements = Array.from(
     document.querySelectorAll("[data-tooltip]")
   ).filter((element) => element.dataset.tooltip.trim());
 
   // add tooltip to elements
-  tippy(tooltips, {
+  tippy(elements, {
     content: (element) => {
       const content = element.dataset.tooltip.trim();
       // add aria label for screen readers
