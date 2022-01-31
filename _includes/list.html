@@ -15,6 +15,10 @@
     {%- capture numbertostring -%}{{- tonumber -}}{%- endcapture -%}
     {%- if value == numbertostring -%}
       {%- assign value = tonumber -%}
+    {%- elsif value == "true" -%}
+      {%- assign value = true -%}
+    {%- elsif value == "false" -%}
+      {%- assign value = false -%}
     {%- endif -%}
     {%- assign data = data | where_exp: "d", "d[key] == value" -%}
   {%- endif -%}
