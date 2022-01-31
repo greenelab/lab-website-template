@@ -10,24 +10,22 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
   color: $gray-500;
   font-family: $sans;
   font-size: 0.9rem;
 
   .role_text {
     font-weight: $medium;
-    margin-left: 10px;
   }
 
   .role_description {
-    margin-left: 20px;
+    // font-style: italic;
   }
 
   @media (max-width: $phone) {
     .role_description {
       width: 100%;
-      margin-left: 0;
-      margin-top: 5px;
     }
   }
 }

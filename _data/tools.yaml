@@ -1,4 +1,5 @@
 - title: Cool Dataset
+  subtitle: a subtitle
   group: featured
   image: images/photo.jpg
   link: https://github.com/
@@ -8,6 +9,7 @@
     - resource
 
 - title: Cool Package
+  subtitle: a subtitle
   group: featured
   image: images/photo.jpg
   link: https://github.com/

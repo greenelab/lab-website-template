@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
   width: var(--width);
   margin: calc(20 * var(--width) / 150);
   text-align: center;
@@ -21,7 +22,6 @@
     display: inline-block;
     width: var(--width);
     height: var(--width);
-    margin-bottom: 10px;
     border-radius: 999px;
     overflow: hidden;
     box-shadow: $shadow;
@@ -33,14 +33,16 @@
     }
   }
 
-  .portrait_name,
-  .portrait_description {
+  .portrait_name {
     font-family: $sans;
     font-size: 1rem;
+    font-weight: $medium;
   }
 
-  .portrait_name {
-    font-weight: $medium;
+  .portrait_description {
+    margin-top: -10px;
+    font-family: $sans;
+    font-size: 0.9rem;
   }
 
   .role {

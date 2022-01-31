@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin: 20px 0;
   @include trim-v-margins;
@@ -19,7 +20,7 @@
     white-space: nowrap;
 
     #{$icon} {
-      margin-right: 0.75em;
+      margin-right: 0.5em;
     }
   }
 }
