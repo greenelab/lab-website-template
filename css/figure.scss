@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
   margin: 40px 0;
   @include trim-v-margins;
 
@@ -20,8 +21,6 @@
   }
 
   .figure_caption {
-    margin-top: 10px;
-    margin-bottom: 0;
     font-style: italic;
     text-align: center;
   }

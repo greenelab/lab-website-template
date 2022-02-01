@@ -10,8 +10,6 @@ const boxSelector = ".search_box";
 const infoSelector = ".search_info";
 // tags element
 const tagSelector = ".tag";
-// show info only if some items filtered or tags searched
-const smartInfo = true;
 
 // split search query into terms, phrases, and tags
 const splitQuery = (query) => {
@@ -120,12 +118,12 @@ const updateBox = (query = "") => {
 };
 
 // update search results info
-const updateInfo = (x, n, tags) => {
+const updateInfo = (query, x, n) => {
   // hide all info boxes
   window.trueHide(infoSelector);
 
-  // smart hide/show info
-  if (smartInfo && !(x < n || tags.length)) return;
+  // hide info if nothing searched
+  if (!query.trim()) return;
 
   // show
   window.trueShow(infoSelector);
@@ -133,8 +131,6 @@ const updateInfo = (x, n, tags) => {
   // info template
   let info = "";
   info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
-  if (tags.length)
-    info += `With tag(s) ${tags.map((tag) => `"${tag}"`).join(", ")}<br>`;
   info += "<a href='./'>Clear search</a>";
 
   // set info HTML string
@@ -158,9 +154,9 @@ const updateTags = (query) => {
 const searchComponents = (query = "") => {
   resetHighlights();
   const parts = splitQuery(query);
-  const [x, n, tags] = filterComponents(parts);
+  const [x, n] = filterComponents(parts);
   updateBox(query);
-  updateInfo(x, n, tags);
+  updateInfo(query, x, n);
   updateTags(query);
 };
 

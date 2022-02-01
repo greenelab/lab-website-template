@@ -9,11 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 10px;
   color: $gray-500;
 
   & > * {
-    width: 45%;
+    width: 50%;
   }
 
   & > *:first-child {
@@ -25,9 +25,10 @@
   }
 
   @media (max-width: $phone) {
+    align-items: center;
+    flex-direction: column;
+
     & > * {
-      width: 100%;
-      margin: 10px 0;
       text-align: center !important;
     }
   }
