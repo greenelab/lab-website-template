@@ -38,3 +38,11 @@
   link: https://github.com/monarch-initiative/graphdb-deployer
   description: Automates the parsing and transformation of a KGX archive into graphdb-ready formats. After the archive is converted, automates provisioning and deployment of Neo4j and Blazegraph instances from a KGX archive.
   tags: devops, iac, graph databases, neo4j, blazegraph, terraform, ansible
+
+- name: Manubot
+  group: more
+  image: images/manubot.png
+  link: https://github.com/manubot/manubot
+  description: Manubot is a workflow and set of tools for the next generation of scholarly publishing.
+  repo: manubot/manubot
+  tags: bibliography
