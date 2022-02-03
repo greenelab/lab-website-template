@@ -22,7 +22,7 @@
 - title: This Website
   subtitle: for the Center
   image: images/hsb.jpg
-  link: https://cuhealthai.github.io/set-website/
+  link: https://github.com/CUHealthAI/set-website
   description: We built the website you are on right now (of course)! This website, and [many of others](https://github.com/greenelab/lab-website-template/stargazers), make use of a "Lab Website Template", developed under the Greene Lab.
   tags: website, frontend, graphic design, jekyll
 
@@ -40,7 +40,7 @@
   tags: devops, iac, graph databases, neo4j, blazegraph, terraform, ansible
 
 - name: Manubot
-  group: more
+  group: past
   image: images/manubot.png
   link: https://github.com/manubot/manubot
   description: Manubot is a workflow and set of tools for the next generation of scholarly publishing.
