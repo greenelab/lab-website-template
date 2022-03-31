@@ -24,7 +24,7 @@ How's our documentation?
   - image galleries
   - multi-size cards with image and text
   - citations
-  - ...[and many more](https://github.com/greenelab/lab-website-template/wiki/Components)!
+  - ...and many more!
 - A **home page**, where you can highlight the most important things that make your lab special
 - A **research page**, with a sorted, searchable list of all your published works
 - A **tools page**, where you can show off your software, datasets, or other useful things
@@ -44,7 +44,7 @@ How's our documentation?
 
 [📝 Basic Editing](https://github.com/greenelab/lab-website-template/wiki/Basic-Editing)
 
-[🤖 Automatic Citations](https://github.com/greenelab/lab-website-template/wiki/Automatic-Citations)
+[🤖 Citations](https://github.com/greenelab/lab-website-template/wiki/Citations)
 
 [⚙️ Advanced Editing](https://github.com/greenelab/lab-website-template/wiki/Advanced-Editing)
 

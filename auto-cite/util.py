@@ -126,7 +126,7 @@ def save_data(filename, data):
         raise Exception(f"Can't dump {filename} as YAML")
 
     # write warning note to top of file
-    note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
+    note = "# DO NOT EDIT, GENERATED AUTOMATICALLY FROM SOURCES.YAML (AND ELSEWHERE)\nSee https://github.com/greenelab/lab-website-template/wiki/Citations"
     try:
         with open(path, "r") as file:
             data = file.read()
