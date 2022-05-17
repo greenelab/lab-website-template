@@ -144,7 +144,8 @@ def cite_with_manubot(source):
         print(palette['gray'])
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
         print(palette['reset'])
-    except Exception:
+    except Exception as error:
+        log(error, 3, "gray")
         raise Exception("Manubot could not generate citation")
     
     # parse results as json
