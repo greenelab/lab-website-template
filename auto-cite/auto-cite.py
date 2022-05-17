@@ -76,7 +76,7 @@ for index, source in enumerate(sources):
         try:
             new_citations.append(cite_with_manubot(source))
         except Exception as message:
-            log(message, 3, "")
+            log(message, 3, "red")
             exit(1)
 
 log("Exporting citations")

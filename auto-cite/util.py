@@ -21,10 +21,10 @@ os.system("")
 # colors for logging
 palette = {
     "white": "\033[97m",
+    "gray": "\033[90m",
     "red": "\033[91m",
     "green": "\033[92m",
     "yellow": "\033[93m",
-    "blue": "\033[94m",
     "purple": "\033[95m",
     "cyan": "\033[96m",
     "reset": "\033[0m",
@@ -38,13 +38,10 @@ def log(message="", level=1, color=""):
     if not color:
         color = levels[level]
 
-    if color != "white":
-        print("")
-
     if level == 1:
         message = message.upper()
 
-    print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}")
+    print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}\n")
 
 
 # find item in list that matches entry by id
@@ -141,13 +138,21 @@ def cite_with_manubot(source):
     # source id
     id = source.get("id")
 
-    # run Manubot and get results as json
+    # run Manubot and get results
     try:
-        commands = ["manubot", "cite", id, "--log-level=ERROR"]
-        output = subprocess.Popen(commands, stdout=subprocess.PIPE)
-        manubot = json.loads(output.communicate()[0])[0]
-    except Exception:
+        commands = ["manubot", "cite", id, "--log-level=WARNING"]
+        print(palette['gray'])
+        output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
+        print(palette['reset'])
+    except Exception as error:
+        log(error, 3, "gray")
         raise Exception("Manubot could not generate citation")
+    
+    # parse results as json
+    try:
+        manubot = json.loads(output[0])[0]
+    except Exception:
+        raise Exception("Couldn't parse Manubot response")
 
     # new citation info, with only needed info from Manubot
     citation = {}

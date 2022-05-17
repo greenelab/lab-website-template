@@ -120,13 +120,13 @@ const updateBox = (query = "") => {
 // update search results info
 const updateInfo = (query, x, n) => {
   // hide all info boxes
-  window.trueHide(infoSelector);
+  trueHide(infoSelector);
 
   // hide info if nothing searched
   if (!query.trim()) return;
 
   // show
-  window.trueShow(infoSelector);
+  trueShow(infoSelector);
 
   // info template
   let info = "";
