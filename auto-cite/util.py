@@ -46,9 +46,11 @@ def log(message="", level=1, color=""):
 
 # find item in list that matches entry by id
 def find_match(entry, list):
-    for item in list:
-        if type(item) == dict and item.get("id") == entry.get("id"):
-            return item
+    id = entry.get("id")
+    if id:
+        for item in list:
+            if type(item) == dict and item.get("id") == id:
+                return item
     return {}
 
 
@@ -141,13 +143,13 @@ def cite_with_manubot(source):
     # run Manubot and get results
     try:
         commands = ["manubot", "cite", id, "--log-level=WARNING"]
-        print(palette['gray'])
+        print(palette["gray"])
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
-        print(palette['reset'])
+        print(palette["reset"])
     except Exception as error:
         log(error, 3, "gray")
         raise Exception("Manubot could not generate citation")
-    
+
     # parse results as json
     try:
         manubot = json.loads(output[0])[0]

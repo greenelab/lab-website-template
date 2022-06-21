@@ -14,11 +14,7 @@ def main(data):
 
     for index, entry in enumerate(data):
         # show progress
-        log(
-            f"Orcid {index + 1} of {len(data)} - {entry.get('orcid', '-')}",
-            3,
-            "cyan"
-        )
+        log(f"Orcid {index + 1} of {len(data)} - {entry.get('orcid', '-')}", 3, "cyan")
 
         # query api to get dois from orcid
         url = endpoint.replace("$ORCID", entry.get("orcid", "-"))

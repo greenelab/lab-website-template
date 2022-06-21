@@ -60,7 +60,7 @@ new_citations = []
 # go through sources
 for index, source in enumerate(sources):
     # show progress
-    log(f"Source {index + 1} of {len(sources)} - {source.get('id', '-')}", 2)
+    log(f"Source {index + 1} of {len(sources)} - {source.get('id', 'No ID')}", 2)
 
     # find same source in existing citations
     cached = find_match(source, citations)
@@ -70,7 +70,7 @@ for index, source in enumerate(sources):
         log("Using existing citation", 3)
         new_citations.append(cached)
 
-    else:
+    elif source.get("id", "").strip():
         # use Manubot to generate new citation
         log("Using Manubot to generate new citation", 3)
         try:
@@ -78,6 +78,10 @@ for index, source in enumerate(sources):
         except Exception as message:
             log(message, 3, "red")
             exit(1)
+    else:
+        # pass source through untouched
+        log("Passing source through", 3)
+        new_citations.append(source)
 
 log("Exporting citations")
 
