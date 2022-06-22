@@ -70,7 +70,7 @@ for index, source in enumerate(sources):
     new_citation = {}
 
     # find same source in existing citations
-    cached = get_cache(source, citations)
+    cached = get_cached(source, citations)
 
     if cached:
         # use existing citation to save time

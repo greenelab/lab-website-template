@@ -48,7 +48,7 @@ def log(message="", level=1, color=""):
 
 
 # find item in existing citations that matches source
-def get_cache(source, citations):
+def get_cached(source, citations):
     _cache = source.get("_cache")
     if not _cache:
         return
