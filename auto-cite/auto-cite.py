@@ -38,11 +38,13 @@ for plugin in config.get("plugins", []):
             log(message, 3, "red")
             exit(1)
 
+        # run plugin
         plugin_sources = import_module(f"plugins.{name}").main(data)
 
         log(f"Got {len(plugin_sources)} sources", 2, "green")
 
         for source in plugin_sources:
+            # add source
             sources.append(source)
 
 log("Generating citations for sources")
@@ -62,38 +64,38 @@ for index, source in enumerate(sources):
     # show progress
     log(f"Source {index + 1} of {len(sources)} - {source.get('id', 'No ID')}", 2)
 
+    # new citation for source
+    new_citation = {}
+
     # find same source in existing citations
-    cached = find_match(source, citations)
+    cached = get_cache(source, citations)
 
     if cached:
         # use existing citation to save time
         log("Using existing citation", 3)
-        new_citations.append(cached)
+        new_citation = cached
 
     elif source.get("id", "").strip():
         # use Manubot to generate new citation
         log("Using Manubot to generate new citation", 3)
         try:
-            new_citations.append(cite_with_manubot(source))
+            new_citation = cite_with_manubot(source)
         except Exception as message:
             log(message, 3, "red")
             exit(1)
     else:
         # pass source through untouched
         log("Passing source through", 3)
-        new_citations.append(source)
+
+    # merge in properties from input source
+    new_citation.update(source)
+    # ensure date in proper format for correct date sorting
+    new_citation["date"] = clean_date(new_citation.get("date"))
+
+    # add new citation to list
+    new_citations.append(new_citation)
 
 log("Exporting citations")
-
-# go through new citations
-for citation in new_citations:
-    # merge in properties from input source
-    citation.update(find_match(citation, sources))
-
-    # ensure date in proper format for correct date sorting
-    citation["date"] = clean_date(citation.get("date"))
-
-log(f"Exported {len(new_citations)} citations", 2, "green")
 
 # save new citations
 try:
@@ -102,4 +104,4 @@ except Exception as message:
     log(message, 2, "red")
     exit(1)
 
-log("Done!")
+log(f"Exported {len(new_citations)} citations", 2, "green")
