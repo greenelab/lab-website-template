@@ -49,11 +49,11 @@ def log(message="", level=1, color=""):
 
 # find item in existing citations that matches source
 def get_cache(source, citations):
-    id = source.get("id")
-    if not id:
+    _cache = source.get("_cache")
+    if not _cache:
         return
-    # match by id key
-    matches = [citation for citation in citations if citation.get("id") == id]
+    # match by cache key
+    matches = [citation for citation in citations if citation.get("_cache") == _cache]
     # only return if there is a unique match
     if len(matches) == 1:
         return matches[0]
