@@ -1,5 +1,6 @@
 from util import *
 from importlib import import_module
+from dict_hash import sha256
 
 # config info for input/output files and plugins
 config = {}
@@ -45,7 +46,7 @@ for plugin in config.get("plugins", []):
 
         for source in plugin_sources:
             # make unique key for cache matching
-            source["_cache"] = f"{name} | {file} | {source['id']}";
+            source["_cache"] = sha256({**source, "plugin": name, "input": file})
             # add source
             sources.append(source)
 
