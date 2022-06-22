@@ -45,7 +45,7 @@ for plugin in config.get("plugins", []):
 
         for source in plugin_sources:
             # make unique key for cache matching
-            source["_cache"] = f"{plugin} | {file} | {source['id']}";
+            source["_cache"] = f"{name} | {file} | {source['id']}";
             # add source
             sources.append(source)
 
