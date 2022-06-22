@@ -1,3 +1,11 @@
+- id: doi:10.1016/j.csbj.2020.05.017
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  date: 2020-6-2
+  extra-links:
+    - type: manubot
+      link: https://greenelab.github.io/knowledge-graph-review/
+  tags:
+    - knowledge graphs
 
 - id: doi:10.1371/journal.pcbi.1007128
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
