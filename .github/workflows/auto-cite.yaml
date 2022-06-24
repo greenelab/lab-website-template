@@ -21,8 +21,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - name: Install Manubot
-        run: pip install --upgrade manubot
+      - name: Install packages
+        run: python -m pip install --upgrade --requirement ./auto-cite/requirements.txt
       - name: Build updated citations
         run: python ./auto-cite/auto-cite.py
       - name: Commit updated citations

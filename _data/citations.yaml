@@ -15,6 +15,7 @@
     link: https://greenelab.github.io/knowledge-graph-review/
   tags:
   - knowledge graphs
+  _cache: 371e391cc663116136dc43f4c93ebdc2998f52a3abd67c7add918c3b9f4f98d9
 - id: doi:10.1371/journal.pcbi.1007128
   title: Open collaborative writing with Manubot
   authors:
@@ -37,6 +38,7 @@
     link: https://github.com/greenelab/meta-review
   - type: website
     link: http://manubot.org/
+  _cache: 9b4d326347b4c43474de520edff579266c3c490e1baf4a2074ea151d6c90e318
 - id: doi:10.7554/eLife.32822
   title: Sci-Hub provides access to nearly all scholarly literature
   authors:
@@ -62,3 +64,4 @@
   - type: source
     link: https://github.com/greenelab/scihub
     text: Analyses source
+  _cache: 1510c88d1d7cdb29f090da47b0903118fa57243de166541c8ff31c614fc05604

@@ -9,6 +9,6 @@ authors:
     given-names: "Casey"
     orcid: "https://orcid.org/0000-0001-8713-9213"
 title: "Lab Website Template"
-version: 0.4.1
-date-released: 2021-08-23
+version: 0.6.1
+date-released: 2022-06-22
 url: "https://github.com/greenelab/lab-website-template"

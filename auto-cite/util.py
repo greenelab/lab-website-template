@@ -9,6 +9,9 @@ import yaml
 from yaml.loader import SafeLoader
 from datetime import datetime
 
+# https://stackoverflow.com/questions/13518819/avoid-references-in-pyyaml
+yaml.Dumper.ignore_aliases = lambda *args: True
+
 # current working directory
 directory = os.path.dirname(os.path.realpath(__file__))
 
@@ -44,12 +47,16 @@ def log(message="", level=1, color=""):
     print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}\n")
 
 
-# find item in list that matches entry by id
-def find_match(entry, list):
-    for item in list:
-        if type(item) == dict and item.get("id") == entry.get("id"):
-            return item
-    return {}
+# find item in existing citations that matches source
+def get_cached(source, citations):
+    _cache = source.get("_cache")
+    if not _cache:
+        return
+    # match by cache key
+    matches = [citation for citation in citations if citation.get("_cache") == _cache]
+    # only return if there is a unique match
+    if len(matches) == 1:
+        return matches[0]
 
 
 # get date parts from Manubot citation
@@ -141,13 +148,11 @@ def cite_with_manubot(source):
     # run Manubot and get results
     try:
         commands = ["manubot", "cite", id, "--log-level=WARNING"]
-        print(palette['gray'])
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
-        print(palette['reset'])
     except Exception as error:
         log(error, 3, "gray")
         raise Exception("Manubot could not generate citation")
-    
+
     # parse results as json
     try:
         manubot = json.loads(output[0])[0]
