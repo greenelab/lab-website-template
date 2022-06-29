@@ -1,4 +1,5 @@
 {%- assign emptyarray = "" | split: "," -%}
+
 {%- assign data = site.data[include.data] | default: site[include.data] | default: emptyarray -%}
 {%- assign component = include.component | append: ".html" -%}
 
@@ -43,6 +44,7 @@
   {%-
     include {{ component }}
     author=d.author
+    authors=d.authors
     caption=d.caption
     content=d.content
     date=d.date
@@ -53,6 +55,7 @@
     id=d.id
     image=d.image
     link=link
+    publisher=d.publisher
     repo=d.repo
     role=d.role
     slug=d.slug
