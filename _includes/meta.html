@@ -1,4 +1,6 @@
-{% assign title = "" | split: "," %}
+{% assign emptyarray = "" | split: "," %}
+
+{% assign title = emptyarray %}
 {% if site.title %}
   {% assign title = title | push: site.title %}
 {% endif %}

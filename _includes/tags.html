@@ -1,4 +1,6 @@
-{%- assign tags = "" | split: "," -%}
+{%- assign emptyarray = "" | split: "," -%}
+
+{%- assign tags = emptyarray -%}
 {%- assign input = include.tags | join: "," | split: "," -%}
 {%- for tag in input -%}
   {%- assign tag = tag | strip -%}
