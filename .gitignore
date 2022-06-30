@@ -6,3 +6,4 @@ vendor
 debug.log
 __pycache__/
 .DS_STORE
+.manubot-cache

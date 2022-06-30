@@ -23,6 +23,11 @@ jobs:
           python-version: 3.7
       - name: Install packages
         run: python -m pip install --upgrade --requirement ./auto-cite/requirements.txt
+      - name: Cache Manubot
+        uses: actions/cache@v3
+        with:
+          path: .manubot-cache
+          key: manubot-cache-1
       - name: Build updated citations
         run: python ./auto-cite/auto-cite.py
       - name: Commit updated citations

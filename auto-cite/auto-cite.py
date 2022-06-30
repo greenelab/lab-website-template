@@ -1,6 +1,6 @@
 from util import *
 from importlib import import_module
-from dict_hash import sha256
+
 
 # config info for input/output files and plugins
 config = {}
@@ -45,8 +45,9 @@ for plugin in config.get("plugins", []):
         log(f"Got {len(plugin_sources)} sources", 2, "green")
 
         for source in plugin_sources:
-            # make unique key for cache matching
-            source["_cache"] = sha256({**source, "plugin": name, "input": file})
+            # attach additional metadata
+            # source["_plugin"] = name
+            # source["_input"] = file
             # add source
             sources.append(source)
 
@@ -70,25 +71,20 @@ for index, source in enumerate(sources):
     # new citation for source
     new_citation = {}
 
-    # find same source in existing citations
-    cached = get_cached(source, citations)
+    # get id of source
+    id = source.get("id", "").strip()
 
-    if cached:
-        # use existing citation to save time
-        log("Using existing citation", 3)
-        new_citation = cached
-
-    elif source.get("id", "").strip():
+    if id:
         # use Manubot to generate new citation
         log("Using Manubot to generate new citation", 3)
         try:
-            new_citation = cite_with_manubot(source)
+            new_citation = cite_source(id)
         except Exception as message:
             log(message, 3, "red")
             exit(1)
     else:
-        # pass source through untouched
-        log("Passing source through", 3)
+        # skip Manubot
+        log("No ID, skipping Manubot", 3)
 
     # merge in properties from input source
     new_citation.update(source)

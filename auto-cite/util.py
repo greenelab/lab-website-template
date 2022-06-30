@@ -8,6 +8,8 @@ import json
 import yaml
 from yaml.loader import SafeLoader
 from datetime import datetime
+from joblib import Memory
+
 
 # https://stackoverflow.com/questions/13518819/avoid-references-in-pyyaml
 yaml.Dumper.ignore_aliases = lambda *args: True
@@ -45,18 +47,6 @@ def log(message="", level=1, color=""):
         message = message.upper()
 
     print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}\n")
-
-
-# find item in existing citations that matches source
-def get_cached(source, citations):
-    _cache = source.get("_cache")
-    if not _cache:
-        return
-    # match by cache key
-    matches = [citation for citation in citations if citation.get("_cache") == _cache]
-    # only return if there is a unique match
-    if len(matches) == 1:
-        return matches[0]
 
 
 # get date parts from Manubot citation
@@ -141,11 +131,8 @@ def save_data(filename, data):
 
 
 # generate citation for source with Manubot
-def cite_with_manubot(source):
-    # source id
-    id = source.get("id")
-
-    # run Manubot and get results
+def cite_with_manubot(id):
+    # run Manubot
     try:
         commands = ["manubot", "cite", id, "--log-level=WARNING"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
@@ -155,9 +142,21 @@ def cite_with_manubot(source):
 
     # parse results as json
     try:
-        manubot = json.loads(output[0])[0]
+        return json.loads(output[0])[0]
     except Exception:
         raise Exception("Couldn't parse Manubot response")
+
+
+# make cached version of Manubot function so subsequent calls are faster
+location = ".manubot-cache"
+memory = Memory(location, verbose=0)
+cite_with_manubot = memory.cache(cite_with_manubot)
+
+
+# generate clean, simplified citation for source
+def cite_source(id):
+    # run Manubot on id and get results
+    manubot = cite_with_manubot(id)
 
     # new citation info, with only needed info from Manubot
     citation = {}
