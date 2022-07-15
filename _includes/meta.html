@@ -4,7 +4,9 @@
 {% if site.title %}
   {% assign title = title | push: site.title %}
 {% endif %}
-{% if page.title %}
+{% if page.name %}
+  {% assign title = title | push: page.name %}
+{% elsif page.title %}
   {% assign title = title | push: page.title %}
 {% endif %}
 {% assign title = title | join: " - " %}

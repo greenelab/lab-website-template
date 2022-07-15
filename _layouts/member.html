@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>{{ page.name | default: page.title }}</h1>
 
 {%- include figure.html image=page.image -%}
 
@@ -26,6 +26,8 @@ layout: default
   {%- assign aliases = aliases | concat: page.aliases -%}
 {%- elsif page.aliases -%}
   {%- assign aliases = aliases | push: page.aliases -%}
+{%- elsif page.name -%}
+  {%- assign aliases = aliases | push: page.name -%}
 {%- elsif page.title -%}
   {%- assign aliases = aliases | push: page.title -%}
 {%- endif -%}
@@ -33,7 +35,7 @@ layout: default
 {%- assign search = aliases | join: '" "' | prepend: '"' | append: '"' | prepend: "/research/?search=" -%}
 
 {%- capture text -%}
-  {{ page.title }}'s papers
+  {{ page.name | default: page.title }}'s papers
 {%- endcapture -%}
 
 <p class="center">
