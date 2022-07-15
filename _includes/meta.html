@@ -1,16 +1,19 @@
 {% assign emptyarray = "" | split: "," %}
 
 {% assign title = emptyarray %}
-{% if site.title %}
-  {% assign title = title | push: site.title %}
-{% endif %}
+
 {% assign filename = page.path | split: "/" | last %}
 {% if page.name and page.name != filename %}
   {% assign title = title | push: page.name %}
 {% elsif page.title %}
   {% assign title = title | push: page.title %}
 {% endif %}
-{% assign title = title | join: " - " %}
+
+{% if site.title %}
+  {% assign title = title | push: site.title %}
+{% endif %}
+
+{% assign title = title | join: " | " %}
 
 <title>{{ title }}</title>
 
