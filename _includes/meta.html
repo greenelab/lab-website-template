@@ -4,7 +4,8 @@
 {% if site.title %}
   {% assign title = title | push: site.title %}
 {% endif %}
-{% if page.name %}
+{% assign filename = page.path | split: "/" | last %}
+{% if page.name and page.name != filename %}
   {% assign title = title | push: page.name %}
 {% elsif page.title %}
   {% assign title = title | push: page.title %}
