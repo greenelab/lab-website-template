@@ -17,6 +17,9 @@ log("Compiling list of sources to cite")
 # compile master list of sources from various plugins
 sources = []
 
+# error exit flag
+will_exit = False
+
 # loop through plugins
 for plugin in config.get("plugins", []):
     # get plugin props
@@ -37,7 +40,7 @@ for plugin in config.get("plugins", []):
             data = load_data(file)
         except Exception as message:
             log(message, 3, "red")
-            exit(1)
+            will_exit = True
 
         # run plugin
         plugin_sources = import_module(f"plugins.{name}").main(data)
@@ -45,10 +48,18 @@ for plugin in config.get("plugins", []):
         log(f"Got {len(plugin_sources)} sources", 2, "green")
 
         for source in plugin_sources:
+            # include meta info about plugin and source
+            source["_plugin"] = name
+            source["_input"] = file
             # make unique key for cache matching
-            source["_cache"] = sha256({**source, "plugin": name, "input": file})
+            source["_cache"] = sha256(source)
             # add source
             sources.append(source)
+
+# exit at end of loop if error occurred
+if will_exit:
+    log("One or more input files failed to load", 3, "red")
+    exit(1)
 
 log("Generating citations for sources")
 
@@ -58,6 +69,9 @@ try:
     citations = load_data(config["output"])
 except Exception as message:
     log(message, 2, "yellow")
+
+# error exit flag
+will_exit = False
 
 # list of new citations to overwrite existing citations
 new_citations = []
@@ -83,9 +97,12 @@ for index, source in enumerate(sources):
         log("Using Manubot to generate new citation", 3)
         try:
             new_citation = cite_with_manubot(source)
+        # if Manubot couldn't cite source
         except Exception as message:
             log(message, 3, "red")
-            exit(1)
+            # if manually-entered source, throw error on cite failure
+            if source.get("_plugin") == "sources":
+                will_exit = True
     else:
         # pass source through untouched
         log("Passing source through", 3)
@@ -95,8 +112,17 @@ for index, source in enumerate(sources):
     # ensure date in proper format for correct date sorting
     new_citation["date"] = clean_date(new_citation.get("date"))
 
+    # remove unwanted keys
+    new_citation.pop("_plugin")
+    new_citation.pop("_input")
+
     # add new citation to list
     new_citations.append(new_citation)
+
+# exit at end of loop if error occurred
+if will_exit:
+    log("One or more sources failed to be cited", 3, "red")
+    exit(1)
 
 log("Exporting citations")
 
