@@ -102,6 +102,7 @@ for index, source in enumerate(sources):
             # if manually-entered source, throw error on cite failure
             if source.get("_plugin") == "sources":
                 will_exit = True
+            continue
     else:
         # pass source through untouched
         log("Passing source through", 3)

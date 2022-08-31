@@ -64,7 +64,7 @@ def main(data):
 
     # exit at end of loop if error occurred
     if will_exit:
-        log("One or more ORCIDs failed to be cited", 3, "red")
+        log("One or more ORCIDs failed", 3, "red")
         exit(1)
 
     # return flat list of sources
