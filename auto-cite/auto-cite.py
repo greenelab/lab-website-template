@@ -23,8 +23,8 @@ will_exit = False
 # loop through plugins
 for plugin in config.get("plugins", []):
     # get plugin props
-    name = plugin.get("name", "-")
-    files = plugin.get("input", "")
+    name = plugin.get("name", "[no name]")
+    files = plugin.get("input", [])
 
     # show progress
     log(f"Running {name} plugin")
@@ -34,16 +34,15 @@ for plugin in config.get("plugins", []):
         # show progress
         log(file, 2)
 
-        # get data in file
-        data = []
+        plugin_sources = []
         try:
+            # get data in file
             data = load_data(file)
+            # run plugin
+            plugin_sources = import_module(f"plugins.{name}").main(data)
         except Exception as message:
             log(message, 3, "red")
             will_exit = True
-
-        # run plugin
-        plugin_sources = import_module(f"plugins.{name}").main(data)
 
         log(f"Got {len(plugin_sources)} sources", 2, "green")
 
@@ -58,7 +57,7 @@ for plugin in config.get("plugins", []):
 
 # exit at end of loop if error occurred
 if will_exit:
-    log("One or more input files failed to load", 3, "red")
+    log("One or more input files or plugins failed", 3, "red")
     exit(1)
 
 log("Generating citations for sources")
@@ -79,7 +78,7 @@ new_citations = []
 # go through sources
 for index, source in enumerate(sources):
     # show progress
-    log(f"Source {index + 1} of {len(sources)} - {source.get('id', 'No ID')}", 2)
+    log(f"Source {index + 1} of {len(sources)} - {source.get('id', '[no ID]')}", 2)
 
     # new citation for source
     new_citation = {}
