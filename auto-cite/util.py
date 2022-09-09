@@ -87,8 +87,8 @@ def load_data(filename, type_check=True):
     # try to open file
     try:
         file = open(path, encoding="utf8")
-    except Exception as message:
-        raise Exception(message or f"Can't open {filename}")
+    except Exception as e:
+        raise Exception(e or f"Can't open {filename}")
 
     # try to parse as yaml
     try:
@@ -149,8 +149,8 @@ def cite_with_manubot(source):
     try:
         commands = ["manubot", "cite", id, "--log-level=WARNING"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
-    except Exception as error:
-        log(error, 3, "gray")
+    except Exception as e:
+        log(e, 3, "gray")
         raise Exception("Manubot could not generate citation")
 
     # parse results as json

@@ -8,8 +8,8 @@ try:
     config = load_data("../_config.yaml", type_check=False).get("auto-cite")
     if not config:
         raise Exception("Couldn't find auto-cite key in config")
-except Exception as message:
-    log(message, 3, "red")
+except Exception as e:
+    log(e, 3, "red")
     exit(1)
 
 log("Compiling list of sources to cite")
@@ -40,8 +40,8 @@ for plugin in config.get("plugins", []):
             data = load_data(file)
             # run plugin
             plugin_sources = import_module(f"plugins.{name}").main(data)
-        except Exception as message:
-            log(message, 3, "red")
+        except Exception as e:
+            log(e, 3, "red")
             will_exit = True
 
         log(f"Got {len(plugin_sources)} sources", 2, "green")
@@ -66,8 +66,8 @@ log("Generating citations for sources")
 citations = []
 try:
     citations = load_data(config["output"])
-except Exception as message:
-    log(message, 2, "yellow")
+except Exception as e:
+    log(e, 2, "yellow")
 
 # error exit flag
 will_exit = False
@@ -97,8 +97,8 @@ for index, source in enumerate(sources):
         try:
             new_citation = cite_with_manubot(source)
         # if Manubot couldn't cite source
-        except Exception as message:
-            log(message, 3, "red")
+        except Exception as e:
+            log(e, 3, "red")
             # if manually-entered source, throw error on cite failure
             if source.get("_plugin") == "sources":
                 will_exit = True
@@ -129,8 +129,8 @@ log("Exporting citations")
 # save new citations
 try:
     save_data(config["output"], new_citations)
-except Exception as message:
-    log(message, 2, "red")
+except Exception as e:
+    log(e, 2, "red")
     exit(1)
 
 log(f"Exported {len(new_citations)} citations", 2, "green")

@@ -37,8 +37,8 @@ def main(data):
             request = Request(url=url, headers=headers)
             response = json.loads(urlopen(request).read())
         # if problem with orcid lookup
-        except Exception as message:
-            log(message, 3, "red")
+        except Exception as e:
+            log(e, 3, "red")
             will_exit = True
             continue
 
