@@ -7,7 +7,7 @@ def main(data):
 
     for entry in data:
         # show progress
-        log(entry.get("id", "-"), 3, "white")
+        log(entry.get("id", "[no ID]"), 3, "white")
 
         # add each entry to collection
         all_sources.append(entry)
