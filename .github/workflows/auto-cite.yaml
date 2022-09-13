@@ -19,6 +19,7 @@ jobs:
   update_research:
     name: Auto Cite
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -30,6 +31,7 @@ jobs:
         run: python -m pip install --upgrade --requirement ./auto-cite/requirements.txt
       - name: Build updated citations
         run: python ./auto-cite/auto-cite.py
+        timeout-minutes: 15
       - name: Commit updated citations
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
