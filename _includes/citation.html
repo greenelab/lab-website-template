@@ -50,14 +50,14 @@
 
     {%- assign authors = citation.authors | default: emptyarray -%}
     <div
-      class="citation_authors {% if rich %}truncate{% endif %}"
-      {% if rich %}tabindex="0"{% endif %}
+      class="citation_authors truncate"
+      tabindex="0"
     >
       {{ authors | join: ", " }}
     </div>
 
-    {%- assign publisher = citation.publisher | default: "" -%}
-    {%- assign date = citation.date | default: "1900-01-01" -%}
+    {%- assign publisher = citation.publisher | default: "[no publisher info]" -%}
+    {%- assign date = citation.date | default: "[no date info]" -%}
     <div class="citation_details">
       {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
     </div>

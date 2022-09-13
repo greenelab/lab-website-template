@@ -11,9 +11,9 @@ on:
     paths:
       - "_data/sources.yaml"
       - "_data/orcid.yaml"
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * 1"
+  # workflow_dispatch:
+  # schedule:
+  #   - cron: "0 0 * * 1"
 
 jobs:
   update_research:
