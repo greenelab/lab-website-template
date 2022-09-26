@@ -2,8 +2,8 @@
 
 # site properties and page defaults
 title: Software Engineering Team
-subtitle: Center for Health AI
-description: The software engineering team of the Center for Health AI at the University of Colorado Anschutz
+subtitle: CU Department of Biomedical Informatics
+description: The software engineering team of the Department of Biomedical Informatics at the University of Colorado Anschutz
 logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
@@ -11,8 +11,7 @@ baseurl: /set-website
 
 # site social media and other links
 links:
-  email: cuhealthai-softwareengineering@cuanschutz.edu
-  github: CUHealthAI
+  github: CU-DBMI
 
 ### advanced settings
 

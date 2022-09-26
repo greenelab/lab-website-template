@@ -9,11 +9,11 @@ import yaml
 from yaml.loader import SafeLoader
 from datetime import datetime
 
+# https://stackoverflow.com/questions/13518819/avoid-references-in-pyyaml
+yaml.Dumper.ignore_aliases = lambda *args: True
+
 # current working directory
 directory = os.path.dirname(os.path.realpath(__file__))
-
-# fallback year, month, day
-default_date = [1900, 1, 1]
 
 # allow printing ANSI color codes on Windows
 os.system("")
@@ -21,10 +21,10 @@ os.system("")
 # colors for logging
 palette = {
     "white": "\033[97m",
+    "gray": "\033[90m",
     "red": "\033[91m",
     "green": "\033[92m",
     "yellow": "\033[93m",
-    "blue": "\033[94m",
     "purple": "\033[95m",
     "cyan": "\033[96m",
     "reset": "\033[0m",
@@ -38,21 +38,22 @@ def log(message="", level=1, color=""):
     if not color:
         color = levels[level]
 
-    if color != "white":
-        print("")
-
     if level == 1:
         message = message.upper()
 
-    print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}")
+    print(f"{(level - 1) * '  '}{palette[color]}{message}{palette['reset']}\n")
 
 
-# find item in list that matches entry by id
-def find_match(entry, list):
-    for item in list:
-        if type(item) == dict and item.get("id") == entry.get("id"):
-            return item
-    return {}
+# find item in existing citations that matches source
+def get_cached(source, citations):
+    _cache = source.get("_cache")
+    if not _cache:
+        return
+    # match by cache key
+    matches = [citation for citation in citations if citation.get("_cache") == _cache]
+    # only return if there is a unique match
+    if len(matches) == 1:
+        return matches[0]
 
 
 # get date parts from Manubot citation
@@ -60,7 +61,7 @@ def date_part(citation, index):
     try:
         return citation.get("issued").get("date-parts")[0][index]
     except Exception:
-        return default_date[index]
+        return ""
 
 
 # format date string with leading 0's
@@ -68,7 +69,7 @@ def clean_date(date):
     try:
         return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
     except Exception:
-        return "-".join(str(part) for part in default_date)
+        return ""
 
 
 # read data from yaml file
@@ -83,8 +84,8 @@ def load_data(filename, type_check=True):
     # try to open file
     try:
         file = open(path, encoding="utf8")
-    except Exception as message:
-        raise Exception(message or f"Can't open {filename}")
+    except Exception as e:
+        raise Exception(e or f"Can't open {filename}")
 
     # try to parse as yaml
     try:
@@ -126,7 +127,7 @@ def save_data(filename, data):
         raise Exception(f"Can't dump {filename} as YAML")
 
     # write warning note to top of file
-    note = "# GENERATED AUTOMATICALLY, DO NOT EDIT"
+    note = "# DO NOT EDIT, GENERATED AUTOMATICALLY FROM SOURCES.YAML (AND ELSEWHERE)\n# See https://github.com/greenelab/lab-website-template/wiki/Citations"
     try:
         with open(path, "r") as file:
             data = file.read()
@@ -141,13 +142,19 @@ def cite_with_manubot(source):
     # source id
     id = source.get("id")
 
-    # run Manubot and get results as json
+    # run Manubot and get results
     try:
-        commands = ["manubot", "cite", id, "--log-level=ERROR"]
-        output = subprocess.Popen(commands, stdout=subprocess.PIPE)
-        manubot = json.loads(output.communicate()[0])[0]
-    except Exception:
+        commands = ["manubot", "cite", id, "--log-level=WARNING"]
+        output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
+    except Exception as e:
+        log(e, 3, "gray")
         raise Exception("Manubot could not generate citation")
+
+    # parse results as json
+    try:
+        manubot = json.loads(output[0])[0]
+    except Exception:
+        raise Exception("Couldn't parse Manubot response")
 
     # new citation info, with only needed info from Manubot
     citation = {}
@@ -169,13 +176,17 @@ def cite_with_manubot(source):
     container = manubot.get("container-title", "")
     collection = manubot.get("collection-title", "")
     publisher = manubot.get("publisher", "")
-    citation["publisher"] = container or publisher or collection
+    citation["publisher"] = container or publisher or collection or ""
 
     # date
     year = date_part(manubot, 0)
-    month = date_part(manubot, 1)
-    day = date_part(manubot, 2)
-    citation["date"] = f"{year}-{month}-{day}"
+    if year:
+        month = date_part(manubot, 1) or "1"
+        day = date_part(manubot, 2) or "1"
+        citation["date"] = clean_date(f"{year}-{month}-{day}")
+    else:
+        citation["date"] = ""
+
 
     # link
     citation["link"] = manubot.get("URL", "")

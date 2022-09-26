@@ -10,16 +10,24 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
   width: var(--width);
   max-width: calc(100% - 20px - 20px);
   margin: 20px;
+
+  & > * {
+    margin: 0;
+  }
+
+  .tags { 
+    margin: 0;
+  }
 
   .card_image {
     flex-shrink: 0;
     width: var(--width);
     height: calc(2 / 3 * var(--width));
     max-width: 100%;
-    margin-bottom: 20px;
     overflow: hidden;
     box-shadow: $shadow;
 
@@ -30,19 +38,13 @@
     }
   }
 
-  .card_text {
-    width: 100%;
+  .card_title {
+    font-family: $sans;
+    font-weight: $medium;
+  }
 
-    .card_title {
-      display: block;
-      font-family: $sans;
-      font-weight: $medium;
-    }
-
-    .card_subtitle {
-      display: block;
-      margin-top: 5px;
-      font-style: italic;
-    }
+  .card_subtitle {
+    margin-top: -15px;
+    font-style: italic;
   }
 }

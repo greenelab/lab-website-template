@@ -7,40 +7,40 @@ nav:
 
 # Portfolio
 
-Our past, present, and future projects with our various clients.
+{% include section.html %}
+
+## Collaborators
+
+Some of the individual groups we work with:
 {:.center}
 
-{% include link.html link="https://greenelab.com/" text="Greene Lab" icon="fas fa-flask" %}
-{% include link.html link="https://tislab.org/" text="TIS Lab" icon="fas fa-flask" %}
-{% include link.html link="https://medschool.cuanschutz.edu/ai" text="The Center itself" icon="fas fa-flask" %}
-{:.center}
+{% 
+  include gallery.html
+  link1="https://greenelab.com/"
+  image1="images/greene-lab.png"
+  tooltip1="Greene Lab"
+  link2="https://tislab.org/"
+  image2="images/tis-lab.png"
+  tooltip2="TIS Lab"
+  link3="https://www.waysciencelab.com/"
+  image3="images/way-lab.png"
+  tooltip3="Way Lab"
+%}
 
-**Filter by type:**
+{% include section.html %}
+
+Filter:
 {:.center}
 {%
   include tags.html
-  tags="website, frontend, backend, devops, UI"
+  tags="website,frontend,backend,devops,UI,API"
 %}
 {% include search-info.html %}
 
-{% include section.html %}
-
-## Current Projects
+## Projects
 
 {%
   include list.html
   data="portfolio"
   component="card"
-  filters="group: "
-%}
-
-{% include section.html %}
-
-## Past Projects
-
-{%
-  include list.html
-  data="portfolio"
-  component="card"
-  filters="group: past"
 %}
