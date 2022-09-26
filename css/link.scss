@@ -8,6 +8,7 @@
 a {
   color: $accent;
   transition: color $fast;
+  overflow-wrap: break-word;
 }
 
 a:hover {
