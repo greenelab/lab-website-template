@@ -1,6 +1,6 @@
 - title: Word Lapse
   subtitle: for the Greene Lab
-  image: https://raw.githubusercontent.com/greenelab/word-lapse/app/app/public/share-thumbnail.jpg
+  image: https://raw.githubusercontent.com/greenelab/word-lapse/main/app/public/share-thumbnail.jpg
   link: https://github.com/greenelab/word-lapse
   description: A frontend web app and supporting backend server that allows users to explore how a word changes in meaning over time based on natural language processing machine learning.
   tags: web app, frontend, backend, react, data visualization, natural language processing, machine learning
@@ -10,21 +10,14 @@
   image: images/monarch-ui.jpg
   link: https://github.com/monarch-initiative/monarch-ui-new
   description: A redesign and rewrite of the [Monarch Initiative](https://monarchinitiative.org/) application from the ground up, designed to be more modern, maintainable, robust, and accessible.
-  tags: web app, frontend, vue
+  tags: web app, frontend, vue, UI
 
 - title: Monarch Initiative Cloud Migration
   subtitle: for the TIS Lab
-  image: images/monarch-cluster.png
+  image: images/monarch-cluster.jpg
   link: https://github.com/monarchinitiative/monarch-stack
   description: Migration of the all Monarch Initiative backend and associated services from physical hardware to Google Cloud, including automated provisioning and deployment via Terraform, Ansible, and Docker Swarm.
   tags: devops, api, iac, terraform, ansible, docker swarm
-
-- title: This Website
-  subtitle: for the Center
-  image: images/hsb.jpg
-  link: https://github.com/CUHealthAI/set-website
-  description: We built the website you are on right now (of course)! This website, and [many of others](https://github.com/greenelab/lab-website-template/stargazers), make use of a "Lab Website Template", developed under the Greene Lab.
-  tags: website, frontend, graphic design, jekyll
 
 - title: Lab Website Template
   subtitle: for the Greene Lab
@@ -34,15 +27,7 @@
   tags: website, frontend, graphic design, jekyll
 
 - title: GraphDB Deployer
-  image: images/graphdb-deployer.png
+  image: images/graphdb-deployer.jpg
   link: https://github.com/monarch-initiative/graphdb-deployer
   description: Automates the parsing and transformation of a KGX archive into graphdb-ready formats. After the archive is converted, automates provisioning and deployment of Neo4j and Blazegraph instances from a KGX archive.
   tags: devops, iac, graph databases, neo4j, blazegraph, terraform, ansible
-
-- name: Manubot
-  group: past
-  image: images/manubot.png
-  link: https://github.com/manubot/manubot
-  description: Manubot is a workflow and set of tools for the next generation of scholarly publishing.
-  repo: manubot/manubot
-  tags: bibliography

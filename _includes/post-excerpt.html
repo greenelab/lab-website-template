@@ -1,4 +1,5 @@
 {% assign emptyarray = "" | split: "," %}
+
 {% assign id = include.slug | default: include.id | default: "" %}
 {% assign posts = site.posts | default: emptyarray %}
 

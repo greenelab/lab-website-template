@@ -7,7 +7,7 @@ nav:
 
 # About
 
-We are a small group of dedicated software developers with the [Center for Health AI](https://medschool.cuanschutz.edu/ai) at the [University of Colorado Anschutz](https://www.cuanschutz.edu/).
+We are a small group of dedicated software developers with the [Department of Biomedical Informatics](https://medschool.cuanschutz.edu/dbmi) at the [University of Colorado Anschutz](https://www.cuanschutz.edu/).
 
 We support the labs and individuals within the Center by developing a variety of content and software.
 Some of the things we create are:
@@ -29,4 +29,4 @@ But the best way to understand what we do is to [see it for yourself](../portfol
 
 {% include section.html %}
 
-{% include gallery.html image1="images/anschutz.jpg" image2="images/hsb.jpg" style="square" %}
+{% include gallery.html image1="images/anschutz.jpg" image2="images/ahsb.jpg" style="square" %}

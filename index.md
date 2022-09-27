@@ -3,7 +3,7 @@ title: Home
 ---
 
 {% capture text %}
-We are a small group of dedicated software developers with the [Center for Health AI](https://medschool.cuanschutz.edu/ai) at the [University of Colorado Anschutz](https://www.cuanschutz.edu/).
+We are a small group of dedicated software developers with the [Department of Biomedical Informatics](https://medschool.cuanschutz.edu/dbmi) at the [University of Colorado Anschutz](https://www.cuanschutz.edu/).
 
 {%
   include link.html
@@ -19,7 +19,7 @@ We are a small group of dedicated software developers with the [Center for Healt
 
 {% 
   include feature.html
-  image="images/hsb.jpg"
+  image="images/ahsb.jpg"
   title="Who we are"
   text=text
   link="about"
@@ -28,7 +28,7 @@ We are a small group of dedicated software developers with the [Center for Healt
 {% include section.html %}
 
 {% capture text %}
-We support the labs and individuals within the Center by developing high quality web applications, web servers, data visualizations, data pipelines, and much more.
+We support the labs and individuals within the Department by developing high quality web applications, web servers, data visualizations, data pipelines, and much more.
 
 {%
   include link.html

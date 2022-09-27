@@ -1,14 +1,19 @@
 {%- assign emptyarray = "" | split: "," -%}
-{%- assign id = include.id | default: "" -%}
 {%- assign output = site.auto-cite.output | default: "citations" | split: "/" | last | split: "." | pop | join: "" -%}
 {%- assign citations = site.data[output] | default: emptyarray -%} 
 
 {%- assign citation = nil -%}
 {%- for c in citations -%}
-  {%- if c.id == id -%}
+  {%- if c.id == include.lookup or c.title contains include.lookup -%}
     {%- assign citation = c -%}
+    {%- break -%}
   {%- endif -%}
 {%- endfor -%}
+
+{%- if citation -%}
+{%- else -%}
+  {%- assign citation = include -%}
+{%- endif -%}
 
 {%- assign rich = false -%}
 {%- if include.style == "rich" -%}
@@ -18,6 +23,7 @@
 {%- assign placeholder = "images/placeholder.svg" | relative_url -%}
 
 <div class="citation" data-style="{{ include.style }}">
+  {%- assign id = citation.id | default: "" -%}
   {%- assign link = citation.link | default: "" -%}
   {%- assign image = citation.image | default: "" -%}
   {%- if rich -%}
@@ -44,14 +50,14 @@
 
     {%- assign authors = citation.authors | default: emptyarray -%}
     <div
-      class="citation_authors {% if rich %}truncate{% endif %}"
-      {% if rich %}tabindex="0"{% endif %}
+      class="citation_authors truncate"
+      tabindex="0"
     >
       {{ authors | join: ", " }}
     </div>
 
-    {%- assign publisher = citation.publisher | default: "" -%}
-    {%- assign date = citation.date | default: "1900-01-01" -%}
+    {%- assign publisher = citation.publisher | default: "[no publisher info]" -%}
+    {%- assign date = citation.date | default: "[no date info]" -%}
     <div class="citation_details">
       {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
     </div>
