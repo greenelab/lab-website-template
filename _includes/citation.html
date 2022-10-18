@@ -3,12 +3,16 @@
 {%- assign citations = site.data[output] | default: emptyarray -%} 
 
 {%- assign citation = nil -%}
-{%- for c in citations -%}
-  {%- if c.id == include.lookup or c.title contains include.lookup -%}
-    {%- assign citation = c -%}
-    {%- break -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- if include.lookup -%}
+  {%- for c in citations -%}
+    {%- if c.id == include.lookup or c.title contains include.lookup -%}
+      {%- assign citation = c -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- assign citation = include -%}
+{%- endif -%}
 
 {%- if citation -%}
 {%- else -%}
