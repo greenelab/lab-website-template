@@ -12,7 +12,7 @@ input {
   margin: 0;
   padding: 5px 10px;
   border: solid 1px $gray-800;
-  border-radius: 5px;
+  border-radius: $rounded;
   font-family: $sans;
   font-size: 0.9rem;
 }

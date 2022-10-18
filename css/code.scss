@@ -17,19 +17,22 @@ code.highlighter-rouge {
   padding: 2px 6px;
   background: $gray-800;
   color: $white;
+  border-radius: $rounded;
   line-height: $spacing;
 }
 
 // code block
 div.highlighter-rouge {
+  width: 100%;
   margin: 40px 0;
   @include trim-v-margins;
-  background: $gray-500;
+  background: $gray-800;
+  border-radius: $rounded;
+  text-align: left;
   overflow-x: auto;
   overflow-y: auto;
 
   pre.highlight {
-    display: inline-block;
     margin: 0;
     padding: 20px;
   }
