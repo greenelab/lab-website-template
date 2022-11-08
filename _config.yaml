@@ -1,8 +1,8 @@
 ### basic settings
 
 # site properties and page defaults
-title: Lab Website Template
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+title: Home
+description: Overview of Librea Project at University of Arizona
 logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
