@@ -26,4 +26,4 @@ docker run --name ${CONTAINER_NAME} \
     -p 4000:4000 \
     -p 35729:35729 \
     -v $PWD:/usr/src/app \
-    ${IMAGE}
+    ${IMAGE} "$@"
