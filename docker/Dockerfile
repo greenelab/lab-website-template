@@ -15,8 +15,9 @@ COPY Gemfile Gemfile.lock ./
 # and install deps from the Gemfile/lockfile
 RUN bundle _${BUNDLER_VERSION}_ install
 
-# add in dependencies for citeproc
-RUN apt update && apt install -y python3 python3-pip
+# add in dependencies for citeproc and watching changes (i.e., watchdog)
+RUN apt update && apt install -y python3 python3-pip && \
+    pip install watchdog
 COPY ./auto-cite/requirements.txt /tmp/auto-cite/requirements.txt
 RUN python3 -m pip install --upgrade --requirement /tmp/auto-cite/requirements.txt
 
