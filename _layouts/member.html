@@ -35,9 +35,9 @@ layout: default
 {%- assign search = aliases | join: '" "' | prepend: '"' | append: '"' | prepend: "/research/?search=" -%}
 
 {%- capture text -%}
-  {{ page.name | default: page.title }}'s papers
+  See {{ page.name | default: page.title }}'s papers on the Research page
 {%- endcapture -%}
 
 <p class="center">
-  {%- include link.html icon="fas fa-book-open" text=text link=search style="button" -%}
+  {%- include link.html icon="fas fa-book-open" text=text link=search -%}
 </p>
