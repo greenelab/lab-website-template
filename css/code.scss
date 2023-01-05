@@ -32,9 +32,14 @@ div.highlighter-rouge {
   overflow-x: auto;
   overflow-y: auto;
 
-  pre.highlight {
-    margin: 0;
-    padding: 20px;
+  div.highlight {
+    display: contents;
+
+    pre.highlight {
+      width: fit-content;
+      margin: 0;
+      padding: 20px;
+    }
   }
 }
 
