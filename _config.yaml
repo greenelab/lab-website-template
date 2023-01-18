@@ -1,9 +1,9 @@
 ### basic settings
 
 # site properties and page defaults
-title: Lab Website Template
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-logo: images/logo.svg
+title: The Jones Lab
+description: circadian circuits lab at Texas A&M University
+logo: images/actual/logo.png
 header: images/background.jpg
 footer: images/background.jpg
 baseurl: /lab-website-template
