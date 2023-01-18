@@ -2,7 +2,7 @@
 name: Logan Perry
 image: images/actual/Logan.jpg
 description: Student Technician
-role: programmer
+role: undergraduate
 aliases:
   - L. Perry
   - L Perry
