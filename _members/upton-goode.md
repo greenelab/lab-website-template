@@ -1,16 +1,12 @@
 ---
-name: Upton O. Goode
-image: images/member.jpg
-description: Bone Investigator
-role: pi
+name: Ashley Starnes
+image: images/actual/ashley_s.jpg
+description: Lab Manager
+role: manager
 aliases:
-  - U. Goode
-  - U. O. Goode
-  - U Goode
+  - A. Starnes
+  - A Starnes
 links:
-  orcid: 0000-0001-8713-9213
-  email: upton@ogoode.com
-  twitter: uptonogoode
 ---
 
 Upton is a good dog.
