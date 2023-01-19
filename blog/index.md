@@ -18,16 +18,15 @@ nav:
 ## News
 
 <!-- Twitter embeds from https://publish.twitter.com/ -->
-<div class="table">
-  <div class="row">
-    <div class="column" style="spacing:10px 10px 10px 10px;">
-      <iframe width="400" height="100%" align = "left" src="https://www.youtube.com/embed/SXwsH4n4v4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div>&nbsp;</div>
-    <div class="column" style="spacing:10px 10px 10px 10px;">
-      <a class="twitter-timeline" data-width="400" align="right" data-height="400"  href="https://twitter.com/MMBBioit?ref_src=twsrc%5Etfw">Tweets by MMBBioit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-    </div>
-  </div> 
-</div>
+
+<div class="row">
+  <div class="column" style="spacing:10px 10px 0px 0px;">
+    <iframe width="400" height="100%" align = "left" src="https://www.youtube.com/embed/SXwsH4n4v4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="column" style="spacing:10px 10px 10px 10px;">
+    <a class="twitter-timeline" data-width="400" align="right" data-height="400"  href="https://twitter.com/MMBBioit?ref_src=twsrc%5Etfw">Tweets by MMBBioit</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+  </div>
+</div> 
+
 
 
