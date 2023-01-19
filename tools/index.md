@@ -18,11 +18,18 @@ Are you a wet-labber? Are you interested in learning bioinformatics? Then you sh
 
 {% include section.html %}
 
-## Tools
+## Whole Genome Sequencing
 
-{% include list.html component="card" data="tools" filters="group: tool" %}
+{% include list.html component="card" data="tools" filters="group: wgs" %}
 
 {% include section.html %}
+
+## Metagenomics
+
+{% include list.html component="card" data="tools" filters="group: metagenomics" %}
+
+{% include section.html %}
+
 
 ## Educational resources
 
