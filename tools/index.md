@@ -18,6 +18,8 @@ Are you a wet-labber? Are you interested in learning bioinformatics? Then you sh
 
 {% include section.html %}
 
+# Tools
+
 ## Whole Genome Sequencing
 
 {% include list.html component="card" data="tools" filters="group: wgs" %}
@@ -30,7 +32,6 @@ Are you a wet-labber? Are you interested in learning bioinformatics? Then you sh
 
 {% include section.html %}
 
-
-## Educational resources
+# Educational resources
 
 {% include list.html component="card" data="tools" filters="group: education" %}
