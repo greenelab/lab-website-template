@@ -34,7 +34,7 @@
   group: wgs
   image: images/plasmidEC_logo_2.svg
   link: https://gitlab.com/mmb-umcu/plasmidEC
-  description: plasmidEC identifies plasmid-derived contigs in all bacterial species. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: Centrifuge, Platon, RFPlasmid and mlplasmids.
+  description: " plasmidEC identifies plasmid-derived contigs in all bacterial species. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: Centrifuge, Platon, RFPlasmid and mlplasmids."
   repo: mmb-umcu/plasmidec
   tags:
     - Plasmid
