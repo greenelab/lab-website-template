@@ -61,4 +61,5 @@ We are a group of enthusiastic scientists with different interests and backgroun
   text=text
 %}
 
+{% include twitter.html %}
 
