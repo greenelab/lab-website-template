@@ -1,67 +1,66 @@
 - name: Gplas
-  group: tool
+  group: wgs
   image: images/gplas_logo.png
-  link: https://gitlab.com/sirarredondo/gplas
+  link: https://gitlab.com/mmb-umcu/gplas
   description: gplas is a tool to bin plasmid-predicted contigs based on sequence composition, coverage and assembly graph information. This tool extends the possibility of accurately binning predicted plasmid contigs into several discrete plasmid components.
-  repo: sirarredondo/gplas
+  repo: mmb-umcu/gplas
   tags: 
     - Plasmid
-    - Tool
-    - Machine Learning
-    - WGS
+
 
 - name: mlplasmids
-  group: tool
+  group: wgs
   image: images/mlplasmids_logo.png
   link: https://gitlab.com/sirarredondo/mlplasmids
   description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. 
-  repo: aschuerch/mlplasmids
+  repo: sirarredondo/mlplasmids
   tags:
     - Plasmid
-    - Tool
-    - Machine Learning
-    - WGS
+
 
 - name: MetaMobilePicker
-  group: tool
+  group: metagenomics
   image: images/MMP_logo.png
   link: https://gitlab.com/jkerkvliet/metamobilepicker
   description: MetaMobilePicker is a computational pipeline designed to identify mobile genetic elements and antimicrobial resistance genes in metagenomics samples. Currently it identifies plasmids, insertion sequences and bacteriophages. 
   repo: jkerkvliet/metamobilepicker
   tags:
-    - Plasmids
+    - Plasmid
     - MGEs
     - AMR
-    - Metagenomics
-    - Tool
+    
 
-
-- name: plasmidEC - plasmid Ensemble Classifier
-  group: tool
+- name: plasmidEC
+  group: wgs
   image: images/plasmidEC_logo_2.svg
-  link: https://github.com/lisavader/plasmidEC
-  description: "plasmidEC identifies plasmid-derived contigs in E. coli. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: PlaScope, Platon, RFPlasmid and mlplasmids. More softwares could be added in the future."
-  repo: lisavader/plasmidec
+  link: https://gitlab.com/mmb-umcu/plasmidEC
+  description: plasmidEC identifies plasmid-derived contigs in all bacterial species. This tool combines the output of three binary classification tools and implements a majority vote system. Currently, the user can choose any combination of the following four softwares: Centrifuge, Platon, RFPlasmid and mlplasmids.
+  repo: mmb-umcu/plasmidec
   tags:
-    - Plasmids
-    - WGS
-    - Tool
+    - Plasmid
+    
 
 - name: Bactofidia
-  group: tool
+  group: wgs
   image: images/bactofidia_logo.png
-  link: https://gitlab.com/aschuerch/bactofidia
+  link: https://gitlab.com/mmb-umcu/bactofidia-stable
   description: bactofidia is a bacterial assembly and basic analysis pipeline using Snakemake and bioconda. It is currently written for paired-end Illumina data with length 250 or 150. The pipeline is written to ensure reproducibility, and creates virtual software environments with the software versions that are used for analysis.
-  repo: aschuerch/bactofidia
- 
+  repo: mmb-umcu/bactofidia-stable
+  tags: 
+    - Assembly
+    - QC
+    - AMR
 
 
-- name: VREfidia
-  group: tool
+- name: ClonalTraker
+  group: wgs
   image: images/VREfidia_logo.png
-  link: https://gitlab.com/aschuerch/vrefidia
-  description: VREfidia is a bacterial assembly and basic analysis pipeline for vancomycin-resistant Enterococcus faecium (VRE) using Snakemake and bioconda. It is designed for paired-end Illumina data.
-  repo: lisavader/plasmidec
+  link: http://212.227.129.221
+  description: ClonalTraker is a tool to compare any two vancomycin-resistant Enterococcus faecium (VRE), and the genomic context of the van operon. 
+  tags:
+    - AMR
+    - MGEs
+
 
 - name: Molecular Epidemiology of Infectious Diseases - computer practical
   group: education
