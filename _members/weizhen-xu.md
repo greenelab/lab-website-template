@@ -1,6 +1,6 @@
 ---
 name: Weizhen Xu
-image: images/people/anita-schurch.jpg
+image: images/people/weizhen-xu.jpg
 description: Postdoctoral researcher
 role: Postdoc
 aliases:
