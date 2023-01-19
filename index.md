@@ -4,7 +4,9 @@ title: Home
 
 # MMB-BioIT
 
-The MMB-BioIT Lab is a team of researchers with different backgrounds, part of the Medical Microbiology department at the UMCU (Utrecht, the Netherlands). Our efforts are dedicated to develop bioinformatic tools and analyze data to track local and global transmission of bacterial pathogens and to provide information on the acquisition of determinants that contribute to resistance to antibiotics, virulence or other fitness traits.
+Population genetics:
+The worldwide emergence of antibiotic resistant bacteria causing difficult to treat infections highlights the importance to track their local and global transmission. Using WGS or metagenomic sequences, different bioinformatic tools are used to group these bacteria based on the core and/or accessory genome, including mobile genetic elements encoding e.g. antibiotic resistance genes. In addition, we developed tools to reconstruct plasmids based on short read sequences in order to determine transmission patterns of mobile genetic elements.
+
 
 {% include section.html full=true %}
 
