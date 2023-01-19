@@ -58,14 +58,14 @@ The Netherlands
 {%
   include figure.html
   image="images/robin-ooode-XusR7PXCV0o-unsplash.jpg"
-  caption="UMC Utrecht"
+  caption="Utrecht by Robin Oode on Unsplash"
 %}
 {% endcapture %}
 {% capture col2 %}
 {%
   include figure.html
   image="images/bodi-raw-izMtCpq_RyI-unsplash.jpg"
-  caption="Utrecht"
+  caption="Utrecht by Bodi.raw on Unsplash"
 %}
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}
