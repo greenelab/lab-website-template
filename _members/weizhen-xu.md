@@ -2,7 +2,7 @@
 name: Weizhen Xu
 image: images/people/weizhen-xu.jpg
 description: Postdoctoral researcher
-role: Postdoc
+role: postdoc
 aliases:
   -  Xu Weizhen
   -  W Xu
