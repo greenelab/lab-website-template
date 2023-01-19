@@ -8,7 +8,9 @@ The MMB-BioIT Lab is a team of researchers with different backgrounds, part of t
 
 {% include section.html full=true %}
 
-{% include banner.html image="images/UMCU-1.jpg" %}
+{% include feature.html
+   image="images/UMCU-1.jpg
+%}
 
 {% include section.html %}
 
