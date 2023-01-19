@@ -47,7 +47,7 @@ A microbiome is a collective polymicrobial community, or ‘microbiota’, inclu
 %}
 
 {% capture text %}
-We also release data and software to enable reproducible computational biology analyses following the FAIR (Findable, Accessible, Interoperable and Reusable) principles. Find more about our tools in the link below.
+The mission of our team is that the developed tools and analyzed data are released to enable reproducible computational biology analyses following the FAIR (Findable, Accessible, Interoperable and Reusable) principles. Find more about our tools in the link below.
 
 [See our tools &nbsp;→](tools)
 {:.center}
