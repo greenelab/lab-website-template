@@ -53,31 +53,31 @@ nav:
 
 {%
   include list.html
-  data="members"
+  data="alumni"
   component="portrait"
   filters="role: pi"
 %}
 {%
   include list.html
-  data="members"
+  data="alumni"
   component="portrait"
   filters="role: programmer"
 %}
 {%
   include list.html
-  data="members"
+  data="alumni"
   component="portrait"
   filters="role: postdoc"
 %}
 {%
   include list.html
-  data="members"
+  data="alumni"
   component="portrait"
   filters="role: phd"
 %}
 {%
   include list.html
-  data="members"
+  data="alumni"
   component="portrait"
   filters="role: student"
 %}
