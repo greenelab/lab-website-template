@@ -36,7 +36,7 @@ The worldwide emergence of antibiotic resistant bacteria causing difficult to tr
 {% capture text %}
 We also release data and software to enable reproducible computational biology analyses following the FAIR (Findable, Accessible, Interoperable and Reusable) principles. Find more about our tools in the link below.
 
-[See our tools &nbsp;→](resources)
+[See our tools &nbsp;→](tools)
 {:.center}
 {% endcapture %}
 
