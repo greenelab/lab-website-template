@@ -4,8 +4,7 @@ title: Home
 
 # MMB-BioIT
 
-Population genetics:
-The worldwide emergence of antibiotic resistant bacteria causing difficult to treat infections highlights the importance to track their local and global transmission. Using WGS or metagenomic sequences, different bioinformatic tools are used to group these bacteria based on the core and/or accessory genome, including mobile genetic elements encoding e.g. antibiotic resistance genes. In addition, we developed tools to reconstruct plasmids based on short read sequences in order to determine transmission patterns of mobile genetic elements.
+The Medical Microbiology bioinformatics (MMB-BioIT) team from the University Medical Center Utrecht (UMCU) consists of researchers with different scientifical backgrounds. Our efforts are dedicated to develop and use bioinformatic tools that facilitate data analysis on large amounts of DNA sequences, including whole genome sequences (WGS), taxonomic profiling using 16S rRNA gene sequencing and metagenomic sequencing.
 
 
 {% include section.html full=true %}
@@ -19,7 +18,8 @@ The worldwide emergence of antibiotic resistant bacteria causing difficult to tr
 # Highlights
 
 {% capture text %}
-The emergence of antibiotic resistant bacterial infections worldwide highlights the importance of monitoring these outbreaks. We analyse and provide tools to characterize these bacteria, their mobile genetic elements and their transmission patterns.
+Population genetics:
+The worldwide emergence of antibiotic resistant bacteria causing difficult to treat infections highlights the importance to track their local and global transmission. Using WGS or metagenomic sequences, different bioinformatic tools are used to group these bacteria based on the core and/or accessory genome, including mobile genetic elements encoding e.g. antibiotic resistance genes. In addition, we developed tools to reconstruct plasmids based on short read sequences in order to determine transmission patterns of mobile genetic elements.
 
 [See what we've published &nbsp;→](research)
 {:.center}
