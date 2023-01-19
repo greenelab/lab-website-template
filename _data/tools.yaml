@@ -28,7 +28,18 @@
     - Plasmid
     - MGEs
     - AMR
+    - Assembly
+    - Annotation
     
+- name: Tourmaline
+  group: metagenomics
+  image: images/tourmaline_icon.svg
+  link: https://gitlab.com/malbert.rogers/tourmaline
+  description: Tourmaline is an amplicon sequence processing workflow for Illumina sequence data that uses QIIME 2 and the software packages it wraps.
+  repo: malbert.rogers/tourmaline
+  tags:
+     - 16S
+     - Taxonomy
 
 - name: plasmidEC
   group: wgs
@@ -50,14 +61,14 @@
     - Assembly
     - QC
     - AMR
+    - Annotation
 
 
 - name: ClonalTraker
   group: wgs
   image: images/VREfidia_logo.png
-  link: https://gitlab.com/victoriapascal/clonaltracker
-  description: ClonalTraker is a tool to compare any two vancomycin-resistant Enterococcus faecium (VRE), and the genomic context of the van operon. 
-  repo: victoriapascal/vlonaltracker 
+  link: http://212.227.129.221/index.html
+  description: ClonalTraker is a tool to compare any two vancomycin-resistant *Enterococcus faecium* (VRE), and the genomic context of the van operon. 
   tags:
     - AMR
     - MGEs
