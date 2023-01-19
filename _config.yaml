@@ -64,7 +64,7 @@ plugins:
   - jekyll-sitemap
   # - jekyll-github-metadata
   # - jekyll-avatar
-  # - jekyll-gist
+  - jekyll-gist
   # - jekyll-mentions
   # - jekyll-relative-links
   # - jemoji
