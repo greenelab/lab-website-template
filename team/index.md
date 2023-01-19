@@ -46,6 +46,48 @@ nav:
 
 {% include section.html %}
 
+
+# <i class="fas fa-users"></i>Alumni
+
+{% include section.html %}
+
+{%
+  include list.html
+  data="alumni"
+  component="portrait"
+  filters="role: pi"
+%}
+{%
+  include list.html
+  data="alumni"
+  component="portrait"
+  filters="role: programmer"
+%}
+{%
+  include list.html
+  data="alumni"
+  component="portrait"
+  filters="role: postdoc"
+%}
+{%
+  include list.html
+  data="alumni"
+  component="portrait"
+  filters="role: phd"
+%}
+{%
+  include list.html
+  data="alumni"
+  component="portrait"
+  filters="role: student"
+%}
+{:.center}
+
+{% include section.html background="images/banner.jpg" dark=true%}
+
+
+{% include section.html %}
+
 ## Join
 
 We have no open positions at the moment.
