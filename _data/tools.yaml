@@ -12,7 +12,7 @@
   group: wgs
   image: images/mlplasmids_logo.png
   link: https://gitlab.com/sirarredondo/mlplasmids
-  description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for Enterococcus faecium, Enterococcus faecalis, Klebsiella pneumoniae and Acinetobacter baumannii. 
+  description: mlplasmids consists of binary classifiers to predict contigs either as plasmid-derived or chromosome-derived. It currently classifies short-read contigs as chromosomes and plasmids for *Enterococcus faecium*, *Enterococcus faecalis*, *Klebsiella pneumoniae* and *Acinetobacter baumannii*. 
   repo: sirarredondo/mlplasmids
   tags:
     - Plasmid
@@ -80,14 +80,12 @@
   link: https://aschuerch.github.io/MolecularEpidemiology_AnalysisWGS/
   description: Three day graduate level course on molecular epidemiology teaching the command line, WGS, annotation and pangenomics.
   repo: aschuerch/MolecularEpidemiology_AnalysisWGS
-
+ 
+  
 - name: Microbial Genomics Workshop
   group: education
   image: images/education_logo_mmbioit.svg
   link: https://mmb-umcu.github.io/genomics-workshop/
   description: Three day course on microbial genomics from commandline to SNP analyses using data from the Lenski Long Term Evolution experiment.
   repo: aschuerch/MolecularEpidemiology_AnalysisWGS
-  tags:
-    - Course
-    - Genomics
-
+  
