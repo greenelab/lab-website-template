@@ -1,6 +1,6 @@
 ---
 name: Gijs Teunis
-image: 
+image: images/people/gijs-teunis.jpg
 description: PhD Student
 role: phd
 aliases:
