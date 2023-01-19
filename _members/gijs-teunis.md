@@ -10,7 +10,7 @@ aliases:
 links:
   home-page: 
   email: gijs.teunis@rivm.nl
-  orcid: 0000-0003-1414-8105
+  orcid:
   github: gidjes
   gitlab:
   linkedin: gijs-teunis
