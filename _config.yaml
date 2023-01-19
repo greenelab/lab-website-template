@@ -4,8 +4,8 @@
 title: MMB-BioIT
 description: Website of the Medical Microbiology Bioinformatics group (MMB-BioIT) of the UMCU.
 logo: images/animated_logo_white.svg
-header: images/UMCU_banner2.jpg
-footer: images/UMCU_banner2.jpg
+header: images/head_banner.jpg
+footer: images/head_banner.jpg
 baseurl: 
 
 
