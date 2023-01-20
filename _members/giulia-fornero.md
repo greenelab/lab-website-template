@@ -1,6 +1,6 @@
 ---
 name: Giulia Fornero
-image: 
+image: images/people/giulia-fornero.jpg
 description: Student
 status: alumni
 role: student
