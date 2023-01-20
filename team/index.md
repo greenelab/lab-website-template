@@ -53,31 +53,31 @@ nav:
 
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: pi, , status: alumni"
+  filters="role: pi, status: alumni"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: programmer, , status: alumni"
+  filters="role: programmer, status: alumni"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: postdoc, , status: alumni"
+  filters="role: postdoc, status: alumni"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: phd, , status: alumni"
+  filters="role: phd, status: alumni"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
   filters="role: student, status: alumni"
 %}
