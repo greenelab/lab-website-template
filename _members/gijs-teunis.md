@@ -2,6 +2,7 @@
 name: Gijs Teunis
 image: images/people/gijs-teunis.jpg
 description: PhD Student
+status: current
 role: phd
 aliases:
   - Gijs Teunis
