@@ -2,6 +2,7 @@
 name: Julian Paganini
 image: images/people/julian-paganini.jpg
 description: PhD Student
+status: current
 role: phd
 aliases:
   - Julian Paganini
