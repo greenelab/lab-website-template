@@ -1,6 +1,6 @@
 ---
 name: Sergio Arredondo-Alonso
-image: 
+image: images/people/sergio-arredondo-alonso.jpg
 description: PhD Student
 status: alumni
 role: phd
