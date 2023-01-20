@@ -2,6 +2,7 @@
 name: Giulia Fornero
 image: 
 description: Student
+status: alumni
 role: student
 aliases:
   - 
