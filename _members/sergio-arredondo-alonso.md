@@ -8,10 +8,10 @@ aliases:
 
 links:
   home-page: https://www.med.uio.no/imb/english/people/aca/sergioar/index.html
-  email: 
+  email: s.a.alonso@medisin.uio.no
   orcid: 
   github:
   linkedin: 
 ---
 
-Former PhD candidate, developer of mlplasmids and gplas
+Former PhD candidate, developer of mlplasmids and gplas.
