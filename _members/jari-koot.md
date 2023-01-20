@@ -9,6 +9,7 @@ aliases:
 links: 
   home-page: https://github.com/JariKoot
   email: j.m.a.koot-2@umcutrecht.nl
+  gitlab: https://gitlab.com/jarikoot
   github: JariKoot
   linkedin: jari koot
 ---
