@@ -1,6 +1,6 @@
 ---
 name: Alessia Carrara
-image: 
+image: images/people/alessia-carrara.png
 description: Student
 status: alumni
 role: student
