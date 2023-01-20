@@ -35,7 +35,7 @@
   group: metagenomics
   image: images/tourmaline_icon.svg
   link: https://gitlab.com/malbert.rogers/tourmaline
-  description: Tourmaline is an amplicon sequence processing workflow for Illumina sequence data developed by the [Nacional Oceanic and Atmospheric Administration](https://github.com/aomlomics/tourmaline) that uses QIIME 2 and the software packages it wraps. We modified this package to fit our system requirements.
+  description: Tourmaline is an amplicon sequence processing workflow for Illumina sequence data developed by the [Nacional Oceanic and Atmospheric Administration](https://github.com/aomlomics/tourmaline) that uses QIIME 2 and the software packages it wraps. We modified this package to fit our sequencing data and system requirements.
   repo: malbert.rogers/tourmaline
   tags:
      - 16S
