@@ -55,31 +55,31 @@ nav:
   include list.html
   data="alumni"
   component="portrait"
-  filters="role: pi"
+  filters="role: pi, , status: alumni"
 %}
 {%
   include list.html
   data="alumni"
   component="portrait"
-  filters="role: programmer"
+  filters="role: programmer, , status: alumni"
 %}
 {%
   include list.html
   data="alumni"
   component="portrait"
-  filters="role: postdoc"
+  filters="role: postdoc, , status: alumni"
 %}
 {%
   include list.html
   data="alumni"
   component="portrait"
-  filters="role: phd"
+  filters="role: phd, , status: alumni"
 %}
 {%
   include list.html
   data="alumni"
   component="portrait"
-  filters="role: student"
+  filters="role: student, status: alumni"
 %}
 {:.center}
 
