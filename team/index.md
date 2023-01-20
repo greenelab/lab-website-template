@@ -56,30 +56,35 @@ nav:
   data="members"
   component="portrait"
   filters="role: pi, status: alumni"
+  style="small"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
   filters="role: programmer, status: alumni"
+  style="small"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
   filters="role: postdoc, status: alumni"
+  style="small"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
   filters="role: phd, status: alumni"
+  style="small"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
   filters="role: student, status: alumni"
+  style="small"
 %}
 {:.center}
 
