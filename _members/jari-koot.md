@@ -3,6 +3,7 @@ name: Jari Koot
 image: images/people/jari-koot.jpg
 description: Student
 role: student
+status: alumni
 aliases:
   - Jari Koot
   - J.M.A. Koot
