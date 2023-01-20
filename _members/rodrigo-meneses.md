@@ -2,6 +2,7 @@
 name: Rodrigo Meneses
 image: images/people/rodrigo-meneses.jpg
 description: Support Bioinformatician
+status: alumni
 role: programmer
 aliases:
   - Rodrigo Meneses
