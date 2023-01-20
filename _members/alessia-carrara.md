@@ -9,7 +9,7 @@ aliases:
   -
 links: 
   home-page: 
-  email: @umcutrecht.nl
+  email: 
   github: 
   linkedin: 
 ---
