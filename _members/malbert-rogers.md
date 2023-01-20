@@ -13,7 +13,7 @@ links:
   orcid:
   gitlab: malbert.rogers
   github: MalbertRogers 
-  linkedin: malbert-rogers
+  linkedin: malbert-rogers-20429794/
 ---
 
 I’m a Bioinformatician in the BioIT group of the Medical Microbiology Department at the UMCU.
