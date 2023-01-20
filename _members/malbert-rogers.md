@@ -11,9 +11,9 @@ links:
   home-page:
   email: M.R.C.Rogers-2@umcutrecht.nl
   orcid:
-  gitlab: https://gitlab.com/malbert.rogers
-  github: https://github.com/MalbertRogers 
-  linkedin: https://www.linkedin.com/in/malbert-rogers-20429794/
+  gitlab: malbert.rogers
+  github: MalbertRogers 
+  linkedin: malbert-rogers
 ---
 
 I’m a Bioinformatician in the BioIT group of the Medical Microbiology Department at the UMCU.
