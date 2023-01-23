@@ -2,6 +2,7 @@
 name: Anita Schurch
 image: images/people/anita-schurch.jpg
 description: Assistant Professor
+status: current
 role: pi
 aliases:
   - A C Schurch 

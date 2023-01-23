@@ -13,31 +13,31 @@ nav:
   include list.html
   data="members"
   component="portrait"
-  filters="role: pi"
+  filters="role: pi, status: current"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
-  filters="role: programmer"
+  filters="role: programmer, status: current"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
-  filters="role: postdoc"
+  filters="role: postdoc, status: current"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
-  filters="role: phd"
+  filters="role: phd, status: current"
 %}
 {%
   include list.html
   data="members"
   component="portrait"
-  filters="role: student"
+  filters="role: student, status: current"
 %}
 {:.center}
 
@@ -53,33 +53,38 @@ nav:
 
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: pi, , status: alumni"
+  filters="role: pi, status: alumni"
+  style="small"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: programmer, , status: alumni"
+  filters="role: programmer, status: alumni"
+  style="small"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: postdoc, , status: alumni"
+  filters="role: postdoc, status: alumni"
+  style="small"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
-  filters="role: phd, , status: alumni"
+  filters="role: phd, status: alumni"
+  style="small"
 %}
 {%
   include list.html
-  data="alumni"
+  data="members"
   component="portrait"
   filters="role: student, status: alumni"
+  style="small"
 %}
 {:.center}
 
