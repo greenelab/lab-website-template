@@ -10,12 +10,10 @@ baseurl:
 
 # site social media and other links
 links:
-  email: jane.smith@your-lab.com
+  email: miltondp@pivlab.org
   google-scholar: ETJoidYAAAAJ
-  github: your-lab
-  twitter: YourLabHandle
-  instagram: YourLabHandle
-  youtube: YourLabChannel
+  github: pivlab
+  twitter: miltondp
 
 ### advanced settings
 
