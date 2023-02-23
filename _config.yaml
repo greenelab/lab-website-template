@@ -4,7 +4,6 @@ subtitle: by the Greene Lab
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
 header: images/background.jpg
 footer: images/background.jpg
-baseurl: /test
 
 # site social media and other links
 links:
