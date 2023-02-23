@@ -1,6 +1,6 @@
-<form onsubmit="onSiteSearchSubmit(event)" title="Search site with Google">
-  <input type="text" name="query" placeholder="Search site" />
-  <button type="submit">
-    <i class="fas fa-search"></i>
+<form onsubmit="onSiteSearchSubmit(event)">
+  <input type="text" name="query" placeholder="Search site with Google" />
+  <button type="submit" class="button">
+    {% include icon.html icon="fa-solid fa-magnifying-glass" %}
   </button>
 </form>

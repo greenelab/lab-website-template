@@ -1,18 +1,20 @@
-<div class="feature" {% if include.flip %}data-flip="true"{% endif %}>
-  <a 
-    {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
-    class="feature_image"
-  >
+<div
+  class="feature"
+  {% if include.flip %}
+    data-flip
+  {% endif %}
+>
+  <a href="{{ include.link | relative_url }}" class="feature-image">
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"
       alt=""
-    />
+    >
   </a>
-  <div class="feature_text">
-    {%- if include.title -%}
-      <p class="feature_title">{{ include.title }}</p>
-    {%- endif -%}
+  <div class="feature-text">
+    {% if include.title %}
+      <p class="feature-title">{{ include.title }}</p>
+    {% endif %}
     {{ include.text | markdownify }}
   </div>
 </div>

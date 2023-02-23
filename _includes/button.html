@@ -1,0 +1,25 @@
+{% assign button = include %}
+{% assign button = button | hash_default: site.data.types[include.type] %}
+
+{% if button.link or button.icon or button.text %}
+  <div class="button-wrapper">
+    <a
+      class="button"
+      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      {% if button.tooltip %}
+        data-tooltip="{{ button.tooltip }}"
+      {% endif %}
+      {% if include.style %}
+        data-style="{{ include.style }}"
+      {% endif %}
+      {% if include.flip %}
+        data-flip
+      {% endif %}
+    >
+      {% include icon.html icon=button.icon %}
+      {% if button.text and button.text != "" %}
+        <span>{{ button.text }}</span>
+      {% endif %}
+    </a>
+  </div>
+{% endif %}

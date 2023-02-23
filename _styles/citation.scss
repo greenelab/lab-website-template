@@ -1,0 +1,100 @@
+---
+---
+
+$thumb-size: 180px;
+$wrap: 800px;
+
+.citation {
+  display: inline-grid;
+  grid-template-columns: $thumb-size 1fr;
+  width: 100%;
+  margin: 15px 0;
+  border-radius: var(--rounded);
+  background: var(--background);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.citation > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.citation > *:only-child {
+  grid-column: 1 / -1;
+}
+
+.citation-image {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  box-shadow: var(--shadow);
+}
+
+.citation-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.citation-text {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: min-content;
+  padding: 20px;
+  padding-left: 30px;
+  text-align: left;
+  z-index: 0;
+}
+
+.citation-title,
+.citation-authors,
+.citation-details,
+.citation-description {
+  width: 100%;
+}
+
+.citation-title {
+  font-weight: var(--semi-bold);
+}
+
+.citation-text > .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--light-gray);
+  opacity: 0.5;
+  font-size: 30px;
+  z-index: -1;
+}
+
+.citation-description {
+  color: var(--gray);
+}
+
+.citation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.citation-buttons .button {
+  margin: 0;
+}
+
+.citation-text > .tags {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+@media (max-width: $wrap) {
+  .citation {
+    grid-template-columns: unset;
+    grid-template-rows: $thumb-size 1fr;
+  }
+}

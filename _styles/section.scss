@@ -1,0 +1,39 @@
+---
+---
+
+$page: 1000px;
+$padding: 40px;
+
+section {
+  padding: $padding max($padding, calc((100% - $page) / 2));
+  transition-property: background, color;
+}
+
+section[data-size="wide"] {
+  padding: $padding;
+}
+
+section[data-size="full"] {
+  padding: 0;
+}
+
+section[data-size="full"] > * {
+  margin: 0;
+  border-radius: 0;
+}
+
+section[data-size="full"] img {
+  border-radius: 0;
+}
+
+main > section:last-of-type {
+  flex-grow: 1;
+}
+
+main > section:nth-of-type(odd) {
+  background: var(--background);
+}
+
+main > section:nth-of-type(even) {
+  background: var(--background-alt);
+}

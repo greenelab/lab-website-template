@@ -1,50 +1,40 @@
 ---
-title: Home
 ---
 
-# Your Lab Slogan
+# Lab Website Template
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
-Spend less time reinventing the wheel, and more time running your lab.
+[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
+Spend less time worrying about managing a website and citations, and more time running your lab.
 
 {%
-  include link.html
-  type="github"
-  icon=""
-  text="See the template on GitHub"
-  link="greenelab/lab-website-template"
-  style="button"
-%}
-{%
-  include link.html
+  include button.html
   type="docs"
-  icon=""
-  text="See the documentation"
-  link="https://github.com/greenelab/lab-website-template/wiki"
-  style="button"
+  link="https://greene-lab.gitbook.io/lab-website-template-docs"
 %}
-{:.center}
-
-{% include section.html full=true %}
-
-{% include banner.html image="images/banner.jpg" %}
+{%
+  include button.html
+  type="github"
+  text="On GitHub"
+  link="greenelab/lab-website-template"
+%}
 
 {% include section.html %}
 
-# Highlights
+## Highlights
 
 {% capture text %}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
-  include link.html
+  include button.html
   link="research"
-  text="See what we've published"
-  icon="fas fa-arrow-right"
+  text="See our publications"
+  icon="fa-solid fa-arrow-right"
   flip=true
+  style="bare"
 %}
-{:.center}
+
 {% endcapture %}
 
 {%
@@ -56,39 +46,43 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 %}
 
 {% capture text %}
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 {%
-  include link.html
+  include button.html
   link="tools"
-  text="Browse our tools"
-  icon="fas fa-arrow-right"
+  text="Browse our projects"
+  icon="fa-solid fa-arrow-right"
   flip=true
+  style="bare"
 %}
-{:.center}
+
 {% endcapture %}
 
 {%
   include feature.html
   image="images/photo.jpg"
-  link="resources"
-  title="Our Resources"
+  link="projects"
+  title="Our Projects"
   flip=true
+  style="bare"
   text=text
 %}
 
 {% capture text %}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 {%
-  include link.html
+  include button.html
   link="team"
   text="Meet our team"
-  icon="fas fa-arrow-right"
+  icon="fa-solid fa-arrow-right"
   flip=true
+  style="bare"
 %}
-{:.center}
+
 {% endcapture %}
 
 {%
@@ -98,6 +92,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   title="Our Team"
   text=text
 %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

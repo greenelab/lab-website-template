@@ -1,82 +1,81 @@
-{%- assign emptyarray = "" | split: "," -%}
-{%- assign output = site.auto-cite.output | default: "citations" | split: "/" | last | split: "." | pop | join: "" -%}
-{%- assign citations = site.data[output] | default: emptyarray -%} 
+{% assign citation = site.data.citations
+  | where_exp: "citation",
+    "citation.id == include.lookup or citation.title contains include.lookup"
+  | first
+  | default: include
+%}
 
-{%- assign citation = nil -%}
-{%- if include.lookup -%}
-  {%- for c in citations -%}
-    {%- if c.id == include.lookup or c.title contains include.lookup -%}
-      {%- assign citation = c -%}
-      {%- break -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- else -%}
-  {%- assign citation = include -%}
-{%- endif -%}
+<div class="citation">
+  {% if include.style == "rich" %}
+    <a href="{{ citation.link | relative_url }}" class="citation-image">
+      <img
+        src="{{ citation.image | relative_url }}"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    </a>
+  {% endif %}
 
-{%- assign rich = false -%}
-{%- if include.style == "rich" -%}
-  {%- assign rich = true -%}
-{%- endif -%}
+  <div class="citation-text">
+    {% assign type = site.data.types[citation.type] %}
+    {% include icon.html icon=type.icon %}
 
-{%- assign placeholder = "images/placeholder.svg" | relative_url -%}
+    <a href="{{ citation.link | default: "" }}" class="citation-title">
+      {{ citation.title | default: "" }}
+    </a>
 
-<div class="citation" data-style="{{ include.style }}">
-  {%- assign id = citation.id | default: "" -%}
-  {%- assign link = citation.link | default: "" -%}
-  {%- assign image = citation.image | default: "" -%}
-  {%- if rich -%}
-    <div class="citation_image">
-      <a href="{{ link }}">
-        <img
-          src="{{ image | relative_url }}"
-          onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
-          data-tooltip="{{ id }}"
-          loading="lazy"
-          alt="Citation thumbnail"
-        >
-      </a>
-    </div>
-  {%- endif -%}
-
-  <div class="citation_text">
-    {%- assign title = citation.title | default: "" -%}
-    <div class="citation_title">
-      <a href="{{ link }}">
-        {{ title }}
-      </a>
-    </div>
-
-    {%- assign authors = citation.authors | default: emptyarray -%}
     <div
-      class="citation_authors truncate"
-      tabindex="0"
+      class="citation-authors"
+      data-tooltip="{{ citation.authors | join: ", " }} "
     >
-      {{ authors | join: ", " }}
+      {{
+        citation.authors
+        | join: ","
+        | split: ","
+        | array_carve: 5
+        | join: ", "
+        | default: "[no author info]"
+      }}
     </div>
 
-    {%- assign publisher = citation.publisher | default: "[no publisher info]" -%}
-    {%- assign date = citation.date | default: "[no date info]" -%}
-    <div class="citation_details">
-      {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }}
+    <div class="citation-details">
+      {{ citation.publisher | default: "[no publisher info]" }}
+      &nbsp; · &nbsp;
+      {{ citation.date | default: "[no date info]" | date: "%d %b %Y" }}
+      &nbsp; · &nbsp;
+      {{ citation.id | default: "[no id info]" }}
     </div>
 
-    {%- if rich -%}
+    {% if include.style == "rich" %}
+      {% if citation.description %}
+        <div class="citation-description">
+          {{
+            citation.description
+            | markdownify
+            | remove: "<p>"
+            | remove: "</p>"
+          }}
+        </div>
+      {% endif %}
 
-      {%- assign tags = citation.tags | default: emptyarray -%}
-      {%- assign repo = citation.repo | default: "" -%}
-      {%- assign extra-links = citation.extra-links | default: emptyarray -%}
+      {% if citation.buttons.size > 0 %}
+        <div class="citation-buttons">
+          {% for button in citation.buttons %}
+            {%
+              include button.html
+              type=button.type
+              icon=button.icon
+              text=button.text
+              link=button.link
+              style="bare"
+            %}
+          {% endfor %}
+        </div>
+      {% endif %}
 
-      {%- include tags.html tags=tags repo=repo -%}
-      <div class="citation_links">
-        {%- for extra in extra-links -%}
-          {%- assign type = extra.type | default: "" -%}
-          {%- assign icon = extra.icon | default: "" -%}
-          {%- assign text = extra.text | default: "" -%}
-          {%- assign link = extra.link -%}
-          {%- include link.html type=type icon=icon text=text link=link -%}
-        {%- endfor -%}
-      </div>
-    {%- endif -%}
+      {% if citation.tags.size > 0 or citation.repo %}
+        {% include tags.html tags=citation.tags repo=citation.repo %}
+      {% endif %}
+    {% endif %}
   </div>
 </div>

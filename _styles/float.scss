@@ -1,0 +1,17 @@
+---
+---
+
+.float {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.float:not([data-flip]) {
+  float: left;
+  margin-right: 40px;
+}
+
+.float[data-flip] {
+  float: right;
+  margin-left: 40px;
+}
