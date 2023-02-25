@@ -25,6 +25,7 @@ DOCKER_RUN_CMD="docker run"
 
 # set the docker run command based our platform
 # (e.g., if we're in windows, run it through winpty)
+# also set up other OS-specific options
 case "$OSTYPE" in
   # solaris*) 
     # echo "SOLARIS" ;;
@@ -47,6 +48,11 @@ case "$OSTYPE" in
     FORCE_POLLING="1"
     ;;
 esac
+
+# for now, we'll always force polling as it's more robust
+# than relying on platform-specific file monitoring mechanisms
+# (e.g., inotify, which isn't supported by qemu as of feb 2023)
+FORCE_POLLING="1"
 
 # build the image using the project root as context.
 # if that succeeds, move on to running it
