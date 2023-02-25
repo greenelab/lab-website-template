@@ -16,7 +16,7 @@ jobs:
   pull-request:
     # only run on template itself, not user instance of template
     if: |
-      github.repository == 'vincerubinetti/lab-website-template' &&
+      github.repository == 'greenelab/lab-website-template' &&
       github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
@@ -79,7 +79,7 @@ jobs:
   push:
     # only run on template itself, not user instance of template
     if: |
-      github.repository == 'vincerubinetti/lab-website-template' &&
+      github.repository == 'greenelab/lab-website-template' &&
       github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:

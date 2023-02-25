@@ -28,7 +28,7 @@ $wrap: 800px;
   position: relative;
   max-width: 100%;
   height: 100%;
-  box-shadow: var(--shadow);
+  // box-shadow: var(--shadow);
 }
 
 .citation-image img {
@@ -56,6 +56,7 @@ $wrap: 800px;
 .citation-details,
 .citation-description {
   width: 100%;
+  line-height: calc(var(--spacing) - 0.4);
 }
 
 .citation-title {

@@ -20,7 +20,7 @@ High-level comparison with pre-releases:
 
 - Template is no longer limited to GitHub Pages white-listed Jekyll plugins.
 - Pull request previews happen right within GitHub instead of needing Netlify.
-- Citation-related files in `/_data` must now be named prefixed with the plugin they are to be run with, e.g. `sources-2020.yaml` or `orcid-casey.yaml`.
+- Citation-related files in `/_data` must now be named prefixed with the cite plugin they are to be run with, e.g. `sources-2020.yaml` or `orcid-casey.yaml`.
 - Folder renames for clarity and for better separation of template and user content: `/auto-cite` → `/_cite`, `/css` → `/_styles`, `/js` → `/_scripts`.
 - "Tools" page renamed to "Projects" to be more clear and general purpose.
 - `extra-links` renamed to `buttons` in `sources.yaml` files.
@@ -31,7 +31,6 @@ High-level comparison with pre-releases:
 - Simplify caching method in automatic citation process.
 - Drastically simplify Liquid code by including Ruby plugins.
 - Simplify CSS and JS.
-
 - `CITATION.cff` file now source of truth for version.
 - Update Font Awesome icon names from v5 to v6.
 

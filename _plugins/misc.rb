@@ -13,10 +13,10 @@ module Jekyll
       data = data.clone
       for filter in array_filter(filters.split(","))
         key, value = array_filter(filter.split(":"))
-        if value
-          data.select!{|d| d[key] =~ /#{value}/m}
-        else
-          data.select!{|d| d[key] == value}
+        if value == nil
+          data.select!{|d| d[key] == nil}
+        elsif value.is_a?(String)
+          data.select!{|d| d[key].to_s =~ /#{value}/m}
         end
       end
       return data
