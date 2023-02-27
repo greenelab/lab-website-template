@@ -1,39 +1,57 @@
-{%- assign background = page.header | default: site.header | default: "none" -%}
-{%- if background == "none" -%}
-  {%- assign background = nil -%}
-{%- endif -%}
+{% assign image = page.header | default: site.header | relative_url %}
+{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
-{%- assign dark = page.header-dark -%}
-{%- if dark == nil -%}
-  {%- assign dark = site.header-dark -%}
-{%- endif -%}
-{%- if dark == nil -%}
-  {%- assign dark = true -%}
-{%- endif -%}
+{% assign svg = "images/logo.svg" | file_exists %}
+{% assign png = "images/logo.png" | file_exists %}
+{% assign jpg = "images/logo.jpg" | file_exists %}
+{% assign logo = svg | default: png | default: jpg | default: nil %}
 
-
-<header {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
-  <a
-    href="{{ '/' | relative_url }}"
-    class="logo_row"
-    data-tooltip="Home"
-  >
-    <img src="{{ site.logo | relative_url }}" class="logo" alt="Logo image" />
-    {% if site.logo-text != false %}
-      <span class="logo_text">
-        <span class="logo_title">{{ site.title }}</span>
+<header
+  class="background"
+  style="--image: url('{{ image }}')"
+  data-dark="{{ dark }}"
+  {% if page.url == "/" %}
+    data-big
+  {% endif %}
+>
+  <a href="{{ "/" | relative_url }}" class="home">
+    {% if logo %}
+      <span class="logo">
+        {% if svg %}
+          {{ svg | file_read }}
+        {% else %}
+          <img src="{{ logo | relative_url }}" alt="">
+        {% endif %}
+      </span>
+    {% endif %}
+    {% if site["logo-text"] != false %}
+      <span class="title" data-tooltip="Home">
+        {% if site.title %}
+          <span>{{ site.title }}</span>
+        {% endif %}
         {% if site.subtitle %}
-          <span class="logo_subtitle">{{ site.subtitle }}</span>
+          <span>{{ site.subtitle }}</span>
         {% endif %}
       </span>
     {% endif %}
   </a>
-  <nav class="nav_row">
-    {%- assign pages = site.pages | where_exp: "page", "page.nav" | sort: "nav.order" -%}
-    {%- for page in pages -%}
-      {%- if page.nav -%}
-        {%- include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir -%}
-      {%- endif -%}
-    {%- endfor -%}
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    {% assign pages = site.pages
+      | where_exp: "page", "page.nav"
+      | sort: "nav.order"
+    %}
+    {% for page in pages %}
+      {% if page.nav %}
+        <a
+          href="{{ page.dir | relative_url }}"
+          data-tooltip="{{ page.nav.tooltip }}"
+        >
+          {{ page.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
   </nav>
 </header>

@@ -1,32 +1,30 @@
-{% assign emptyarray = "" | split: "," %}
+{% assign post = site.posts 
+  | where_exp: "post", "post.slug == include.lookup"
+  | first
+  | default: include
+%}
 
-{% assign id = include.slug | default: include.id | default: "" %}
-{% assign posts = site.posts | default: emptyarray %}
-
-{% assign post = nil %}
-{% for p in posts %}
-  {% if p.slug == id %}
-    {% assign post = p %}
-  {% endif %}
-{% endfor %}
-
-<div class="post_excerpt">
-  {% assign url = post.url | default: "" %}
-  {% assign title = post.title | default: "" %}
-  <p>
-    <a href="{{ url | relative_url }}">{{ title }}</a>
-  </p>
+<div class="post-excerpt">
+  {% assign url = post.url %}
+  {% assign title = post.title %}
+  <a href="{{ url | relative_url }}">{{ title }}</a>
 
   {%
     include post-info.html
     author=post.author
-    member=post.member
-    date=post.date
+    published=post.date
+    updated=post.last_modified_at
     tags=post.tags
   %}
 
-  {% assign content = post.content | default: "" %}
-  <p>
-    {{ content | strip_html | truncate: 500 }}
+  {% assign excerpt = post.content
+    | default: ""
+    | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->"
+    | default: post.excerpt
+    | default: ""
+    | strip_html
+  %}
+  <p data-search="{{ post.content | strip_html | strip_newlines }}">
+    {{ excerpt }}
   </p>
 </div>

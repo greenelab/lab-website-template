@@ -1,0 +1,50 @@
+name: build-site
+run-name: build live site
+
+on:
+  # run when called from another workflow
+  workflow_call:
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+# variables
+env:
+  PREVIEWS_FOLDER: preview
+
+permissions:
+  contents: write
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Checkout branch contents
+        uses: actions/checkout@v3
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0"
+          bundler-cache: true
+
+      - name: Get Pages url
+        id: pages
+        uses: actions/configure-pages@v2
+        with:
+          enablement: false
+
+      - name: Build live version of site
+        run: |
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+
+      - name: Commit live site to Pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
+          clean-exclude: ${{ env.PREVIEWS_FOLDER }}
+          force: false

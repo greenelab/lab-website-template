@@ -1,0 +1,56 @@
+name: build-preview
+run-name: build pull request preview
+
+on:
+  # run when called from another workflow
+  workflow_call:
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+# variables
+env:
+  PREVIEWS_FOLDER: preview
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Checkout branch contents
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+
+      - name: Install Ruby packages
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0"
+          bundler-cache: true
+
+      - name: Get Pages url
+        if: github.event.action != 'closed'
+        id: pages
+        uses: actions/configure-pages@v2
+        with:
+          enablement: false
+
+      - name: Build preview version of site
+        if: github.event.action != 'closed'
+        run: |
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
+
+      - name: Commit preview to Pages branch
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: _site
+          umbrella-dir: ${{ env.PREVIEWS_FOLDER }}

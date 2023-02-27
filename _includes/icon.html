@@ -1,0 +1,12 @@
+{%- if include.icon contains ".svg" -%}
+  {%- capture inline -%}
+    {%- include {{ include.icon }} -%}
+  {%- endcapture -%}
+  {{- inline |
+    strip_newlines |
+    replace: '<svg ', '<svg class="icon" ' |
+    replace: 'class="', 'class="icon '
+  -}}
+{%- elsif include.icon and include.icon != "" -%}
+  <i class="icon {{ include.icon }}"></i>
+{%- endif -%}

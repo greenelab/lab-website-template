@@ -1,33 +1,23 @@
-### basic settings
-
 # site properties and page defaults
 title: Lab Website Template
+subtitle: by the Greene Lab
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
-baseurl: /lab-website-template
 
 # site social media and other links
 links:
-  email: jane.smith@your-lab.com
+  email: contact@your-lab.com
+  orcid: 0000-0001-8713-9213
   google-scholar: ETJoidYAAAAJ
   github: your-lab
   twitter: YourLabHandle
   instagram: YourLabHandle
   youtube: YourLabChannel
 
-### advanced settings
+### jekyll settings
 
-# automatic citations
-auto-cite:
-  plugins:
-    - name: sources
-      input:
-        - ../_data/sources.yaml
-  output: ../_data/citations.yaml
-
-# default front matter parameters for markdown files
+# front matter defaults
 defaults:
   # all markdown files
   - scope:
@@ -45,29 +35,39 @@ defaults:
     values:
       layout: post
 
-# collections
 collections:
+  # generate page for each member
   members:
     output: true
+  # generate page for each post
+  posts:
+    output: true
 
-# sass settings
-sass:
-  sass_dir: css
-
-# syntax highlighting
-highlighter: rouge
-
-# plugins
+# jekyll plugins
 plugins:
+  - jekyll-spaceship
+  - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
-  - jekyll-sitemap
-  # - jekyll-github-metadata
-  # - jekyll-avatar
-  # - jekyll-gist
-  # - jekyll-mentions
-  # - jekyll-relative-links
-  # - jemoji
+  - jekyll-last-modified-at
+
+# code block syntax highlighting
+highlighter: rouge
 
 # jekyll theme
 theme: null
+
+# sass settings
+sass:
+  sass_dir: _styles
+
+# force jekyll to include certain files/folders
+include:
+  - _styles
+  - _scripts
+
+# force jekyll to exclude certain files/folders
+exclude:
+  - README.md
+  - LICENSE.md
+  - CITATION.cff

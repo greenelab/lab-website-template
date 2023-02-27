@@ -1,0 +1,6 @@
+<div class="cols" style="--cols: {{ include | hash_keys | size }}">
+  {% for param in include %}
+    {% assign key = param[0] %}
+    <div>{{ include[key] | markdownify }}</div>
+  {% endfor %}
+</div>

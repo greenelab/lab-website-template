@@ -1,0 +1,39 @@
+---
+---
+
+$two: 750px;
+$one: 500px;
+
+.cols {
+  display: grid;
+  --repeat: min(3, var(--cols));
+  grid-template-columns: repeat(var(--repeat), 1fr);
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.cols > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.cols > div > *:first-child {
+  margin-top: 0 !important;
+}
+
+.cols > div > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: $two) {
+  .cols {
+    --repeat: min(2, var(--cols));
+  }
+}
+
+@media (max-width: $one) {
+  .cols {
+    --repeat: min(1, var(--cols));
+  }
+}

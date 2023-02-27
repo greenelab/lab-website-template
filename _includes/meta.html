@@ -1,42 +1,92 @@
-{% assign emptyarray = "" | split: "," %}
-
-{% assign title = emptyarray %}
-
 {% assign filename = page.path | split: "/" | last %}
 {% if page.name and page.name != filename %}
-  {% assign title = title | push: page.name %}
+  {% assign title = page.name %}
 {% elsif page.title %}
-  {% assign title = title | push: page.title %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = nil %}
 {% endif %}
 
+{% assign fulltitle = "" | split: "," %}
+{% if title %}
+  {% assign fulltitle = fulltitle | push: title %}
+{% endif %}
 {% if site.title %}
-  {% assign title = title | push: site.title %}
+  {% assign fulltitle = fulltitle | push: site.title %}
+{% endif %}
+{% assign fulltitle = fulltitle | join: " | " %}
+
+{% assign subtitle = site.subtitle %}
+
+{% assign description = page.description | default: site.description %}
+{% assign url = site.location %}
+
+{% assign png = "images/icon.png" | file_exists %}
+{% assign jpg = "images/icon.jpg" | file_exists %}
+{% assign icon = png | default: jpg | relative_url %}
+
+{% assign jpg = "images/share.jpg" | file_exists %}
+{% assign png = "images/share.png" | file_exists %}
+{% assign share = jpg | default: png | relative_url %}
+
+{% assign published = page.date | date_to_xmlschema %}
+{% assign updated = page.last_modified_at | date_to_xmlschema %}
+
+{% assign feed = "feed.xml" | absolute_url %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ fulltitle }}</title>
+
+<link rel="icon" href="{{ icon }}">
+
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:site_title" content="{{ site.title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ share }}">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ description }}">
+<meta property="twitter:url" content="{{ url }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="{{ share }}">
+
+{% if page.author %}
+  <meta name="author" content="{{ page.author }}">
+  <meta property="og:type" content="article">
+  <meta property="og:updated_time" content="{{ updated }}">
+  <meta property="article:published_time" content="{{ published }}">
+  <meta property="article:modified_time" content="{{ updated }}">
+  <meta name="revised" content="{{ updated }}">
+{% else %}
+  <meta property="og:type" content="website">
 {% endif %}
 
-{% assign title = title | join: " | " %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    {% if page.author %}
+      "@type": "BlogPosting",
+      "author": { "@type": "Person", "name": "{{ title }}" },
+      "datePublished": "{{ published }}",
+      "dateModified": "{{ updated }}",
+    {% else %}
+      "@type": "WebSite",
+    {% endif %}
+    "name": "{{ title }}",
+    "description": "{{ description }}",
+    "headline": "{{ title }}",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+    },
+    "url": "{{ url }}"
+  }
+</script>
 
-<title>{{ title }}</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<!-- https://metatags.io/ -->
-<meta name="title" content="{{ title }}" />
-<meta name="description" content="{{ page.description | default: site.description }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ site.location }}" />
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:description" content="{{ page.description | default: site.description }}" />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="{{ site.location }}" />
-<meta property="twitter:title" content="{{ title }}" />
-<meta property="twitter:description" content="{{ page.description | default: site.description }}" />
-
-<!-- RSS -->
-<link
-  rel="alternate"
-  type="application/rss+xml"
-  href="{{ '/feed.xml' | absolute_url }}"
-/>
-
-<!-- https://developers.google.com/web/fundamentals/native-hardware/click-to-call#disable_auto-detection_when_necessary -->
-<meta name="format-detection" content="telephone=no" />
+<link rel="alternate" type="application/rss+xml" href="{{ feed }}">

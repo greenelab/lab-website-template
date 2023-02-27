@@ -1,20 +1,17 @@
 <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet"
-/>
+<!-- automatically get url from fonts used in theme file -->
+{% assign googlefonts = "_styles/-theme.scss" | file_read | google_fonts %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="{{ googlefonts }}" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
+{% assign fontawesome = "https://use.fontawesome.com/releases/v6.0.0/css/all.css" %}
 <link
-  href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+  href="{{ fontawesome }}"
   rel="preload"
   as="style"
   onload="this.onload = null; this.rel = 'stylesheet';"
-/>
+>
 <noscript>
-  <link
-    href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-    rel="stylesheet"
-  />
+  <link href="{{ fontawesome }}" rel="stylesheet">
 </noscript>
