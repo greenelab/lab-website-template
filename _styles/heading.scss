@@ -42,7 +42,7 @@ h4 {
   text-align: left;
 }
 
-:where(h1, h2, h3, h4) > .icon {
+:where(h1, h2, h3, h4) > .icon:first-child:not(:only-child) {
   margin-right: 1em;
   color: var(--light-gray);
 }

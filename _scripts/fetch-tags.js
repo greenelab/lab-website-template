@@ -20,9 +20,9 @@
 
       // filter out tags already present in row
       let existing = [...row.querySelectorAll(".tag")].map((tag) =>
-        tag.innerText.trim().toLowerCase()
+        window.normalizeTag(tag.innerText)
       );
-      tags = tags.filter((tag) => !existing.includes(tag.toLowerCase()));
+      tags = tags.filter((tag) => !existing.includes(normalizeTag(tag)));
 
       // add tags to row
       for (const tag of tags) {

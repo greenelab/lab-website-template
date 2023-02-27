@@ -5,7 +5,6 @@
 
 {
   const onLoad = () => {
-    console.log("hi")
     // make sure Tippy library available
     if (typeof tippy === "undefined") return;
 

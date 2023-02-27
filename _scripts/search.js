@@ -28,13 +28,17 @@
       if (part.startsWith('"')) {
         part = part.replaceAll('"', "").trim();
         if (part.startsWith("tag:"))
-          tags.push(part.replace(/tag:\s*/, "").toLowerCase());
+          tags.push(normalizeTag(part.replace(/tag:\s*/, "")));
         else phrases.push(part.toLowerCase());
       } else terms.push(part.toLowerCase());
     }
 
     return { terms, phrases, tags };
   };
+
+  // normalize tag string for comparison
+  window.normalizeTag = (tag) =>
+    tag.trim().toLowerCase().replaceAll(/-|\s+/g, " ");
 
   // get data attribute contents of element and children
   const getAttr = (element, attr) =>
@@ -58,7 +62,7 @@
         .includes(string);
     // check if text matches a tag in element
     const hasTag = (string) =>
-      tagElements.some((tag) => tag.innerText.trim().toLowerCase() === string);
+      tagElements.some((tag) => normalizeTag(tag.innerText) === string);
 
     // match logic
     return (
@@ -160,7 +164,7 @@
     const { tags } = splitQuery(query);
     document.querySelectorAll(tagSelector).forEach((tag) => {
       // set active if tag is in query
-      if (tags.includes(tag.innerText.trim().toLowerCase()))
+      if (tags.includes(normalizeTag(tag.innerText)))
         tag.setAttribute("data-active", "");
       else tag.removeAttribute("data-active");
     });
