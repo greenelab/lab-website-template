@@ -1,0 +1,24 @@
+.float {
+  margin-bottom: 20px;
+}
+
+.float > * {
+  margin: 0 !important;
+}
+
+.float:not([data-flip]) {
+  float: left;
+  margin-right: 40px;
+}
+
+.float[data-flip] {
+  float: right;
+  margin-left: 40px;
+}
+
+.float[data-clear] {
+  clear: both;
+  margin: 0;
+}
+
+/*# sourceMappingURL=float.css.map */
