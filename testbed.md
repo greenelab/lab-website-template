@@ -278,6 +278,21 @@ Square:
 {% endcapture %}
 {% include grid.html style="square" content=content %}
 
+List of citations:
+
+{% capture content %}
+{% include list.html data="citations" component="citation" %}
+{% endcapture %}
+{% include grid.html content=content %}
+
+List of blog posts:
+
+{% capture content %}
+{% include list.html data="posts" component="post-excerpt" %}
+{% endcapture %}
+{% include grid.html content=content %}
+
+
 {% include section.html %}
 
 ## Cols

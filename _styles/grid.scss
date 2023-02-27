@@ -9,7 +9,7 @@ $one: 500px;
   --repeat: 3;
   grid-template-columns: repeat(var(--repeat), 1fr);
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   margin: 40px 0;
 }
@@ -18,7 +18,7 @@ $one: 500px;
   min-width: 0;
   min-height: 0;
   width: 100%;
-  max-height: 50vh;
+  // max-height: 50vh;
 }
 
 @media (max-width: $two) {
@@ -34,6 +34,8 @@ $one: 500px;
 }
 
 .grid[data-style="square"] {
+  align-items: center;
+
   & > * {
     aspect-ratio: 1 / 1;
     margin: 0 !important;
@@ -43,4 +45,8 @@ $one: 500px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
+}
+
+.grid > *:where(h1, h2, h3, h4) {
+  display: none;
 }

@@ -7,9 +7,7 @@
 <div class="post-excerpt">
   {% assign url = post.url %}
   {% assign title = post.title %}
-  <p>
-    <a href="{{ url | relative_url }}">{{ title }}</a>
-  </p>
+  <a href="{{ url | relative_url }}">{{ title }}</a>
 
   {%
     include post-info.html
