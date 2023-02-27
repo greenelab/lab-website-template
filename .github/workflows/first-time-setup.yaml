@@ -66,7 +66,7 @@ jobs:
       - name: Personalize readme for user
         run: |
           echo "
-          # ${{ env.TITLE }}
+          # ${{ env.USER }}'s Website
 
           Visit **[website url](#)** 🚀
 
@@ -101,7 +101,7 @@ jobs:
             const file = "index.md";
             let contents = readFileSync(file).toString();
             const find = /\# Lab Website Template[\s\S]+({% include section\.html)/;
-            const replace = `# ${{ env.TITLE }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
+            const replace = `# ${{ env.USER }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
             contents = contents.replace(find, replace);
             writeFileSync(file, contents);
 
