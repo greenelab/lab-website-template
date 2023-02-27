@@ -27,6 +27,7 @@ button {
   line-height: 1;
   text-decoration: none;
   vertical-align: middle;
+  -webkit-appearance: none;
   appearance: none;
   transition-property: background, color;
 }

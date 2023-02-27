@@ -14,8 +14,11 @@
 
 .search-box button {
   position: absolute;
-  right: 0;
-  height: 100%;
+  inset: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   aspect-ratio: 1 / 1;
   background: none;
   color: var(--black);

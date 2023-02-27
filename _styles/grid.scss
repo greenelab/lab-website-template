@@ -44,6 +44,8 @@ $one: 500px;
   & img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    max-width: unset;
+    max-height: unset;
   }
 }
 

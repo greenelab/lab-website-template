@@ -5,9 +5,7 @@ $thumb-size: 180px;
 $wrap: 800px;
 
 .citation {
-  display: inline-grid;
-  grid-template-columns: $thumb-size 1fr;
-  width: 100%;
+  display: flex;
   margin: 15px 0;
   border-radius: var(--rounded);
   background: var(--background);
@@ -15,20 +13,10 @@ $wrap: 800px;
   box-shadow: var(--shadow);
 }
 
-.citation > * {
-  min-width: 0;
-  min-height: 0;
-}
-
-.citation > *:only-child {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-}
-
 .citation-image {
   position: relative;
-  max-width: 100%;
-  height: 100%;
+  width: $thumb-size;
+  flex-shrink: 0;
   // box-shadow: var(--shadow);
 }
 
@@ -96,7 +84,11 @@ $wrap: 800px;
 
 @media (max-width: $wrap) {
   .citation {
-    grid-template-columns: unset;
-    grid-template-rows: $thumb-size 1fr;
+    flex-direction: column;
+  }
+
+  .citation-image {
+    width: unset;
+    height: $thumb-size;
   }
 }

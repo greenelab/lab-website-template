@@ -76,6 +76,7 @@ header a {
   height: 30px;
   margin: 0;
   color: var(--text);
+  -webkit-appearance: none;
   appearance: none;
   transition-property: background;
 }
