@@ -18,21 +18,23 @@ High-level comparison with pre-releases:
 
 ### Changed
 
-- Template is no longer limited to GitHub Pages white-listed Jekyll plugins.
+- Template is no longer limited to GitHub Pages white-listed Jekyll plugins. Any plugins possible.
 - Pull request previews happen right within GitHub instead of needing Netlify.
-- Citation-related files in `/_data` must now be named prefixed with the cite plugin they are to be run with, e.g. `sources-2020.yaml` or `orcid-casey.yaml`.
+- Better versioning. `CITATION.cff` file now source of truth for version, and tags/releases enforced.
+- Citation-related files in `/_data` must now be named prefixed with the cite plugin they are to be run with, e.g. `sources-2020.yaml` or `orcid-students.yaml`.
 - Folder renames for clarity and for better separation of template and user content: `/auto-cite` → `/_cite`, `/css` → `/_styles`, `/js` → `/_scripts`.
-- "Tools" page renamed to "Projects" to be more clear and general purpose.
-- `extra-links` renamed to `buttons` in `sources.yaml` files.
-- Renamed `theme.scss` to `-theme.scss`.
-- Renamed components: link → button, two-col → cols, gallery → grid.
-- Use CSS variables instead of Sass variables.
+- Rename "Tools" page to "Projects" to be more clear and general purpose.
+- Rename `extra-links` to `buttons` in `sources.yaml` files.
+- Rename `theme.scss` to `-theme.scss`.
+- Rename/repurpose components: link → button, two-col → cols, gallery → grid.
+- Combine "link" and "role" data lists into single `types.yaml` map.
 - Redesign components, change parameters and behavior.
-- Simplify caching method in automatic citation process.
-- Drastically simplify Liquid code by including Ruby plugins.
-- Simplify CSS and JS.
-- `CITATION.cff` file now source of truth for version.
 - Update Font Awesome icon names from v5 to v6.
+- Change placeholder text, images, and other images.
+- Use CSS variables instead of Sass variables.
+- Simplify caching method in cite process.
+- Simplify Liquid code by including custom Ruby plugins.
+- Simplify styles and scripts.
 
 ### Added
 
@@ -40,17 +42,19 @@ High-level comparison with pre-releases:
 - Add automations for first time setup and URL change.
 - Write PubMed and Google Scholar automatic citation plugins.
 - Automatic citations through GitHub Actions should now work from (most) forks.
-- Add optional description and type params to citations.
+- Add optional description and type params for citations.
 - Add periodic cite process run that opens a pull request.
-- List component filter can now accept arbitrary regex.
-- Add richer metadata for SEO.
-- Add author portrait and updated date for blog posts.
+- List component filters can now accept arbitrary regex.
 - Add light/dark mode toggle.
+- Pre-install selection of useful Jekyll plugins, namely Jekyll Spaceship.
+- Add author portrait and updated date for blog posts.
+- Add richer metadata for SEO.
+- Google Fonts link determined automatically from theme file.
 
 ### Removed
 
 - Remove options from `_config.yaml` to simplify configuration: `baseurl`, `auto-cite`, `logo`.
-- Remove `/favicons` folder, hardcode files for logo, icon, and share in `images`.
-- Remove `palettes.scss`.
+- Remove `/favicons` folder, hardcode files for logo, icon, and share in `/images`.
+- Remove `palettes.scss` and `mixins.scss`.
 - Remove banner component (same thing can be achieved with full width section and figure components).
-- Remove role component. Combined with portrait component.
+- Remove role component. Combine with portrait component.
