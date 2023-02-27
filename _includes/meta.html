@@ -19,15 +19,15 @@
 {% assign subtitle = site.subtitle %}
 
 {% assign description = page.description | default: site.description %}
-{% assign url = site.location | default: "" %}
+{% assign url = site.location %}
 
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | default: "" | relative_url %}
+{% assign icon = png | default: jpg | relative_url %}
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | default: "" | relative_url %}
+{% assign share = jpg | default: png | relative_url %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}

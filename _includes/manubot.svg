@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-450 -250 900 500">
-  <!-- logo -->
   <g transform="scale(0.9)">
-    <!-- M -->
     <path
       fill="none"
       stroke="currentColor"
@@ -16,7 +14,6 @@
         L 125 125
       "
     />
-    <!-- left bracket -->
     <path
       fill="none"
       stroke="currentColor"
@@ -29,7 +26,6 @@
         L -200 250
       "
     />
-    <!-- right bracket -->
     <path
       fill="none"
       stroke="currentColor"
@@ -42,7 +38,6 @@
         L 200 -250
       "
     />
-    <!-- left line -->
     <path
       fill="none"
       stroke="currentColor"
@@ -53,7 +48,6 @@
         L -370 0
       "
     />
-    <!-- right line -->
     <path
       fill="none"
       stroke="currentColor"
@@ -64,7 +58,6 @@
         L 370 0
       "
     />
-    <!-- left circle -->
     <circle
       cx="-455"
       cy="0"
@@ -73,7 +66,6 @@
       stroke="currentColor"
       stroke-width="30"
     />
-    <!-- right circle -->
     <circle
       cx="455"
       cy="0"

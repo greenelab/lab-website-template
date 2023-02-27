@@ -3,6 +3,9 @@
   {% if include.flip %}
     data-flip
   {% endif %}
+  {% if include.clear %}
+    data-clear
+  {% endif %}
 >
-  {{ include.content }}
+  {{ include.content | markdownify }}
 </div>

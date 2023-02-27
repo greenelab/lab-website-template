@@ -9,7 +9,7 @@
 {% assign content = include.content %}
 
 {% assign content = content
-  | regex_replace: "<table>(.*)</table>",
+  | regex_replace: "<table>(.*?)</table>",
     "<div class='table-wrapper'><table>\1</table></div>"
 %}
 

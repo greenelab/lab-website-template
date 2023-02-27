@@ -1,5 +1,7 @@
+{% assign emptyarray = "" | split: "," %}
 {% assign data = site.data[include.data]
   | default: site[include.data]
+  | default: emptyarray
   | data_filter: include.filters
 %}
 

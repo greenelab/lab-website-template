@@ -3,8 +3,8 @@
     <img
       src="{{ include.image | relative_url }}"
       class="figure-image"
-      alt="{{ include.caption | default: "" }}"
-      title="{{ include.caption | default: "" }}"
+      alt="{{ include.caption }}"
+      title="{{ include.caption }}"
       style="
         width: {{ include.width | default: "auto" }};
         max-height: {{ include.height | default: "unset" }};

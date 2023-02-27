@@ -2,8 +2,11 @@
 ---
 
 .float {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.float > * {
+  margin: 0 !important;
 }
 
 .float:not([data-flip]) {
@@ -14,4 +17,9 @@
 .float[data-flip] {
   float: right;
   margin-left: 40px;
+}
+
+.float[data-clear] {
+  clear: both;
+  margin: 0;
 }

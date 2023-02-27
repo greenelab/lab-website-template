@@ -1,208 +1,221 @@
 /*
-  filters components on page based on url or search box.
+  filters elements on page based on url or search box.
   syntax: term1 term2 "full phrase 1" "full phrase 2" "tag: tag 1"
   match if: all terms AND at least one phrase AND at least one tag
 */
+{
+  // elements to filter
+  const elementSelector = ".card, .citation, .post-excerpt";
+  // search box element
+  const searchBoxSelector = ".search-box";
+  // results info box element
+  const infoBoxSelector = ".search-info";
+  // tags element
+  const tagSelector = ".tag";
 
-import { normalizeString, debounce } from "./util.js";
+  // split search query into terms, phrases, and tags
+  const splitQuery = (query) => {
+    // split into parts, preserve quotes
+    const parts = query.match(/"[^"]*"|\S+/g) || [];
 
-// components to filter
-const componentSelector = ".card, .citation, .post-excerpt";
-// search box element
-const searchBoxSelector = ".search-box";
-// results info box element
-const infoBoxSelector = ".search-info";
-// tags element
-const tagSelector = ".tag";
+    // bins
+    const terms = [];
+    const phrases = [];
+    const tags = [];
 
-// split search query into terms, phrases, and tags
-const splitQuery = (query) => {
-  // split into parts, preserve quotes
-  const parts = query.match(/(".*?"|[^"\s]+)(?=\s*|\s*$)/g) || [];
-
-  // bins
-  const terms = [];
-  const phrases = [];
-  const tags = [];
-
-  // put parts into bins
-  for (let part of parts) {
-    if (part.includes('"')) {
-      part = normalizeString(part);
-      if (part.indexOf("tag:") === 0) tags.push(part.replace(/tag:\s*/, ""));
-      else phrases.push(part);
-    } else {
-      terms.push(normalizeString(part));
+    // put parts into bins
+    for (let part of parts) {
+      if (part.startsWith('"')) {
+        part = part.replaceAll('"', "").trim();
+        if (part.startsWith("tag:"))
+          tags.push(part.replace(/tag:\s*/, "").toLowerCase());
+        else phrases.push(part.toLowerCase());
+      } else terms.push(part.toLowerCase());
     }
-  }
 
-  return { terms, phrases, tags };
-};
+    return { terms, phrases, tags };
+  };
 
-// get tooltip contents of element
-const getTooltips = (element) =>
-  [element, ...element.querySelectorAll("[data-tooltip]")]
-    .map((element) => element.dataset.tooltip)
-    .join(" ");
+  // get data attribute contents of element and children
+  const getAttr = (element, attr) =>
+    [element, ...element.querySelectorAll(`[data-${attr}]`)]
+      .map((element) => element.dataset[attr])
+      .join(" ");
 
-// determine if component should show up in results based on query
-const componentMatches = (component, { terms, phrases, tags }) => {
-  // tag elements within component
-  const componentTags = [...component.querySelectorAll(".tag")];
+  // determine if element should show up in results based on query
+  const elementMatches = (element, { terms, phrases, tags }) => {
+    // tag elements within element
+    const tagElements = [...element.querySelectorAll(".tag")];
 
-  // check if text content exists in component
-  const hasText = (string) =>
-    normalizeString(component.innerText).includes(string) ||
-    normalizeString(getTooltips(component)).includes(string);
-  // check if text matches a tag in component
-  const hasTag = (string) =>
-    componentTags.some((tag) => normalizeString(tag.innerText) === string);
+    // check if text content exists in element
+    const hasText = (string) =>
+      (
+        element.innerText +
+        getAttr(element, "tooltip") +
+        getAttr(element, "search")
+      )
+        .toLowerCase()
+        .includes(string);
+    // check if text matches a tag in element
+    const hasTag = (string) =>
+      tagElements.some((tag) => tag.innerText.trim().toLowerCase() === string);
 
-  // match logic
-  return (
-    (terms.every(hasText) || !terms.length) &&
-    (phrases.some(hasText) || !phrases.length) &&
-    (tags.some(hasTag) || !tags.length)
-  );
-};
+    // match logic
+    return (
+      (terms.every(hasText) || !terms.length) &&
+      (phrases.some(hasText) || !phrases.length) &&
+      (tags.some(hasTag) || !tags.length)
+    );
+  };
 
-// loop through components, hide/show based on query, and return results info
-const filterComponents = (parts) => {
-  let components = document.querySelectorAll(componentSelector);
+  // loop through elements, hide/show based on query, and return results info
+  const filterElements = (parts) => {
+    let elements = document.querySelectorAll(elementSelector);
 
-  // results info
-  let x = 0;
-  let n = components.length;
-  let tags = parts.tags;
+    // results info
+    let x = 0;
+    let n = elements.length;
+    let tags = parts.tags;
 
-  // filter components
-  for (const component of components) {
-    if (componentMatches(component, parts)) {
-      component.style.display = "";
-      x++;
-      highlightTerms(component, parts);
-    } else {
-      component.style.display = "none";
+    // filter elements
+    for (const element of elements) {
+      if (elementMatches(element, parts)) {
+        element.style.display = "";
+        x++;
+        highlightTerms(element, parts);
+      } else {
+        element.style.display = "none";
+      }
     }
-  }
 
-  return [x, n, tags];
-};
+    return [x, n, tags];
+  };
 
-// reset highlights
-const resetHighlights = () => {
-  // make sure Mark library available
-  if (typeof Mark === "undefined") return;
+  // reset highlights
+  const resetHighlights = () => {
+    // make sure Mark library available
+    if (typeof Mark === "undefined") return;
 
-  new Mark(document.body).unmark();
-};
+    new Mark(document.body).unmark();
+  };
 
-// highlight search terms in component
-const highlightTerms = async (component, { terms, phrases }) => {
-  // make sure Mark library available
-  if (typeof Mark === "undefined") return;
+  // highlight search terms in element
+  const highlightTerms = async (element, { terms, phrases }) => {
+    // make sure Mark library available
+    if (typeof Mark === "undefined") return;
 
-  // highlight terms
-  // to avoid slowdown, only highlight if more than a few letters searched
-  for (const term of terms)
-    if (term.length > 2)
-      new Mark(component).mark(term, { separateWordSearch: true });
+    // highlight terms
+    // to avoid slowdown, only highlight if more than a few letters searched
+    for (const term of terms)
+      if (term.length > 2)
+        new Mark(element).mark(term, { separateWordSearch: true });
 
-  // highlight phrases
-  for (const phrase of phrases)
-    if (phrase.length > 2)
-      new Mark(component).mark(phrase, { separateWordSearch: false });
-};
+    // highlight phrases
+    for (const phrase of phrases)
+      if (phrase.length > 2)
+        new Mark(element).mark(phrase, { separateWordSearch: false });
+  };
 
-// update search box based on query
-const updateSearchBox = (query = "") => {
-  const boxes = document.querySelectorAll(searchBoxSelector);
+  // update search box based on query
+  const updateSearchBox = (query = "") => {
+    const boxes = document.querySelectorAll(searchBoxSelector);
 
-  for (const box of boxes) {
-    const input = box.querySelector("input");
-    const button = box.querySelector("button");
-    const icon = box.querySelector("button i");
-    input.value = query;
-    icon.className = input.value.length
-      ? "icon fa-solid fa-xmark"
-      : "icon fa-solid fa-magnifying-glass";
-    button.disabled = input.value.length ? false : true;
-  }
-};
+    for (const box of boxes) {
+      const input = box.querySelector("input");
+      const button = box.querySelector("button");
+      const icon = box.querySelector("button i");
+      input.value = query;
+      icon.className = input.value.length
+        ? "icon fa-solid fa-xmark"
+        : "icon fa-solid fa-magnifying-glass";
+      button.disabled = input.value.length ? false : true;
+    }
+  };
 
-// update info box based on query and results
-const updateInfoBox = (query, x, n) => {
-  const boxes = document.querySelectorAll(infoBoxSelector);
+  // update info box based on query and results
+  const updateInfoBox = (query, x, n) => {
+    const boxes = document.querySelectorAll(infoBoxSelector);
 
-  if (query.trim()) {
-    // show all info boxes
-    boxes.forEach((info) => (info.style.display = ""));
+    if (query.trim()) {
+      // show all info boxes
+      boxes.forEach((info) => (info.style.display = ""));
 
-    // info template
-    let info = "";
-    info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
-    info += "<a href='./'>Clear search</a>";
+      // info template
+      let info = "";
+      info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
+      info += "<a href='./'>Clear search</a>";
 
-    // set info HTML string
-    boxes.forEach((el) => (el.innerHTML = info));
-  }
-  // if nothing searched
-  else {
-    // hide all info boxes
-    boxes.forEach((info) => (info.style.display = "none"));
-  }
-};
+      // set info HTML string
+      boxes.forEach((el) => (el.innerHTML = info));
+    }
+    // if nothing searched
+    else {
+      // hide all info boxes
+      boxes.forEach((info) => (info.style.display = "none"));
+    }
+  };
 
-// update tags based on query
-const updateTags = (query) => {
-  const { tags } = splitQuery(query);
-  document.querySelectorAll(tagSelector).forEach((tag) => {
-    // set active if tag is in query
-    if (tags.includes(normalizeString(tag.innerText)))
-      tag.setAttribute("data-active", "");
-    else tag.removeAttribute("data-active");
-  });
-};
+  // update tags based on query
+  const updateTags = (query) => {
+    const { tags } = splitQuery(query);
+    document.querySelectorAll(tagSelector).forEach((tag) => {
+      // set active if tag is in query
+      if (tags.includes(tag.innerText.trim().toLowerCase()))
+        tag.setAttribute("data-active", "");
+      else tag.removeAttribute("data-active");
+    });
+  };
 
-// run search with query
-const runSearch = (query = "") => {
-  resetHighlights();
-  const parts = splitQuery(query);
-  const [x, n] = filterComponents(parts);
-  updateSearchBox(query);
-  updateInfoBox(query, x, n);
-  updateTags(query);
-};
+  // run search with query
+  const runSearch = (query = "") => {
+    resetHighlights();
+    const parts = splitQuery(query);
+    const [x, n] = filterElements(parts);
+    updateSearchBox(query);
+    updateInfoBox(query, x, n);
+    updateTags(query);
+  };
 
-// update url based on query
-const updateUrl = (query = "") => {
-  const url = new URL(window.location);
-  let params = new URLSearchParams(url.search);
-  params.set("search", query);
-  url.search = params.toString();
-  window.history.replaceState(null, null, url);
-};
+  // update url based on query
+  const updateUrl = (query = "") => {
+    const url = new URL(window.location);
+    let params = new URLSearchParams(url.search);
+    params.set("search", query);
+    url.search = params.toString();
+    window.history.replaceState(null, null, url);
+  };
 
-// search based on url param
-const searchFromUrl = () => {
-  const query = new URLSearchParams(window.location.search).get("search") || "";
-  runSearch(query);
-};
+  // search based on url param
+  const searchFromUrl = () => {
+    const query =
+      new URLSearchParams(window.location.search).get("search") || "";
+    runSearch(query);
+  };
 
-// when user types into search box
-const debouncedRunSearch = debounce(runSearch, 1000);
-window.onSearchInput = (target) => {
-  debouncedRunSearch(target.value);
-  updateUrl(target.value);
-};
+  // return func that runs after delay
+  const debounce = (callback, delay = 250) => {
+    let timeout;
+    return (...args) => {
+      window.clearTimeout(timeout);
+      timeout = window.setTimeout(() => callback(...args), delay);
+    };
+  };
 
-// when user clears search box with button
-window.onSearchClear = () => {
-  runSearch();
-  updateUrl();
-};
+  // when user types into search box
+  const debouncedRunSearch = debounce(runSearch, 1000);
+  window.onSearchInput = (target) => {
+    debouncedRunSearch(target.value);
+    updateUrl(target.value);
+  };
 
-// after page loads
-window.addEventListener("load", searchFromUrl);
-// after tags load
-window.addEventListener("tagsfetched", searchFromUrl);
+  // when user clears search box with button
+  window.onSearchClear = () => {
+    runSearch();
+    updateUrl();
+  };
+
+  // after page loads
+  window.addEventListener("load", searchFromUrl);
+  // after tags load
+  window.addEventListener("tagsfetched", searchFromUrl);
+}

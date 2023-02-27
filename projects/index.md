@@ -24,4 +24,4 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 ## More
 
-{% include list.html component="card" data="projects" filters="group: more" style="small" %}
+{% include list.html component="card" data="projects" filters="group: " style="small" %}

@@ -83,8 +83,6 @@ for plugin in plugins:
                 log(f"{len(entry)} source(s)", 3)
 
 
-log("Merging duplicate sources by id")
-
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
     id = sources[a].get("id")
@@ -135,7 +133,7 @@ for index, source in enumerate(sources):
             else:
                 log(e, 3, "WARNING")
 
-    # merge in fields from input source, overriding existing fields
+    # preserve fields from input source, overriding existing fields
     citation.update(source)
 
     # ensure date in proper format for correct date sorting

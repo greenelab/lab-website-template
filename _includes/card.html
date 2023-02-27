@@ -10,7 +10,7 @@
     class="card-image"
   >
     <img
-      src="{{ image | relative_url }}"
+      src="{{ include.image | relative_url }}"
       loading="lazy"
       {% include fallback.html %}
     >

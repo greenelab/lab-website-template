@@ -35,7 +35,7 @@
           <span class="portrait-role">
             {% assign type = site.data.types[member.role] %}
             {% include icon.html icon=type.icon %}
-            <span>{{ member.description | default: type.text }}</span>
+            <span>{{ member.description | default: type.description }}</span>
           </span>
         {% endif %}
       </span>

@@ -1,16 +1,15 @@
 ---
 ---
 
-$three: 1000px;
 $two: 750px;
 $one: 500px;
 
 .cols {
   display: grid;
-  --repeat: min(4, var(--cols));
-  grid-template-columns: repeat(var(--repeat), minmax(0, 1fr));
+  --repeat: min(3, var(--cols));
+  grid-template-columns: repeat(var(--repeat), 1fr);
   align-items: flex-start;
-  grid-gap: 40px;
+  gap: 40px;
   margin: 40px 0;
 }
 
@@ -25,12 +24,6 @@ $one: 500px;
 
 .cols > div > *:last-child {
   margin-bottom: 0 !important;
-}
-
-@media (max-width: $three) {
-  .cols {
-    --repeat: min(3, var(--cols));
-  }
 }
 
 @media (max-width: $two) {

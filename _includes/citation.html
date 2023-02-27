@@ -20,8 +20,8 @@
     {% assign type = site.data.types[citation.type] %}
     {% include icon.html icon=type.icon %}
 
-    <a href="{{ citation.link | default: "" }}" class="citation-title">
-      {{ citation.title | default: "" }}
+    <a href="{{ citation.link }}" class="citation-title">
+      {{ citation.title }}
     </a>
 
     <div

@@ -1,30 +1,30 @@
-# map general type keyword to default/fallback icon, text, etc.
+# map general type to default/fallback icon, text, etc.
 
 # team member roles
 
 pi:
   icon: fa-solid fa-microscope
-  text: Principal Investigator
+  description: Principal Investigator
 
 postdoc:
   icon: fa-solid fa-glasses
-  text: Postdoctoral Researcher
+  description: Postdoctoral Researcher
 
 phd:
   icon: fa-solid fa-graduation-cap
-  text: PhD Student
+  description: PhD Student
 
 undergrad:
   icon: fa-solid fa-user-graduate
-  text: Undergraduate Student
+  description: Undergraduate Student
 
 programmer:
   icon: fa-solid fa-code
-  text: Programmer
+  description: Programmer
 
 mascot:
   icon: fa-solid fa-dog
-  text: Mascot
+  description: Mascot
 
 # general
 

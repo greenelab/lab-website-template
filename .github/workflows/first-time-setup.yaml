@@ -38,7 +38,7 @@ jobs:
         run: touch .nojekyll
 
       - name: Make placeholder homepage
-        run: echo "Your site will appear here" > index.html
+        run: echo "Placeholder homepage" > index.html
 
       - name: Commit changes to Pages branch
         uses: stefanzweifel/git-auto-commit-action@v4

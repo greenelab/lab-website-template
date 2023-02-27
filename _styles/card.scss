@@ -20,9 +20,8 @@
   width: 250px;
 }
 
-.card-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+.card-image img {
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   // box-shadow: var(--shadow);
 }

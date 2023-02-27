@@ -6,5 +6,5 @@
 <!-- include all js in scripts folder -->
 {% assign scripts = site.static_files | where_exp: "file", "file.path contains '/_scripts'" %}
 {% for script in scripts %}
-  <script src="{{ script.path | relative_url }}" type="module" async="false"></script>
+  <script src="{{ script.path | relative_url }}"></script>
 {% endfor %}

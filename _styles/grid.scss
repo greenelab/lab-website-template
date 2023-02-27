@@ -6,10 +6,11 @@ $one: 500px;
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  --repeat: 3;
+  grid-template-columns: repeat(var(--repeat), 1fr);
   justify-content: center;
   align-items: center;
+  gap: 40px;
   margin: 40px 0;
 }
 
@@ -22,13 +23,13 @@ $one: 500px;
 
 @media (max-width: $two) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    --repeat: 2;
   }
 }
 
 @media (max-width: $one) {
   .grid {
-    grid-template-columns: 1fr;
+    --repeat: 1;
   }
 }
 

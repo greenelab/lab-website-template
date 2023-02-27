@@ -24,6 +24,7 @@
 // correct tippy arrow styles to support intuitive arrow styles above
 .tippy-arrow {
   overflow: hidden;
+  pointer-events: none;
 }
 .tippy-box[data-placement="top"] .tippy-arrow {
   inset: unset;

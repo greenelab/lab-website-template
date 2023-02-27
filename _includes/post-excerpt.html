@@ -5,8 +5,8 @@
 %}
 
 <div class="post-excerpt">
-  {% assign url = post.url | default: "" %}
-  {% assign title = post.title | default: "" %}
+  {% assign url = post.url %}
+  {% assign title = post.title %}
   <p>
     <a href="{{ url | relative_url }}">{{ title }}</a>
   </p>
@@ -26,7 +26,7 @@
     | default: ""
     | strip_html
   %}
-  <p>
+  <p data-search="{{ post.content | strip_html | strip_newlines }}">
     {{ excerpt }}
   </p>
 </div>
