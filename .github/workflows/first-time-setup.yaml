@@ -2,9 +2,6 @@ name: first-time-setup
 run-name: first time setup of repo
 
 on:
-  # run when called from another workflow
-  workflow_call:
-
   # run if user manually requests it
   workflow_dispatch:
 
@@ -61,11 +58,9 @@ jobs:
 
       - name: Set vars for personalization
         run: |
-          name="${{ github.repository_owner }}"
-          title="${name^}'s Website"
+          user="${{ github.repository_owner }}"
           description="An engaging 1-3 sentence description of your lab."
-          echo "NAME=${name}" >> $GITHUB_ENV
-          echo "TITLE=${title}" >> $GITHUB_ENV
+          echo "USER=${user}" >> $GITHUB_ENV
           echo "DESCRIPTION=${description}" >> $GITHUB_ENV
 
       - name: Personalize readme for user
@@ -89,13 +84,13 @@ jobs:
             const { parse, stringify } = require("yaml");
             const file = "_config.yaml";
             const config = parse(readFileSync(file).toString());
-            config.title = "${{ env.TITLE }}";
+            config.title = "${{ env.USER }}";
             config.description = "${{ env.DESCRIPTION }}";
-            config.email = "contact@${{ env.name }}.com";
-            config.github = "${{ env.name }}";
-            config.twitter = "${{ env.name }}";
-            config.instagram = "${{ env.name }}";
-            config.youtube = "${{ env.name }}";
+            config.email = "contact@${{ env.USER }}.com";
+            config.github = "${{ env.USER }}";
+            config.twitter = "${{ env.USER }}";
+            config.instagram = "${{ env.USER }}";
+            config.youtube = "${{ env.USER }}";
             writeFileSync(file, stringify(config));
 
       - name: Personalize homepage for user
@@ -105,9 +100,9 @@ jobs:
             const { readFileSync, writeFileSync } = require("fs");
             const file = "index.md";
             let contents = readFileSync(file).toString();
-            const find = /\# Lab Website Template[\s\S]+?({% include section\.html)/g;
-            const replace = `# ${{ env.TITLE }}\n\n${{ env.DESCRIPTION }}\n\n$1`;
-            contents = contents.replaceAll(find, replace);
+            const find = /\# Lab Website Template[\s\S]+({% include section\.html)/;
+            const replace = `# ${{ env.TITLE }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
+            contents = contents.replace(find, replace);
             writeFileSync(file, contents);
 
       - name: Commit changed files

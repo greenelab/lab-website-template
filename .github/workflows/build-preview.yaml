@@ -12,6 +12,10 @@ on:
 env:
   PREVIEWS_FOLDER: preview
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   build-preview:
     runs-on: ubuntu-latest

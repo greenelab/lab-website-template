@@ -12,6 +12,9 @@ on:
 env:
   PREVIEWS_FOLDER: preview
 
+permissions:
+  contents: write
+
 jobs:
   build-site:
     runs-on: ubuntu-latest

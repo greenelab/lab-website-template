@@ -11,6 +11,10 @@ on:
   # run if user manually requests it
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   FORCE_COLOR: true
   GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }}
