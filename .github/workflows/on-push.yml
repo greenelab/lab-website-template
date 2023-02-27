@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+  # run if user manually requests it
+  workflow_dispatch:
+
 permissions:
   contents: write
   pull-requests: write

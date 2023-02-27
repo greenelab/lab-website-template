@@ -9,6 +9,9 @@ on:
     branches:
       - gh-pages
 
+  # run if user manually requests it
+  workflow_dispatch:
+
 permissions:
   contents: write
 

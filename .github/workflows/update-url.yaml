@@ -47,8 +47,8 @@ jobs:
             writeFileSync(file, contents);
 
       - name: Check if readme changed
-        uses: tj-actions/verify-changed-files@v13
         id: changed
+        uses: tj-actions/verify-changed-files@v13
         with:
           files: |
             README.md

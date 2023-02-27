@@ -4,6 +4,9 @@ run-name: update citations
 on:
   # run when called from another workflow
   workflow_call:
+    inputs:
+      open-pr:
+        type: boolean
     outputs:
       changed:
         value: ${{ jobs.update-citations.outputs.changed }}
@@ -50,8 +53,8 @@ jobs:
         timeout-minutes: 15
 
       - name: Check if citations changed
-        uses: tj-actions/verify-changed-files@v13
         id: changed
+        uses: tj-actions/verify-changed-files@v13
         with:
           files: |
             _data/citations.yaml
@@ -59,7 +62,7 @@ jobs:
       - name: Commit updated citations to branch
         if: |
           steps.changed.outputs.files_changed == 'true' &&
-          github.event_name != 'schedule'
+          inputs.open-pr != true
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update citations"
@@ -67,7 +70,7 @@ jobs:
       - name: Open pull request with updated citations
         if: |
           steps.changed.outputs.files_changed == 'true' &&
-          github.event_name == 'schedule'
+          inputs.open-pr == true
         uses: peter-evans/create-pull-request@v4
         with:
           branch: citation-update
