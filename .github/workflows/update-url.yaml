@@ -43,7 +43,10 @@ jobs:
             const path = "${{ steps.pages.outputs.base_path }}";
             const url = "${{ steps.pages.outputs.base_url }}";
             const replace = `**[${host}${path}](${url})**`;
-            contents = contents.replace(find, replace);
+            if (contents.match(find))
+              contents = contents.replace(find, replace);
+            else
+              contents = `Visit ${replace} 🚀\n\n` + contents;
             writeFileSync(file, contents);
 
       - name: Check if readme changed

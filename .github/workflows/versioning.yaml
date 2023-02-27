@@ -125,11 +125,11 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          custom_tag: ${{ steps.version.outputs.version }}
+          custom_tag: ${{ fromJson(steps.version.outputs.result).version }}
 
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ steps.version.outputs.version }}
-          name: ${{ steps.version.outputs.version }}
-          body: ${{ steps.version.outputs.body }}
+          tag: ${{ fromJson(steps.version.outputs.result).version }}
+          name: ${{ fromJson(steps.version.outputs.result).version }}
+          body: ${{ fromJson(steps.version.outputs.result).body }}
