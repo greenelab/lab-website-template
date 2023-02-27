@@ -125,7 +125,7 @@ for index, source in enumerate(sources):
 
         except Exception as e:
             # if manually-entered source, throw error on cite failure
-            if source.get("plugin") == "sources":
+            if source.get("plugin") == "sources.py":
                 log(e, 3, "ERROR")
                 error = True
             # otherwise, just warn
