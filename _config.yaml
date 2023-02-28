@@ -1,74 +1,52 @@
-# site properties and page defaults
-title: Pividori Lab
+title: pivlab
 subtitle: by the Greene Lab
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+description: An engaging 1-3 sentence description of your lab.
 header: images/background.jpg
 footer: images/background.jpg
-baseurl:
-
-# site social media and other links
+baseurl: null
 links:
   email: miltondp@pivlab.org
   orcid: 0000-0002-3035-4403
   google-scholar: servJtkAAAAJ
   github: pivlab
   twitter: miltondp
-  # instagram: YourLabHandle
-  # youtube: YourLabChannel
-
-### jekyll settings
-
-# front matter defaults
 defaults:
-  # all markdown files
   - scope:
       path: ""
     values:
       layout: default
-  # markdown files in /_members
   - scope:
-      type: "members"
+      type: members
     values:
       layout: member
-  # markdown files in /_posts
   - scope:
-      type: "posts"
+      type: posts
     values:
       layout: post
-
 collections:
-  # generate page for each member
   members:
     output: true
-  # generate page for each post
   posts:
     output: true
-
-# jekyll plugins
 plugins:
   - jekyll-spaceship
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
-
-# code block syntax highlighting
 highlighter: rouge
-
-# jekyll theme
 theme: null
-
-# sass settings
 sass:
   sass_dir: _styles
-
-# force jekyll to include certain files/folders
 include:
   - _styles
   - _scripts
-
-# force jekyll to exclude certain files/folders
 exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+email: contact@pivlab.com
+github: pivlab
+twitter: pivlab
+instagram: pivlab
+youtube: pivlab
