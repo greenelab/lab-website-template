@@ -4,7 +4,12 @@
     data-flip
   {% endif %}
 >
-  <a href="{{ include.link | relative_url }}" class="feature-image">
+  <a
+    {% if include.link %}
+      href="{{ include.link | relative_url }}" 
+    {% endif %}
+    class="feature-image"
+  >
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"

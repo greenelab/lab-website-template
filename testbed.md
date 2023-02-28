@@ -131,7 +131,7 @@ Section, `size=wide`
 
 ## Figure
 
-{% include figure.html image="images/icon.png" caption="`px` width" link="team" width="400px" %}
+{% include figure.html image="images/icon.png" caption="`px` width" width="400px" %}
 {% include figure.html image="images/icon.png" caption="`%` width" link="team" width="50%" %}
 {% include figure.html image="images/icon.png" caption="`px` height" link="team" height="200px" %}
 {% include figure.html image="images/fallback.svg" caption="`px` width, svg" link="team" width="400px" %}
@@ -167,7 +167,7 @@ Section, `size=wide`
 _lorem_ **ipsum**.
 {:.center}
 {% endcapture %}
-{% include feature.html image="images/icon.png" link="team" title="Title" text=text flip=true %}
+{% include feature.html image="images/icon.png" title="Title" text=text flip=true %}
 {% include feature.html link="team" title="Title" text=text %}
 
 {% include section.html %}
@@ -202,7 +202,7 @@ _lorem_ **ipsum**.
 ## Card
 
 {% include card.html image="images/icon.png" link="https://nasa.gov/" title="A Large Card" subtitle="A cool card" description="A cool description" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" %}
-{% include card.html image="images/icon.png" link="https://nasa.gov/" title="A Small Card" subtitle="A cool card" description="A cool description" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" style="small" %}
+{% include card.html image="images/icon.png" title="A Small Card" subtitle="A cool card" description="A cool description" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" style="small" %}
 
 {% include section.html %}
 
