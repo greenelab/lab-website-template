@@ -1,9 +1,9 @@
 ---
 ---
 
-# pivlab's Website
+# Who we are
 
-An engaging 1-3 sentence description of your lab.
+We are a research laboratory at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/). We design advanced machine learning methods applied to human disease with a systems biology approach.
 
 {% include section.html %}
 
