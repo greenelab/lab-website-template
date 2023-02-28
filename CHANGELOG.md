@@ -2,6 +2,14 @@
 
 Reference: common-changelog.org
 
+## [Unreleased]
+
+### Changed
+
+- De-href components when link isn't provided (no hand cursor icon on hover or nav on click).
+- In search script, limit highlights by total count instead of char length.
+- Grid and link style tweaks.
+
 ## 1.0.0 - 2023-02-28
 
 First official release.
