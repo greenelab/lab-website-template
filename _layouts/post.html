@@ -2,15 +2,16 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="center">{{ page.title }}</h1>
 
-{%-
+{%
   include post-info.html
   author=page.author
   member=page.member
-  date=page.date
+  published=page.date
+  updated=page.last_modified_at
   tags=page.tags
--%}
+%}
 
 {% include section.html %}
 
@@ -18,4 +19,4 @@ layout: default
 
 {% include section.html %}
 
-{%- include post-nav.html post=page -%}
+{% include post-nav.html post=page %}

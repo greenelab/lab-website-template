@@ -1,38 +1,39 @@
-{%- assign background = page.footer | default: site.footer | default: "none" -%}
-{%- if background == "none" -%}
-  {%- assign background = nil -%}
-{%- endif -%}
+{% assign image = page.footer | default: site.footer | relative_url %}
+{% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
-{%- assign dark = page.footer-dark -%}
-{%- if dark == nil -%}
-  {%- assign dark = site.footer-dark -%}
-{%- endif -%}
-{%- if dark == nil -%}
-  {%- assign dark = true -%}
-{%- endif -%}
-
-<footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
-
+<footer
+  class="background"
+  style="--image: url('{{ image }}')"
+  data-dark="{{ dark }}"
+  data-size="wide"
+>
   <!--
-  <div class="footer_row">
-    Extra details like contact info or address
-  </div>
+    <div>
+      Extra details like contact info or address
+    </div>
   -->
 
-  <div class="footer_row">
-    {%- for entry in site.links -%}
-      {%- assign key = entry[0] -%}
-      {%- assign value = entry[1] -%}
-      {%- include link.html type=key icon="" tooltip="" link=value -%}
-    {%- endfor -%}
+  <div>
+    {% for link in site.links %}
+      {% assign key = link[0] %}
+      {% assign value = link[1] %}
+      {% include button.html type=key text="" link=value style="bare" %}
+    {% endfor %}
   </div>
 
-  <div class="footer_row">
-    <span>
-      &copy; {{ site.time | date: '%Y' }} {{ site.title }}
-      &nbsp; | &nbsp;
-      Built with <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
-    </span>
+  <div>
+    &copy; {{ site.time | date: "%Y" }}
+    {{ site.title }}
+    &nbsp; | &nbsp; Built with
+    <a href="https://github.com/greenelab/lab-website-template">
+      Lab Website Template
+    </a>
   </div>
 
+  <input
+    type="checkbox"
+    class="dark-toggle"
+    data-tooltip="Dark mode"
+    oninput="onDarkToggleChange(event)"
+  >
 </footer>

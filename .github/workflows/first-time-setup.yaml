@@ -1,0 +1,111 @@
+name: first-time-setup
+run-name: first time setup of repo
+
+on:
+  # run if user manually requests it
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  first-time-setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Create Pages branch
+        uses: peterjgrainger/action-create-branch@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: "gh-pages"
+
+      - name: Checkout Pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      - name: Clear Pages branch
+        run: rm -rf * .github .gitignore
+
+      - name: Make .nojekyll file
+        run: touch .nojekyll
+
+      - name: Make placeholder homepage
+        run: echo "Placeholder homepage" > index.html
+
+      - name: Commit changes to Pages branch
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: gh-pages
+          commit_message: "Clear branch"
+
+      - name: Checkout main branch
+        uses: actions/checkout@v3
+
+      - name: Remove unneeded files
+        run: |
+          rm -rf \
+            README.md \
+            CHANGELOG.md \
+            testbed.md \
+            .github/ISSUE_TEMPLATE \
+            .github/workflows/versioning.yaml \
+            .github/pull_request_template.md \
+
+      - name: Set vars for personalization
+        run: |
+          user="${{ github.repository_owner }}"
+          description="An engaging 1-3 sentence description of your lab."
+          echo "USER=${user}" >> $GITHUB_ENV
+          echo "DESCRIPTION=${description}" >> $GITHUB_ENV
+
+      - name: Personalize readme for user
+        run: |
+          echo "
+          # ${{ env.USER }}'s Website
+
+          Visit **[website url](#)** 🚀
+
+          _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
+          " > README.md
+
+      - name: Install packages
+        run: yarn add yaml
+
+      - name: Personalize Jekyll config for user
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { readFileSync, writeFileSync } = require("fs");
+            const { parse, stringify } = require("yaml");
+            const file = "_config.yaml";
+            const config = parse(readFileSync(file).toString());
+            config.title = "${{ env.USER }}";
+            config.description = "${{ env.DESCRIPTION }}";
+            config.email = "contact@${{ env.USER }}.com";
+            config.github = "${{ env.USER }}";
+            config.twitter = "${{ env.USER }}";
+            config.instagram = "${{ env.USER }}";
+            config.youtube = "${{ env.USER }}";
+            writeFileSync(file, stringify(config));
+
+      - name: Personalize homepage for user
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { readFileSync, writeFileSync } = require("fs");
+            const file = "index.md";
+            let contents = readFileSync(file).toString();
+            const find = /\# Lab Website Template[\s\S]+({% include section\.html)/;
+            const replace = `# ${{ env.USER }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
+            contents = contents.replace(find, replace);
+            writeFileSync(file, contents);
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Setup repo"

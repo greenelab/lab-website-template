@@ -1,0 +1,22 @@
+---
+---
+
+.table-wrapper {
+  margin: 40px 0;
+  overflow-x: auto;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: var(--semi-bold);
+}
+
+th,
+td {
+  padding: 10px 15px;
+  border: solid 1px var(--light-gray);
+}

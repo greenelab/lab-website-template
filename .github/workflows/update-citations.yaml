@@ -1,0 +1,80 @@
+name: update-citations
+run-name: update citations
+
+on:
+  # run when called from another workflow
+  workflow_call:
+    inputs:
+      open-pr:
+        type: boolean
+    outputs:
+      changed:
+        value: ${{ jobs.update-citations.outputs.changed }}
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  FORCE_COLOR: true
+  GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }}
+
+jobs:
+  update-citations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Checkout branch contents
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "**/requirements.txt"
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade --requirement ./_cite/requirements.txt
+
+      - name: Build updated citations
+        run: python _cite/cite.py
+        timeout-minutes: 15
+
+      - name: Check if citations changed
+        id: changed
+        uses: tj-actions/verify-changed-files@v13
+        with:
+          files: |
+            _data/citations.yaml
+
+      - name: Commit updated citations to branch
+        if: |
+          steps.changed.outputs.files_changed == 'true' &&
+          inputs.open-pr != true
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update citations"
+
+      - name: Open pull request with updated citations
+        if: |
+          steps.changed.outputs.files_changed == 'true' &&
+          inputs.open-pr == true
+        uses: peter-evans/create-pull-request@v4
+        with:
+          branch: citation-update
+          title: Periodic citation update
+
+    outputs:
+      changed: ${{ steps.changed.outputs.files_changed }}

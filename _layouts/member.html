@@ -2,42 +2,50 @@
 layout: default
 ---
 
-<h1>{{ page.name | default: page.title }}</h1>
+{% capture col1 %}
 
-{%- include figure.html image=page.image -%}
+{% include portrait.html lookup=page.slug %}
 
-<p class="center">
-  {%- include role.html type=page.role text=true description=page.description -%}
-</p>
+<div>
+  {% for link in page.links %}
+    {% assign key = link[0] %}
+    {% assign value = link[1] %}
+    {% include button.html type=key link=value style="bare" %}
+  {% endfor %}
+</div>
 
-<p class="center">
-  {%- for entry in page.links -%}
-    {%- assign key = entry[0] -%}
-    {%- assign value = entry[1] -%}
-    {%- include link.html type=key icon="" text="" tooltip="" link=value -%}
-  {%- endfor -%}
-</p>
+{% endcapture %}
+
+{% capture col2 %}
 
 {{ content }}
 
-{%- assign aliases = "" | split: ',' -%}
+{% assign aliases = page.aliases
+  | default: page.name
+  | default: page.title
+  | join: ","
+  | split: ","
+  | array_filter
+%}
 
-{%- if page.aliases.first -%}
-  {%- assign aliases = aliases | concat: page.aliases -%}
-{%- elsif page.aliases -%}
-  {%- assign aliases = aliases | push: page.aliases -%}
-{%- elsif page.name -%}
-  {%- assign aliases = aliases | push: page.name -%}
-{%- elsif page.title -%}
-  {%- assign aliases = aliases | push: page.title -%}
-{%- endif -%}
+{% capture search -%}
+  research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
+{%- endcapture %}
 
-{%- assign search = aliases | join: '" "' | prepend: '"' | append: '"' | prepend: "/research/?search=" -%}
-
-{%- capture text -%}
+<a href="{{ search | relative_url }}">
   See {{ page.name | default: page.title }}'s papers on the Research page
-{%- endcapture -%}
+</a>
 
-<p class="center">
-  {%- include link.html icon="fas fa-book-open" text=text link=search -%}
-</p>
+{% capture search -%}
+  blog/?search={{ page.name }}
+{%- endcapture %}
+
+<!-- 
+<a href="{{ search | relative_url }}">
+  See {{ page.name | default: page.title }}'s posts on the Blog page
+</a>
+ -->
+ 
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 %}

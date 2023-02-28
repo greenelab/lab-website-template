@@ -1,18 +1,18 @@
-<p class="post_nav">
+<div class="post-nav">
   <span>
-    {%- if include.post.previous -%}
-      <i class="fas fa-angle-left"></i> Previous post<br />
+    {% if include.post.previous %}
+      {% include icon.html icon="fa-solid fa-angle-left" %} Previous post<br>
       <a href="{{ include.post.previous.url | relative_url }}">
-        {{- include.post.previous.title -}}
+        {{ include.post.previous.title }}
       </a>
-    {%- endif -%}
+    {% endif %}
   </span>
   <span>
-    {%- if include.post.next -%}
-      Next post <i class="fas fa-angle-right"></i><br />
+    {% if include.post.next %}
+      Next post {% include icon.html icon="fa-solid fa-angle-right" %}<br>
       <a href="{{ include.post.next.url | relative_url }}">
-        {{- include.post.next.title -}}
+        {{ include.post.next.title }}
       </a>
-    {%- endif -%}
+    {% endif %}
   </span>
-</p>
+</div>

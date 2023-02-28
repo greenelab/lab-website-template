@@ -1,0 +1,26 @@
+---
+---
+
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.figure-link {
+  display: contents;
+}
+
+.figure-image {
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.figure-caption {
+  font-style: italic;
+  text-align: center;
+}

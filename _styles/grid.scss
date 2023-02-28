@@ -1,0 +1,54 @@
+---
+---
+
+$two: 750px;
+$one: 500px;
+
+.grid {
+  display: grid;
+  --repeat: 3;
+  grid-template-columns: repeat(var(--repeat), 1fr);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.grid > * {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  // max-height: 50vh;
+}
+
+@media (max-width: $two) {
+  .grid {
+    --repeat: 2;
+  }
+}
+
+@media (max-width: $one) {
+  .grid {
+    --repeat: 1;
+  }
+}
+
+.grid[data-style="square"] {
+  align-items: center;
+
+  & > * {
+    aspect-ratio: 1 / 1;
+    margin: 0 !important;
+  }
+
+  & img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-width: unset;
+    max-height: unset;
+  }
+}
+
+.grid > *:where(h1, h2, h3, h4) {
+  display: none;
+}

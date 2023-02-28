@@ -1,11 +1,11 @@
-<div class="search_box">
+<div class="search-box">
   <input
-    class="search_input"
+    type="text"
+    class="search-input"
     oninput="onSearchInput(this)"
-    placeholder="Search"
-    title="Search content on this page"
+    placeholder="Search items on this page"
   />
   <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
-    <i class="fas fa-search"></i>
+    {% include icon.html icon="fa-solid fa-magnifying-glass" %}
   </button>
 </div>

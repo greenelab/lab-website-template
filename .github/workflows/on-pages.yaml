@@ -1,0 +1,27 @@
+name: on-pages
+run-name: on pages deploy
+
+on:
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types:
+      - completed
+    branches:
+      - gh-pages
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-url:
+    # only run on user instance of template, not template itself
+    if: github.repository != 'greenelab/lab-website-template'
+    uses: ./.github/workflows/update-url.yaml
+
+  build-site:
+    needs: update-url
+    if: needs.update-url.outputs.changed == 'true'
+    uses: ./.github/workflows/build-site.yaml

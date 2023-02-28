@@ -1,45 +1,44 @@
-{%- if include.style == "small" -%}
-  {%- assign width = 200 -%}
-{%- else -%}
-  {%- assign width = 350 -%}
-{%- endif -%}
+{% if include.link %}
+  {% assign tag = "a" %}
+{% else %}
+  {% assign tag = "span" %}
+{% endif %}
 
-{%- assign placeholder = "images/placeholder.svg" | relative_url -%}
-
-{%- if include.link -%}
-  {%- assign tag = "a" -%}
-{%- else -%}
-  {%- assign tag = "span" -%}
-{%- endif -%}
-
-{::nomarkdown}
-<span class="card" style="--width: {{ width }}px">
-  <{{ tag }} href="{{ include.link | relative_url }}" class="card_image">
+<div class="card" data-style="{{ include.style }}">
+  <{{ tag }}
+    href="{{ include.link | relative_url }}"
+    class="card-image"
+  >
     <img
       src="{{ include.image | relative_url }}"
-      onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
       loading="lazy"
-      alt=""
+      {% include fallback.html %}
     >
   </{{ tag }}>
 
-  {%- if include.title -%}
-    <{{ tag }} href="{{ include.link | relative_url }}" {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %} class="card_title">
-      {{- include.title -}}
-    </{{ tag }}>
-  {%- endif -%}
+  <div class="card-text">
+    {% if include.title %}
+      <{{ tag }}
+        href="{{ include.link | relative_url }}"
+        {% if include.tooltip %}
+          data-tooltip="{{ include.tooltip }}"
+        {% endif %}
+        class="card-title"
+      >
+        {{ include.title }}
+      </{{ tag }}>
+    {% endif %}
 
-  {%- if include.subtitle -%}
-    <span class="card_subtitle">{{- include.subtitle -}}</span>
-  {%- endif -%}
+    {% if include.subtitle %}
+      <span class="card-subtitle">{{ include.subtitle }}</span>
+    {% endif %}
 
-  {%- if include.description -%}
-    {{- include.description | markdownify -}}
-  {%- endif -%}
+    {% if include.description %}
+      {{ include.description | markdownify }}
+    {% endif %}
 
-  {%- if include.tags or include.repo -%}
-    {%- include tags.html tags=include.tags repo=include.repo -%}      
-  {%- endif -%}
-
-</span>
-{:/}
+    {% if include.tags or include.repo %}
+      {% include tags.html tags=include.tags repo=include.repo %}
+    {% endif %}
+  </div>
+</div>

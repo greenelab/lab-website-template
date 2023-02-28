@@ -1,9 +1,7 @@
-### basic settings
-
 # site properties and page defaults
 title: Pividori Lab
+subtitle: by the Greene Lab
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
 baseurl:
@@ -11,21 +9,16 @@ baseurl:
 # site social media and other links
 links:
   email: miltondp@pivlab.org
-  google-scholar: ETJoidYAAAAJ
+  orcid: 0000-0002-3035-4403
+  google-scholar: servJtkAAAAJ
   github: pivlab
   twitter: miltondp
+  # instagram: YourLabHandle
+  # youtube: YourLabChannel
 
-### advanced settings
+### jekyll settings
 
-# automatic citations
-auto-cite:
-  plugins:
-    - name: sources
-      input:
-        - ../_data/sources.yaml
-  output: ../_data/citations.yaml
-
-# default front matter parameters for markdown files
+# front matter defaults
 defaults:
   # all markdown files
   - scope:
@@ -43,29 +36,39 @@ defaults:
     values:
       layout: post
 
-# collections
 collections:
+  # generate page for each member
   members:
     output: true
+  # generate page for each post
+  posts:
+    output: true
 
-# sass settings
-sass:
-  sass_dir: css
-
-# syntax highlighting
-highlighter: rouge
-
-# plugins
+# jekyll plugins
 plugins:
+  - jekyll-spaceship
+  - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
-  - jekyll-sitemap
-  # - jekyll-github-metadata
-  # - jekyll-avatar
-  # - jekyll-gist
-  # - jekyll-mentions
-  # - jekyll-relative-links
-  # - jemoji
+  - jekyll-last-modified-at
+
+# code block syntax highlighting
+highlighter: rouge
 
 # jekyll theme
 theme: null
+
+# sass settings
+sass:
+  sass_dir: _styles
+
+# force jekyll to include certain files/folders
+include:
+  - _styles
+  - _scripts
+
+# force jekyll to exclude certain files/folders
+exclude:
+  - README.md
+  - LICENSE.md
+  - CITATION.cff
