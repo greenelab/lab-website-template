@@ -5,8 +5,8 @@ logo-title: false
 logo-subtitle: true
 header: images/background.jpg
 footer: images/background.jpg
-header-dark: false
-footer-dark: false
+header-dark: true
+footer-dark: true
 
 # site social media and other links
 links:
