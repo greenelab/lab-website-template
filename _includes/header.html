@@ -24,11 +24,13 @@
         {% endif %}
       </span>
     {% endif %}
-    {% if site["logo-text"] != false %}
+    {% if site["logo-title"] != false %}
       <span class="title" data-tooltip="Home">
         {% if site.title %}
           <span>{{ site.title }}</span>
         {% endif %}
+    {% endif %}
+    {% if site["logo-subtitle"] != false %}
         {% if site.subtitle %}
           <span>{{ site.subtitle }}</span>
         {% endif %}
