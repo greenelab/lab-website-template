@@ -1,9 +1,11 @@
 ---
 ---
 
-# Who we are
+# Who we are, what we do
 
-We are a research laboratory at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/). We design advanced machine learning methods applied to human disease with a systems biology approach.
+We are a research laboratory at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/).
+We design advanced machine learning methods applied to human disease with a systems biology approach.
+Strongly committed to open science and open source, we use [GitHub](https://github.com/pivlab) for the development of our tools and [Manubot](https://manubot.org/) for collaborative, versioned scholarly manuscripts.
 
 {% include section.html %}
 
