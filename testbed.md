@@ -226,7 +226,7 @@ _Lorem_ **ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
 ## Card
 
 {% include card.html image="images/icon.png" link="https://nasa.gov/" title="A Large Card" subtitle="A cool card" description="A cool description" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" %}
-{% include card.html image="images/icon.png" title="A Small Card" subtitle="A cool card" description="A cool description" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" style="small" %}
+{% include card.html image="images/icon.png" title="A Small Card" subtitle="A cool card" description="_Lorem_ **ipsum**" tooltip="A cool tooltip" tags="manual tag" repo="greenelab/lab-website-template" style="small" %}
 
 {% include section.html %}
 
