@@ -5,3 +5,12 @@
   height: 1em;
   vertical-align: middle;
 }
+
+span.icon {
+  display: inline-block;
+}
+
+span.icon > svg {
+  height: 100%;
+  vertical-align: top;
+}
