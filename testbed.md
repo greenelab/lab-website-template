@@ -222,6 +222,23 @@ _lorem_ **ipsum**.
 
 {% include section.html %}
 
+## Alert
+
+{% capture content %}
+**Alert**  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{% endcapture %}
+
+{% include alert.html type="tip" content=content %}
+{% include alert.html type="help" content=content %}
+{% include alert.html type="info" content=content %}
+{% include alert.html type="success" content=content %}
+{% include alert.html type="warning" content=content %}
+{% include alert.html type="error" content=content %}
+
+{% include section.html %}
+
 ## Tags
 
 {% include tags.html tags="ovarian cancer, dataset, gene expression" repo="greenelab/lab-website-template" link="blog" %}
@@ -244,9 +261,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Code:
 
 {% capture content %}
+
 ```javascript
-const test = "Lorem ipsum dolor sit amet"
+const test = "Lorem ipsum dolor sit amet";
 ```
+
 {% endcapture %}
 {% include float.html content=content %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Tristique magna sit amet purus gravida quis blandit turpis cursus. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. A cras semper auctor neque vitae tempus quam pellentesque nec. At tellus at urna condimentum mattis pellentesque. Ipsum consequat nisl vel pretium. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Integer vitae justo eget magna fermentum iaculis eu non diam. Mus mauris vitae ultricies leo integer malesuada nunc vel. Leo integer malesuada nunc vel risus. Ornare arcu odio ut sem nulla pharetra. Purus semper eget duis at tellus at urna condimentum. Enim neque volutpat ac tincidunt vitae semper quis lectus.
@@ -293,7 +312,6 @@ List of blog posts:
 {% endcapture %}
 {% include grid.html content=content %}
 
-
 {% include section.html %}
 
 ## Cols
@@ -327,26 +345,30 @@ Lorem _ipsum_ dolor **sit** amet, consectetur adipiscing elit, sed do eiusmod te
 {% endcapture %}
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
-
 Code:
 
 {% capture col1 %}
+
 ```javascript
-const test = "Lorem ipsum dolor sit amet"
+const test = "Lorem ipsum dolor sit amet";
 ```
+
 {% endcapture %}
 {% capture col2 %}
+
 ```javascript
-const test = "Lorem ipsum dolor sit amet"
+const test = "Lorem ipsum dolor sit amet";
 ```
+
 {% endcapture %}
 {% capture col3 %}
+
 ```javascript
-const test = "Lorem ipsum dolor sit amet"
+const test = "Lorem ipsum dolor sit amet";
 ```
+
 {% endcapture %}
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
-
 
 {% include section.html %}
 
@@ -360,5 +382,3 @@ const test = "Lorem ipsum dolor sit amet"
 ## Site Search
 
 {% include site-search.html %}
-
-{% include section.html %}
