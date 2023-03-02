@@ -71,12 +71,6 @@ popup.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 ```
  
 This sentence has `inline code`, useful for making references to variables, packages, versions, etc. within a sentence.
- 
-Font Awesome icons:
-{% include icon.html icon="fa-solid fa-flask" %}
-{% include icon.html icon="fa-solid fa-microscope" %}
-{% include icon.html icon="fa-solid fa-bacteria" %}
-{% include icon.html icon="fa-solid fa-virus" %}
 
 {% include section.html %}
 
@@ -156,7 +150,13 @@ Section, `size=wide`
 
 ## Icon
 
-{% include icon.html icon="fa-brands fa-github" %}{% include icon.html icon="orcid.svg" %}{% include icon.html icon="manubot.svg" %}
+{% include icon.html icon="fa-solid fa-flask" %}
+{% include icon.html icon="fa-solid fa-microscope" %}
+{% include icon.html icon="fa-solid fa-bacteria" %}
+{% include icon.html icon="fa-solid fa-virus" %}
+{% include icon.html icon="fa-brands fa-github" %}
+{% include icon.html icon="orcid.svg" %}
+{% include icon.html icon="manubot.svg" %}
 
 {% include section.html %}
 
@@ -211,6 +211,7 @@ _lorem_ **ipsum**.
 {% include portrait.html lookup="jane-smith" %}
 {% include portrait.html lookup="john-doe" style="small" %}
 {% include portrait.html name="Manual name" %}
+{% include portrait.html style="small" %}
 
 {% include section.html %}
 
