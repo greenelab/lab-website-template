@@ -173,7 +173,6 @@ Section, `size=full` w/ figure
 {% include icon.html icon="fa-solid fa-bacteria" %}
 {% include icon.html icon="fa-solid fa-virus" %}
 {% include icon.html icon="fa-brands fa-github" %}
-{% include icon.html icon="orcid.svg" %}
 {% include icon.html icon="manubot.svg" %}
 
 {% include section.html %}
