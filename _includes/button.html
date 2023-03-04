@@ -13,6 +13,7 @@
       {% if include.flip %}
         data-flip
       {% endif %}
+      aria-label="{{ button.tooltip }}"
     >
       {% include icon.html icon=button.icon %}
       {% if button.text and button.text != "" %}

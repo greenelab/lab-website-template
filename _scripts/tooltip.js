@@ -21,6 +21,10 @@
       allowHTML: true,
       interactive: true,
       appendTo: () => document.body,
+      aria: {
+        content: "describedby",
+        expanded: null,
+      },
       // onHide: () => false, // debug
     });
   };
