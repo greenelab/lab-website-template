@@ -12,32 +12,34 @@
   flex-direction: column;
   gap: 20px;
   margin: 20px;
+  width: 175px;
   max-width: 100%;
   text-decoration: none;
+}
+
+.portrait[data-style="small"] {
+  width: 100px;
 }
 
 .portrait[data-style="tiny"] {
   flex-direction: row;
   gap: 15px;
+  width: unset;
   text-align: left;
 }
 
 .portrait-image {
-  width: 150px;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   object-fit: cover;
   box-shadow: var(--shadow);
 }
 
-.portrait[data-style="small"] .portrait-image {
-  width: 75px;
-}
-
 .portrait[data-style="tiny"] .portrait-image {
   width: 50px;
 }
 
+.portrait[data-style="small"] .portrait-role,
 .portrait[data-style="tiny"] .portrait-role {
   display: none;
 }

@@ -168,12 +168,14 @@ Section, `size=full` w/ figure
 
 ## Icon
 
-{% include icon.html icon="fa-solid fa-flask" %}
-{% include icon.html icon="fa-solid fa-microscope" %}
 {% include icon.html icon="fa-solid fa-bacteria" %}
 {% include icon.html icon="fa-solid fa-virus" %}
-{% include icon.html icon="fa-brands fa-github" %}
+{% include icon.html icon="fa-solid fa-flask" %}
 {% include icon.html icon="manubot.svg" %}
+
+{% include icon.html icon="fa-brands fa-github" %} Lorem
+{% include icon.html icon="fa-solid fa-microscope" %} Ipsum
+{% include icon.html icon="manubot.svg" %} Dolor
 
 {% include section.html %}
 

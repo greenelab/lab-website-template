@@ -2,15 +2,15 @@
 ---
 
 .icon {
-  height: 1em;
-  vertical-align: middle;
+  font-size: 1.5em;
 }
 
 span.icon {
-  display: inline-block;
+  line-height: 1;
 }
 
 span.icon > svg {
-  height: 100%;
-  vertical-align: top;
+  position: relative;
+  top: 0.1em;
+  height: 1em;
 }
