@@ -73,7 +73,7 @@ search:
 # social media
 
 orcid:
-  icon: orcid.svg
+  icon: fa-brands fa-orcid
   text: ORCID
   tooltip: ORCID
   link: https://orcid.org/$VALUE
