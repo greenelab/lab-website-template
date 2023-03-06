@@ -39,6 +39,10 @@ header a {
   max-width: 100%;
 }
 
+header span.home + span {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .logo {
   height: $logo;
 }
