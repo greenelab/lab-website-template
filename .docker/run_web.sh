@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # the name of the image
 IMAGE_NAME=lab-website-renderer
 IMAGE_TAG=latest
@@ -18,9 +17,10 @@ PLATFORM="--platform=linux/amd64"
 
 CUR_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 
-
+# move to the root of the repo
 cd ${CUR_DIR}/..
 
+# set a default 'docker run' command, which can be overridden for other platforms
 DOCKER_RUN_CMD="docker run"
 
 # set the docker run command based our platform
@@ -54,10 +54,17 @@ esac
 # (e.g., inotify, which isn't supported by qemu as of feb 2023)
 FORCE_POLLING="1"
 
+# extract bundler version from Gemfile.lock
+# as docker needs to know it to build the image
+BUNDLER_VERSION=$( grep -A1 'BUNDLED WITH' Gemfile.lock | tail -n 1 )
+
 # build the image using the project root as context.
 # if that succeeds, move on to running it
+# (we echo the build arg to exploit echo stripping leading whitespace)
 docker build ${PLATFORM} \
-    -t ${IMAGE} -f ./.docker/Dockerfile . && \
+    -t ${IMAGE} \
+    --build-arg BUNDLER_VERSION=$( echo ${BUNDLER_VERSION} ) \
+    -f ./.docker/Dockerfile . && \
 ${DOCKER_RUN_CMD} --name ${CONTAINER_NAME} ${PLATFORM} \
     --init \
     --rm -it \

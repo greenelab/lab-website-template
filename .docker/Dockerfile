@@ -4,10 +4,11 @@ FROM ruby:3.1.2
 RUN apt update && apt install -y python3 python3-pip && \
     pip install 'watchdog[watchmedo]'
 
-COPY ./auto-cite/requirements.txt /tmp/_cite/requirements.txt
+COPY ./_cite/requirements.txt /tmp/_cite/requirements.txt
 RUN python3 -m pip install --upgrade --requirement /tmp/_cite/requirements.txt
 
-ENV BUNDLER_VERSION  2.3.5
+ARG BUNDLER_VERSION 2.4.7
+ENV BUNDLER_VERSION=${BUNDLER_VERSION}
 
 # this needs to match the 'BUNDLED WITH' version in Gemfile.lock
 RUN gem install bundler:${BUNDLER_VERSION}
