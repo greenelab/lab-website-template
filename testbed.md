@@ -41,6 +41,10 @@ Text with extra blank lines above and below
 2. ordered list item 2
 3. ordered list item 3
 
+Plain image:
+
+![plain image](/images/photo.jpg)
+
 # Heading 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
