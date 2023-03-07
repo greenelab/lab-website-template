@@ -32,7 +32,7 @@ By leveraging the power of computational analysis and cutting-edge technology, w
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/ml_and_disease.png"
   link="research"
   title="Our Research"
   text=text
