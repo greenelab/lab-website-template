@@ -16,10 +16,9 @@
       link.setAttribute("aria-label", "link to this section");
       heading.append(link);
 
-      // if first heading in the section, move id from heading to parent section
-      const parent = heading.parentElement;
-      if (parent.matches("section")) {
-        parent.id = heading.id;
+      // if first heading in the section, move id to parent section
+      if (heading.matches("section > :first-child")) {
+        heading.parentElement.id = heading.id;
         heading.removeAttribute("id");
       }
     }
@@ -28,6 +27,8 @@
   const scrollToTarget = () => {
     const id = window.location.hash.replace("#", "");
     const target = document.getElementById(id);
+    console.log(id, target);
+
     if (!target) return;
     const offset = document.querySelector("header").clientHeight || 0;
     window.scrollTo({

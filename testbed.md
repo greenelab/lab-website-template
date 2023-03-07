@@ -252,17 +252,17 @@ _Lorem_ **ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
 {% capture lorem %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 {% endcapture %}
-{% capture content %}**Tip**  {{ lorem }}{% endcapture %}
+{% capture content %}**Tip** {{ lorem }}{% endcapture %}
 {% include alert.html type="tip" content=content %}
-{% capture content %}**Help**  {{ lorem }}{% endcapture %}
+{% capture content %}**Help** {{ lorem }}{% endcapture %}
 {% include alert.html type="help" content=content %}
-{% capture content %}**Info**  {{ lorem }}{% endcapture %}
+{% capture content %}**Info** {{ lorem }}{% endcapture %}
 {% include alert.html type="info" content=content %}
-{% capture content %}**Success**  {{ lorem }}{% endcapture %}
+{% capture content %}**Success** {{ lorem }}{% endcapture %}
 {% include alert.html type="success" content=content %}
-{% capture content %}**Warning**  {{ lorem }}{% endcapture %}
+{% capture content %}**Warning** {{ lorem }}{% endcapture %}
 {% include alert.html type="warning" content=content %}
-{% capture content %}**Error**  {{ lorem }}{% endcapture %}
+{% capture content %}**Error** {{ lorem }}{% endcapture %}
 {% include alert.html type="error" content=content %}
 
 {% include section.html %}
@@ -302,17 +302,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Regular
 
+With Markdown images
+
 {% capture content %}
-{% include figure.html image="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2" %}
-{% include figure.html image="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" %}
-{% include figure.html image="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" %}
-{% include figure.html image="images/icon.png" %}
-{% include figure.html image="images/icon.png" %}
-{% include figure.html image="images/icon.png" %}
+![image](https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2)
+
+![image](https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg)
+
+![image](https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp)
+
+![image](/images/icon.png)
+
+![image](/images/icon.png)
+
+![image](/images/icon.png)
 {% endcapture %}
 {% include grid.html content=content %}
 
 ### Square
+
+With figure components
 
 {% capture content %}
 {% include figure.html image="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2" %}
