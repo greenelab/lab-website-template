@@ -8,7 +8,11 @@
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"
-      alt=""
+      {% if include.alt_text %}
+        alt="{{ include.alt_text }}"
+      {% else %}
+        alt=""
+      {% endif %}
     >
   </a>
   <div class="feature-text">

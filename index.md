@@ -33,6 +33,7 @@ By leveraging the power of computational analysis and cutting-edge technology, w
 {%
   include feature.html
   image="images/ml_and_disease.png"
+  alt_text="'A realistic painting of machine learning disentangling the molecular mechanisms of disease' by Milton × DALL·E"
   link="research"
   title="Our Research"
   text=text
