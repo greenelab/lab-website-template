@@ -14,7 +14,10 @@ Strongly committed to open source and open science, we use [GitHub](https://gith
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our ultimate goal is to develop a comprehensive, multi-omics approach to understanding the complex interplay between genetics and disease.
+We use genetic studies to identify variants associated with disease, and investigate how changes in gene expression mediate these associations.
+Based on an omnigenic perspective, we develop advanced unsupervised methods to learn gene co-expression networks that allow us to identify "core" disease genes that might play a key role in disease development and progression.
+By leveraging the power of computational analysis and cutting-edge technology, we aim to unlock the secrets of disease and pave the way for new diagnostic and therapeutic approaches.
 
 {%
   include button.html
