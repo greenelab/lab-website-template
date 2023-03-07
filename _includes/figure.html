@@ -11,6 +11,7 @@
         width: {{ include.width | default: "auto" }};
         max-height: {{ include.height | default: "unset" }};
       "
+      alt="{{ include.caption }}"
       loading="lazy"
       {% include fallback.html %}
     >

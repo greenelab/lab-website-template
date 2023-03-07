@@ -5,7 +5,12 @@
     oninput="onSearchInput(this)"
     placeholder="Search items on this page"
   />
-  <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
+  <button
+    disabled
+    data-tooltip="Clear search"
+    aria-label="clear search"
+    onclick="onSearchClear()"
+  >
     {% include icon.html icon="fa-solid fa-magnifying-glass" %}
   </button>
 </div>

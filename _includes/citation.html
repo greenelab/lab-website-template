@@ -7,9 +7,14 @@
 
 <div class="citation">
   {% if include.style == "rich" %}
-    <a href="{{ citation.link | relative_url }}" class="citation-image">
+    <a
+      href="{{ citation.link | relative_url }}"
+      class="citation-image"
+      aria-label="{{ citation.title }}"
+    >
       <img
         src="{{ citation.image | relative_url }}"
+        alt="{{ citation.title }}"
         loading="lazy"
         {% include fallback.html %}
       >
