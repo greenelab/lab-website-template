@@ -9,12 +9,12 @@
       href="{{ include.link | relative_url }}" 
     {% endif %}
     class="feature-image"
-    aria-label="{{ include.title | default: "feature image" }}"
+    aria-label="{{ include.title | default: "feature link" }}"
   >
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"
-      alt=""
+      alt="{{ include.title | default: "feature image" }}"
       {% include fallback.html %}
     >
   </a>

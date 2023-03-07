@@ -4,6 +4,7 @@
       href="{{ include.link | relative_url }}"
     {% endif %}
     class="figure-image"
+    aria-label="{{ include.caption | default: "figure link" }}"
   >
     <img
       src="{{ include.image | relative_url }}"
@@ -11,7 +12,7 @@
         width: {{ include.width | default: "auto" }};
         max-height: {{ include.height | default: "unset" }};
       "
-      alt="{{ include.caption }}"
+      alt="{{ include.caption | default: "figure image" }}"
       loading="lazy"
       {% include fallback.html %}
     >

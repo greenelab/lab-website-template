@@ -11,11 +11,12 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
+    aria-label="{{ member.name | default: "member link" }}"
   >
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
-      alt="portrait"
+      alt="member portrait"
       loading="lazy"
       {% include fallback.html %}
     >

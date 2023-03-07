@@ -10,11 +10,11 @@
     <a
       href="{{ citation.link | relative_url }}"
       class="citation-image"
-      aria-label="{{ citation.title }}"
+      aria-label="{{ citation.title | default: "citation link" }}"
     >
       <img
         src="{{ citation.image | relative_url }}"
-        alt="{{ citation.title }}"
+        alt="{{ citation.title | default: "citation image" }}"
         loading="lazy"
         {% include fallback.html %}
       >
@@ -31,7 +31,9 @@
 
     <div
       class="citation-authors"
-      data-tooltip="{{ citation.authors | join: ", " }} "
+      {% if citation.authors.size > 10 %}
+        data-tooltip="{{ citation.authors | join: ", " }} "
+      {% endif %}
       tabindex="0"
     >
       {{
