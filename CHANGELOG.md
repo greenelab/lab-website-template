@@ -9,6 +9,7 @@ Reference: common-changelog.org
 - De-href components when link isn't provided (no hand cursor icon on hover or nav on click).
 - In search script, limit highlights by total count instead of char length.
 - Grid and link style tweaks.
+- Fix Lighthouse accessibility issues.
 
 ### Added
 
