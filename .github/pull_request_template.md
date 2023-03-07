@@ -8,6 +8,6 @@ FOR THE TEMPLATE MAINTAINER(S)
 
 Checklist:
 
-- [ ] I have updated CITATION and CHANGELOG.
+- [ ] I have updated CITATION and CHANGELOG as appropriate.
 - [ ] I have updated lab-website-template-docs as appropriate.
 - [ ] I have checked the testbed as appropriate.
