@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["icon.scss"],"names":[],"mappings":"AAAA;EACE;EACA","sourcesContent":[".icon {\n  height: 1em;\n  vertical-align: middle;\n}\n"],"file":"icon.css"}
