@@ -14,9 +14,8 @@ Strongly committed to open source and open science, we use [GitHub](https://gith
 
 {% capture text %}
 
-Our ultimate goal is to develop a comprehensive, multi-omics approach to understanding the complex interplay between genetics and disease.
-We use genetic studies to identify variants associated with disease, and investigate how changes in gene expression mediate these associations.
-Based on an omnigenic perspective, we develop advanced unsupervised methods to learn gene co-expression networks that allow us to identify "core" disease genes that might play a key role in disease development and progression.
+Our ultimate goal is to advance precision medicine by developing a comprehensive, multi-omics approach to understanding the complex interplay between genetics and disease.
+Our research uses the latest developments in machine learning for knowledge discovery to increasingly incorporate the emergent complexity present in biological systems.
 By leveraging the power of computational analysis and cutting-edge technology, we aim to unlock the secrets of disease and pave the way for new diagnostic and therapeutic approaches.
 
 {%
