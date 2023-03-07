@@ -1,4 +1,5 @@
 ---
+subtitle: research on biomedical informatics
 ---
 
 # Who we are, what we do
