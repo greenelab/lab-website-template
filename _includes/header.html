@@ -31,9 +31,11 @@
         {% endif %}
     {% endif %}
     {% if site["logo-subtitle"] != false %}
-        {% if site.subtitle %}
-          <span>{{ site.subtitle }}</span>
-        {% endif %}
+      {% if page.subtitle %}
+        <span>{{ page.subtitle }}</span>
+      {% elif site.subtitle %}
+        <span>{{ site.subtitle }}</span>
+      {% endif %}
       </span>
     {% endif %}
   </a>
