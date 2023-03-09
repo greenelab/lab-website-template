@@ -1,21 +1,17 @@
-#!/bin/bash
+#! /bin/bash
 
-if [ "${FORCE_POLLING:-0}" = "1" ]; then
-    echo "* enabled polling, since the runtime doesn't support notify-based mechanisms"
-    WATCHMEDO_POLLING_ARG="--debug-force-polling"
-    JEKYLL_POLLING_ARG="--force_polling"
-else
-    WATCHMEDO_POLLING_ARG=""
-    JEKYLL_POLLING_ARG=""
-fi
+# run jekyll serve in hot-reload mode.
+# rerun whenever _config.yaml changes (jekyll hot-reload doesn't work with this file).
+watchmedo auto-restart \
+    --debug-force-polling \
+    --patterns="_config.yaml" \
+    --signal SIGTERM \
+    -- bundle exec jekyll serve --open-url --force_polling --livereload --trace --host=0.0.0.0 &
 
-# run citation generator
-watchmedo shell-command ${WATCHMEDO_POLLING_ARG} \
-    --command='python3 /usr/src/app/_cite/cite.py' \
-    ./_data/sources.yaml &
-
-# serve the site in hot-reload mode forever.
-# reboot server whenever _config.yaml changes, as that's the only
-# thing jekyll can't hot-reload when it's modified
-watchmedo auto-restart ${WATCHMEDO_POLLING_ARG} --pattern='./_config.yaml' --signal SIGTERM \
-    -- bundle exec jekyll serve --host=0.0.0.0 --open-url ${JEKYLL_POLLING_ARG} --livereload --trace
+# run cite process.
+# rerun whenever _data files change.
+watchmedo shell-command \
+    --debug-force-polling \
+    --recursive \
+    --command="python3 _cite/cite.py" \
+    --patterns="_data/sources*;_data/orcid*;_data/pubmed*;_data/google-scholar*" \

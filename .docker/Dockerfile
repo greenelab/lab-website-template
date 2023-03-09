@@ -1,34 +1,33 @@
+# start with official ruby docker image as base
 FROM ruby:3.1.2
 
-# add in dependencies for citeproc and watching changes (i.e., watchdog)
-RUN apt update && apt install -y python3 python3-pip && \
-    pip install 'watchdog[watchmedo]'
-
-COPY ./_cite/requirements.txt /tmp/_cite/requirements.txt
-RUN python3 -m pip install --upgrade --requirement /tmp/_cite/requirements.txt
-
-ARG BUNDLER_VERSION 2.4.7
-ENV BUNDLER_VERSION=${BUNDLER_VERSION}
-
-# this needs to match the 'BUNDLED WITH' version in Gemfile.lock
-RUN gem install bundler:${BUNDLER_VERSION}
-
-# throw errors if Gemfile has been modified since Gemfile.lock
-RUN bundle _${BUNDLER_VERSION}_ config --global frozen 1
-
+# set working directory within container
 WORKDIR /usr/src/app
 
-COPY Gemfile Gemfile.lock ./
+# pull in ruby (jekyll) and python (cite process) package info
+COPY Gemfile Gemfile.lock ./_cite/requirements.txt .
 
-RUN ls
+# command to get bundler version
+ARG BUNDLER="grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs"
 
-# and install deps from the Gemfile/lockfile
-RUN bundle _${BUNDLER_VERSION}_ install
+# install ruby bundler
+RUN gem install bundler --version $(eval ${BUNDLER})
 
+# install ruby packages
+RUN bundle _$(eval ${BUNDLER})_ install
+
+# install python
+RUN apt update && apt install -y python3 python3-pip
+
+# install python packages
+RUN python3 -m pip install --upgrade --requirement requirements.txt
+
+# install python package for listening for file changes
+RUN pip install "watchdog[watchmedo]"
+
+# ports used by jekyll
 EXPOSE 4000
 EXPOSE 35729
 
-COPY .docker/entrypoint.sh /var/entrypoint.sh
-
-# finally, run jekyll in livereload mode
-CMD [ "/var/entrypoint.sh" ]
+# run jekyll and cite process
+CMD [ ".docker/entrypoint.sh" ]
