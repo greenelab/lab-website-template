@@ -8,7 +8,7 @@
    y="0px"
    viewBox="0 0 153.386 59.840259"
    xml:space="preserve"
-   sodipodi:docname="new_white.svg"
+   sodipodi:docname="logo.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -20,19 +20,19 @@
    bordercolor="#000000"
    borderopacity="0.25"
    inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="false"
    inkscape:deskcolor="#d1d1d1"
    showgrid="false"
-   inkscape:zoom="5.0769627"
-   inkscape:cx="57.022282"
-   inkscape:cy="28.954319"
+   inkscape:zoom="6.808366"
+   inkscape:cx="67.270179"
+   inkscape:cy="23.353621"
    inkscape:window-width="1708"
    inkscape:window-height="1331"
-   inkscape:window-x="1724"
+   inkscape:window-x="8"
    inkscape:window-y="64"
    inkscape:window-maximized="0"
-   inkscape:current-layer="g968" />
+   inkscape:current-layer="g32" />
 <style
    type="text/css"
    id="style942">
@@ -173,12 +173,13 @@
    id="g32">
 			<polygon
    class="st3"
-   points="7.72,59.96 6.1,53.05 14.9,50.93 17.05,60.06 "
+   points="14.9,50.93 17.05,60.06 7.72,59.96 6.1,53.05 "
    id="polygon28"
-   style="clip-rule:evenodd;fill:#f4dd47;fill-rule:evenodd" />
+   style="clip-rule:evenodd;fill:#f4dd47;fill-rule:evenodd"
+   transform="translate(-0.00390625,-0.01171875)" />
 			<path
    class="st3"
-   d="m 30.97,52.32 c -5.2,1.18 -10.66,0.47 -15.15,-1.63 l 13.97,-3.35 v 0 z"
+   d="m 30.977812,52.30047 c -5.2,1.18 -10.66,0.47 -15.15,-1.63 l 13.97,-3.35 v 0 z"
    id="path30"
    style="clip-rule:evenodd;fill:#f4dd47;fill-rule:evenodd" />
 		</g>
