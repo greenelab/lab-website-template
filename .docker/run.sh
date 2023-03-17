@@ -9,13 +9,20 @@ CONTAINER=lab-website-renderer
 # choose platform flag
 PLATFORM=""
 
-# default vars
+# docker run command
 DOCKER_RUN="docker run"
+
+# fix for windows faux linux shells e.g. git bash
+if [[ $OSTYPE == msys* ]] || [[ $OSTYPE == cygwin* ]]; then
+    DOCKER_RUN="winpty docker run"
+fi
+
+# working directory
 WORKING_DIR=$(pwd)
 
-# windows-specific vars
-if [[ $OSTYPE == msys* ]]; then
-    DOCKER_RUN="winpty docker run"
+# working directory in windows path format
+DOCKER_OSTYPE=$( docker info --format "{{json .OSType}}" )
+if [[ $DOCKER_OSTYPE == windows ]]; then
     WORKING_DIR=$(cmd //c cd)
 fi
 
