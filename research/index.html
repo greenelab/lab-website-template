@@ -85,13 +85,13 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
-<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
 <noscript>
-  <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
 </noscript>
 
   <!-- third party styles -->
@@ -103,6 +103,10 @@
 
   
     <link href="/lab-website-template/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/lab-website-template/_styles/alert.css" rel="stylesheet">
   
 
   
@@ -271,6 +275,8 @@
 
   
     <link href="/lab-website-template/_styles/util.css" rel="stylesheet">
+  
+
   
 
   
@@ -496,7 +502,7 @@
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <h1 id="research">
 <i class="icon fa-solid fa-microscope"></i>Research</h1>
 
@@ -508,7 +514,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -519,8 +525,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/c7np" class="citation-image">
-      <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/c7np" class="citation-image" aria-label="Open collaborative writing with Manubot">
+      <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="Open collaborative writing with Manubot" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -532,7 +538,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Open collaborative writing with Manubot
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter ">
+    <div class="citation-authors" tabindex="0">
       Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
     </div>
 
@@ -547,7 +553,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
         <div class="citation-description">
-          Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum <em>dolor</em> <strong>sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
         </div>
       
@@ -560,8 +566,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare">
-      <svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg>
+    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare" aria-label="Manubot">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span>
       
         <span>Manubot</span>
       
@@ -575,7 +581,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare">
+    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare" aria-label="Source code">
       <i class="icon fa-solid fa-code"></i>
       
         <span>Manuscript Source</span>
@@ -590,7 +596,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare">
+    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare" aria-label="Website">
       <i class="icon fa-solid fa-globe"></i>
       
         <span>Website</span>
@@ -630,7 +636,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -641,7 +647,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="search-box">
   <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
+  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
@@ -652,8 +658,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/grmcb9" class="citation-image">
-      <img src="" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/grmcb9" class="citation-image" aria-label="Hetnet connectivity search provides rapid insights into how two biomedical entities are related">
+      <img src="" alt="Hetnet connectivity search provides rapid insights into how two biomedical entities are related" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -665,7 +671,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Hetnet connectivity search provides rapid insights into how two biomedical entities are related
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene ">
+    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene " tabindex="0">
       Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, ..., David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene
     </div>
 
@@ -691,8 +697,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/c7np" class="citation-image">
-      <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/c7np" class="citation-image" aria-label="Open collaborative writing with Manubot">
+      <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="Open collaborative writing with Manubot" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -704,7 +710,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Open collaborative writing with Manubot
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter ">
+    <div class="citation-authors" tabindex="0">
       Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
     </div>
 
@@ -719,7 +725,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
         <div class="citation-description">
-          Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum <em>dolor</em> <strong>sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
         </div>
       
@@ -732,8 +738,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare">
-      <svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg>
+    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare" aria-label="Manubot">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span>
       
         <span>Manubot</span>
       
@@ -747,7 +753,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare">
+    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare" aria-label="Source code">
       <i class="icon fa-solid fa-code"></i>
       
         <span>Manuscript Source</span>
@@ -762,7 +768,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare">
+    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare" aria-label="Website">
       <i class="icon fa-solid fa-globe"></i>
       
         <span>Website</span>
@@ -799,8 +805,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/gg2mjh" class="citation-image">
-      <img src="" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/gg2mjh" class="citation-image" aria-label="Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations">
+      <img src="" alt="Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -812,7 +818,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -836,8 +842,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/gg7m48" class="citation-image">
-      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/gg7m48" class="citation-image" aria-label="Constructing knowledge graphs and their biomedical applications">
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" alt="Constructing knowledge graphs and their biomedical applications" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -849,7 +855,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Constructing knowledge graphs and their biomedical applications
     </a>
 
-    <div class="citation-authors" data-tooltip="David N. Nicholson, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       David N. Nicholson, Casey S. Greene
     </div>
 
@@ -875,8 +881,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/gfxjxf" class="citation-image">
-      <img src="" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/gfxjxf" class="citation-image" aria-label="Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality">
+      <img src="" alt="Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -888,7 +894,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -914,8 +920,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="citation">
   
-    <a href="https://doi.org/ckcj" class="citation-image">
-      <img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/ckcj" class="citation-image" aria-label="Sci-Hub provides access to nearly all scholarly literature">
+      <img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" alt="Sci-Hub provides access to nearly all scholarly literature" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
@@ -927,7 +933,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       Sci-Hub provides access to nearly all scholarly literature
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene ">
+    <div class="citation-authors" tabindex="0">
       Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene
     </div>
 
@@ -971,7 +977,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare">
+    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -986,8 +992,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare">
-      <svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256">  <path fill-rule="evenodd" fill="currentColor" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128zM86.3,186.2H70.9V79.1h15.4v48.4V186.2zM108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4zM88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"></path></svg>
+    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
@@ -1001,7 +1007,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare">
+    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -1016,7 +1022,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare">
+    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -1031,7 +1037,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare">
+    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
       <i class="icon fa-brands fa-twitter"></i>
       
     </a>
@@ -1046,22 +1052,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://instagram.com/YourLabHandle" data-tooltip="Instagram" data-style="bare">
-      <i class="icon fa-brands fa-instagram"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare">
+    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
       <i class="icon fa-brands fa-youtube"></i>
       
     </a>
@@ -1080,7 +1071,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

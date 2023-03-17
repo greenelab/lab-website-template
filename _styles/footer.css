@@ -5,6 +5,7 @@ footer {
   flex-direction: column;
   gap: 20px;
   padding: 40px;
+  line-height: var(--spacing);
   box-shadow: var(--shadow);
 }
 

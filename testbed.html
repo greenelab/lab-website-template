@@ -85,13 +85,13 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
-<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
 <noscript>
-  <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
 </noscript>
 
   <!-- third party styles -->
@@ -103,6 +103,10 @@
 
   
     <link href="/lab-website-template/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/lab-website-template/_styles/alert.css" rel="stylesheet">
   
 
   
@@ -271,6 +275,8 @@
 
   
     <link href="/lab-website-template/_styles/util.css" rel="stylesheet">
+  
+
   
 
   
@@ -527,22 +533,31 @@
   
   
 
-  <section class="background" data-size="page" data-dark="">
-    <h1 id="heading-1">Heading 1</h1>
+  <section class="background" data-size="page">
+    <h1 id="testbed">Testbed</h1>
+  </section>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+  
+  
 
-<h2 id="heading-2">Heading 2</h2>
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h1 id="basic-formatting">Basic formatting</h1>
 
-<h3 id="heading-3">Heading 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><a href="https://some-website.org/">External link</a></p>
 
-<h4 id="heading-4">Heading 4</h4>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><a href="team">Internal link</a></p>
 
 <p><em>italic text</em></p>
 
@@ -568,13 +583,25 @@ Text with extra blank lines above and below
   <li>ordered list item 3</li>
 </ol>
 
-<p><a href="https://some-website.org/">External link</a></p>
+<p>Plain image:</p>
 
-<p><a href="team">Internal link</a></p>
+<p><img src="/images/photo.jpg" alt="plain image"></p>
 
-<p class="center">Centered free text</p>
+<h1 id="heading-1">Heading 1</h1>
 
-<p>Horizontal rule:</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <hr>
 
@@ -622,28 +649,29 @@ It was the spring of hope, it was the winter of despair.</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// some code with syntax highlighting</span>
 <span class="kd">const</span> <span class="nx">popup</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#popup</span><span class="dl">"</span><span class="p">);</span>
 <span class="nx">popup</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">100%</span><span class="dl">"</span><span class="p">;</span>
-<span class="nx">popup</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">popup</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span>
+  <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>This sentence has <code class="language-plaintext highlighter-rouge">inline code</code>, useful for making references to variables, packages, versions, etc. within a sentence.</p>
 
-<p>Font Awesome icons:
-<i class="icon fa-solid fa-flask"></i>
-<i class="icon fa-solid fa-microscope"></i>
-<i class="icon fa-solid fa-bacteria"></i>
-<i class="icon fa-solid fa-virus"></i></p>
+<p class="left">Lorem ipsum dolor sit amet.</p>
+<p class="center">Consectetur adipiscing elit.</p>
+<p class="right">Sed do eiusmod tempor incididunt.</p>
   </section>
 
   
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
   size: ;
 -->
+
+<h1 id="jekyll-spaceship">Jekyll Spaceship</h1>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -709,12 +737,14 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
   size: ;
 -->
+
+<h1 id="components">Components</h1>
 
 <h2 id="section">Section</h2>
   </section>
@@ -723,14 +753,14 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="1" data-dark="false">
+  <section class="background" data-size="1" style="--image: url('/lab-website-template/images/background.jpg')">
     <!--
-  background: ;
-  dark: false;
+  background: images/background.jpg;
+  dark: ;
   size: 1;
 -->
 
-<p>Section, <code class="language-plaintext highlighter-rouge">dark=false</code></p>
+<p>Section, <code class="language-plaintext highlighter-rouge">background</code></p>
   </section>
 
   
@@ -751,20 +781,6 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="1" data-dark="" style="--image: url('/lab-website-template/images/background.jpg')">
-    <!--
-  background: images/background.jpg;
-  dark: ;
-  size: 1;
--->
-
-<p>Section, <code class="language-plaintext highlighter-rouge">background</code> <code class="language-plaintext highlighter-rouge">dark=</code></p>
-  </section>
-
-  
-  
-  
-
   <section class="background" data-size="2" data-dark="true" style="--image: url('/lab-website-template/images/background.jpg')">
     <!--
   background: images/background.jpg;
@@ -779,7 +795,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="wide" data-dark="">
+  <section class="background" data-size="wide">
     <!--
   background: ;
   dark: ;
@@ -793,7 +809,31 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="full">
+    <!--
+  background: ;
+  dark: ;
+  size: full;
+-->
+
+<p>Section, <code class="language-plaintext highlighter-rouge">size=full</code> w/ figure</p>
+
+<figure class="figure">
+  <a href="/lab-website-template/team" class="figure-image" aria-label="figure link">
+    <img src="https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjYyODgwODcyMjYtaW1hZ2VfMS1rb3k1Zzkxay5qcGc.jpg" style="
+        width: 100%;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+</figure>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -803,90 +843,115 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="figure">Figure</h2>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="`px` width" title="`px` width" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="/lab-website-template/images/icon.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="_Lorem_ **ipsum**.">
+    <img src="/lab-website-template/images/icon.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="_Lorem_ **ipsum**." loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <em>Lorem</em> <strong>ipsum</strong>.
+
+    </figcaption>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="_Lorem_ **ipsum**. `px` width">
+    <img src="/lab-website-template/images/icon.png" style="
         width: 400px;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `px` width" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">px</code> width
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">px</code> width
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="`%` width" title="`%` width" style="
+  <a href="/lab-website-template/team" class="figure-image" aria-label="_Lorem_ **ipsum**. `%` width">
+    <img src="/lab-website-template/images/icon.png" style="
         width: 50%;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `%` width" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">%</code> width
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">%</code> width
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="`px` height" title="`px` height" style="
+  <a href="/lab-website-template/team" class="figure-image" aria-label="_Lorem_ **ipsum**. `px` height">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: 200px;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `px` height" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">px</code> height
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">px</code> height
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/fallback.svg" class="figure-image" alt="`px` width, svg" title="`px` width, svg" style="
+  <a href="/lab-website-template/team" class="figure-image" aria-label="_Lorem_ **ipsum**. `px` width, svg">
+    <img src="/lab-website-template/images/fallback.svg" style="
         width: 400px;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `px` width, svg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">px</code> width, svg
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">px</code> width, svg
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/fallback.svg" class="figure-image" alt="`%` width, svg" title="`%` width, svg" style="
+  <a href="/lab-website-template/team" class="figure-image" aria-label="_Lorem_ **ipsum**. `%` width, svg">
+    <img src="/lab-website-template/images/fallback.svg" style="
         width: 50%;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `%` width, svg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">%</code> width, svg
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">%</code> width, svg
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/fallback.svg" class="figure-image" alt="`px` height, svg" title="`px` height, svg" style="
+  <a href="/lab-website-template/team" class="figure-image" aria-label="_Lorem_ **ipsum**. `px` height, svg">
+    <img src="/lab-website-template/images/fallback.svg" style="
         width: auto;
         max-height: 200px;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="_Lorem_ **ipsum**. `px` height, svg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      <code class="language-plaintext highlighter-rouge">px</code> height, svg
+      <em>Lorem</em> <strong>ipsum</strong>. <code class="language-plaintext highlighter-rouge">px</code> height, svg
 
     </figcaption>
   
@@ -897,29 +962,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="full" data-dark="">
-    <!--
-  background: ;
-  dark: ;
-  size: full;
--->
-
-<figure class="figure">
-  <a href="/lab-website-template/team" class="figure-link">
-    <img src="/lab-website-template/images/background.jpg" class="figure-image" alt="" title="" style="
-        width: 100%;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -929,7 +972,7 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="button">Button</h2>
 
 <div class="button-wrapper">
-    <a class="button" href="/lab-website-template" data-tooltip="GitHub">
+    <a class="button" href="/lab-website-template" data-tooltip="GitHub" data-style="" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
         <span>GitHub</span>
@@ -938,7 +981,7 @@ It was the spring of hope, it was the winter of despair.</p>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="/lab-website-template" data-tooltip="GitHub" data-style="bare">
+    <a class="button" href="/lab-website-template" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
         <span>GitHub</span>
@@ -947,7 +990,7 @@ It was the spring of hope, it was the winter of despair.</p>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="/lab-website-template" data-tooltip="Override tooltip">
+    <a class="button" href="/lab-website-template" data-tooltip="Override tooltip" data-style="" aria-label="Override tooltip">
       <i class="icon fa-brands fa-youtube"></i>
       
         <span>Override Text</span>
@@ -956,14 +999,14 @@ It was the spring of hope, it was the winter of despair.</p>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="/lab-website-template" data-tooltip="GitHub" data-style="bare">
+    <a class="button" href="/lab-website-template" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://github.com/github-handle" data-tooltip="GitHub">
+    <a class="button" href="https://github.com/github-handle" data-tooltip="GitHub" data-style="" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -974,7 +1017,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -983,14 +1026,21 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <h2 id="icon">Icon</h2>
 
-<p><i class="icon fa-brands fa-github"></i><svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256">  <path fill-rule="evenodd" fill="currentColor" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128zM86.3,186.2H70.9V79.1h15.4v48.4V186.2zM108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4zM88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"></path></svg><svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></p>
+<p><i class="icon fa-solid fa-bacteria"></i>
+<i class="icon fa-solid fa-virus"></i>
+<i class="icon fa-solid fa-flask"></i>
+<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span></p>
+
+<p><i class="icon fa-brands fa-github"></i> Lorem
+<i class="icon fa-solid fa-microscope"></i> Ipsum
+<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span> Dolor</p>
   </section>
 
   
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -1000,42 +1050,40 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="feature">Feature</h2>
 
 <div class="feature">
-  <a href="/lab-website-template/team" class="feature-image">
-    <img src="/lab-website-template/images/icon.png" loading="lazy" alt="">
+  <a href="/lab-website-template/team" class="feature-image" aria-label="Title">
+    <img src="/lab-website-template/images/icon.png" loading="lazy" alt="Title" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
       <p class="feature-title">Title</p>
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+<p><em>Lorem</em> <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
   </div>
 </div>
 
 <div class="feature" data-flip="">
-  <a href="/lab-website-template/team" class="feature-image">
-    <img src="/lab-website-template/images/icon.png" loading="lazy" alt="">
+  <a class="feature-image" aria-label="Title">
+    <img src="/lab-website-template/images/icon.png" loading="lazy" alt="Title" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
       <p class="feature-title">Title</p>
     
     
-<p class="center"><em>lorem</em> <strong>ipsum</strong>.</p>
+<p><em>Lorem</em> <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
   </div>
 </div>
 
 <div class="feature">
-  <a href="/lab-website-template/team" class="feature-image">
-    <img src="" loading="lazy" alt="">
+  <a href="/lab-website-template/team" class="feature-image" aria-label="feature link">
+    <img src="" loading="lazy" alt="feature image" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
-      <p class="feature-title">Title</p>
     
-    
-<p class="center"><em>lorem</em> <strong>ipsum</strong>.</p>
 
   </div>
 </div>
@@ -1045,7 +1093,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -1053,6 +1101,8 @@ It was the spring of hope, it was the winter of despair.</p>
 -->
 
 <h2 id="list">List</h2>
+
+<h3 id="list-citations">List citations</h3>
 
 <h3 id="2023">2023</h3>
 
@@ -1067,7 +1117,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Hetnet connectivity search provides rapid insights into how two biomedical entities are related
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene ">
+    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene " tabindex="0">
       Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, ..., David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene
     </div>
 
@@ -1096,7 +1146,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Open collaborative writing with Manubot
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter ">
+    <div class="citation-authors" tabindex="0">
       Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
     </div>
 
@@ -1123,7 +1173,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -1150,7 +1200,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Constructing knowledge graphs and their biomedical applications
     </a>
 
-    <div class="citation-authors" data-tooltip="David N. Nicholson, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       David N. Nicholson, Casey S. Greene
     </div>
 
@@ -1179,7 +1229,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -1208,7 +1258,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Sci-Hub provides access to nearly all scholarly literature
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene ">
+    <div class="citation-authors" tabindex="0">
       Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene
     </div>
 
@@ -1226,16 +1276,18 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <hr>
 
+<h3 id="list-projects">List projects</h3>
+
 <div class="card" data-style="">
-  <a href="https://github.com/" class="card-image">
-    <img src="/lab-website-template/images/photo.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Dataset" class="card-image">
+    <img src="/lab-website-template/images/photo.jpg" alt="Cool Dataset" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
         Cool Dataset
-      </a>
+    </a>
     
 
     
@@ -1265,15 +1317,15 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" class="card-image">
-    <img src="/lab-website-template/images/photo.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Package" class="card-image">
+    <img src="/lab-website-template/images/photo.jpg" alt="Cool Package" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
         Cool Package
-      </a>
+    </a>
     
 
     
@@ -1303,15 +1355,15 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" class="card-image">
-    <img src="/lab-website-template/images/photo.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Tutorial" class="card-image">
+    <img src="/lab-website-template/images/photo.jpg" alt="Cool Tutorial" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
         Cool Tutorial
-      </a>
+    </a>
     
 
     
@@ -1345,15 +1397,15 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" class="card-image">
-    <img src="/lab-website-template/images/photo.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Web App" class="card-image">
+    <img src="/lab-website-template/images/photo.jpg" alt="Cool Web App" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
         Cool Web App
-      </a>
+    </a>
     
 
     
@@ -1383,15 +1435,15 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="">
-  <a href="https://github.com/" class="card-image">
-    <img src="/lab-website-template/images/photo.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/" aria-label="Cool Web Server" class="card-image">
+    <img src="/lab-website-template/images/photo.jpg" alt="Cool Web Server" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://github.com/" class="card-title">
         Cool Web Server
-      </a>
+    </a>
     
 
     
@@ -1422,9 +1474,11 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <hr>
 
+<h3 id="list-team-members">List team members</h3>
+
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1447,8 +1501,8 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="" aria-label="John Doe">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1471,8 +1525,8 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="" aria-label="Sarah Johnson">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1496,6 +1550,8 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <hr>
 
+<h3 id="list-blog-posts">List blog posts</h3>
+
 <h3 id="2023">2023</h3>
 
 <div class="post-excerpt">
@@ -1509,11 +1565,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1551,7 +1605,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -1596,11 +1650,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1638,7 +1690,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -1671,11 +1723,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -1713,7 +1763,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -1754,7 +1804,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -1774,7 +1824,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Constructing knowledge graphs and their biomedical applications
     </a>
 
-    <div class="citation-authors" data-tooltip="David N. Nicholson, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       David N. Nicholson, Casey S. Greene
     </div>
 
@@ -1792,35 +1842,106 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <div class="citation">
   
-    <a href="https://doi.org/gg7m48" class="citation-image">
-      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+    <a href="https://doi.org/c7np" class="citation-image" aria-label="Open collaborative writing with Manubot">
+      <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="Open collaborative writing with Manubot" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
     </a>
   
 
   <div class="citation-text">
     
-    
+    <i class="icon fa-solid fa-scroll"></i>
 
-    <a href="https://doi.org/gg7m48" class="citation-title">
-      Constructing knowledge graphs and their biomedical applications
+    <a href="https://doi.org/c7np" class="citation-title">
+      Open collaborative writing with Manubot
     </a>
 
-    <div class="citation-authors" data-tooltip="David N. Nicholson, Casey S. Greene ">
-      David N. Nicholson, Casey S. Greene
+    <div class="citation-authors" tabindex="0">
+      Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
     </div>
 
     <div class="citation-details">
-      Computational and Structural Biotechnology Journal
+      PLOS Computational Biology
         ·  
-      01 Jan 2020
+      04 Dec 2020
         ·  
-      doi:10.1016/j.csbj.2020.05.017
+      doi:10.1371/journal.pcbi.1007128
     </div>
 
     
       
+        <div class="citation-description">
+          Lorem ipsum <em>dolor</em> <strong>sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        </div>
+      
 
       
+        <div class="citation-buttons">
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://greenelab.github.io/meta-review/" data-tooltip="Manubot" data-style="bare" aria-label="Manubot">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-450 -250 900 500">  <g transform="scale(0.9)">    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -125 125         L -125 -125        L 0 45        L 125 -125        L 125 125      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        M -200 -250        L -330 0         L -200 250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="        m 200 250         L 330 0        L 200 -250      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M -330 0        L -370 0      "></path>    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="50" d="        M 330 0        L 370 0      "></path>    <circle cx="-455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>    <circle cx="455" cy="0" r="30" fill="none" stroke="currentColor" stroke-width="30"></circle>  </g></svg></span>
+      
+        <span>Manubot</span>
+      
+    </a>
+  </div>
+
+
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://github.com/greenelab/meta-review" data-tooltip="Source code" data-style="bare" aria-label="Source code">
+      <i class="icon fa-solid fa-code"></i>
+      
+        <span>Manuscript Source</span>
+      
+    </a>
+  </div>
+
+
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="http://manubot.org/" data-tooltip="Website" data-style="bare" aria-label="Website">
+      <i class="icon fa-solid fa-globe"></i>
+      
+        <span>Website</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+      
+
+      
+        
+
+
+  <div class="tags" data-repo="greenelab/meta-review" data-link="/lab-website-template/">
+    
+      <a href="/lab-website-template/?search=%22tag:%20open%20science%22" class="tag" data-tooltip='Show items with the tag "open science"'>
+        open science
+      </a>
+    
+      <a href="/lab-website-template/?search=%22tag:%20collaboration%22" class="tag" data-tooltip='Show items with the tag "collaboration"'>
+        collaboration
+      </a>
+    
+  </div>
+
 
       
     
@@ -1838,35 +1959,8 @@ It was the spring of hope, it was the winter of despair.</p>
       Manual title
     </a>
 
-    <div class="citation-authors" data-tooltip=" ">
-      [no author info]
-    </div>
-
-    <div class="citation-details">
-      [no publisher info]
-        ·  
-      [no date info]
-        ·  
-      [no id info]
-    </div>
-
-    
-  </div>
-</div>
-
-<div class="citation">
-  
-
-  <div class="citation-text">
-    
-    
-
-    <a href="" class="citation-title">
-      
-    </a>
-
-    <div class="citation-authors" data-tooltip=" ">
-      [no author info]
+    <div class="citation-authors" data-tooltip="Manual authors " tabindex="0">
+      Manual authors
     </div>
 
     <div class="citation-details">
@@ -1886,7 +1980,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -1896,15 +1990,15 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="card">Card</h2>
 
 <div class="card" data-style="">
-  <a href="https://nasa.gov/" class="card-image">
-    <img src="/lab-website-template/images/icon.png" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="https://nasa.gov/" aria-label="A Large Card" class="card-image">
+    <img src="/lab-website-template/images/icon.png" alt="A Large Card" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
       <a href="https://nasa.gov/" data-tooltip="A cool tooltip" class="card-title">
         A Large Card
-      </a>
+    </a>
     
 
     
@@ -1934,15 +2028,15 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="card" data-style="small">
-  <a href="https://nasa.gov/" class="card-image">
-    <img src="/lab-website-template/images/icon.png" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a aria-label="A Small Card" class="card-image">
+    <img src="/lab-website-template/images/icon.png" alt="A Small Card" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
-      <a href="https://nasa.gov/" data-tooltip="A cool tooltip" class="card-title">
+      <a data-tooltip="A cool tooltip" class="card-title">
         A Small Card
-      </a>
+    </a>
     
 
     
@@ -1950,7 +2044,7 @@ It was the spring of hope, it was the winter of despair.</p>
     
 
     
-      <p>A cool description</p>
+      <p><em>Lorem</em> <strong>ipsum</strong></p>
 
     
 
@@ -1976,7 +2070,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -1986,8 +2080,8 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="portrait">Portrait</h2>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2010,8 +2104,8 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="small">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="small" aria-label="John Doe">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2034,8 +2128,8 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <span href="" class="portrait" data-style="">
-    <img src="" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a class="portrait" data-style="small" aria-label="Manual name">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2048,7 +2142,15 @@ It was the spring of hope, it was the winter of despair.</p>
         
       </span>
     
-  </span>
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a class="portrait" data-style="small" aria-label="member link">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+
+    
+  </a>
 </div>
   </section>
 
@@ -2056,7 +2158,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -2076,11 +2178,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2118,7 +2218,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -2157,7 +2257,7 @@ It was the spring of hope, it was the winter of despair.</p>
 <div class="post-excerpt">
   
   
-  <a href="">Example post 1</a>
+  <a href="">Manual title</a>
 
   <div class="post-info">
   
@@ -2165,7 +2265,7 @@ It was the spring of hope, it was the winter of despair.</p>
     
       <span data-tooltip="Author">
         <i class="icon fa-solid fa-feather-pointed"></i>
-        <span>No Name Man</span>
+        <span>Manual author</span>
       </span>
     
   
@@ -2197,7 +2297,81 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="alert">Alert</h2>
+
+<div class="alert" style="--color: #d946ef">
+  
+  <i class="icon fa-solid fa-lightbulb"></i>
+  <div class="alert-content">
+    <p><strong>Tip</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+
+<div class="alert" style="--color: #6366f1">
+  
+  <i class="icon fa-solid fa-circle-question"></i>
+  <div class="alert-content">
+    <p><strong>Help</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+
+<div class="alert" style="--color: #0ea5e9">
+  
+  <i class="icon fa-solid fa-circle-info"></i>
+  <div class="alert-content">
+    <p><strong>Info</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+
+<div class="alert" style="--color: #22c55e">
+  
+  <i class="icon fa-solid fa-circle-check"></i>
+  <div class="alert-content">
+    <p><strong>Success</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+
+<div class="alert" style="--color: #F59E0B">
+  
+  <i class="icon fa-solid fa-circle-exclamation"></i>
+  <div class="alert-content">
+    <p><strong>Warning</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+
+<div class="alert" style="--color: #ef4444">
+  
+  <i class="icon fa-solid fa-ban"></i>
+  <div class="alert-content">
+    <p><strong>Error</strong> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -2227,7 +2401,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -2236,16 +2410,16 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <h2 id="float">Float</h2>
 
-<p>Figures:</p>
+<h3 id="figures">Figures</h3>
 
 <div class="float">
   
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="Caption" title="Caption" style="
-        width: auto;
-        max-height: 100px;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a class="figure-image" aria-label="Caption">
+    <img src="/lab-website-template/images/icon.png" style="
+        width: 200px;
+        max-height: unset;
+      " alt="Caption" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
@@ -2258,40 +2432,19 @@ It was the spring of hope, it was the winter of despair.</p>
 
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Tristique magna sit amet purus gravida quis blandit turpis cursus. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. A cras semper auctor neque vitae tempus quam pellentesque nec. At tellus at urna condimentum mattis pellentesque. Ipsum consequat nisl vel pretium. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Integer vitae justo eget magna fermentum iaculis eu non diam. Mus mauris vitae ultricies leo integer malesuada nunc vel. Leo integer malesuada nunc vel risus. Ornare arcu odio ut sem nulla pharetra. Purus semper eget duis at tellus at urna condimentum. Enim neque volutpat ac tincidunt vitae semper quis lectus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <div class="float" data-clear="">
   
 
 </div>
 
+<h3 id="code">Code</h3>
+
 <div class="float" data-flip="">
   
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="Caption" title="Caption" style="
-        width: auto;
-        max-height: 100px;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      Caption
-
-    </figcaption>
-  
-</figure>
-
-
-</div>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Tristique magna sit amet purus gravida quis blandit turpis cursus. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. A cras semper auctor neque vitae tempus quam pellentesque nec. At tellus at urna condimentum mattis pellentesque. Ipsum consequat nisl vel pretium. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Integer vitae justo eget magna fermentum iaculis eu non diam. Mus mauris vitae ultricies leo integer malesuada nunc vel. Leo integer malesuada nunc vel risus. Ornare arcu odio ut sem nulla pharetra. Purus semper eget duis at tellus at urna condimentum. Enim neque volutpat ac tincidunt vitae semper quis lectus.</p>
-
-<p>Code:</p>
-
-<div class="float">
-  
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
+
 
 </div>
 
@@ -2302,7 +2455,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -2311,133 +2464,88 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <h2 id="grid">Grid</h2>
 
-<p>Regular:</p>
+<h3 id="regular">Regular</h3>
+
+<p>With Markdown images</p>
 
 <div class="grid" data-style="">
   
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
+<p><img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" alt="image"></p>
 
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" alt="image"></p>
 
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
+<p><img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" alt="image"></p>
 
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
+<p><img src="/images/icon.png" alt="image"></p>
 
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
+<p><img src="/images/icon.png" alt="image"></p>
 
-<figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
-        width: auto;
-        max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-</figure>
-
+<p><img src="/images/icon.png" alt="image"></p>
 
 </div>
 
-<p>Square:</p>
+<h3 id="square">Square</h3>
+
+<p>With figure components</p>
 
 <div class="grid" data-style="square">
   
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&amp;rev=2" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
 
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
 
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
 
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
 
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
 
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="" title="" style="
+  <a class="figure-image" aria-label="figure link">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
 </figure>
@@ -2445,7 +2553,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 </div>
 
-<p>List of citations:</p>
+<h3 id="grid-of-citations">Grid of citations</h3>
 
 <div class="grid" data-style="">
   
@@ -2462,7 +2570,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Hetnet connectivity search provides rapid insights into how two biomedical entities are related
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene ">
+    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, Faisal Alquaddoomi, Dongbo Hu, David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene " tabindex="0">
       Daniel S. Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J. Heil, ..., David N. Nicholson, Yun Hao, Blair D. Sullivan, Michael W. Nagle, Casey S. Greene
     </div>
 
@@ -2491,7 +2599,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Open collaborative writing with Manubot
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter ">
+    <div class="citation-authors" tabindex="0">
       Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter
     </div>
 
@@ -2518,7 +2626,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -2545,7 +2653,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Constructing knowledge graphs and their biomedical applications
     </a>
 
-    <div class="citation-authors" data-tooltip="David N. Nicholson, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       David N. Nicholson, Casey S. Greene
     </div>
 
@@ -2574,7 +2682,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Sequential compression of gene expression across dimensionalities and methods reveals no single best method or dimensionality
     </a>
 
-    <div class="citation-authors" data-tooltip="Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene ">
+    <div class="citation-authors" tabindex="0">
       Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene
     </div>
 
@@ -2603,7 +2711,7 @@ It was the spring of hope, it was the winter of despair.</p>
       Sci-Hub provides access to nearly all scholarly literature
     </a>
 
-    <div class="citation-authors" data-tooltip="Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene ">
+    <div class="citation-authors" tabindex="0">
       Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene
     </div>
 
@@ -2622,7 +2730,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 </div>
 
-<p>List of blog posts:</p>
+<h3 id="grid-of-blog-posts">Grid of blog posts</h3>
 
 <div class="grid" data-style="">
   
@@ -2639,11 +2747,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2681,7 +2787,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -2726,11 +2832,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2768,7 +2872,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -2801,11 +2905,9 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -2843,7 +2945,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -2887,7 +2989,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -2896,7 +2998,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <h2 id="cols">Cols</h2>
 
-<p>Text:</p>
+<h3 id="text">Text</h3>
 
 <div class="cols" style="--cols: 3">
   
@@ -2917,18 +3019,18 @@ It was the spring of hope, it was the winter of despair.</p>
   
 </div>
 
-<p>Images:</p>
+<h3 id="images">Images</h3>
 
 <div class="cols" style="--cols: 3">
   
     
     <div>
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="Fig. 1a" title="Fig. 1a" style="
+  <a class="figure-image" aria-label="Fig. 1a">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="Fig. 1a" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
@@ -2944,11 +3046,11 @@ It was the spring of hope, it was the winter of despair.</p>
     
     <div>
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="Fig. 1b" title="Fig. 1b" style="
+  <a class="figure-image" aria-label="Fig. 1b">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="Fig. 1b" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
@@ -2964,11 +3066,11 @@ It was the spring of hope, it was the winter of despair.</p>
     
     <div>
 <figure class="figure">
-  <a href="" class="figure-link">
-    <img src="/lab-website-template/images/icon.png" class="figure-image" alt="Fig. 1c" title="Fig. 1c" style="
+  <a class="figure-image" aria-label="Fig. 1c">
+    <img src="/lab-website-template/images/icon.png" style="
         width: auto;
         max-height: unset;
-      " loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      " alt="Fig. 1c" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
@@ -2983,26 +3085,29 @@ It was the spring of hope, it was the winter of despair.</p>
   
 </div>
 
-<p>Code:</p>
+<h3 id="code-1">Code</h3>
 
 <div class="cols" style="--cols: 3">
   
     
     <div>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
+
 </div>
   
     
     <div>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
+
 </div>
   
     
     <div>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">test</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
+
 </div>
   
 </div>
@@ -3012,7 +3117,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -3023,7 +3128,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <div class="search-box">
   <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
+  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
@@ -3035,7 +3140,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -3046,22 +3151,10 @@ It was the spring of hope, it was the winter of despair.</p>
 
 <form onsubmit="onSiteSearchSubmit(event)">
   <input type="text" name="query" placeholder="Search site with Google">
-  <button type="submit" class="button">
+  <button type="submit" class="button" aria-label="search site">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </form>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page" data-dark="">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
   </section>
 
 
@@ -3085,7 +3178,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare">
+    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -3100,8 +3193,8 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare">
-      <svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256">  <path fill-rule="evenodd" fill="currentColor" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128zM86.3,186.2H70.9V79.1h15.4v48.4V186.2zM108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4zM88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"></path></svg>
+    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
@@ -3115,7 +3208,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare">
+    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -3130,7 +3223,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare">
+    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -3145,7 +3238,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare">
+    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
       <i class="icon fa-brands fa-twitter"></i>
       
     </a>
@@ -3160,22 +3253,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://instagram.com/YourLabHandle" data-tooltip="Instagram" data-style="bare">
-      <i class="icon fa-brands fa-instagram"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare">
+    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
       <i class="icon fa-brands fa-youtube"></i>
       
     </a>
@@ -3194,7 +3272,7 @@ It was the spring of hope, it was the winter of despair.</p>
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

@@ -36,10 +36,10 @@
 
       // delete tags container if empty
       if (!row.innerText.trim()) row.remove();
-
-      // emit "tags done" event for other scripts to listen for
-      window.dispatchEvent(new Event("tagsfetched"));
     }
+
+    // emit "tags done" event for other scripts to listen for
+    window.dispatchEvent(new Event("tagsfetched"));
   };
 
   // after page loads

@@ -8,4 +8,8 @@ a:hover {
   color: var(--text);
 }
 
+a:not([href]) {
+  color: var(--text);
+}
+
 /*# sourceMappingURL=link.css.map */

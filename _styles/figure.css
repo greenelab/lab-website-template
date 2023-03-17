@@ -7,11 +7,11 @@
   margin: 40px 0;
 }
 
-.figure-link {
+.figure-image {
   display: contents;
 }
 
-.figure-image {
+.figure-image img {
   border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: var(--shadow);

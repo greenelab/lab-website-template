@@ -85,13 +85,13 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
-<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
 <noscript>
-  <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
 </noscript>
 
   <!-- third party styles -->
@@ -103,6 +103,10 @@
 
   
     <link href="/lab-website-template/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/lab-website-template/_styles/alert.css" rel="stylesheet">
   
 
   
@@ -271,6 +275,8 @@
 
   
     <link href="/lab-website-template/_styles/util.css" rel="stylesheet">
+  
+
   
 
   
@@ -496,7 +502,7 @@
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <h1 id="blog">
 <i class="icon fa-solid fa-feather-pointed"></i>Blog</h1>
 
@@ -508,7 +514,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
   
 
-  <section class="background" data-size="page" data-dark="">
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
@@ -517,7 +523,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="search-box">
   <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
+  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
@@ -553,11 +559,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -595,7 +599,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -640,11 +644,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -682,7 +684,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -715,11 +717,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
 
-
-
 <div class="portrait-wrapper">
-  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny">
-    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+  <a href="/lab-website-template/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
+    <img src="/lab-website-template/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-text">
@@ -757,7 +757,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 27, 2023</span>
+      <span>March 17, 2023</span>
     </span>
   
 </div>
@@ -815,7 +815,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare">
+    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -830,8 +830,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare">
-      <svg class="icon icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256">  <path fill-rule="evenodd" fill="currentColor" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128zM86.3,186.2H70.9V79.1h15.4v48.4V186.2zM108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4zM88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"></path></svg>
+    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
@@ -845,7 +845,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare">
+    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -860,7 +860,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare">
+    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -875,7 +875,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare">
+    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
       <i class="icon fa-brands fa-twitter"></i>
       
     </a>
@@ -890,22 +890,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://instagram.com/YourLabHandle" data-tooltip="Instagram" data-style="bare">
-      <i class="icon fa-brands fa-instagram"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare">
+    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
       <i class="icon fa-brands fa-youtube"></i>
       
     </a>
@@ -924,7 +909,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>
