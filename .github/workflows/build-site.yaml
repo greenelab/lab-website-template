@@ -40,7 +40,7 @@ jobs:
 
       - name: Build live version of site
         run: |
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
         uses: JamesIves/github-pages-deploy-action@v4
