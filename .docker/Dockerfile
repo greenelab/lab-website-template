@@ -5,16 +5,12 @@ FROM ruby:3.1.2
 WORKDIR /usr/src/app
 
 # pull in ruby (jekyll) and python (cite process) package info
-COPY Gemfile Gemfile.lock ./_cite/requirements.txt .
-
-# command to get bundler version
-ARG BUNDLER="grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs"
-
-# install ruby bundler
-RUN gem install bundler --version $(eval ${BUNDLER})
+COPY Gemfile Gemfile.lock _cite/requirements.txt ./
 
 # install ruby packages
-RUN bundle _$(eval ${BUNDLER})_ install
+RUN VERSION=$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs); \
+    gem install bundler --version ${VERSION} && \
+    bundle _${VERSION}_ install
 
 # install python
 RUN apt update && apt install -y python3 python3-pip
@@ -30,4 +26,5 @@ EXPOSE 4000
 EXPOSE 35729
 
 # run jekyll and cite process
-CMD [ ".docker/entrypoint.sh" ]
+COPY .docker/entrypoint.sh /var
+CMD [ "/var/entrypoint.sh" ]
