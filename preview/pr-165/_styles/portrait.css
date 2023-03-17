@@ -1,0 +1,74 @@
+.portrait-wrapper {
+  display: contents;
+}
+
+.portrait {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+  width: 175px;
+  max-width: calc(100% - 20px - 20px);
+  text-decoration: none;
+}
+
+.portrait[data-style=small] {
+  width: 100px;
+}
+
+.portrait[data-style=tiny] {
+  flex-direction: row;
+  gap: 15px;
+  width: unset;
+  text-align: left;
+}
+
+.portrait-image {
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.portrait[data-style=tiny] .portrait-image {
+  width: 50px;
+}
+
+.portrait[data-style=tiny] .portrait-role {
+  display: none;
+}
+
+.portrait-text {
+  display: flex;
+  flex-direction: column;
+  line-height: calc(var(--spacing) - 0.4);
+}
+
+.portrait-name {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.portrait-role .icon {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 999px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+}
+
+.portrait[data-style=small] .portrait-role .icon {
+  left: -2px;
+  top: -2px;
+}
+
+/*# sourceMappingURL=portrait.css.map */
