@@ -4,10 +4,12 @@ Reference: common-changelog.org
 
 ## 1.1.0 - 2023-03-17
 
+Add alert component, Docker support, accessibility fixes.
+
 ### Changed
 
-- De-href components when link isn't provided (no hand cursor icon on hover or nav on click).
 - Fix Lighthouse accessibility issues.
+- De-href components when link isn't provided (no hand cursor icon on hover or nav on click).
 - In search script, limit highlights by total count instead of char length.
 - Grid and link style tweaks.
 - Take ORCID icon from Font Awesome.
@@ -15,6 +17,7 @@ Reference: common-changelog.org
 
 ### Added
 
+- Add Docker configuration and scripts for local previewing.
 - Add alert component and types.
 - Role icon in portrait component hoisted to top left.
 
