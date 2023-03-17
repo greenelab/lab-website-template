@@ -1,0 +1,36 @@
+.alert {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  text-align: left;
+  line-height: var(--spacing);
+}
+
+.alert:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background: var(--color);
+  z-index: -1;
+}
+
+.alert > .icon {
+  color: var(--color);
+  font-size: var(--large);
+}
+
+.alert-content > *:first-child {
+  margin-top: 0;
+}
+
+.alert-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=alert.css.map */
