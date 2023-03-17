@@ -24,10 +24,10 @@
     }
   };
 
+  // scroll to target of url hash
   const scrollToTarget = () => {
     const id = window.location.hash.replace("#", "");
     const target = document.getElementById(id);
-    console.log(id, target);
 
     if (!target) return;
     const offset = document.querySelector("header").clientHeight || 0;
