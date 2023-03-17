@@ -16,18 +16,19 @@
       link.setAttribute("aria-label", "link to this section");
       heading.append(link);
 
-      // if first heading in the section, move id from heading to parent section
-      const parent = heading.parentElement;
-      if (parent.matches("section")) {
-        parent.id = heading.id;
+      // if first heading in the section, move id to parent section
+      if (heading.matches("section > :first-child")) {
+        heading.parentElement.id = heading.id;
         heading.removeAttribute("id");
       }
     }
   };
 
+  // scroll to target of url hash
   const scrollToTarget = () => {
     const id = window.location.hash.replace("#", "");
     const target = document.getElementById(id);
+
     if (!target) return;
     const offset = document.querySelector("header").clientHeight || 0;
     window.scrollTo({
@@ -39,6 +40,8 @@
   // after page loads
   window.addEventListener("load", onLoad);
   window.addEventListener("load", scrollToTarget);
+  window.addEventListener("tagsfetched", scrollToTarget);
+
   // when hash nav happens
   window.addEventListener("hashchange", scrollToTarget);
 }

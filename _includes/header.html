@@ -9,7 +9,9 @@
 <header
   class="background"
   style="--image: url('{{ image }}')"
-  data-dark="{{ dark }}"
+  {% if dark == true or dark == false %}
+    data-dark="{{ dark }}"
+  {% endif %}
   {% if page.url == "/" %}
     data-big
   {% endif %}
@@ -20,7 +22,7 @@
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
-          <img src="{{ logo | relative_url }}" alt="">
+          <img src="{{ logo | relative_url }}" alt="logo">
         {% endif %}
       </span>
     {% endif %}

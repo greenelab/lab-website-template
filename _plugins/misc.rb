@@ -25,7 +25,7 @@ module Jekyll
     def google_fonts(css)
       names = regex_scan(css, '--\S*:\s*"(.*)",?.*;', true).sort.uniq
       weights = regex_scan(css, '--\S*:\s(\d{3});', true).sort.uniq
-      string = "https://fonts.googleapis.com/css2?"
+      string = "https://fonts.googleapis.com/css2?display=swap&"
       for name in names do
         name.sub!" ", "+"
         string += "&family=#{name}:ital,wght@"

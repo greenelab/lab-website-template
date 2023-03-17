@@ -26,7 +26,9 @@
   <section
     class="background"
     data-size="{{ size }}"
-    data-dark="{{ dark }}"
+    {% if dark == "true" or dark == "false" %}
+      data-dark="{{ dark }}"
+    {% endif %}
     {% if background %}
       style="--image: url('{{ background | relative_url }}')"
     {% endif %}

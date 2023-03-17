@@ -4,21 +4,19 @@
   | default: include
 %}
 
-{% if page.slug != member.slug %}
-  {% assign tag = "a" %}
-{% else %}
-  {% assign tag = "span" %}
-{% endif %}
-
 <div class="portrait-wrapper">
-  <{{ tag }}
-    href="{{ member.url | relative_url }}"
+  <a
+    {% if page.slug != member.slug %}
+      href="{{ member.url | relative_url }}"
+    {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
+    aria-label="{{ member.name | default: "member link" }}"
   >
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
+      alt="member portrait"
       loading="lazy"
       {% include fallback.html %}
     >
@@ -40,5 +38,5 @@
         {% endif %}
       </span>
     {% endif %}
-  </{{ tag }}>
+  </a>
 </div>

@@ -73,7 +73,7 @@ search:
 # social media
 
 orcid:
-  icon: orcid.svg
+  icon: fa-brands fa-orcid
   text: ORCID
   tooltip: ORCID
   link: https://orcid.org/$VALUE
@@ -119,6 +119,32 @@ linkedin:
   text: LinkedIn
   tooltip: LinkedIn
   link: https://www.linkedin.com/in/$VALUE
+
+# alerts
+
+tip:
+  icon: fa-solid fa-lightbulb
+  color: "#d946ef"
+
+help:
+  icon: fa-solid fa-circle-question
+  color: "#6366f1"
+
+info:
+  icon: fa-solid fa-circle-info
+  color: "#0ea5e9"
+
+success:
+  icon: fa-solid fa-circle-check
+  color: "#22c55e"
+
+warning:
+  icon: fa-solid fa-circle-exclamation
+  color: "#F59E0B"
+
+error:
+  icon: fa-solid fa-ban
+  color: "#ef4444"
 
 # publications
 

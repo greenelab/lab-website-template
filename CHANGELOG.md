@@ -2,6 +2,22 @@
 
 Reference: common-changelog.org
 
+## 1.1.0 - 2023-03-17
+
+### Changed
+
+- De-href components when link isn't provided (no hand cursor icon on hover or nav on click).
+- Fix Lighthouse accessibility issues.
+- In search script, limit highlights by total count instead of char length.
+- Grid and link style tweaks.
+- Take ORCID icon from Font Awesome.
+- Misc bug fixes in tags script, float component.
+
+### Added
+
+- Add alert component and types.
+- Role icon in portrait component hoisted to top left.
+
 ## 1.0.0 - 2023-02-28
 
 First official release.
