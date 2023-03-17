@@ -9,12 +9,11 @@
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip }}"
       {% endif %}
-      {% if include.style %}
-        data-style="{{ include.style }}"
-      {% endif %}
+      data-style="{{ include.style }}"
       {% if include.flip %}
         data-flip
       {% endif %}
+      aria-label="{{ button.tooltip | default: button.icon | default: "button" }}"
     >
       {% include icon.html icon=button.icon %}
       {% if button.text and button.text != "" %}

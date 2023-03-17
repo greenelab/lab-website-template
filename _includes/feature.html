@@ -4,11 +4,18 @@
     data-flip
   {% endif %}
 >
-  <a href="{{ include.link | relative_url }}" class="feature-image">
+  <a
+    {% if include.link %}
+      href="{{ include.link | relative_url }}" 
+    {% endif %}
+    class="feature-image"
+    aria-label="{{ include.title | default: "feature link" }}"
+  >
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"
-      alt=""
+      alt="{{ include.title | default: "feature image" }}"
+      {% include fallback.html %}
     >
   </a>
   <div class="feature-text">

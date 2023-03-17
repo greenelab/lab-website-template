@@ -57,7 +57,7 @@ jobs:
               .split(/^##?#?#?/m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
-                return [heading.trim(), body.join("\n").trim()];
+                return { heading, body: body.join("\n") };
               });
 
             // check version
@@ -71,8 +71,8 @@ jobs:
 
             // check changelog
             const newSection = changelog.find(
-              ([heading, body]) =>
-                heading.includes(newVersion) && heading.includes(newDate) && body
+              ({ heading, body }) =>
+                heading.includes(newVersion) && heading.includes(newDate) && body.trim()
             );
             if (!newSection) throw Error("Changelog not updated or not valid");
 
@@ -109,27 +109,21 @@ jobs:
               .split(/^##?#?#?/m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
-                return [heading.trim(), body.join("\n").trim()];
+                return { heading, body: body.join("\n") };
               });
 
             // find changelog body for version
             const body =
               changelog.find(
-                ([heading]) => heading.includes(version) && heading.includes(date)
+                ({ heading }) => heading.includes(version) && heading.includes(date)
               )?.body || "";
 
             return { version, body };
 
-      - name: Create a tag
-        id: tag
-        uses: mathieudutour/github-tag-action@v6.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          custom_tag: ${{ fromJson(steps.version.outputs.result).version }}
-
-      - name: Create a GitHub release
+      - name: Create tag and GitHub release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ fromJson(steps.version.outputs.result).version }}
-          name: ${{ fromJson(steps.version.outputs.result).version }}
+          commit: ${{ github.ref }}
+          tag: v${{ fromJson(steps.version.outputs.result).version }}
+          name: v${{ fromJson(steps.version.outputs.result).version }}
           body: ${{ fromJson(steps.version.outputs.result).body }}
