@@ -55,6 +55,10 @@ jobs:
             .github/ISSUE_TEMPLATE \
             .github/workflows/versioning.yaml \
             .github/pull_request_template.md \
+      
+      - name: Rename files
+        run: \
+          mv .github/user_pull_request_template.md .github/pull_request_template.md
 
       - name: Set vars for personalization
         run: |
