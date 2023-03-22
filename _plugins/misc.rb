@@ -23,8 +23,8 @@ module Jekyll
     end
 
     def google_fonts(css)
-      names = regex_scan(css, '--\S*:\s*"(.*)",?.*;', true).sort.uniq
-      weights = regex_scan(css, '--\S*:\s(\d{3});', true).sort.uniq
+      names = regex_scan(css, '--\S*:\s*"(.*)",?.*;', false, true).sort.uniq
+      weights = regex_scan(css, '--\S*:\s(\d{3});', false, true).sort.uniq
       string = "https://fonts.googleapis.com/css2?display=swap&"
       for name in names do
         name.sub!" ", "+"

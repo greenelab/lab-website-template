@@ -2,8 +2,9 @@ require 'liquid'
 
 module Jekyll
   module RegexFilters
-    def regex_scan(string, search, all = false)
-      matches = string.scan(/#{search}/).flatten
+    def regex_scan(string, search, multi = false, all = false)
+      regex = multi ? /#{search}/m : /#{search}/
+      matches = string.scan(regex).flatten
       if matches.length
         return all ? matches : matches[0]
       else
