@@ -24,7 +24,12 @@
     | default: ""
     | strip_html
   %}
-  <p data-search="{{ post.content | strip_html | strip_newlines }}">
+  {% assign search = post.content
+    | strip_html 
+    | strip_newlines
+    | regex_strip
+  %}
+  <p data-search="{{ search }}">
     {{ excerpt }}
   </p>
 </div>

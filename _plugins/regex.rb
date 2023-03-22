@@ -14,6 +14,10 @@ module Jekyll
     def regex_replace(string, search, replace)
       return string.gsub(/#{search}/m, replace)
     end
+
+    def regex_strip(string)
+      return string.gsub(/[^\p{L}\p{N}]/u, " ")
+    end
   end
 end
 
