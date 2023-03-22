@@ -49,7 +49,6 @@ jobs:
       - name: Remove unneeded files
         run: |
           rm -rf \
-            README.md \
             CHANGELOG.md \
             testbed.md \
             .github/ISSUE_TEMPLATE \
