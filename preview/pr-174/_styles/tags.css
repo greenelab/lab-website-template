@@ -1,0 +1,33 @@
+.tags {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.tag {
+  max-width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition-property: background, color;
+}
+
+.tag:hover {
+  background: var(--light-gray);
+}
+
+.tag[data-active] {
+  background: var(--light-gray);
+}
+
+/*# sourceMappingURL=tags.css.map */
