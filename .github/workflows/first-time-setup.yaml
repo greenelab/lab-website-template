@@ -29,7 +29,7 @@ jobs:
           ref: gh-pages
 
       - name: Clear Pages branch
-        run: rm -rf * .github .gitignore
+        run: rm -rf * .github .gitignore .docker
 
       - name: Make .nojekyll file
         run: touch .nojekyll
@@ -72,25 +72,22 @@ jobs:
           _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
           " > README.md
 
-      - name: Install packages
-        run: yarn add yaml
-
       - name: Personalize Jekyll config for user
         uses: actions/github-script@v6
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
-            const { parse, stringify } = require("yaml");
             const file = "_config.yaml";
-            const config = parse(readFileSync(file).toString());
-            config.title = "${{ env.USER }}";
-            config.description = "${{ env.DESCRIPTION }}";
-            config.email = "contact@${{ env.USER }}.com";
-            config.github = "${{ env.USER }}";
-            config.twitter = "${{ env.USER }}";
-            config.instagram = "${{ env.USER }}";
-            config.youtube = "${{ env.USER }}";
-            writeFileSync(file, stringify(config));
+            const contents = readFileSync(file)
+              .toString()
+              .replace(/(^title: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^subtitle: ).*$/m, "$1")
+              .replace(/(^description: ).*$/m, "$1${{ env.DESCRIPTION }}")
+              .replace(/(^  email: ).*$/m, "$1contact@${{ env.USER }}.com")
+              .replace(/(^  github: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^  twitter: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^  youtube: ).*$/m, "$1${{ env.USER }}");
+            writeFileSync(file, contents);
 
       - name: Personalize homepage for user
         uses: actions/github-script@v6
