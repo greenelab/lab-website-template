@@ -1,0 +1,43 @@
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.feature-image {
+  display: flex;
+  width: 40%;
+  flex-shrink: 0;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: var(--large);
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.feature[data-flip] {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+  .feature {
+    flex-direction: column !important;
+  }
+  .feature-image {
+    width: unset;
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=feature.css.map */

@@ -1,0 +1,11 @@
+a {
+  color: var(--primary);
+  transition-property: color;
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+/*# sourceMappingURL=link.css.map */

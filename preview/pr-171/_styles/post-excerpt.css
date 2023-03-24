@@ -1,0 +1,26 @@
+.post-excerpt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px 30px;
+  border-radius: var(--rounded);
+  background: var(--background);
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.post-excerpt > * {
+  margin: 0 !important;
+}
+
+.post-excerpt > *:first-child {
+  font-weight: var(--semi-bold);
+  width: 100%;
+}
+
+.post-excerpt > div {
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=post-excerpt.css.map */
