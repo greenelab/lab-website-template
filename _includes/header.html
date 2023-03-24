@@ -26,12 +26,12 @@
         {% endif %}
       </span>
     {% endif %}
-    {% if site["logo-text"] != false %}
+    {% if site.logo-text != false %}
       <span class="title" data-tooltip="Home">
-        {% if site.title %}
+        {% if site.title and site.show-title != false %}
           <span>{{ site.title }}</span>
         {% endif %}
-        {% if site.subtitle %}
+        {% if site.subtitle and site.show-subtitle != false %}
           <span>{{ site.subtitle }}</span>
         {% endif %}
       </span>
