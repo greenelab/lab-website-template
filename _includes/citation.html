@@ -8,7 +8,9 @@
 <div class="citation">
   {% if include.style == "rich" %}
     <a
-      href="{{ citation.link | relative_url }}"
+      {% if citation.link %}
+        href="{{ citation.link | relative_url }}"
+      {% endif %}
       class="citation-image"
       aria-label="{{ citation.title | default: "citation link" }}"
     >
@@ -25,8 +27,13 @@
     {% assign type = site.data.types[citation.type] %}
     {% include icon.html icon=type.icon %}
 
-    <a href="{{ citation.link }}" class="citation-title">
-      {{ citation.title }}
+    <a
+      {% if citation.link %}
+        href="{{ citation.link | relative_url }}"
+      {% endif %}
+      class="citation-title"
+    >
+      {{ citation.title | default: "[no title info]" }}
     </a>
 
     <div
