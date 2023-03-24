@@ -54,7 +54,7 @@ jobs:
             );
             const changelog = readFileSync("pr/CHANGELOG.md")
               .toString()
-              .split(/^##/m)
+              .split(/^## /m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
                 return [heading.trim(), body.join("\n").trim()];
@@ -106,7 +106,7 @@ jobs:
             );
             const changelog = readFileSync("CHANGELOG.md")
               .toString()
-              .split(/^##/m)
+              .split(/^## /m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
                 return [heading.trim(), body.join("\n").trim()];
