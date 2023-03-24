@@ -14,6 +14,8 @@ Reference: common-changelog.org
 
 ### Added
 
+- Add show-title and show-subtitle site config options.
+- Include site subtitle in description meta tag.
 - Add user pull request template.
 - Add title and link fallbacks to citation component.
 
