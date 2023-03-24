@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["list.scss"],"names":[],"mappings":"AAAA;AAAA;EAEE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA","sourcesContent":["ul,\nol {\n  margin: 20px 0;\n  padding-left: 40px;\n}\n\nul {\n  list-style-type: square;\n}\n\nli {\n  margin: 5px 0;\n  padding-left: 10px;\n  text-align: justify;\n  line-height: var(--spacing);\n}\n"],"file":"list.css"}
