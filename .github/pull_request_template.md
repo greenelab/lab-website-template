@@ -6,8 +6,8 @@ You are about to open this pull request against THE TEMPLATE ITSELF. You probabl
 
 FOR THE TEMPLATE MAINTAINER(S)
 
-Checklist:
+New template version checklist:
 
-- [ ] I have updated CITATION and CHANGELOG.
+- [ ] I have updated CITATION and CHANGELOG as appropriate.
 - [ ] I have updated lab-website-template-docs as appropriate.
 - [ ] I have checked the testbed as appropriate.
