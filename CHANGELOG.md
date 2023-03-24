@@ -2,6 +2,21 @@
 
 Reference: common-changelog.org
 
+## 1.1.1 - 2023-03-28
+
+### Changed
+
+- Change member profile page from col layout to float.
+- Fix first time setup. Preserve config formatting and comments.
+- Improve Docker cite process behavior.
+- Fix post excerpt component start/end markers and special search attr chars.
+- Fix misc CSS.
+
+### Added
+
+- Add user pull request template.
+- Add title and link fallbacks to citation component.
+
 ## 1.1.0 - 2023-03-17
 
 Add alert component, Docker support, accessibility fixes.
