@@ -1,5 +1,5 @@
 ---
-subtitle: research on biomedical informatics
+subtitle: biomedical informatics
 ---
 
 # Who we are, what we do
