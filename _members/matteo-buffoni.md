@@ -7,8 +7,7 @@ role: phd
 aliases:
   - Matteo Buffoni
 links:
-  home-page: 
-  email: @umcutrecht.nl
+  email:
   orcid: 
   github: 
   linkedin: 
