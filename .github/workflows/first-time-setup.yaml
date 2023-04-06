@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -28,9 +29,11 @@ jobs:
         with:
           ref: gh-pages
 
+      # clean slate, as if starting from orphan branch
       - name: Clear Pages branch
         run: rm -rf * .*
 
+      # prevent GitHub from running Jekyll a second time after build
       - name: Make .nojekyll file
         run: touch .nojekyll
 
@@ -46,7 +49,7 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v3
 
-      - name: Remove unneeded files
+      - name: Remove files user doesn't need
         run: |
           rm -rf \
             CHANGELOG.md \

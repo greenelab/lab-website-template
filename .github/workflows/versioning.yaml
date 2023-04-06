@@ -20,6 +20,7 @@ jobs:
       github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -83,6 +84,7 @@ jobs:
       github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -120,14 +122,14 @@ jobs:
 
             return { version, body };
 
-      - name: Create a tag
+      - name: Create tag
         id: tag
         uses: mathieudutour/github-tag-action@v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           custom_tag: ${{ fromJson(steps.version.outputs.result).version }}
 
-      - name: Create a GitHub release
+      - name: Create GitHub release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ fromJson(steps.version.outputs.result).version }}
