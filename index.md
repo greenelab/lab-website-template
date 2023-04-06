@@ -51,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include button.html
-  link="tools"
+  link="projects"
   text="Browse our projects"
   icon="fa-solid fa-arrow-right"
   flip=true
