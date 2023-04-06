@@ -50,7 +50,7 @@ header a {
 }
 
 .title > *:last-child {
-  color: var(--gray);
+  opacity: 0.65;
   font-weight: var(--thin);
 }
 
@@ -141,15 +141,6 @@ header[data-big] .title > *:first-child {
 }
 header[data-big] .title > *:last-child {
   font-size: var(--large);
-}
-
-@media (max-width: 400px) {
-  .title > *:first-child {
-    font-size: var(--medium);
-  }
-  .title > *:not(:first-child) {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=header.css.map */

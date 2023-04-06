@@ -14,13 +14,17 @@
   margin: 0 !important;
 }
 
-.post-excerpt > *:first-child {
-  font-weight: var(--semi-bold);
+.post-excerpt > a:first-child {
   width: 100%;
+  font-weight: var(--semi-bold);
 }
 
 .post-excerpt > div {
   justify-content: flex-start;
+}
+
+.post-excerpt > p {
+  width: 100%;
 }
 
 /*# sourceMappingURL=post-excerpt.css.map */
