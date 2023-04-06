@@ -23,6 +23,7 @@
 .card-image img {
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  width: 100%;
   // box-shadow: var(--shadow);
 }
 
@@ -32,6 +33,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  max-width: 100%;
   padding: 20px;
 }
 

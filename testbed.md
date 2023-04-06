@@ -315,11 +315,11 @@ With Markdown images
 
 ![image](https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp)
 
-![image](/images/icon.png)
+![image]({{ "/images/icon.png" | relative_url }})
 
-![image](/images/icon.png)
+![image]({{ "/images/icon.png" | relative_url }})
 
-![image](/images/icon.png)
+![image]({{ "/images/icon.png" | relative_url }})
 {% endcapture %}
 {% include grid.html content=content %}
 

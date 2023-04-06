@@ -42,15 +42,14 @@ def main(entry):
     for work in response:
 
         # create source
-        source = {}
-
-        # format source fields
-        source["id"] = work.get("citation_id", "")
-        source["title"] = work.get("title", "")
-        source["authors"] = list(map(str.strip, work.get("authors", "").split(",")))
-        source["publisher"] = work.get("publication", "")
-        source["date"] = work.get("year", "") + "-01-01"
-        source["link"] = work.get("link", "")
+        source = {
+            "id": work.get("citation_id", ""),
+            "title": work.get("title", ""),
+            "authors": list(map(str.strip, work.get("authors", "").split(","))),
+            "publisher": work.get("publication", ""),
+            "date": work.get("year", "") + "-01-01",
+            "link": work.get("link", ""),
+        }
 
         # copy fields from entry to source
         source.update(entry)

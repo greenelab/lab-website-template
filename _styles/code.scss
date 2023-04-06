@@ -20,8 +20,6 @@ code.highlighter-rouge {
 div.highlighter-rouge {
   width: 100%;
   margin: 40px 0;
-  background: #202020;
-  color: white;
   border-radius: var(--rounded);
   overflow-x: auto;
   overflow-y: auto;
@@ -33,6 +31,7 @@ div.highlighter-rouge {
 
     pre.highlight {
       width: fit-content;
+      min-width: 100%;
       margin: 0;
       padding: 20px;
       color: var(--white);

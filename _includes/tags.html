@@ -1,5 +1,5 @@
 {% assign tags = include.tags
-  | array_hash
+  | object_items
   | join: ","
   | split: ","
   | array_filter

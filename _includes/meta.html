@@ -19,6 +19,11 @@
 {% assign subtitle = site.subtitle %}
 
 {% assign description = page.description | default: site.description %}
+{% if site.subtitle %}
+  {% capture description -%}
+    {{ site.subtitle }}. {{ description }}
+  {%- endcapture %}
+{% endif %}
 {% assign url = site.location %}
 
 {% assign png = "images/icon.png" | file_exists %}

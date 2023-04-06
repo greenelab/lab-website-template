@@ -20,6 +20,7 @@ jobs:
       github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -54,10 +55,10 @@ jobs:
             );
             const changelog = readFileSync("pr/CHANGELOG.md")
               .toString()
-              .split(/^##?#?#?/m)
+              .split(/^## /m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
-                return { heading, body: body.join("\n") };
+                return [heading.trim(), body.join("\n").trim()];
               });
 
             // check version
@@ -71,8 +72,8 @@ jobs:
 
             // check changelog
             const newSection = changelog.find(
-              ({ heading, body }) =>
-                heading.includes(newVersion) && heading.includes(newDate) && body.trim()
+              ([heading, body]) =>
+                heading.includes(newVersion) && heading.includes(newDate) && body
             );
             if (!newSection) throw Error("Changelog not updated or not valid");
 
@@ -83,6 +84,7 @@ jobs:
       github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -106,24 +108,30 @@ jobs:
             );
             const changelog = readFileSync("CHANGELOG.md")
               .toString()
-              .split(/^##?#?#?/m)
+              .split(/^## /m)
               .map((section) => {
                 const [heading, ...body] = section.split("\n");
-                return { heading, body: body.join("\n") };
+                return [heading.trim(), body.join("\n").trim()];
               });
 
             // find changelog body for version
-            const body =
+            const [, body = ""] =
               changelog.find(
-                ({ heading }) => heading.includes(version) && heading.includes(date)
-              )?.body || "";
+                ([heading]) => heading.includes(version) && heading.includes(date)
+              ) || [];
 
             return { version, body };
 
-      - name: Create tag and GitHub release
+      - name: Create tag
+        id: tag
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          custom_tag: ${{ fromJson(steps.version.outputs.result).version }}
+
+      - name: Create GitHub release
         uses: ncipollo/release-action@v1
         with:
-          commit: ${{ github.ref }}
-          tag: v${{ fromJson(steps.version.outputs.result).version }}
-          name: v${{ fromJson(steps.version.outputs.result).version }}
+          tag: ${{ fromJson(steps.version.outputs.result).version }}
+          name: ${{ fromJson(steps.version.outputs.result).version }}
           body: ${{ fromJson(steps.version.outputs.result).body }}

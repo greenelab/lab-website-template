@@ -5,7 +5,6 @@ $logo-big: 80px;
 $logo: 40px;
 $big-padding: 100px;
 $collapse: 700px;
-$limit-title: 400px;
 $sticky: true;
 
 header {
@@ -65,7 +64,7 @@ header a {
 
 // subtitle
 .title > *:last-child {
-  color: var(--gray);
+  opacity: 0.65;
   font-weight: var(--thin);
 }
 
@@ -166,15 +165,5 @@ header[data-big] {
 
   .title > *:last-child {
     font-size: var(--large);
-  }
-}
-
-@media (max-width: $limit-title) {
-  .title > *:first-child {
-    font-size: var(--medium);
-  }
-
-  .title > *:not(:first-child) {
-    display: none;
   }
 }
