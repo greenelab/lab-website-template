@@ -9,7 +9,7 @@ module Jekyll
         .select{|x| x and x != ""}
     end
 
-    # array with ellipsis in middle, leave N items on either side
+    # omit middle items of array with ellipsis, leave N items on either side
     def array_carve(array, length = 3)
       if array.length <= length * 2
         return array
