@@ -31,7 +31,7 @@ jobs:
 
       # clean slate, as if starting from orphan branch
       - name: Clear Pages branch
-        run: rm -rf * .*
+        run: rm -rf * .github .docker .gitignore
 
       # prevent GitHub from running Jekyll a second time after build
       - name: Make .nojekyll file
