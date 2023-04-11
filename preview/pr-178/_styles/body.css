@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--body);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*# sourceMappingURL=body.css.map */
