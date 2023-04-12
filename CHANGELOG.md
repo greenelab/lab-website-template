@@ -2,6 +2,12 @@
 
 Reference: common-changelog.org
 
+## 1.1.2 - 2023-04-11
+
+### Changed
+
+- Fix first-time-setup rm bug.
+
 ## 1.1.1 - 2023-04-06
 
 ### Changed
