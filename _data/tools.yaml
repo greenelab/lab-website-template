@@ -65,7 +65,7 @@
 
 - name: ClonalTraker
   group: wgs
-  image: images/CT_logo.png
+  image: images/CT_logo_small.png
   link: http://212.227.129.221/index.html
   description: ClonalTraker is a tool to compare any two vancomycin-resistant *Enterococcus faecium* (VRE), and the genomic context of the van operon.
   repo: victoriapascal/clonaltracker
