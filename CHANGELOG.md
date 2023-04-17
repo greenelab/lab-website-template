@@ -2,6 +2,10 @@
 
 Reference: common-changelog.org
 
+## 1.1.3 - 2023-04-17
+
+- Fix first-time-setup mv bug.
+
 ## 1.1.2 - 2023-04-11
 
 ### Changed
