@@ -125,6 +125,7 @@ jobs:
       - name: Create GitHub release
         uses: ncipollo/release-action@v1
         with:
+          commit: ${{ github.ref }}
           tag: v${{ fromJson(steps.version.outputs.result).version }}
           name: v${{ fromJson(steps.version.outputs.result).version }}
           body: ${{ fromJson(steps.version.outputs.result).body }}
