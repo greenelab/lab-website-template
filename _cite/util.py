@@ -182,7 +182,7 @@ def cite_with_manubot(_id):
         given = author.get("given", "").strip()
         family = author.get("family", "").strip()
         if given or family:
-            citation["authors"].append([given, family].join(" "))
+            citation["authors"].append(" ".join([given, family]))
 
     # publisher
     container = manubot.get("container-title", "").strip()
