@@ -174,19 +174,20 @@ def cite_with_manubot(_id):
     citation["id"] = _id
 
     # title
-    citation["title"] = manubot.get("title", "")
+    citation["title"] = manubot.get("title", "").strip()
 
     # authors
     citation["authors"] = []
     for author in manubot.get("author", []):
-        given = author.get("given", "")
-        family = author.get("family", "")
-        citation["authors"].append(given + " " + family)
+        given = author.get("given", "").strip()
+        family = author.get("family", "").strip()
+        if given or family:
+            citation["authors"].append([given, family].join(" "))
 
     # publisher
-    container = manubot.get("container-title", "")
-    collection = manubot.get("collection-title", "")
-    publisher = manubot.get("publisher", "")
+    container = manubot.get("container-title", "").strip()
+    collection = manubot.get("collection-title", "").strip()
+    publisher = manubot.get("publisher", "").strip()
     citation["publisher"] = container or publisher or collection or ""
 
     # extract date part
@@ -199,7 +200,7 @@ def cite_with_manubot(_id):
     # date
     year = date_part(manubot, 0)
     if year:
-        # fallbacks for no month or day
+        # fallbacks for month and day
         month = date_part(manubot, 1) or "1"
         day = date_part(manubot, 2) or "1"
         citation["date"] = format_date(f"{year}-{month}-{day}")
@@ -208,7 +209,7 @@ def cite_with_manubot(_id):
         citation["date"] = ""
 
     # link
-    citation["link"] = manubot.get("URL", "")
+    citation["link"] = manubot.get("URL", "").strip()
 
     # return citation data
     return citation

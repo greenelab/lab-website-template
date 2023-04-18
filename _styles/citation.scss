@@ -33,10 +33,12 @@ $wrap: 800px;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 15px;
+  max-width: 100%;
   height: min-content;
   padding: 20px;
   padding-left: 30px;
   text-align: left;
+  overflow-wrap: break-word;
   z-index: 0;
 }
 
