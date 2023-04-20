@@ -55,16 +55,17 @@
 
 .portrait-role .icon {
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2em;
-  height: 2em;
+  width: 20%;
+  aspect-ratio: 1/1;
   border-radius: 999px;
   background: var(--background);
   box-shadow: var(--shadow);
+  transform: translate(14%, 14%);
 }
 
 .portrait[data-style=small] .portrait-role .icon {
