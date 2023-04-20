@@ -2,7 +2,7 @@
 
 Reference: common-changelog.org
 
-## 1.1.3 - 2023-04-17
+## 1.1.3 - 2023-04-20
 
 ### Changed
 
