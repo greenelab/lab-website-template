@@ -2,7 +2,7 @@ require 'liquid'
 
 module Jekyll
   module ArrayFilters
-    # filter out empty entries from array
+    # filter out empty and trim entries in array
     def array_filter(array)
       return array
         .map{|x| x.is_a?(String) ? x.strip() : x}

@@ -127,15 +127,17 @@ for index, source in enumerate(sources):
             # run Manubot and set citation
             citation = cite_with_manubot(_id)
 
+        # if Manubot cannot cite source
         except Exception as e:
-            # if manually-entered source, throw error on cite failure
+            # if regular source (id entered by user), throw error
             if source.get("plugin") == "sources.py":
                 log(e, 3, "ERROR")
                 error = True
-            # otherwise, just warn
-            # (Manubot might not know how to cite every type of source from orcid, e.g.)
+            # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
                 log(e, 3, "WARNING")
+                # discard source
+                # continue
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)

@@ -59,7 +59,7 @@ jobs:
             .github/pull_request_template.md \
       
       - name: Rename files
-        run: \
+        run: |
           mv .github/user_pull_request_template.md .github/pull_request_template.md
 
       - name: Set vars for personalization
