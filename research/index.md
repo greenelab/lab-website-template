@@ -24,6 +24,12 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
+## Automatic revision of scholarly text using AI and large language models
+
+{% include citation.html lookup="doi:10.1101/2023.01.21.525030" style="rich" %}
+
+{% include section.html %}
+
 ## All
 
 {% include search-box.html %}
