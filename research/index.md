@@ -7,8 +7,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Diseases are caused by a complex interplay between different factors, such as genetics and the environment.
+A deeper understanding of the genetic risk factors of complex diseases can enable the development of more personalized treatments and prevention strategies.
+
+Our research is focused on developing novel machine-learning methods to advance key computational aspects of precision medicine.
+We have a particular focus on the integration of genetic studies with important molecular patterns extracted from multi-omics data.
+For this, we aim to develop the next generation of methodologies that will consolidate large and heterogeneous sources of biomedical information to extract biological insight to ultimately improve human health.
 
 {% include section.html %}
 
