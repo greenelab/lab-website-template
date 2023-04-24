@@ -14,6 +14,8 @@ Our research is focused on developing novel machine-learning methods to advance 
 We have a particular focus on the integration of genetic studies with important molecular patterns extracted from multi-omics data.
 For this, we aim to develop the next generation of methodologies that will consolidate large and heterogeneous sources of biomedical information to extract biological insight to ultimately improve human health.
 
+Strongly committed to open source and open science, we use [GitHub](https://github.com/pivlab) for the development of reproducible workflows and [Manubot](https://manubot.org/) for the transparent authoring of modern and collaborative scholarly manuscripts.
+
 {% include section.html %}
 
 ## Integration of genetic studies with gene co-expression patterns
