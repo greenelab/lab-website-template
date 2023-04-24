@@ -2,6 +2,14 @@
 
 Reference: common-changelog.org
 
+## 1.1.3 - 2023-04-20
+
+### Changed
+
+- Fix first-time-setup mv bug.
+- Fix citation, float, and portrait component CSS.
+- Filter and trim citation info fields.
+
 ## 1.1.2 - 2023-04-11
 
 ### Changed
