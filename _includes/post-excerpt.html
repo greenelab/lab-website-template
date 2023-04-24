@@ -19,12 +19,17 @@
 
   {% assign excerpt = post.content
     | default: ""
-    | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->"
+    | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
     | default: post.excerpt
     | default: ""
     | strip_html
   %}
-  <p data-search="{{ post.content | strip_html | strip_newlines }}">
+  {% assign search = post.content
+    | strip_html 
+    | strip_newlines
+    | regex_strip
+  %}
+  <p data-search="{{ search }}">
     {{ excerpt }}
   </p>
 </div>

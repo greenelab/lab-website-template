@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -40,7 +41,7 @@ jobs:
 
       - name: Build live version of site
         run: |
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
         uses: JamesIves/github-pages-deploy-action@v4

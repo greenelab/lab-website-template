@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -47,7 +48,7 @@ jobs:
       - name: Build preview version of site
         if: github.event.action != 'closed'
         run: |
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
 
       - name: Commit preview to Pages branch
         uses: rossjrw/pr-preview-action@v1
