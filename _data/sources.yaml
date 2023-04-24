@@ -4,6 +4,6 @@
 - id: doi:10.1101/2022.06.15.496326
   image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/ccc.png
   description: This article introduces the Clustermatch Correlation Coefficient (CCC).
-  - id: doi:10.1101/2023.01.21.525030
+- id: doi:10.1101/2023.01.21.525030
   image: https://raw.githubusercontent.com/pivlab/pivlab.org/publications/images/articles/manubot-ai-editor.png
   description: We developed the Manubot AI Editor, a plugin to the Manubot publishing infrastructure that uses manuscript section-specific prompts and OpenAI's models (such as GPT-3) to automatically revise and improve the text.
