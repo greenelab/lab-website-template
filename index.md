@@ -5,8 +5,8 @@ subtitle: biomedical informatics
 # Who we are, what we do
 
 We are a research laboratory at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/).
-We design advanced machine learning methods applied to human disease with a systems biology approach.
-Strongly committed to open source and open science, we use [GitHub](https://github.com/pivlab) for the development of reproducible workflows and [Manubot](https://manubot.org/) for transparent authoring of modern and collaborative scholarly manuscripts.
+Our research is focused on developing novel machine-learning methods to advance key computational aspects of precision medicine.
+For this, we design and develop computational algorithms and tools that are applied to human disease with a systems biology approach.
 
 {% include section.html %}
 
