@@ -12,9 +12,13 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
-## Highlighted
+## Integration of genetic studies with gene co-expression patterns
 
 {% include citation.html lookup="doi:10.1101/2021.07.05.450786" style="rich" %}
+
+{% include section.html %}
+
+## Extracting complex transcriptional signatures using not-only-linear correlation coefficients
 
 {% include citation.html lookup="doi:10.1101/2022.06.15.496326" style="rich" %}
 
