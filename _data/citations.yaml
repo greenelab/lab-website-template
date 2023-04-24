@@ -11,7 +11,7 @@
   orcid: 0000-0002-3035-4403
   plugin: sources.py
   file: sources.yaml
-  image: https://raw.githubusercontent.com/pivlab/pivlab.org/publications/images/articles/manubot-ai-editor.png
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/manubot-ai-editor.png
   description: We developed the Manubot AI Editor, a plugin to the Manubot publishing
     infrastructure that uses manuscript section-specific prompts and OpenAI's models
     (such as GPT-3) to automatically revise and improve the text.
