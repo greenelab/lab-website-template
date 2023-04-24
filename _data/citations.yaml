@@ -1,133 +1,408 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: doi:10.1101/2023.01.21.525030
+  title: A publishing infrastructure for AI-assisted academic authoring
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
+  - Milton Pividori
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2023-01-23'
+  link: https://doi.org/grpf8m
+  orcid: 0000-0002-3035-4403
+  plugin: sources.py
+  file: sources.yaml
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/manubot-ai-editor.png
+  description: We developed the Manubot AI Editor, a plugin to the Manubot publishing
+    infrastructure that uses manuscript section-specific prompts and OpenAI's models
+    (such as GPT-3) to automatically revise and improve the text.
+- id: doi:10.1038/s41467-022-33628-8
+  title: Discerning asthma endotypes through comorbidity mapping
+  authors:
+  - Gengjie Jia
+  - Xue Zhong
+  - Hae Kyung Im
+  - Nathan Schoettler
+  - Milton Pividori
+  - D. Kyle Hogarth
+  - Anne I. Sperling
+  - Steven R. White
+  - Edward T. Naureckas
+  - Christopher S. Lyttle
+  - Chikashi Terao
+  - Yoichiro Kamatani
+  - Masato Akiyama
+  - Koichi Matsuda
+  - Michiaki Kubo
+  - Nancy J. Cox
+  - Carole Ober
+  - Andrey Rzhetsky
+  - Julian Solway
+  publisher: Nature Communications
+  date: '2022-11-07'
+  link: https://doi.org/gq68q3
+  orcid: 0000-0002-3035-4403
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.1101/2022.06.15.496326
+  title: An efficient not-only-linear correlation coefficient based on machine learning
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
+  - Milton Pividori
+  - Marylyn D. Ritchie
+  - Diego H. Milone
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-06-17'
+  link: https://doi.org/gqcvbw
+  orcid: 0000-0002-3035-4403
+  plugin: sources.py
+  file: sources.yaml
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/ccc.png
+  description: This article introduces the Clustermatch Correlation Coefficient (CCC).
+- id: doi:10.1101/2021.07.05.450786
+  title: Projecting genetic associations through gene expression patterns highlights
+    disease etiology and drug mechanisms
+  authors:
+  - Milton Pividori
+  - Sumei Lu
+  - Binglan Li
+  - Chun Su
+  - Matthew E. Johnson
+  - Wei-Qi Wei
+  - Qiping Feng
+  - Bahram Namjou
+  - Krzysztof Kiryluk
+  - Iftikhar Kullo
+  - Yuan Luo
   - Blair D. Sullivan
-  - Michael W. Nagle
+  - Benjamin F. Voight
+  - Carsten Skarke
+  - Marylyn D. Ritchie
+  - Struan F.A. Grant
   - Casey S. Greene
   publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  date: '2021-07-06'
+  link: https://doi.org/gk9g25
+  orcid: 0000-0002-3035-4403
   plugin: sources.py
   file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/phenoplier.png
+  description: Here we introduce the PhenoPLIER framework, an omnigenic approach that
+    integrates genetic studies (GWAS/TWAS) with gene modules learned from expression
+    data. PhenoPLIER provides 1) a regression framework that computes an association
+    between gene modules and diseases, 2) a clustering approach that finds groups
+    of diseases with shared transcriptomic properties, and 3) a gene module-based
+    drug-repurposing method.
+- id: doi:10.1101/2020.11.12.373647
+  title: Polygenic transcriptome risk scores improve portability of polygenic risk
+    scores across ancestries
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
+  - Yanyu Liang
+  - Milton Pividori
+  - Ani Manichaikul
+  - Abraham A. Palmer
+  - Nancy J. Cox
+  - Heather Wheeler
+  - Hae Kyung Im
   publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
+  date: '2020-11-13'
+  link: https://doi.org/gqqzn3
+  orcid: 0000-0002-3035-4403
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1126/sciadv.aba2083
+  title: 'PhenomeXcan: Mapping the genome to the phenome through the transcriptome'
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+  - Milton Pividori
+  - Padma S. Rajagopal
+  - Alvaro Barbeira
+  - Yanyu Liang
+  - Owen Melia
+  - Lisa Bastarache
+  - YoSon Park
+  - GTEx Consortium
+  - Xiaoquan Wen
+  - Hae K. Im
+  publisher: Science Advances
+  date: '2020-09-11'
+  link: https://doi.org/ghbvbf
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.07.01.182097
+  title: 'Probabilistic Colocalization of Genetic Variants from Complex and Molecular
+    Traits: Promise and Limitations'
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
-  plugin: sources.py
-  file: sources.yaml
+  - Abhay Hukku
+  - Milton Pividori
+  - Francesca Luca
+  - Roger Pique-Regi
+  - Hae Kyung Im
+  - Xiaoquan Wen
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-07-01'
+  link: https://doi.org/gjwh3p
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btaa111
+  title: 'DL4papers: a deep learning approach for the automatic interpretation of
+    scientific articles'
+  authors:
+  - L A Bugnon
+  - C Yones
+  - J Raad
+  - M Gerard
+  - M Rubiolo
+  - G Merino
+  - M Pividori
+  - L Di Persia
+  - D H Milone
+  - G Stegmayer
+  publisher: Bioinformatics
+  date: '2020-02-24'
+  link: https://doi.org/ghfd95
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/814350
+  title: Exploiting the GTEx resources to decipher the mechanisms at GWAS loci
+  authors:
+  - Alvaro N Barbeira
+  - Rodrigo Bonazzola
+  - Eric R Gamazon
+  - Yanyu Liang
+  - YoSon Park
+  - Sarah Kim-Hellmuth
+  - Gao Wang
+  - Zhuoxun Jiang
+  - Dan Zhou
+  - Farhad Hormozdiari
+  - Boxiang Liu
+  - Abhiram Rao
+  - Andrew R Hamel
+  - Milton D Pividori
+  - "Fran\xE7ois Aguet"
+  - Lisa Bastarache
+  - Daniel M Jordan
+  - Marie Verbanck
+  - Ron Do
+  - Matthew Stephens
+  - Kristin Ardlie
+  - Mark McCarthy
+  - Stephen B Montgomery
+  - "Ayellet V Segr\xE8"
+  - Christopher D. Brown
+  - Tuuli Lappalainen
+  - Xiaoquan Wen
+  - Hae Kyung Im
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-10-22'
+  link: https://doi.org/gg7m54
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85065814807
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: doi:10.1093/bioinformatics/bty925
+  title: 'ukbREST: efficient and streamlined data access for reproducible research
+    in large biobanks'
+  authors:
+  - Milton Pividori
+  - Hae Kyung Im
+  publisher: Bioinformatics
+  date: '2018-11-05'
+  link: https://doi.org/gpf349
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pgen.1007889
+  title: Integrating predicted transcriptome from multiple tissues improves association
+    detection
+  authors:
+  - Alvaro N. Barbeira
+  - Milton Pividori
+  - Jiamao Zheng
+  - Heather E. Wheeler
+  - Dan L. Nicolae
+  - Hae Kyung Im
+  publisher: PLOS Genetics
+  date: '2019-01-22'
+  link: https://doi.org/ghs8vx
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85060955684
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: doi:10.1101/292649
+  title: Integrating Predicted Transcriptome From Multiple Tissues Improves Association
+    Detection
+  authors:
+  - Alvaro N. Barbeira
+  - Milton D. Pividori
+  - Jiamao Zheng
+  - Heather E. Wheeler
+  - Dan L. Nicolae
+  - Hae Kyung Im
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-03-31'
+  link: https://doi.org/gkws4v
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/S2213-2600(19)30055-4
+  title: 'Shared and distinct genetic risk factors for childhood-onset and adult-onset
+    asthma: genome-wide and transcriptome-wide studies'
+  authors:
+  - Milton Pividori
+  - Nathan Schoettler
+  - Dan L Nicolae
+  - Carole Ober
+  - Hae Kyung Im
+  publisher: The Lancet Respiratory Medicine
+  date: '2019-06-01'
+  link: https://doi.org/gmkmgk
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85065824400
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: doi:10.1093/bioinformatics/bty899
+  title: 'Clustermatch: discovering hidden relations in highly diverse kinds of qualitative
+    and quantitative data without standardization'
+  authors:
+  - Milton Pividori
+  - Andres Cernadas
+  - Luis A de Haro
+  - Fernando Carrari
+  - Georgina Stegmayer
+  - Diego H Milone
+  publisher: Bioinformatics
+  date: '2018-10-24'
+  link: https://doi.org/gfg4bt
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:30357313
+  title: 'Clustermatch: discovering hidden relations in highly diverse kinds of qualitative
+    and quantitative data without standardization.'
+  authors:
+  - Milton Pividori
+  - Andres Cernadas
+  - Luis A de Haro
+  - Fernando Carrari
+  - Georgina Stegmayer
+  - Diego H Milone
+  publisher: Bioinformatics (Oxford, England)
+  date: '2019-06-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/30357313
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85067194793
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: doi:10.1093/bib/bby037
+  title: 'Predicting novel microRNA: a comprehensive comparison of machine learning
+    approaches'
+  authors:
+  - Georgina Stegmayer
+  - Leandro E Di Persia
+  - Mariano Rubiolo
+  - Matias Gerard
+  - Milton Pividori
+  - Cristian Yones
+  - Leandro A Bugnon
+  - Tadeo Rodriguez
+  - Jonathan Raad
+  - Diego H Milone
+  publisher: Briefings in Bioinformatics
+  date: '2018-05-23'
+  link: https://doi.org/gdmf9z
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85075592023
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: pmid:29800232
+  title: 'Predicting novel microRNA: a comprehensive comparison of machine learning
+    approaches.'
+  authors:
+  - Georgina Stegmayer
+  - Leandro E Di Persia
+  - Mariano Rubiolo
+  - Matias Gerard
+  - Milton Pividori
+  - Cristian Yones
+  - Leandro A Bugnon
+  - Tadeo Rodriguez
+  - Jonathan Raad
+  - Diego H Milone
+  publisher: Briefings in bioinformatics
+  date: '2019-09-27'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/29800232
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.ins.2016.04.027
+  title: Diversity control for improving the analysis of consensus clustering
+  authors:
+  - Milton Pividori
+  - Georgina Stegmayer
+  - Diego H. Milone
+  publisher: Information Sciences
+  date: '2016-09-01'
+  link: https://doi.org/ghtqbk
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84970016850
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: eid:2-s2.0-84960108215
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
+- id: doi:10.1093/bib/bbv054
+  title: A very simple and fast way to access and validate algorithms in reproducible
+    research
+  authors:
+  - Georgina Stegmayer
+  - Milton Pividori
+  - Diego H. Milone
+  publisher: Briefings in Bioinformatics
+  date: '2015-07-28'
+  link: https://doi.org/f78h5s
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.4114/intartif.vol17iss53
+  title: ''
+  authors: []
+  publisher: INTELIGENCIA ARTIFICIAL
+  date: '2014-06-18'
+  link: https://doi.org/gqqzn4
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84899211965
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
+  date: ''
