@@ -1,8 +1,9 @@
 title: Pividori Lab
 # subtitle: research on biomedical informatics
 description: We are a research laboratory at the University of Colorado Anschutz Medical Campus. We design advanced machine learning methods applied to human disease with a systems biology approach.
-logo-title: false
-logo-subtitle: true
+logo-text: true
+show-title: false
+show-subtitle: true
 header: images/background_gene_network2.jpg
 footer: images/background_gene_network2.jpg
 header-dark: true
