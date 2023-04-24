@@ -9,8 +9,12 @@
   date: '2023-01-23'
   link: https://doi.org/grpf8m
   orcid: 0000-0002-3035-4403
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/publications/images/articles/manubot-ai-editor.png
+  description: We developed the Manubot AI Editor, a plugin to the Manubot publishing
+    infrastructure that uses manuscript section-specific prompts and OpenAI's models
+    (such as GPT-3) to automatically revise and improve the text.
 - id: doi:10.1038/s41467-022-33628-8
   title: Discerning asthma endotypes through comorbidity mapping
   authors:
@@ -52,7 +56,7 @@
   orcid: 0000-0002-3035-4403
   plugin: sources.py
   file: sources.yaml
-  image: https://raw.githubusercontent.com/pivlab/pivlab.org/publications/images/articles/ccc.png
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/ccc.png
   description: This article introduces the Clustermatch Correlation Coefficient (CCC).
 - id: doi:10.1101/2021.07.05.450786
   title: Projecting genetic associations through gene expression patterns highlights
