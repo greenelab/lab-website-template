@@ -1,0 +1,131 @@
+name: versioning
+run-name: versioning tasks
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  pull-request:
+    # only run on template itself, not user instance of template
+    if: |
+      github.repository == 'greenelab/lab-website-template' &&
+      github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      # for debugging
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Checkout base branch contents
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          path: base
+
+      - name: Checkout pr branch contents
+        uses: actions/checkout@v3
+        with:
+          path: pr
+
+      - name: Install packages
+        run: yarn add yaml semver
+
+      - name: Check version, date, changelog
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { readFileSync } = require("fs");
+            const { lte, valid } = require("semver");
+            const { parse } = require("yaml");
+
+            // load and parse file contents
+            const { version: oldVersion, "date-released": oldDate } = parse(
+              readFileSync("base/CITATION.cff").toString()
+            );
+            const { version: newVersion, "date-released": newDate } = parse(
+              readFileSync("pr/CITATION.cff").toString()
+            );
+            const changelog = readFileSync("pr/CHANGELOG.md")
+              .toString()
+              .split(/^## /m)
+              .map((section) => {
+                const [heading, ...body] = section.split("\n");
+                return [heading.trim(), body.join("\n").trim()];
+              });
+
+            // check version
+            if (!valid(newVersion)) throw Error("Version not valid");
+            if (lte(newVersion, oldVersion)) throw Error("Version not updated");
+
+            // check date
+            if (new Date(newDate).toISOString().split("T")[0] !== newDate)
+              throw Error("Date not valid");
+            if (new Date(newDate) <= new Date(oldDate)) throw Error("Date not updated");
+
+            // check changelog
+            const newSection = changelog.find(
+              ([heading, body]) =>
+                heading.includes(newVersion) && heading.includes(newDate) && body
+            );
+            if (!newSection) throw Error("Changelog not updated or not valid");
+
+  push:
+    # only run on template itself, not user instance of template
+    if: |
+      github.repository == 'greenelab/lab-website-template' &&
+      github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      # for debugging
+      - name: Print contexts
+        uses: crazy-max/ghaction-dump-context@v1
+
+      - name: Checkout branch contents
+        uses: actions/checkout@v3
+
+      - name: Install packages
+        run: yarn add yaml semver
+
+      - name: Get version and body
+        id: version
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { readFileSync } = require("fs");
+            const { parse } = require("yaml");
+
+            // load and parse file contents
+            const { version, "date-released": date } = parse(
+              readFileSync("CITATION.cff").toString()
+            );
+            const changelog = readFileSync("CHANGELOG.md")
+              .toString()
+              .split(/^## /m)
+              .map((section) => {
+                const [heading, ...body] = section.split("\n");
+                return [heading.trim(), body.join("\n").trim()];
+              });
+
+            // find changelog body for version
+            const [, body = ""] =
+              changelog.find(
+                ([heading]) => heading.includes(version) && heading.includes(date)
+              ) || [];
+
+            return { version, body };
+
+      - name: Create GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          commit: ${{ github.ref }}
+          tag: v${{ fromJson(steps.version.outputs.result).version }}
+          name: v${{ fromJson(steps.version.outputs.result).version }}
+          body: ${{ fromJson(steps.version.outputs.result).body }}

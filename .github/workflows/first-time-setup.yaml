@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -28,9 +29,11 @@ jobs:
         with:
           ref: gh-pages
 
+      # clean slate, as if starting from orphan branch
       - name: Clear Pages branch
-        run: rm -rf * .github .gitignore
+        run: rm -rf * .github .docker .gitignore
 
+      # prevent GitHub from running Jekyll a second time after build
       - name: Make .nojekyll file
         run: touch .nojekyll
 
@@ -46,15 +49,18 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v3
 
-      - name: Remove unneeded files
+      - name: Remove files user doesn't need
         run: |
           rm -rf \
-            README.md \
             CHANGELOG.md \
             testbed.md \
             .github/ISSUE_TEMPLATE \
             .github/workflows/versioning.yaml \
             .github/pull_request_template.md \
+      
+      - name: Rename files
+        run: |
+          mv .github/user_pull_request_template.md .github/pull_request_template.md
 
       - name: Set vars for personalization
         run: |
@@ -73,25 +79,22 @@ jobs:
           _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
           " > README.md
 
-      - name: Install packages
-        run: yarn add yaml
-
       - name: Personalize Jekyll config for user
         uses: actions/github-script@v6
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
-            const { parse, stringify } = require("yaml");
             const file = "_config.yaml";
-            const config = parse(readFileSync(file).toString());
-            config.title = "${{ env.USER }}";
-            config.description = "${{ env.DESCRIPTION }}";
-            config.email = "contact@${{ env.USER }}.com";
-            config.github = "${{ env.USER }}";
-            config.twitter = "${{ env.USER }}";
-            config.instagram = "${{ env.USER }}";
-            config.youtube = "${{ env.USER }}";
-            writeFileSync(file, stringify(config));
+            const contents = readFileSync(file)
+              .toString()
+              .replace(/(^title: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^subtitle: ).*$/m, "$1")
+              .replace(/(^description: ).*$/m, "$1${{ env.DESCRIPTION }}")
+              .replace(/(^  email: ).*$/m, "$1contact@${{ env.USER }}.com")
+              .replace(/(^  github: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^  twitter: ).*$/m, "$1${{ env.USER }}")
+              .replace(/(^  youtube: ).*$/m, "$1${{ env.USER }}");
+            writeFileSync(file, contents);
 
       - name: Personalize homepage for user
         uses: actions/github-script@v6

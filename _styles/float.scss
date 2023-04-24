@@ -1,8 +1,11 @@
 ---
 ---
 
+$wrap: 600px;
+
 .float {
   margin-bottom: 20px;
+  max-width: 50%;
 }
 
 .float > * {
@@ -20,6 +23,16 @@
 }
 
 .float[data-clear] {
+  float: unset;
   clear: both;
   margin: 0;
+}
+
+@media (max-width: $wrap) {
+  .float {
+    float: unset !important;
+    clear: both !important;
+    margin: auto !important;
+    max-width: unset;
+  }
 }

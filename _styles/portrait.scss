@@ -6,32 +6,35 @@
 }
 
 .portrait {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   margin: 20px;
-  max-width: 100%;
+  width: 175px;
+  max-width: calc(100% - 20px - 20px);
   text-decoration: none;
+}
+
+.portrait[data-style="small"] {
+  width: 100px;
 }
 
 .portrait[data-style="tiny"] {
   flex-direction: row;
   gap: 15px;
+  width: unset;
   text-align: left;
 }
 
 .portrait-image {
-  width: 150px;
+  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   object-fit: cover;
   box-shadow: var(--shadow);
-}
-
-.portrait[data-style="small"] .portrait-image {
-  width: 75px;
 }
 
 .portrait[data-style="tiny"] .portrait-image {
@@ -54,5 +57,21 @@
 }
 
 .portrait-role .icon {
-  margin-right: 0.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  transform: translate(14%, 14%);
+}
+
+.portrait[data-style="small"] .portrait-role .icon {
+  left: -2px;
+  top: -2px;
 }

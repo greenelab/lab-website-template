@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # for debugging
       - name: Print contexts
         uses: crazy-max/ghaction-dump-context@v1
 
@@ -31,6 +32,7 @@ jobs:
       - name: Checkout branch contents
         uses: actions/checkout@v3
 
+      # update link to site in readme
       - name: Update readme
         uses: actions/github-script@v6
         with:

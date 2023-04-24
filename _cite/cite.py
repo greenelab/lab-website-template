@@ -1,3 +1,7 @@
+"""
+cite process to convert sources and metasources into full citations
+"""
+
 from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
@@ -85,11 +89,11 @@ for plugin in plugins:
 
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
-    id = sources[a].get("id")
-    if not id:
+    _id = sources[a].get("id")
+    if not _id:
         continue
     for b in range(a + 1, len(sources)):
-        if sources[b].get("id") == id:
+        if sources[b].get("id") == _id:
             sources[a].update(sources[b])
             sources[b] = {}
 sources = [entry for entry in sources if entry]
@@ -113,25 +117,27 @@ for index, source in enumerate(sources):
     citation = {}
 
     # source id
-    id = source.get("id", "").strip()
+    _id = source.get("id", "").strip()
 
     # Manubot doesn't work without an id
-    if id:
+    if _id:
         log("Using Manubot to generate citation", 1)
 
         try:
             # run Manubot and set citation
-            citation = cite_with_manubot(source)
+            citation = cite_with_manubot(_id)
 
+        # if Manubot cannot cite source
         except Exception as e:
-            # if manually-entered source, throw error on cite failure
+            # if regular source (id entered by user), throw error
             if source.get("plugin") == "sources.py":
                 log(e, 3, "ERROR")
                 error = True
-            # otherwise, just warn
-            # (Manubot might not know how to cite every type of source from orcid, e.g.)
+            # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
                 log(e, 3, "WARNING")
+                # discard source
+                # continue
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
