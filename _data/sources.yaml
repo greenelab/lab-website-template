@@ -1,3 +1,6 @@
 - id: doi:10.1101/2021.07.05.450786
-  description: Here we introduce the PhenoPLIER framework, an omnigenic approach that integrates genetic studies (GWAS/TWAS) with gene modules learned from expression data. PhenoPLIER provides 1) a regression framework that computes an association between gene modules and diseases, 2) a clustering approach that finds groups of diseases with shared transcriptomic properties, and 3) a gene module-based drug-repurposing method.
   image: https://raw.githubusercontent.com/pivlab/pivlab.org/main/images/articles/phenoplier.png
+  description: Here we introduce the PhenoPLIER framework, an omnigenic approach that integrates genetic studies (GWAS/TWAS) with gene modules learned from expression data. PhenoPLIER provides 1) a regression framework that computes an association between gene modules and diseases, 2) a clustering approach that finds groups of diseases with shared transcriptomic properties, and 3) a gene module-based drug-repurposing method.
+- id: doi:10.1101/2022.06.15.496326
+  image: https://raw.githubusercontent.com/pivlab/pivlab.org/publications/images/articles/ccc.png
+  description: This article introduces the Clustermatch Correlation Coefficient (CCC).
