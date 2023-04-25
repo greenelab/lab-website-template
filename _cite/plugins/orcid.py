@@ -61,39 +61,47 @@ def main(entry):
             # sort summary entries by most recent
             summaries = sorted(
                 summaries,
-                key=lambda summary: summary.get("last-modified-date", {}).get(
-                    "value", ""
+                key=lambda summary: (
+                    summary.get("last-modified-date", {}).get("value", 0)
                 )
-                or summary.get("created-date", {}).get("value", "")
-                or "",
+                or summary.get("created-date", {}).get("value", 0)
+                or 0,
                 reverse=True,
             )
 
-            # keep title if available
-            for summary in summaries:
-                title = summary.get("title", {}).get("title", {}).get("value", "")
-                if title:
-                    source["title"] = title
-                    break
+            # get first summary with defined sub-value
+            def first(get_func):
+                return next(value for value in map(get_func, summaries) if value)
 
-            # keep date if available
+            # get title
+            title = first(
+                lambda s: s.get("title", {}).get("title", {}).get("value", "")
+            )
+
+            # get publisher
+            publisher = first(lambda s: s.get("journal-title", {}).get("value", ""))
+
+            # get date
             date = (
                 work.get("last-modified-date", {}).get("value", 0)
-                or next(
-                    summary.get("last-modified-date", {}).get("value", 0)
-                    for summary in summaries
-                    if summary
-                )
+                or first(lambda s: s.get("last-modified-date", {}).get("value", 0))
                 or work.get("created-date", {}).get("value", 0)
-                or next(
-                    summary.get("created-date", {}).get("value", 0)
-                    for summary in summaries
-                    if summary
-                )
+                or first(lambda s: s.get("created-date", {}).get("value", 0))
                 or 0
             )
+
+            # get link
+            link = first(lambda s: s.get("url", {}).get("value", ""))
+
+            # keep available details
+            if title:
+                source["title"] = title
+            if publisher:
+                source["publisher"] = publisher
             if date:
                 source["date"] = format_date(date)
+            if link:
+                source["link"] = link
 
         # copy fields from entry to source
         source.update(entry)

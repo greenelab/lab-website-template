@@ -17,29 +17,883 @@
   publisher: Nucleic Acids Research
   date: '2023-04-18'
   link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
+  orcid: 0000-0001-8713-9213
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.1371/journal.pcbi.1010984
+  title: The effect of non-linear signal in classification problems using gene expression
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
   - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
+  - Jake Crawford
+  - Casey S. Greene
+  publisher: PLOS Computational Biology
+  date: '2023-03-27'
+  link: https://doi.org/gr2q6q
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s42256-023-00617-5
+  title: Biomonitoring and precision health in deep space supported by artificial
+    intelligence
+  authors:
+  - Ryan T. Scott
+  - Lauren M. Sanders
+  - Erik L. Antonsen
+  - Jaden J. A. Hastings
+  - Seung-min Park
+  - Graham Mackintosh
+  - Robert J. Reynolds
+  - Adrienne L. Hoarfrost
+  - Aenor Sawyer
+  - Casey S. Greene
+  - Benjamin S. Glicksberg
+  - Corey A. Theriot
+  - Daniel C. Berrios
+  - Jack Miller
+  - Joel Babdor
+  - Richard Barker
+  - Sergio E. Baranzini
+  - Afshin Beheshti
+  - Stuart Chalk
+  - Guillermo M. Delgado-Aparicio
+  - Melissa Haendel
+  - Arif A. Hamid
+  - Philip Heller
+  - Daniel Jamieson
+  - Katelyn J. Jarvis
+  - John Kalantari
+  - Kia Khezeli
+  - Svetlana V. Komarova
+  - Matthieu Komorowski
+  - Prachi Kothiyal
+  - Ashish Mahabal
+  - Uri Manor
+  - Hector Garcia Martin
+  - Christopher E. Mason
+  - Mona Matar
+  - George I. Mias
+  - Jerry G. Myers
+  - Charlotte Nelson
+  - Jonathan Oribello
+  - Patricia Parsons-Wingerter
+  - R. K. Prabhu
+  - Amina Ann Qutub
+  - Jon Rask
+  - Amanda Saravia-Butler
+  - Suchi Saria
+  - Nitin Kumar Singh
+  - Michael Snyder
+  - Frank Soboczenski
+  - Karthik Soman
+  - David Van Valen
+  - Kasthuri Venkateswaran
+  - Liz Warren
+  - Liz Worthey
+  - Jason H. Yang
+  - Marinka Zitnik
+  - Sylvain V. Costes
+  publisher: Nature Machine Intelligence
+  date: '2023-03-23'
+  link: https://doi.org/grz34g
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/msystems.00927-22
+  title: Application of Traditional Vaccine Development Strategies to SARS-CoV-2
+  authors:
+  - Halie M. Rando
+  - Ronan Lordan
+  - Alexandra J. Lee
+  - Amruta Naik
+  - Nils Wellhausen
+  - Elizabeth Sell
+  - Likhitha Kolla
+  - Anthony Gitter
+  - Casey S. Greene
+  - Vikas Bansal
+  - John P. Barton
+  - Simina M. Boca
+  - Joel D. Boerckel
+  - Christian Brueffer
+  - James Brian Byrd
+  - Stephen Capone
+  - Shikta Das
+  - Anna Ada Dattoli
+  - John J. Dziak
+  - Jeffrey M. Field
+  - Soumita Ghosh
+  - Anthony Gitter
+  - Rishi Raj Goel
+  - Casey S. Greene
+  - Marouen Ben Guebila
+  - Daniel S. Himmelstein
+  - Fengling Hu
+  - Nafisa M. Jadavji
+  - Jeremy P. Kamil
+  - Sergey Knyazev
+  - Likhitha Kolla
+  - Alexandra J. Lee
+  - Ronan Lordan
+  - Tiago Lubiana
+  - Temitayo Lukan
+  - Adam L. MacLean
+  - David Mai
+  - Serghei Mangul
+  - David Manheim
+  - "Lucy D\u2019Agostino McGowan"
+  - Jesse G. Meyer
+  - Ariel I. Mundo
+  - Amruta Naik
+  - YoSon Park
+  - Dimitri Perrin
+  - Yanjun Qi
+  - Diane N. Rafizadeh
+  - Bharath Ramsundar
+  - Halie M. Rando
+  - Sandipan Ray
+  - Michael P. Robson
+  - Vincent Rubinetti
+  - Elizabeth Sell
+  - Lamonica Shinholster
+  - Ashwin N. Skelly
+  - Yuchen Sun
+  - Yusha Sun
+  - Gregory L. Szeto
+  - Ryan Velazquez
+  - Jinhui Wang
+  - Nils Wellhausen
+  publisher: mSystems
+  date: '2023-03-02'
+  link: https://doi.org/grv3d9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/msystems.00928-22
+  title: The Coming of Age of Nucleic Acid Vaccines during COVID-19
+  authors:
+  - Halie M. Rando
+  - Ronan Lordan
+  - Likhitha Kolla
+  - Elizabeth Sell
+  - Alexandra J. Lee
+  - Nils Wellhausen
+  - Amruta Naik
+  - Jeremy P. Kamil
+  - Anthony Gitter
+  - Casey S. Greene
+  - John P. Barton
+  - Simina M. Boca
+  - Joel D. Boerckel
+  - Christian Brueffer
+  - James Brian Byrd
+  - Stephen Capone
+  - Shikta Capone
+  - Anna Ada Dattoli
+  - John J. Dziak
+  - Jeffrey M. Field
+  - Soumita Ghosh
+  - Anthony Gitter
+  - Rishi Raj Goel
+  - Casey S. Greene
+  - Marouen Ben Guebila
+  - Daniel S. Himmelstein
+  - Fengling Hu
+  - Nafisa M. Jadavji
+  - Jeremy P. Kamil
+  - Sergey Knyazev
+  - Likhitha Kolla
+  - Alexandra J. Lee
+  - Ronan Lordan
+  - Tiago Lubiana
+  - Temitayo Lukan
+  - Adam L. MacLean
+  - David Mai
+  - Serghei Mangul
+  - David Manheim
+  - "Lucy D\u2019Agostino McGowan"
+  - Jesse G. Meyer
+  - Ariel I. Mundo
+  - Amruta Naik
+  - YoSon Park
+  - Dimitri Perrin
+  - Yanjun Qi
+  - Diane N. Rafizadeh
+  - Bharath Ramsundar
+  - Halie M. Rando
+  - Sandipan Ray
+  - Michael P. Robson
+  - Vincent Rubinetti
+  - Elizabeth Sell
+  - Lamonica Shinholster
+  - Ashwin N. Skelly
+  - Yuchen Sun
+  - Yusha Sun
+  - Gregory L. Szeto
+  - Ryan Velazquez
+  - Jinhui Wang
+  - Nils Wellhausen
+  publisher: mSystems
+  date: '2023-03-02'
+  link: https://doi.org/grv5vq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s42003-023-04588-6
+  title: Cross-platform normalization enables machine learning model training on microarray
+    and RNA-seq data simultaneously
+  authors:
+  - Steven M. Foltz
+  - Casey S. Greene
+  - Jaclyn N. Taroni
+  publisher: Communications Biology
+  date: '2023-02-25'
+  link: https://doi.org/grt2z5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/msystems.00342-22
+  title: Compendium-Wide Analysis of Pseudomonas aeruginosa Core and Accessory Genes
+    Reveals Transcriptional Patterns across Strains PAO1 and PA14
+  authors:
+  - Alexandra J. Lee
+  - Georgia Doing
+  - Samuel L. Neff
+  - Taylor Reiter
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: mSystems
+  date: '2023-02-23'
+  link: https://doi.org/grjqcc
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/msystems.00341-22
+  title: Computationally Efficient Assembly of Pseudomonas aeruginosa Gene Expression
+    Compendia
+  authors:
+  - Georgia Doing
+  - Alexandra J. Lee
+  - Samuel L. Neff
+  - Taylor Reiter
+  - Jacob D. Holt
+  - Bruce A. Stanton
+  - Casey S. Greene
+  - Deborah A. Hogan
+  publisher: mSystems
+  date: '2023-02-23'
+  link: https://doi.org/grjqcd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7554/eLife.84855.1
+  title: Analysis of science journalism reveals gender and regional disparities in
+    coverage
+  authors:
+  - Natalie R. Davidson
+  - Casey S. Greene
+  publisher: eLife Sciences Publications, Ltd
+  date: '2023-02-09'
+  link: https://doi.org/grrw82
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7554/eLife.84855
+  title: Analysis of science journalism reveals gender and regional disparities in
+    coverage
+  authors:
+  - Natalie R. Davidson
+  - Casey S. Greene
+  publisher: eLife Sciences Publications, Ltd
+  date: '2023-02-09'
+  link: https://doi.org/grrw83
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2023.01.21.525030
+  title: A publishing infrastructure for AI-assisted academic authoring
+  authors:
+  - Milton Pividori
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2023-01-23'
+  link: https://doi.org/grpf8m
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2023.01.05.522943
+  title: The Field-Dependent Nature of PageRank Values in Citation Networks
+  authors:
+  - Benjamin J. Heil
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2023-01-06'
+  link: https://doi.org/grk9gf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2023.01.05.522939
+  title: 'The probability of edge existence due to node degree: a baseline for network-based
+    predictions'
+  authors:
+  - Michael Zietz
+  - Daniel S. Himmelstein
+  - Kyle Kloster
+  - Christopher Williams
   - Michael W. Nagle
   - Casey S. Greene
   publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
+  date: '2023-01-06'
+  link: https://doi.org/grk9gd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.12.04.519045
+  title: Performance of computational algorithms to deconvolve heterogeneous bulk
+    tumor tissue depends on experimental factors
+  authors:
+  - Ariel A. Hippen
+  - Dalia K. Omran
+  - Lukas M. Weber
+  - Euihye Jung
+  - Ronny Drapkin
+  - Jennifer A. Doherty
+  - Stephanie C. Hicks
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-12-05'
+  link: https://doi.org/grgnw9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13059-022-02705-y
+  title: Widespread redundancy in -omics profiles of cancer mutation states
+  authors:
+  - Jake Crawford
+  - Brock C. Christensen
+  - Maria Chikina
+  - Casey S. Greene
+  publisher: Genome Biology
+  date: '2022-06-27'
+  link: https://doi.org/gqfqnm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btac663
+  title: 'wenda_gpu: fast domain adaptation for genomic data'
+  authors:
+  - Ariel A Hippen
+  - Jake Crawford
+  - Jacob R Gardner
+  - Casey S Greene
+  publisher: Bioinformatics
+  date: '2022-10-04'
+  link: https://doi.org/gq3vss
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13040-022-00311-z
+  title: Expanding a database-derived biomedical knowledge graph via multi-relation
+    extraction from biomedical abstracts
+  authors:
+  - David N. Nicholson
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: BioData Mining
+  date: '2022-10-18'
+  link: https://doi.org/gq3bw2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.gpb.2022.09.011
+  title: 'SOPHIE: Generative Neural Networks Separate Common and Specific Transcriptional
+    Responses'
+  authors:
+  - Alexandra J. Lee
+  - Dallas L. Mould
+  - Jake Crawford
+  - Dongbo Hu
+  - Rani K. Powers
+  - Georgia Doing
+  - James C. Costello
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Genomics, Proteomics &amp; Bioinformatics
+  date: '2022-10-01'
+  link: https://doi.org/gq3vsr
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.06.27.497742
+  title: Changing word meanings in biomedical literature reveal pandemics and new
+    technologies
+  authors:
+  - David N. Nicholson
+  - Faisal Alquaddoomi
+  - Vincent Rubinetti
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-06-28'
+  link: https://doi.org/gqhrv9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41467-022-31411-3
+  title: GenomicSuperSignature facilitates interpretation of RNA-seq experiments through
+    robust, efficient comparison to public databases
+  authors:
+  - Sehyun Oh
+  - Ludwig Geistlinger
+  - Marcel Ramos
+  - Daniel Blankenberg
+  - Marius van den Beek
+  - Jaclyn N. Taroni
+  - Vincent J. Carey
+  - Casey S. Greene
+  - Levi Waldron
+  - Sean Davis
+  publisher: Nature Communications
+  date: '2022-06-27'
+  link: https://doi.org/gqd7hm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.06.22.497194
+  title: The Effects of Nonlinear Signal on Expression-Based Prediction Performance
+  authors:
+  - Benjamin J. Heil
+  - Jake Crawford
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-06-26'
+  link: https://doi.org/gqhgwk
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.06.15.496326
+  title: An efficient not-only-linear correlation coefficient based on machine learning
+  authors:
+  - Milton Pividori
+  - Marylyn D. Ritchie
+  - Diego H. Milone
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-06-17'
+  link: https://doi.org/gqcvbw
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.04.14.488429
+  title: Compendium-wide analysis of <i>P. aeruginosa</i> core and accessory genes
+    reveal more nuanced transcriptional patterns
+  authors:
+  - Alexandra J. Lee
+  - Georgia Doing
+  - Samuel L. Neff
+  - Taylor Reiter
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-04-15'
+  link: https://doi.org/gpxkwr
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.04.09.487671
+  title: 'wenda_gpu: fast domain adaptation for genomic data'
+  authors:
+  - Ariel A. Hippen
+  - Jake Crawford
+  - Jacob R. Gardner
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-04-11'
+  link: https://doi.org/gpzf7p
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1009803
+  title: Ten quick tips for deep learning in biology
+  authors:
+  - Benjamin D. Lee
+  - Anthony Gitter
+  - Casey S. Greene
+  - Sebastian Raschka
+  - Finlay Maguire
+  - Alexander J. Titus
+  - Michael D. Kessler
+  - Alexandra J. Lee
+  - Marc G. Chevrette
+  - Paul Allen Stewart
+  - Thiago Britto-Borges
+  - Evan M. Cofer
+  - Kun-Hsing Yu
+  - Juan Jose Carmona
+  - Elana J. Fertig
+  - Alexandr A. Kalinin
+  - Brandon Signal
+  - Benjamin J. Lengerich
+  - Timothy J. Triche
+  - Simina M. Boca
+  publisher: PLOS Computational Biology
+  date: '2022-03-24'
+  link: https://doi.org/gpsg5v
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1009757
+  title: Ten simple rules for large-scale data processing
+  authors:
+  - Arkarachai Fungtammasan
+  - Alexandra Lee
+  - Jaclyn Taroni
+  - Kurt Wheeler
+  - Chen-Shan Chin
+  - Sean Davis
+  - Casey Greene
+  publisher: PLOS Computational Biology
+  date: '2022-02-10'
+  link: https://doi.org/gpfpf4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pbio.3001470
+  title: Examining linguistic shifts between preprints and publications
+  authors:
+  - David N. Nicholson
+  - Vincent Rubinetti
+  - Dongbo Hu
+  - Marvin Thielk
+  - Lawrence E. Hunter
+  - Casey S. Greene
+  publisher: PLOS Biology
+  date: '2022-02-01'
+  link: https://doi.org/gqqzn2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.01.24.477642
+  title: Computationally efficient assembly of a <i>Pseudomonas aeruginos</i>a gene
+    expression compendium
+  authors:
+  - Georgia Doing
+  - Alexandra J. Lee
+  - Samuel L. Neff
+  - Jacob D. Holt
+  - Bruce A. Stanton
+  - Casey S. Greene
+  - Deborah A. Hogan
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-01-25'
+  link: https://doi.org/gn984c
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41562-021-01279-2
+  title: Computational audits combat disparities in recognition
+  authors:
+  - Ariel A. Hippen
+  - Natalie R. Davidson
+  - Casey S. Greene
+  publisher: Nature Human Behaviour
+  date: '2022-01-17'
+  link: https://doi.org/gn984d
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.10.27.466140
+  title: Widespread redundancy in -omics profiles of cancer mutation states
+  authors:
+  - Jake Crawford
+  - Brock C. Christensen
+  - Maria Chikina
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-10-28'
+  link: https://doi.org/gnbdm9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pbio.3001419
+  title: A field guide to cultivating computational biology
+  authors:
+  - Gregory P. Way
+  - Casey S. Greene
+  - Piero Carninci
+  - Benilton S. Carvalho
+  - Michiel de Hoon
+  - Stacey D. Finley
+  - Sara J. C. Gosline
+  - "Kim-Anh L\u0207 Cao"
+  - Jerry S. H. Lee
+  - Luigi Marchionni
+  - Nicolas Robine
+  - Suzanne S. Sindi
+  - Fabian J. Theis
+  - Jean Y. H. Yang
+  - Anne E. Carpenter
+  - Elana J. Fertig
+  publisher: PLOS Biology
+  date: '2021-10-07'
+  link: https://doi.org/gm3hdh
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/gigascience/giab062
+  title: Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer
+    facilitates effective experimental design
+  authors:
+  - Lukas M Weber
+  - Ariel A Hippen
+  - Peter F Hickey
+  - Kristofer C Berrett
+  - Jason Gertz
+  - Jennifer Anne Doherty
+  - Casey S Greene
+  - Stephanie C Hicks
+  publisher: GigaScience
+  date: '2021-09-01'
+  link: https://doi.org/gmwhsc
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1009290
+  title: 'miQC: An adaptive probabilistic framework for quality control of single-cell
+    RNA-sequencing data'
+  authors:
+  - Ariel A. Hippen
+  - Matias M. Falco
+  - Lukas M. Weber
+  - Erdogan Pekcan Erkan
+  - Kaiyang Zhang
+  - Jennifer Anne Doherty
+  - "Anna V\xE4h\xE4rautio"
+  - Casey S. Greene
+  - Stephanie C. Hicks
+  publisher: PLOS Computational Biology
+  date: '2021-08-24'
+  link: https://doi.org/gng37g
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.06.23.21259416
+  title: 'Characterizing Long COVID: Deep Phenotype of a Complex Condition'
+  authors:
+  - Rachel R Deer
+  - Madeline A Rock
+  - Nicole Vasilevsky
+  - Leigh Carmody
+  - Halie Rando
+  - Alfred J Anzalone
+  - Tiffany J Callahan
+  - Carolyn T Bramante
+  - Christopher G Chute
+  - Casey S Greene
+  - Joel Gagnier
+  - Haitao Chu
+  - Farrukh M Koraishy
+  - Chen Liang
+  - Feifan Liu
+  - Charisse R Madlock-Brown
+  - Diego R Mazzotti
+  - Douglas S McNair
+  - Ann M Parker
+  - Ben D Coleman
+  - Hannah E Davis
+  - Mallory A Perry
+  - Justin T Reese
+  - Joel Saltz
+  - Anthony E Solomonides
+  - Anupam A Sule
+  - Gary S Stein
+  - "Sebastian K\xF6hler"
+  - Teshamae S Monteith
+  - Vithal Madhira
+  - Wesley D Kimble
+  - Ramakanth Kavuluru
+  - William B Hillegass
+  - Lauren E Chan
+  - James Brian Byrd
+  - Eilis A Boudreau
+  - Hongfang Liu
+  - Julie A McMurry
+  - Emily Pfaff
+  - Nicolas Matentzoglu
+  - Rose Relevo
+  - Richard A Moffitt
+  - Robert A Schuff
+  - Julian Solway
+  - Heidi Spratt
+  - Timothy Bergquist
+  - Tellen D Bennett
+  - Marc D Basson
+  - Umit Topaloglu
+  - Liwei Wang
+  - Melissa A Haendel
+  - Peter N Robinson
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-06-29'
+  link: https://doi.org/gk5nmb
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/mSystems.00122-21
+  title: Dietary Supplements and Nutraceuticals under Investigation for COVID-19 Prevention
+    and Treatment
+  authors:
+  - Ronan Lordan
+  - Halie M. Rando
+  - Casey S. Greene
+  publisher: mSystems
+  date: '2021-06-29'
+  link: https://doi.org/gj9qvs
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.06.21.449261
+  title: Analysis of science journalism reveals gender and regional disparities in
+    coverage
+  authors:
+  - Natalie R. Davidson
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-06-22'
+  link: https://doi.org/gkscd5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.05.26.445900
+  title: 'GenomicSuperSignature: interpretation of RNA-seq experiments through robust,
+    efficient comparison to public databases'
+  authors:
+  - Sehyun Oh
+  - Ludwig Geistlinger
+  - Marcel Ramos
+  - Daniel Blankenberg
+  - Marius van den Beek
+  - Jaclyn N. Taroni
+  - Vincent Carey
+  - Casey Greene
+  - Levi Waldron
+  - Sean Davis
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-05-27'
+  link: https://doi.org/gj74m9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.05.24.445440
+  title: Generative neural networks separate common and specific transcriptional responses
+  authors:
+  - Alexandra J. Lee
+  - Dallas L. Mould
+  - Jake Crawford
+  - Dongbo Hu
+  - Rani K. Powers
+  - Georgia Doing
+  - James C. Costello
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-05-24'
+  link: https://doi.org/gj6qv4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.4677667
+  title: Response to NOT-OD-21-066 - Racial EDI in Biomedical Research Workforce
+  authors:
+  - Monica Munoz-Torres
+  - Melissa Haendel
+  - Sean Davis
+  - Lawrence Hunter
+  - Andrew Neumann
+  - Nicole Vasilevsky
+  - Tursynay Issabekova
+  - Janine Higgins
+  - Judy Regensteiner
+  - Casey Greene
+  - Samuel Volchenboum
+  - Anita Walden
+  - Mary Ann Tuli
+  - Deepak Unni
+  - Halie Rando
+  - Shawn T. O'Neil
+  - Matthew H. Brush
+  publisher: Zenodo
+  date: '2021-04-09'
+  link: https://doi.org/gqs2px
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.4677668
+  title: Response to NOT-OD-21-066 - Racial EDI in Biomedical Research Workforce
+  authors:
+  - Monica Munoz-Torres
+  - Melissa Haendel
+  - Sean Davis
+  - Lawrence Hunter
+  - Andrew Neumann
+  - Nicole Vasilevsky
+  - Tursynay Issabekova
+  - Janine Higgins
+  - Judy Regensteiner
+  - Casey Greene
+  - Samuel Volchenboum
+  - Anita Walden
+  - Mary Ann Tuli
+  - Deepak Unni
+  - Halie Rando
+  - Shawn T. O'Neil
+  - Matthew H. Brush
+  publisher: Zenodo
+  date: '2021-04-09'
+  link: https://doi.org/gqs2pz
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.trecan.2020.10.011
+  title: Expanding and Remixing the Metadata Landscape
+  authors:
+  - Ariel A. Hippen
+  - Casey S. Greene
+  publisher: Trends in Cancer
+  date: '2021-04-01'
+  link: https://doi.org/ghk5xh
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.03.04.433874
+  title: Linguistic Analysis of the bioRxiv Preprint Landscape
+  authors:
+  - David N. Nicholson
+  - Vincent Rubinetti
+  - Dongbo Hu
+  - Marvin Thielk
+  - Lawrence E. Hunter
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-03-04'
+  link: https://doi.org/gh7rph
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.03.03.433798
+  title: 'miQC: An adaptive probabilistic framework for quality control of single-cell
+    RNA-sequencing data'
+  authors:
+  - Ariel A. Hippen
+  - Matias M. Falco
+  - Lukas M. Weber
+  - Erdogan Pekcan Erkan
+  - Kaiyang Zhang
+  - Jennifer Anne Doherty
+  - "Anna V\xE4h\xE4rautio"
+  - Casey S. Greene
+  - Stephanie C. Hicks
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-03-03'
+  link: https://doi.org/gjb778
+  orcid: 0000-0001-8713-9213
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1186/s13059-020-02021-3
@@ -54,7 +908,697 @@
   publisher: Genome Biology
   date: '2020-05-11'
   link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.11.06.371963
+  title: Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer
+    facilitates effective experimental design
+  authors:
+  - Lukas M. Weber
+  - Ariel A. Hippen
+  - Peter F. Hickey
+  - Kristofer C. Berrett
+  - Jason Gertz
+  - Jennifer Anne Doherty
+  - Casey S. Greene
+  - Stephanie C. Hicks
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-11-07'
+  link: https://doi.org/ghjkzq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/gigascience/giaa117
+  title: Correcting for experiment-specific variability in expression compendia can
+    remove underlying signals
+  authors:
+  - Alexandra J Lee
+  - YoSon Park
+  - Georgia Doing
+  - Deborah A Hogan
+  - Casey S Greene
+  publisher: GigaScience
+  date: '2020-11-01'
+  link: https://doi.org/ghhtpf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41576-020-0257-5
+  title: Responsible, practical genomic data sharing that accelerates research
+  authors:
+  - James Brian Byrd
+  - Anna C. Greene
+  - Deepashree Venkatesh Prasad
+  - Xiaoqian Jiang
+  - Casey S. Greene
+  publisher: Nature Reviews Genetics
+  date: '2020-07-21'
+  link: https://doi.org/gg7c57
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41586-020-2766-y
+  title: Transparency and reproducibility in artificial intelligence
+  authors:
+  - Benjamin Haibe-Kains
+  - George Alexandru Adam
+  - Ahmed Hosny
+  - Farnoosh Khodakarami
+  - Thakkar Shraddha
+  - Rebecca Kusko
+  - Susanna-Assunta Sansone
+  - Weida Tong
+  - Russ D. Wolfinger
+  - Christopher E. Mason
+  - Wendell Jones
+  - Joaquin Dopazo
+  - Cesare Furlanello
+  - Levi Waldron
+  - Bo Wang
+  - Chris McIntosh
+  - Anna Goldenberg
+  - Anshul Kundaje
+  - Casey S. Greene
+  - Tamara Broderick
+  - Michael M. Hoffman
+  - Jeffrey T. Leek
+  - Keegan Korthauer
+  - Wolfgang Huber
+  - Alvis Brazma
+  - Joelle Pineau
+  - Robert Tibshirani
+  - Trevor Hastie
+  - John P. A. Ioannidis
+  - John Quackenbush
+  - Hugo J. W. L. Aerts
+  publisher: Nature
+  date: '2020-10-14'
+  link: https://doi.org/ghfq95
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.17863/cam.53202
+  title: Development and Validation of the Gene Expression Predictor of High-grade
+    Serous Ovarian Carcinoma Molecular SubTYPE (PrOTYPE).
+  authors:
+  - Aline Talhouk
+  - Joshy George
+  - Chen Wang
+  - Timothy Budden
+  - Tuan Zea Tan
+  - Derek S Chiu
+  - Stefan Kommoss
+  - Huei San Leong
+  - Stephanie Chen
+  - Maria P Intermaggio
+  - Blake Gilks
+  - Tayyebeh M Nazeran
+  - Mila Volchek
+  - Wafaa Elatre
+  - Rex C Bentley
+  - Janine Senz
+  - Amy Lum
+  - Veronica Chow
+  - Hanwei Sudderuddin
+  - Robertson Mackenzie
+  - Samuel CY Leong
+  - Geyi Liu
+  - Dustin Johnson
+  - Billy Chen
+  - Aocs Group
+  - Jennifer Alsop
+  - Susana N Banerjee
+  - Sabine Behrens
+  - Clara Bodelon
+  - Alison H Brand
+  - Louise Brinton
+  - Michael E Carney
+  - Yoke-Eng Chiew
+  - Kara L Cushing-Haugen
+  - Cezary Cybulski
+  - Darren Ennis
+  - Sian Fereday
+  - "Ren\xE9e T Fortner"
+  - "Jes\xFAs Garc\xEDa-Donas"
+  - Aleksandra Gentry-Maharaj
+  - Rosalind Glasspool
+  - Teodora Goranova
+  - Casey S Greene
+  - Paul Haluska
+  - Holly R Harris
+  - Joy Hendley
+  - Brenda Y Hernandez
+  - Esther Herpel
+  - Mercedes Jimenez-Linan
+  - Chloe Karpinskyj
+  - Scott H Kaufmann
+  - Gary L Keeney
+  - Catherine J Kennedy
+  - "Martin K\xF6bel"
+  - Jennifer M Koziak
+  - Melissa C Larson
+  - Jenny Lester
+  - Liz-Anne Lewsley
+  - Jolanta Lissowska
+  - "Jan Lubi\u0144ski"
+  - Hugh Luk
+  - Geoff Macintyre
+  - Sven Mahner
+  - Iain A McNeish
+  - Janusz Menkiszak
+  - Nikilyn Nevins
+  - Ana Osorio
+  - Oleg Oszurek
+  - "Jos\xE9 Palacios"
+  - Samantha Hinsley
+  - Celeste L Pearce
+  - Malcolm C Pike
+  - Anna M Piskorz
+  - Isabelle Ray-Coquard
+  - Valerie Rhenius
+  - Cristina Rodriguez-Antona
+  - Raghwa Sharma
+  - Mark E Sherman
+  - Dilrini De Silva
+  - Naveena Singh
+  - Peter Sinn
+  - Dennis Slamon
+  - Honglin Song
+  - Helen Steed
+  - Euan A Stronach
+  - Pamela J Thompson
+  - "Aleksandra To\u0142oczko"
+  - Britton Trabert
+  - Nadia Traficante
+  - Chiu-Chen Tseng
+  - Martin Widschwendter
+  - Lynne R Wilkens
+  - Stacey J Winham
+  - Boris Winterhoff
+  - Alicia Beeghly-Fadiel
+  - Javier Benitez
+  - Andrew Berchuck
+  - James D Brenton
+  - Robert Brown
+  - Jenny Chang-Claude
+  - Georgia Chenevix-Trench
+  - Anna DeFazio
+  - Peter A Fasching
+  - "Mar\xEDa J Garc\xEDa"
+  - Simon A Gayther
+  - Marc T Goodman
+  - Jacek Gronwald
+  - Michelle J Henderson
+  - Beth Y Karlan
+  - Linda E Kelemen
+  - Usha Menon
+  - Sandra Orsulic
+  - Paul DP Pharoah
+  - Nicolas Wentzensen
+  - Anna H Wu
+  - Joellen M Schildkraut
+  - Mary Anne Rossing
+  - Gottfried E Konecny
+  - David G Huntsman
+  - Ruby Yun-Ju Huang
+  - Ellen L Goode
+  - Susan J Ramus
+  - Jennifer A Doherty
+  - David D Bowtell
+  - Michael S Anglesio
+  publisher: Apollo - University of Cambridge Repository
+  date: '2020-06-04'
+  link: https://doi.org/gqs2p2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/gigascience/giaa056
+  title: Recommendations to enhance rigor and reproducibility in biomedical research
+  authors:
+  - Jaqueline J Brito
+  - Jun Li
+  - Jason H Moore
+  - Casey S Greene
+  - Nicole A Nogoy
+  - Lana X Garmire
+  - Serghei Mangul
+  publisher: GigaScience
+  date: '2020-06-01'
+  link: https://doi.org/ggzr3d
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.copbio.2019.12.021
+  title: Incorporating biological structure into machine learning models in biomedicine
+  authors:
+  - Jake Crawford
+  - Casey S Greene
+  publisher: Current Opinion in Biotechnology
+  date: '2020-06-01'
+  link: https://doi.org/gg7m47
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.05.03.066597
+  title: Correcting for experiment-specific variability in expression compendia can
+    remove underlying signals
+  authors:
+  - Alexandra J. Lee
+  - YoSon Park
+  - Georgia Doing
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-05-03'
+  link: https://doi.org/gg7m5s
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.04.14.927251
+  title: Analysis of ISCB honorees and keynotes reveals disparities
+  authors:
+  - Trang T. Le
+  - Daniel S. Himmelstein
+  - Ariel A. Hippen Anderson
+  - Matthew R. Gazzara
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-04-14'
+  link: https://doi.org/ggr64p
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.3744941
+  title: 'greenelab/BioBombe: Accepted Manuscript - Genome Biology'
+  authors:
+  - Gregory Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel Himmelstein
+  - Casey Greene
+  publisher: Zenodo
+  date: '2020-04-08'
+  link: https://doi.org/gqs2p3
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.2550266
+  title: 'greenelab/BioBombe: Accepted Manuscript - Genome Biology'
+  authors:
+  - Gregory Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel Himmelstein
+  - Casey Greene
+  publisher: Zenodo
+  date: '2020-04-08'
+  link: https://doi.org/gqs2p4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1073/pnas.1917576117
+  title: "<i>Pseudomonas aeruginosa lasR</i>\n            mutant fitness in microoxia\
+    \ is supported by an Anr-regulated oxygen-binding hemerythrin"
+  authors:
+  - Michelle E. Clay
+  - John H. Hammond
+  - Fangfang Zhong
+  - Xiaolei Chen
+  - Caitlin H. Kowalski
+  - Alexandra J. Lee
+  - Monique S. Porter
+  - Thomas H. Hampton
+  - Casey S. Greene
+  - Ekaterina V. Pletneva
+  - Deborah A. Hogan
+  publisher: Proceedings of the National Academy of Sciences
+  date: '2020-01-24'
+  link: https://doi.org/gg7m49
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/genes11020226
+  title: Integrative Analysis Identifies Candidate Tumor Microenvironment and Intracellular
+    Signaling Pathways that Define Tumor Heterogeneity in NF1
+  authors:
+  - Jineta Banerjee
+  - Robert J Allaway
+  - Jaclyn N Taroni
+  - Aaron Baker
+  - Xiaochun Zhang
+  - Chang In Moon
+  - Christine A Pratilas
+  - Jaishri O Blakeley
+  - Justin Guinney
+  - Angela Hirbe
+  - Casey S Greene
+  - Sara JC Gosline
+  publisher: Genes
+  date: '2020-02-21'
+  link: https://doi.org/gg4rbj
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.01.17.910703
+  title: Graph biased feature selection of genes is better than random for many genes
+  authors:
+  - Jake Crawford
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-01-21'
+  link: https://doi.org/gg7m5p
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.01.13.904771
+  title: Integrative analysis identifies candidate tumor microenvironment and intracellular
+    signaling pathways that define tumor heterogeneity in NF1
+  authors:
+  - Jineta Banerjee
+  - Robert J Allaway
+  - Jaclyn N Taroni
+  - Aaron Baker
+  - Xiaochun Zhang
+  - Chang In Moon
+  - Christine A Pratilas
+  - Jaishri O Blakeley
+  - Justin Guinney
+  - Angela Hirbe
+  - Casey S Greene
+  - Sara JC Gosline
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-01-14'
+  link: https://doi.org/gg7m5n
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285494
+  title: Additional file 1 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2p5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285494.v1
+  title: Additional file 1 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2p6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285500
+  title: Additional file 2 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2p7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285500.v1
+  title: Additional file 2 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2p8
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285506
+  title: Additional file 3 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2p9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285506.v1
+  title: Additional file 3 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qb
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285512.v1
+  title: Additional file 4 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qc
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285512
+  title: Additional file 4 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285515
+  title: Additional file 5 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285515.v1
+  title: Additional file 5 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qg
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285518.v1
+  title: Additional file 6 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qh
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285518
+  title: Additional file 6 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qj
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285521
+  title: Additional file 7 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qk
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.12285521.v1
+  title: Additional file 7 of Compressing gene expression data using multiple latent
+    space dimensionalities learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.c.4972634
+  title: Compressing gene expression data using multiple latent space dimensionalities
+    learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qn
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.c.4972634.v1
+  title: Compressing gene expression data using multiple latent space dimensionalities
+    learns complementary biological representations
+  authors:
+  - Gregory P. Way
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: figshare
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qp
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5524/100796
+  title: Supporting data for "Correcting for experiment-specific variability in expression
+    compendia can remove underlying signals"
+  authors:
+  - Lee J Alexandra
+  - Park YoSon
+  - Doing Georgia
+  - Hogan A Deborah
+  - Greene S Casey
+  publisher: GigaScience Database
+  date: '2020-01-01'
+  link: https://doi.org/gqs2qq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1182/bloodadvances.2019000303
+  title: Integrated phosphoproteomics and transcriptional classifiers reveal hidden
+    RAS signaling dynamics in multiple myeloma
+  authors:
+  - Yu-Hsiu T. Lin
+  - Gregory P. Way
+  - Benjamin G. Barwick
+  - Margarette C. Mariano
+  - Makeba Marcoulis
+  - Ian D. Ferguson
+  - Christoph Driessen
+  - Lawrence H. Boise
+  - Casey S. Greene
+  - Arun P. Wiita
+  publisher: Blood Advances
+  date: '2019-10-29'
+  link: https://doi.org/gg7m56
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/802934
+  title: <i>Pseudomonas aeruginosa lasR</i>mutant fitness in microoxia is supported
+    by an Anr-regulated oxygen-binding hemerythrin
+  authors:
+  - Michelle E. Clay
+  - John H. Hammond
+  - Fangfang Zhong
+  - Xiaolei Chen
+  - Caitlin H. Kowalski
+  - Alexandra J. Lee
+  - Monique S. Porter
+  - Casey S. Greene
+  - Ekaterina V. Pletneva
+  - Deborah A. Hogan
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-10-13'
+  link: https://doi.org/gg7m53
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/730085
+  title: Expanding a Database-derived Biomedical Knowledge Graph via Multi-relation
+    Extraction from Biomedical Abstracts
+  authors:
+  - David N. Nicholson
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-08-08'
+  link: https://doi.org/gf6qxh
+  orcid: 0000-0001-8713-9213
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1371/journal.pcbi.1007128
@@ -70,7 +1614,7 @@
   publisher: PLOS Computational Biology
   date: '2020-12-04'
   link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  orcid: 0000-0001-8713-9213
   plugin: sources.py
   file: sources.yaml
   type: paper
@@ -89,6 +1633,19 @@
   - open science
   - collaboration
   repo: greenelab/meta-review
+- id: doi:10.1093/bioinformatics/bty828
+  title: Learning and Imputation for Mass-spec Bias Reduction (LIMBR)
+  authors:
+  - Alexander M Crowell
+  - Casey S Greene
+  - Jennifer J Loros
+  - Jay C Dunlap
+  publisher: Bioinformatics
+  date: '2018-09-24'
+  link: https://doi.org/gg7qrs
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/573782
   title: Sequential compression of gene expression across dimensionalities and methods
     reveals no single best method or dimensionality
@@ -101,20 +1658,225 @@
   publisher: Cold Spring Harbor Laboratory
   date: '2019-03-11'
   link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
+  orcid: 0000-0001-8713-9213
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1101/563312
+  title: Integrated Phosphoproteomics and Transcriptional Classifiers Reveal Hidden
+    RAS Signaling Dynamics in Multiple Myeloma
   authors:
-  - David N. Nicholson
+  - Yu-Hsiu T. Lin
+  - Gregory P. Way
+  - Benjamin G. Barwick
+  - Margarette C. Mariano
+  - Makeba Marcoulis
+  - Ian D. Ferguson
+  - Christoph Driessen
+  - Lawrence H. Boise
   - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
+  - Arun P. Wiita
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-02-28'
+  link: https://doi.org/gfv5xd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1534/g3.118.200867
+  title: New<i>Drosophila</i>Long-Term Memory Genes Revealed by Assessing Computational
+    Function Prediction Methods
+  authors:
+  - Balint Z Kacsoh
+  - Stephen Barton
+  - Yuxiang Jiang
+  - Naihui Zhou
+  - Sean D Mooney
+  - Iddo Friedberg
+  - Predrag Radivojac
+  - Casey S Greene
+  - Giovanni Bosco
+  publisher: G3 Genes|Genomes|Genetics
+  date: '2019-01-01'
+  link: https://doi.org/gg7m58
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.6982919.v2
+  title: MultiPLIER Fileset
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2019-01-01'
+  link: https://doi.org/gqs2qr
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41592-018-0230-9
+  title: Bayesian deep learning for single-cell analysis
+  authors:
+  - Gregory P. Way
+  - Casey S. Greene
+  publisher: Nature Methods
+  date: '2018-11-30'
+  link: https://doi.org/ggjn34
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13040-018-0175-7
+  title: 'PathCORE-T: identifying and visualizing globally co-occurring pathways in
+    large transcriptomic compendia'
+  authors:
+  - Kathleen M. Chen
+  - Jie Tan
+  - Gregory P. Way
+  - Georgia Doing
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: BioData Mining
+  date: '2018-07-03'
+  link: https://doi.org/gdt7f5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.1435834
+  title: Node connectivity measurements for Hetionet v1.0 metapaths
+  authors:
+  - Daniel Himmelstein
+  - Michael Zietz
+  - Kyle Kloster
+  - Michael Nagle
+  - Blair Sullivan
+  - Casey Greene
+  publisher: Zenodo
+  date: '2018-11-06'
+  link: https://doi.org/gg2wr7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.5281/zenodo.1435833
+  title: Node connectivity measurements for Hetionet v1.0 metapaths
+  authors:
+  - Daniel Himmelstein
+  - Michael Zietz
+  - Kyle Kloster
+  - Michael Nagle
+  - Blair Sullivan
+  - Casey Greene
+  publisher: Zenodo
+  date: '2018-11-06'
+  link: https://doi.org/cww7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/gigascience/giy129
+  title: A parasite's perspective on data sharing
+  authors:
+  - YoSon Park
+  - Casey S Greene
+  publisher: GigaScience
+  date: '2018-11-01'
+  link: https://doi.org/gg7m5b
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.27229v1
+  title: Discovering pathway and cell-type signatures in transcriptomic compendia
+    with machine learning
+  authors:
+  - Gregory P Way
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2018-09-20'
+  link: https://doi.org/gqs2qs
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.27229
+  title: Discovering pathway and cell-type signatures in transcriptomic compendia
+    with machine learning
+  authors:
+  - Gregory P Way
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2018-09-20'
+  link: https://doi.org/gqs2qt
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/414565
+  title: New Drosophila long-term memory genes revealed by assessing computational
+    function prediction methods
+  authors:
+  - Balint Z. Kacsoh
+  - Stephen Barton
+  - Yuxiang Jiang
+  - Naihui Zhou
+  - Sean D. Mooney
+  - Iddo Friedberg
+  - Predrag Radivojac
+  - Casey S. Greene
+  - Giovanni Bosco
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-09-11'
+  link: https://doi.org/gg7m5v
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/395947
+  title: 'MultiPLIER: a transfer learning framework for transcriptomics reveals systemic
+    features of rare disease'
+  authors:
+  - Jaclyn N. Taroni
+  - Peter C. Grayson
+  - Qiwen Hu
+  - Sean Eddy
+  - Matthias Kretzler
+  - Peter A. Merkel
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-08-20'
+  link: https://doi.org/gfc9bb
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/385534
+  title: Parameter tuning is a key part of dimensionality reduction via deep variational
+    autoencoders for single cell RNA transcriptomics
+  authors:
+  - Qiwen Hu
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-08-05'
+  link: https://doi.org/gdxxjf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/361816
+  title: Specific histone modifications associate with alternative exon selection
+    during mammalian development
+  authors:
+  - Q Hu
+  - CS Greene
+  - EA Heller
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-07-04'
+  link: https://doi.org/gfsptv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/301242
+  title: Learning and Imputation for Mass-spec Bias Reduction (LIMBR)
+  authors:
+  - Alexander M Crowell
+  - Casey S Greene
+  - Jennifer J. Loros
+  - Jay C Dunlap
+  publisher: Cold Spring Harbor Laboratory
+  date: '2018-04-14'
+  link: https://doi.org/gg7m5t
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.7554/eLife.32822
   title: Sci-Hub provides access to nearly all scholarly literature
   authors:
@@ -128,6 +1890,3959 @@
   publisher: eLife
   date: '2018-03-01'
   link: https://doi.org/ckcj
+  orcid: 0000-0001-8713-9213
+  plugin: sources.py
+  file: sources.yaml
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+- id: doi:10.7287/peerj.preprints.3100v3
+  title: Sci-Hub provides access to nearly all scholarly literature
+  authors:
+  - Daniel S Himmelstein
+  - Ariel R Romero
+  - Jacob G Levernier
+  - Thomas A Munro
+  - Stephen R McLaughlin
+  - Bastian Greshake Tzovaras
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2018-02-02'
+  link: https://doi.org/cj45
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/JB.00703-17
+  title: A Multimodal Strategy Used by a Large c-di-GMP Network
+  authors:
+  - Kurt M. Dahlstrom
+  - Alan J. Collins
+  - Georgia Doing
+  - Jaclyn N. Taroni
+  - Timothy J. Gauvin
+  - Casey S. Greene
+  - Deborah A. Hogan
+  - George A. O'Toole
+  publisher: Journal of Bacteriology
+  date: '2018-04-15'
+  link: https://doi.org/gg7qrt
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.celrep.2018.03.046
+  title: Machine Learning Detects Pan-cancer Ras Pathway Activation in The Cancer
+    Genome Atlas
+  authors:
+  - Gregory P. Way
+  - Francisco Sanchez-Vega
+  - Konnor La
+  - Joshua Armenia
+  - Walid K. Chatila
+  - Augustin Luna
+  - Chris Sander
+  - Andrew D. Cherniack
+  - Marco Mina
+  - Giovanni Ciriello
+  - Nikolaus Schultz
+  - Yolanda Sanchez
+  - Casey S. Greene
+  - Samantha J. Caesar-Johnson
+  - John A. Demchok
+  - Ina Felau
+  - Melpomeni Kasapi
+  - Martin L. Ferguson
+  - Carolyn M. Hutter
+  - Heidi J. Sofia
+  - Roy Tarnuzzer
+  - Zhining Wang
+  - Liming Yang
+  - Jean C. Zenklusen
+  - Jiashan (Julia) Zhang
+  - Sudha Chudamani
+  - Jia Liu
+  - Laxmi Lolla
+  - Rashi Naresh
+  - Todd Pihl
+  - Qiang Sun
+  - Yunhu Wan
+  - Ye Wu
+  - Juok Cho
+  - Timothy DeFreitas
+  - Scott Frazer
+  - Nils Gehlenborg
+  - Gad Getz
+  - David I. Heiman
+  - Jaegil Kim
+  - Michael S. Lawrence
+  - Pei Lin
+  - Sam Meier
+  - Michael S. Noble
+  - Gordon Saksena
+  - Doug Voet
+  - Hailei Zhang
+  - Brady Bernard
+  - Nyasha Chambwe
+  - Varsha Dhankani
+  - Theo Knijnenburg
+  - Roger Kramer
+  - Kalle Leinonen
+  - Yuexin Liu
+  - Michael Miller
+  - Sheila Reynolds
+  - Ilya Shmulevich
+  - Vesteinn Thorsson
+  - Wei Zhang
+  - Rehan Akbani
+  - Bradley M. Broom
+  - Apurva M. Hegde
+  - Zhenlin Ju
+  - Rupa S. Kanchi
+  - Anil Korkut
+  - Jun Li
+  - Han Liang
+  - Shiyun Ling
+  - Wenbin Liu
+  - Yiling Lu
+  - Gordon B. Mills
+  - Kwok-Shing Ng
+  - Arvind Rao
+  - Michael Ryan
+  - Jing Wang
+  - John N. Weinstein
+  - Jiexin Zhang
+  - Adam Abeshouse
+  - Joshua Armenia
+  - Debyani Chakravarty
+  - Walid K. Chatila
+  - Ino de Bruijn
+  - Jianjiong Gao
+  - Benjamin E. Gross
+  - Zachary J. Heins
+  - Ritika Kundra
+  - Konnor La
+  - Marc Ladanyi
+  - Augustin Luna
+  - Moriah G. Nissan
+  - Angelica Ochoa
+  - Sarah M. Phillips
+  - Ed Reznik
+  - Francisco Sanchez-Vega
+  - Chris Sander
+  - Nikolaus Schultz
+  - Robert Sheridan
+  - S. Onur Sumer
+  - Yichao Sun
+  - Barry S. Taylor
+  - Jioajiao Wang
+  - Hongxin Zhang
+  - Pavana Anur
+  - Myron Peto
+  - Paul Spellman
+  - Christopher Benz
+  - Joshua M. Stuart
+  - Christopher K. Wong
+  - Christina Yau
+  - D. Neil Hayes
+  - Joel S. Parker
+  - Matthew D. Wilkerson
+  - Adrian Ally
+  - Miruna Balasundaram
+  - Reanne Bowlby
+  - Denise Brooks
+  - Rebecca Carlsen
+  - Eric Chuah
+  - Noreen Dhalla
+  - Robert Holt
+  - Steven J.M. Jones
+  - Katayoon Kasaian
+  - Darlene Lee
+  - Yussanne Ma
+  - Marco A. Marra
+  - Michael Mayo
+  - Richard A. Moore
+  - Andrew J. Mungall
+  - Karen Mungall
+  - A. Gordon Robertson
+  - Sara Sadeghi
+  - Jacqueline E. Schein
+  - Payal Sipahimalani
+  - Angela Tam
+  - Nina Thiessen
+  - Kane Tse
+  - Tina Wong
+  - Ashton C. Berger
+  - Rameen Beroukhim
+  - Andrew D. Cherniack
+  - Carrie Cibulskis
+  - Stacey B. Gabriel
+  - Galen F. Gao
+  - Gavin Ha
+  - Matthew Meyerson
+  - Steven E. Schumacher
+  - Juliann Shih
+  - Melanie H. Kucherlapati
+  - Raju S. Kucherlapati
+  - Stephen Baylin
+  - Leslie Cope
+  - Ludmila Danilova
+  - Moiz S. Bootwalla
+  - Phillip H. Lai
+  - Dennis T. Maglinte
+  - David J. Van Den Berg
+  - Daniel J. Weisenberger
+  - J. Todd Auman
+  - Saianand Balu
+  - Tom Bodenheimer
+  - Cheng Fan
+  - Katherine A. Hoadley
+  - Alan P. Hoyle
+  - Stuart R. Jefferys
+  - Corbin D. Jones
+  - Shaowu Meng
+  - Piotr A. Mieczkowski
+  - Lisle E. Mose
+  - Amy H. Perou
+  - Charles M. Perou
+  - Jeffrey Roach
+  - Yan Shi
+  - Janae V. Simons
+  - Tara Skelly
+  - Matthew G. Soloway
+  - Donghui Tan
+  - Umadevi Veluvolu
+  - Huihui Fan
+  - Toshinori Hinoue
+  - Peter W. Laird
+  - Hui Shen
+  - Wanding Zhou
+  - Michelle Bellair
+  - Kyle Chang
+  - Kyle Covington
+  - Chad J. Creighton
+  - Huyen Dinh
+  - HarshaVardhan Doddapaneni
+  - Lawrence A. Donehower
+  - Jennifer Drummond
+  - Richard A. Gibbs
+  - Robert Glenn
+  - Walker Hale
+  - Yi Han
+  - Jianhong Hu
+  - Viktoriya Korchina
+  - Sandra Lee
+  - Lora Lewis
+  - Wei Li
+  - Xiuping Liu
+  - Margaret Morgan
+  - Donna Morton
+  - Donna Muzny
+  - Jireh Santibanez
+  - Margi Sheth
+  - Eve Shinbrot
+  - Linghua Wang
+  - Min Wang
+  - David A. Wheeler
+  - Liu Xi
+  - Fengmei Zhao
+  - Julian Hess
+  - Elizabeth L. Appelbaum
+  - Matthew Bailey
+  - Matthew G. Cordes
+  - Li Ding
+  - Catrina C. Fronick
+  - Lucinda A. Fulton
+  - Robert S. Fulton
+  - Cyriac Kandoth
+  - Elaine R. Mardis
+  - Michael D. McLellan
+  - Christopher A. Miller
+  - Heather K. Schmidt
+  - Richard K. Wilson
+  - Daniel Crain
+  - Erin Curley
+  - Johanna Gardner
+  - Kevin Lau
+  - David Mallery
+  - Scott Morris
+  - Joseph Paulauskis
+  - Robert Penny
+  - Candace Shelton
+  - Troy Shelton
+  - Mark Sherman
+  - Eric Thompson
+  - Peggy Yena
+  - Jay Bowen
+  - Julie M. Gastier-Foster
+  - Mark Gerken
+  - Kristen M. Leraas
+  - Tara M. Lichtenberg
+  - Nilsa C. Ramirez
+  - Lisa Wise
+  - Erik Zmuda
+  - Niall Corcoran
+  - Tony Costello
+  - Christopher Hovens
+  - Andre L. Carvalho
+  - Ana C. de Carvalho
+  - "Jos\xE9 H. Fregnani"
+  - Adhemar Longatto-Filho
+  - Rui M. Reis
+  - Cristovam Scapulatempo-Neto
+  - Henrique C.S. Silveira
+  - Daniel O. Vidal
+  - Andrew Burnette
+  - Jennifer Eschbacher
+  - Beth Hermes
+  - Ardene Noss
+  - Rosy Singh
+  - Matthew L. Anderson
+  - Patricia D. Castro
+  - Michael Ittmann
+  - David Huntsman
+  - Bernard Kohl
+  - Xuan Le
+  - Richard Thorp
+  - Chris Andry
+  - Elizabeth R. Duffy
+  - Vladimir Lyadov
+  - Oxana Paklina
+  - Galiya Setdikova
+  - Alexey Shabunin
+  - Mikhail Tavobilov
+  - Christopher McPherson
+  - Ronald Warnick
+  - Ross Berkowitz
+  - Daniel Cramer
+  - Colleen Feltmate
+  - Neil Horowitz
+  - Adam Kibel
+  - Michael Muto
+  - Chandrajit P. Raut
+  - Andrei Malykh
+  - Jill S. Barnholtz-Sloan
+  - Wendi Barrett
+  - Karen Devine
+  - Jordonna Fulop
+  - Quinn T. Ostrom
+  - Kristen Shimmel
+  - Yingli Wolinsky
+  - Andrew E. Sloan
+  - Agostino De Rose
+  - Felice Giuliante
+  - Marc Goodman
+  - Beth Y. Karlan
+  - Curt H. Hagedorn
+  - John Eckman
+  - Jodi Harr
+  - Jerome Myers
+  - Kelinda Tucker
+  - Leigh Anne Zach
+  - Brenda Deyarmin
+  - Hai Hu
+  - Leonid Kvecher
+  - Caroline Larson
+  - Richard J. Mural
+  - Stella Somiari
+  - Ales Vicha
+  - Tomas Zelinka
+  - Joseph Bennett
+  - Mary Iacocca
+  - Brenda Rabeno
+  - Patricia Swanson
+  - Mathieu Latour
+  - Louis Lacombe
+  - "Bernard T\xEAtu"
+  - Alain Bergeron
+  - Mary McGraw
+  - Susan M. Staugaitis
+  - John Chabot
+  - Hanina Hibshoosh
+  - Antonia Sepulveda
+  - Tao Su
+  - Timothy Wang
+  - Olga Potapova
+  - Olga Voronina
+  - Laurence Desjardins
+  - Odette Mariani
+  - Sergio Roman-Roman
+  - Xavier Sastre
+  - Marc-Henri Stern
+  - Feixiong Cheng
+  - Sabina Signoretti
+  - Andrew Berchuck
+  - Darell Bigner
+  - Eric Lipp
+  - Jeffrey Marks
+  - Shannon McCall
+  - Roger McLendon
+  - Angeles Secord
+  - Alexis Sharp
+  - Madhusmita Behera
+  - Daniel J. Brat
+  - Amy Chen
+  - Keith Delman
+  - Seth Force
+  - Fadlo Khuri
+  - Kelly Magliocca
+  - Shishir Maithel
+  - Jeffrey J. Olson
+  - Taofeek Owonikoko
+  - Alan Pickens
+  - Suresh Ramalingam
+  - Dong M. Shin
+  - Gabriel Sica
+  - Erwin G. Van Meir
+  - Hongzheng Zhang
+  - Wil Eijckenboom
+  - Ad Gillis
+  - Esther Korpershoek
+  - Leendert Looijenga
+  - Wolter Oosterhuis
+  - Hans Stoop
+  - Kim E. van Kessel
+  - Ellen C. Zwarthoff
+  - Chiara Calatozzolo
+  - Lucia Cuppini
+  - Stefania Cuzzubbo
+  - Francesco DiMeco
+  - Gaetano Finocchiaro
+  - Luca Mattei
+  - Alessandro Perin
+  - Bianca Pollo
+  - Chu Chen
+  - John Houck
+  - Pawadee Lohavanichbutr
+  - Arndt Hartmann
+  - Christine Stoehr
+  - Robert Stoehr
+  - Helge Taubert
+  - Sven Wach
+  - Bernd Wullich
+  - Witold Kycler
+  - Dawid Murawa
+  - Maciej Wiznerowicz
+  - Ki Chung
+  - W. Jeffrey Edenfield
+  - Julie Martin
+  - Eric Baudin
+  - Glenn Bubley
+  - Raphael Bueno
+  - Assunta De Rienzo
+  - William G. Richards
+  - Steven Kalkanis
+  - Tom Mikkelsen
+  - Houtan Noushmehr
+  - Lisa Scarpace
+  - Nicolas Girard
+  - Marta Aymerich
+  - Elias Campo
+  - "Eva Gin\xE9"
+  - "Armando L\xF3pez Guillermo"
+  - Nguyen Van Bang
+  - Phan Thi Hanh
+  - Bui Duc Phu
+  - Yufang Tang
+  - Howard Colman
+  - Kimberley Evason
+  - Peter R. Dottino
+  - John A. Martignetti
+  - Hani Gabra
+  - Hartmut Juhl
+  - Teniola Akeredolu
+  - Serghei Stepa
+  - Dave Hoon
+  - Keunsoo Ahn
+  - Koo Jeong Kang
+  - Felix Beuschlein
+  - Anne Breggia
+  - Michael Birrer
+  - Debra Bell
+  - Mitesh Borad
+  - Alan H. Bryce
+  - Erik Castle
+  - Vishal Chandan
+  - John Cheville
+  - John A. Copland
+  - Michael Farnell
+  - Thomas Flotte
+  - Nasra Giama
+  - Thai Ho
+  - Michael Kendrick
+  - Jean-Pierre Kocher
+  - Karla Kopp
+  - Catherine Moser
+  - David Nagorney
+  - "Daniel O\u2019Brien"
+  - "Brian Patrick O\u2019Neill"
+  - Tushar Patel
+  - Gloria Petersen
+  - Florencia Que
+  - Michael Rivera
+  - Lewis Roberts
+  - Robert Smallridge
+  - Thomas Smyrk
+  - Melissa Stanton
+  - R. Houston Thompson
+  - Michael Torbenson
+  - Ju Dong Yang
+  - Lizhi Zhang
+  - Fadi Brimo
+  - Jaffer A. Ajani
+  - Ana Maria Angulo Gonzalez
+  - Carmen Behrens
+  - Jolanta Bondaruk
+  - Russell Broaddus
+  - Bogdan Czerniak
+  - Bita Esmaeli
+  - Junya Fujimoto
+  - Jeffrey Gershenwald
+  - Charles Guo
+  - Alexander J. Lazar
+  - Christopher Logothetis
+  - Funda Meric-Bernstam
+  - Cesar Moran
+  - Lois Ramondetta
+  - David Rice
+  - Anil Sood
+  - Pheroze Tamboli
+  - Timothy Thompson
+  - Patricia Troncoso
+  - Anne Tsao
+  - Ignacio Wistuba
+  - Candace Carter
+  - Lauren Haydu
+  - Peter Hersey
+  - Valerie Jakrot
+  - Hojabr Kakavand
+  - Richard Kefford
+  - Kenneth Lee
+  - Georgina Long
+  - Graham Mann
+  - Michael Quinn
+  - Robyn Saw
+  - Richard Scolyer
+  - Kerwin Shannon
+  - Andrew Spillane
+  - Jonathan Stretch
+  - Maria Synott
+  - John Thompson
+  - James Wilmott
+  - Hikmat Al-Ahmadie
+  - Timothy A. Chan
+  - Ronald Ghossein
+  - Anuradha Gopalan
+  - Douglas A. Levine
+  - Victor Reuter
+  - Samuel Singer
+  - Bhuvanesh Singh
+  - Nguyen Viet Tien
+  - Thomas Broudy
+  - Cyrus Mirsaidi
+  - Praveen Nair
+  - Paul Drwiega
+  - Judy Miller
+  - Jennifer Smith
+  - Howard Zaren
+  - Joong-Won Park
+  - Nguyen Phi Hung
+  - Electron Kebebew
+  - W. Marston Linehan
+  - Adam R. Metwalli
+  - Karel Pacak
+  - Peter A. Pinto
+  - Mark Schiffman
+  - Laura S. Schmidt
+  - Cathy D. Vocke
+  - Nicolas Wentzensen
+  - Robert Worrell
+  - Hannah Yang
+  - Marc Moncrieff
+  - Chandra Goparaju
+  - Jonathan Melamed
+  - Harvey Pass
+  - Natalia Botnariuc
+  - Irina Caraman
+  - Mircea Cernat
+  - Inga Chemencedji
+  - Adrian Clipca
+  - Serghei Doruc
+  - Ghenadie Gorincioi
+  - Sergiu Mura
+  - Maria Pirtac
+  - Irina Stancul
+  - Diana Tcaciuc
+  - Monique Albert
+  - Iakovina Alexopoulou
+  - Angel Arnaout
+  - John Bartlett
+  - Jay Engel
+  - Sebastien Gilbert
+  - Jeremy Parfitt
+  - Harman Sekhon
+  - George Thomas
+  - Doris M. Rassl
+  - Robert C. Rintoul
+  - Carlo Bifulco
+  - Raina Tamakawa
+  - Walter Urba
+  - Nicholas Hayward
+  - Henri Timmers
+  - Anna Antenucci
+  - Francesco Facciolo
+  - Gianluca Grazi
+  - Mirella Marino
+  - Roberta Merola
+  - Ronald de Krijger
+  - Anne-Paule Gimenez-Roqueplo
+  - "Alain Pich\xE9"
+  - Simone Chevalier
+  - Ginette McKercher
+  - Kivanc Birsoy
+  - Gene Barnett
+  - Cathy Brewer
+  - Carol Farver
+  - Theresa Naska
+  - Nathan A. Pennell
+  - Daniel Raymond
+  - Cathy Schilero
+  - Kathy Smolenski
+  - Felicia Williams
+  - Carl Morrison
+  - Jeffrey A. Borgia
+  - Michael J. Liptay
+  - Mark Pool
+  - Christopher W. Seder
+  - Kerstin Junker
+  - Larsson Omberg
+  - Mikhail Dinkin
+  - George Manikhas
+  - Domenico Alvaro
+  - Maria Consiglia Bragazzi
+  - Vincenzo Cardinale
+  - Guido Carpino
+  - Eugenio Gaudio
+  - David Chesla
+  - Sandra Cottingham
+  - Michael Dubina
+  - Fedor Moiseenko
+  - Renumathy Dhanasekaran
+  - Karl-Friedrich Becker
+  - Klaus-Peter Janssen
+  - Julia Slotta-Huspenina
+  - Mohamed H. Abdel-Rahman
+  - Dina Aziz
+  - Sue Bell
+  - Colleen M. Cebulla
+  - Amy Davis
+  - Rebecca Duell
+  - J. Bradley Elder
+  - Joe Hilty
+  - Bahavna Kumar
+  - James Lang
+  - Norman L. Lehman
+  - Randy Mandt
+  - Phuong Nguyen
+  - Robert Pilarski
+  - Karan Rai
+  - Lynn Schoenfield
+  - Kelly Senecal
+  - Paul Wakely
+  - Paul Hansen
+  - Ronald Lechan
+  - James Powers
+  - Arthur Tischler
+  - William E. Grizzle
+  - Katherine C. Sexton
+  - Alison Kastl
+  - Joel Henderson
+  - Sima Porten
+  - Jens Waldmann
+  - Martin Fassnacht
+  - Sylvia L. Asa
+  - Dirk Schadendorf
+  - Marta Couce
+  - Markus Graefen
+  - Hartwig Huland
+  - Guido Sauter
+  - Thorsten Schlomm
+  - Ronald Simon
+  - Pierre Tennstedt
+  - Oluwole Olabode
+  - Mark Nelson
+  - Oliver Bathe
+  - Peter R. Carroll
+  - June M. Chan
+  - Philip Disaia
+  - Pat Glenn
+  - Robin K. Kelley
+  - Charles N. Landen
+  - Joanna Phillips
+  - Michael Prados
+  - Jeffry Simko
+  - Karen Smith-McCune
+  - Scott VandenBerg
+  - Kevin Roggin
+  - Ashley Fehrenbach
+  - Ady Kendler
+  - Suzanne Sifri
+  - Ruth Steele
+  - Antonio Jimeno
+  - Francis Carey
+  - Ian Forgie
+  - Massimo Mannelli
+  - Michael Carney
+  - Brenda Hernandez
+  - Benito Campos
+  - Christel Herold-Mende
+  - Christin Jungk
+  - Andreas Unterberg
+  - Andreas von Deimling
+  - Aaron Bossler
+  - Joseph Galbraith
+  - Laura Jacobus
+  - Michael Knudson
+  - Tina Knutson
+  - Deqin Ma
+  - Mohammed Milhem
+  - Rita Sigmund
+  - Andrew K. Godwin
+  - Rashna Madan
+  - Howard G. Rosenthal
+  - Clement Adebamowo
+  - Sally N. Adebamowo
+  - Alex Boussioutas
+  - David Beer
+  - Thomas Giordano
+  - Anne-Marie Mes-Masson
+  - Fred Saad
+  - Therese Bocklage
+  - Lisa Landrum
+  - Robert Mannel
+  - Kathleen Moore
+  - Katherine Moxley
+  - Russel Postier
+  - Joan Walker
+  - Rosemary Zuna
+  - Michael Feldman
+  - Federico Valdivieso
+  - Rajiv Dhir
+  - James Luketich
+  - Edna M. Mora Pinero
+  - Mario Quintero-Aguilo
+  - Carlos Gilberto Carlotti
+  - "Jose Sebasti\xE3o Dos Santos"
+  - Rafael Kemp
+  - Ajith Sankarankuty
+  - Daniela Tirapelli
+  - James Catto
+  - Kathy Agnew
+  - Elizabeth Swisher
+  - Jenette Creaney
+  - Bruce Robinson
+  - Carl Simon Shelley
+  - Eryn M. Godwin
+  - Sara Kendall
+  - Cassaundra Shipman
+  - Carol Bradford
+  - Thomas Carey
+  - Andrea Haddad
+  - Jeffey Moyer
+  - Lisa Peterson
+  - Mark Prince
+  - Laura Rozek
+  - Gregory Wolf
+  - Rayleen Bowman
+  - Kwun M. Fong
+  - Ian Yang
+  - Robert Korst
+  - W. Kimryn Rathmell
+  - J. Leigh Fantacone-Campbell
+  - Jeffrey A. Hooke
+  - Albert J. Kovatich
+  - Craig D. Shriver
+  - John DiPersio
+  - Bettina Drake
+  - Ramaswamy Govindan
+  - Sharon Heath
+  - Timothy Ley
+  - Brian Van Tine
+  - Peter Westervelt
+  - Mark A. Rubin
+  - Jung Il Lee
+  - "Nat\xE1lia D. Aredes"
+  - Armaz Mariamidze
+  publisher: Cell Reports
+  date: '2018-04-01'
+  link: https://doi.org/gfspsb
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/M9.FIGSHARE.6982919
+  title: MultiPLIER Fileset
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2019-01-01'
+  link: https://doi.org/gqs2qv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.6982919.v1
+  title: MultiPLIER Fileset
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2018-01-01'
+  link: https://doi.org/gqs2qw
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.cell.2018.03.035
+  title: Oncogenic Signaling Pathways in The Cancer Genome Atlas
+  authors:
+  - Francisco Sanchez-Vega
+  - Marco Mina
+  - Joshua Armenia
+  - Walid K. Chatila
+  - Augustin Luna
+  - Konnor C. La
+  - Sofia Dimitriadoy
+  - David L. Liu
+  - Havish S. Kantheti
+  - Sadegh Saghafinia
+  - Debyani Chakravarty
+  - Foysal Daian
+  - Qingsong Gao
+  - Matthew H. Bailey
+  - Wen-Wei Liang
+  - Steven M. Foltz
+  - Ilya Shmulevich
+  - Li Ding
+  - Zachary Heins
+  - Angelica Ochoa
+  - Benjamin Gross
+  - Jianjiong Gao
+  - Hongxin Zhang
+  - Ritika Kundra
+  - Cyriac Kandoth
+  - Istemi Bahceci
+  - Leonard Dervishi
+  - Ugur Dogrusoz
+  - Wanding Zhou
+  - Hui Shen
+  - Peter W. Laird
+  - Gregory P. Way
+  - Casey S. Greene
+  - Han Liang
+  - Yonghong Xiao
+  - Chen Wang
+  - Antonio Iavarone
+  - Alice H. Berger
+  - Trever G. Bivona
+  - Alexander J. Lazar
+  - Gary D. Hammer
+  - Thomas Giordano
+  - Lawrence N. Kwong
+  - Grant McArthur
+  - Chenfei Huang
+  - Aaron D. Tward
+  - Mitchell J. Frederick
+  - Frank McCormick
+  - Matthew Meyerson
+  - Eliezer M. Van Allen
+  - Andrew D. Cherniack
+  - Giovanni Ciriello
+  - Chris Sander
+  - Nikolaus Schultz
+  - Samantha J. Caesar-Johnson
+  - John A. Demchok
+  - Ina Felau
+  - Melpomeni Kasapi
+  - Martin L. Ferguson
+  - Carolyn M. Hutter
+  - Heidi J. Sofia
+  - Roy Tarnuzzer
+  - Zhining Wang
+  - Liming Yang
+  - Jean C. Zenklusen
+  - Jiashan (Julia) Zhang
+  - Sudha Chudamani
+  - Jia Liu
+  - Laxmi Lolla
+  - Rashi Naresh
+  - Todd Pihl
+  - Qiang Sun
+  - Yunhu Wan
+  - Ye Wu
+  - Juok Cho
+  - Timothy DeFreitas
+  - Scott Frazer
+  - Nils Gehlenborg
+  - Gad Getz
+  - David I. Heiman
+  - Jaegil Kim
+  - Michael S. Lawrence
+  - Pei Lin
+  - Sam Meier
+  - Michael S. Noble
+  - Gordon Saksena
+  - Doug Voet
+  - Hailei Zhang
+  - Brady Bernard
+  - Nyasha Chambwe
+  - Varsha Dhankani
+  - Theo Knijnenburg
+  - Roger Kramer
+  - Kalle Leinonen
+  - Yuexin Liu
+  - Michael Miller
+  - Sheila Reynolds
+  - Ilya Shmulevich
+  - Vesteinn Thorsson
+  - Wei Zhang
+  - Rehan Akbani
+  - Bradley M. Broom
+  - Apurva M. Hegde
+  - Zhenlin Ju
+  - Rupa S. Kanchi
+  - Anil Korkut
+  - Jun Li
+  - Han Liang
+  - Shiyun Ling
+  - Wenbin Liu
+  - Yiling Lu
+  - Gordon B. Mills
+  - Kwok-Shing Ng
+  - Arvind Rao
+  - Michael Ryan
+  - Jing Wang
+  - John N. Weinstein
+  - Jiexin Zhang
+  - Adam Abeshouse
+  - Joshua Armenia
+  - Debyani Chakravarty
+  - Walid K. Chatila
+  - Ino de Bruijn
+  - Jianjiong Gao
+  - Benjamin E. Gross
+  - Zachary J. Heins
+  - Ritika Kundra
+  - Konnor La
+  - Marc Ladanyi
+  - Augustin Luna
+  - Moriah G. Nissan
+  - Angelica Ochoa
+  - Sarah M. Phillips
+  - Ed Reznik
+  - Francisco Sanchez-Vega
+  - Chris Sander
+  - Nikolaus Schultz
+  - Robert Sheridan
+  - S. Onur Sumer
+  - Yichao Sun
+  - Barry S. Taylor
+  - Jioajiao Wang
+  - Hongxin Zhang
+  - Pavana Anur
+  - Myron Peto
+  - Paul Spellman
+  - Christopher Benz
+  - Joshua M. Stuart
+  - Christopher K. Wong
+  - Christina Yau
+  - D. Neil Hayes
+  - Joel S. Parker
+  - Matthew D. Wilkerson
+  - Adrian Ally
+  - Miruna Balasundaram
+  - Reanne Bowlby
+  - Denise Brooks
+  - Rebecca Carlsen
+  - Eric Chuah
+  - Noreen Dhalla
+  - Robert Holt
+  - Steven J.M. Jones
+  - Katayoon Kasaian
+  - Darlene Lee
+  - Yussanne Ma
+  - Marco A. Marra
+  - Michael Mayo
+  - Richard A. Moore
+  - Andrew J. Mungall
+  - Karen Mungall
+  - A. Gordon Robertson
+  - Sara Sadeghi
+  - Jacqueline E. Schein
+  - Payal Sipahimalani
+  - Angela Tam
+  - Nina Thiessen
+  - Kane Tse
+  - Tina Wong
+  - Ashton C. Berger
+  - Rameen Beroukhim
+  - Andrew D. Cherniack
+  - Carrie Cibulskis
+  - Stacey B. Gabriel
+  - Galen F. Gao
+  - Gavin Ha
+  - Matthew Meyerson
+  - Steven E. Schumacher
+  - Juliann Shih
+  - Melanie H. Kucherlapati
+  - Raju S. Kucherlapati
+  - Stephen Baylin
+  - Leslie Cope
+  - Ludmila Danilova
+  - Moiz S. Bootwalla
+  - Phillip H. Lai
+  - Dennis T. Maglinte
+  - David J. Van Den Berg
+  - Daniel J. Weisenberger
+  - J. Todd Auman
+  - Saianand Balu
+  - Tom Bodenheimer
+  - Cheng Fan
+  - Katherine A. Hoadley
+  - Alan P. Hoyle
+  - Stuart R. Jefferys
+  - Corbin D. Jones
+  - Shaowu Meng
+  - Piotr A. Mieczkowski
+  - Lisle E. Mose
+  - Amy H. Perou
+  - Charles M. Perou
+  - Jeffrey Roach
+  - Yan Shi
+  - Janae V. Simons
+  - Tara Skelly
+  - Matthew G. Soloway
+  - Donghui Tan
+  - Umadevi Veluvolu
+  - Huihui Fan
+  - Toshinori Hinoue
+  - Peter W. Laird
+  - Hui Shen
+  - Wanding Zhou
+  - Michelle Bellair
+  - Kyle Chang
+  - Kyle Covington
+  - Chad J. Creighton
+  - Huyen Dinh
+  - HarshaVardhan Doddapaneni
+  - Lawrence A. Donehower
+  - Jennifer Drummond
+  - Richard A. Gibbs
+  - Robert Glenn
+  - Walker Hale
+  - Yi Han
+  - Jianhong Hu
+  - Viktoriya Korchina
+  - Sandra Lee
+  - Lora Lewis
+  - Wei Li
+  - Xiuping Liu
+  - Margaret Morgan
+  - Donna Morton
+  - Donna Muzny
+  - Jireh Santibanez
+  - Margi Sheth
+  - Eve Shinbrot
+  - Linghua Wang
+  - Min Wang
+  - David A. Wheeler
+  - Liu Xi
+  - Fengmei Zhao
+  - Julian Hess
+  - Elizabeth L. Appelbaum
+  - Matthew Bailey
+  - Matthew G. Cordes
+  - Li Ding
+  - Catrina C. Fronick
+  - Lucinda A. Fulton
+  - Robert S. Fulton
+  - Cyriac Kandoth
+  - Elaine R. Mardis
+  - Michael D. McLellan
+  - Christopher A. Miller
+  - Heather K. Schmidt
+  - Richard K. Wilson
+  - Daniel Crain
+  - Erin Curley
+  - Johanna Gardner
+  - Kevin Lau
+  - David Mallery
+  - Scott Morris
+  - Joseph Paulauskis
+  - Robert Penny
+  - Candace Shelton
+  - Troy Shelton
+  - Mark Sherman
+  - Eric Thompson
+  - Peggy Yena
+  - Jay Bowen
+  - Julie M. Gastier-Foster
+  - Mark Gerken
+  - Kristen M. Leraas
+  - Tara M. Lichtenberg
+  - Nilsa C. Ramirez
+  - Lisa Wise
+  - Erik Zmuda
+  - Niall Corcoran
+  - Tony Costello
+  - Christopher Hovens
+  - Andre L. Carvalho
+  - Ana C. de Carvalho
+  - "Jos\xE9 H. Fregnani"
+  - Adhemar Longatto-Filho
+  - Rui M. Reis
+  - Cristovam Scapulatempo-Neto
+  - Henrique C.S. Silveira
+  - Daniel O. Vidal
+  - Andrew Burnette
+  - Jennifer Eschbacher
+  - Beth Hermes
+  - Ardene Noss
+  - Rosy Singh
+  - Matthew L. Anderson
+  - Patricia D. Castro
+  - Michael Ittmann
+  - David Huntsman
+  - Bernard Kohl
+  - Xuan Le
+  - Richard Thorp
+  - Chris Andry
+  - Elizabeth R. Duffy
+  - Vladimir Lyadov
+  - Oxana Paklina
+  - Galiya Setdikova
+  - Alexey Shabunin
+  - Mikhail Tavobilov
+  - Christopher McPherson
+  - Ronald Warnick
+  - Ross Berkowitz
+  - Daniel Cramer
+  - Colleen Feltmate
+  - Neil Horowitz
+  - Adam Kibel
+  - Michael Muto
+  - Chandrajit P. Raut
+  - Andrei Malykh
+  - Jill S. Barnholtz-Sloan
+  - Wendi Barrett
+  - Karen Devine
+  - Jordonna Fulop
+  - Quinn T. Ostrom
+  - Kristen Shimmel
+  - Yingli Wolinsky
+  - Andrew E. Sloan
+  - Agostino De Rose
+  - Felice Giuliante
+  - Marc Goodman
+  - Beth Y. Karlan
+  - Curt H. Hagedorn
+  - John Eckman
+  - Jodi Harr
+  - Jerome Myers
+  - Kelinda Tucker
+  - Leigh Anne Zach
+  - Brenda Deyarmin
+  - Hai Hu
+  - Leonid Kvecher
+  - Caroline Larson
+  - Richard J. Mural
+  - Stella Somiari
+  - Ales Vicha
+  - Tomas Zelinka
+  - Joseph Bennett
+  - Mary Iacocca
+  - Brenda Rabeno
+  - Patricia Swanson
+  - Mathieu Latour
+  - Louis Lacombe
+  - "Bernard T\xEAtu"
+  - Alain Bergeron
+  - Mary McGraw
+  - Susan M. Staugaitis
+  - John Chabot
+  - Hanina Hibshoosh
+  - Antonia Sepulveda
+  - Tao Su
+  - Timothy Wang
+  - Olga Potapova
+  - Olga Voronina
+  - Laurence Desjardins
+  - Odette Mariani
+  - Sergio Roman-Roman
+  - Xavier Sastre
+  - Marc-Henri Stern
+  - Feixiong Cheng
+  - Sabina Signoretti
+  - Andrew Berchuck
+  - Darell Bigner
+  - Eric Lipp
+  - Jeffrey Marks
+  - Shannon McCall
+  - Roger McLendon
+  - Angeles Secord
+  - Alexis Sharp
+  - Madhusmita Behera
+  - Daniel J. Brat
+  - Amy Chen
+  - Keith Delman
+  - Seth Force
+  - Fadlo Khuri
+  - Kelly Magliocca
+  - Shishir Maithel
+  - Jeffrey J. Olson
+  - Taofeek Owonikoko
+  - Alan Pickens
+  - Suresh Ramalingam
+  - Dong M. Shin
+  - Gabriel Sica
+  - Erwin G. Van Meir
+  - Hongzheng Zhang
+  - Wil Eijckenboom
+  - Ad Gillis
+  - Esther Korpershoek
+  - Leendert Looijenga
+  - Wolter Oosterhuis
+  - Hans Stoop
+  - Kim E. van Kessel
+  - Ellen C. Zwarthoff
+  - Chiara Calatozzolo
+  - Lucia Cuppini
+  - Stefania Cuzzubbo
+  - Francesco DiMeco
+  - Gaetano Finocchiaro
+  - Luca Mattei
+  - Alessandro Perin
+  - Bianca Pollo
+  - Chu Chen
+  - John Houck
+  - Pawadee Lohavanichbutr
+  - Arndt Hartmann
+  - Christine Stoehr
+  - Robert Stoehr
+  - Helge Taubert
+  - Sven Wach
+  - Bernd Wullich
+  - Witold Kycler
+  - Dawid Murawa
+  - Maciej Wiznerowicz
+  - Ki Chung
+  - W. Jeffrey Edenfield
+  - Julie Martin
+  - Eric Baudin
+  - Glenn Bubley
+  - Raphael Bueno
+  - Assunta De Rienzo
+  - William G. Richards
+  - Steven Kalkanis
+  - Tom Mikkelsen
+  - Houtan Noushmehr
+  - Lisa Scarpace
+  - Nicolas Girard
+  - Marta Aymerich
+  - Elias Campo
+  - "Eva Gin\xE9"
+  - "Armando L\xF3pez Guillermo"
+  - Nguyen Van Bang
+  - Phan Thi Hanh
+  - Bui Duc Phu
+  - Yufang Tang
+  - Howard Colman
+  - Kimberley Evason
+  - Peter R. Dottino
+  - John A. Martignetti
+  - Hani Gabra
+  - Hartmut Juhl
+  - Teniola Akeredolu
+  - Serghei Stepa
+  - Dave Hoon
+  - Keunsoo Ahn
+  - Koo Jeong Kang
+  - Felix Beuschlein
+  - Anne Breggia
+  - Michael Birrer
+  - Debra Bell
+  - Mitesh Borad
+  - Alan H. Bryce
+  - Erik Castle
+  - Vishal Chandan
+  - John Cheville
+  - John A. Copland
+  - Michael Farnell
+  - Thomas Flotte
+  - Nasra Giama
+  - Thai Ho
+  - Michael Kendrick
+  - Jean-Pierre Kocher
+  - Karla Kopp
+  - Catherine Moser
+  - David Nagorney
+  - "Daniel O\u2019Brien"
+  - "Brian Patrick O\u2019Neill"
+  - Tushar Patel
+  - Gloria Petersen
+  - Florencia Que
+  - Michael Rivera
+  - Lewis Roberts
+  - Robert Smallridge
+  - Thomas Smyrk
+  - Melissa Stanton
+  - R. Houston Thompson
+  - Michael Torbenson
+  - Ju Dong Yang
+  - Lizhi Zhang
+  - Fadi Brimo
+  - Jaffer A. Ajani
+  - Ana Maria Angulo Gonzalez
+  - Carmen Behrens
+  - Jolanta Bondaruk
+  - Russell Broaddus
+  - Bogdan Czerniak
+  - Bita Esmaeli
+  - Junya Fujimoto
+  - Jeffrey Gershenwald
+  - Charles Guo
+  - Alexander J. Lazar
+  - Christopher Logothetis
+  - Funda Meric-Bernstam
+  - Cesar Moran
+  - Lois Ramondetta
+  - David Rice
+  - Anil Sood
+  - Pheroze Tamboli
+  - Timothy Thompson
+  - Patricia Troncoso
+  - Anne Tsao
+  - Ignacio Wistuba
+  - Candace Carter
+  - Lauren Haydu
+  - Peter Hersey
+  - Valerie Jakrot
+  - Hojabr Kakavand
+  - Richard Kefford
+  - Kenneth Lee
+  - Georgina Long
+  - Graham Mann
+  - Michael Quinn
+  - Robyn Saw
+  - Richard Scolyer
+  - Kerwin Shannon
+  - Andrew Spillane
+  - Jonathan Stretch
+  - Maria Synott
+  - John Thompson
+  - James Wilmott
+  - Hikmat Al-Ahmadie
+  - Timothy A. Chan
+  - Ronald Ghossein
+  - Anuradha Gopalan
+  - Douglas A. Levine
+  - Victor Reuter
+  - Samuel Singer
+  - Bhuvanesh Singh
+  - Nguyen Viet Tien
+  - Thomas Broudy
+  - Cyrus Mirsaidi
+  - Praveen Nair
+  - Paul Drwiega
+  - Judy Miller
+  - Jennifer Smith
+  - Howard Zaren
+  - Joong-Won Park
+  - Nguyen Phi Hung
+  - Electron Kebebew
+  - W. Marston Linehan
+  - Adam R. Metwalli
+  - Karel Pacak
+  - Peter A. Pinto
+  - Mark Schiffman
+  - Laura S. Schmidt
+  - Cathy D. Vocke
+  - Nicolas Wentzensen
+  - Robert Worrell
+  - Hannah Yang
+  - Marc Moncrieff
+  - Chandra Goparaju
+  - Jonathan Melamed
+  - Harvey Pass
+  - Natalia Botnariuc
+  - Irina Caraman
+  - Mircea Cernat
+  - Inga Chemencedji
+  - Adrian Clipca
+  - Serghei Doruc
+  - Ghenadie Gorincioi
+  - Sergiu Mura
+  - Maria Pirtac
+  - Irina Stancul
+  - Diana Tcaciuc
+  - Monique Albert
+  - Iakovina Alexopoulou
+  - Angel Arnaout
+  - John Bartlett
+  - Jay Engel
+  - Sebastien Gilbert
+  - Jeremy Parfitt
+  - Harman Sekhon
+  - George Thomas
+  - Doris M. Rassl
+  - Robert C. Rintoul
+  - Carlo Bifulco
+  - Raina Tamakawa
+  - Walter Urba
+  - Nicholas Hayward
+  - Henri Timmers
+  - Anna Antenucci
+  - Francesco Facciolo
+  - Gianluca Grazi
+  - Mirella Marino
+  - Roberta Merola
+  - Ronald de Krijger
+  - Anne-Paule Gimenez-Roqueplo
+  - "Alain Pich\xE9"
+  - Simone Chevalier
+  - Ginette McKercher
+  - Kivanc Birsoy
+  - Gene Barnett
+  - Cathy Brewer
+  - Carol Farver
+  - Theresa Naska
+  - Nathan A. Pennell
+  - Daniel Raymond
+  - Cathy Schilero
+  - Kathy Smolenski
+  - Felicia Williams
+  - Carl Morrison
+  - Jeffrey A. Borgia
+  - Michael J. Liptay
+  - Mark Pool
+  - Christopher W. Seder
+  - Kerstin Junker
+  - Larsson Omberg
+  - Mikhail Dinkin
+  - George Manikhas
+  - Domenico Alvaro
+  - Maria Consiglia Bragazzi
+  - Vincenzo Cardinale
+  - Guido Carpino
+  - Eugenio Gaudio
+  - David Chesla
+  - Sandra Cottingham
+  - Michael Dubina
+  - Fedor Moiseenko
+  - Renumathy Dhanasekaran
+  - Karl-Friedrich Becker
+  - Klaus-Peter Janssen
+  - Julia Slotta-Huspenina
+  - Mohamed H. Abdel-Rahman
+  - Dina Aziz
+  - Sue Bell
+  - Colleen M. Cebulla
+  - Amy Davis
+  - Rebecca Duell
+  - J. Bradley Elder
+  - Joe Hilty
+  - Bahavna Kumar
+  - James Lang
+  - Norman L. Lehman
+  - Randy Mandt
+  - Phuong Nguyen
+  - Robert Pilarski
+  - Karan Rai
+  - Lynn Schoenfield
+  - Kelly Senecal
+  - Paul Wakely
+  - Paul Hansen
+  - Ronald Lechan
+  - James Powers
+  - Arthur Tischler
+  - William E. Grizzle
+  - Katherine C. Sexton
+  - Alison Kastl
+  - Joel Henderson
+  - Sima Porten
+  - Jens Waldmann
+  - Martin Fassnacht
+  - Sylvia L. Asa
+  - Dirk Schadendorf
+  - Marta Couce
+  - Markus Graefen
+  - Hartwig Huland
+  - Guido Sauter
+  - Thorsten Schlomm
+  - Ronald Simon
+  - Pierre Tennstedt
+  - Oluwole Olabode
+  - Mark Nelson
+  - Oliver Bathe
+  - Peter R. Carroll
+  - June M. Chan
+  - Philip Disaia
+  - Pat Glenn
+  - Robin K. Kelley
+  - Charles N. Landen
+  - Joanna Phillips
+  - Michael Prados
+  - Jeffry Simko
+  - Karen Smith-McCune
+  - Scott VandenBerg
+  - Kevin Roggin
+  - Ashley Fehrenbach
+  - Ady Kendler
+  - Suzanne Sifri
+  - Ruth Steele
+  - Antonio Jimeno
+  - Francis Carey
+  - Ian Forgie
+  - Massimo Mannelli
+  - Michael Carney
+  - Brenda Hernandez
+  - Benito Campos
+  - Christel Herold-Mende
+  - Christin Jungk
+  - Andreas Unterberg
+  - Andreas von Deimling
+  - Aaron Bossler
+  - Joseph Galbraith
+  - Laura Jacobus
+  - Michael Knudson
+  - Tina Knutson
+  - Deqin Ma
+  - Mohammed Milhem
+  - Rita Sigmund
+  - Andrew K. Godwin
+  - Rashna Madan
+  - Howard G. Rosenthal
+  - Clement Adebamowo
+  - Sally N. Adebamowo
+  - Alex Boussioutas
+  - David Beer
+  - Thomas Giordano
+  - Anne-Marie Mes-Masson
+  - Fred Saad
+  - Therese Bocklage
+  - Lisa Landrum
+  - Robert Mannel
+  - Kathleen Moore
+  - Katherine Moxley
+  - Russel Postier
+  - Joan Walker
+  - Rosemary Zuna
+  - Michael Feldman
+  - Federico Valdivieso
+  - Rajiv Dhir
+  - James Luketich
+  - Edna M. Mora Pinero
+  - Mario Quintero-Aguilo
+  - Carlos Gilberto Carlotti
+  - "Jose Sebasti\xE3o Dos Santos"
+  - Rafael Kemp
+  - Ajith Sankarankuty
+  - Daniela Tirapelli
+  - James Catto
+  - Kathy Agnew
+  - Elizabeth Swisher
+  - Jenette Creaney
+  - Bruce Robinson
+  - Carl Simon Shelley
+  - Eryn M. Godwin
+  - Sara Kendall
+  - Cassaundra Shipman
+  - Carol Bradford
+  - Thomas Carey
+  - Andrea Haddad
+  - Jeffey Moyer
+  - Lisa Peterson
+  - Mark Prince
+  - Laura Rozek
+  - Gregory Wolf
+  - Rayleen Bowman
+  - Kwun M. Fong
+  - Ian Yang
+  - Robert Korst
+  - W. Kimryn Rathmell
+  - J. Leigh Fantacone-Campbell
+  - Jeffrey A. Hooke
+  - Albert J. Kovatich
+  - Craig D. Shriver
+  - John DiPersio
+  - Bettina Drake
+  - Ramaswamy Govindan
+  - Sharon Heath
+  - Timothy Ley
+  - Brian Van Tine
+  - Peter Westervelt
+  - Mark A. Rubin
+  - Jung Il Lee
+  - "Nat\xE1lia D. Aredes"
+  - Armaz Mariamidze
+  publisher: Cell
+  date: '2018-04-01'
+  link: https://doi.org/gc7r9b
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12859-017-1905-4
+  title: 'ADAGE signature analysis: differential expression analysis with data-defined
+    gene sets'
+  authors:
+  - Jie Tan
+  - Matthew Huyck
+  - Dongbo Hu
+  - "Ren\xE9 A. Zelaya"
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: BMC Bioinformatics
+  date: '2017-11-22'
+  link: https://doi.org/gg7m57
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.3100v2
+  title: Sci-Hub provides access to nearly all scholarly literature
+  authors:
+  - Daniel S Himmelstein
+  - Ariel R Romero
+  - Stephen R McLaughlin
+  - Bastian Greshake Tzovaras
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2017-10-12'
+  link: https://doi.org/ch4c
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/196915
+  title: 'Enter the matrix: factorization uncovers knowledge from omics Names/Affiliations'
+  authors:
+  - "Genevieve L. Stein-O\u2019Brien"
+  - Raman Arora
+  - Aedin C. Culhane
+  - Alexander V. Favorov
+  - Lana X. Garmire
+  - Casey S. Greene
+  - Loyal A. Goff
+  - Yifeng Li
+  - Aloune Ngom
+  - Michael F. Ochs
+  - Yanxun Xu
+  - Elana J. Fertig
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-10-02'
+  link: https://doi.org/gg7m5k
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/174474
+  title: Extracting a Biologically Relevant Latent Space from Cancer Transcriptomes
+    with Variational Autoencoders
+  authors:
+  - Gregory P. Way
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-08-11'
+  link: https://doi.org/gcm44d
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/166207
+  title: Functional Network Community Detection Can Disaggregate and Filter Multiple
+    Underlying Pathways in Enrichment Analyses
+  authors:
+  - Lia X. Harrington
+  - Gregory P. Way
+  - Jennifer A. Doherty
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-07-20'
+  link: https://doi.org/gg7m5j
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.3100v1
+  title: Sci-Hub provides access to nearly all scholarly literature
+  authors:
+  - Daniel S Himmelstein
+  - Ariel R Romero
+  - Stephen R McLaughlin
+  - Bastian Greshake Tzovaras
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2017-07-20'
+  link: https://doi.org/b9s6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.3100
+  title: Sci-Hub provides access to nearly all scholarly literature
+  authors:
+  - Daniel S Himmelstein
+  - Ariel R Romero
+  - Jacob G Levernier
+  - Thomas A Munro
+  - Stephen R McLaughlin
+  - Bastian Greshake Tzovaras
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2018-02-02'
+  link: https://doi.org/b9s5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/159756
+  title: Privacy-preserving generative deep neural networks support clinical data
+    sharing
+  authors:
+  - Brett K. Beaulieu-Jones
+  - Zhiwei Steven Wu
+  - Chris Williams
+  - Ran Lee
+  - Sanjeev P. Bhavnani
+  - James Brian Byrd
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-07-05'
+  link: https://doi.org/gcnzrn
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/157610
+  title: Machine learning analysis identifies <i>Drosophila Grunge/Atrophin</i> as
+    an important learning and memory gene required for memory retention and social
+    learning
+  authors:
+  - Balint Z Kacsoh
+  - Casey S. Greene
+  - Giovanni Bosco
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-06-29'
+  link: https://doi.org/gg7m5h
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/156620
+  title: 'ADAGE signature analysis: differential expression analysis with data-defined
+    gene sets'
+  authors:
+  - Jie Tan
+  - Matthew Huyck
+  - Dongbo Hu
+  - "Ren\xE9 A. Zelaya"
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-06-27'
+  link: https://doi.org/gcw9f6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/147645
+  title: 'PathCORE-T: identifying and visualizing globally co-occurring pathways in
+    large transcriptomic compendia'
+  authors:
+  - Kathleen M. Chen
+  - Jie Tan
+  - Gregory P. Way
+  - Georgia Doing
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-06-08'
+  link: https://doi.org/gg7m5g
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/142760
+  title: Opportunities and obstacles for deep learning in biology and medicine
+  authors:
+  - Travers Ching
+  - Daniel S. Himmelstein
+  - Brett K. Beaulieu-Jones
+  - Alexandr A. Kalinin
+  - Brian T. Do
+  - Gregory P. Way
+  - Enrico Ferrero
+  - Paul-Michael Agapow
+  - Michael Zietz
+  - Michael M. Hoffman
+  - Wei Xie
+  - Gail L. Rosen
+  - Benjamin J. Lengerich
+  - Johnny Israeli
+  - Jack Lanchantin
+  - Stephen Woloszynek
+  - Anne E. Carpenter
+  - Avanti Shrikumar
+  - Jinbo Xu
+  - Evan M. Cofer
+  - Christopher A. Lavender
+  - Srinivas C. Turaga
+  - Amr M. Alexandari
+  - Zhiyong Lu
+  - David J. Harris
+  - Dave DeCaprio
+  - Yanjun Qi
+  - Anshul Kundaje
+  - Yifan Peng
+  - Laura K. Wiley
+  - Marwin H.S. Segler
+  - Simina M. Boca
+  - S. Joshua Swamidass
+  - Austin Huang
+  - Anthony Gitter
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-05-28'
+  link: https://doi.org/gbpvh5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/nbt.3780
+  title: Reproducibility of computational workflows is automated using continuous
+    analysis
+  authors:
+  - Brett K Beaulieu-Jones
+  - Casey S Greene
+  publisher: Nature Biotechnology
+  date: '2017-03-13'
+  link: https://doi.org/f9ttx6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/118349
+  title: Cross-Platform Normalization Enables Machine Learning Model Training On Microarray
+    And RNA-Seq Data Simultaneously
+  authors:
+  - Jaclyn N Taroni
+  - Casey S Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2017-03-20'
+  link: https://doi.org/gg7m5f
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/M9.FIGSHARE.5035997
+  title: '"Cross-platform normalization enables analysis of microarray and RNA-seq
+    data simultaneously" - Fileset'
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2017-01-01'
+  link: https://doi.org/gqs2qx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.5035997.v2
+  title: '"Cross-platform normalization enables analysis of microarray and RNA-seq
+    data simultaneously" - Fileset'
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2017-01-01'
+  link: https://doi.org/gqs2qz
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.6084/m9.figshare.5035997.v1
+  title: '"Cross-platform normalization enables analysis of microarray and RNA-seq
+    data simultaneously" - Fileset'
+  authors:
+  - Jaclyn Taroni
+  - Casey Greene
+  publisher: figshare
+  date: '2017-01-01'
+  link: https://doi.org/gqs2q2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12864-017-3519-7
+  title: A machine learning classifier trained on cancer transcriptomes detects NF1
+    inactivation signal in glioblastoma
+  authors:
+  - Gregory P. Way
+  - Robert J. Allaway
+  - Stephanie J. Bouley
+  - Camilo E. Fadul
+  - Yolanda Sanchez
+  - Casey S. Greene
+  publisher: BMC Genomics
+  date: '2017-02-06'
+  link: https://doi.org/gg7qr9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13073-017-0417-1
+  title: A novel multi-network approach reveals tissue-specific cellular modulators
+    of fibrosis in systemic sclerosis
+  authors:
+  - Jaclyn N. Taroni
+  - Casey S. Greene
+  - Viktor Martyanov
+  - Tammara A. Wood
+  - Romy B. Christmann
+  - Harrison W. Farber
+  - Robert A. Lafyatis
+  - Christopher P. Denton
+  - Monique E. Hinchcliff
+  - Patricia A. Pioli
+  - J. Matthew Mahoney
+  - Michael L. Whitfield
+  publisher: Genome Medicine
+  date: '2017-03-23'
+  link: https://doi.org/gfsptx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41598-017-17362-6
+  title: A Pilot Characterization of the Human Chronobiome
+  authors:
+  - Carsten Skarke
+  - Nicholas F. Lahens
+  - Seth D. Rhoades
+  - Amy Campbell
+  - Kyle Bittinger
+  - Aubrey Bailey
+  - Christian Hoffmann
+  - Randal S. Olson
+  - Lihong Chen
+  - Guangrui Yang
+  - Thomas S. Price
+  - Jason H. Moore
+  - Frederic D. Bushman
+  - Casey S. Greene
+  - Gregory R. Grant
+  - Aalim M. Weljie
+  - Garret A. FitzGerald
+  publisher: Scientific Reports
+  date: '2017-12-07'
+  link: https://doi.org/gcqtpp
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/ng.3830
+  title: Celebrating parasites
+  authors:
+  - Casey S Greene
+  - Lana X Garmire
+  - Jack A Gilbert
+  - Marylyn D Ritchie
+  - Lawrence E Hunter
+  publisher: Nature Genetics
+  date: '2017-04-01'
+  link: https://doi.org/gcgk8d
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1056/NEJMc1705477
+  title: Data-Sharing Models
+  authors: []
+  publisher: New England Journal of Medicine
+  date: '2017-06-08'
+  link: https://doi.org/gftw32
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/ejhg.2017.108
+  title: Implicating candidate genes at GWAS signals by leveraging topologically associating
+    domains
+  authors:
+  - Gregory P Way
+  - Daniel W Youngstrom
+  - Kurt D Hankenson
+  - Casey S Greene
+  - Struan FA Grant
+  publisher: European Journal of Human Genetics
+  date: '2017-08-09'
+  link: https://doi.org/gbq2j6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1534/g3.117.300172
+  title: Machine Learning Analysis Identifies<i>Drosophila Grunge/Atrophin</i>as an
+    Important Learning and Memory Gene Required for Memory Retention and Social Learning
+  authors:
+  - Balint Z Kacsoh
+  - Casey S Greene
+  - Giovanni Bosco
+  publisher: G3 Genes|Genomes|Genetics
+  date: '2017-11-01'
+  link: https://doi.org/gg7qrx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aam6058
+  title: Tell me your neighbors, and I will tell you what you are
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2017-02-08'
+  link: https://doi.org/gg7qrw
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btx344
+  title: Tissue-specific network-based genome wide study of amygdala imaging phenotypes
+    to identify functional interaction modules
+  authors:
+  - Xiaohui Yao
+  - Jingwen Yan
+  - Kefei Liu
+  - Sungeun Kim
+  - Kwangsik Nho
+  - Shannon L. Risacher
+  - Casey S. Greene
+  - Jason H. Moore
+  - Andrew J. Saykin
+  - Li Shen
+  publisher: Bioinformatics
+  date: '2017-07-20'
+  link: https://doi.org/gb4nps
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.cels.2017.06.003
+  title: Unsupervised Extraction of Stable Expression Signatures from Public Compendia
+    with an Ensemble of Neural Networks
+  authors:
+  - Jie Tan
+  - Georgia Doing
+  - Kimberley A. Lewis
+  - Courtney E. Price
+  - Kathleen M. Chen
+  - Kyle C. Cady
+  - Barret Perchuk
+  - Michael T. Laub
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cell Systems
+  date: '2017-07-01'
+  link: https://doi.org/gcw9f4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13040-016-0082-8
+  title: "Network-based analysis of genetic variants associated with hippocampal volume\
+    \ in Alzheimer\u2019s disease: a study of ADNI cohorts"
+  authors:
+  - Ailin Song
+  - Jingwen Yan
+  - Sungeun Kim
+  - Shannon Leigh Risacher
+  - Aaron K. Wong
+  - Andrew J. Saykin
+  - Li Shen
+  - Casey S. Greene
+  publisher: BioData Mining
+  date: '2016-01-19'
+  link: https://doi.org/gg7qsb
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/087718
+  title: Implicating candidate genes at GWAS signals by leveraging topologically associating
+    domains
+  authors:
+  - Gregory P. Way
+  - Daniel W. Youngstrom
+  - Kurt D. Hankenson
+  - Casey S. Greene
+  - Struan F. A. Grant
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-11-15'
+  link: https://doi.org/gg7m5d
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/078659
+  title: Unsupervised extraction of stable expression signatures from public compendia
+    with eADAGE
+  authors:
+  - Jie Tan
+  - Georgia Doing
+  - Kimberley A. Lewis
+  - Courtney E. Price
+  - Kathleen M. Chen
+  - Kyle C. Cady
+  - Barret Perchuk
+  - Michael T. Laub
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-10-03'
+  link: https://doi.org/gcgk9c
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/075382
+  title: A machine learning classifier trained on cancer transcriptomes detects NF1
+    inactivation signal in glioblastoma
+  authors:
+  - Gregory P. Way
+  - Robert J. Allaway
+  - Stephanie J. Bouley
+  - Camilo E. Fadul
+  - Yolanda Sanchez
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-09-15'
+  link: https://doi.org/gkws7n
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/062695
+  title: Integrative networks illuminate biological factors underlying gene-disease
+    associations
+  authors:
+  - Arjun Krishnan
+  - Jaclyn N. Taroni
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-08-28'
+  link: https://doi.org/gkvcfm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/030239
+  title: Comprehensive Cross-Population Analysis of High-Grade Serous Ovarian Cancer
+    Supports No More Than Three Subtypes
+  authors:
+  - Gregory P. Way
+  - James Rudd
+  - Chen Wang
+  - Habib Hamidi
+  - Brooke L. Fridley
+  - Gottfried Konecny
+  - Ellen L. Goode
+  - Casey S. Greene
+  - Jennifer A. Doherty
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-07-12'
+  link: https://doi.org/gkvjh2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aag3101
+  title: The future is unsupervised
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-07-06'
+  link: https://doi.org/gg7qr3
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pbio.1002475
+  title: Evolution of High Cellulolytic Activity in Symbiotic Streptomyces through
+    Selection of Expanded Gene Content and Coordinated Gene Expression
+  authors:
+  - Adam J. Book
+  - Gina R. Lewin
+  - Bradon R. McDonald
+  - Taichi E. Takasuka
+  - Evelyn Wendt-Pienkowski
+  - Drew T. Doering
+  - Steven Suh
+  - Kenneth F. Raffa
+  - Brian G. Fox
+  - Cameron R. Currie
+  publisher: PLOS Biology
+  date: '2016-06-08'
+  link: https://doi.org/f8r9b6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/056473
+  title: Reproducible Computational Workflows with Continuous Analysis
+  authors:
+  - Brett K. Beaulieu-Jones
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-06-01'
+  link: https://doi.org/bp4s
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/055913
+  title: 'Tribe: The collaborative platform for reproducible web-based analysis of
+    gene sets'
+  authors:
+  - "Ren\xE9 A. Zelaya"
+  - Aaron K. Wong
+  - Alex T. Frase
+  - Marylyn D. Ritchie
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-05-27'
+  link: https://doi.org/gg7qrn
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/051524
+  title: Pathway and network-based strategies to translate genetic discoveries into
+    effective therapies
+  authors:
+  - Casey S. Greene
+  - Benjamin F. Voight
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-05-03'
+  link: https://doi.org/gktznj
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aaf9196
+  title: Nothing but a hound dog
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-05-25'
+  link: https://doi.org/gg7qr2
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1128/mSystems.00025-15
+  title: ADAGE-Based Integration of Publicly Available Pseudomonas aeruginosa Gene
+    Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions
+  authors:
+  - Jie Tan
+  - John H. Hammond
+  - Deborah A. Hogan
+  - Casey S. Greene
+  publisher: mSystems
+  date: '2016-02-23'
+  link: https://doi.org/gcgmbq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/039800
+  title: Semi-Supervised Learning of the Electronic Health Record for Phenotype Stratification
+  authors:
+  - Brett K. Beaulieu-Jones
+  - Casey S. Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-02-18'
+  link: https://doi.org/gkwx2x
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/038950
+  title: A Novel Multi-network Approach Reveals Tissue-specific Cellular Modulators
+    of Fibrosis in Systemic Sclerosis, Pulmonary Fibrosis and Pulmonary Arterial Hypertension
+  authors:
+  - Jaclyn N Taroni
+  - Casey S Greene
+  - Viktor Martyanov
+  - Tammara A Wood
+  - Romy Christmann
+  - Harrison W Farber
+  - Robert A Lafyatis
+  - Christopher P Denton
+  - Monique E Hinchcliff
+  - Patricia A Pioli
+  - J. Matthew Mahoney
+  - Michael L Whitfield
+  publisher: Cold Spring Harbor Laboratory
+  date: '2016-02-06'
+  link: https://doi.org/gkvwr5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7717/peerj.1621
+  title: Cross-platform normalization of microarray and RNA-seq data for machine learning
+    applications
+  authors:
+  - Jeffrey A. Thompson
+  - Jie Tan
+  - Casey S. Greene
+  publisher: PeerJ
+  date: '2016-01-21'
+  link: https://doi.org/gg7qsg
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aai8224
+  title: A stromal focus reveals tumor immune signatures
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-09-28'
+  link: https://doi.org/gg7qr5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bib/bbv018
+  title: Adapting bioinformatics curricula for big data
+  authors:
+  - Anna C. Greene
+  - Kristine A. Giffin
+  - Casey S. Greene
+  - Jason H. Moore
+  publisher: Briefings in Bioinformatics
+  date: '2015-03-30'
+  link: https://doi.org/f78jms
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13059-016-1037-6
+  title: An expanded evaluation of protein function prediction methods shows an improvement
+    in accuracy
+  authors:
+  - Yuxiang Jiang
+  - Tal Ronnen Oron
+  - Wyatt T. Clark
+  - Asma R. Bankapur
+  - "Daniel D\u2019Andrea"
+  - Rosalba Lepore
+  - Christopher S. Funk
+  - Indika Kahanda
+  - Karin M. Verspoor
+  - Asa Ben-Hur
+  - Da Chen Emily Koo
+  - Duncan Penfold-Brown
+  - Dennis Shasha
+  - Noah Youngs
+  - Richard Bonneau
+  - Alexandra Lin
+  - Sayed M. E. Sahraeian
+  - Pier Luigi Martelli
+  - Giuseppe Profiti
+  - Rita Casadio
+  - Renzhi Cao
+  - Zhaolong Zhong
+  - Jianlin Cheng
+  - Adrian Altenhoff
+  - Nives Skunca
+  - Christophe Dessimoz
+  - Tunca Dogan
+  - Kai Hakala
+  - Suwisa Kaewphan
+  - Farrokh Mehryary
+  - Tapio Salakoski
+  - Filip Ginter
+  - Hai Fang
+  - Ben Smithers
+  - Matt Oates
+  - Julian Gough
+  - "Petri T\xF6r\xF6nen"
+  - Patrik Koskinen
+  - Liisa Holm
+  - Ching-Tai Chen
+  - Wen-Lian Hsu
+  - Kevin Bryson
+  - Domenico Cozzetto
+  - Federico Minneci
+  - David T. Jones
+  - Samuel Chapman
+  - Dukka BKC
+  - Ishita K. Khan
+  - Daisuke Kihara
+  - Dan Ofer
+  - Nadav Rappoport
+  - Amos Stern
+  - Elena Cibrian-Uhalte
+  - Paul Denny
+  - Rebecca E. Foulger
+  - Reija Hieta
+  - Duncan Legge
+  - Ruth C. Lovering
+  - Michele Magrane
+  - Anna N. Melidoni
+  - Prudence Mutowo-Meullenet
+  - Klemens Pichler
+  - Aleksandra Shypitsyna
+  - Biao Li
+  - Pooya Zakeri
+  - Sarah ElShal
+  - "L\xE9on-Charles Tranchevent"
+  - Sayoni Das
+  - Natalie L. Dawson
+  - David Lee
+  - Jonathan G. Lees
+  - Ian Sillitoe
+  - Prajwal Bhat
+  - "Tam\xE1s Nepusz"
+  - Alfonso E. Romero
+  - Rajkumar Sasidharan
+  - Haixuan Yang
+  - Alberto Paccanaro
+  - Jesse Gillis
+  - "Adriana E. Sede\xF1o-Cort\xE9s"
+  - Paul Pavlidis
+  - Shou Feng
+  - Juan M. Cejuela
+  - Tatyana Goldberg
+  - Tobias Hamp
+  - Lothar Richter
+  - Asaf Salamov
+  - Toni Gabaldon
+  - Marina Marcet-Houben
+  - Fran Supek
+  - Qingtian Gong
+  - Wei Ning
+  - Yuanpeng Zhou
+  - Weidong Tian
+  - Marco Falda
+  - Paolo Fontana
+  - Enrico Lavezzo
+  - Stefano Toppo
+  - Carlo Ferrari
+  - Manuel Giollo
+  - Damiano Piovesan
+  - Silvio C.E. Tosatto
+  - Angela del Pozo
+  - "Jos\xE9 M. Fern\xE1ndez"
+  - Paolo Maietta
+  - Alfonso Valencia
+  - Michael L. Tress
+  - Alfredo Benso
+  - Stefano Di Carlo
+  - Gianfranco Politano
+  - Alessandro Savino
+  - Hafeez Ur Rehman
+  - Matteo Re
+  - Marco Mesiti
+  - Giorgio Valentini
+  - Joachim W. Bargsten
+  - Aalt D. J. van Dijk
+  - Branislava Gemovic
+  - Sanja Glisic
+  - Vladmir Perovic
+  - Veljko Veljkovic
+  - Nevena Veljkovic
+  - Danillo C. Almeida-e-Silva
+  - Ricardo Z. N. Vencio
+  - Malvika Sharan
+  - "J\xF6rg Vogel"
+  - Lakesh Kansakar
+  - Shanshan Zhang
+  - Slobodan Vucetic
+  - Zheng Wang
+  - Michael J. E. Sternberg
+  - Mark N. Wass
+  - Rachael P. Huntley
+  - Maria J. Martin
+  - "Claire O\u2019Donovan"
+  - Peter N. Robinson
+  - Yves Moreau
+  - Anna Tramontano
+  - Patricia C. Babbitt
+  - Steven E. Brenner
+  - Michal Linial
+  - Christine A. Orengo
+  - Burkhard Rost
+  - Casey S. Greene
+  - Sean D. Mooney
+  - Iddo Friedberg
+  - Predrag Radivojac
+  publisher: Genome Biology
+  date: '2016-09-07'
+  link: https://doi.org/gg7qsc
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aal3701
+  title: Cheap-seq
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-12-21'
+  link: https://doi.org/gg7qr7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aaf6940
+  title: 'CoINcIDE: All together now'
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-04-13'
+  link: https://doi.org/gg7qrz
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1534/g3.116.033514
+  title: Comprehensive Cross-Population Analysis of High-Grade Serous Ovarian Cancer
+    Supports No More Than Three Subtypes
+  authors:
+  - Gregory P Way
+  - James Rudd
+  - Chen Wang
+  - Habib Hamidi
+  - Brooke L Fridley
+  - Gottfried E Konecny
+  - Ellen L Goode
+  - Casey S Greene
+  - Jennifer A Doherty
+  publisher: G3 Genes|Genomes|Genetics
+  date: '2016-12-01'
+  link: https://doi.org/gg7qsd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85012144154
+  title: Computational approaches to study microbes and microbiomes
+  publisher: Pacific Symposium on Biocomputing 2016, PSB 2016
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-85012144154&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000386326200051
+  title: Computational approaches to study microbes and microbiomes
+  publisher: Pacific Symposium on Biocomputing 2016, PSB 2016
+  date: '2022-05-26'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000386326200051&KeyUID=WOS:000386326200051
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13040-016-0085-5
+  title: 'Erratum to: Evolving hard problems: generating human genetics datasets with
+    a complex etiology'
+  authors:
+  - Daniel S. Himmelstein
+  - Casey S. Greene
+  - Jason H. Moore
+  publisher: BioData Mining
+  date: '2016-02-03'
+  link: https://doi.org/gqs2q3
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1161/CIRCGENETICS.115.001181
+  title: "Genetic Association\u2013Guided Analysis of Gene Networks for the Study\
+    \ of Complex Traits"
+  authors:
+  - Casey S. Greene
+  - Daniel S. Himmelstein
+  publisher: 'Circulation: Cardiovascular Genetics'
+  date: '2016-04-01'
+  link: https://doi.org/bffr
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.18632/oncotarget.7718
+  title: Genomic characterization of patient-derived xenograft models established
+    from fine needle aspirate biopsies of a primary pancreatic ductal adenocarcinoma
+    and from patient-matched metastatic sites
+  authors:
+  - Robert J. Allaway
+  - Dawn A. Fischer
+  - Francine B. de Abreu
+  - Timothy B. Gardner
+  - Stuart R. Gordon
+  - Richard J. Barth
+  - Thomas A. Colacchio
+  - Matthew Wood
+  - Balint Z. Kacsoh
+  - Stephanie J. Bouley
+  - Jingxuan Cui
+  - Joanna Hamilton
+  - Jungbin A. Choi
+  - Joshua T. Lange
+  - Jason D. Peterson
+  - Vijayalakshmi Padmanabhan
+  - Craig R. Tomlinson
+  - Gregory J. Tsongalis
+  - Arief A. Suriawinata
+  - Casey S. Greene
+  - Yolanda Sanchez
+  - Kerrington D. Smith
+  publisher: Oncotarget
+  date: '2016-02-25'
+  link: https://doi.org/gg7qsf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aah5494
+  title: Gut check
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-08-17'
+  link: https://doi.org/gg7qr4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/scitranslmed.aal0067
+  title: "How to know what we don\u2019t"
+  authors:
+  - Casey S. Greene
+  publisher: Science Translational Medicine
+  date: '2016-11-09'
+  link: https://doi.org/gg7qr6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-85015595524
+  title: NO-BOUNDARY THINKING IN BIOINFORMATICS
+  publisher: Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-85015595524&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825983-87
+  title: NO-BOUNDARY THINKING IN BIOINFORMATICS
+  publisher: Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-85015595524&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84971009612
+  title: Nothing but a hound dog
+  publisher: Science Translational Medicine
+  date: '2022-05-25'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84971009612&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825983-88
+  title: Nothing but a hound dog
+  publisher: Science Translational Medicine
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84971009612&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/hmg/ddw160
+  title: Pathway and network-based strategies to translate genetic discoveries into
+    effective therapies
+  authors:
+  - Casey S. Greene
+  - Benjamin F. Voight
+  publisher: Human Molecular Genetics
+  date: '2016-06-23'
+  link: https://doi.org/f9ppwj
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bib/bbv087
+  title: Recent Advances and Emerging Applications in Text and Data Mining for Biomedical
+    Discovery
+  authors:
+  - Graciela H. Gonzalez
+  - Tasnia Tahsin
+  - Britton C. Goodale
+  - Anna C. Greene
+  - Casey S. Greene
+  publisher: Briefings in Bioinformatics
+  date: '2015-09-29'
+  link: https://doi.org/f78v8s
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.jbi.2016.10.007
+  title: Semi-supervised learning of the electronic health record for phenotype stratification
+  authors:
+  - Brett K. Beaulieu-Jones
+  - Casey S. Greene
+  publisher: Journal of Biomedical Informatics
+  date: '2016-12-01'
+  link: https://doi.org/gbw7bv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/PEERJ.PREPRINTS.1460V1
+  title: Cross-platform normalization of microarray and RNA-seq data for machine learning
+    applications
+  authors:
+  - Jeffrey A Thompson
+  - Jie Tan
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2015-10-30'
+  link: https://doi.org/gqs2q4
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/PEERJ.PREPRINTS.1460
+  title: Cross-platform normalization of microarray and RNA-seq data for machine learning
+    applications
+  authors:
+  - Jeffrey A Thompson
+  - Jie Tan
+  - Casey S Greene
+  publisher: PeerJ
+  date: '2015-10-30'
+  link: https://doi.org/gqs2q5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/hmg/ddv440
+  title: Identification of shared and unique susceptibility pathways among cancers
+    of the lung, breast, and prostate from genome-wide association studies and tissue-specific
+    protein interactions
+  authors:
+  - David C. Qian
+  - Jinyoung Byun
+  - Younghun Han
+  - Casey S. Greene
+  - John K. Field
+  - Rayjean J. Hung
+  - Yonathan Brhane
+  - John R. Mclaughlin
+  - Gordon Fehringer
+  - Maria Teresa Landi
+  - Albert Rosenberger
+  - "Heike Bickeb\xF6ller"
+  - Jyoti Malhotra
+  - Angela Risch
+  - Joachim Heinrich
+  - David J. Hunter
+  - Brian E. Henderson
+  - Christopher A. Haiman
+  - Fredrick R. Schumacher
+  - Rosalind A. Eeles
+  - Douglas F. Easton
+  - Daniela Seminara
+  - Christopher I. Amos
+  publisher: Human Molecular Genetics
+  date: '2015-10-19'
+  link: https://doi.org/f77xg8
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/ncomms9019
+  title: International genome-wide meta-analysis identifies new primary biliary cirrhosis
+    risk loci and targetable pathogenic pathways
+  authors:
+  - Heather J. Cordell
+  - Younghun Han
+  - George F. Mells
+  - Yafang Li
+  - Gideon M. Hirschfield
+  - Casey S. Greene
+  - Gang Xie
+  - Brian D. Juran
+  - Dakai Zhu
+  - David C. Qian
+  - James A. B. Floyd
+  - Katherine I. Morley
+  - Daniele Prati
+  - Ana Lleo
+  - Daniele Cusi
+  - Erik M Schlicht
+  - Craig Lammert
+  - Elizabeth J Atkinson
+  - Landon L Chan
+  - Mariza de Andrade
+  - Tobias Balschun
+  - Andrew L Mason
+  - Robert P Myers
+  - Jinyi Zhang
+  - Piotr Milkiewicz
+  - Jia Qu
+  - Joseph A Odin
+  - Velimir A Luketic
+  - Bruce R Bacon
+  - Henry C Bodenheimer Jr
+  - Valentina Liakina
+  - Catherine Vincent
+  - Cynthia Levy
+  - Peter K Gregersen
+  - Piero L Almasio
+  - Domenico Alvaro
+  - Pietro Andreone
+  - Angelo Andriulli
+  - Cristina Barlassina
+  - Pier Maria Battezzati
+  - Antonio Benedetti
+  - Francesca Bernuzzi
+  - Ilaria Bianchi
+  - Maria Consiglia Bragazzi
+  - Maurizia Brunetto
+  - Savino Bruno
+  - Giovanni Casella
+  - Barbara Coco
+  - Agostino Colli
+  - Massimo Colombo
+  - Silvia Colombo
+  - Carmela Cursaro
+  - "Lory Saveria Croc\xE8"
+  - Andrea Crosignani
+  - Maria Francesca Donato
+  - Gianfranco Elia
+  - Luca Fabris
+  - Carlo Ferrari
+  - Annarosa Floreani
+  - Barbara Foglieni
+  - Rosanna Fontana
+  - Andrea Galli
+  - Roberta Lazzari
+  - Fabio Macaluso
+  - Federica Malinverno
+  - Fabio Marra
+  - Marco Marzioni
+  - Alberto Mattalia
+  - Renzo Montanari
+  - Lorenzo Morini
+  - Filomena Morisco
+  - Mousa Hani S
+  - Luigi Muratori
+  - Paolo Muratori
+  - Grazia A Niro
+  - Vincenzo O Palmieri
+  - Antonio Picciotto
+  - Mauro Podda
+  - Piero Portincasa
+  - Vincenzo Ronca
+  - Floriano Rosina
+  - Sonia Rossi
+  - Ilaria Sogno
+  - Giancarlo Spinzi
+  - Marta Spreafico
+  - Mario Strazzabosco
+  - Sonia Tarallo
+  - Mirko Tarocchi
+  - Claudio Tiribelli
+  - Pierluigi Toniutto
+  - Maria Vinci
+  - Massimo Zuin
+  - Chin Lye Ch'ng
+  - Mesbah Rahman
+  - Tom Yapp
+  - Richard Sturgess
+  - Christopher Healey
+  - Marek Czajkowski
+  - Anton Gunasekera
+  - Pranab Gyawali
+  - Purushothaman Premchand
+  - Kapil Kapur
+  - Richard Marley
+  - Graham Foster
+  - Alan Watson
+  - Aruna Dias
+  - Javaid Subhani
+  - Rory Harvey
+  - Roger McCorry
+  - David Ramanaden
+  - Jaber Gasem
+  - Richard Evans
+  - Thiriloganathan Mathialahan
+  - Christopher Shorrock
+  - George Lipscomb
+  - Paul Southern
+  - Jeremy Tibble
+  - David Gorard
+  - Altaf Palegwala
+  - Susan Jones
+  - Marco Carbone
+  - Mohamed Dawwas
+  - Graeme Alexander
+  - Sunil Dolwani
+  - Martin Prince
+  - Matthew Foxton
+  - David Elphick
+  - Harriet Mitchison
+  - Ian Gooding
+  - Mazn Karmo
+  - Sushma Saksena
+  - Mike Mendall
+  - Minesh Patel
+  - Roland Ede
+  - Andrew Austin
+  - Joanna Sayer
+  - Lorraine Hankey
+  - Christopher Hovell
+  - Neil Fisher
+  - Martyn Carter
+  - Konrad Koss
+  - Andrzej Piotrowicz
+  - Charles Grimley
+  - David Neal
+  - Guan Lim
+  - Sass Levi
+  - Aftab Ala
+  - Andrea Broad
+  - Athar Saeed
+  - Gordon Wood
+  - Jonathan Brown
+  - Mark Wilkinson
+  - Harriet Gordon
+  - John Ramage
+  - Jo Ridpath
+  - Theodore Ngatchu
+  - Bob Grover
+  - Syed Shaukat
+  - Ray Shidrawi
+  - George Abouda
+  - Faiz Ali
+  - Ian Rees
+  - Imroz Salam
+  - Mark Narain
+  - Ashley Brown
+  - Simon Taylor-Robinson
+  - Simon Williams
+  - Leonie Grellier
+  - Paul Banim
+  - Debashis Das
+  - Andrew Chilton
+  - Michael Heneghan
+  - Howard Curtis
+  - Markus Gess
+  - Ian Drake
+  - Mark Aldersley
+  - Mervyn Davies
+  - Rebecca Jones
+  - Alastair McNair
+  - Raj Srirajaskanthan
+  - Maxton Pitcher
+  - Sambit Sen
+  - George Bird
+  - Adrian Barnardo
+  - Paul Kitchen
+  - Kevin Yoong
+  - Oza Chirag
+  - Nurani Sivaramakrishnan
+  - George MacFaul
+  - David Jones
+  - Amir Shah
+  - Chris Evans
+  - Subrata Saha
+  - Katharine Pollock
+  - Peter Bramley
+  - Ashis Mukhopadhya
+  - Andrew Fraser
+  - Peter Mills
+  - Christopher Shallcross
+  - Stewart Campbell
+  - Andrew Bathgate
+  - Alan Shepherd
+  - John Dillon
+  - Simon Rushbrook
+  - Robert Przemioslo
+  - Christopher Macdonald
+  - Jane Metcalf
+  - Udi Shmueli
+  - Andrew Davis
+  - Asifabbas Naqvi
+  - Tom Lee
+  - Stephen D Ryder
+  - Jane Collier
+  - Howard Klass
+  - Mary Ninkovic
+  - Matthew Cramp
+  - Nicholas Sharer
+  - Richard Aspinall
+  - Patrick Goggin
+  - Deb Ghosh
+  - Andrew Douds
+  - Barbara Hoeroldt
+  - Jonathan Booth
+  - Earl Williams
+  - Hyder Hussaini
+  - William Stableforth
+  - Reuben Ayres
+  - Douglas Thorburn
+  - Eileen Marshall
+  - Andrew Burroughs
+  - Steven Mann
+  - Martin Lombard
+  - Paul Richardson
+  - Imran Patanwala
+  - Julia Maltby
+  - Matthew Brookes
+  - Ray Mathew
+  - Samir Vyas
+  - Saket Singhal
+  - Dermot Gleeson
+  - Sharat Misra
+  - Jeff Butterworth
+  - Keith George
+  - Tim Harding
+  - Andrew Douglass
+  - Simon Panter
+  - Jeremy Shearman
+  - Gary Bray
+  - Graham Butcher
+  - Daniel Forton
+  - John Mclindon
+  - Matthew Cowan
+  - Gregory Whatley
+  - Aditya Mandal
+  - Hemant Gupta
+  - Pradeep Sanghi
+  - Sanjiv Jain
+  - Steve Pereira
+  - Geeta Prasad
+  - Gill Watts
+  - Mark Wright
+  - James Neuberger
+  - Fiona Gordon
+  - Esther Unitt
+  - Allister Grant
+  - Toby Delahooke
+  - Andrew Higham
+  - Alison Brind
+  - Mark Cox
+  - Subramaniam Ramakrishnan
+  - Alistair King
+  - Carole Collins
+  - Simon Whalley
+  - Andy Li
+  - Jocelyn Fraser
+  - Andrew Bell
+  - Voi Shim Wong
+  - Amit Singhal
+  - Ian Gee
+  - Yeng Ang
+  - Rupert Ransford
+  - James Gotto
+  - Charles Millson
+  - Jane Bowles
+  - Caradog Thomas
+  - Melanie Harrison
+  - Roman Galaska
+  - Jennie Kendall
+  - Jessica Whiteman
+  - Caroline Lawlor
+  - Catherine Gray
+  - Keith Elliott
+  - Caroline Mulvaney-Jones
+  - Lucie Hobson
+  - Greta Van Duyvenvoorde
+  - Alison Loftus
+  - Katie Seward
+  - Ruth Penn
+  - Jane Maiden
+  - Rose Damant
+  - Janeane Hails
+  - Rebecca Cloudsdale
+  - Valeria Silvestre
+  - Sue Glenn
+  - Eleanor Dungca
+  - Natalie Wheatley
+  - Helen Doyle
+  - Melanie Kent
+  - Caroline Hamilton
+  - Delyth Braim
+  - Helen Wooldridge
+  - Rachel Abrahams
+  - Alison Paton
+  - Nicola Lancaster
+  - Andrew Gibbins
+  - Karen Hogben
+  - Phillipa Desousa
+  - Florin Muscariu
+  - Janine Musselwhite
+  - Alexandra McKay
+  - LaiTing Tan
+  - Carole Foale
+  - Jacqueline Brighton
+  - Kerry Flahive
+  - Estelle Nambela
+  - Paula Townshend
+  - Chris Ford
+  - Sophie Holder
+  - Caroline Palmer
+  - James Featherstone
+  - Mariam Nasseri
+  - Joy Sadeghian
+  - Bronwen Williams
+  - Carol Thomas
+  - Sally-Ann Rolls
+  - Abigail Hynes
+  - Claire Duggan
+  - Sarah Jones
+  - Mary Crossey
+  - Glynis Stansfield
+  - Carolyn MacNicol
+  - Joy Wilkins
+  - Elva Wilhelmsen
+  - Parizade Raymode
+  - Hye-Jeong Lee
+  - Emma Durant
+  - Rebecca Bishop
+  - Noma Ncube
+  - Sherill Tripoli
+  - Rebecca Casey
+  - Caroline Cowley
+  - Richard Miller
+  - Kathryn Houghton
+  - Samantha Ducker
+  - Fiona Wright
+  - Bridget Bird
+  - Gwen Baxter
+  - Janie Keggans
+  - Maggie Hughes
+  - Emma Grieve
+  - Karin Young
+  - D Williams
+  - Kate Ocker
+  - Frances Hines
+  - Kirsty Martin
+  - Caron Innes
+  - Talal Valliani
+  - Helen Fairlamb
+  - Sarah Thornthwaite
+  - Anne Eastick
+  - Elizabeth Tanqueray
+  - Jennifer Morrison
+  - Becky Holbrook
+  - Julie Browning
+  - Kirsten Walker
+  - Susan Congreave
+  - Juliette Verheyden
+  - Susan Slininger
+  - Lizzie Stafford
+  - Denise O'Donnell
+  - Mark Ainsworth
+  - Susan Lord
+  - Linda Kent
+  - Linda March
+  - Christine Dickson
+  - Diane Simpson
+  - Beverley Longhurst
+  - Maria Hayes
+  - Ervin Shpuza
+  - Nikki White
+  - Sarah Besley
+  - Sallyanne Pearson
+  - Alice Wright
+  - Linda Jones
+  - Emma Gunter
+  - Hannah Dewhurst
+  - Anna Fouracres
+  - Liz Farrington
+  - Lyn Graves
+  - Suzie Marriott
+  - Marina Leoni
+  - David Tyrer
+  - Kate Martin
+  - Lola Dali-kemmery
+  - Victoria Lambourne
+  - Marie Green
+  - Dawn Sirdefield
+  - Kelly Amor
+  - Julie Colley
+  - Bal Shinder
+  - Jayne Jones
+  - Marisa Mills
+  - Mandy Carnahan
+  - Natalie Taylor
+  - Kerenza Boulton
+  - Julie Tregonning
+  - Carly Brown
+  - Gayle Clifford
+  - Emily Archer
+  - Maria Hamilton
+  - Janette Curtis
+  - Tracey Shewan
+  - Sue Walsh
+  - Karen Warner
+  - Kimberley Netherton
+  - Mcdonald Mupudzi
+  - Bridget Gunson
+  - Jane Gitahi
+  - Denise Gocher
+  - Sally Batham
+  - Hilary Pateman
+  - Senayon Desmennu
+  - Jill Conder
+  - Darren Clement
+  - Susan Gallagher
+  - Jacky Orpe
+  - PuiChing Chan
+  - Lynn Currie
+  - Lynn O'Donohoe
+  - Metod Oblak
+  - Lisa Morgan
+  - Marie Quinn
+  - Isobel Amey
+  - Yolanda Baird
+  - Donna Cotterill
+  - Lourdes Cumlat
+  - Louise Winter
+  - Sandra Greer
+  - Katie Spurdle
+  - Joanna Allison
+  - Simon Dyer
+  - Helen Sweeting
+  - Jean Kordula
+  - M. Eric Gershwin
+  - Carl A. Anderson
+  - Konstantinos N. Lazaridis
+  - Pietro Invernizzi
+  - Michael F. Seldin
+  - Richard N. Sandford
+  - Christopher I. Amos
+  - Katherine A. Siminovitch
+  publisher: Nature Communications
+  date: '2015-09-22'
+  link: https://doi.org/gg7qsh
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12864-015-2250-5
+  title: Leveraging global gene expression patterns to predict expression of unmeasured
+    genes
+  authors:
+  - James Rudd
+  - "Ren\xE9 A. Zelaya"
+  - Eugene Demidenko
+  - Ellen L. Goode
+  - Casey S. Greene
+  - Jennifer A. Doherty
+  publisher: BMC Genomics
+  date: '2015-12-01'
+  link: https://doi.org/gb3hpw
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1004005
+  title: Systems Level Analysis of Systemic Sclerosis Shows a Network of Immune and
+    Profibrotic Pathways Connected with Genetic Polymorphisms
+  authors:
+  - J. Matthew Mahoney
+  - Jaclyn Taroni
+  - Viktor Martyanov
+  - Tammara A. Wood
+  - Casey S. Greene
+  - Patricia A. Pioli
+  - Monique E. Hinchcliff
+  - Michael L. Whitfield
+  publisher: PLoS Computational Biology
+  date: '2015-01-08'
+  link: https://doi.org/gg7qsj
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/NMETH.3249
+  title: Targeted exploration and analysis of large cross-platform human transcriptomic
+    compendia
+  authors:
+  - Qian Zhu
+  - Aaron K Wong
+  - Arjun Krishnan
+  - Miriam R Aure
+  - Alicja Tadych
+  - Ran Zhang
+  - David C Corney
+  - Casey S Greene
+  - Lars A Bongo
+  - Vessela N Kristensen
+  - Moses Charikar
+  - Kai Li
+  - Olga G Troyanskaya
+  publisher: Nature Methods
+  date: '2015-01-12'
+  link: https://doi.org/ggfb5t
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13040-015-0050-8
+  title: Testing multiple hypotheses through IMP weighted FDR based on a genetic functional
+    network with application to a new zebrafish transcriptome study
+  authors:
+  - Jiang Gui
+  - Casey S. Greene
+  - Con Sullivan
+  - Walter Taylor
+  - Jason H. Moore
+  - Carol Kim
+  publisher: BioData Mining
+  date: '2015-06-01'
+  link: https://doi.org/gb5fp5
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/ng.3259
+  title: Understanding multicellular function and disease with human tissue-specific
+    networks
+  authors:
+  - Casey S Greene
+  - Arjun Krishnan
+  - Aaron K Wong
+  - Emanuela Ricciotti
+  - Rene A Zelaya
+  - Daniel S Himmelstein
+  - Ran Zhang
+  - Boris M Hartmann
+  - Elena Zaslavsky
+  - Stuart C Sealfon
+  - Daniel I Chasman
+  - Garret A FitzGerald
+  - Kara Dolinski
+  - Tilo Grosser
+  - Olga G Troyanskaya
+  publisher: Nature Genetics
+  date: '2015-04-27'
+  link: https://doi.org/f7dvkv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84971231452
+  title: Unsupervised feature construction and knowledge extraction from genome-wide
+    assays of breast cancer with denoising autoencoders
+  publisher: 20th Pacific Symposium on Biocomputing, PSB 2015
+  date: '2022-05-25'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84971231452&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825986-103
+  title: Unsupervised feature construction and knowledge extraction from genome-wide
+    assays of breast cancer with denoising autoencoders
+  publisher: 20th Pacific Symposium on Biocomputing, PSB 2015
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84971231452&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:MEDLINE:25592575
+  title: Unsupervised feature construction and knowledge extraction from genome-wide
+    assays of breast cancer with denoising autoencoders.
+  publisher: Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=MEDLINE&KeyUT=MEDLINE:25592575&KeyUID=MEDLINE:25592575
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84905885881
+  title: Applications of bioinformatics to non-coding RNAs in the era of next-generation
+    sequencing
+  publisher: 19th Pacific Symposium on Biocomputing, PSB 2014
+  date: '2022-05-24'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84905885881&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825986-104
+  title: Applications of bioinformatics to non-coding RNAs in the era of next-generation
+    sequencing
+  publisher: 19th Pacific Symposium on Biocomputing, PSB 2014
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84905885881&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:MEDLINE:24297566
+  title: Applications of bioinformatics to non-coding RNAs in the era of next-generation
+    sequencing.
+  publisher: Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=MEDLINE&KeyUT=MEDLINE:24297566&KeyUID=MEDLINE:24297566
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/jcp.24662
+  title: Big Data Bioinformatics
+  authors:
+  - Casey S. Greene
+  - Jie Tan
+  - Matthew Ung
+  - Jason H. Moore
+  - Chao Cheng
+  publisher: Journal of Cellular Physiology
+  date: '2014-08-27'
+  link: https://doi.org/gg7qsk
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/1756-0381-7-17
+  title: "Computational genetics analysis of grey matter density in Alzheimer\u2019\
+    s disease"
+  authors:
+  - Amanda L Zieselman
+  - Jonathan M Fisher
+  - Ting Hu
+  - Peter C Andrews
+  - Casey S Greene
+  - Li Shen
+  - Andrew J Saykin
+  - Jason H Moore
+  publisher: BioData Mining
+  date: '2014-08-22'
+  link: https://doi.org/gb5fnc
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/gm550
+  title: Predicting targeted drug combinations based on Pareto optimal patterns of
+    coexpression network connectivity
+  authors:
+  - Nadia M Penrod
+  - Casey S Greene
+  - Jason H Moore
+  publisher: Genome Medicine
+  date: '2014-01-01'
+  link: https://doi.org/gg7qsm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ISB.2014.6990733
+  title: Testing multiple hypotheses through IMP weighted FDR based on a genetic functional
+    network with application to a new zebrafish transcriptome study
+  authors:
+  - Jiang Gui
+  - Walter Taylor
+  - Jason H. Moore
+  - Con Sullivan
+  - Carol H. Kim
+  - Casey S. Greene
+  publisher: 2014 8th International Conference on Systems Biology (ISB)
+  date: '2014-10-01'
+  link: https://doi.org/gqs2q6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84960944853
+  title: Text and data mining for biomedical discovery
+  publisher: 19th Pacific Symposium on Biocomputing, PSB 2014
+  date: '2022-05-25'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84960944853&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825987-109
+  title: Text and data mining for biomedical discovery
+  publisher: 19th Pacific Symposium on Biocomputing, PSB 2014
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84960944853&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/gr.155697.113
+  title: Defining cell-type specificity at the transcriptional level in human disease
+  authors:
+  - Wenjun Ju
+  - Casey S. Greene
+  - Felix Eichinger
+  - Viji Nair
+  - Jeffrey B. Hodgin
+  - Markus Bitzer
+  - Young-suk Lee
+  - Qian Zhu
+  - Masami Kehata
+  - Min Li
+  - Song Jiang
+  - Maria Pia Rastaldi
+  - Clemens D. Cohen
+  - Olga G. Troyanskaya
+  - Matthias Kretzler
+  publisher: Genome Research
+  date: '2013-08-15'
+  link: https://doi.org/f5g4hm
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1002957
+  title: Functional Knowledge Transfer for High-accuracy Prediction of Under-studied
+    Biological Processes
+  authors:
+  - Christopher Y. Park
+  - Aaron K. Wong
+  - Casey S. Greene
+  - Jessica Rowland
+  - Yuanfang Guan
+  - Lars A. Bongo
+  - Rebecca D. Burdine
+  - Olga G. Troyanskaya
+  publisher: PLoS Computational Biology
+  date: '2013-03-14'
+  link: https://doi.org/f4qtp9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0069678
+  title: LT-IIb(T13I), a Non-Toxic Type II Heat-Labile Enterotoxin, Augments the Capacity
+    of a Ricin Toxin Subunit Vaccine to Evoke Neutralizing Antibodies and Protective
+    Immunity
+  authors:
+  - Christopher J. Greene
+  - Chrystal M. Chadwick
+  - Lorrie M. Mandell
+  - John C. Hu
+  - "Joanne M. O\u2019Hara"
+  - Robert N. Brey
+  - Nicholas J. Mantis
+  - Terry D. Connell
+  publisher: PLoS ONE
+  date: '2013-08-02'
+  link: https://doi.org/f5c52s
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-84961190214
+  title: Text and data mining for biomedical discovery
+  publisher: 18th Pacific Symposium on Biocomputing, PSB 2013
+  date: '2022-05-25'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84961190214&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825987-112
+  title: Text and data mining for biomedical discovery
+  publisher: 18th Pacific Symposium on Biocomputing, PSB 2013
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84961190214&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-37189-9_2
+  title: Time-Point Specific Weighting Improves Coexpression Networks from Time-Course
+    Experiments
+  authors:
+  - Jie Tan
+  - Gavin D. Grant
+  - Michael L. Whitfield
+  - Casey S. Greene
+  publisher: Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics
+  date: '2013-01-01'
+  link: https://doi.org/gg7qsn
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/j.1749-6632.2011.06383.x
+  title: Accurate evaluation and analysis of functional genomics data and methods
+  authors:
+  - Casey S. Greene
+  - Olga G. Troyanskaya
+  publisher: Annals of the New York Academy of Sciences
+  date: '2012-01-23'
+  link: https://doi.org/fxwvwd
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1002816
+  title: 'Chapter 2: Data-Driven View of Disease Biology'
+  authors:
+  - Casey S. Greene
+  - Olga G. Troyanskaya
+  publisher: PLoS Computational Biology
+  date: '2012-12-27'
+  link: https://doi.org/f4hnd3
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gks458
+  title: 'IMP: a multi-species functional genomics portal for integration, visualization
+    and prediction of protein functions and networks'
+  authors:
+  - Aaron K. Wong
+  - Christopher Y. Park
+  - Casey S. Greene
+  - Lars A. Bongo
+  - Yuanfang Guan
+  - Olga G. Troyanskaya
+  publisher: Nucleic Acids Research
+  date: '2012-06-07'
+  link: https://doi.org/gg7qsq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-21314-4_36
+  title: An Analysis of New Expert Knowledge Scaling Methods for Biologically Inspired
+    Computing
+  authors:
+  - Jason M. Gilmore
+  - Casey S. Greene
+  - Peter C. Andrews
+  - Jeff Kiralis
+  - Jason H. Moore
+  publisher: Advances in Artificial Life. Darwin Meets von Neumann
+  date: '2011-01-01'
+  link: https://doi.org/cqgts7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-21283-3_39
+  title: An Open-Ended Computational Evolution Strategy for Evolving Parsimonious
+    Solutions to Human Genetics Problems
+  authors:
+  - Casey S. Greene
+  - Douglas P. Hill
+  - Jason H. Moore
+  publisher: Advances in Artificial Life. Darwin Meets von Neumann
+  date: '2011-01-01'
+  link: https://doi.org/fht72w
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/1756-0381-4-21
+  title: 'Evolving hard problems: Generating human genetics datasets with a complex
+    etiology'
+  authors:
+  - Daniel S Himmelstein
+  - Casey S Greene
+  - Jason H Moore
+  publisher: BioData Mining
+  date: '2011-07-07'
+  link: https://doi.org/b44mk9
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkr440
+  title: 'PILGRM: an interactive data-driven discovery platform for expert biologists'
+  authors:
+  - C. S. Greene
+  - O. G. Troyanskaya
+  publisher: Nucleic Acids Research
+  date: '2011-06-07'
+  link: https://doi.org/fntw26
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-12211-8-7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-12211-8-17
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-77949497409
+  title: Enabling personal genomics with an explicit test of epistasis
+  publisher: Pacific Symposium on Biocomputing 2010, PSB 2010
+  date: '2022-05-24'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-77949497409&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000411479100034
+  title: Enabling personal genomics with an explicit test of epistasis
+  publisher: Pacific Symposium on Biocomputing 2010, PSB 2010
+  date: '2022-05-26'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000411479100034&KeyUID=WOS:000411479100034
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:MEDLINE:19908385
+  title: Enabling personal genomics with an explicit test of epistasis.
+  publisher: Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=MEDLINE&KeyUT=MEDLINE:19908385&KeyUID=MEDLINE:19908385
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/1830483.1830523
+  title: Fast genome-wide epistasis analysis using ant colony optimization for multifactor
+    dimensionality reduction analysis on graphics processing units
+  authors:
+  - Nicholas A. Sinnott-Armstrong
+  - Casey S. Greene
+  - Jason H. Moore
+  publisher: Proceedings of the 12th annual conference on Genetic and evolutionary
+    computation
+  date: '2010-07-07'
+  link: https://doi.org/cx5jbx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.semnephrol.2010.07.002
+  title: Integrative Systems Biology for Data-Driven Knowledge Discovery
+  authors:
+  - Casey S. Greene
+  - Olga G. Troyanskaya
+  publisher: Seminars in Nephrology
+  date: '2010-09-01'
+  link: https://doi.org/fcqz8c
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btq009
+  title: Multifactor dimensionality reduction for graphics processing units enables
+    genome-wide testing of epistasis in sporadic ALS
+  authors:
+  - Casey S. Greene
+  - Nicholas A. Sinnott-Armstrong
+  - Daniel S. Himmelstein
+  - Paul J. Park
+  - Jason H. Moore
+  - Brent T. Harris
+  publisher: Bioinformatics
+  date: '2010-01-16'
+  link: https://doi.org/dwgn7v
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-12211-8-16
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000272540600026
+  title: A Computational Evolution System for Open-Ended Automated Learning of Complex
+    Genetic Relationships
+  publisher: Genetic Epidemiology
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000272540600026&KeyUID=WOS:000272540600026
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/1756-0500-2-149
+  title: Accelerating epistasis analysis in human genetics with consumer graphics
+    hardware
+  authors:
+  - Nicholas A Sinnott-Armstrong
+  - Casey S Greene
+  - Fabio Cancare
+  - Jason H Moore
+  publisher: BMC Research Notes
+  date: '2009-07-24'
+  link: https://doi.org/cwbbv6
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000272540600064
+  title: Computationally Efficient Relief-based Algorithms for Detecting Epistasis
+    in Genome-wide Association Studies
+  publisher: Genetic Epidemiology
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000272540600064&KeyUID=WOS:000272540600064
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/CEC.2009.4983308
+  title: Development and evaluation of an open-ended computational evolution system
+    for the creation of digital organisms with complex genetic architecture
+  authors:
+  - Anna L. Tyler
+  - Bill C. White
+  - Casey S. Greene
+  - Peter C. Andrews
+  - Richard Cowper-Sa
+  - Jason H. Moore
+  publisher: 2009 IEEE Congress on Evolutionary Computation
+  date: '2009-05-01'
+  link: https://doi.org/fqc2pn
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/1569901.1570160
+  title: Environmental noise improves epistasis models of genetic data discovered
+    using a computational evolution system
+  authors:
+  - Casey S. Greene
+  - Douglas P. Hill
+  - Jason H. Moore
+  publisher: Proceedings of the 11th Annual conference on Genetic and evolutionary
+    computation
+  date: '2009-07-08'
+  link: https://doi.org/d5qxfp
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0005639
+  title: Failure to Replicate a Genetic Association May Provide Important Clues About
+    Genetic Architecture
+  authors:
+  - Casey S. Greene
+  - Nadia M. Penrod
+  - Scott M. Williams
+  - Jason H. Moore
+  publisher: PLoS ONE
+  date: '2009-06-02'
+  link: https://doi.org/cp74td
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/CEC.2009.4983027
+  title: 'Nature-inspired algorithms for the genetic analysis of epistasis in common
+    human diseases: Theoretical assessment of wrapper vs. filter approaches'
+  authors:
+  - Casey S. Greene
+  - Jeff Kiralis
+  - Jason H. Moore
+  publisher: 2009 IEEE Congress on Evolutionary Computation
+  date: '2009-05-01'
+  link: https://doi.org/d9h6xt
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-642-01184-9_9
+  title: Optimal Use of Expert Knowledge in Ant Colony Optimization for the Analysis
+    of Epistasis in Human Disease
+  authors:
+  - Casey S. Greene
+  - Jason M. Gilmore
+  - Jeff Kiralis
+  - Peter C. Andrews
+  - Jason H. Moore
+  publisher: Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics
+  date: '2009-01-01'
+  link: https://doi.org/ftr2gf
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/CEC.2009.4983093
+  title: Sensible initialization using expert knowledge for genome-wide analysis of
+    epistasis using genetic programming
+  authors:
+  - Casey S. Greene
+  - Bill C. White
+  - Jason H. Moore
+  publisher: 2009 IEEE Congress on Evolutionary Computation
+  date: '2009-05-01'
+  link: https://doi.org/cpsttz
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.4018/978-1-60566-705-8.ch007
+  title: Solving Complex Problems in Human Genetics using Nature-Inspired Algorithms
+    Requires Strategies which Exploit Domain-Specific Knowledge
+  authors:
+  - Casey S. Greene
+  - Jason H. Moore
+  publisher: Nature-Inspired Informatics for Intelligent Applications and Knowledge
+    Discovery
+  date: ''
+  link: https://doi.org/bzdszx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/1756-0381-2-5
+  title: Spatially Uniform ReliefF (SURF) for computationally-efficient filtering
+    of gene-gene interactions
+  authors:
+  - Casey S Greene
+  - Nadia M Penrod
+  - Jeff Kiralis
+  - Jason H Moore
+  publisher: BioData Mining
+  date: '2009-09-22'
+  link: https://doi.org/c2fwqq
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/1527063.1527064
+  title: Solving complex problems in human genetics using GP
+  authors:
+  - Casey S. Greene
+  - Jason H. Moore
+  publisher: ACM SIGEVOlution
+  date: '2008-07-01'
+  link: https://doi.org/d8n2bv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/art.23836
+  title: "Ability of epistatic interactions of cytokine single\u2010nucleotide polymorphisms\
+    \ to predict susceptibility to disease subsets in systemic sclerosis patients"
+  authors:
+  - Lorenzo Beretta
+  - Francesca Cappiello
+  - Jason H. Moore
+  - Morena Barili
+  - Casey S. Greene
+  - Raffaella Scorza
+  publisher: Arthritis &amp; Rheumatism
+  date: '2008-07-15'
+  link: https://doi.org/bkbbdx
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-540-87527-7_4
+  title: Ant Colony Optimization for Genome-Wide Genetic Analysis
+  authors:
+  - Casey S. Greene
+  - Bill C. White
+  - Jason H. Moore
+  publisher: Ant Colony Optimization and Swarm Intelligence
+  date: ''
+  link: https://doi.org/cm2vwk
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000260871600142
+  title: Multifactor Dimensionality Reduction 2.0
+  publisher: Genetic Epidemiology
+  date: '2022-05-24'
+  link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000260871600142&KeyUID=WOS:000260871600142
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-57349142365
+  title: Using expert knowledge in initialization for genome-wide analysis of epistasis
+    using genetic programming
+  publisher: 'GECCO''08: Proceedings of the 10th Annual Conference on Genetic and
+    Evolutionary Computation 2008'
+  date: '2022-05-24'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-57349142365&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825475-140
+  title: Using expert knowledge in initialization for genome-wide analysis of epistasis
+    using genetic programming
+  publisher: "GECCO\u201908: Proceedings of the 10th Annual Conference on Genetic\
+    \ and Evolutionary Computation 2008"
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-57349142365&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: eid:2-s2.0-38349045395
+  title: An expert knowledge-guided mutation operator for genome-wide genetic analysis
+    using genetic programming
+  publisher: Lecture Notes in Computer Science (including subseries Lecture Notes
+    in Artificial Intelligence and Lecture Notes in Bioinformatics)
+  date: '2022-05-24'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-38349045395&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: source-work-id:0417180825475-141
+  title: An expert knowledge-guided mutation operator for genome-wide genetic analysis
+    using genetic programming
+  publisher: Lecture Notes in Computer Science (including subseries Lecture Notes
+    in Artificial Intelligence and Lecture Notes in Bioinformatics)
+  date: '2022-05-26'
+  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-38349045395&partnerID=MN8TOARS
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s00239-004-0312-4
+  title: LTR Retrotransposon-Gene Associations in Drosophila melanogaster
+  authors:
+  - Eric W. Ganko
+  - Casey S. Greene
+  - Judson A. Lewis
+  - Vikram Bhattacharjee
+  - John F. McDonald
+  publisher: Journal of Molecular Evolution
+  date: '2006-01-01'
+  link: https://doi.org/fdxbwv
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/030650
+  title: ADAGE analysis of publicly available gene expression data collections illuminates
+    Pseudomonas aeruginosa-host interactions
+  authors:
+  - Jie Tan
+  - John H Hammond
+  - Deborah A Hogan
+  - Casey S Greene
+  publisher: Cold Spring Harbor Laboratory
+  date: '2015-11-05'
+  link: https://doi.org/gkw55s
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1349/ddlp.303
+  title: Relief-based bioinformatics methods for the analysis of epistasis in genetic
+    association studies.
+  authors:
+  - Casey Stephen. Greene
+  publisher: Dartmouth College Library Press
+  date: ''
+  link: https://doi.org/gqs2q7
+  orcid: 0000-0001-8713-9213
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.csbj.2020.05.017
+  title: Constructing knowledge graphs and their biomedical applications
+  authors:
+  - David N. Nicholson
+  - Casey S. Greene
+  publisher: Computational and Structural Biotechnology Journal
+  date: '2020-01-01'
+  link: https://doi.org/gg7m48
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   plugin: sources.py
   file: sources.yaml
