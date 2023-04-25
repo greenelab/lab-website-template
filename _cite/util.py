@@ -49,7 +49,7 @@ def log(message="\n--------------------\n", indent=0, level="", newline=True):
         "SUCCESS": "[black on #10B981]",
         "INFO": "[grey70]",
     }
-    color = palette.get(level) or palette.get(indent) or "[white]"
+    color = palette.get(level, "") or palette.get(indent, "") or "[white]"
     if newline:
         print()
     print(indent * "    " + color + str(message) + "[/]", end="", flush=True)
@@ -178,7 +178,7 @@ def cite_with_manubot(_id):
 
     # authors
     citation["authors"] = []
-    for author in manubot.get("author", []):
+    for author in manubot.get("author", {}):
         given = author.get("given", "").strip()
         family = author.get("family", "").strip()
         if given or family:
@@ -193,7 +193,7 @@ def cite_with_manubot(_id):
     # extract date part
     def date_part(citation, index):
         try:
-            return citation.get("issued").get("date-parts")[0][index]
+            return citation.get("issued", {}).get("date-parts", [[]])[0][index]
         except Exception:
             return ""
 

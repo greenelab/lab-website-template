@@ -14,18 +14,18 @@ def main(entry):
     endpoint = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=$TERM&retmode=json&retmax=1000&usehistory=y"
 
     # get id from entry
-    id = entry.get("term")
-    if not id:
+    _id = entry.get("term", "")
+    if not _id:
         raise Exception('No "term" key')
 
     # query api
     @log_cache
-    @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
+    @cache.memoize(name=__file__ + _id, expire=1 * (60 * 60 * 24))
     def query():
-        url = endpoint.replace("$TERM", quote(id))
+        url = endpoint.replace("$TERM", quote(_id))
         request = Request(url=url)
         response = json.loads(urlopen(request).read())
-        return response.get("esearchresult", {}).get("idlist")
+        return response.get("esearchresult", {}).get("idlist", [])
 
     response = query()
 
@@ -33,9 +33,9 @@ def main(entry):
     sources = []
 
     # go through response and format sources
-    for id in response:
+    for _id in response:
         # create source
-        source = {"id": f"pubmed:{id}"}
+        source = {"id": f"pubmed:{_id}"}
 
         # copy fields from entry to source
         source.update(entry)
