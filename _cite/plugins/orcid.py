@@ -38,7 +38,7 @@ def main(entry):
         ids = []
         ids = ids + work.get("external-ids", {}).get("external-id", [])
         for summary in work.get("work-summary", []):
-            ids = ids + summary.get("external-ids", {}).get("external-id", {})
+            ids = ids + summary.get("external-ids", {}).get("external-id", [])
 
         # prefer doi id type, or fallback to first id
         _id = next(
