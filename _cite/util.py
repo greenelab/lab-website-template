@@ -76,6 +76,8 @@ def format_date(date):
     format date as YYYY-MM-DD, or no date if malformed
     """
 
+    if isinstance(date, int):
+        return datetime.fromtimestamp(date // 1000.0).strftime("%Y-%m-%d")
     try:
         return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
     except Exception:

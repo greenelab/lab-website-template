@@ -77,14 +77,23 @@ def main(entry):
                     break
 
             # keep date if available
-            for summary in summaries:
-                date = format_date(
-                    summary.get("last-modified-date", {}).get("value", "")
-                    or summary.get("created-date", {}).get("value", "")
+            date = (
+                work.get("last-modified-date", {}).get("value", 0)
+                or next(
+                    summary.get("last-modified-date", {}).get("value", 0)
+                    for summary in summaries
+                    if summary
                 )
-                if date:
-                    source["date"] = date
-                    break
+                or work.get("created-date", {}).get("value", 0)
+                or next(
+                    summary.get("created-date", {}).get("value", 0)
+                    for summary in summaries
+                    if summary
+                )
+                or 0
+            )
+            if date:
+                source["date"] = format_date(date)
 
         # copy fields from entry to source
         source.update(entry)
