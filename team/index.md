@@ -7,9 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Our lab is home to passionate and collaborative researchers.
-We believe that diversity is essential for achieving our research goals, and we foster an environment where all team members are treated equally, respected, and valued for their unique perspectives and experiences.
-
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filters="role: pi" %}
@@ -17,8 +14,13 @@ We believe that diversity is essential for achieving our research goals, and we 
 
 {% include section.html dark=true %}
 
-We're currently hiring for several positions, and we encourage all individuals from diverse backgrounds to apply.
+{:refdef: class="center" style="font-size: var(--xxl);"}
+**We are hiring!**
+{: refdef}
+
+We're currently hiring for several positions.
 **Join us** and become part of our team.
+{:.center}
 
 {%
   include button.html
