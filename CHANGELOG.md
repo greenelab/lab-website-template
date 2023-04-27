@@ -4,7 +4,7 @@ Reference: common-changelog.org
 
 ## 1.1.4 - 2023-04-28
 
-## Changed
+### Changed
 
 - Fix ORCID plugin and other cite process bugs.
 
