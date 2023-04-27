@@ -20,14 +20,14 @@ def main(entry):
 
     # query api
     @log_cache
-    @cache.memoize(name=__file__ + _id, expire=1 * (60 * 60 * 24))
-    def query():
+    @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
+    def query(_id):
         url = endpoint.replace("$ORCID", _id)
         request = Request(url=url, headers=headers)
         response = json.loads(urlopen(request).read())
         return response.get("group", [])
 
-    response = query()
+    response = query(_id)
 
     # list of sources to return
     sources = []
