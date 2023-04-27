@@ -9,41 +9,41 @@ def main(entry):
     returns list of sources to cite
     """
 
-    # get id from entry
-    id = entry.get("gsid")
-    if not id:
-        raise Exception('No "gsid" key')
-
     # get api key
-    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY")
+    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
     if not api_key:
         raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
 
     # serp api
     params = {
         "engine": "google_scholar_author",
-        "author_id": id,
         "api_key": api_key,
-        "num": 100,
+        "num": 100,  # max allowed
     }
+
+    # get id from entry
+    _id = entry.get("gsid", "")
+    if not _id:
+        raise Exception('No "gsid" key')
 
     # query api
     @log_cache
     @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
-    def query():
+    def query(_id):
+        params["author_id"] = _id
         return GoogleSearch(params).get_dict().get("articles", [])
 
-    response = query()
+    response = query(_id)
 
     # list of sources to return
     sources = []
 
     # go through response and format sources
     for work in response:
-
         # create source
         source = {
             "id": work.get("citation_id", ""),
+            # api does not provide Manubot-citeable id, so keep citation details
             "title": work.get("title", ""),
             "authors": list(map(str.strip, work.get("authors", "").split(","))),
             "publisher": work.get("publication", ""),

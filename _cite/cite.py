@@ -89,11 +89,11 @@ for plugin in plugins:
 
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
-    _id = sources[a].get("id")
+    _id = sources[a].get("id", "")
     if not _id:
         continue
     for b in range(a + 1, len(sources)):
-        if sources[b].get("id") == _id:
+        if sources[b].get("id", "") == _id:
             sources[a].update(sources[b])
             sources[b] = {}
 sources = [entry for entry in sources if entry]
@@ -108,6 +108,7 @@ log("Generating citations")
 
 # list of new citations
 citations = []
+
 
 # loop through compiled sources
 for index, source in enumerate(sources):
@@ -130,7 +131,7 @@ for index, source in enumerate(sources):
         # if Manubot cannot cite source
         except Exception as e:
             # if regular source (id entered by user), throw error
-            if source.get("plugin") == "sources.py":
+            if source.get("plugin", "") == "sources.py":
                 log(e, 3, "ERROR")
                 error = True
             # otherwise, if from metasource (id retrieved from some third-party API), just warn
@@ -143,7 +144,8 @@ for index, source in enumerate(sources):
     citation.update(source)
 
     # ensure date in proper format for correct date sorting
-    citation["date"] = format_date(citation.get("date"))
+    if citation.get("date", ""):
+        citation["date"] = format_date(citation.get("date", ""))
 
     # add new citation to list
     citations.append(citation)
@@ -152,6 +154,7 @@ for index, source in enumerate(sources):
 log()
 
 log("Saving updated citations")
+
 
 # save new citations
 try:
