@@ -195,8 +195,8 @@ def cite_with_manubot(_id):
     # extract date part
     def date_part(citation, index):
         try:
-            return citation.get("issued", {}).get("date-parts", [[]])[0][index]
-        except Exception:
+            return citation["issued"]["date-parts"][0][index]
+        except (KeyError, IndexError, TypeError):
             return ""
 
     # date

@@ -35,15 +35,14 @@ def main(entry):
     # go through response structure and pull out ids e.g. doi:1234/56789
     for work in response:
         # get list of ids
-        ids = []
-        ids = ids + work.get("external-ids", {}).get("external-id", [])
+        ids = work.get("external-ids", {}).get("external-id", [])
         for summary in work.get("work-summary", []):
             ids = ids + summary.get("external-ids", {}).get("external-id", [])
 
         # prefer doi id type, or fallback to first id
         _id = next(
             (id for id in ids if id.get("external-id-type", "") == "doi"),
-            next(iter(ids), {}),
+            ids[0] if len(ids) > 0 else {},
         )
 
         # get id and id-type from response
