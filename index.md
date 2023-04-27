@@ -40,7 +40,9 @@ By leveraging the power of computational analysis and cutting-edge technology, w
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our team is committed to developing robust and user-friendly tools to facilitate reproducible research.
+Our software is openly accessible on GitHub and conveniently packaged for easy installation.
+These resources are designed to promote transparency and accessibility in academic research, enabling fellow scholars to replicate and build upon our findings.
 
 {%
   include button.html
@@ -55,7 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/neural_net2.png"
   link="projects"
   title="Our Projects"
   flip=true

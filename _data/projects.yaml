@@ -1,47 +1,48 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: PhenoPLIER
+  subtitle: A gene-module-based approach to genetic studies
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/projects/phenoplier.png
+  link: https://github.com/greenelab/phenoplier
+  description: An omnigenic approach that provides a gene module perspective to genetic studies. PhenoPLIER computes gene module-trait associations and a drug-disease links.
   tags:
-    - resource
+    - genetic studies
+    - gene co-expression
+    - drug repurposing
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: "CCC: Clustermatch Correlation Coefficient"
+  subtitle: An efficient not-only-linear correlation coefficient
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/projects/ccc.png
+  link: https://github.com/greenelab/ccc
+  description: An easy-to-use and not-only-linear coefficient based on machine learning models. CCC can detect biologically meaningful linear and nonlinear patterns missed by standard, linear-only correlation coefficients.
   tags:
-    - resource
+   - correlation
+   - gene co-expression
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: Manubot AI Editor
+  subtitle: AI-assisted manuscript revision tool
+  group: featured
+  image: images/projects/manubot-ai-editor.png
+  link: https://github.com/manubot/manubot-ai-editor
+  description: A workflow for Manubot that automatically improves scholarly manuscripts using large language models from OpenAI.
   tags:
-    - resource
-    - publication
+    - manubot
+    - large language models
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: ukbREST
+  subtitle: Efficient and streamlined data access for reproducible research in the UK Biobank
+  image: images/projects/ukbrest.jpg
+  link: https://github.com/hakyimlab/ukbrest
+  description: A tool that enables efficient retrieval of phenotypic and genetic data from the UK Biobank within a private, secure network using a REST API. Its data access specification is in a human-readable text format that can be easily shared with other researchers.
   tags:
-    - software
+    - UK Biobank
+    - data
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: divControl
+  subtitle: Diversity control for cluster ensembles
+  image: images/projects/divcontrol.png
+  link: https://sinc.unl.edu.ar/web-demo/divcontrol/
+  description: A method to smoothly control the diversity of a cluster ensemble, providing an effective way to study the diversity influence on clustering consensus performance.
   tags:
-    - software
+    - unsupervised learning
+    - clustering
