@@ -14,7 +14,10 @@
     <img
       src="{{ include.image | relative_url }}"
       loading="lazy"
-      alt="{{ include.image_title | include.title | default: "feature image" }}"
+      alt="{{ include.title | default: "feature image" }}"
+      {% if include.image_title %}
+        title="{{ include.image_title }}"
+      {% endif %}
       {% include fallback.html %}
     >
   </a>

@@ -11,7 +11,7 @@ Diseases are caused by a complex interplay between different factors, such as ge
 A deeper understanding of the genetic risk factors of complex diseases can enable the development of more personalized treatments and prevention strategies.
 
 Our research is focused on developing novel machine-learning methods to advance key computational aspects of precision medicine.
-We have a particular focus on the integration of genetic studies with important molecular patterns extracted from multi-omics data.
+We have a particular focus on the integration of genetic studies with relevant molecular patterns extracted from multi-omics data.
 For this, we aim to develop the next generation of methodologies that will consolidate large and heterogeneous sources of biomedical information to extract biological insight to ultimately improve human health.
 
 Strongly committed to open source and open science, we use [GitHub](https://github.com/pivlab) for the development of reproducible workflows and [Manubot](https://manubot.org/) for the transparent authoring of modern and collaborative scholarly manuscripts.
@@ -42,4 +42,4 @@ Strongly committed to open source and open science, we use [GitHub](https://gith
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" filters="authors: .+, title: .+" %}
+{% include list.html data="citations" component="citation" style="rich" filters="authors: .+, title: .+, hide: ^$" %}
