@@ -88,3 +88,6 @@ Our team is a group of passionate data scientists with diverse backgrounds and e
   title="Our Team"
   text=text
 %}
+
+
+<a rel="me" href="https://genomic.social/@miltondp" style="display: none;">Mastodon</a>
