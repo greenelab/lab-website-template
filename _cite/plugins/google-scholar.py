@@ -10,7 +10,7 @@ def main(entry):
     """
 
     # get api key
-    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
+    api_key = get_safe(os.environ, "GOOGLE_SCHOLAR_API_KEY", "")
     if not api_key:
         raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
 
@@ -22,7 +22,7 @@ def main(entry):
     }
 
     # get id from entry
-    _id = entry.get("gsid", "")
+    _id = get_safe(entry, "gsid", "")
     if not _id:
         raise Exception('No "gsid" key')
 
@@ -31,7 +31,7 @@ def main(entry):
     @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
     def query(_id):
         params["author_id"] = _id
-        return GoogleSearch(params).get_dict().get("articles", [])
+        return get_safe(GoogleSearch(params).get_dict(), "articles", [])
 
     response = query(_id)
 
@@ -42,13 +42,13 @@ def main(entry):
     for work in response:
         # create source
         source = {
-            "id": work.get("citation_id", ""),
+            "id": get_safe(work, "citation_id", ""),
             # api does not provide Manubot-citeable id, so keep citation details
-            "title": work.get("title", ""),
-            "authors": list(map(str.strip, work.get("authors", "").split(","))),
-            "publisher": work.get("publication", ""),
-            "date": work.get("year", "") + "-01-01",
-            "link": work.get("link", ""),
+            "title": get_safe(work, "title", ""),
+            "authors": list(map(str.strip, get_safe(work, "authors", "").split(","))),
+            "publisher": get_safe(work, "publication", ""),
+            "date": get_safe(work, "year", "") + "-01-01",
+            "link": get_safe(work, "link", ""),
         }
 
         # copy fields from entry to source

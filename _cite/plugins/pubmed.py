@@ -14,7 +14,7 @@ def main(entry):
     endpoint = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=$TERM&retmode=json&retmax=1000&usehistory=y"
 
     # get id from entry
-    _id = entry.get("term", "")
+    _id = get_safe(entry, "term", "")
     if not _id:
         raise Exception('No "term" key')
 
@@ -25,7 +25,7 @@ def main(entry):
         url = endpoint.replace("$TERM", quote(_id))
         request = Request(url=url)
         response = json.loads(urlopen(request).read())
-        return response.get("esearchresult", {}).get("idlist", [])
+        return get_safe(response, "esearchresult.idlist", [])
 
     response = query(_id)
 
