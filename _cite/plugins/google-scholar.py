@@ -41,13 +41,14 @@ def main(entry):
     # go through response and format sources
     for work in response:
         # create source
+        year = get_safe(work, "year", "")
         source = {
             "id": get_safe(work, "citation_id", ""),
             # api does not provide Manubot-citeable id, so keep citation details
             "title": get_safe(work, "title", ""),
             "authors": list(map(str.strip, get_safe(work, "authors", "").split(","))),
             "publisher": get_safe(work, "publication", ""),
-            "date": get_safe(work, "year", "") + "-01-01",
+            "date": (year + "-01-01") if year else "",
             "link": get_safe(work, "link", ""),
         }
 
