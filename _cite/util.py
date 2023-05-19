@@ -49,7 +49,7 @@ def log(message="\n--------------------\n", indent=0, level="", newline=True):
         "SUCCESS": "[black on #10B981]",
         "INFO": "[grey70]",
     }
-    color = palette.get(level, "") or palette.get(indent, "") or "[white]"
+    color = get_safe(palette, level, "") or get_safe(palette, indent, "") or "[white]"
     if newline:
         print()
     print(indent * "    " + color + str(message) + "[/]", end="", flush=True)
@@ -57,10 +57,27 @@ def log(message="\n--------------------\n", indent=0, level="", newline=True):
 
 def label(entry):
     """
-    get "label" of dict entry
+    get "label" of dict entry (for logging purposes)
     """
 
-    return list(entry.keys())[0] + ": " + list(entry.values())[0]
+    return str(list(entry.keys())[0]) + ": " + str(list(entry.values())[0])
+
+
+def get_safe(item, path, default=None):
+    """
+    safely access value in nested lists/dicts
+    """
+
+    for part in str(path).split("."):
+        try:
+            part = int(part)
+        except ValueError:
+            part = part
+        try:
+            item = item[part]
+        except (KeyError, IndexError, AttributeError, TypeError):
+            return default
+    return item
 
 
 def list_of_dicts(data):
@@ -176,20 +193,20 @@ def cite_with_manubot(_id):
     citation["id"] = _id
 
     # title
-    citation["title"] = manubot.get("title", "").strip()
+    citation["title"] = get_safe(manubot, "title", "").strip()
 
     # authors
     citation["authors"] = []
-    for author in manubot.get("author", {}):
-        given = author.get("given", "").strip()
-        family = author.get("family", "").strip()
+    for author in get_safe(manubot, "author", {}):
+        given = get_safe(author, "given", "").strip()
+        family = get_safe(author, "family", "").strip()
         if given or family:
             citation["authors"].append(" ".join([given, family]))
 
     # publisher
-    container = manubot.get("container-title", "").strip()
-    collection = manubot.get("collection-title", "").strip()
-    publisher = manubot.get("publisher", "").strip()
+    container = get_safe(manubot, "container-title", "").strip()
+    collection = get_safe(manubot, "collection-title", "").strip()
+    publisher = get_safe(manubot, "publisher", "").strip()
     citation["publisher"] = container or publisher or collection or ""
 
     # extract date part
@@ -211,7 +228,7 @@ def cite_with_manubot(_id):
         citation["date"] = ""
 
     # link
-    citation["link"] = manubot.get("URL", "").strip()
+    citation["link"] = get_safe(manubot, "URL", "").strip()
 
     # return citation data
     return citation

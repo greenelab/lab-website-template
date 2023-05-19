@@ -2,6 +2,7 @@
 cite process to convert sources and metasources into full citations
 """
 
+import traceback
 from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
@@ -23,7 +24,7 @@ log()
 
 log("Compiling sources")
 
-# master list of sources
+# compiled list of sources
 sources = []
 
 # in-order list of plugins to run
@@ -63,37 +64,46 @@ for plugin in plugins:
 
             # run plugin on data entry to expand into multiple sources
             try:
-                entry = import_module(f"plugins.{plugin.stem}").main(entry)
+                expanded = import_module(f"plugins.{plugin.stem}").main(entry)
                 # check that plugin returned correct format
-                if not list_of_dicts(entry):
+                if not list_of_dicts(expanded):
                     raise Exception("Plugin didn't return list of dicts")
+            # catch any plugin error
             except Exception as e:
+                # log detailed pre-formatted/colored trace
+                print(traceback.format_exc())
+                # log high-level error
                 log(e, 3, "ERROR")
                 error = True
                 continue
 
             # loop through sources
-            for source in entry:
+            for source in expanded:
                 if plugin.stem != "sources":
                     log(label(source), 3)
 
                 # include meta info about source
                 source["plugin"] = plugin.name
                 source["file"] = file.name
-                # add source to master list
+
+                # add source to compiled list
                 sources.append(source)
 
             if plugin.stem != "sources":
-                log(f"{len(entry)} source(s)", 3)
+                log(f"{len(expanded)} source(s)", 3)
 
+
+log("Merging sources by id")
 
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
-    _id = sources[a].get("id", "")
-    if not _id:
+    a_id = get_safe(sources, f"{a}.id", "")
+    if not a_id:
         continue
     for b in range(a + 1, len(sources)):
-        if sources[b].get("id", "") == _id:
+        b_id = get_safe(sources, f"{b}.id", "")
+        if b_id == a_id:
+            log(f"Found duplicate {b_id}", 2)
             sources[a].update(sources[b])
             sources[b] = {}
 sources = [entry for entry in sources if entry]
@@ -118,7 +128,7 @@ for index, source in enumerate(sources):
     citation = {}
 
     # source id
-    _id = source.get("id", "").strip()
+    _id = get_safe(source, "id", "").strip()
 
     # Manubot doesn't work without an id
     if _id:
@@ -131,21 +141,21 @@ for index, source in enumerate(sources):
         # if Manubot cannot cite source
         except Exception as e:
             # if regular source (id entered by user), throw error
-            if source.get("plugin", "") == "sources.py":
+            if get_safe(source, "plugin", "") == "sources.py":
                 log(e, 3, "ERROR")
                 error = True
             # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
                 log(e, 3, "WARNING")
-                # discard source
+                # discard source from citations
                 # continue
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
 
     # ensure date in proper format for correct date sorting
-    if citation.get("date", ""):
-        citation["date"] = format_date(citation.get("date", ""))
+    if get_safe(citation, "date", ""):
+        citation["date"] = format_date(get_safe(citation, "date", ""))
 
     # add new citation to list
     citations.append(citation)
