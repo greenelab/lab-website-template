@@ -68,14 +68,17 @@ for plugin in plugins:
                 # check that plugin returned correct format
                 if not list_of_dicts(expanded):
                     raise Exception("Plugin didn't return list of dicts")
+            # catch any plugin error
             except Exception as e:
+                # log detailed pre-formatted/colored trace
                 print(traceback.format_exc())
+                # log high-level error
                 log(e, 3, "ERROR")
                 error = True
                 continue
 
             # loop through sources
-            for index, source in enumerate(expanded):
+            for source in expanded:
                 if plugin.stem != "sources":
                     log(label(source), 3)
 
@@ -94,11 +97,11 @@ log("Merging sources by id")
 
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
-    a_id = get_safe(sources, str(a) + ".id", "")
+    a_id = get_safe(sources, f"{a}.id", "")
     if not a_id:
         continue
     for b in range(a + 1, len(sources)):
-        b_id = get_safe(sources, str(b) + ".id", "")
+        b_id = get_safe(sources, f"{b}.id", "")
         if b_id == a_id:
             log(f"Found duplicate {b_id}", 2)
             sources[a].update(sources[b])

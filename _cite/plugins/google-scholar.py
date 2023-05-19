@@ -9,12 +9,12 @@ def main(entry):
     returns list of sources to cite
     """
 
-    # get api key
-    api_key = get_safe(os.environ, "GOOGLE_SCHOLAR_API_KEY", "")
+    # get api key (serp api key to access google scholar)
+    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
     if not api_key:
         raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
 
-    # serp api
+    # serp api properties
     params = {
         "engine": "google_scholar_author",
         "api_key": api_key,
