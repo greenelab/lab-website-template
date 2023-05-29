@@ -1,5 +1,35 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s43588-023-00453-y
+  title: The high-dimensional space of human diseases built from diagnosis records
+    and mapped to genetic loci
+  authors:
+  - Gengjie Jia
+  - Yu Li
+  - Xue Zhong
+  - Kanix Wang
+  - Milton Pividori
+  - Rabab Alomairy
+  - Aniello Esposito
+  - Hatem Ltaief
+  - Chikashi Terao
+  - Masato Akiyama
+  - Koichi Matsuda
+  - David E. Keyes
+  - Hae Kyung Im
+  - Takashi Gojobori
+  - Yoichiro Kamatani
+  - Michiaki Kubo
+  - Nancy J. Cox
+  - James Evans
+  - Xin Gao
+  - Andrey Rzhetsky
+  publisher: Nature Computational Science
+  date: '2023-05-22'
+  link: https://doi.org/gr9nx2
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/2023.01.21.525030
   title: A publishing infrastructure for AI-assisted academic authoring
   authors:
