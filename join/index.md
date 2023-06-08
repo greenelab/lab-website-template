@@ -19,6 +19,6 @@ Students pursuing computational research from [other graduate, discipline-specif
 
 Our teaching approach in bioinformatics is grounded in the philosophy that students should learn the fundamental principles on which modern computational methods are based, and apply them simultaneously to a real biological problem.
 This approach provides students with both the theoretical foundations of a method and practical insight into its application to a real problem.
-By acquiring a deep understanding of all the essential components, students are equipped with the necessary knowledge to confidently apply their skills to develop innovative approaches for both industry and academia.
+By acquiring a deep understanding of all the essential components, students are equipped with the necessary knowledge to confidently apply their skills to develop innovative approaches in industry and academia.
 
 Please [reach out](/contact) if you have any preliminary questions.
