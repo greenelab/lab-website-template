@@ -28,8 +28,9 @@
   date: '2023-06-28'
   link: https://doi.org/gsfchp
   orcid: 0000-0002-3035-4403
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: images/articles/high-dim-diseases.png
 - id: doi:10.1038/s43588-023-00453-y
   title: The high-dimensional space of human diseases built from diagnosis records
     and mapped to genetic loci
