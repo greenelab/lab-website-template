@@ -42,4 +42,4 @@ Strongly committed to open source and open science, we use [GitHub](https://gith
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" filters="authors: .+, title: ^(?!$)(?i)Author Correction, hide: ^$" %}
+{% include list.html data="citations" component="citation" style="rich" filters="authors: .+, title: ^(?!$)(?i)(?!author correction), hide: ^$" %}
