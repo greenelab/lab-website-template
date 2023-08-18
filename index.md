@@ -4,7 +4,7 @@ subtitle: biomedical informatics
 
 # Who we are, what we do
 
-We are a research laboratory at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/).
+We are a research laboratory in the [Department of Biomedical Informatics](https://medschool.cuanschutz.edu/dbmi) at the [University of Colorado Anschutz Medical Campus](https://medschool.cuanschutz.edu/).
 Our research is focused on developing novel machine-learning methods to advance key computational aspects of precision medicine.
 For this, we design and develop algorithms and tools that are applied to human disease with a systems biology approach.
 

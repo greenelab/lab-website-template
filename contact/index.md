@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Our lab is part of the [Department of Biomedical Informatics](https://medschool.cuanschutz.edu/dbmi) and the [Center for Health Artificial Intelligence (AI)](https://medschool.cuanschutz.edu/ai) at the [University of Colorado Anschutz Medical Campus](https://www.cuanschutz.edu/).
+Our lab is part of the [Department of Biomedical Informatics](https://medschool.cuanschutz.edu/dbmi) and the [Colorado Center for Personalized Medicine (CCPM)](https://medschool.cuanschutz.edu/ccpm) at the [University of Colorado Anschutz Medical Campus](https://www.cuanschutz.edu/).
 Our offices are located on the 6th floor of the [Anschutz Health Sciences Building](https://news.cuanschutz.edu/news-stories/what-should-i-know-about-the-anschutz-health-sciences-building).
 
 {%
