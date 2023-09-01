@@ -1,6 +1,6 @@
 ---
 name: Milton Pividori
-image: images/milton-pividori.jpg
+image: images/team/milton-pividori.jpg
 description: Principal Investigator
 role: pi
 links:
