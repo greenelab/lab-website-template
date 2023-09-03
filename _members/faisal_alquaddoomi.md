@@ -11,5 +11,5 @@ links:
   github: falquaddoomi
 ---
 
-Faisal Alquaddoomi is a software developer...
+Faisal Alquaddoomi is a backend software developer.
 
