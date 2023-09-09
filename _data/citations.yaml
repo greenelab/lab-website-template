@@ -1,5 +1,32 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s41467-023-41057-4
+  title: Projecting genetic associations through gene expression patterns highlights
+    disease etiology and drug mechanisms
+  authors:
+  - Milton Pividori
+  - Sumei Lu
+  - Binglan Li
+  - Chun Su
+  - Matthew E. Johnson
+  - Wei-Qi Wei
+  - Qiping Feng
+  - Bahram Namjou
+  - Krzysztof Kiryluk
+  - Iftikhar J. Kullo
+  - Yuan Luo
+  - Blair D. Sullivan
+  - Benjamin F. Voight
+  - Carsten Skarke
+  - Marylyn D. Ritchie
+  - Struan F. A. Grant
+  - Casey S. Greene
+  publisher: Nature Communications
+  date: '2023-09-09'
+  link: https://doi.org/gspsxr
+  orcid: 0000-0002-3035-4403
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s43588-023-00488-1
   title: 'Author Correction: The high-dimensional space of human diseases built from
     diagnosis records and mapped to genetic loci'
