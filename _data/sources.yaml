@@ -1,12 +1,22 @@
-- id: doi:10.1101/2021.07.05.450786
+# PhenoPLIER
+## Nat Comm:
+- id: doi:10.1038/s41467-023-41057-4
   image: images/articles/phenoplier.png
   description: Here we introduce the PhenoPLIER framework, an omnigenic approach that integrates genetic studies (GWAS/TWAS) with gene modules learned from expression data. PhenoPLIER provides 1) a regression framework that computes an association between gene modules and diseases, 2) a clustering approach that finds groups of diseases with shared transcriptomic properties, and 3) a gene module-based drug-repurposing method.
+## Preprint:
+- id: doi:10.1101/2021.07.05.450786
+  hide: "true"
+# CCC
+## Preprint:
 - id: doi:10.1101/2022.06.15.496326
   image: images/articles/ccc.png
   description: This article introduces the Clustermatch Correlation Coefficient (CCC), an efficient, easy-to-use and not-only-linear coefficient based on machine learning models. CCC can detect biologically meaningful linear and nonlinear patterns missed by standard, linear-only correlation coefficients.
+# Manubot AI Editor
+## Preprint:
 - id: doi:10.1101/2023.01.21.525030
   image: images/articles/manubot-ai-editor.png
   description: We developed the Manubot AI Editor, a plugin to the Manubot publishing infrastructure that uses manuscript section-specific prompts and OpenAI's models (such as GPT-3) to automatically revise and improve the text.
+# Others
 - id: doi:10.1016/S2213-2600(19)30055-4
   image: images/articles/asthma.png
 - id: doi:10.1038/s41467-022-33628-8
@@ -41,4 +51,3 @@
   hide: "true"
 - id: doi:10.1038/s43588-023-00453-y
   image: images/articles/high-dim-diseases.png
-

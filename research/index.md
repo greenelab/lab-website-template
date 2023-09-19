@@ -20,7 +20,7 @@ Strongly committed to open source and open science, we use [GitHub](https://gith
 
 ## Integration of genetic studies with gene co-expression patterns
 
-{% include citation.html lookup="doi:10.1101/2021.07.05.450786" style="rich" %}
+{% include citation.html lookup="doi:10.1038/s41467-023-41057-4" style="rich" %}
 
 {% include section.html %}
 
