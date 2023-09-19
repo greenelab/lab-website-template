@@ -25,8 +25,15 @@
   date: '2023-09-09'
   link: https://doi.org/gspsxr
   orcid: 0000-0002-3035-4403
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: images/articles/phenoplier.png
+  description: Here we introduce the PhenoPLIER framework, an omnigenic approach that
+    integrates genetic studies (GWAS/TWAS) with gene modules learned from expression
+    data. PhenoPLIER provides 1) a regression framework that computes an association
+    between gene modules and diseases, 2) a clustering approach that finds groups
+    of diseases with shared transcriptomic properties, and 3) a gene module-based
+    drug-repurposing method.
 - id: doi:10.1038/s43588-023-00488-1
   title: 'Author Correction: The high-dimensional space of human diseases built from
     diagnosis records and mapped to genetic loci'
@@ -177,13 +184,7 @@
   orcid: 0000-0002-3035-4403
   plugin: sources.py
   file: sources.yaml
-  image: images/articles/phenoplier.png
-  description: Here we introduce the PhenoPLIER framework, an omnigenic approach that
-    integrates genetic studies (GWAS/TWAS) with gene modules learned from expression
-    data. PhenoPLIER provides 1) a regression framework that computes an association
-    between gene modules and diseases, 2) a clustering approach that finds groups
-    of diseases with shared transcriptomic properties, and 3) a gene module-based
-    drug-repurposing method.
+  hide: 'true'
 - id: doi:10.1101/2020.11.12.373647
   title: Polygenic transcriptome risk scores improve portability of polygenic risk
     scores across ancestries
