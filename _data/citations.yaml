@@ -42,6 +42,28 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1093/gigascience/giad047
+  title: Hetnet connectivity search provides rapid insights into how biomedical entities
+    are related
+  authors:
+  - Daniel S Himmelstein
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Kyle Kloster
+  - Benjamin J Heil
+  - Faisal Alquaddoomi
+  - Dongbo Hu
+  - David N Nicholson
+  - Yun Hao
+  - Blair D Sullivan
+  - Michael W Nagle
+  - Casey S Greene
+  publisher: GigaScience
+  date: '2022-12-28'
+  link: https://doi.org/gsd85n
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1186/s13059-020-02021-3
   title: Compressing gene expression data using multiple latent space dimensionalities
     learns complementary biological representations
