@@ -1,6 +1,7 @@
-manubot==0.5.*
-PyYAML==6.0.*
-diskcache==5.4.*
-rich==12.6.*
-python-dotenv==0.21.*
-google-search-results==2.4.*
+manubot==0.*
+PyYAML==6.*
+diskcache==5.*
+rich==12.*
+python-dotenv==0.*
+google-search-results==2.*
+
