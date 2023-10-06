@@ -2,7 +2,7 @@
 
 Reference: common-changelog.org
 
-## 1.1.6 - 2023-10-02
+## 1.1.6 - 2023-10-06
 
 - Use latest minor versions of Python packages in auto-cite script.
 
