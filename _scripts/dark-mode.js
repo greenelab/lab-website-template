@@ -3,7 +3,7 @@
 */
 
 {
-  // immediately load saved mode before page renders
+  // immediately load saved (or default) mode before page renders
   document.documentElement.dataset.dark =
     window.localStorage.getItem("dark-mode") ?? "false";
 
