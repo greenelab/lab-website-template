@@ -14,6 +14,10 @@ phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
 
+ms:
+  icon: fa-solid fa-graduation-cap
+  description: Master's Student
+
 undergrad:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Student
