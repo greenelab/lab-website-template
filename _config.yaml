@@ -1,18 +1,15 @@
 # site properties and page defaults
-title: Lab Website Template
-subtitle: by the Greene Lab
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+title: BSSA lab
+subtitle: 
+description: This is the discription of my website.
 header: images/background.jpg
 footer: images/background.jpg
 
 # site social media and other links
 links:
-  email: contact@your-lab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: your-lab
-  twitter: YourLabHandle
-  youtube: YourLabChannel
+  email: emad.askarinejad@gmail.com
+  google-scholar: https://scholar.google.com/citations?user=qUZIvvwAAAAJ&hl=en
+  github: emad-askari
 
 ### jekyll settings
 

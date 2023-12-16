@@ -1,6 +1,6 @@
 ---
 name: Sarah Johnson
-image: images/photo.jpg
+image: images/brainImage.jpg
 description: Lead Programmer
 role: programmer
 links:
@@ -8,4 +8,4 @@ links:
   twitter: sarahjohnson
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Discription of Sarah Johnson's projects (3rd type)

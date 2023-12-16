@@ -7,14 +7,42 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A small discription of general research theme of the lab
 
 {% include section.html %}
 
-## Highlighted
+## Highlights
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% capture text %}
+
+1st subject that we're working on
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/Research1.jpg"
+  <!-- link="research" -->
+  title="1st Research"
+  text="this a text for 1st research"
+%}
+
+
+{% capture text %}
+
+2nd subject that we're working on
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/Research2.jpg"
+  <!-- link="research" -->
+  title="2nd Research"
+  text="this a text for 2nd research"
+%}
+
+<!-- {% include citation.html lookup="One of the published works" style="rich" %}
 
 {% include section.html %}
 
@@ -24,4 +52,4 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" style="rich" %} -->
