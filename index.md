@@ -3,7 +3,7 @@
 
 # Bio-Signal & System Analysis lab's website
 
-a small discription of lab !
+a small discription of thwe lab !
 
 {% include section.html %}
 
