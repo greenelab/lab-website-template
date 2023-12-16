@@ -1,14 +1,13 @@
 ---
 title: Publications
 nav:
-  order: 2
+  order: 3
   tooltip: Software, datasets, and more
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Publications
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+some text before showing publications
 
 {% include tags.html tags="publication, resource, website" %}
 
@@ -16,12 +15,22 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
-## Featured
+## Journal papers
 
 {% include list.html component="card" data="Publications" filters="group: featured" %}
 
+1. first pub
+2. 2nd pub
+3. pub 3
+4. IV pub
+
 {% include section.html %}
 
-## More
+## conference presentations
 
 {% include list.html component="card" data="Publications" filters="group: " style="small" %}
+
+1. first pres
+2. 2nd pres
+3. pres 3
+4. IV pres
