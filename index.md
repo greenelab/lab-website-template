@@ -1,7 +1,7 @@
 ---
 ---
 
-# Bio-Signal & System Analysis lab's website
+# Bio-Signal & System Analysis lab's webs-site
 
 a small discription of thwe lab !
 
