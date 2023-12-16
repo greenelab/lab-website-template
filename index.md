@@ -1,9 +1,9 @@
 ---
 ---
 
-# Bio-Signal & System Analysis lab's webs-site
+# Bio-Signal & System Analysis lab's webssite
 
-a small discription of thwe lab !
+a small discription of the lab !
 
 {% include section.html %}
 
