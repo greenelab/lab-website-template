@@ -14,8 +14,9 @@ jobs:
 
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v2
+      - uses: crazy-max/ghaction-dump-context@v2
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Create Pages branch
         uses: actions/github-script@v7
@@ -60,7 +61,7 @@ jobs:
             .github/ISSUE_TEMPLATE \
             .github/workflows/versioning.yaml \
             .github/pull_request_template.md \
-      
+
       - name: Rename files
         run: |
           mv .github/user_pull_request_template.md .github/pull_request_template.md

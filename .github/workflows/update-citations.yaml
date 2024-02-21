@@ -29,8 +29,9 @@ jobs:
 
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v2
+      - uses: crazy-max/ghaction-dump-context@v2
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
