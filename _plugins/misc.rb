@@ -14,7 +14,7 @@ module Jekyll
       elsif object.is_a?(Array)
         return object
       end
-      return []
+      return object
     end
 
     # filter a list of hashes by comma-sep'd field:value pairs
