@@ -38,6 +38,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Set root url
+        run: |
+          echo "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
+
       - name: Build live version of site
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
