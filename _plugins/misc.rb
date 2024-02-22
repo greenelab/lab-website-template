@@ -76,6 +76,7 @@ module Jekyll
         HTMLProofer.check_directory(site.dest, options).run
       rescue Exception => error
         STDERR.puts error
+        # raise error
       end
     end
   end
