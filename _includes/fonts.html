@@ -8,9 +8,9 @@
 {% assign fontawesome = "https://use.fontawesome.com/releases/v6.5.0/css/all.css" %}
 <link
   href="{{ fontawesome }}"
-  rel="preload"
+  rel="stylesheet"
   media="none"
-  onload="this.onload = null; this.removeAttribute('media');"
+  onload="this.removeAttribute('media'); this.onload = null;"
 />
 <noscript>
   <link href="{{ fontawesome }}" rel="stylesheet">
