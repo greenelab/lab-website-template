@@ -67,6 +67,8 @@ module Jekyll
         ignore_files: [/.*testbed.html/],
         ignore_urls: [
           /fonts\.gstatic\.com/,
+          /localhost:/,
+          /0\.0\.0\.0:/,
         ],
       }
 
