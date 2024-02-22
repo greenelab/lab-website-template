@@ -130,6 +130,10 @@ for index, source in enumerate(sources):
     # source id
     _id = get_safe(source, "id", "").strip()
 
+    # if explicitly flagged, remove/ignore entry
+    # if get_safe(source, "remove", False) == True:
+    #     continue
+
     # Manubot doesn't work without an id
     if _id:
         log("Using Manubot to generate citation", 1)
