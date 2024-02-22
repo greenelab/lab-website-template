@@ -1,6 +1,3 @@
-name: 🐞 Create an issue
-description: I think I've discovered a bug, I want to request a feature/change, or other issue.
-
 body:
   - type: checkboxes
     attributes:

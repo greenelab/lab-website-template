@@ -59,6 +59,7 @@ jobs:
             CHANGELOG.md \
             testbed.md \
             .github/ISSUE_TEMPLATE \
+            .github/DISCUSSION_TEMPLATE \
             .github/workflows/versioning.yaml \
             .github/pull_request_template.md \
 
