@@ -58,7 +58,7 @@ header a {
 }
 
 // main title
-.title > *:first-child {
+.title > *:last-child:not(:only-child) {
   font-size: var(--large);
 }
 
@@ -163,7 +163,7 @@ header[data-big] {
     font-size: var(--xxl);
   }
 
-  .title > *:last-child {
+  .title > *:last-child:not(:only-child) {
     font-size: var(--large);
   }
 }
