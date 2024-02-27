@@ -1,0 +1,23 @@
+.anchor {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  margin: 0;
+  left: 0.5em;
+  color: var(--primary) !important;
+  opacity: 0;
+  font-size: 0.75em;
+  text-decoration: none;
+  transition-property: opacity, color;
+}
+
+*:hover > .anchor,
+.anchor:focus {
+  opacity: 1;
+}
+
+.anchor:hover {
+  color: var(--text) !important;
+}
+
+/*# sourceMappingURL=anchor.css.map */
