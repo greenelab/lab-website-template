@@ -61,22 +61,24 @@ module Jekyll
     priority = Jekyll::Hooks::PRIORITY_MAP[:high] + 1000
 
     Jekyll::Hooks.register(:site, :post_write, priority: priority) do |site|
-      options = {
-        allow_missing_href: true,
-        enforce_https: false,
-        ignore_files: [/.*testbed.html/],
-        ignore_urls: [
-          /fonts\.gstatic\.com/,
-          /localhost:/,
-          /0\.0\.0\.0:/,
-        ],
-      }
+      if not site.config["proofer"] == false
+        options = {
+          allow_missing_href: true,
+          enforce_https: false,
+          ignore_files: [/.*testbed.html/],
+          ignore_urls: [
+            /fonts\.gstatic\.com/,
+            /localhost:/,
+            /0\.0\.0\.0:/,
+          ],
+        }
 
-      begin
-        HTMLProofer.check_directory(site.dest, options).run
-      rescue Exception => error
-        STDERR.puts error
-        # raise error
+        begin
+          HTMLProofer.check_directory(site.dest, options).run
+        rescue Exception => error
+          STDERR.puts error
+          # raise error
+        end
       end
     end
   end
