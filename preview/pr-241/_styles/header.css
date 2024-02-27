@@ -45,11 +45,11 @@ header a {
   text-align: left;
 }
 
-.title > *:last-child:not(:only-child) {
+.title > *:first-child {
   font-size: var(--large);
 }
 
-.title > *:last-child {
+*:last-child:not(:only-child) {
   opacity: 0.65;
   font-weight: var(--thin);
 }
