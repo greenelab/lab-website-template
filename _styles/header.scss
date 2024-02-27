@@ -58,12 +58,12 @@ header a {
 }
 
 // main title
-.title > *:last-child:not(:only-child) {
+.title > *:first-child {
   font-size: var(--large);
 }
 
 // subtitle
-.title > *:last-child {
+*:last-child:not(:only-child) {
   opacity: 0.65;
   font-weight: var(--thin);
 }
