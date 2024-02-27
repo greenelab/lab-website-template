@@ -49,7 +49,7 @@ header a {
   font-size: var(--large);
 }
 
-*:last-child:not(:only-child) {
+.title > *:last-child:not(:only-child) {
   opacity: 0.65;
   font-weight: var(--thin);
 }
