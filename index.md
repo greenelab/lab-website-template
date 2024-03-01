@@ -32,8 +32,6 @@ Epilepsy is a complex neurological disorder that encompasses more than simply re
   text=text
 %}
 
-{% endcapture %}
-
 {% capture text %}
 
 The Nobis lab team
