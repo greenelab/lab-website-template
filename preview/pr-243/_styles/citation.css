@@ -1,0 +1,90 @@
+.citation {
+  display: flex;
+  margin: 15px 0;
+  border-radius: var(--rounded);
+  background: var(--background);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.citation-image {
+  position: relative;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.citation-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.citation-text {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+  height: min-content;
+  padding: 20px;
+  padding-left: 30px;
+  text-align: left;
+  overflow-wrap: break-word;
+  z-index: 0;
+}
+
+.citation-title,
+.citation-authors,
+.citation-details,
+.citation-description {
+  width: 100%;
+  line-height: calc(var(--spacing) - 0.4);
+}
+
+.citation-title {
+  font-weight: var(--semi-bold);
+}
+
+.citation-text > .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--light-gray);
+  opacity: 0.5;
+  font-size: 30px;
+  z-index: -1;
+}
+
+.citation-description {
+  color: var(--gray);
+}
+
+.citation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.citation-buttons .button {
+  margin: 0;
+}
+
+.citation-text > .tags {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .citation {
+    flex-direction: column;
+  }
+  .citation-image {
+    width: unset;
+    height: 180px;
+  }
+}
+
+/*# sourceMappingURL=citation.css.map */
