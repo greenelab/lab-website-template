@@ -1,155 +1,389 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: pmc:PMC10126895
+  title: 512 Odorant exposure decreases mortality in a Dravet Syndrome mouse model
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
-  authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
-  authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  - William Nobis
+  - Ragan Huffman
+  - Alyssa Mitchell
+  - Martina Hannalla
+  publisher: Journal of clinical and translational science
+  date: '2024-03-01'
+  link: http://europepmc.org/abstract/PMC/PMC10126895
+  orcid: 0000-0002-2318-6077
   plugin: sources.py
   file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
+- id: doi:10.1016/j.neuro.2023.01.002
+  title: "Acute manganese exposure impairs glutamatergic function in a young mouse\
+    \ model of Alzheimer\u2019s disease"
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  - Brittany D. Spitznagel
+  - Rebecca A. Buchanan
+  - David C. Consoli
+  - Megan K. Thibert
+  - Aaron B. Bowman
+  - William P. Nobis
+  - Fiona E. Harrison
+  publisher: NeuroToxicology
+  date: '2023-03-01'
+  link: https://doi.org/gtkc8j
+  orcid: 0000-0002-2318-6077
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.1016/j.bbi.2022.10.003
+  title: Altered EEG, disrupted hippocampal long-term potentiation and neurobehavioral
+    deficits implicate a delirium-like state in a mouse model of sepsis
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
+  - David C. Consoli
+  - Brittany D. Spitznagel
+  - Benjamin M. Owen
+  - Hakmook Kang
+  - Shawniqua Williams Roberson
+  - Pratik Pandharipande
+  - E. Wesley Ely
+  - William P. Nobis
+  - Julie A. Bastarache
+  - Fiona E. Harrison
+  publisher: Brain, Behavior, and Immunity
+  date: '2023-01-01'
+  link: https://doi.org/gsjxfw
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.yebeh.2022.109061
+  title: 'Epilepsy with anterior temporal encephaloceles: Baseline characteristics,
+    post-surgical outcomes, and comparison to mesial temporal sclerosis'
+  authors:
+  - Niyatee Samudra
+  - Eric Armour
+  - Hernan Gonzalez
+  - Danielle Mattingly
+  - Kevin Haas
+  - Pradumna Singh
+  - Hasan Sonmezturk
+  - Martin Gallagher
+  - Angela Crudele
+  - William Nobis
+  - Shilpa Reddy
+  - Monica Jacobs
+  - Joseph M. Aulino
+  - Sarah Bick
+  - Victoria Morgan
+  - Dario Englot
+  - Bassel Abou-Khalil
+  publisher: Epilepsy &amp; Behavior
+  date: '2023-02-01'
+  link: https://doi.org/gtkc8k
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.jneumeth.2023.109878
+  title: Narrowing the translational research gap by aligning replication concepts
+    in basic and clinical neuroscience
+  authors:
+  - Alan S. Lewis
+  - William P. Nobis
+  publisher: Journal of Neuroscience Methods
+  date: '2023-05-01'
+  link: https://doi.org/gtkc8m
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1177/17590914221103188
+  title: Disruption of Synaptic Transmission in the Bed Nucleus of the Stria Terminalis
+    Reduces Seizure-Induced Death in DBA/1 Mice and Alters Brainstem E/I Balance
+  authors:
+  - Maya Xia
+  - Benjamin Owen
+  - Jeremy Chiang
+  - Alyssa Levitt
+  - Katherine Preisinger
+  - Wen Wei Yan
+  - Ragan Huffman
+  - William P. Nobis
+  publisher: ASN Neuro
+  date: '2022-01-01'
+  link: https://doi.org/gsxqvf
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.yebeh.2022.108956
+  title: 30-Day readmission rates in pediatric patients with functional seizures
+  authors:
+  - Jonah Fox
+  - Shilpa B. Reddy
+  - William P. Nobis
+  publisher: Epilepsy &amp; Behavior
+  date: '2022-12-01'
+  link: https://doi.org/gtkc8n
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/hipo.23469
+  title: "Glucagon\u2010like peptide\u20101 receptor differentially controls mossy\
+    \ cell activity across the dentate gyrus longitudinal axis"
+  authors:
+  - Alex Steiner
+  - Benjamin M. Owen
+  - James P. Bauer
+  - Leann Seanez
+  - Sam Kwon
+  - Jessica E. Biddinger
+  - Ragan Huffman
+  - Julio E. Ayala
+  - William P. Nobis
+  - Alan S. Lewis
+  publisher: Hippocampus
+  date: '2022-09-05'
+  link: https://doi.org/gtkc8p
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1101/2022.03.14.484169
+  title: Glucagon-like peptide-1 receptor differentially controls mossy cell activity
+    across the dentate gyrus longitudinal axis
+  authors:
+  - Alex Steiner
+  - Benjamin M. Owen
+  - James P. Bauer
+  - Leann Seanez
+  - Sam Kwon
+  - Jessica E. Biddinger
+  - Ragan Huffman
+  - Julio E. Ayala
+  - William P. Nobis
+  - Alan S. Lewis
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-03-17'
+  link: https://doi.org/gtkc8q
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1101/2021.12.23.473665
+  title: Disruption of synaptic transmission in the Bed Nucleus of the Stria Terminalis
+    reduces seizure-induced death in DBA/1 mice and alters brainstem E/I balance
+  authors:
+  - Maya Xia
+  - Benjamin Owen
+  - Jeremy Chiang
+  - Alyssa Levitt
+  - Wen Wei Yan
+  - William P. Nobis
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-12-24'
+  link: https://doi.org/gtkc8r
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1111/epi.16852
+  title: "Near SUDEP during bilateral stereo\u2010EEG monitoring characterized by\
+    \ diffuse postictal EEG suppression"
+  authors:
+  - Michael Johnson
+  - Niyatee Samudra
+  - Martin J. Gallagher
+  - "Bassel Abou\u2010Khalil"
+  - William P. Nobis
+  publisher: Epilepsia
+  date: '2021-02-22'
+  link: https://doi.org/gtkc8s
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.nbd.2021.105486
+  title: Altered synaptic glutamate homeostasis contributes to cognitive decline in
+    young APP/PSEN1 mice
+  authors:
+  - J.M. Wilcox
+  - D.C. Consoli
+  - A.A. Tienda
+  - S. Dixit
+  - R.A. Buchanan
+  - J.M. May
+  - W.P. Nobis
+  - F.E. Harrison
+  publisher: Neurobiology of Disease
+  date: '2021-10-01'
+  link: https://doi.org/gtkc8t
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1523/ENEURO.0306-20.2021
+  title: Enhanced Synaptic Transmission in the Extended Amygdala and Altered Excitability
+    in an Extended Amygdala to Brainstem Circuit in a Dravet Syndrome Mouse Model
+  authors:
+  - Wen Wei Yan
+  - Maya Xia
+  - Jeremy Chiang
+  - Alyssa Levitt
+  - Nicole Hawkins
+  - Jennifer Kearney
+  - Geoffrey T. Swanson
+  - Dane Chetkovich
+  - William P. Nobis
+  publisher: eneuro
+  date: '2021-05-01'
+  link: https://doi.org/gj8gzc
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1101/2020.09.01.267112
+  title: Enhanced synaptic transmission in the extended amygdala and altered excitability
+    in an extended amygdala to brainstem circuit in a Dravet syndrome mouse model
+  authors:
+  - Wen Wei Yan
+  - Maya Xia
+  - Alyssa Levitt
+  - Nicole Hawkins
+  - Jennifer Kearney
+  - Geoffrey T. Swanson
+  - Dane Chetkovich
+  - William P. Nobis
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-09-01'
+  link: https://doi.org/gszrwz
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3171/2019.1.jns183157
+  title: The effect of seizure spread to the amygdala on respiration and onset of
+    ictal central apnea
+  authors:
+  - William P. Nobis
+  - "Karina A. Gonz\xE1lez Ot\xE1rula"
+  - Jessica W. Templer
+  - Elizabeth E. Gerard
+  - Stephen VanHaerents
+  - Gregory Lane
+  - Guangyu Zhou
+  - Joshua M. Rosenow
+  - Christina Zelano
+  - Stephan Schuele
+  publisher: Journal of Neurosurgery
+  date: '2020-05-01'
+  link: https://doi.org/ggh8z5
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/ana.25178
+  title: "Amygdala\u2010stimulation\u2010induced apnea is attention and nasal\u2010\
+    breathing dependent"
+  authors:
+  - William P. Nobis
+  - Stephan Schuele
+  - Jessica W. Templer
+  - Guangyu Zhou
+  - Gregory Lane
+  - Joshua M. Rosenow
+  - Christina Zelano
+  publisher: Annals of Neurology
   date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  link: https://doi.org/ggh8zx
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1523/ENEURO.0364-17.2017
+  title: Excitatory Synaptic Input to Hilar Mossy Cells under Basal and Hyperexcitable
+    Conditions
+  authors:
+  - Tristan P. Hedrick
+  - William P. Nobis
+  - Kendall M. Foote
+  - Toshiyuki Ishii
+  - Dane M. Chetkovich
+  - Geoffrey T. Swanson
+  publisher: eneuro
+  date: '2017-11-01'
+  link: https://doi.org/gtkc8v
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.biopsych.2010.12.030
+  title: "\u03B2-Adrenergic Receptors Enhance Excitatory Transmission in the Bed Nucleus\
+    \ of the Stria Terminalis Through a Corticotrophin-Releasing Factor Receptor\u2013\
+    Dependent and Cocaine-Regulated Mechanism"
+  authors:
+  - William P. Nobis
+  - Thomas L. Kash
+  - Yuval Silberman
+  - Danny G. Winder
+  publisher: Biological Psychiatry
+  date: '2011-06-01'
+  link: https://doi.org/cwpzb3
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1073/pnas.0905568107
+  title: "Distinct forms of G\n            <sub>q</sub>\n            -receptor-dependent\
+    \ plasticity of excitatory transmission in the BNST are differentially affected\
+    \ by stress"
+  authors:
+  - "Zo\xE9 A. McElligott"
+  - Jason R. Klug
+  - William P. Nobis
+  - Sachin Patel
+  - Brad A. Grueter
+  - Thomas L. Kash
+  - Danny G. Winder
+  publisher: Proceedings of the National Academy of Sciences
+  date: '2010-01-14'
+  link: https://doi.org/fpxqw8
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1523/jneurosci.4715-08.2008
+  title: Dopamine Enhances Fast Excitatory Synaptic Transmission in the Extended Amygdala
+    by a CRF-R1-Dependent Process
+  authors:
+  - Thomas L. Kash
+  - William P. Nobis
+  - Robert T. Matthews
+  - Danny G. Winder
+  publisher: The Journal of Neuroscience
+  date: '2008-12-17'
+  link: https://doi.org/czs4h3
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1080/10425170310001638945
+  title: Structure of the Bovine Natural Resistance Associated Macrophage Protein
+    (<i>NRAMP 1</i>) Gene and Identification of a Novel Polymorphism
+  authors:
+  - Paul M. Coussens
+  - Matthew J. Coussens
+  - Brian C. Tooker
+  - William Nobis
+  publisher: DNA Sequence
+  date: '2004-02-01'
+  link: https://doi.org/cs86s7
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1152/physiolgenomics.00099.2003
+  title: Development of a porcine brain cDNA library, EST database, and microarray
+    resource
+  authors:
+  - William Nobis
+  - Xiaoning Ren
+  - Steven P. Suchyta
+  - Thomas R. Suchyta
+  - Adroaldo J. Zanella
+  - Paul M. Coussens
+  publisher: Physiological Genomics
+  date: '2003-12-16'
+  link: https://doi.org/bcfkgn
+  orcid: 0000-0002-2318-6077
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/s0165-2427(02)00005-3
+  title: Bioinformatics and high throughput approach to create genomic resources for
+    the study of bovine immunobiology
+  authors:
+  - Paul M. Coussens
+  - William Nobis
+  publisher: Veterinary Immunology and Immunopathology
+  date: '2002-07-01'
+  link: https://doi.org/ffsc9j
+  orcid: 0000-0002-2318-6077
   plugin: sources.py
   file: sources.yaml
