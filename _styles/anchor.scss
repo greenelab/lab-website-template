@@ -14,7 +14,7 @@
   transition-property: opacity, color;
 }
 
-*:hover > .anchor,
+:hover > .anchor,
 .anchor:focus {
   opacity: 1;
 }
