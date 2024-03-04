@@ -35,7 +35,9 @@
     {% endif %}
 
     {% if include.description %}
-      {{ include.description | markdownify }}
+      <p>
+        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
+      </p>
     {% endif %}
 
     {% if include.tags or include.repo %}

@@ -37,9 +37,8 @@
   padding: 20px;
 }
 
-.card-text > *,
-.card-text > .tags {
-  margin: 0;
+.card-text > * {
+  margin: 0 !important;
 }
 
 .card-title {
