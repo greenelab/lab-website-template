@@ -58,12 +58,12 @@ header a {
 }
 
 // main title
-.title > *:first-child {
+.title > :first-child:not(:only-child) {
   font-size: var(--large);
 }
 
 // subtitle
-.title > *:last-child {
+.title > :last-child:not(:only-child) {
   opacity: 0.65;
   font-weight: var(--thin);
 }
@@ -159,11 +159,11 @@ header[data-big] {
     text-align: center;
   }
 
-  .title > *:first-child {
+  .title > :first-child {
     font-size: var(--xxl);
   }
 
-  .title > *:last-child {
+  .title > :last-child {
     font-size: var(--large);
   }
 }
