@@ -35,11 +35,10 @@ Text with extra blank lines above and below
  
 - list item a
 - list item b
+  1. ordered list item 1
+  2. ordered list item 2
+  3. ordered list item 3
 - list item c
- 
-1. ordered list item 1
-2. ordered list item 2
-3. ordered list item 3
 
 Plain image:
 
@@ -58,6 +57,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 #### Heading 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+##### Heading 5
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+###### Heading 6
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
