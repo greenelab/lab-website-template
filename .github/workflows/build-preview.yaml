@@ -23,8 +23,6 @@ jobs:
     steps:
       # for debugging
       - uses: crazy-max/ghaction-dump-context@v2
-      - if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
@@ -43,6 +41,10 @@ jobs:
         if: github.event.action != 'closed'
         id: pages
         uses: actions/configure-pages@v4
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Build preview version of site
         if: github.event.action != 'closed'

@@ -22,8 +22,6 @@ jobs:
     steps:
       # for debugging
       - uses: crazy-max/ghaction-dump-context@v2
-      - if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
@@ -37,6 +35,10 @@ jobs:
       - name: Get Pages url
         id: pages
         uses: actions/configure-pages@v4
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Set root url
         run: |

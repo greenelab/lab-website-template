@@ -30,8 +30,6 @@ jobs:
     steps:
       # for debugging
       - uses: crazy-max/ghaction-dump-context@v2
-      - if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
@@ -49,6 +47,10 @@ jobs:
       - name: Install Python packages
         run: |
           python -m pip install --upgrade --requirement ./_cite/requirements.txt
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Build updated citations
         run: python _cite/cite.py
