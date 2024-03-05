@@ -2,12 +2,6 @@ name: on-pull-request
 run-name: on pull request activity
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
   pull_request_target:
     types:
       - opened
