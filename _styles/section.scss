@@ -6,7 +6,7 @@ $padding: 40px;
 
 section {
   padding: $padding max($padding, calc((100% - $page) / 2));
-  transition-property: background, color;
+  transition: background var(--transition), color var(--transition);
 }
 
 section[data-size="wide"] {

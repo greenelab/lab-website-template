@@ -28,7 +28,7 @@ button {
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  transition-property: background, color;
+  transition: background var(--transition), color var(--transition);
 }
 
 .button:hover {
