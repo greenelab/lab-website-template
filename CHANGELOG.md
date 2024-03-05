@@ -7,7 +7,7 @@ Reference: common-changelog.org
 ### Changed
 
 - Update all GitHub Actions to fix "Node v16 deprecated" warnings.
-- Sources that Manubot doesn't know how to cite (e.g.  from metasources are now ignored by default.
+- Sources that Manubot doesn't know how to cite (e.g. wosuid:12345) are now ignored by default if they're from metasources.
 - Fix bug where passing tags to tags component manually doesn't work.
 - Fix bug in citation (and other) components when `lookup` is blank.
 - Fix nested tables bug.
