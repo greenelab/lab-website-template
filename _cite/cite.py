@@ -131,8 +131,8 @@ for index, source in enumerate(sources):
     _id = get_safe(source, "id", "").strip()
 
     # if explicitly flagged, remove/ignore entry
-    # if get_safe(source, "remove", False) == True:
-    #     continue
+    if get_safe(source, "remove", False) == True:
+        continue
 
     # Manubot doesn't work without an id
     if _id:
