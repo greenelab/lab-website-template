@@ -2,13 +2,32 @@
 
 Reference: common-changelog.org
 
+## 1.2.0 - 2024-03-06
+
+### Changed
+
+- Update all GitHub Actions to fix "Node v16 deprecated" warnings.
+- Sources that Manubot doesn't know how to cite (e.g.  from metasources are now ignored by default.
+- Fix bug where passing tags to tags component manually doesn't work.
+- Fix bug in citation (and other) components when `lookup` is blank.
+- Fix nested tables bug.
+- Dark mode tweaks.
+
+### Added
+
+- Add `image` param to support blog post thumbnails.
+- Add `html-proofer` plugin that checks for broken images/links/etc.
+- Add `remove` flag to remove a source from a metasource. 
+
 ## 1.1.6 - 2023-10-06
+
+### Changed
 
 - Use latest minor versions of Python packages in auto-cite script.
 
 ## 1.1.5 - 2023-05-19
 
-### Changes
+### Changed
 
 - Fix ORCID plugin bug and other cite process tweaks.
 
