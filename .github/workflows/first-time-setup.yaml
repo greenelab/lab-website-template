@@ -17,14 +17,11 @@ jobs:
       - uses: crazy-max/ghaction-dump-context@v2
 
       - name: Create Pages branch
-        uses: actions/github-script@v7
+        uses: peterjgrainger/action-create-branch@v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          script: |
-            await github.rest.git.createRef({
-              ref: "refs/head/gh-pages",
-              sha: context.sha,
-              ...context.repo,
-            });
+          branch: "gh-pages"
 
       - name: Checkout Pages branch
         uses: actions/checkout@v4
