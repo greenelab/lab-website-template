@@ -12,6 +12,7 @@ Reference: common-changelog.org
 - Fix bug in citation (and other) components when `lookup` is blank.
 - Fix nested tables bug.
 - Dark mode tweaks.
+- Various CSS tweaks and fixes.
 
 ### Added
 
