@@ -4,6 +4,10 @@
 $thumb-size: 200px;
 $wrap: 800px;
 
+.post-excerpt-container {
+  container-type: inline-size;
+}
+
 .post-excerpt {
   display: flex;
   margin: 20px 0;
@@ -53,7 +57,7 @@ $wrap: 800px;
   width: 100%;
 }
 
-@media (max-width: $wrap) {
+@container (max-width: #{$wrap}) {
   .post-excerpt {
     flex-direction: column;
   }

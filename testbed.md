@@ -347,7 +347,7 @@ With figure components
 ### Grid of citations
 
 {% capture content %}
-{% include list.html data="citations" component="citation" %}
+{% include list.html data="citations" component="citation" style="rich" %}
 {% endcapture %}
 {% include grid.html content=content %}
 

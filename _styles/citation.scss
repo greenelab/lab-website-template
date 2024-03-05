@@ -4,6 +4,10 @@
 $thumb-size: 180px;
 $wrap: 800px;
 
+.citation-container {
+  container-type: inline-size;
+}
+
 .citation {
   display: flex;
   margin: 20px 0;
@@ -87,7 +91,7 @@ $wrap: 800px;
   margin: 0;
 }
 
-@media (max-width: $wrap) {
+@container (max-width: #{$wrap}) {
   .citation {
     flex-direction: column;
   }
