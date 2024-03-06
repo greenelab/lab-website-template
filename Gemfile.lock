@@ -144,7 +144,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  html-proofer
+  html-proofer (~> 5.0)
   jekyll (~> 4.3)
   jekyll-feed
   jekyll-last-modified-at

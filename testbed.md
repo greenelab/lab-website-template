@@ -35,10 +35,16 @@ Text with extra blank lines above and below
  
 - list item a
 - list item b
-  1. ordered list item 1
-  2. ordered list item 2
-  3. ordered list item 3
 - list item c
+
+1. ordered list item 1
+1. ordered list item 2
+1. ordered list item 3
+
+<!--  -->
+
+1. top level list item
+   - nested list item
 
 Plain image:
 
