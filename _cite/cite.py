@@ -124,15 +124,15 @@ citations = []
 for index, source in enumerate(sources):
     log(f"Processing source {index + 1} of {len(sources)}, {label(source)}")
 
+    # if explicitly flagged, remove/ignore entry
+    if get_safe(source, "remove", False) == True:
+        continue
+
     # new citation data for source
     citation = {}
 
     # source id
     _id = get_safe(source, "id", "").strip()
-
-    # if explicitly flagged, remove/ignore entry
-    if get_safe(source, "remove", False) == True:
-        continue
 
     # Manubot doesn't work without an id
     if _id:
