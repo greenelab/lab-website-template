@@ -45,6 +45,7 @@ Text with extra blank lines above and below
 
 1. top level list item
    - nested list item
+     1. even deeper nested list item
 
 Plain image:
 
