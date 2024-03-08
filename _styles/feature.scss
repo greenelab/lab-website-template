@@ -47,7 +47,7 @@ $wrap: 800px;
   }
 
   .feature-image {
-    width: unset;
+    width: 100%;
     max-width: calc($wrap / 2);
   }
 }

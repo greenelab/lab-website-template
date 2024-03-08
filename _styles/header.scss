@@ -46,7 +46,7 @@ header a {
   height: 100%;
 }
 
-.title {
+.title-text {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -57,13 +57,11 @@ header a {
   text-align: left;
 }
 
-// main title
-.title > *:first-child {
+.title {
   font-size: var(--large);
 }
 
-// subtitle
-.title > *:last-child {
+.subtitle {
   opacity: 0.65;
   font-weight: var(--thin);
 }
@@ -75,9 +73,8 @@ header a {
   height: 30px;
   margin: 0;
   color: var(--text);
-  -webkit-appearance: none;
   appearance: none;
-  transition-property: background;
+  transition: background var(--transition);
 }
 
 .nav-toggle:after {
@@ -153,17 +150,17 @@ header[data-big] {
     height: $logo-big;
   }
 
-  .title {
+  .title-text {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .title > *:first-child {
+  .title {
     font-size: var(--xxl);
   }
 
-  .title > *:last-child {
+  .subtitle {
     font-size: var(--large);
   }
 }

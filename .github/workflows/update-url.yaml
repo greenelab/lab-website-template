@@ -20,21 +20,22 @@ jobs:
 
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v1
+      - uses: crazy-max/ghaction-dump-context@v2
 
       - name: Get Pages url
         id: pages
-        uses: actions/configure-pages@v2
-        with:
-          enablement: false
+        uses: actions/configure-pages@v4
 
       - name: Checkout branch contents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       # update link to site in readme
       - name: Update readme
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -53,14 +54,14 @@ jobs:
 
       - name: Check if readme changed
         id: changed
-        uses: tj-actions/verify-changed-files@v13
+        uses: tj-actions/verify-changed-files@v18
         with:
           files: |
             README.md
 
       - name: Commit changed files
         if: steps.changed.outputs.files_changed == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update url"
 

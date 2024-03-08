@@ -22,28 +22,29 @@ jobs:
 
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v1
+      - uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
       - name: Install Ruby packages
         if: github.event.action != 'closed'
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.172.0
         with:
-          ruby-version: "3.0"
+          ruby-version: "3.1"
           bundler-cache: true
 
       - name: Get Pages url
         if: github.event.action != 'closed'
         id: pages
-        uses: actions/configure-pages@v2
-        with:
-          enablement: false
+        uses: actions/configure-pages@v4
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Build preview version of site
         if: github.event.action != 'closed'
@@ -51,7 +52,7 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
 
       - name: Commit preview to Pages branch
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@v1.4.7
         with:
           source-dir: _site
           umbrella-dir: ${{ env.PREVIEWS_FOLDER }}

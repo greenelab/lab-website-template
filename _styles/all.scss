@@ -1,7 +1,11 @@
 ---
 ---
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
-  transition: none 0.2s;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }

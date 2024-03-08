@@ -22,14 +22,13 @@ button {
   background: var(--primary);
   color: var(--background);
   text-align: center;
+  font: inherit;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
-  line-height: 1;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-appearance: none;
   appearance: none;
-  transition-property: background, color;
+  transition: background var(--transition), color var(--transition);
 }
 
 .button:hover {

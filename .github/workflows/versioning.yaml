@@ -21,25 +21,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v1
+      - uses: crazy-max/ghaction-dump-context@v2
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Checkout base branch contents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: main
           path: base
 
       - name: Checkout pr branch contents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: pr
 
       - name: Install packages
-        run: yarn add yaml semver
+        run: npm install yaml semver
 
       - name: Check version, date, changelog
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const { readFileSync } = require("fs");
@@ -85,18 +86,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v1
+      - uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install packages
-        run: yarn add yaml semver
+        run: npm install yaml semver
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       - name: Get version and body
         id: version
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const { readFileSync } = require("fs");
@@ -123,7 +127,7 @@ jobs:
             return { version, body };
 
       - name: Create GitHub release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.14.0
         with:
           commit: ${{ github.ref }}
           tag: v${{ fromJson(steps.version.outputs.result).version }}

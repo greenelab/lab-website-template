@@ -1,96 +1,109 @@
-{% assign citation = site.data.citations
-  | where_exp: "citation",
-    "citation.id == include.lookup or citation.title contains include.lookup"
-  | first
-  | default: include
-%}
+{% if include.lookup %}
+  {% assign citation = site.data.citations
+    | where_exp: "citation",
+      "citation.id == include.lookup or citation.title contains include.lookup"
+    | first
+  %}
+{% else %}
+  {% assign citation = include %}
+{% endif %}
 
-<div class="citation">
-  {% if include.style == "rich" %}
-    <a
-      {% if citation.link %}
-        href="{{ citation.link | relative_url }}"
-      {% endif %}
-      class="citation-image"
-      aria-label="{{ citation.title | default: "citation link" }}"
-    >
-      <img
-        src="{{ citation.image | relative_url }}"
-        alt="{{ citation.title | default: "citation image" }}"
-        loading="lazy"
-        {% include fallback.html %}
-      >
-    </a>
-  {% endif %}
-
-  <div class="citation-text">
-    {% assign type = site.data.types[citation.type] %}
-    {% include icon.html icon=type.icon %}
-
-    <a
-      {% if citation.link %}
-        href="{{ citation.link | relative_url }}"
-      {% endif %}
-      class="citation-title"
-    >
-      {{ citation.title | default: "[no title info]" }}
-    </a>
-
-    <div
-      class="citation-authors"
-      {% if citation.authors.size > 10 %}
-        data-tooltip="{{ citation.authors | join: ", " }} "
-      {% endif %}
-      tabindex="0"
-    >
-      {{
-        citation.authors
-        | join: ","
-        | split: ","
-        | array_carve: 5
-        | join: ", "
-        | default: "[no author info]"
-      }}
-    </div>
-
-    <div class="citation-details">
-      {{ citation.publisher | default: "[no publisher info]" }}
-      &nbsp; · &nbsp;
-      {{ citation.date | default: "[no date info]" | date: "%d %b %Y" }}
-      &nbsp; · &nbsp;
-      {{ citation.id | default: "[no id info]" }}
-    </div>
-
+<div class="citation-container">
+  <div class="citation">
     {% if include.style == "rich" %}
-      {% if citation.description %}
-        <div class="citation-description">
-          {{
-            citation.description
-            | markdownify
-            | remove: "<p>"
-            | remove: "</p>"
-          }}
-        </div>
-      {% endif %}
-
-      {% if citation.buttons.size > 0 %}
-        <div class="citation-buttons">
-          {% for button in citation.buttons %}
-            {%
-              include button.html
-              type=button.type
-              icon=button.icon
-              text=button.text
-              link=button.link
-              style="bare"
-            %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      {% if citation.tags.size > 0 or citation.repo %}
-        {% include tags.html tags=citation.tags repo=citation.repo %}
-      {% endif %}
+      <a
+        {% if citation.link %}
+          href="{{ citation.link | relative_url }}"
+        {% endif %}
+        class="citation-image"
+        aria-label="{{ citation.title | default: "citation link" }}"
+      >
+        <img
+          src="{{ citation.image | relative_url }}"
+          alt="{{ citation.title | default: "citation image" }}"
+          loading="lazy"
+          {% include fallback.html %}
+        >
+      </a>
     {% endif %}
+
+    <div class="citation-text">
+      {% assign type = site.data.types[citation.type] %}
+      {% include icon.html icon=type.icon %}
+
+      <a
+        {% if citation.link %}
+          href="{{ citation.link | relative_url }}"
+        {% endif %}
+        class="citation-title"
+      >
+        {{ citation.title | default: "[no title info]" }}
+      </a>
+
+      <div
+        class="citation-authors"
+        {% if citation.authors.size > 10 %}
+          data-tooltip="{{ citation.authors | join: ", " }} "
+        {% endif %}
+        tabindex="0"
+      >
+        {{
+          citation.authors
+          | join: ","
+          | split: ","
+          | array_carve: 5
+          | join: ", "
+          | markdownify
+          | remove: "<p>" | remove: "</p>"
+          | default: "[no author info]"
+        }}
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">
+          {{- citation.publisher | default: "[no publisher info]" -}}
+        </span>
+        &nbsp;·&nbsp;
+        <span class="citation-date">
+          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
+        </span>
+        &nbsp;·&nbsp;
+        <span class="citation-id">
+          {{- citation.id | default: "[no id info]" -}}
+        </span>
+      </div>
+
+      {% if include.style == "rich" %}
+        {% if citation.description %}
+          <div class="citation-description">
+            {{
+              citation.description
+              | markdownify
+              | remove: "<p>"
+              | remove: "</p>"
+            }}
+          </div>
+        {% endif %}
+
+        {% if citation.buttons.size > 0 %}
+          <div class="citation-buttons">
+            {% for button in citation.buttons %}
+              {%
+                include button.html
+                type=button.type
+                icon=button.icon
+                text=button.text
+                link=button.link
+                style="bare"
+              %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if citation.tags.size > 0 or citation.repo %}
+          {% include tags.html tags=citation.tags repo=citation.repo %}
+        {% endif %}
+      {% endif %}
+    </div>
   </div>
 </div>

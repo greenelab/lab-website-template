@@ -36,10 +36,16 @@ Text with extra blank lines above and below
 - list item a
 - list item b
 - list item c
- 
+
 1. ordered list item 1
-2. ordered list item 2
-3. ordered list item 3
+1. ordered list item 2
+1. ordered list item 3
+
+<!--  -->
+
+1. top level list item
+   - nested list item
+     1. even deeper nested list item
 
 Plain image:
 
@@ -58,6 +64,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 #### Heading 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+##### Heading 5
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+###### Heading 6
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -340,7 +354,7 @@ With figure components
 ### Grid of citations
 
 {% capture content %}
-{% include list.html data="citations" component="citation" %}
+{% include list.html data="citations" component="citation" style="rich" %}
 {% endcapture %}
 {% include grid.html content=content %}
 

@@ -11,10 +11,10 @@
   opacity: 0;
   font-size: 0.75em;
   text-decoration: none;
-  transition-property: opacity, color;
+  transition: opacity var(--transition), color var(--transition);
 }
 
-*:hover > .anchor,
+:hover > .anchor,
 .anchor:focus {
   opacity: 1;
 }

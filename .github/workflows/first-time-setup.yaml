@@ -14,20 +14,23 @@ jobs:
 
     steps:
       # for debugging
-      - name: Print contexts
-        uses: crazy-max/ghaction-dump-context@v1
+      - uses: crazy-max/ghaction-dump-context@v2
 
       - name: Create Pages branch
-        uses: peterjgrainger/action-create-branch@v2.4.0
+        uses: peterjgrainger/action-create-branch@v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: "gh-pages"
 
       - name: Checkout Pages branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
+
+      # for debugging
+      - if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
 
       # clean slate, as if starting from orphan branch
       - name: Clear Pages branch
@@ -41,13 +44,13 @@ jobs:
         run: echo "Placeholder homepage" > index.html
 
       - name: Commit changes to Pages branch
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: gh-pages
           commit_message: "Clear branch"
 
       - name: Checkout main branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Remove files user doesn't need
         run: |
@@ -55,12 +58,13 @@ jobs:
             CHANGELOG.md \
             testbed.md \
             .github/ISSUE_TEMPLATE \
+            .github/DISCUSSION_TEMPLATE \
             .github/workflows/versioning.yaml \
             .github/pull_request_template.md \
-      
+
       - name: Rename files
         run: |
-          mv .github/user_pull_request_template.md .github/pull_request_template.md
+          mv -f .github/user_pull_request_template.md .github/pull_request_template.md
 
       - name: Set vars for personalization
         run: |
@@ -80,7 +84,7 @@ jobs:
           " > README.md
 
       - name: Personalize Jekyll config for user
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -97,7 +101,7 @@ jobs:
             writeFileSync(file, contents);
 
       - name: Personalize homepage for user
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -109,6 +113,6 @@ jobs:
             writeFileSync(file, contents);
 
       - name: Commit changed files
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Setup repo"

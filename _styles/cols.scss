@@ -18,11 +18,11 @@ $one: 500px;
   min-height: 0;
 }
 
-.cols > div > *:first-child {
+.cols > div > :first-child {
   margin-top: 0 !important;
 }
 
-.cols > div > *:last-child {
+.cols > div > :last-child {
   margin-bottom: 0 !important;
 }
 

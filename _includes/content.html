@@ -2,16 +2,10 @@
   modify main content of page:
   - add section breaks
   - attach section properties
-  - wrap each table in div to allow for scrolling
   - filter out blank sections
 -->
 
 {% assign content = include.content %}
-
-{% assign content = content
-  | regex_replace: "<table>(.*?)</table>",
-    "<div class='table-wrapper'><table>\1</table></div>"
-%}
 
 {% assign sections = content | split: "<!-- section break -->" | array_filter %}
 

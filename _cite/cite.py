@@ -124,6 +124,10 @@ citations = []
 for index, source in enumerate(sources):
     log(f"Processing source {index + 1} of {len(sources)}, {label(source)}")
 
+    # if explicitly flagged, remove/ignore entry
+    if get_safe(source, "remove", False) == True:
+        continue
+
     # new citation data for source
     citation = {}
 
@@ -148,7 +152,7 @@ for index, source in enumerate(sources):
             else:
                 log(e, 3, "WARNING")
                 # discard source from citations
-                # continue
+                continue
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
