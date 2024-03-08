@@ -1,11 +1,7 @@
-.table-wrapper {
-  margin: 40px 0;
-  overflow-x: auto;
-}
-
 table {
-  margin: 0 auto;
+  margin: 40px auto;
   border-collapse: collapse;
+  overflow-wrap: anywhere;
 }
 
 th {

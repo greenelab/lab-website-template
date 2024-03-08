@@ -45,7 +45,6 @@
 .portrait-text {
   display: flex;
   flex-direction: column;
-  line-height: calc(var(--spacing) - 0.4);
 }
 
 .portrait-name {
@@ -60,7 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: calc(20px + 10%);
   aspect-ratio: 1/1;
   border-radius: 999px;
   background: var(--background);

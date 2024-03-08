@@ -1,5 +1,5 @@
 .tags {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition-property: background, color;
+  transition: background var(--transition), color var(--transition);
 }
 
 .tag:hover {

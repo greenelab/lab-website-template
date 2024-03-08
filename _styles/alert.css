@@ -25,11 +25,11 @@
   font-size: var(--large);
 }
 
-.alert-content > *:first-child {
+.alert-content > :first-child {
   margin-top: 0;
 }
 
-.alert-content > *:last-child {
+.alert-content > :last-child {
   margin-bottom: 0;
 }
 

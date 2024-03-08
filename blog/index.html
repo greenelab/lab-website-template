@@ -49,13 +49,13 @@
 <meta property="og:title" content="Blog">
 <meta property="og:site_title" content="Lab Website Template">
 <meta property="og:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
-<meta property="og:url" content="">
+<meta property="og:url" content="/lab-website-template">
 <meta property="og:image" content="/lab-website-template/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Blog">
 <meta property="twitter:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
-<meta property="twitter:url" content="">
+<meta property="twitter:url" content="/lab-website-template">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/lab-website-template/images/share.jpg">
 
@@ -76,7 +76,7 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/lab-website-template/images/icon.png" }
     },
-    "url": ""
+    "url": "/lab-website-template"
   }
 </script>
 
@@ -90,9 +90,9 @@
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
-<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
 <noscript>
-  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet">
 </noscript>
 
   <!-- third party styles -->
@@ -353,6 +353,8 @@
 
   <script src="/lab-website-template/_scripts/site-search.js"></script>
 
+  <script src="/lab-website-template/_scripts/table-wrap.js"></script>
+
   <script src="/lab-website-template/_scripts/tooltip.js"></script>
 
 
@@ -434,12 +436,12 @@
       </span>
     
     
-      <span class="title" data-tooltip="Home">
+      <span class="title-text" data-tooltip="Home">
         
-          <span>Lab Website Template</span>
+          <span class="title">Lab Website Template</span>
         
         
-          <span>by the Greene Lab</span>
+          <span class="subtitle">by the Greene Lab</span>
         
       </span>
     
@@ -488,11 +490,8 @@
   modify main content of page:
   - add section breaks
   - attach section properties
-  - wrap each table in div to allow for scrolling
   - filter out blank sections
 -->
-
-
 
 
 
@@ -549,12 +548,22 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <h3 id="2023">2023</h3>
 
-<div class="post-excerpt">
-  
-  
-  <a href="/lab-website-template/2023/02/23/example-post-3.html">Example post 3</a>
+<div class="post-excerpt-container">
+  <div class="post-excerpt">
+    
+    
+    
 
-  <div class="post-info">
+    
+      <a href="/lab-website-template/2023/02/23/example-post-3.html" class="post-excerpt-image" aria-label="Example post 3">
+        <img src="/lab-website-template/images/photo.jpg" alt="Example post 3" loading="lazy" onerror="this.src = '/lab-website-template/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="post-excerpt-text">
+      <a href="/lab-website-template/2023/02/23/example-post-3.html">Example post 3</a>
+
+      <div class="post-info">
   
     
     
@@ -600,7 +609,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>October 06, 2023</span>
+      <span>March 08, 2024</span>
     </span>
   
 </div>
@@ -625,22 +634,30 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 
-  
-  
-  <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+      
+      <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-  </p>
+      </p>
+    </div>
+  </div>
 </div>
 
 <h3 id="2021">2021</h3>
 
-<div class="post-excerpt">
-  
-  
-  <a href="/lab-website-template/2021/09/30/example-post-2.html">Example post 2</a>
+<div class="post-excerpt-container">
+  <div class="post-excerpt">
+    
+    
+    
 
-  <div class="post-info">
+    
+
+    <div class="post-excerpt-text">
+      <a href="/lab-website-template/2021/09/30/example-post-2.html">Example post 2</a>
+
+      <div class="post-info">
   
     
     
@@ -686,7 +703,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>October 06, 2023</span>
+      <span>March 08, 2024</span>
     </span>
   
 </div>
@@ -699,22 +716,30 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 
-  
-  
-  <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+      
+      <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-  </p>
+      </p>
+    </div>
+  </div>
 </div>
 
 <h3 id="2019">2019</h3>
 
-<div class="post-excerpt">
-  
-  
-  <a href="/lab-website-template/2019/01/07/example-post-1.html">Example post 1</a>
+<div class="post-excerpt-container">
+  <div class="post-excerpt">
+    
+    
+    
 
-  <div class="post-info">
+    
+
+    <div class="post-excerpt-text">
+      <a href="/lab-website-template/2019/01/07/example-post-1.html">Example post 1</a>
+
+      <div class="post-info">
   
     
     
@@ -760,7 +785,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>October 06, 2023</span>
+      <span>March 08, 2024</span>
     </span>
   
 </div>
@@ -789,12 +814,14 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 
-  
-  
-  <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+      
+      <p data-search="Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-  </p>
+      </p>
+    </div>
+  </div>
 </div>
   </section>
 
@@ -905,7 +932,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   </div>
 
   <div>
-    © 2023
+    © 2024
     Lab Website Template
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">

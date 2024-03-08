@@ -34,7 +34,7 @@ header a {
   height: 100%;
 }
 
-.title {
+.title-text {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -45,11 +45,11 @@ header a {
   text-align: left;
 }
 
-.title > *:first-child {
+.title {
   font-size: var(--large);
 }
 
-.title > *:last-child {
+.subtitle {
   opacity: 0.65;
   font-weight: var(--thin);
 }
@@ -61,9 +61,8 @@ header a {
   height: 30px;
   margin: 0;
   color: var(--text);
-  -webkit-appearance: none;
   appearance: none;
-  transition-property: background;
+  transition: background var(--transition);
 }
 
 .nav-toggle:after {
@@ -131,15 +130,15 @@ header[data-big] .home {
 header[data-big] .logo {
   height: 80px;
 }
-header[data-big] .title {
+header[data-big] .title-text {
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-header[data-big] .title > *:first-child {
+header[data-big] .title {
   font-size: var(--xxl);
 }
-header[data-big] .title > *:last-child {
+header[data-big] .subtitle {
   font-size: var(--large);
 }
 

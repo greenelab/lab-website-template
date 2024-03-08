@@ -14,5 +14,9 @@ li {
   text-align: justify;
   line-height: var(--spacing);
 }
+li ul,
+li ol {
+  margin: 0;
+}
 
 /*# sourceMappingURL=list.css.map */

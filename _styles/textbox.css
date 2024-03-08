@@ -9,7 +9,6 @@ input[type=text] {
   color: var(--text);
   font-family: inherit;
   font-size: inherit;
-  -webkit-appearance: none;
   appearance: none;
   box-shadow: var(--shadow);
 }
