@@ -2,7 +2,7 @@
 
 Reference: common-changelog.org
 
-## 1.2.0 - 2024-03-06
+## 1.2.0 - 2024-03-08
 
 ### Changed
 
