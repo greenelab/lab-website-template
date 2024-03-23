@@ -41,7 +41,7 @@ jobs:
         run: touch .nojekyll
 
       - name: Make placeholder homepage
-        run: echo "Placeholder homepage" > index.html
+        run: printf "Placeholder homepage" > index.html
 
       - name: Commit changes to Pages branch
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -70,12 +70,12 @@ jobs:
         run: |
           user="${{ github.repository_owner }}"
           description="An engaging 1-3 sentence description of your lab."
-          echo "USER=${user}" >> $GITHUB_ENV
-          echo "DESCRIPTION=${description}" >> $GITHUB_ENV
+          printf "USER=${user}" >> $GITHUB_ENV
+          printf "DESCRIPTION=${description}" >> $GITHUB_ENV
 
       - name: Personalize readme for user
         run: |
-          echo "
+          printf "
           # ${{ env.USER }}'s Website
 
           Visit **[website url](#)** 🚀

@@ -2,6 +2,12 @@
 
 Reference: common-changelog.org
 
+## 1.2.1 - 2024-03-26
+
+### Changed
+
+- Minor bug fixes in cite process and sitemap generation.
+
 ## 1.2.0 - 2024-03-08
 
 ### Changed
