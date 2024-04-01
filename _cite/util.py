@@ -7,7 +7,7 @@ import json
 import yaml
 from yaml.loader import SafeLoader
 from pathlib import Path
-from datetime import datetime
+from datetime import date, datetime
 from rich import print
 from diskcache import Cache
 
@@ -88,15 +88,17 @@ def list_of_dicts(data):
     return isinstance(data, list) and all(isinstance(entry, dict) for entry in data)
 
 
-def format_date(date):
+def format_date(_date):
     """
     format date as YYYY-MM-DD, or no date if malformed
     """
 
-    if isinstance(date, int):
-        return datetime.fromtimestamp(date // 1000.0).strftime("%Y-%m-%d")
+    if isinstance(_date, int):
+        return datetime.fromtimestamp(_date // 1000.0).strftime("%Y-%m-%d")
+    if isinstance(_date, (date, datetime)):
+        return _date.strftime("%Y-%m-%d")
     try:
-        return datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d")
+        return datetime.strptime(_date, "%Y-%m-%d").strftime("%Y-%m-%d")
     except Exception:
         return ""
 

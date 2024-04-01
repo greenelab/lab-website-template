@@ -1,10 +1,8 @@
 #! /bin/bash
 
 # print folder contents for debugging
-echo "Contents:"
-echo ""
+printf "\n\nContents:\n\n"
 ls
-echo ""
 
 # run cite process
 python3 _cite/cite.py

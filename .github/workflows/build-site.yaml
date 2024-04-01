@@ -42,7 +42,7 @@ jobs:
 
       - name: Set root url
         run: |
-          echo "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
+          printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
       - name: Build live version of site
         run: |
