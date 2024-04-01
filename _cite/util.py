@@ -95,7 +95,7 @@ def format_date(_date):
 
     if isinstance(_date, int):
         return datetime.fromtimestamp(_date // 1000.0).strftime("%Y-%m-%d")
-    if isinstance(_date, date) or isinstance(_date, datetime):
+    if isinstance(_date, (date, datetime)):
         return _date.strftime("%Y-%m-%d")
     try:
         return datetime.strptime(_date, "%Y-%m-%d").strftime("%Y-%m-%d")
