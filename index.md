@@ -18,7 +18,7 @@ The Medical Microbiology bioinformatics (MMB-BioIT) team from the University Med
 # Highlights
 
 {% capture text %}
-The worldwide emergence of antibiotic resistant bacteria causing difficult to treat infections highlights the importance to track their local and global transmission. Using WGS or metagenomic sequences, different bioinformatic tools are used to group these bacteria based on the core and/or accessory genome, including mobile genetic elements encoding e.g. antibiotic resistance genes. In addition, we developed tools to reconstruct plasmids based on short read sequences in order to determine transmission patterns of mobile genetic elements.
+Test. The worldwide emergence of antibiotic resistant bacteria causing difficult to treat infections highlights the importance to track their local and global transmission. Using WGS or metagenomic sequences, different bioinformatic tools are used to group these bacteria based on the core and/or accessory genome, including mobile genetic elements encoding e.g. antibiotic resistance genes. In addition, we developed tools to reconstruct plasmids based on short read sequences in order to determine transmission patterns of mobile genetic elements.
 
 [See what we've published &nbsp;→](research)
 {:.center}
