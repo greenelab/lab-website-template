@@ -2,7 +2,7 @@
 name: Jesse Kerkvliet
 image: images/people/jesse-kerkvliet.jpg
 description: PhD Student
-status: current
+status: alumni
 role: phd
 aliases:
   - J Kerkvliet

@@ -16,4 +16,4 @@ links:
   twitter: AnitaSchurch
 ---
 
-Anita's bio.
+I am an associate professor at the Medical Microbiology department. My background is in biology and bioinformatics, and I am interested in bioinformatics methods and how we can use them to learn how antimicrobial resistance, which is one of the most important healthcare challenges, spreads, in order to halt its dissemination. Also, I believe that bioinformatics techniques should be accessible to all biology researchers. 

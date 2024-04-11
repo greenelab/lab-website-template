@@ -17,4 +17,4 @@ links:
   linkedin: weizhen-xu-452a89194
 ---
 
-I'm a postdoc with the MMB-BioIT group - I'm currently developing a pipeline for using Nanopore adaptive sequencing to enrich and detect antibiotic resistance genes and plasmids from clinical and environmental samples. I also dabble in machine learning methods.
+I'm a postdoc with the MMB-BioIT group - I'm currently developing a culture-free protocol for using Nanopore sequencing to enrich and detect antibiotic resistance genes and plasmids from clinical samples. I also dabble in deep-learning methods and am working towards a language-model-like methodology for reconstructing short-read genomic assemblies.
