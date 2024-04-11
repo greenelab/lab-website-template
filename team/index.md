@@ -95,9 +95,9 @@ nav:
 
 ## Join
 
-We have no open positions at the moment.
+Internship positions will be advertised on KonJoin 
 
-{% include link.html type="external" link="https://google.com/" text="Apply Now" icon="" style="button" %}
+{% include link.html type="external" link="https://uu.konjoin.nl/profile/anita-schurch/" text="KonJoin" icon="" style="button" %}
 {:.center}
 
 {% include section.html %}
