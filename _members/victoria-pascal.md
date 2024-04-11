@@ -2,7 +2,7 @@
 name: Victoria Pascal Andreu
 image: images/people/victoria-pascal.jpg
 description: Postdoctoral Researcher
-status: current
+status: alumni
 role: postdoc
 aliases:
   - Victoria Pascal
