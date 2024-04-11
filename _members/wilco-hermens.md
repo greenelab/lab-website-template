@@ -3,7 +3,7 @@ name: Wilco Hermens
 image: images/people/wilco-hermens.jpg
 description: Student
 status: current
-role: Student
+role: student
 aliases:
   -  wilcohermens
   -  w.w.c.hermens-2
