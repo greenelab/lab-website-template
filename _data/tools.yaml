@@ -1,9 +1,9 @@
-- name: Gplas
+- name: gplas2
   group: wgs
-  image: images/gplas_logo.png
-  link: https://gitlab.com/mmb-umcu/gplas
+  image: images/gplas2_logo.png
+  link: https://gitlab.com/mmb-umcu/gplas2
   description: gplas is a tool to bin plasmid-predicted contigs based on sequence composition, coverage and assembly graph information. This tool extends the possibility of accurately binning predicted plasmid contigs into several discrete plasmid components.
-  repo: mmb-umcu/gplas
+  repo: mmb-umcu/gplas2
   tags: 
     - Plasmid
 
@@ -49,7 +49,15 @@
   repo: mmb-umcu/plasmidec
   tags:
     - Plasmid
-    
+
+- name: plasmidCC
+  group: wgs
+  image: images/plasmidCC_tmp_logo.png
+  link: https://gitlab.com/mmb-umcu/plasmidCC
+  description: "plasmidCC is a plasmid classification tool that uses Centrifuge to predict the origin of contigs (plasmid or chromosome). Out of the box, plasmidCC can be used to predict plasmid contigs of a selected number of species. By supplying a custom Centrifuge database, plasmidCC can be used for any desired species."
+  repo: mmb-umcu/plasmidCC
+  tags:
+    - Plasmid
 
 - name: Bactofidia
   group: wgs
