@@ -10,7 +10,7 @@ The Medical Microbiology bioinformatics (MMB-BioIT) team from the University Med
 {% include section.html full=true %}
 
 {% include figure.html
-  image="images/UMCU-1.jpg"
+  image="images/Group_picture_2024.jpg"
 %}
 
 {% include section.html %}
