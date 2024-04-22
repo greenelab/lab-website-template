@@ -2,6 +2,17 @@
 
 Reference: common-changelog.org
 
+## 1.2.2 - 2024-04-24
+
+### Added
+
+- Add `affiliation` member portrait field.
+
+### Changed
+
+- Simplify portrait component under-the-hood.
+- Make tag component de-duplication consistent with search plugin de-duplication.
+
 ## 1.2.1 - 2024-04-01
 
 ### Changed
