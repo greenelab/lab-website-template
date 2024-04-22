@@ -24,6 +24,7 @@
 
     {%
       include {{ include.component | append: ".html" }}
+      affiliation=d.affiliation
       author=d.author
       authors=d.authors
       buttons=d.buttons
