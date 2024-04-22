@@ -2,9 +2,11 @@
   | object_items
   | join: ","
   | downcase
-  | regex_replace: "-|\s+", " "
   | split: ","
   | array_filter
+  | join: ","
+  | regex_replace: "\s+", "-"
+  | split: ","
   | uniq
 %}
 {% assign link = include.link | default: page.dir | absolute_url %}
