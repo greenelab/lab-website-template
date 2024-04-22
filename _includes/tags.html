@@ -1,6 +1,8 @@
 {% assign tags = include.tags
   | object_items
   | join: ","
+  | downcase
+  | regex_replace: "-|\s+", " "
   | split: ","
   | array_filter
   | uniq
