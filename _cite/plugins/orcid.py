@@ -1,6 +1,7 @@
 import json
 from urllib.request import Request, urlopen
 from util import *
+from manubot.cite.handlers import prefix_to_handler as manubot_prefixes
 
 
 def main(entry):
@@ -52,8 +53,8 @@ def main(entry):
         # create source
         source = {"id": f"{id_type}:{id_value}"}
 
-        # if not a doi, Manubot likely can't cite, so keep citation details
-        if id_type != "doi":
+        # if not an id type that Manubot can cite, keep citation details
+        if id_type not in list(manubot_prefixes.keys()):
             # get summaries
             summaries = get_safe(work, "work-summary", [])
 
