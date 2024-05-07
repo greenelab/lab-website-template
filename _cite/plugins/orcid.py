@@ -36,15 +36,24 @@ def main(entry):
     # go through response structure and pull out ids e.g. doi:1234/56789
     for work in response:
         # get list of ids
-        ids = get_safe(work, "external-ids.external-id", [])
+        ids = []
         for summary in get_safe(work, "work-summary", []):
             ids = ids + get_safe(summary, "external-ids.external-id", [])
+        ids = ids + get_safe(work, "external-ids.external-id", [])
 
-        # prefer doi id type, or fallback to first id
+        # prefer particular "relationship" type, or fallback to first id
         _id = next(
-            (id for id in ids if get_safe(id, "external-id-type", "") == "doi"),
-            ids[0] if len(ids) > 0 else {},
+            (
+                id
+                for id in ids
+                if get_safe(id, "external-id-relationship", "")
+                in ["self", "version-of", "part-of"]
+            ),
+            ids[0] if len(ids) > 0 else None,
         )
+
+        if _id == None:
+            continue
 
         # get id and id-type from response
         id_type = get_safe(_id, "external-id-type", "")

@@ -13,6 +13,7 @@ Reference: common-changelog.org
 - Simplify portrait component under-the-hood.
 - Make tag component de-duplication consistent with search plugin de-duplication.
 - Expand list of supported Manubot identifiers and thus keep ORCID API details less often.
+- Change order and type of preferred ids from ORCID API.
 
 ## 1.2.1 - 2024-04-01
 
