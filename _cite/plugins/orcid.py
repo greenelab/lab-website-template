@@ -41,7 +41,7 @@ def main(entry):
             ids = ids + get_safe(summary, "external-ids.external-id", [])
         ids = ids + get_safe(work, "external-ids.external-id", [])
 
-        # prefer particular "relationship" type, or fallback to first id
+        # find first id of particular "relationship" type
         _id = next(
             (
                 id
@@ -66,15 +66,6 @@ def main(entry):
         if id_type not in manubot_prefixes:
             # get summaries
             summaries = get_safe(work, "work-summary", [])
-
-            # sort summary entries by most recent
-            summaries = sorted(
-                summaries,
-                key=lambda summary: (get_safe(summary, "last-modified-date.value", 0))
-                or get_safe(summary, "created-date.value", 0)
-                or 0,
-                reverse=True,
-            )
 
             # get first summary with defined sub-value
             def first(get_func):
