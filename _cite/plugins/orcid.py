@@ -63,7 +63,7 @@ def main(entry):
         source = {"id": f"{id_type}:{id_value}"}
 
         # if not an id type that Manubot can cite, keep citation details
-        if id_type not in list(manubot_prefixes.keys()):
+        if id_type not in manubot_prefixes:
             # get summaries
             summaries = get_safe(work, "work-summary", [])
 
