@@ -39,7 +39,6 @@ def main(entry):
         ids = []
         for summary in get_safe(work, "work-summary", []):
             ids = ids + get_safe(summary, "external-ids.external-id", [])
-        ids = ids + get_safe(work, "external-ids.external-id", [])
 
         # find first id of particular "relationship" type
         _id = next(
