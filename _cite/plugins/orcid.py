@@ -1,6 +1,7 @@
 import json
 from urllib.request import Request, urlopen
 from util import *
+from manubot.cite.handlers import prefix_to_handler as manubot_prefixes
 
 
 def main(entry):
@@ -35,15 +36,23 @@ def main(entry):
     # go through response structure and pull out ids e.g. doi:1234/56789
     for work in response:
         # get list of ids
-        ids = get_safe(work, "external-ids.external-id", [])
+        ids = []
         for summary in get_safe(work, "work-summary", []):
             ids = ids + get_safe(summary, "external-ids.external-id", [])
 
-        # prefer doi id type, or fallback to first id
+        # find first id of particular "relationship" type
         _id = next(
-            (id for id in ids if get_safe(id, "external-id-type", "") == "doi"),
-            ids[0] if len(ids) > 0 else {},
+            (
+                id
+                for id in ids
+                if get_safe(id, "external-id-relationship", "")
+                in ["self", "version-of", "part-of"]
+            ),
+            ids[0] if len(ids) > 0 else None,
         )
+
+        if _id == None:
+            continue
 
         # get id and id-type from response
         id_type = get_safe(_id, "external-id-type", "")
@@ -52,19 +61,10 @@ def main(entry):
         # create source
         source = {"id": f"{id_type}:{id_value}"}
 
-        # if not a doi, Manubot likely can't cite, so keep citation details
-        if id_type != "doi":
+        # if not an id type that Manubot can cite, keep citation details
+        if id_type not in manubot_prefixes:
             # get summaries
             summaries = get_safe(work, "work-summary", [])
-
-            # sort summary entries by most recent
-            summaries = sorted(
-                summaries,
-                key=lambda summary: (get_safe(summary, "last-modified-date.value", 0))
-                or get_safe(summary, "created-date.value", 0)
-                or 0,
-                reverse=True,
-            )
 
             # get first summary with defined sub-value
             def first(get_func):

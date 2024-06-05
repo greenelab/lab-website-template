@@ -2,6 +2,7 @@
 name: Jane Smith
 image: images/photo.jpg
 role: pi
+affiliation: University of Colorado
 aliases:
   - J. Smith
   - J Smith

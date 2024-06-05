@@ -1,8 +1,12 @@
 {% assign tags = include.tags
   | object_items
   | join: ","
+  | downcase
   | split: ","
   | array_filter
+  | join: ","
+  | regex_replace: "\s+", "-"
+  | split: ","
   | uniq
 %}
 {% assign link = include.link | default: page.dir | absolute_url %}

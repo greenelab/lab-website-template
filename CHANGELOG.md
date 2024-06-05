@@ -2,6 +2,19 @@
 
 Reference: common-changelog.org
 
+## 1.2.2 - 2024-06-05
+
+### Added
+
+- Add `affiliation` member portrait field.
+
+### Changed
+
+- Change order and type of preferred ids from ORCID API.
+- Expand list of supported Manubot identifiers and thus keep ORCID API details less often.
+- Simplify portrait component under-the-hood.
+- Make tag component de-duplication consistent with search plugin de-duplication.
+
 ## 1.2.1 - 2024-04-01
 
 ### Changed
