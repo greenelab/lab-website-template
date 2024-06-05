@@ -38,7 +38,7 @@
 
   // normalize tag string for comparison
   window.normalizeTag = (tag) =>
-    tag.trim().toLowerCase().replaceAll(/-|\s+/g, " ");
+    tag.trim().toLowerCase().replaceAll(/\s+/g, "-");
 
   // get data attribute contents of element and children
   const getAttr = (element, attr) =>
