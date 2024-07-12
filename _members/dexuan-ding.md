@@ -1,11 +1,11 @@
 ---
 name: Dexuan Ding
 
-image: images/team/template.jpg
+image: images/team/dexuan-ding-photo.jpg
 role: undergrad
 affiliation: Australian National University
 description: Student
 links:
 ---
 
-Working on robust human-centric anomaly detection project.
+Want to play motion LEGO? I do cool assemble of motion pieces and create dynamics, as part of TIME project.

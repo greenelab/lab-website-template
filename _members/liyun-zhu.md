@@ -9,4 +9,4 @@ links:
   email: liyun.zhu@anu.edu.au
 ---
 
-Working on a comparative review of recent video-based anomaly detection algorithms (co-supervised with Prof. Chen Chen from the University of Central Florida)
+I want to move science forward, but has to take a step backwards to look in more depth how time affects critical  time steps in dynamics, as part of TIME project.

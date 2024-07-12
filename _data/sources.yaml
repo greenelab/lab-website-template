@@ -21,6 +21,7 @@
     - type: website
       link: http://msad-dataset.github.io/
   tags:
+    - pre-print
     - anomaly detection
     - dataset
 - id: doi:10.48550/arXiv.2402.03019
@@ -30,4 +31,7 @@
       link: https://github.com/LeiWangR/video-ar/tree/main
   tags:
     - A*
-
+    - published
+- id: doi:10.48550/arXiv.2407.03179
+  tags:
+    - pre-print

@@ -16,6 +16,7 @@
   - type: website
     link: http://msad-dataset.github.io/
   tags:
+  - pre-print
   - anomaly detection
   - dataset
   plugin: sources.py
@@ -36,5 +37,20 @@
     link: https://github.com/LeiWangR/video-ar/tree/main
   tags:
   - A*
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2407.03179
+  title: 'Motion meets Attention: Video Motion Prompts'
+  authors:
+  - Qixiang Chen
+  - Lei Wang
+  - Piotr Koniusz
+  - Tom Gedeon
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/gt374c
+  tags:
+  - pre-print
   plugin: sources.py
   file: sources.yaml

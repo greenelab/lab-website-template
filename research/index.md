@@ -7,11 +7,16 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Explore our latest contributions to the forefront of video motion analysis field through our publications.
 
 {% include section.html %}
 
 
+## Published
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" style="rich" filters="tags: published"%}
+
+
+## Pre prints
+
+{% include list.html data="citations" component="citation" style="rich" filters="tags: pre-print"%}
