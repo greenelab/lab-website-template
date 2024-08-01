@@ -1,5 +1,75 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1007/s11263-024-02070-2
+  title: 'Meet JEANIE: A Similarity Measure for 3D Skeleton Sequences via Temporal-Viewpoint
+    Alignment'
+  authors:
+  - Lei Wang
+  - Jun Liu
+  - Liang Zheng
+  - Tom Gedeon
+  - Piotr Koniusz
+  publisher: International Journal of Computer Vision
+  date: '2024-05-06'
+  link: https://doi.org/gt483p
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICASSP48485.2024.10446223
+  title: Flow Dynamics Correction for Action Recognition
+  authors:
+  - Lei Wang
+  - Piotr Koniusz
+  publisher: ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech
+    and Signal Processing (ICASSP)
+  date: '2024-04-14'
+  link: https://doi.org/gt483q
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICASSP48485.2024.10446900
+  title: High-Order Tensor Pooling with Attention for Action Recognition
+  authors:
+  - Lei Wang
+  - Ke Sun
+  - Piotr Koniusz
+  publisher: ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech
+    and Signal Processing (ICASSP)
+  date: '2024-04-14'
+  link: https://doi.org/gt483r
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.25911/7BS0-6522
+  title: Robust Human Action Modelling
+  authors:
+  - Lei Wang
+  publisher: The Australian National University
+  date: '2023-01-01'
+  link: https://doi.org/gt483s
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.13140/RG.2.2.11636.53128/1
+  title: 'AI in Software Engineering: Case Studies and Prospects'
+  authors:
+  - Lei Wang
+  publisher: University of Western Australia
+  date: '2017-01-01'
+  link: https://doi.org/gt483t
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
+- id: 'doi: https://doi.org/10.48550/arXiv.2112.08626'
+  title: Analysis and Evaluation of Kinect-based Action Recognition Algorithms
+  authors:
+  - Lei Wang
+  publisher: ''
+  date: '2021-01-01'
+  link: https://doi.org/ https://doi.org/10.48550/arxiv.2112.08626
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.48550/arXiv.2402.04857
   title: 'Advancing Video Anomaly Detection: A Concise Review and a New Dataset'
   authors:
@@ -15,10 +85,9 @@
   buttons:
   - type: website
     link: http://msad-dataset.github.io/
-  tags:
-  - pre-print
-  - anomaly detection
-  - dataset
+  status:
+  - under review
+  tags: null
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2402.03019
@@ -35,9 +104,7 @@
   buttons:
   - type: source
     link: https://github.com/LeiWangR/video-ar/tree/main
-  tags:
-  - A*
-  - published
+  tags: null
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2407.03179
@@ -50,6 +117,8 @@
   publisher: arXiv
   date: '2024-01-01'
   link: https://doi.org/gt374c
+  status:
+  - under review
   tags:
   - pre-print
   plugin: sources.py

@@ -7,20 +7,20 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Please contact our lab's lead, Dr. Lei Wang, for any enquires.
+Please contact our lab email for any enquires.
 
 {%
   include button.html
   type="email"
-  text="lei.w@anu.edu.au"
-  link="lei.w@anu.edu.au"
+  text="timelab.cecc@anu.edu.au"
+  link="timelab.cecc@anu.edu.au"
 %}
 
 
 {%
   include button.html
   type="address"
-  text="B141 Desk 4"
+  text="Brian Anderson Building"
   tooltip="Our location on Google Maps for easy navigation"
   link="https://maps.app.goo.gl/T5MHmSzTYZ2CXUnD8"
 %}
