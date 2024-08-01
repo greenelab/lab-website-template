@@ -1,7 +1,7 @@
 ---
 name: Liyun Zhu
 
-image: images/team/liyun-zhu-photo.jpg
+image: images/team/liyun-zhu-photo-c.jpg
 role: undergrad
 affiliation: Australian National University
 description: Student

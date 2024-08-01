@@ -15,23 +15,30 @@
 #     - open science
 #     - collaboration
 #   repo: greenelab/meta-review
+
+# MSAD Dataset
 - id: doi:10.48550/arXiv.2402.04857
   image: https://msad-dataset.github.io/resources/images/dataset_samples.png
   buttons:
     - type: website
       link: http://msad-dataset.github.io/
+  status:
+    - under review
   tags:
-    - pre-print
-    - anomaly detection
-    - dataset
+    # - pre-print
+    # - anomaly detection
+    # - dataset
+    
 - id: doi:10.48550/arXiv.2402.03019
   image: images/paper/taylor-paper-thumb.png
   buttons:
     - type: source
       link: https://github.com/LeiWangR/video-ar/tree/main
   tags:
-    - A*
-    - published
+    # - A*
+    # - published
 - id: doi:10.48550/arXiv.2407.03179
+  status:
+    - under review
   tags:
     - pre-print

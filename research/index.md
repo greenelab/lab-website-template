@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Publication
 nav:
   order: 1
   tooltip: Published works
@@ -11,6 +11,8 @@ Explore our latest contributions to the forefront of video motion analysis field
 
 {% include section.html %}
 
+{% include list.html data="citations" component="citation" style="rich" %}
+
 
 ## Published
 
@@ -19,4 +21,4 @@ Explore our latest contributions to the forefront of video motion analysis field
 
 ## Pre prints
 
-{% include list.html data="citations" component="citation" style="rich" filters="tags: pre-print"%}
+{% include list.html data="citations" component="citation" style="rich" filters="status: under review"%}
