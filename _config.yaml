@@ -1,19 +1,19 @@
 # site properties and page defaults
-title: depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab.
-subtitle: 
-description: 
-header: images/background.jpg
-footer: images/background.jpg
+title: DePasquale Lab
+description: My lab website
+logo: images/pone.0191527.g001.png
+#header: images/background.jpg
+footer: images/pone.0191527.g001.png
 proofer: false
 
 # site social media and other links
 links:
-  email: contact@depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab..com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab.
-  twitter: depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab.
-  youtube: depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab.
+  #email: bddepasqh@bu.edu
+  #google-scholar: Brian DePasquale
+  github: depasquale-lab
+  #twitter: YourLabHandle
+  #instagram: YourLabHandle
+  #youtube: YourLabChannel
 
 ### jekyll settings
 
