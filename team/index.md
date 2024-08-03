@@ -1,81 +1,35 @@
 ---
-title: People
+title: Team
 nav:
-  order: 2
+  order: 3
+  tooltip: About our team
 ---
 
-# Principal Investigator
+# {% include icon.html icon="fa-solid fa-users" %}Team
 
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: pi"
-%}
-
-I am an [assistant professor](https://www.bu.edu/eng/profile/brian-depasquale-ph-d/) in the Department of Biomedical Engineering at Boston University where I run the Artificial and Biological Intelligence Laboratory. I did my postdoctoral research with [Carlos Brody](http://brodylab.org/) and [Jonathan Pillow](http://pillowlab.princeton.edu/jpillow/) on latent variable models of evidence accumulation. During my Ph.D., I worked with [Larry Abbott](http://www.columbia.edu/cu/neurotheory/Larry/) developing methods for training recurrent neural networks, and with [Mark Churchland](https://churchland.zuckermaninstitute.columbia.edu/people/mark-m-churchland) connecting these models conceptually to statistical models of low-dimensional dynamics applied to data. Before that I studied the basal ganglia in the laboratory of Ann Graybiel at MIT and completed by BS in physics at Fordham University. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {% include section.html %}
 
-# Members
+{% include list.html data="members" component="portrait" filters="role: pi" %}
+{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
 
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: phd"
-%}
+{% include section.html background="images/background.jpg" dark=true %}
 
-{% include section.html %}
-
-## Survivors
-
-Those who have sucessfully managed Brian's terrible, terrible personality.
-
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: survivor"
-%}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {% include section.html %}
 
-## Collaborators
+{% capture content %}
 
-Collaborations are central to our research. Here are some of the groups we currently work with.
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
+{% include figure.html image="images/photo.jpg" %}
 
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: collaborator"
-%}
+{% endcapture %}
 
-{% include section.html %}
-
-## Interested in joining?
-### Prospective PhDs
-If you are interested in conducting research within the group as a PhD student, please apply to the BU BME [PhD program](https://www.bu.edu/eng/academics/explore-degree-programs/phd-in-biomedical-engineering/) or the BU graduate program in [neuroscience](  https://www.bu.edu/neuro/academics/graduate/). Unfortunately, I cannot respond to individual email inquiries about joining my group as a PhD student. If you are interested, apply to one of the programs above. 
-
-### Admitted PhD students
-My rotation project policy is to encourage you to bring your **own ideas** to the table. I try not to 'assign' projects (although I will if needed)!
-
-### Postdocs
-If you are interested in a postdoc, please [email Brian](mailto:bddepasq@bu.edu).  
-
-<!--- ## Funding
-
-Our work is made possible by funding from several organizations.
-{:.center}
-
-{%
-  include gallery.html
-  style="square"
-
-  image1="images/photo.jpg"
-  link1="https://nasa.gov/"
-  tooltip1="Cool Foundation"
-
-%}
--->
+{% include grid.html style="square" content=content %}
