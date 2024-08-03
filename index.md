@@ -1,9 +1,13 @@
 ---
 ---
 
-# trongan93DESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# Introduction
 
+Welcome to the AeroSat Vision Lab, where cutting-edge research meets technological innovation in the fields of aerospace, artificial intelligence, and satellite technology. Under the leadership of Dr. Trong-An Bui, our lab is dedicated to advancing the frontiers of neural networks, computer vision, and remote sensing to drive breakthroughs in aerospace and satellite applications.
 
+At AeroSat Vision Lab, we are committed to fostering international collaborations and industry partnerships to transform research into real-world solutions. Our projects are supported by prestigious funding bodies, including the National Science and Technology Council, and focus on developing innovative technologies that enhance satellite payloads and remote sensing capabilities.
+
+Join us on our journey as we harness the power of AI and aerospace technology to shape the future of satellite applications and contribute to the advancement of global aerospace research.
 
 {% include section.html %}
 
