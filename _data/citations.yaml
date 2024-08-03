@@ -14,6 +14,7 @@
   orcid: 0000-0001-7660-4060
   plugin: sources.py
   file: sources.yaml
+  type: journal
   image: https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g003.png
 - id: doi:10.1109/JSTARS.2024.3357093
   title: Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image
@@ -32,6 +33,7 @@
   orcid: 0000-0001-7660-4060
   plugin: sources.py
   file: sources.yaml
+  type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
   repo: trongan93/Edge-Computing-Low-Light-Satellite-Image-Enhancement
 - id: doi:10.1109/ICCE59016.2024.10444236
@@ -156,6 +158,7 @@
   orcid: 0000-0001-7660-4060
   plugin: sources.py
   file: sources.yaml
+  type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/9973430/10298631/bui3-3328118-large.gif
 - id: doi:10.1109/ACCESS.2022.3174553
   title: Edge Computing-Based SAT-Video Coding for Remote Sensing
