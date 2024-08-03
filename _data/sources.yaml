@@ -1,8 +1,8 @@
-- id: doi:10.1371/journal.pcbi.1007128
+- id: doi:10.1109/JSTARS.2024.3357093
   type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+  description: Edge computing enables rapid data processing and decision-making on satellite payloads. Deploying deep learning-based techniques for low-light image enhancement improves early detection and tracking accuracy on satellite platforms, but it faces challenges due to limited computational resources. This article proposes an edge-computing-enabled inference model specifically designed onboard satellites. The proposed model follows an encoder–decoder architecture to generate the illumination map with low multiplication matrix complexity, 25.52 GMac of 1920×1200 image size. To reduce nanosatellite hardware consumption with a single-precision floating-point format, the edge-computing-enabled inference model proposes a quantized convolution that computes signed values. The proposed inference model is deployed on Arm Cortex-M3 microcontrollers onboard satellite payload (86.74 times faster than normal convolution model) but also has a similar quality with the low-light enhanced in full-precision computing of lightweight training model by using the peak signal-to-noise ratio (average of 28.94) and structural similarity index (average of 0.85) metrics.
+  date: 2024-01-23
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
   buttons:
     - type: manubot
       link: https://greenelab.github.io/meta-review/
