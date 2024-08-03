@@ -14,6 +14,6 @@ Visit **[depasquale-lab.github.io](https://depasquale-lab.github.io)** 🚀
 - Open a pull request to merge your branch with `main`.
 - When you open or update a pull request on GitHub, the template will build a live preview of the changes you are making to your site. A public link to the preview will be in a comment on the pull request. This way, reviewers and editors can see the tangible result of the changes conveniently.
 
-### Original Documentation
+## Original Documentation
 
 [Docs](https://greene-lab.gitbook.io/lab-website-template-docs)
