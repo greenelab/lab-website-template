@@ -15,7 +15,7 @@ Join us on our journey as we harness the power of AI and aerospace technology to
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, computer vision, and remote sensing to drive breakthroughs in aerospace and satellite applications.
 
 {%
   include button.html
