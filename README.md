@@ -9,7 +9,10 @@ Visit **[depasquale-lab.github.io/depasquale-lab-github.io](https://depasquale-l
 
 ## Previewing the website before pushing to main
 
-When you open or update a pull request on GitHub, the template will build a live preview of the changes you are making to your site. A public link to the preview will be in a comment on the pull request. This way, reviewers and editors can see the tangible result of the changes conveniently.
+- Make a new branch from `main`, then switch to this branch.
+- Make edits to the website on this branch, and then push those changes to that branch on github.
+- Open a pull request to merge your branch with `main`.
+- When you open or update a pull request on GitHub, the template will build a live preview of the changes you are making to your site. A public link to the preview will be in a comment on the pull request. This way, reviewers and editors can see the tangible result of the changes conveniently.
 
 ### Original Documentation
 
