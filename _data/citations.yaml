@@ -182,27 +182,11 @@
   - Casey S. Greene
   - Anthony Gitter
   publisher: PLOS Computational Biology
-  date: '2020-12-04'
+  date: '2019-06-24'
   link: https://doi.org/c7np
   orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/573782
   title: Sequential compression of gene expression across dimensionalities and methods
     reveals no single best method or dimensionality
@@ -218,6 +202,51 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/JSTARS.2024.3357093
+  title: Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image
+    Enhancement
+  authors:
+  - Trong-An Bui
+  - Pei-Jun Lee
+  - Chun-Sheng Liang
+  - Pei-Hsiang Hsu
+  - Shiuan-Hal Shiu
+  - Chen-Kai Tsai
+  publisher: IEEE Journal of Selected Topics in Applied Earth Observations and Remote
+    Sensing
+  date: '2024-01-23'
+  link: https://doi.org/gt5xhf
+  type: paper
+  description: "Edge computing enables rapid data processing and decision-making on\
+    \ satellite payloads. Deploying deep learning-based techniques for low-light image\
+    \ enhancement improves early detection and tracking accuracy on satellite platforms,\
+    \ but it faces challenges due to limited computational resources. This article\
+    \ proposes an edge-computing-enabled inference model specifically designed onboard\
+    \ satellites. The proposed model follows an encoder\u2013decoder architecture\
+    \ to generate the illumination map with low multiplication matrix complexity,\
+    \ 25.52 GMac of 1920\xD71200 image size. To reduce nanosatellite hardware consumption\
+    \ with a single-precision floating-point format, the edge-computing-enabled inference\
+    \ model proposes a quantized convolution that computes signed values. The proposed\
+    \ inference model is deployed on Arm Cortex-M3 microcontrollers onboard satellite\
+    \ payload (86.74 times faster than normal convolution model) but also has a similar\
+    \ quality with the low-light enhanced in full-precision computing of lightweight\
+    \ training model by using the peak signal-to-noise ratio (average of 28.94) and\
+    \ structural similarity index (average of 0.85) metrics."
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
+  buttons:
+  - type: manubot
+    link: https://greenelab.github.io/meta-review/
+  - type: source
+    text: Manuscript Source
+    link: https://github.com/greenelab/meta-review
+  - type: website
+    link: http://manubot.org/
+  tags:
+  - open science
+  - collaboration
+  repo: greenelab/meta-review
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:
