@@ -1,6 +1,6 @@
 ---
 name: Emily Duniec
-image: 
+image: /images/emily.JPG
 role: survivor
 description: MS in Data Science at Columbia University
 aliases:
