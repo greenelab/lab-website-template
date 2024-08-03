@@ -1,3 +1,5 @@
+Visit **[depasquale-lab.github.io/depasquale-lab-website](https://depasquale-lab.github.io/depasquale-lab-website)** 🚀
+
 # [DePasquale Lab](https://depasquale-lab.github.io)
 
 ## For new lab members
