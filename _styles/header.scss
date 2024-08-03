@@ -14,7 +14,7 @@ header {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  background: $white;
+  background:#ffffff;
   box-shadow: var(--shadow);
 
   @if $sticky {
