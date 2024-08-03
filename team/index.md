@@ -63,5 +63,3 @@ My rotation project policy is to encourage you to bring your **own ideas** to th
 
 ### Postdocs
 If you are interested in a postdoc, please [email Brian](mailto:bddepasq@bu.edu).  
-
-{% include grid.html style="square" content=content %}
