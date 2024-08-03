@@ -1,6 +1,6 @@
 ---
 name: Trong-An Bui 裴重恩
-image: images/photo.jpg
+image: images/bta-avatar.png
 role: pi
 affiliation: National Taipei University of Technology
 aliases:
