@@ -1,81 +1,77 @@
 ---
+title: Research
+nav:
+  order: 1
 ---
 
-# depasquale-labDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# Artificial and Biological Intelligence Laboratory at Boston University
 
-
+The DePasquale lab is located in the [Department of Biomedical Engineering](https://www.bu.edu/eng/academics/departments-and-divisions/biomedical-engineering/) at Boston University. We develop mathematical models to understand how populations of neurons perform computations to produce behavior. Broadly we take two approaches. One is data-driven: we collaborate with experimental neuroscientists to develop tailored machine learning models of neural activity to identify the algorithms that drive behaviors such as decision-making or movement. Our second approach is theoretical: we construct and analyze artificial neural network models to understand how their structure gives rise to analogous computations and other functional features observed in biological neural circuits.
 
 {% include section.html %}
 
-## Highlights
+# Research
 
 {% capture text %}
+Biological neural networks compute differently than most artificial neural networks used in machine learning. For example, although real neurons communicate with spikes, reproducing this feature in artificial models has been a challenge. We develop methods for training biophysically detailed neural networks and use thse models to understand how real biologial circuits compute. Through mathematical modeling, we focus on building tighter links between biologial neural networks and more abstract artifical neural network models used in machine learning. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
+Relevant paper: [_The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks_](https://doi.org/10.1016/j.neuron.2022.12.007) \\
+DePasquale, B, Sussillo, D., Abbott, L.F., Churchland, M.M. (2023) \\
+in press at Neuron
+{:.center}
 {% endcapture %}
 
 {%
   include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Research"
+  image="images/NNs.jpg"
+  caption="Low-rank synaptic connections in a spiking neural network"
+  headline="Biophysically detailed artificial neural networks"
   text=text
 %}
 
 {% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
+Neural recordings from behaving animals are often much too complex to link directly to an animal's ongoing behavior. We develop machine learning models to analyze complex neural datasets to understand the algorithms that underlie different behaviors. We principally focus on the neural underpinnings of movement and decision making. 
+ 
+Relevant paper: [_Neural population dynamics underlying evidence accumulation in multiple rat brain regions_](https://www.biorxiv.org/content/10.1101/2021.10.28.465122v1) \\
+DePasquale, B., Brody, C.D., Pillow, J. (2022) \\
+in revision at eLife
+{:.center}
 {% endcapture %}
 
 {%
   include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
+  image="images/Fig2.jpg"
+  caption="Ramping neural activity during decision-making"
+  headline="Machine learning for neural data analysis"
   text=text
 %}
 
-{% capture text %}
+{% include section.html %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+# Other Recent Publications & Preprints
 
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
+* [Recurrent dynamics of prefrontal cortex during context-dependent decision-making](https://doi.org/10.1101/2020.11.27.401539) \\
+Cohen Z, DePasquale, B., Aoi, M., Pillow, J. (2020) \\
+bioRxiv
+* [Task-dependent changes in the large-scale dynamics and necessity of cortical regions](https://linkinghub.elsevier.com/retrieve/pii/S0896627319307317) \\
+Pinto, L., Rajan, K., DePasquale, B., Thiberge, S.Y., Tank, D.W., Brody, C.D. (2019) \\
+ Neuron, 104(4), 810-824. e9
+* [full-FORCE: A target-based method for training recurrent networks]("https://doi.org/10.1371/journal.pone.0191527")
+<a href="https://github.com/briandepasquale/full-FORCE-demos" style="text-decoration: none"><i class="fab fa-github"></i> code</a> \\
+DePasquale, B., Cueva, C.J., Rajan, K., Escola, G.S. & Abbott, L.F. (2018) \\
+PLoS One 13(2): e0191527
+* [Error-correcting dynamics in visual working memory](https://www.nature.com/articles/s41467-019-11298-3) \\
+Panichello, M.F., DePasquale, B., Pillow, J.W. & Buschman, T.J. (2018) \\
+Nature Communications 10, Article number: 3366
+* [Building functional networks of spiking model neurons](https://www.nature.com/articles/nn.4241) \\
+Abbott, L.F., DePasquale, B., Memmesheimer, R.-M. (2016) \\
+Nature Neuroscience 19:350-355
 
-{% endcapture %}
+For a full list of publications, see [Brian's Google Scholar](https://scholar.google.com/citations?user=dkRSv1AAAAAJ&hl=en).
+{:.center}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
+{% include section.html %}
+
+<div style="text-align: center;">
+    <img src="images/BU.jpeg" >
+</div>
