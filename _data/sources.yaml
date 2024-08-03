@@ -1,10 +1,13 @@
 - id: doi:10.1109/JSTARS.2024.3357093
+  type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
   repo: trongan93/Edge-Computing-Low-Light-Satellite-Image-Enhancement
 
 - id: doi:10.1109/JSTARS.2023.3328118
+  type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/9973430/10298631/bui3-3328118-large.gif
 
 - id: doi:10.3390/aerospace11050336
+  type: journal
   image: https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g003.png
   
