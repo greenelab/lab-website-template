@@ -43,7 +43,7 @@ Additionally, he has experience working on industry-cooperation projects with th
   include button.html
   type="address"
   tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  link="https://maps.app.goo.gl/VU1KMEi5CmMK1K9d9"
 %}
 
 {% include section.html %}
