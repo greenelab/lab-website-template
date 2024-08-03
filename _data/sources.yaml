@@ -1,13 +1,54 @@
+- id: doi:10.1109/eStream61684.2024.10542578
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10542546/10542531/10542578/10542578-fig-6-source-small.gif
+- id: doi:10.3390/aerospace11050336
+  type: journal
+  image: https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g003.png
+  
 - id: doi:10.1109/JSTARS.2024.3357093
   type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
   repo: trongan93/Edge-Computing-Low-Light-Satellite-Image-Enhancement
 
+- id: doi:10.1109/ICCE59016.2024.10444458
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444458/hsu3-1570945976-small.gif
+
+- id: doi:10.1109/ICCE59016.2024.10444386
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444386/hsu2-1570944854-small.gif
+
+- id: doi:10.1109/ICCE59016.2024.10444236
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444236/chou2-1570944852-small.gif
+  
 - id: doi:10.1109/JSTARS.2023.3328118
   type: journal
   image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/9973430/10298631/bui3-3328118-large.gif
 
-- id: doi:10.3390/aerospace11050336
-  type: journal
-  image: https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g003.png
+  
+- id: doi:10.1109/GCCE59613.2023.10315430
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10315246/10315146/10315430/liang1-p2-liang-small.gif
+
+- id: doi:10.1109/ICSSE58758.2023.10227207
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10227140/10227074/10227207/lo2-ICSSE2023-74-small.gif
+
+- id: doi:10.1109/ICCE-Taiwan58799.2023.10226666
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10226627/10226615/10226666/xu3-p2-xu-small.gif
+
+- id: doi:10.1109/ICCE56470.2023.10043495
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10043349/10043179/10043495/10043495-fig-2-source-small.gif
+  
+- id: doi:10.1109/ICCE56470.2023.10043483
+  type: paper
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10043349/10043179/10043483/10043483-fig-1-source-small.gif
+  
+
+
+
+
   
