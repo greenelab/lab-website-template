@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: AeroSat Vision Lab
-subtitle: 
-description: AeroSat Vision Lab: Pioneering AI and Satellite Innovation
+subtitle: Pioneering AI and Satellite Innovation
+description: 
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
