@@ -7,9 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+At the AeroSat Vision Lab, our team is comprised of dedicated professionals and talented students who are passionate about advancing the fields of artificial intelligence and aerospace technology. Led by Dr. Trong-An Bui, our diverse team combines expertise in engineering, electronic systems, computer science, and space technology to drive innovative research and development projects.
 
 {% include section.html %}
 
