@@ -9,6 +9,12 @@ At AeroSat Vision Lab, we are committed to fostering international collaboration
 
 Join us on our journey as we harness the power of AI and aerospace technology to shape the future of satellite applications and contribute to the advancement of global aerospace research.
 
+歡迎來到AeroSat Vision Lab，這裡是航空航天、人工智能和衛星技術領域的尖端研究與技術創新的交匯處。在裴重恩博士的領導下，我們的實驗室致力於推進神經網絡、計算機視覺和遙感技術的前沿研究，以推動航空航天和衛星應用的突破。
+
+在AeroSat Vision Lab，我們致力於促進國際合作和產業夥伴關係，將研究成果轉化為現實世界的解決方案。我們的項目獲得了包括國家科學技術委員會在內的知名資助機構的支持，專注於開發創新技術，以增強衛星載荷和遙感能力。
+
+加入我們的行列，讓我們利用人工智能和航空航天技術的力量，共同塑造衛星應用的未來，並為全球航空航天研究的進步作出貢獻。
+
 {% include section.html %}
 
 ## Highlights
