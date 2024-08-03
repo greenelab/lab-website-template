@@ -1,4 +1,4 @@
-Visit **[depasquale-lab.github.io/depasquale-lab-website](https://depasquale-lab.github.io/depasquale-lab-website)** 🚀
+Visit **[depasquale-lab.github.io/depasquale-lab-github.io](https://depasquale-lab.github.io/depasquale-lab-github.io)** 🚀
 
 # [DePasquale Lab](https://depasquale-lab.github.io)
 
