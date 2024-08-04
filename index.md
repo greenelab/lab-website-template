@@ -44,7 +44,7 @@ AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, c
 
 {% capture text %}
 
-Will be Updated soon!
+Will be Updated soon! More detail at https://www.linkedin.com/in/trongan93
 
 {%
   include button.html
