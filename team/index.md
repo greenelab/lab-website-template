@@ -21,7 +21,7 @@ The AeroSat Vision Lab is proud to collaborate with leading research institution
 {% include section.html %}
 
 {% capture content %}
-## Will be updated soon!
+Will be updated soon!
 {% include figure.html image="images/photo.jpg" %}
 {% include figure.html image="images/photo.jpg" %}
 {% include figure.html image="images/photo.jpg" %}
