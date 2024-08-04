@@ -8,7 +8,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
 Will be Updated soon!
-More detail at https://www.linkedin.com/in/trongan93
+More detail at [https://www.linkedin.com/in/trongan93](https://website-name.com)
 
 {% include tags.html tags="publication, resource, website" %}
 
