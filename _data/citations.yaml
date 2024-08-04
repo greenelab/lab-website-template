@@ -27,6 +27,15 @@
   orcid: 0000-0002-8600-7099
   plugin: orcid.py
   file: orcid.yaml
+- id: wosuid:PPRN:85582539
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:85582539
+  orcid: 0000-0002-8600-7099
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICASSP48485.2024.10446900
   title: High-Order Tensor Pooling with Attention for Action Recognition
   authors:
