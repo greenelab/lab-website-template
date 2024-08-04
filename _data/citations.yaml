@@ -381,7 +381,7 @@
   date: '2024-04-25'
   link: https://doi.org/gt5xhr
   type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10542546/10542531/10542578/10542578-fig-6-source-small.gif
+  image: images/papers/doi_10.1109_ESTREAM61684_2024_10542578.gif
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICCE59016.2024.10444458
