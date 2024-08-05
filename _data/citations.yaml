@@ -347,19 +347,25 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/eStream61684.2024.10542578
-  title: Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object
-    Detection in Satellite Imagery
+- id: doi:10.1109/ICSSE.2017.8030845
+  title: Multi-focus application in mobile phone
   authors:
-  - Chieh Tsai
-  - Pei Jun Lee
-  - Trong An Bui
-  - Tzu Yi Pang
-  - John Liobe
-  - "Vaidotas Barzd\u0117nas"
-  publisher: 2024 IEEE Open Conference of Electrical, Electronic and Information Sciences
-    (eStream)
-  date: '2024-04-25'
-  link: https://doi.org/gt5xhr
+  - Trong-An Bui
+  - Chih-Chun Lin
+  - Pei-Jun Lee
+  publisher: 2017 International Conference on System Science and Engineering (ICSSE)
+  date: '2017-07-01'
+  link: https://doi.org/gt52dd
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/GCCE.2018.8574800
+  title: Temperature Model and Human Detection in Thermal Image
+  authors:
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Che-Chih Lo
+  publisher: 2018 IEEE 7th Global Conference on Consumer Electronics (GCCE)
+  date: '2018-10-01'
+  link: https://doi.org/gt52df
   plugin: sources.py
   file: sources.yaml
