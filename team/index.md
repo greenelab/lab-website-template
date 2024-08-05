@@ -16,14 +16,12 @@ At the AeroSat Vision Lab, our team is comprised of dedicated professionals and 
 
 {% include section.html background="images/background.jpg" dark=true %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The AeroSat Vision Lab is proud to collaborate with leading research institutions and industry partners worldwide. Our strategic partnerships with renowned labs and companies, enable us to combine resources and expertise to drive groundbreaking research and development. Through these collaborations, we enhance our capabilities in AI, aerospace, and satellite technologies, transforming innovative ideas into real-world applications. Together, we are committed to advancing the frontiers of aerospace research and technology.
 
 {% include section.html %}
 
 {% capture content %}
-
+Will be updated soon!
 {% include figure.html image="images/photo.jpg" %}
 {% include figure.html image="images/photo.jpg" %}
 {% include figure.html image="images/photo.jpg" %}

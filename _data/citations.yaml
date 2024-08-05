@@ -12,10 +12,9 @@
   date: '2024-04-24'
   link: https://doi.org/gt5xhp
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: journal
-  image: https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g003.png
+  plugin: orcid.py
+  file: orcid.yaml
+  image: "https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g007.png"
 - id: doi:10.1109/JSTARS.2024.3357093
   title: Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image
     Enhancement
@@ -31,11 +30,9 @@
   date: '2024-01-01'
   link: https://doi.org/gt5xhf
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: journal
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/10330207/10412123/bui2-3357093-large.gif
-  repo: trongan93/Edge-Computing-Low-Light-Satellite-Image-Enhancement
+  plugin: orcid.py
+  file: orcid.yaml
+  image: "../images/papers/doi_10.1109_JSTARS.2024.3357093.png"
 - id: doi:10.1109/ICCE59016.2024.10444236
   title: Enhanced Moving Object Detection and Tracking in Remote Sensing Videos
   authors:
@@ -47,10 +44,8 @@
   date: '2024-01-06'
   link: https://doi.org/gt5xhq
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444236/chou2-1570944852-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ESTREAM61684.2024.10542578
   title: Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object
     Detection in Satellite Imagery
@@ -80,10 +75,8 @@
   date: '2024-01-06'
   link: https://doi.org/gt5xhs
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444386/hsu2-1570944854-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICCE56470.2023.10043483
   title: Moving Object Detection for Remote Sensing Video with Satellite Jitter
   authors:
@@ -96,10 +89,8 @@
   date: '2023-01-06'
   link: https://doi.org/gt5xht
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10043349/10043179/10043483/10043483-fig-1-source-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICCE56470.2023.10043495
   title: Multi-scales feature extraction model for water segmentation in satellite
     image
@@ -111,10 +102,8 @@
   date: '2023-01-06'
   link: https://doi.org/gt5xhv
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10043349/10043179/10043495/10043495-fig-2-source-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/GCCE59613.2023.10315430
   title: Edge Computing Convolution Operator Hardware Design for Satellite Payload
   authors:
@@ -126,10 +115,8 @@
   date: '2023-10-10'
   link: https://doi.org/gt5xhw
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10315246/10315146/10315430/liang1-p2-liang-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICSSE58758.2023.10227207
   title: 'H-BNN: FPGA-based binarized convolutional neural network for cloud detection
     on satellite payload'
@@ -141,10 +128,8 @@
   date: '2023-07-27'
   link: https://doi.org/gt5xhx
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10227140/10227074/10227207/lo2-ICSSE2023-74-small.gif
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICCE-TAIWAN58799.2023.10226666
   title: Motion based DBSCAN for object tracking in satellite video
   authors:
@@ -168,10 +153,9 @@
   date: '2023-01-01'
   link: https://doi.org/gt5xhn
   orcid: 0000-0001-7660-4060
-  plugin: sources.py
-  file: sources.yaml
-  type: journal
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/4609443/9973430/10298631/bui3-3328118-large.gif
+  plugin: orcid.py
+  file: orcid.yaml
+  image: "../images/papers/doi_10.1109_JSTARS.2023.3328118.png"
 - id: doi:10.1109/ACCESS.2022.3174553
   title: Edge Computing-Based SAT-Video Coding for Remote Sensing
   authors:
@@ -187,6 +171,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "https://ieeexplore.ieee.org/ielx7/6287639/9668973/9773309/graphical_abstract/access-gagraphic-3174553.jpg"
 - id: doi:10.1109/ICCE-TAIWAN55306.2022.9869264
   title: Reduction deep learning model for floods recognition in satellite images
   authors:
@@ -261,6 +246,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "../images/papers/doi_10.6688_JISE.202011_36(6).0014.png"
 - id: doi:10.1109/ACCESS.2020.3014305
   title: Deep Learning for Landslide Recognition in Satellite Architecture
   authors:
@@ -275,6 +261,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "https://ieeexplore.ieee.org/ielx7/6287639/8948470/9159123/graphical_abstract/access-gagraphic-3014305.jpg"
 - id: doi:10.1109/ICCE46568.2020.9043100
   title: Hardware Implementation of DCT/IDCT sharing for HEVC/MPEG Video Coding
   authors:
@@ -301,6 +288,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "../images/papers/doi_10.1109_ICCE-TW46550.2019.8991751.png"
 - id: doi:10.6688/JISE.201901_35(1).0002
   title: Artifact Reduction based Multi-view Generation Algorithm for Sparse Camera
     Configuration
@@ -311,6 +299,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "../images/papers/doi_10.6688_JISE.201901_35(1).0002.png"
 - id: doi:10.1109/ICCE.2019.8662038
   title: IMPROVE THE HEVC ALGORITHM COMPLEXITY BASED ON THE VISUAL PERCEPTION
   authors:
@@ -323,6 +312,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "../images/papers/doi_10.1109_ICCE.2019.8662038.png"
 - id: doi:10.1109/ICSSE.2019.8823128
   title: Using BEMD in CNN to Identify Landslide in Satellite Image
   authors:
@@ -337,6 +327,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "../images/papers/doi_10.1109_ICSSE.2019.8823128.png"
 - id: doi:10.1109/ISCE.2018.8408909
   title: Adaptive edge detection algorithm for multi-focus application
   authors:
@@ -348,6 +339,7 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+  image: "https://www.researchgate.net/profile/Trong-An-Bui/publication/326359256/figure/tbl1/AS:809821620170763@1570087928930/SURVEY-PROPOSED-METHOD-AND-ALGORITHM-FOR-SOLVING-MULTI-FOCUS-APPLICATION_W640.jpg"
 - id: wosuid:WOS:000459859500009
   title: Web of Science
   authors: []
@@ -366,47 +358,27 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/eStream61684.2024.10542578
-  title: Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object
-    Detection in Satellite Imagery
+- id: doi:10.1109/ICSSE.2017.8030845
+  title: Multi-focus application in mobile phone
   authors:
-  - Chieh Tsai
-  - Pei Jun Lee
-  - Trong An Bui
-  - Tzu Yi Pang
-  - John Liobe
-  - "Vaidotas Barzd\u0117nas"
-  publisher: 2024 IEEE Open Conference of Electrical, Electronic and Information Sciences
-    (eStream)
-  date: '2024-04-25'
-  link: https://doi.org/gt5xhr
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10542546/10542531/10542578/10542578-fig-6-source-small.gif
+  - Trong-An Bui
+  - Chih-Chun Lin
+  - Pei-Jun Lee
+  publisher: 2017 International Conference on System Science and Engineering (ICSSE)
+  date: '2017-07-01'
+  link: https://doi.org/gt52dd
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1109/ICCE59016.2024.10444458
-  title: Efficient FPGA-Accelerated Neural Network Scalable Upsampling Architecture
+  image: "../images/papers/doi_10.1109_ICSSE.2017.8030845.png"
+- id: doi:10.1109/GCCE.2018.8574800
+  title: Temperature Model and Human Detection in Thermal Image
   authors:
-  - Wei-Chen Hsu
   - Pei-Jun Lee
   - Trong-An Bui
-  publisher: 2024 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2024-01-06'
-  link: https://doi.org/gt5xkn
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10444098/10444131/10444458/hsu3-1570945976-small.gif
+  - Che-Chih Lo
+  publisher: 2018 IEEE 7th Global Conference on Consumer Electronics (GCCE)
+  date: '2018-10-01'
+  link: https://doi.org/gt52df
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1109/ICCE-Taiwan58799.2023.10226666
-  title: Motion based DBSCAN for object tracking in satellite video
-  authors:
-  - Guo-Cheng Xu
-  - Pei-Jun Lee
-  - Trong-An Bui
-  publisher: 2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
-  date: '2023-07-17'
-  link: https://doi.org/gt5xhz
-  type: paper
-  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10226627/10226615/10226666/xu3-p2-xu-small.gif
-  plugin: sources.py
-  file: sources.yaml
+  image: "../images/papers/doi_10.1109_GCCE.2018.8574800.png"
