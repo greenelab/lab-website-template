@@ -14,7 +14,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "https://www.mdpi.com/aerospace/aerospace-11-00336/article_deploy/html/images/aerospace-11-00336-g007.png"
 - id: doi:10.1109/JSTARS.2024.3357093
   title: Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image
     Enhancement
@@ -32,7 +31,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.1109_JSTARS.2024.3357093.png"
 - id: doi:10.1109/ICCE59016.2024.10444236
   title: Enhanced Moving Object Detection and Tracking in Remote Sensing Videos
   authors:
@@ -155,7 +153,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.1109_JSTARS.2023.3328118.png"
 - id: doi:10.1109/ACCESS.2022.3174553
   title: Edge Computing-Based SAT-Video Coding for Remote Sensing
   authors:
@@ -171,7 +168,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "https://ieeexplore.ieee.org/ielx7/6287639/9668973/9773309/graphical_abstract/access-gagraphic-3174553.jpg"
 - id: doi:10.1109/ICCE-TAIWAN55306.2022.9869264
   title: Reduction deep learning model for floods recognition in satellite images
   authors:
@@ -246,7 +242,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.6688_JISE.202011_36(6).0014.png"
 - id: doi:10.1109/ACCESS.2020.3014305
   title: Deep Learning for Landslide Recognition in Satellite Architecture
   authors:
@@ -261,7 +256,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "https://ieeexplore.ieee.org/ielx7/6287639/8948470/9159123/graphical_abstract/access-gagraphic-3014305.jpg"
 - id: doi:10.1109/ICCE46568.2020.9043100
   title: Hardware Implementation of DCT/IDCT sharing for HEVC/MPEG Video Coding
   authors:
@@ -288,7 +282,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.1109_ICCE-TW46550.2019.8991751.png"
 - id: doi:10.6688/JISE.201901_35(1).0002
   title: Artifact Reduction based Multi-view Generation Algorithm for Sparse Camera
     Configuration
@@ -299,7 +292,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.6688_JISE.201901_35(1).0002.png"
 - id: doi:10.1109/ICCE.2019.8662038
   title: IMPROVE THE HEVC ALGORITHM COMPLEXITY BASED ON THE VISUAL PERCEPTION
   authors:
@@ -312,7 +304,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.1109_ICCE.2019.8662038.png"
 - id: doi:10.1109/ICSSE.2019.8823128
   title: Using BEMD in CNN to Identify Landslide in Satellite Image
   authors:
@@ -327,7 +318,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "../images/papers/doi_10.1109_ICSSE.2019.8823128.png"
 - id: doi:10.1109/ISCE.2018.8408909
   title: Adaptive edge detection algorithm for multi-focus application
   authors:
@@ -339,7 +329,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-  image: "https://www.researchgate.net/profile/Trong-An-Bui/publication/326359256/figure/tbl1/AS:809821620170763@1570087928930/SURVEY-PROPOSED-METHOD-AND-ALGORITHM-FOR-SOLVING-MULTI-FOCUS-APPLICATION_W640.jpg"
 - id: wosuid:WOS:000459859500009
   title: Web of Science
   authors: []
@@ -369,7 +358,6 @@
   link: https://doi.org/gt52dd
   plugin: sources.py
   file: sources.yaml
-  image: "../images/papers/doi_10.1109_ICSSE.2017.8030845.png"
 - id: doi:10.1109/GCCE.2018.8574800
   title: Temperature Model and Human Detection in Thermal Image
   authors:
@@ -381,4 +369,3 @@
   link: https://doi.org/gt52df
   plugin: sources.py
   file: sources.yaml
-  image: "../images/papers/doi_10.1109_GCCE.2018.8574800.png"
