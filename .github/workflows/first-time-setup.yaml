@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # for debugging
-      - uses: crazy-max/ghaction-dump-context@v2
+      - name: Debug dump
+        uses: crazy-max/ghaction-dump-context@v2
 
       - name: Create Pages branch
         uses: peterjgrainger/action-create-branch@v3.0.0
@@ -28,8 +28,8 @@ jobs:
         with:
           ref: gh-pages
 
-      # for debugging
-      - if: runner.debug == '1'
+      - name: SSH debug
+        if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
       # clean slate, as if starting from orphan branch
