@@ -6,15 +6,15 @@
 >
   <a
     {% if include.link %}
-      href="{{ include.link | relative_url }}" 
+      href="{{ include.link | relative_url | xml_escape }}"
     {% endif %}
     class="feature-image"
-    aria-label="{{ include.title | default: "feature link" }}"
+    aria-label="{{ include.title | default: "feature link" | xml_escape }}"
   >
     <img
-      src="{{ include.image | relative_url }}"
+      src="{{ include.image | relative_url | xml_escape }}"
       loading="lazy"
-      alt="{{ include.title | default: "feature image" }}"
+      alt="{{ include.title | default: "feature image" | xml_escape }}"
       {% include fallback.html %}
     >
   </a>

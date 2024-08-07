@@ -2,14 +2,14 @@
 <div class="card" data-style="{{ include.style }}">
   <a
     {% if include.link %}
-      href="{{ include.link | relative_url }}"
+      href="{{ include.link | relative_url | xml_escape }}"
     {% endif %}
-    aria-label="{{ include.title | default: "card link" }}"
+    aria-label="{{ include.title | default: "card link" | xml_escape }}"
     class="card-image"
   >
     <img
-      src="{{ include.image | relative_url }}"
-      alt="{{ include.title | default: "card image" }}"
+      src="{{ include.image | relative_url | xml_escape }}"
+      alt="{{ include.title | default: "card image" | xml_escape }}"
       loading="lazy"
       {% include fallback.html %}
     >
@@ -19,10 +19,10 @@
     {% if include.title %}
       <a
         {% if include.link %}
-          href="{{ include.link | relative_url }}"
+          href="{{ include.link | relative_url | xml_escape }}"
         {% endif %}
         {% if include.tooltip %}
-          data-tooltip="{{ include.tooltip }}"
+          data-tooltip="{{ include.tooltip | xml_escape }}"
         {% endif %}
         class="card-title"
       >
