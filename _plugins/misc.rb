@@ -19,22 +19,52 @@ module Jekyll
     end
 
     # filter a list of hashes by comma-sep'd field:value pairs
-    def data_filter(data, filters)
-      if not data.is_a?(Array) or not filters.is_a?(String)
+    def empty_binding
+      binding
+    end
+
+    # make arbitrary string into valid ruby variable name
+    def safe_var_name(name)
+      return name.to_s.gsub /[^a-z]+/, "_"
+    end
+
+    # jekyll ruby plugin
+    def data_filter(data, filter)
+      if not filter.is_a?(String)
         return data
       end
-      data = data.clone
-      for filter in array_filter(filters.split(","))
-        key, value = array_filter(filter.split(":"))
-        # find unspecified fields
-        if value == nil
-          data.select!{|d| d[key] == nil}
-        # find fields that match regex
-        elsif value.is_a?(String)
-          data.select!{|d| d[key].to_s =~ /#{value}/m}
+
+      # filter data
+      return data.clone.select{
+        |item|
+        # start with empty context of local variables
+        b = empty_binding
+        # add item as local variable
+        b.local_variable_set("item", item)
+        # if jekyll doc collection, get hash of doc data
+        if item.is_a? Jekyll::Document
+          item = item.data
         end
-      end
-      return data
+        # also set each item field as local variable when evaluating filter
+        item.each do |var, val|
+          b.local_variable_set(safe_var_name(var), val)
+        end
+        # whether to keep item
+        keep = true
+        while true
+          begin
+            # evaluate filter code, coerce to true/false
+            keep = !!eval(filter, b)
+            # if no error, done
+            break
+          rescue NameError => e
+            # if var in filter doesn't exist, define it and re-evaluate
+            b.local_variable_set(safe_var_name(e.name), nil)
+          end
+        end
+        # keep/discard item
+        keep
+      }
     end
 
     # from css text, find font family definitions and construct google font url
