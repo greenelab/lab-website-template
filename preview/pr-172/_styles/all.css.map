@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["all.scss"],"names":[],"mappings":"AAAA;EACE;EACA","sourcesContent":["* {\n  box-sizing: border-box;\n  transition: none 0.2s;\n}\n"],"file":"all.css"}
