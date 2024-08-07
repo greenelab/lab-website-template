@@ -104,6 +104,13 @@ Consectetur adipiscing elit.
 Sed do eiusmod tempor incididunt.
 {:.right}
 
+<details markdown="1">
+<summary>Hidden content</summary>
+
+**Lorem** _ipsum_ [dolor sit amet](), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+</details>
+
 {% include section.html %}
 
 # Jekyll Spaceship
