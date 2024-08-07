@@ -13,59 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # for debugging
-      - uses: crazy-max/ghaction-dump-context@v2
-
-      - name: Create Pages branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: "gh-pages"
-
-      - name: Checkout Pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-
-      # for debugging
-      - if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
-
-      # clean slate, as if starting from orphan branch
-      - name: Clear Pages branch
-        run: rm -rf * .github .docker .gitignore
-
-      # prevent GitHub from running Jekyll a second time after build
-      - name: Make .nojekyll file
-        run: touch .nojekyll
-
-      - name: Make placeholder homepage
-        run: printf "Placeholder homepage" > index.html
-
-      - name: Commit changes to Pages branch
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: gh-pages
-          commit_message: "Clear branch"
-
-      - name: Checkout main branch
-        uses: actions/checkout@v4
-
-      - name: Remove files user doesn't need
-        run: |
-          rm -rf \
-            CHANGELOG.md \
-            testbed.md \
-            .github/ISSUE_TEMPLATE \
-            .github/DISCUSSION_TEMPLATE \
-            .github/workflows/versioning.yaml \
-            .github/pull_request_template.md \
-
-      - name: Rename files
-        run: |
-          mv -f .github/user_pull_request_template.md .github/pull_request_template.md
-
       - name: Set vars for personalization
         run: |
           user="${{ github.repository_owner }}"
