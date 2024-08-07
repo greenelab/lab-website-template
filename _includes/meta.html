@@ -12,9 +12,9 @@
   {% assign fulltitle = fulltitle | push: title %}
 {% endif %}
 {% if site.title %}
-  {% assign fulltitle = fulltitle | push: site.title | xml_escape %}
+  {% assign fulltitle = fulltitle | push: site.title %}
 {% endif %}
-{% assign fulltitle = fulltitle | join: " | " %}
+{% assign fulltitle = fulltitle | join: " | " | xml_escape %}
 
 {% assign subtitle = site.subtitle | xml_escape %}
 
