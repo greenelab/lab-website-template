@@ -79,6 +79,8 @@ jobs:
         with:
           branch: citation-update
           title: Periodic citation update
+          body: |
+            To see a live preview of this PR, close (not merge) and reopen it.
 
     outputs:
       changed: ${{ steps.changed.outputs.files_changed }}
