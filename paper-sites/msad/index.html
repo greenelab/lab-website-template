@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Scenario Anomaly Detection (MSAD) Dataset</title>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+    <style type="text/css">
+        body {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            font-weight: 300;
+            font-size: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+        }
+        h1 {
+            font-weight: 300;
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 22px;
+            text-align: left;
+        }
+        #u-table {
+            margin-left: -50px;
+        }
+        .disclaimerbox {
+            background-color: #eee;
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        video.header-vid, img.header-img {
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        img.rounded {
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+        }
+        a:link, a:visited {
+            color: #1367a7;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #208799;
+        }
+        td.dl-link {
+            height: 160px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .layered-paper-big {
+            box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.35), 5px 5px 0 0px #fff, 5px 5px 1px 1px rgba(0,0,0,0.35), 10px 10px 0 0px #fff, 10px 10px 1px 1px rgba(0,0,0,0.35), 15px 15px 0 0px #fff, 15px 15px 1px 1px rgba(0,0,0,0.35), 20px 20px 0 0px #fff, 20px 20px 1px 1px rgba(0,0,0,0.35), 25px 25px 0 0px #fff, 25px 25px 1px 1px rgba(0,0,0,0.35);
+            margin-left: 10px;
+            margin-right: 45px;
+        }
+        .paper-big {
+            box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.35);
+            margin-left: 10px;
+            margin-right: 45px;
+        }
+        .layered-paper {
+            box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.35), 5px 5px 0 0px #fff, 5px 5px 1px 1px rgba(0,0,0,0.35), 10px 10px 0 0px #fff, 10px 10px 1px 1px rgba(0,0,0,0.35);
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+        .vert-cent {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        pre {
+            text-align: left;
+            white-space: pre;
+            background-color: ghostwhite;
+            border: 1px solid #CCCCCC;
+            padding: 10px 20px;
+            margin: 10px;
+            tab-size: 4;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .box h2 {
+            font-size: 18px;
+            margin: 0 0 5px;
+            text-align: center;
+        }
+        .box p {
+            font-size: 16px;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <center>
+        <span style="font-size:42px">Multi-Scenario Anomaly Detection (MSAD) Dataset</span>
+        <table align="center" width="600px">
+            <tr>
+                <td align="center" width="100px">
+                    <center>
+                        <span style="font-size:24px"><a href="https://au.linkedin.com/in/liyun-zhu-b8755328b">Liyun Zhu</a><sup>1</sup></span>
+                    </center>
+                </td>
+                <td align="center" width="100px">
+                    <center>
+                        <span style="font-size:24px"><a href="https://leiwangr.github.io/">Lei Wang</a><sup>1,2</sup></span>
+                    </center>
+                </td>
+                <td align="center" width="100px">
+                    <center>
+                        <span style="font-size:24px"><a href="https://arjunraj.com">Arjun Raj</a><sup>1</sup></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <table align="center" width="500px">
+            <tr>
+                <td align="center" width="100px">
+                    <center>
+                        <span style="font-size:24px"><a href="https://staffportal.curtin.edu.au/staff/profile/view/tom-gedeon-5e48a1fd/">Tom Gedeon</a><sup>3</sup></span>
+                    </center>
+                </td>
+                <td align="center" width="100px">
+                    <center>
+                        <span style="font-size:24px"><a href="https://www.crcv.ucf.edu/chenchen/">Chen Chen</a><sup>4</sup></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <table id="u-table" align="center" width="900px">
+            <tr>
+                <td align="center" width="200px">
+                    <center>
+                        <span style="font-size:20px"><sup>1</sup>Australian National University</span>
+                    </center>
+                </td>
+                <td align="center" width="200px">
+                    <center>
+                        <span style="font-size:20px"><sup>2</sup>Data61/CSIRO</span>
+                    </center>
+                </td>
+                <td align="center" width="200px">
+                    <center>
+                        <span style="font-size:20px"><sup>3</sup>Curtin University</span>
+                    </center>
+                </td>
+                <td align="center" width="200px">
+                    <center>
+                        <span style="font-size:20px"><sup>4</sup>University of Central Florida</span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br><br>
+    <hr>
+    <br>
+    <table align="center" width="850px">
+        <tr>
+            <td width="200px">
+                <center>
+                    <a href="./resources/images/dataset_samples.png"><img class="rounded" src="./resources/images/dataset_samples.png" width="800px"></a><br>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td width="400px">
+                <center>
+                    <span style="font-size:14px"><i><b>Overview:</b> Our MSAD includes a diverse range of scenarios, both indoor and outdoor, featuring various objects, eg, pedestrians, cars, trains, etc. The first row shows different real-world common motions, while the second row demonstrates variations in weather and lighting conditions. The third row displays different moving objects. The last column shows human- and non-human-related anomalies.</i></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="u-table" align="center" width="920px">
+        <tr>
+            <td width="300px">
+                <center>
+                    <a href="#Paper"><img class="rounded" onmouseover="this.src='./resources/images/paper.png';" onmouseout="this.src='./resources/images/paper.png';" src="./resources/images/paper.png" height="120px"></a><br>
+                    <span style="font-size:16px">Paper</span><br>
+                </center>
+            </td>
+            <td width="300px">
+                <center>
+                    <a href="#Download"><img class="rounded" onmouseover="this.src='./resources/images/data_icon.png';" onmouseout="this.src='./resources/images/data_icon.png';" src="./resources/images/data_icon.png" height="120px"></a><br>
+                    <span style="font-size:16px">MSAD Dataset</span><br>
+                </center>
+            </td>
+            <td width="300px">
+                <center>
+                    <a href="#"><img class="rounded" onmouseover="this.src='./resources/images/code_icon.png';" onmouseout="this.src='./resources/images/code_icon.png';" src="./resources/images/code_icon.png" height="120px"></a><br>
+                    <span style="font-size:16px">Code (Coming soon)</span><br>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Abstract">Dataset Abstract</h1></center>
+    </table>
+    <center>
+        <span>
+            We introduce a new dataset, Multi-Scenario Anomaly Detection (MSAD), comprising 14 distinct scenarios captured from various camera views. Our dataset has diverse motion patterns and challenging variations, such as different lighting and weather conditions, providing a robust foundation for training superior models. We conduct an in-depth analysis of recent representative models using MSAD and highlight its potential in addressing the challenges of detecting anomalies across diverse and evolving surveillance scenarios.</span>
+    </center>
+    <br><br>
+    <hr>
+
+    <center><h1 id="Dataset-Overview">Dataset Overview</h1></center>
+
+    <div class="container">
+        <div class="box">
+            <h2><b>Total Videos</b></h2>
+            <p>720</p>
+        </div>
+        <div class="box">
+            <h2><b>Domain</b></h2>
+            <p>Multiple</p>
+        </div>
+        <div class="box">
+            <h2><b>#Human Related Anomaly Type</b></h2>
+            <p>35</p>
+        </div>
+        <div class="box">
+            <h2><b>#Non-human Related Anomaly Type</b></h2>
+            <p>20</p>
+        </div>
+        <div class="box">
+            <h2><b>#Scenarios</b></h2>
+            <p>14</p>
+        </div>
+        <div class="box">
+            <h2><b>#View</b></h2>
+            <p>∼500</p>
+        </div>
+        <div class="box">
+            <h2><b>Modality</b></h2>
+            <p>RGB</p>
+        </div>
+        <div class="box">
+            <h2><b>Resolution</b></h2>
+            <p>Multiple</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <details>
+        <summary><b>Click</b> to view extended details of our MSAD dataset. Our dataset has a broad range of both human-related and non-human-related anomalies, spanning multiple domains.</summary>
+        
+        <table align="center" width="100%" border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Main Anomaly Types</th>
+                    <th>Detailed Anomaly Types</th>
+                    <th>Domain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="35">Human-related</td>
+                    <td rowspan="3">Assault</td>
+                    <td>Assault on street</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Assault in office</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Other assault</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Fighting</td>
+                    <td>Fighting on street</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Fighting in a restaurant</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Fighting in a shop</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Fighting in front of a door</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Fighting indoors</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Other fighting</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">People Falling</td>
+                    <td>People falling to ground</td>
+                    <td>Pedestrian</td>
+                </tr>
+                <tr>
+                    <td>People falling into pool</td>
+                    <td>Pedestrian</td>
+                </tr>
+                <tr>
+                    <td>People falling from high places</td>
+                    <td>Pedestrian</td>
+                </tr>
+                <tr>
+                    <td>People falling into subway</td>
+                    <td>Pedestrian</td>
+                </tr>
+                <tr>
+                    <td>Other people falling</td>
+                    <td>Pedestrian</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Robbery</td>
+                    <td>Shop robbery</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Office robbery</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Theft</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Car theft</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Other robbery</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Shooting</td>
+                    <td>Shooting on the road</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Shooting indoors</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Holding a gun</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Other shooting</td>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td rowspan="9">Traffic Accident</td>
+                    <td>Car falling</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Car crash</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Speeding</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Car rushing into building</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Car crash with people</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Car crash with object</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Car crash with train</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Motorcycle crash</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td>Other traffic accident</td>
+                    <td>Traffic</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Vandalism</td>
+                    <td>Vandalizing glass</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Vandalizing door</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td>Other vandalism</td>
+                    <td>Violence</td>
+                </tr>
+                <tr>
+                    <td rowspan="20">Non-human-related</td>
+                    <td rowspan="5">Explosion</td>
+                    <td>Street explosion</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Firework explosion</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Factory explosion</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Indoor explosion</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Other explosion</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Fire</td>
+                    <td>Smoke</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Factory fire</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Building on fire</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Bush fire</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Other fire</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Object Falling</td>
+                    <td>Strong wind</td>
+                    <td>Natural hazard</td>
+                </tr>
+                <tr>
+                    <td>Object falling in home</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Tree falling</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Large objects falling</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Glass falling</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Other objects falling</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Water Incident</td>
+                    <td>Flood</td>
+                    <td>Natural hazard</td>
+                </tr>
+                <tr>
+                    <td>Water leakage</td>
+                    <td>Emergency</td>
+                </tr>
+                <tr>
+                    <td>Heavy rain</td>
+                    <td>Natural hazard</td>
+                </tr>
+                <tr>
+                    <td>Other water incidents</td>
+                    <td>Emergency</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+
+    <br>
+
+    <details>
+        <summary><b>Click</b> to view some graphical statistics of our MSAD dataset.</summary>
+        <table align="center" width="850px">
+        <tr>
+            <td width="280px">
+                <center>
+                    <a href="./resources/images/video_distribution_pie_chart.png"><img class="rounded" src="./resources/images/video_distribution_pie_chart.png" width="280px"></a><br>
+                </center>
+            </td>
+
+            <td width="280px">
+                <center>
+                    <a href="./resources/images/frame_distribution.png"><img class="rounded" src="./resources/images/frame_distribution.png" width="280px"></a><br>
+                </center>
+            </td>
+
+            <td width="280px">
+                <center>
+                    <a href="./resources/images/test_train_video_number_distribution.png"><img class="rounded" src="./resources/images/test_train_video_number_distribution.png" width="280px"></a><br>
+                </center>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <center>
+                    <span style="font-size:14px">
+                        <i><b>The statistics of MSAD dataset include</b>: (left) a breakdown of main anomaly types and their respective percentages, 
+                            (middle) a boxplot illustrating frame number variations across scenarios in MSAD training set, and 
+                            (right) the distributions of train/test splits across scenarios.</i></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Dataset-Evaluation">Dataset Evaluation</h1></center>
+        <tr>
+            <td>
+                <p>
+                    <center>
+                    Based on the experimental results, we can deduce that a model trained on intricate real-world scenarios exhibits superior generalization.
+                    This stems from the fact that real-world models are frequently influenced by the surrounding environ
+                   ment, encompassing elements like fluctuating traffic patterns, dynamic electronic displays, and the
+                    movement of trees in the wind. The model must discern the nuances of anomaly detection within a
+                    dynamic environment and comprehend the dynamics of objects and/or performing subjects within it.
+                    <b>MSAD dataset provides a comprehensive representation of real-world scenarios.</b> 
+                </center>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table align="center" width="720px">
+        <tr>
+            <td>
+                <h2><center>Generalizability and adaptability</center></h2>
+                <table align="center" border="1" cellpadding="5">
+                    <tr>
+                        <th>Test view</th>
+                        <th>Train</th>
+                        <th colspan="2">FSAD</th>
+                        <th>Train</th>
+                        <th colspan="2">FSAD</th>
+                        <th colspan="2">SA<sup>2</sup>D (ours)</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Micro</th>
+                        <th>Macro</th>
+                        <th></th>
+                        <th>Micro</th>
+                        <th>Macro</th>
+                        <th>Micro</th>
+                        <th>Macro</th>
+                    </tr>
+                    <tr>
+                        <td>ShT-v1</td>
+                        <td>ShT (7 views)</td>
+                        <td>61.36</td>
+                        <td>55.34</td>
+                        <td>MSAD</td>
+                        <td>63.74</td>
+                        <td>62.92</td>
+                        <td>68.96</td>
+                        <td>77.89</td>
+                    </tr>
+                    <tr>
+                        <td>ShT-v3</td>
+                        <td>ShT (7 views)</td>
+                        <td>26.51</td>
+                        <td>26.58</td>
+                        <td>MSAD</td>
+                        <td>64.39</td>
+                        <td>62.56</td>
+                        <td>67.59</td>
+                        <td>73.43</td>
+                    </tr>
+                    <tr>
+                        <td>ShT-v5</td>
+                        <td>ShT (7 views)</td>
+                        <td>53.40</td>
+                        <td>53.32</td>
+                        <td>MSAD</td>
+                        <td>55.04</td>
+                        <td>54.63</td>
+                        <td>55.74</td>
+                        <td>54.02</td>
+                    </tr>
+                    <tr>
+                        <td>ShT-v6</td>
+                        <td>ShT (7 views)</td>
+                        <td>78.36</td>
+                        <td>78.27</td>
+                        <td>MSAD</td>
+                        <td>70.26</td>
+                        <td>71.02</td>
+                        <td>75.47</td>
+                        <td>72.35</td>
+                    </tr>
+                    <tr>
+                        <td>ShT-v8</td>
+                        <td>ShT (7 views)</td>
+                        <td>50.02</td>
+                        <td>52.54</td>
+                        <td>MSAD</td>
+                        <td>59.97</td>
+                        <td>57.45</td>
+                        <td>60.85</td>
+                        <td>61.52</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="400px">
+                <center>
+                    <span style="font-size:14px"><i><b>Experimental results on single-scenario evaluations.</b> On ShanghaiTech (ShT), only 7
+                         views are used during training and the rest views are individually used for testing. The notation ShT-v∗ denotes the
+                         use of different camera views.</i></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table align="center" width="720px">
+        <tr>
+            <td>
+                <h2> <center> Cross-scenario evaluation </center></h2>
+                <table align="center" border="1" cellpadding="5">
+                    <tr>
+                        <th>Train</th>
+                        <th>Test</th>
+                        <th>Micro</th>
+                        <th>Macro</th>
+                    </tr>
+                    <tr>
+                        <td>ShT</td>
+                        <td>UCSD Ped2</td>
+                        <td>57.38</td>
+                        <td>58.36</td>
+                    </tr>
+                    <tr>
+                        <td>ShT</td>
+                        <td>CUHK Avenue</td>
+                        <td>69.98</td>
+                        <td>78.32</td>
+                    </tr>
+                    <tr>
+                        <td>ShT</td>
+                        <td>MSAD</td>
+                        <td>63.92</td>
+                        <td>64.92</td>
+                    </tr>
+                    <tr>
+                        <td>MSAD</td>
+                        <td>UCSD Ped2</td>
+                        <td>70.35</td>
+                        <td>65.74</td>
+                    </tr>
+                    <tr>
+                        <td>MSAD</td>
+                        <td>CUHK Avenue</td>
+                        <td>79.57</td>
+                        <td>84.49</td>
+                    </tr>
+                    <tr>
+                        <td>MSAD</td>
+                        <td>MSAD</td>
+                        <td>69.96</td>
+                        <td>69.60</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="400px">
+                <center>
+                    <span style="font-size:14px"><i> <b> Evaluations on cross-scenario setups. </b> We use FSAD and SA2D
+                        (ours) for training on ShanghaiTech (ShT) and MSAD, respectively.</i></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Download">Download</h1></center>
+        <tr>
+            <td width="300px">
+                <center>
+                        <span style="font-size:24px">v1.0</span><br><br>
+                        <a href="https://forms.microsoft.com/r/sGD0am1DKr">
+                        <img class="rounded" onmouseover="this.src='./resources/images/dataset_samples.png';" onmouseout="this.src='./resources/images/dataset_samples.png';" src="./resources/images/dataset_samples.png" height="30px">
+                        <br><br>
+                        <span style="font-size:16px">MSAD Dataset</span>
+                        <br>
+                    </a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <p align = "center">
+                Please read the <a href="./agreement.html">terms and conditions here</a> and complete the below linked request form. Upon review, you will be notified the outcome of your
+                request via the provided email.
+            </p>
+        </tr>
+
+    </table>
+    <br><br>
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Paper">Paper</h1></center>
+        <tr>
+            
+            <td align="center"><a href="https://arxiv.org/abs/2402.04857"><img class="layered-paper-big" style="height:160px" src="./resources/images/paper_pdf_thumb.png"/></a></td>
+            
+            <td width="200px"><a href="https://arxiv.org/abs/2402.04857"><span style="font-size:14pt"><br>Advancing Video Anomaly Detection: A Concise Review and a New Dataset<br></span></a></td>
+            
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Cite">Cite</h1></center>
+        <div class="disclaimerbox">
+            <span>
+                <pre style="font-family: Courier; font-size:14px">
+@misc{zhu2024advancingvideoanomalydetection,
+      title={Advancing Video Anomaly Detection: A Concise Review and a New Dataset}, 
+      author={Liyun Zhu and Lei Wang and Arjun Raj and Tom Gedeon and Chen Chen},
+      year={2024},
+      eprint={2402.04857},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2402.04857}, 
+}
+                </pre>
+            </span>
+        </div>
+    </table>
+    <br><br>
+    <hr>
+    <table align="center" width="720px">
+        <center><h1 id="Contact">Contact</h1></center>
+        <tr>
+            <p align="center">Please contact the following people for any enquires related to the dataset or the paper.</p>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Liyun Zhu: <a href="mailto:liyun.zhu@anu.edu.au">liyun.zhu@anu.edu.au</a></li>
+                    <li>Lei Wang: <a href="mailto:lei.w@anu.edu.au">lei.w@anu.edu.au</a></li>
+                    <li>Arjun Raj: <a href="mailto:u7526852@anu.edu.au">u7526852@anu.edu.au</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+</body>
+</html>

@@ -5,7 +5,6 @@ nav:
   tooltip: Learn about our lab.
 ---
 
-
 # About
 
 Get to know different parts of our lab!
