@@ -29,7 +29,7 @@ $wrap: 800px;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .citation-text {
@@ -68,7 +68,7 @@ $wrap: 800px;
 }
 
 .citation-publisher {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .citation-description {

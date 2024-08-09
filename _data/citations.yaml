@@ -12,30 +12,123 @@
   publisher: International Journal of Computer Vision
   date: '2024-05-06'
   link: https://doi.org/gt483p
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICASSP48485.2024.10446223
-  title: Flow Dynamics Correction for Action Recognition
+  image: images/paper/doi_10_1007_s11263_024_02070_2.png
+  buttons:
+  - type: source
+    text: Code
+    link: https://github.com/LeiWangR/JEANIE
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNNLS.2022.3201518
+  title: Fusing Higher-Order Features in Graph Neural Networks for Skeleton-Based
+    Action Recognition
+  authors:
+  - Zhenyue Qin
+  - Yang Liu
+  - Pan Ji
+  - Dongwoo Kim
+  - Lei Wang
+  - R. I. McKay
+  - Saeed Anwar
+  - Tom Gedeon
+  publisher: IEEE Transactions on Neural Networks and Learning Systems
+  date: '2024-04-01'
+  link: https://doi.org/gt6h5g
+  image: images/paper/doi_10_1109_TNNLS_2022_3201518.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TPAMI.2021.3107160
+  title: Tensor Representations for Action Recognition
+  authors:
+  - Piotr Koniusz
+  - Lei Wang
+  - Anoop Cherian
+  publisher: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  date: '2022-02-01'
+  link: https://doi.org/gpzmc4
+  image: images/paper/TPAMI_2021_3107160.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TIP.2019.2925285
+  title: A Comparative Review of Recent Kinect-Based Action Recognition Algorithms
+  authors:
+  - Lei Wang
+  - Du Q. Huynh
+  - Piotr Koniusz
+  publisher: IEEE Transactions on Image Processing
+  date: '2020-01-01'
+  link: https://doi.org/gk5znt
+  image: images/paper/doi_10_1109_TIP_2019_2925285.png
+  buttons:
+  - type: source
+    link: https://github.com/LeiWangR/HDG
+    text: Dataset & Code
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: arXiv:2405.01461
+  title: 'SATO: Stable Text-to-Motion Framework'
+  authors:
+  - Wenshuo Chen
+  - Hongru Xiao
+  - Erhang Zhang
+  - Lijie Hu
+  - Lei Wang
+  - Mengyuan Liu
+  - Chen Chen
+  publisher: ACM Multimedia
+  date: '2024-05-06'
+  link: https://arxiv.org/abs/2405.01461
+  image: images/paper/arXiv_2405_01461.png
+  buttons:
+  - type: source
+    link: https://github.com/sato-team/Stable-Text-to-motion-Framework
+    text: Code
+  - type: website
+    link: https://sato-team.github.io/Stable-Text-to-Motion-Framework/
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2310.05615
+  title: Adaptive Multi-head Contrastive Learning
   authors:
   - Lei Wang
   - Piotr Koniusz
-  publisher: ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech
-    and Signal Processing (ICASSP)
-  date: '2024-04-14'
-  link: https://doi.org/gt483q
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:85582539
-  title: Web of Science
+  - Tom Gedeon
+  - Liang Zheng
+  publisher: European Conference on Computer Vision
+  date: '2023-01-01'
+  link: https://doi.org/gt6h5x
+  image: images/paper/doi_10_48550_arXiv_2310_05615.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: arXiv:2402.03019v4
+  title: Taylor Videos for Action Recognition
   authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:85582539
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
+  publisher: International Conference on Machine Learning
+  date: '2024-02-05'
+  link: https://arxiv.org/abs/2402.03019v4
+  image: images/paper/arXiv_2402_03019v4.png
+  buttons:
+  - type: source
+    link: https://github.com/LeiWangR/video-ar
+    text: Code
+  - text: Poster
+    link: https://leiwangr.github.io/files/icml24-poster.pdf
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1109/ICASSP48485.2024.10446900
   title: High-Order Tensor Pooling with Attention for Action Recognition
   authors:
@@ -46,39 +139,134 @@
     and Signal Processing (ICASSP)
   date: '2024-04-14'
   link: https://doi.org/gt483r
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.25911/7BS0-6522
-  title: Robust Human Action Modelling
+  image: images/paper/doi_10_1109_ICASSP48485_2024_10446900.png
+  buttons:
+  - type: source
+    link: https://github.com/LeiWangR/HoTP
+    text: Code
+  - text: Slides
+    link: https://leiwangr.github.io/files/icassp24_hot_lecture.pdf
+  - text: Appendix
+    link: https://leiwangr.github.io/files/icassp24_hop_suppl.pdf
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2310.10059
+  title: Flow Dynamics Correction for Action Recognition
   authors:
   - Lei Wang
-  publisher: The Australian National University
+  - Piotr Koniusz
+  publisher: IEEE International Conference on Acoustics, Speech, and Signal Processing
   date: '2023-01-01'
-  link: https://doi.org/gt483s
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.13140/RG.2.2.11636.53128/1
-  title: 'AI in Software Engineering: Case Studies and Prospects'
+  link: https://doi.org/gt6jbd
+  image: images/paper/doi_10_48550_arXiv_2310_10059.png
+  buttons:
+  - text: Poster
+    link: https://leiwangr.github.io/files/icassp24_hal_poster.pdf
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/CVPR52729.2023.00544
+  title: '3Mformer: Multi-order Multi-mode Transformer for Skeletal Action Recognition'
   authors:
   - Lei Wang
-  publisher: University of Western Australia
-  date: '2017-01-01'
-  link: https://doi.org/gt483t
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
-- id: 'doi: https://doi.org/10.48550/arXiv.2112.08626'
-  title: Analysis and Evaluation of Kinect-based Action Recognition Algorithms
+  - Piotr Koniusz
+  publisher: 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2023-06-01'
+  link: https://doi.org/gt6jbf
+  image: images/paper/doi_10_1109_CVPR52729_2023_00544.png
+  buttons:
+  - text: Poster
+    link: https://leiwangr.github.io/files/cvpr23-poster.pdf
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-26316-3_19
+  title: "Temporal-Viewpoint Transportation Plan for\_Skeletal Few-Shot Action Recognition"
   authors:
   - Lei Wang
-  publisher: ''
-  date: '2021-01-01'
-  link: https://doi.org/ https://doi.org/10.48550/arxiv.2112.08626
-  orcid: 0000-0002-8600-7099
-  plugin: orcid.py
-  file: orcid.yaml
+  - Piotr Koniusz
+  publisher: Asian Conference on Computer Vision
+  date: '2023-01-01'
+  link: https://doi.org/gt6h97
+  image: images/paper/doi_10_1007_978_3_031_26316_3_19.png
+  buttons:
+  - text: Award Certificate
+    link: https://leiwangr.github.io/files/ACCV2022_Best%20Student%20Paper%20Award.pdf
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-19803-8_11
+  title: "Uncertainty-DTW for\_Time Series and\_Sequences"
+  authors:
+  - Lei Wang
+  - Piotr Koniusz
+  publisher: European Conference on Computer Vision
+  date: '2022-01-01'
+  link: https://doi.org/gt6h96
+  image: images/paper/doi_10_1007_978_3_031_19803_8_11.png
+  buttons:
+  - text: Code
+    type: source
+    link: https://github.com/LeiWangR/uDTW
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3474085.3475572
+  title: Self-supervising Action Recognition by Statistical Moment and Subspace Descriptors
+  authors:
+  - Lei Wang
+  - Piotr Koniusz
+  publisher: Proceedings of the 29th ACM International Conference on Multimedia
+  date: '2021-10-17'
+  link: https://doi.org/gt6jbg
+  image: images/paper/doi_10_1145_3474085_3475572.png
+  buttons:
+  - text: Code
+    type: source
+    link: https://github.com/LeiWangR/ODFSDF
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICCV.2019.00879
+  title: Hallucinating IDT Descriptors and I3D Optical Flow Features for Action Recognition
+    With CNNs
+  authors:
+  - Lei Wang
+  - Piotr Koniusz
+  - Du Huynh
+  publisher: 2019 IEEE/CVF International Conference on Computer Vision (ICCV)
+  date: '2019-10-01'
+  link: https://doi.org/ghfg6p
+  image: images/paper/doi_10_1109_ICCV_2019_00879.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICIP.2019.8803051
+  title: Loss Switching Fusion with Similarity Search for Video Classification
+  authors:
+  - Lei Wang
+  - Du Q. Huynh
+  - Moussa Reda Mansour
+  publisher: 2019 IEEE International Conference on Image Processing (ICIP)
+  date: '2019-09-01'
+  link: https://doi.org/gt6jbk
+  image: images/paper/doi_10_1109_ICIP_2019_8803051.png
+  buttons:
+  - text: Dataset
+    type: source
+    link: https://github.com/LeiWangR/LSFNet
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/arXiv.2402.04857
   title: 'Advancing Video Anomaly Detection: A Concise Review and a New Dataset'
   authors:
@@ -90,33 +278,15 @@
   publisher: arXiv
   date: '2024-01-01'
   link: https://doi.org/gt3q3r
-  image: https://msad-dataset.github.io/resources/images/dataset_samples.png
+  image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
   - type: website
     link: http://msad-dataset.github.io/
   status:
-  - under review
-  tags: null
+  - preprint
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.48550/arXiv.2402.03019
-  title: Taylor Videos for Action Recognition
-  authors:
-  - Lei Wang
-  - Xiuyuan Yuan
-  - Tom Gedeon
-  - Liang Zheng
-  publisher: arXiv
-  date: '2024-01-01'
-  link: https://doi.org/gt3q6q
-  image: images/paper/taylor-paper-thumb.png
-  buttons:
-  - type: source
-    link: https://github.com/LeiWangR/video-ar/tree/main
-  tags: null
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.48550/arXiv.2407.03179
+- id: arXiv:2407.03179
   title: 'Motion meets Attention: Video Motion Prompts'
   authors:
   - Qixiang Chen
@@ -124,11 +294,67 @@
   - Piotr Koniusz
   - Tom Gedeon
   publisher: arXiv
-  date: '2024-01-01'
-  link: https://doi.org/gt374c
+  date: '2024-07-04'
+  link: https://arxiv.org/abs/2407.03179
+  image: images/paper/arXiv_2407_03179.png
+  buttons:
+  - type: website
+    link: https://q1xiangchen.github.io/motion-prompts/
   status:
-  - under review
-  tags:
-  - pre-print
+  - preprint
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2405.10718
+  title: 'SignLLM: Sign Languages Production Large Language Models'
+  authors:
+  - Sen Fang
+  - Lei Wang
+  - Ce Zheng
+  - Yapeng Tian
+  - Chen Chen
+  publisher: arXiv
+  date: '2024-05-20'
+  link: https://arxiv.org/abs/2405.10718
+  image: images/paper/arxiv_2405_10718.png
+  buttons:
+  - type: website
+    link: https://signllm.github.io/
+  status:
+  - preprint
+  plugin: sources.py
+  file: sources.yaml
+- id: arXiv:2404.13016
+  title: Optimizing Calibration by Gaining Aware of Prediction Correctness
+  authors:
+  - Yuchi Liu
+  - Lei Wang
+  - Yuli Zou
+  - James Zou
+  - Liang Zheng
+  publisher: arXiv
+  date: '2024-04-26'
+  link: https://arxiv.org/abs/2404.13016
+  image: images/paper/arXiv_2404_13016.png
+  buttons:
+  - type: source
+    text: Code
+    link: https://github.com/liuyvchi/Correctness-aware-calibration
+  status:
+  - preprint
+  plugin: sources.py
+  file: sources.yaml
+- id: arXiv:2112.12668
+  title: "3D Skeleton-based Few-shot Action Recognition with JEANIE is not so Na\xEF\
+    ve"
+  authors:
+  - Lei Wang
+  - Jun Liu
+  - Piotr Koniusz
+  publisher: arXiv
+  date: '2021-12-24'
+  link: https://arxiv.org/abs/2112.12668
+  image: images/paper/arXiv_2112_12668.png
+  status:
+  - preprint
   plugin: sources.py
   file: sources.yaml

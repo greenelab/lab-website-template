@@ -16,29 +16,197 @@
 #     - collaboration
 #   repo: greenelab/meta-review
 
+
+##### Dr. Wang Papers #####
+
+# Meet JEANIE
+- id: doi:10.1007/s11263-024-02070-2
+  image: images/paper/doi_10_1007_s11263_024_02070_2.png
+  buttons:
+    - type: source
+      text: Code
+      link: https://github.com/LeiWangR/JEANIE
+  status:
+    - published
+
+# Fusing Higher-Order Features
+- id: doi:10.1109/TNNLS.2022.3201518
+  image: images/paper/doi_10_1109_TNNLS_2022_3201518.png
+  status:
+    - published
+
+# Tensor Representations for Action Recognition
+- id: doi:10.1109/TPAMI.2021.3107160
+  image: images/paper/TPAMI_2021_3107160.png
+  status:
+    - published
+    
+# A Comparative Review
+- id: doi:10.1109/TIP.2019.2925285
+  image: images/paper/doi_10_1109_TIP_2019_2925285.png
+  buttons:
+    - type: source
+      link: https://github.com/LeiWangR/HDG
+      text: Dataset & Code
+  status:
+    - published
+
+# SATO
+- id: arXiv:2405.01461
+  image: images/paper/arXiv_2405_01461.png
+  publisher: ACM Multimedia
+  buttons:
+    - type: source
+      link: https://github.com/sato-team/Stable-Text-to-motion-Framework
+      text: Code
+    - type: website
+      link: https://sato-team.github.io/Stable-Text-to-Motion-Framework/
+  status:
+    - published
+
+# Adaptive Multi-head Contrastive Learning  
+- id: doi:10.48550/arXiv.2310.05615
+  publisher: European Conference on Computer Vision
+  image: images/paper/doi_10_48550_arXiv_2310_05615.png
+  status:
+    - published
+
+# Taylor Videos for Action Recognition
+- id: arXiv:2402.03019v4
+  image: images/paper/arXiv_2402_03019v4.png
+  publisher: International Conference on Machine Learning
+  buttons:
+    - type: source
+      link: https://github.com/LeiWangR/video-ar
+      text: Code
+    - text: Poster
+      link: https://leiwangr.github.io/files/icml24-poster.pdf
+  status:
+    - published
+
+# High-order Tensor Pooling with Attention for Action Recognition
+- id: doi:10.1109/ICASSP48485.2024.10446900
+  image: images/paper/doi_10_1109_ICASSP48485_2024_10446900.png
+  buttons:
+    - type: source
+      link: https://github.com/LeiWangR/HoTP
+      text: Code
+    - text: Slides
+      link: https://leiwangr.github.io/files/icassp24_hot_lecture.pdf
+    - text: Appendix
+      link: https://leiwangr.github.io/files/icassp24_hop_suppl.pdf
+  status:
+    - published
+
+# Flow Dynamics Correction for Action Recognition
+- id: doi:10.48550/arXiv.2310.10059
+  image: images/paper/doi_10_48550_arXiv_2310_10059.png
+  publisher: IEEE International Conference on Acoustics, Speech, and Signal Processing
+  buttons:
+    - text: Poster
+      link: https://leiwangr.github.io/files/icassp24_hal_poster.pdf
+  status:
+    - published
+
+# 3Mformer
+- id: doi:10.1109/CVPR52729.2023.00544
+  image: images/paper/doi_10_1109_CVPR52729_2023_00544.png
+  buttons:
+    - text: Poster
+      link: https://leiwangr.github.io/files/cvpr23-poster.pdf
+  status:
+    - published
+
+# Temporal-Viewpoint Transportation
+- id: doi:10.1007/978-3-031-26316-3_19
+  image: images/paper/doi_10_1007_978_3_031_26316_3_19.png
+  publisher: Asian Conference on Computer Vision
+  buttons:
+    - text: Award Certificate
+      link: https://leiwangr.github.io/files/ACCV2022_Best%20Student%20Paper%20Award.pdf
+  status:
+    - published
+
+# Uncertainty-DTW for Time Series and Sequences
+- id: doi:10.1007/978-3-031-19803-8_11
+  image: images/paper/doi_10_1007_978_3_031_19803_8_11.png
+  publisher: European Conference on Computer Vision
+  buttons:
+    - text: Code
+      type: source
+      link: https://github.com/LeiWangR/uDTW
+  status:
+    - published
+
+# Self-supervising Action Recognition
+- id: doi:10.1145/3474085.3475572
+  image: images/paper/doi_10_1145_3474085_3475572.png
+  buttons:
+    - text: Code
+      type: source
+      link: https://github.com/LeiWangR/ODFSDF
+  status:
+    - published
+
+# Hallucinating IDT Descriptors
+- id: doi:10.1109/ICCV.2019.00879
+  image: images/paper/doi_10_1109_ICCV_2019_00879.png
+  status:
+    - published
+
+# Loss Switching Fusion
+- id: doi:10.1109/ICIP.2019.8803051
+  image: images/paper/doi_10_1109_ICIP_2019_8803051.png
+  buttons:
+    - text: Dataset
+      type: source
+      link: https://github.com/LeiWangR/LSFNet
+  status:
+    - published
+
+
+##### Preprints #####
+
 # MSAD Dataset
 - id: doi:10.48550/arXiv.2402.04857
-  image: https://msad-dataset.github.io/resources/images/dataset_samples.png
+  image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
     - type: website
       link: http://msad-dataset.github.io/
   status:
-    - under review
-  tags:
-    # - pre-print
-    # - anomaly detection
-    # - dataset
+    - preprint
     
-- id: doi:10.48550/arXiv.2402.03019
-  image: images/paper/taylor-paper-thumb.png
+# Motion meets Attention
+- id: arXiv:2407.03179
+  image: images/paper/arXiv_2407_03179.png
+  buttons:
+    - type: website
+      link: https://q1xiangchen.github.io/motion-prompts/
+  status:
+    - preprint
+
+# SignLLM
+- id: arxiv:2405.10718
+  image: images/paper/arxiv_2405_10718.png
+  buttons:
+    - type: website
+      link: https://signllm.github.io/
+  status:
+    - preprint
+
+# Optimizing Calibration
+- id: arXiv:2404.13016
+  image: images/paper/arXiv_2404_13016.png
   buttons:
     - type: source
-      link: https://github.com/LeiWangR/video-ar/tree/main
-  tags:
-    # - A*
-    # - published
-- id: doi:10.48550/arXiv.2407.03179
+      text: Code
+      link: https://github.com/liuyvchi/Correctness-aware-calibration
   status:
-    - under review
-  tags:
-    - pre-print
+    - preprint
+
+# 3D Skeleton-based Few-shot
+- id: arXiv:2112.12668
+  image: images/paper/arXiv_2112_12668.png
+  title: 3D Skeleton-based Few-shot Action Recognition with JEANIE is not so Naïve
+  status:
+    - preprint

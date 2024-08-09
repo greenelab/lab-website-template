@@ -1,7 +1,7 @@
 ---
 title: Publication
 nav:
-  order: 1
+  order: 2
   tooltip: Published works
 ---
 
@@ -9,16 +9,30 @@ nav:
 
 Explore our latest contributions to the forefront of video motion analysis field through our publications.
 
-{% include section.html %}
+{%
+  include button.html
+  link="research/#published"
+  text="Published Papers"
+  tooltip="Published works"
+%}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{%
+  include button.html
+  link="research/#preprints"
+  text="Preprint Papers"
+  tooltip="Preprint Papers"
+  flip=true
+%}
+
+{% include section.html %}
 
 
 ## Published
 
-{% include list.html data="citations" component="citation" style="rich" filters="tags: published"%}
+{% include list.html data="citations" component="citation" style="rich" filters="status: published"%}
 
+{% include section.html %}
 
-## Pre prints
+## Preprints
 
-{% include list.html data="citations" component="citation" style="rich" filters="status: under review"%}
+{% include list.html data="citations" component="citation" style="rich" filters="status: preprint"%}
