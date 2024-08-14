@@ -1,6 +1,8 @@
 ---
 ---
 
+<meta name="google-site-verification" content="Web1hGDAfhZ7N9BVIZbXN4T_-kxDhAMhzMdR-SQH5uY" />
+
 #### Time is the key to understanding the movements and rhythms of everyday life. 
 
 #### By watching how things happen over time, you can see the patterns and routines that shape our world. 
@@ -30,7 +32,7 @@ We study the movements and activities captured in everyday videos. By looking cl
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/about/taylor-video.gif"
   link="research"
   title="Our Research"
   text=text
@@ -78,7 +80,7 @@ Our team comprises ANU honors and master’s students who are both passionate an
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team/group/group-photo-1.jpg"
   link="team"
   title="Our Team"
   text=text
