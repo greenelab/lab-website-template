@@ -22,7 +22,8 @@ passion for exploration and camaraderie.
 {% capture content %}
 
 {% include figure.html image="images/team/team-photo-1.jpg" %}
-{% include figure.html image="images/team/group/group-video-1.gif" %}
+{% include figure.html image="images/team/group/group-video-1.gif" width="100%" %}
+{% include figure.html image="images/team/group/group-photo-2.jpg" %}
 
 {% endcapture %}
 

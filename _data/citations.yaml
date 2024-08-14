@@ -358,3 +358,48 @@
   - preprint
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.20944/preprints202407.1674.v1
+  title: Augmented Feature Diffusion on Sparsely Sampled Subgraph
+  authors:
+  - Xinyue Wu
+  - Huilin Chen
+  publisher: MDPI AG
+  date: '2024-07-22'
+  link: https://doi.org/gt635c
+  image: images/paper/doi_10_20944_preprints202407_1674_v1.png
+  status:
+  - preprint
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3390/math12101581
+  title: A Negative Sample-Free Graph Contrastive Learning Algorithm
+  authors:
+  - Dongming Chen
+  - Mingshuo Nie
+  - Zhen Wang
+  - Huilin Chen
+  - Dongqi Wang
+  publisher: Mathematics
+  date: '2024-05-18'
+  link: https://doi.org/gt635d
+  image: images/paper/doi_10_3390_math12101581.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3390/math12081269
+  title: Link Prediction and Graph Structure Estimation for Community Detection
+  authors:
+  - Dongming Chen
+  - Mingshuo Nie
+  - Fei Xie
+  - Dongqi Wang
+  - Huilin Chen
+  publisher: Mathematics
+  date: '2024-04-22'
+  link: https://doi.org/gt635f
+  image: images/paper/doi_10_3390_math12081269.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml

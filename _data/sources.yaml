@@ -210,3 +210,21 @@
   title: 3D Skeleton-based Few-shot Action Recognition with JEANIE is not so Naïve
   status:
     - preprint
+
+
+##### Huilin #####
+
+- id: doi:10.20944/preprints202407.1674.v1
+  image: images/paper/doi_10_20944_preprints202407_1674_v1.png
+  status:
+    - preprint
+
+- id: doi:10.3390/math12101581
+  image: images/paper/doi_10_3390_math12101581.png
+  status:
+    - published
+
+- id: doi:10.3390/math12081269
+  image: images/paper/doi_10_3390_math12081269.png
+  status:
+    - published
