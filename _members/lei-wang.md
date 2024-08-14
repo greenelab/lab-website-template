@@ -1,6 +1,6 @@
 ---
 name: Dr. Lei Wang
-image: images/team/lei-wang-photo.jpg
+image: images/team/lei-wang-photo-new.jpg
 role: pi
 affiliation: ANU & Data61/CSIRO
 description: Lab Lead
