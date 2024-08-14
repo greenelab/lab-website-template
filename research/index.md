@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
-Explore our latest contributions to the forefront of video motion analysis field through our publications.
+A collection of our work on motion and dynamics.
 
 {%
   include button.html

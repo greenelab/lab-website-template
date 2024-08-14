@@ -1,47 +1,31 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: Active Vision Project
+  subtitle: ANU TechLauncher
+  group: featured
+  image: images/project/active_vision.png
+  link: https://spiral-gambler-bfe.notion.site/Active-Vision-ddddc61c42224236b27140bd5646fbc9?pvs=4
+  description: This project focuses on developing an advanced computer vision system to analyze tennis swings. By leveraging high-speed cameras and machine learning algorithms, it aims to provide players and coaches with detailed insights into swing mechanics, including swing speed, angle, and impact accuracy. The project will deliver real-time feedback and a user-friendly interface for performance tracking.
+
+- title: CAM-FALL Project
+  subtitle: ANU TechLauncher
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  # link: https://github.com/
+  description: The CAM-FALL system aims to enhance safety through a camera-based fall detection and alert system. By identifying falls and providing prompt assistance, the project addresses a crucial safety concern, improving well-being in the community. The project also offers students a comprehensive learning experience in technical skills, problem-solving, and ethical considerations.
 
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
+- title: Robust Human-Centric Anomaly Detection
+  # subtitle: a subtitle
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  # link: https://github.com/
+  description: This project aims to develop advanced techniques for identifying anomalies in videos with a human focus. It seeks to enhance the robustness of detection systems, improve real-time analysis, and incorporate ethical considerations. The technology is intended to advance security, safety, and surveillance systems across various applications.
+  # repo: greenelab/lab-website-template
 
-- title: Cool Tutorial
-  subtitle: a subtitle
+- title: Motion-Centric Video Processing for HSE
+  # subtitle: a subtitle
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
+  # link: https://github.com/
+  description: This project focuses on developing responsible video analytics to improve Health, Safety, and Environment (HSE) practices. We aim to create lightweight video data formats to enhance real-time monitoring, anomaly detection, and scene understanding.
 
-- title: Cool Web App
-  subtitle: a subtitle
+- title: Video dynamics distillation
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+  description: This project focuses on developing lightweight video data formats to improve the efficiency of video processing by reducing redundant information and emphasizing core dynamics. By addressing the challenges associated with large and complex models, the research aims to enhance the extraction of meaningful motion features from videos. The goal is to accelerate training and testing processes while exploring how video data can be optimally represented, making video understanding more effective and opening new avenues for advanced video models.
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software

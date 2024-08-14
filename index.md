@@ -1,8 +1,6 @@
 ---
 ---
 
-<meta name="google-site-verification" content="Web1hGDAfhZ7N9BVIZbXN4T_-kxDhAMhzMdR-SQH5uY" />
-
 #### Time is the key to understanding the movements and rhythms of everyday life. 
 
 #### By watching how things happen over time, you can see the patterns and routines that shape our world. 
@@ -55,7 +53,7 @@ Our projects aim to advance safety and security, future cities, IoT, agribusines
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/project/active_vision.png"
   link="projects"
   title="Our Projects"
   flip=true
