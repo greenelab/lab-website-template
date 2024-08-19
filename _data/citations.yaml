@@ -186,7 +186,7 @@
   link: https://doi.org/c7np
   orcid: 0000-0002-4655-3773
   plugin: sources.py
-  file: sources copy.yaml
+  file: sources.yaml
   type: paper
   description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -228,7 +228,7 @@
   link: https://doi.org/gg7m48
   image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   plugin: sources.py
-  file: sources copy.yaml
+  file: sources.yaml
 - id: doi:10.7554/eLife.32822
   title: Sci-Hub provides access to nearly all scholarly literature
   authors:
@@ -244,4 +244,4 @@
   link: https://doi.org/ckcj
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
   plugin: sources.py
-  file: sources copy.yaml
+  file: sources.yaml
