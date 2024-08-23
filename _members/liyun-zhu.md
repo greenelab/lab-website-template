@@ -4,7 +4,7 @@ name: Liyun Zhu
 image: images/team/liyun-zhu-photo-c.jpg
 role: undergrad
 affiliation: Australian National University
-description: Student
+description: Master's Student
 links:
   email: liyun.zhu@anu.edu.au
 ---

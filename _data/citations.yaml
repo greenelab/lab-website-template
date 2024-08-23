@@ -358,6 +358,20 @@
   - preprint
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1109/ICONAT53423.2022.9726079
+  title: Comparing Computer Resource Usage Through Interpolating Global Ecosystem
+    Dynamics Investigation Light Detection and Ranging Waveform Data
+  authors:
+  - Arjun Raj
+  - Andrew Charles Baker
+  publisher: 2022 International Conference for Advancement in Technology (ICONAT)
+  date: '2022-01-21'
+  link: https://doi.org/gt7p38
+  image: images/paper/doi_10_1109_ICONAT53423.2022.9726079.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.20944/preprints202407.1674.v1
   title: Augmented Feature Diffusion on Sparsely Sampled Subgraph
   authors:
@@ -399,6 +413,19 @@
   date: '2024-04-22'
   link: https://doi.org/gt635f
   image: images/paper/doi_10_3390_math12081269.png
+  status:
+  - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3390/electronics13163249
+  title: Augmented Feature Diffusion on Sparsely Sampled Subgraph
+  authors:
+  - Xinyue Wu
+  - Huilin Chen
+  publisher: Electronics
+  date: '2024-08-15'
+  link: https://doi.org/gt7p3t
+  image: images/paper/doi_10_3390_electronics13163249.png
   status:
   - published
   plugin: sources.py

@@ -4,7 +4,7 @@ name: Huilin Chen
 image: images/team/huilin-chen-photo-c.jpg
 role: undergrad
 affiliation: Australian National University
-description: Student
+description: Honours Student
 links:
 ---
 

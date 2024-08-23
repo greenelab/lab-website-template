@@ -4,7 +4,7 @@ name: Dexuan Ding
 image: images/team/dexuan-ding-photo-c.jpg
 role: undergrad
 affiliation: Australian National University
-description: Student
+description: Honours Student
 links:
 ---
 

@@ -8,8 +8,8 @@ links:
   home-page: https://leiwangr.github.io/
   email: lei.w@anu.edu.au
   orcid: 0000-0002-8600-7099
-  google-scholar: https://scholar.google.com/citations?user=VWCZLXgAAAAJ&hl=en
-  linkedin: https://www.linkedin.com/in/lei-l-wang/
+  google-scholar: VWCZLXgAAAAJ&hl=en
+  linkedin: lei-l-wang
 ---
 
 Lei Wang serves as a Research Fellow at the School of Computing, within the ANU College of Engineering, Computing, and Cybernetics. He is under the guidance of Assoc. Prof. Liang Zheng (ANU) and Prof. Tom Gedeon (Curtin University).
