@@ -4,10 +4,10 @@ name: Jushang Qiu
 image: images/team/jushang-qiu-photo.jpg
 role: undergrad
 affiliation: Australian National University
-description: Student
+description: Master's Student
 links:
     email: jushang.qiu@anu.edu.au
-    linkedin: https://www.linkedin.com/in/jushang-qiu-506247181/
+    linkedin: jushang-qiu-506247181
 ---
 
 Working on dynamics distillation for scalable models

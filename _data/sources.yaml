@@ -211,6 +211,13 @@
   status:
     - preprint
 
+# Comparing Computer Resource Usage
+- id: doi:10.1109/ICONAT53423.2022.9726079
+  image: images/paper/doi_10_1109_ICONAT53423.2022.9726079.png
+  status:
+    - published
+
+
 
 ##### Huilin #####
 
@@ -226,5 +233,15 @@
 
 - id: doi:10.3390/math12081269
   image: images/paper/doi_10_3390_math12081269.png
+  status:
+    - published
+
+- id: doi:10.3390/math12081269
+  image: images/paper/doi_10_3390_math12081269.png
+  status:
+    - published
+
+- id: doi:10.3390/electronics13163249
+  image: images/paper/doi_10_3390_electronics13163249.png
   status:
     - published

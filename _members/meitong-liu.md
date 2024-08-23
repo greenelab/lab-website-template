@@ -4,7 +4,7 @@ name: Meitong Liu
 image: images/team/meitong-liu-photo.jpeg
 role: ment
 affiliation: Australian National University
-description: Student
+description: Master's Student
 links:
     email: meitong.liu@anu.edu.au
 ---

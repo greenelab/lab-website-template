@@ -96,6 +96,36 @@ Our team comprises ANU honors and master’s students who are both passionate an
 
 {%
   include alert.html
+  type="info"
+  content="02/08/2024: Arjun Raj has commenced his academic research project under Dr. Lei Wang's supervision. Many thanks to Arjun Raj and the research team for establishing the Temporal Intelligence and Motion Extraction (TIME) Lab."
+%}
+
+{%
+  include alert.html
+  type="info"
+  content="29/07/2024: Yifan Chen and Gennie Nguyen have commenced their final year research project under Dr. Lei Wang's supervision."
+%}
+
+{%
+  include alert.html
+  type="info"
+  content="22/07/2024: Dr. Lei Wang's proposed project, “Active Vision,” has been officially included in the 2024 Techlauncher program. Mr. Francis Williams will be the client for this project. Arjun Raj will act as the ‘delegated client’ at ANU on behalf of Lei Wang."
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="16/07/2024: One paper has been accepted at ACM-MM 2024. Congratulations to Wenshuo Chen, Hongru Xiao, and Erhang Zhang."
+%}
+
+{%
+  include alert.html
+  type="info"
+  content="27/05/2024: The MDPI open-access journal Electronics [Q2, h-index 83] has a special issue on ‘Motion-centric Video Processing’ (Guest Editors: Dr. Lei Wang, Prof. Tom Gedeon, Dr. Zhenyue Qin) now open for submission. The deadline for manuscript submissions is 15 December, 2024. Interested authors are encouraged to contact me for more details."
+%}
+
+{%
+  include alert.html
   type="success"
   content="02/05/2024: One paper has been accepted at ICML 2024. Congratulations to Summer Scholar Xiuyuan (Jack) Yuan!"
 %}
@@ -103,7 +133,19 @@ Our team comprises ANU honors and master’s students who are both passionate an
 {%
   include alert.html
   type="info"
+  content="22/02/2024: Dr. Lei Wang's proposed project, “ActiveIntelligence: CAM-FALL (Camera-based Fall Alert System),” has been officially included in the 2024 Techlauncher program. Mr. Francis Williams, representing Active Intelligence Corp., will be the client for this project. Jushang Qiu will act as the ‘delegated client’ at ANU on behalf of Lei Wang."
+%}
+
+{%
+  include alert.html
+  type="info"
   content="19/02/2024: Dr Lei Wang is the primary supervisor for six ANU students: Dexuan Ding, Qixiang Chen, Huilin Chen, Liyun Zhu, Jushang Qiu, and Liwen Luo."
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="02/02/2024: Congratulations to Xiuyuan (Jack) Yuan for successfully completing the ‘Video Dynamics Distillation’ project for the ANU Summer Scholars Program!"
 %}
 
 {%
