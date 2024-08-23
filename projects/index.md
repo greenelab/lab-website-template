@@ -5,7 +5,7 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Project
 
 Our projects aim to advance safety and security, future cities, IoT, agribusiness, and defense, with applications in health and innovative industries. We focus on developing technologies for real-time analysis and efficient data processing to enhance safety and performance across various domains.
 

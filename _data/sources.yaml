@@ -172,7 +172,7 @@
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
     - type: website
-      link: http://msad-dataset.github.io/
+      link: /paper-sites/msad
   status:
     - preprint
     
@@ -181,7 +181,7 @@
   image: images/paper/arXiv_2407_03179.png
   buttons:
     - type: website
-      link: https://q1xiangchen.github.io/motion-prompts/
+      link: /paper-sites/motion-prompts
   status:
     - preprint
 

@@ -1,7 +1,7 @@
 ---
 title: Contact
 nav:
-  order: 5
+  order: 6
   tooltip: Email, address, and location
 ---
 
@@ -17,10 +17,10 @@ Please contact our lab email for any enquires.
 %}
 
 
-{%
+<!-- {%
   include button.html
   type="address"
   text="Brian Anderson Building"
   tooltip="Our location on Google Maps for easy navigation"
   link="https://maps.app.goo.gl/T5MHmSzTYZ2CXUnD8"
-%}
+%} -->

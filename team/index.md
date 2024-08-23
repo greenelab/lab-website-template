@@ -1,30 +1,18 @@
 ---
 title: Team
 nav:
-  order: 3
+  order: 5
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}Our Team
 
 
 {% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
-
-{% include section.html background="images/background.jpg" dark=true %}
-
-Welcome to our vibrant lab community where collaboration extends beyond research. 
-Alongside groundbreaking publications and impactful projects, we embrace a shared 
-passion for exploration and camaraderie.
+{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)(?!alum$)" %}
 
 {% include section.html %}
 
-{% capture content %}
+# {% include icon.html icon="fa-solid fa-users" %}Alumni
 
-{% include figure.html image="images/team/team-photo-1.jpg" %}
-{% include figure.html image="images/team/group/group-video-1.gif" width="100%" %}
-{% include figure.html image="images/team/group/group-photo-2.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+{% include list.html data="members" component="portrait" style="small" filters="role: alum" %}

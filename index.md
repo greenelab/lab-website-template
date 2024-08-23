@@ -83,3 +83,37 @@ Our team comprises ANU honors and master’s students who are both passionate an
   title="Our Team"
   text=text
 %}
+
+{% include section.html %}
+
+## News Updates
+
+{%
+  include alert.html
+  type="success"
+  content="16/08/2024: Congratulations to Liyun Zhu on having his research accepted for presentation at ANU’s Student Research Conference (SRC)!"
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="02/05/2024: One paper has been accepted at ICML 2024. Congratulations to Summer Scholar Xiuyuan (Jack) Yuan!"
+%}
+
+{%
+  include alert.html
+  type="info"
+  content="19/02/2024: Dr Lei Wang is the primary supervisor for six ANU students: Dexuan Ding, Qixiang Chen, Huilin Chen, Liyun Zhu, Jushang Qiu, and Liwen Luo."
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="19/09/2023: Congratulations to Arjun Raj, Liyun Zhu, Liwen Luo, and Qixiang Chen, who were awarded the Active Intelligence Research Challenge Award as four master’s/honors students! Thanks to the research sponsorship provided by Active Intelligence Corp."
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="18/09/2023: Congratulations to Xiuyuan (Jack) Yuan for being awarded the Summer Research Internship! Thanks to the ANU School of Computing for providing research funding."
+%}

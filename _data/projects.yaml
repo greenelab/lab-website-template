@@ -8,8 +8,8 @@
 - title: CAM-FALL Project
   subtitle: ANU TechLauncher
   group: featured
-  image: images/photo.jpg
-  # link: https://github.com/
+  image: images/project/cam-fall.png
+  link: https://sites.google.com/view/camfall/home
   description: The CAM-FALL system aims to enhance safety through a camera-based fall detection and alert system. By identifying falls and providing prompt assistance, the project addresses a crucial safety concern, improving well-being in the community. The project also offers students a comprehensive learning experience in technical skills, problem-solving, and ethical considerations.
 
 - title: Robust Human-Centric Anomaly Detection

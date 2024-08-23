@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Paper Sites
 nav:
   order: 6
@@ -22,4 +22,4 @@ nav:
   link="/paper-sites/motion-prompts"
   title="Motion meets Attention: Video Motion Prompts"
   subtitle="Qixiang Chen, Lei Wang, Piotr Koniusz, Tom Gedeon"
-%}
+%} -->
