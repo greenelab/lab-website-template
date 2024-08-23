@@ -12,10 +12,10 @@ links:
   # orcid: 0000-0001-8713-9213
   # google-scholar: ETJoidYAAAAJ
   # github: time-lab-anuDESCRIPTION=An engaging 1-3 sentence description of your lab.
-  instagram: https://www.instagram.com/time.anu/
-  linkedin: https://www.linkedin.com/in/time-lab-978244323/
-  twitter: https://x.com/TIME_Lab_ANU
-  youtube: https://www.youtube.com/@time-anu
+  instagram: time.anu
+  linkedin: time-lab-978244323
+  twitter: TIME_Lab_ANU
+  youtube: /@time-anu
 
 ### jekyll settings
 

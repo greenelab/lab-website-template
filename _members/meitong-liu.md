@@ -2,7 +2,7 @@
 name: Meitong Liu
 
 image: images/team/meitong-liu-photo.jpeg
-role: undergrad
+role: ment
 affiliation: Australian National University
 description: Student
 links:

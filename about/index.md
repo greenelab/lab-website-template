@@ -22,11 +22,17 @@ nav:
   flip=true
 %}
 
-{%
-  include section.html
-%}
+{% include section.html background="images/activity/gp-8.jpg" dark="true" %}
 
 ## Story
+
+TIME Lab is a dynamic research team composed of master's and honours students from ANU, engaged in final-year research projects under the expert guidance of Dr. Lei Wang. Established in February 2024, our team is dedicated to advancing the fields of video processing, dynamics, and motion analysis, addressing both academic challenges and industry needs.
+
+Our research spans diverse domains, with a particular focus on enhancing safety, security, future cities, IoT, agribusiness, and defence, including applications in health and innovative industries. We are committed to developing cutting-edge techniques for real-time analysis and efficient video data processing to improve performance and safety across these areas.
+
+Time Lab members have forged strong collaborations with industry leaders like Active Intelligence Corp. in Western Australia, CSIRO's Data61, and have built academic partnerships with institutions such as the University of Central Florida and Curtin University.
+
+We are a team driven by passion, discipline, and a strong work ethic, expertly balancing our commitments to work, study, and life. United by our belief in making meaningful contributions to science, we strive to push the boundaries of knowledge, one step at a time.
 
 
 {%
