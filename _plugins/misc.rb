@@ -18,17 +18,17 @@ module Jekyll
       return object
     end
 
-    # filter a list of hashes by comma-sep'd field:value pairs
+ 
     def empty_binding
       binding
     end
 
     # make arbitrary string into valid ruby variable name
     def safe_var_name(name)
-      return name.to_s.gsub /[^a-z]+/, "_"
+      return name.to_s.gsub(/[^a-z]+/i, "_").gsub(/^_|_$/, "")
     end
 
-    # jekyll ruby plugin
+    # filter a list of hashes
     def data_filter(data, filter)
       if not filter.is_a?(String)
         return data
@@ -37,14 +37,14 @@ module Jekyll
       # filter data
       return data.clone.select{
         |item|
-        # start with empty context of local variables
-        b = empty_binding
-        # add item as local variable
-        b.local_variable_set("item", item)
         # if jekyll doc collection, get hash of doc data
         if item.is_a? Jekyll::Document
           item = item.data
         end
+        # start with empty context of local variables
+        b = empty_binding
+        # add item as local variable
+        b.local_variable_set("item", item)
         # also set each item field as local variable when evaluating filter
         item.each do |var, val|
           b.local_variable_set(safe_var_name(var), val)
@@ -53,12 +53,12 @@ module Jekyll
         keep = true
         while true
           begin
-            # evaluate filter code, coerce to true/false
+            # evaluate expression as true/false
             keep = !!eval(filter, b)
-            # if no error, done
             break
+          # if a var in expression isn't a field on item
           rescue NameError => e
-            # if var in filter doesn't exist, define it and re-evaluate
+            # define it and re-evaluate
             b.local_variable_set(safe_var_name(e.name), nil)
           end
         end
