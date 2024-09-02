@@ -81,3 +81,143 @@ passion for exploration and camaraderie.
 {% endcapture %}
 
 {% include grid.html style="square" content=content %}
+
+More...
+
+<div class="gallery-container">
+    <div class="gallery" id="gallery">
+        <!-- JavaScript will populate this -->
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery-container {
+        max-width: 60%;
+        width: 100%;
+        max-height: 50vh; /* Set a fixed max height in viewport units to maintain aspect ratio */
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery-item {
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .gallery img, .gallery video {
+        width: 100%; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center; /* Centers the image in the container */
+    }
+</style>
+
+<script>
+const mediaFiles = [
+    { type: 'image', src: '/images/activity/gp-1.jpg', alt: 'Image 1' },
+    { type: 'image', src: '/images/activity/gp-2.jpg', alt: 'Image 2' },
+    { type: 'image', src: '/images/activity/gp-3.jpg', alt: 'Image 3' },
+    { type: 'image', src: '/images/activity/gp-4.jpg', alt: 'Image 4' },
+    { type: 'image', src: '/images/activity/gp-5.jpg', alt: 'Image 5' },
+    { type: 'image', src: '/images/activity/gp-6.jpg', alt: 'Image 6' },
+    { type: 'image', src: '/images/activity/gp-7.jpg', alt: 'Image 7' },
+    { type: 'image', src: '/images/activity/gp-8.jpg', alt: 'Image 8' },
+    { type: 'image', src: '/images/activity/gp-9.jpg', alt: 'Image 9' },
+    { type: 'image', src: '/images/activity/gp-10.jpg', alt: 'Image 10' },
+    { type: 'image', src: '/images/activity/gp-11.jpg', alt: 'Image 11' },
+    { type: 'image', src: '/images/activity/gp-12.jpg', alt: 'Image 12' },
+    { type: 'image', src: '/images/activity/gp-13.jpg', alt: 'Image 13' },
+    { type: 'image', src: '/images/activity/gp-14.jpg', alt: 'Image 14' },
+    { type: 'image', src: '/images/activity/gp-15.jpg', alt: 'Image 15' },
+    { type: 'image', src: '/images/activity/gp-16.jpg', alt: 'Image 16' },
+    { type: 'image', src: '/images/activity/gp-17.jpg', alt: 'Image 17' },
+    { type: 'image', src: '/images/activity/gp-18.jpg', alt: 'Image 18' },
+    { type: 'image', src: '/images/activity/gp-19.jpg', alt: 'Image 19' },
+    { type: 'image', src: '/images/activity/gp-20.jpg', alt: 'Image 20' },
+    { type: 'image', src: '/images/activity/gp-21.jpg', alt: 'Image 21' },
+    { type: 'image', src: '/images/activity/gp-22.jpg', alt: 'Image 22' },
+    { type: 'image', src: '/images/activity/gp-23.jpg', alt: 'Image 23' },
+    { type: 'image', src: '/images/activity/gp-24.jpg', alt: 'Image 24' },
+    { type: 'image', src: '/images/activity/gp-25.jpg', alt: 'Image 25' },
+    { type: 'image', src: '/images/activity/gp-26.jpg', alt: 'Image 26' },
+    { type: 'image', src: '/images/activity/gp-27.jpg', alt: 'Image 27' },
+    { type: 'image', src: '/images/activity/gp-28.jpg', alt: 'Image 28' },
+    { type: 'image', src: '/images/activity/gp-29.jpg', alt: 'Image 29' },
+    { type: 'video', src: '/images/activity/gv-1.gif' },
+    { type: 'video', src: '/images/activity/gv-2.gif' },
+    { type: 'video', src: '/images/activity/gv-3.mp4' },
+    { type: 'video', src: '/images/activity/gv-4.mp4' },
+    { type: 'video', src: '/images/activity/gv-5.mp4' },
+    { type: 'video', src: '/images/activity/gv-6.mp4' },
+    { type: 'video', src: '/images/activity/gv-7.mp4' },
+    { type: 'video', src: '/images/activity/gv-8.mp4' },
+    { type: 'video', src: '/images/activity/gv-9.mp4' },
+    { type: 'video', src: '/images/activity/gv-10.mp4' },
+    { type: 'video', src: '/images/activity/gv-11.mp4' },
+    { type: 'video', src: '/images/activity/gv-12.mp4' }
+];
+
+  const gallery = document.getElementById('gallery');
+
+  function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+  }
+
+  // Shuffle the mediaFiles array
+  const shuffledMediaFiles = shuffle(mediaFiles);
+
+  // Populate the gallery
+  shuffledMediaFiles.forEach(file => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+
+      if (file.type === 'image') {
+          const img = document.createElement('img');
+          img.src = file.src;
+          img.alt = file.alt;
+          item.appendChild(img);
+      } else if (file.type === 'video') {
+          const video = document.createElement('video');
+          video.src = file.src;
+          video.autoplay = true;
+          video.loop = true;
+          video.muted = true;
+          video.playsInline = true;
+          item.appendChild(video);
+      }
+
+      gallery.appendChild(item);
+  });
+
+  let currentIndex = 0;
+  const totalItems = mediaFiles.length;
+
+  function scrollToNextItem() {
+      currentIndex = (currentIndex + 1) % totalItems; // Loop back to start
+      const itemWidth = gallery.clientWidth;
+      gallery.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
+
+  setInterval(scrollToNextItem, 5000); // Change item every 5 seconds
+</script>
