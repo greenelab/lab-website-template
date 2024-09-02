@@ -6,7 +6,7 @@ role: undergrad
 affiliation: Australian National University
 description: Master's Student
 links:
-    homepage: gennienguyen.com
+    home-page: gennienguyen.com
     linkedin: gennienguyen10
 ---
 
