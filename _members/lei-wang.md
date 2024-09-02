@@ -4,6 +4,12 @@ image: images/team/lei-wang-photo-new.jpg
 role: pi
 affiliation: ANU & Data61/CSIRO
 description: Lab Lead
+aliases:
+  - L Wang
+  - Lei Wang
+  - Lei W
+  - L. Wang
+  - Lei W.
 links:
   home-page: https://leiwangr.github.io/
   email: lei.w@anu.edu.au

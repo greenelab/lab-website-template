@@ -43,7 +43,7 @@ We are a team driven by passion, discipline, and a strong work ethic, expertly b
 
 {%
   include feature.html
-  image="images/group-photo.jpg"
+  image="images/about/action-recognition.gif"
   title="Action Recognition"
   text="This field focuses on identifying human actions from videos using two main methods: skeleton-based, which tracks body joints to detect movements, and video-based, which analyzes full video frames for detailed context. Advancements include video captioning for generating descriptions, highlighted moment segmentation for pinpointing key events, and sequence matching for recognizing patterns. These innovations aim to provide deeper insights and more accurate understanding of video content."
   flip=true
@@ -51,7 +51,7 @@ We are a team driven by passion, discipline, and a strong work ethic, expertly b
 
 {%
   include feature.html
-  image="images/group-photo.jpg"
+  image="images/about/vad.gif"
   title="Video Anomaly Detection"
   text="Focuses on identifying unusual events in video streams, but existing methods often struggle with limited datasets, camera viewpoints, and scenario diversity. These methods frequently lack generalizability, requiring retraining for new environments, and are vulnerable to factors like lighting changes and complex backgrounds, leading to false positives and negatives. To improve reliability, there’s a need for comprehensive, multi-scenario datasets that better reflect real-world conditions and enhance detection accuracy across diverse surveillance scenarios."
 %}

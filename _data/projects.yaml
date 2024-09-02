@@ -14,18 +14,18 @@
 
 - title: Robust Human-Centric Anomaly Detection
   # subtitle: a subtitle
-  image: images/photo.jpg
+  image: images/project/robust-human-centric-anomaly-detection.jpg
   # link: https://github.com/
   description: This project aims to develop advanced techniques for identifying anomalies in videos with a human focus. It seeks to enhance the robustness of detection systems, improve real-time analysis, and incorporate ethical considerations. The technology is intended to advance security, safety, and surveillance systems across various applications.
   # repo: greenelab/lab-website-template
 
 - title: Motion-Centric Video Processing for HSE
   # subtitle: a subtitle
-  image: images/photo.jpg
+  image: images/project/motion-centric-video-processing-for-hse.jpg
   # link: https://github.com/
   description: This project focuses on developing responsible video analytics to improve Health, Safety, and Environment (HSE) practices. We aim to create lightweight video data formats to enhance real-time monitoring, anomaly detection, and scene understanding.
 
 - title: Video dynamics distillation
-  image: images/photo.jpg
+  image: images/project/video-dynamics-distillation.jpg
   description: This project focuses on developing lightweight video data formats to improve the efficiency of video processing by reducing redundant information and emphasizing core dynamics. By addressing the challenges associated with large and complex models, the research aims to enhance the extraction of meaningful motion features from videos. The goal is to accelerate training and testing processes while exploring how video data can be optimally represented, making video understanding more effective and opening new avenues for advanced video models.
 
