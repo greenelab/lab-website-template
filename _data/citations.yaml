@@ -114,7 +114,11 @@
   file: sources.yaml
 - id: arXiv:2402.03019v4
   title: Taylor Videos for Action Recognition
-  authors: []
+  authors:
+  - L Wang
+  - X Yuan
+  - T Gedeon
+  - L Zheng
   publisher: International Conference on Machine Learning
   date: '2024-02-05'
   link: https://arxiv.org/abs/2402.03019v4
@@ -293,7 +297,7 @@
   - Lei Wang
   - Piotr Koniusz
   - Tom Gedeon
-  publisher: arXiv
+  publisher: Asian Conference on Machine Learning (ACML)
   date: '2024-07-04'
   link: https://arxiv.org/abs/2407.03179
   image: images/paper/arXiv_2407_03179.png
@@ -301,7 +305,7 @@
   - type: website
     link: /paper-sites/motion-prompts
   status:
-  - preprint
+  - published
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2405.10718
