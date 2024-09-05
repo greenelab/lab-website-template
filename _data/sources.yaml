@@ -74,6 +74,11 @@
 # Taylor Videos for Action Recognition
 - id: arXiv:2402.03019v4
   image: images/paper/arXiv_2402_03019v4.png
+  authors:
+    - L Wang
+    - X Yuan
+    - T Gedeon
+    - L Zheng
   publisher: International Conference on Machine Learning
   buttons:
     - type: source
@@ -179,11 +184,12 @@
 # Motion meets Attention
 - id: arXiv:2407.03179
   image: images/paper/arXiv_2407_03179.png
+  publisher: Asian Conference on Machine Learning (ACML)
   buttons:
     - type: website
       link: /paper-sites/motion-prompts
   status:
-    - preprint
+    - published
 
 # SignLLM
 - id: arxiv:2405.10718
