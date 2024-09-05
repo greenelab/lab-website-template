@@ -58,7 +58,7 @@ We are a team driven by passion, discipline, and a strong work ethic, expertly b
 
 {%
   include feature.html
-  image="images/about/taylor-video.gif"
+  image="images/about/video-representation.gif"
   title="Video Representation"
   text="Focuses on exploring new modalities for videos beyond traditional methods like RGB, optical flow, and depth video. A key innovation is Taylor video, which captures dominant motions, leading to more efficient and privacy-conscious representations. This approach reduces redundancy and enhances data efficiency, paving the way for advanced video analysis, storage, and transmission while addressing concerns related to privacy and ethical use of video content."
   flip=true
