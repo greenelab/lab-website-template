@@ -53,7 +53,7 @@
   link: https://doi.org/gs6kmr
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1101/2023.10.11.560955
   title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
   authors:
@@ -69,7 +69,7 @@
   link: https://doi.org/gsvf5z
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1093/nar/gkad289
   title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
     and user-created collections of genes'
@@ -89,7 +89,7 @@
   link: https://doi.org/gr5hb5
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1101/2023.01.05.522941
   title: Hetnet connectivity search provides rapid insights into how two biomedical
     entities are related
@@ -111,7 +111,7 @@
   link: https://doi.org/grmcb9
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1093/gigascience/giad047
   title: Hetnet connectivity search provides rapid insights into how biomedical entities
     are related
@@ -133,7 +133,7 @@
   link: https://doi.org/gsd85n
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1101/2022.02.18.461833
   title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
     and phylogeny'
@@ -155,7 +155,7 @@
   link: https://doi.org/gstx7j
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1186/s13059-020-02021-3
   title: Compressing gene expression data using multiple latent space dimensionalities
     learns complementary biological representations
@@ -170,7 +170,7 @@
   link: https://doi.org/gg2mjh
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1371/journal.pcbi.1007128
   title: Open collaborative writing with Manubot
   authors:
@@ -217,7 +217,7 @@
   link: https://doi.org/gfxjxf
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
-  file: orcid copy.yaml
+  file: orcid.yaml
 - id: doi:10.1016/j.csbj.2020.05.017
   title: Constructing knowledge graphs and their biomedical applications
   authors:
