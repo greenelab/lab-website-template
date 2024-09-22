@@ -13,6 +13,24 @@ The DePasquale lab is located in the [Department of Biomedical Engineering](http
 # Research
 
 {% capture text %}
+Recent advances in machine learning methods for computation chemistry have opened exciting new avenues for understanding olfaction. We have used self-supervised learning to construct robust ML models to predict OSN responses in small olfactory datasets. 
+
+Relevant paper: [_Improved odor-receptor interaction predictions via self supervised learning_]() \\
+McConachie, G, Duniec, E, Younger, M, DePasquale (2024) \\
+NAIsys CSHL 2024
+{:.center}
+{% endcapture %}
+
+{%
+  include feature.html
+  image=“”
+  caption=“”
+  headline=“Machine learning models
+  of the early olfactory system”
+  text=text
+%}
+
+{% capture text %}
 Biological neural networks compute differently than most artificial neural networks used in machine learning. For example, although real neurons communicate with spikes, reproducing this feature in artificial models has been a challenge. We develop methods for training biophysically detailed neural networks and use thse models to understand how real biologial circuits compute. Through mathematical modeling, we focus on building tighter links between biologial neural networks and more abstract artifical neural network models used in machine learning. 
 
 Relevant paper: [_The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks_](https://doi.org/10.1016/j.neuron.2022.12.007) \\
