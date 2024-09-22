@@ -23,8 +23,8 @@ NAIsys CSHL 2024
 
 {%
   include feature.html
-  image=“”
-  caption=“”
+  image=“images/NNs.jpg”
+  caption=“GNNs!”
   headline=“Machine learning models
   of the early olfactory system”
   text=text
