@@ -15,7 +15,7 @@ The DePasquale lab is located in the [Department of Biomedical Engineering](http
 {% capture text %}
 Recent advances in machine learning methods for computation chemistry have opened exciting new avenues for understanding olfaction. We have used self-supervised learning to construct robust ML models to predict OSN responses in small olfactory datasets. 
 
-Relevant paper: [_Improved odor-receptor interaction predictions via self supervised learning_](https://doi.org/10.1016/j.neuron.2022.12.007) \\
+Relevant paper: [_Improved odor-receptor interaction predictions via self supervised learning_](https://depasquale-lab.github.io/images/Poster_draft_2.pdf) \\
 McConachie, G, Duniec, E, Younger, M, DePasquale (2024) \\
 NAIsys CSHL 2024
 {:.center}
