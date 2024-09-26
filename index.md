@@ -91,7 +91,13 @@ Our team comprises ANU honors and master’s students who are both passionate an
 {%
   include alert.html
   type="success"
-  content="05/09/2024: One paper has been accepted at ACML 2024 (26% acceptance rate). Congratulations to Qixiang Chen."
+  content="26/09/2024: One paper has been accepted at Conference on Neural Information Processing Systems (NeurIPS) 2024. Congratulations to Liyun Zhu!"
+%}
+
+{%
+  include alert.html
+  type="success"
+  content="05/09/2024: One paper has been accepted at ACML 2024 (26% acceptance rate). Congratulations to Qixiang Chen!"
 %}
 
 

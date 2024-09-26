@@ -271,6 +271,24 @@
   - published
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.48550/arXiv.2409.14543
+  title: 'TrackNetV4: Enhancing Fast Sports Object Tracking with Motion Attention
+    Maps'
+  authors:
+  - Arjun Raj
+  - Lei Wang
+  - Tom Gedeon
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g5pgk6
+  image: images/paper/arXiv_2409_14543.png
+  buttons:
+  - type: website
+    link: /paper-sites/tracknet-v4
+  status:
+  - preprint
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/arXiv.2402.04857
   title: 'Advancing Video Anomaly Detection: A Concise Review and a New Dataset'
   authors:
@@ -279,7 +297,7 @@
   - Arjun Raj
   - Tom Gedeon
   - Chen Chen
-  publisher: arXiv
+  publisher: Conference on Neural Information Processing Systems (NeurIPS)
   date: '2024-01-01'
   link: https://doi.org/gt3q3r
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
@@ -287,7 +305,7 @@
   - type: website
     link: /paper-sites/msad
   status:
-  - preprint
+  - published
   plugin: sources.py
   file: sources.yaml
 - id: arXiv:2407.03179

@@ -172,14 +172,24 @@
 
 ##### Preprints #####
 
+# TrackNetV4 Dataset
+- id: doi:10.48550/arXiv.2409.14543
+  image: images/paper/arXiv_2409_14543.png
+  buttons:
+    - type: website
+      link: /paper-sites/tracknet-v4
+  status:
+    - preprint
+
 # MSAD Dataset
 - id: doi:10.48550/arXiv.2402.04857
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
+  publisher: Conference on Neural Information Processing Systems (NeurIPS)
   buttons:
     - type: website
       link: /paper-sites/msad
   status:
-    - preprint
+    - published
     
 # Motion meets Attention
 - id: arXiv:2407.03179
