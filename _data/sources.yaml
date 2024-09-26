@@ -183,6 +183,7 @@
 
 # MSAD Dataset
 - id: doi:10.48550/arXiv.2402.04857
+  publisher: NeurIPS 2024 Datasets and Benchmarks Track (NeurIPS D&B Track)
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
     - type: website
