@@ -91,20 +91,21 @@ Our team comprises ANU honors and master’s students who are both passionate an
 {%
   include alert.html
   type="success"
-  content="26/09/2024: One paper has been accepted at Conference on Neural Information Processing Systems (NeurIPS) 2024. Congratulations to Liyun Zhu!"
-%}
-
-{%
-  include alert.html
-  type="success"
-  content="05/09/2024: One paper has been accepted at ACML 2024 (26% acceptance rate). Congratulations to Qixiang Chen!"
+  content="26/09/2024: One paper has been accepted at NeurIPS D&B Track (25.3% acceptance rate). Congratulations to Liyun Zhu and Arjun Raj."
 %}
 
 
 {%
   include alert.html
   type="success"
-  content="16/08/2024: Congratulations to Liyun Zhu on having his research accepted for presentation at ANU’s Student Research Conference (SRC)!"
+  content="05/09/2024: One paper has been accepted at ACML 2024 (26% acceptance rate). Congratulations to Qixiang Chen."
+%}
+
+
+{%
+  include alert.html
+  type="success"
+  content="16/08/2024: Congratulations to Liyun Zhu on having his research accepted for presentation at ANU’s Student Research Conference (SRC)."
 %}
 
 {%
