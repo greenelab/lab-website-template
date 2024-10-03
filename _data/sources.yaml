@@ -21,6 +21,7 @@
 
 # Meet JEANIE
 - id: doi:10.1007/s11263-024-02070-2
+  date: 2024-02-07
   image: images/paper/doi_10_1007_s11263_024_02070_2.png
   buttons:
     - type: source
@@ -67,6 +68,7 @@
 
 # Adaptive Multi-head Contrastive Learning  
 - id: doi:10.48550/arXiv.2310.05615
+  date: 2024-07-02
   publisher: European Conference on Computer Vision
   image: images/paper/doi_10_48550_arXiv_2310_05615.png
   status:
@@ -236,7 +238,6 @@
 
 # 3D Skeleton-based Few-shot
 - id: arXiv:2112.12668
-  date: 2024-02-07
   image: images/paper/arXiv_2112_12668.png
   title: 3D Skeleton-based Few-shot Action Recognition with JEANIE is not so Naïve
   status:
