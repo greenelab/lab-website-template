@@ -53,6 +53,7 @@
 
 # SATO
 - id: arXiv:2405.01461
+  date: 2024-05-04
   image: images/paper/arXiv_2405_01461.png
   publisher: ACM Multimedia
   buttons:
@@ -73,6 +74,7 @@
 
 # Taylor Videos for Action Recognition
 - id: arXiv:2402.03019v4
+  date: 2024-05-01
   image: images/paper/arXiv_2402_03019v4.png
   authors:
     - L Wang
@@ -174,6 +176,7 @@
 
 # TrackNetV4 Dataset
 - id: doi:10.48550/arXiv.2409.14543
+  date: 2024-09-24
   image: images/paper/arXiv_2409_14543.png
   buttons:
     - type: website
@@ -183,6 +186,7 @@
 
 # MSAD Dataset
 - id: doi:10.48550/arXiv.2402.04857
+  date: 2024-09-26
   publisher: NeurIPS 2024 Datasets and Benchmarks Track (NeurIPS D&B Track)
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
@@ -193,6 +197,7 @@
     
 # Motion meets Attention
 - id: arXiv:2407.03179
+  date: 2024-09-05
   image: images/paper/arXiv_2407_03179.png
   publisher: Asian Conference on Machine Learning (ACML)
   buttons:
@@ -201,8 +206,16 @@
   status:
     - published
 
+# LEGO
+- id: doi:10.48550/arXiv.2410.01506
+  # image: images/paper/doi_10_1109_ICONAT53423.2022.9726079.png
+  date: 2024-10-03
+  status:
+    - preprint
+
 # SignLLM
 - id: arxiv:2405.10718
+  date: 2024-05-03
   image: images/paper/arxiv_2405_10718.png
   buttons:
     - type: website
@@ -212,6 +225,7 @@
 
 # Optimizing Calibration
 - id: arXiv:2404.13016
+  date: 2024-04-30
   image: images/paper/arXiv_2404_13016.png
   buttons:
     - type: source
@@ -222,6 +236,7 @@
 
 # 3D Skeleton-based Few-shot
 - id: arXiv:2112.12668
+  date: 2024-02-07
   image: images/paper/arXiv_2112_12668.png
   title: 3D Skeleton-based Few-shot Action Recognition with JEANIE is not so Naïve
   status:
