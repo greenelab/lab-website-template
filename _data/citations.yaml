@@ -84,7 +84,7 @@
   - Mengyuan Liu
   - Chen Chen
   publisher: ACM Multimedia
-  date: '2024-05-06'
+  date: '2024-05-04'
   link: https://arxiv.org/abs/2405.01461
   image: images/paper/arXiv_2405_01461.png
   buttons:
@@ -120,7 +120,7 @@
   - T Gedeon
   - L Zheng
   publisher: International Conference on Machine Learning
-  date: '2024-02-05'
+  date: '2024-05-01'
   link: https://arxiv.org/abs/2402.03019v4
   image: images/paper/arXiv_2402_03019v4.png
   buttons:
@@ -279,7 +279,7 @@
   - Lei Wang
   - Tom Gedeon
   publisher: arXiv
-  date: '2024-01-01'
+  date: '2024-09-24'
   link: https://doi.org/g5pgk6
   image: images/paper/arXiv_2409_14543.png
   buttons:
@@ -298,7 +298,7 @@
   - Tom Gedeon
   - Chen Chen
   publisher: NeurIPS 2024 Datasets and Benchmarks Track (NeurIPS D&B Track)
-  date: '2024-01-01'
+  date: '2024-09-26'
   link: https://doi.org/gt3q3r
   image: images/paper/doi_10_48550_arXiv_2402_04857.png
   buttons:
@@ -316,7 +316,7 @@
   - Piotr Koniusz
   - Tom Gedeon
   publisher: Asian Conference on Machine Learning (ACML)
-  date: '2024-07-04'
+  date: '2024-09-05'
   link: https://arxiv.org/abs/2407.03179
   image: images/paper/arXiv_2407_03179.png
   buttons:
@@ -324,6 +324,21 @@
     link: /paper-sites/motion-prompts
   status:
   - published
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2410.01506
+  title: 'LEGO: Learnable Expansion of Graph Operators for Multi-Modal Feature Fusion'
+  authors:
+  - Dexuan Ding
+  - Lei Wang
+  - Liyun Zhu
+  - Tom Gedeon
+  - Piotr Koniusz
+  publisher: arXiv
+  date: '2024-10-03'
+  link: https://doi.org/g6s455
+  status:
+  - preprint
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2405.10718
@@ -335,7 +350,7 @@
   - Yapeng Tian
   - Chen Chen
   publisher: arXiv
-  date: '2024-05-20'
+  date: '2024-05-03'
   link: https://arxiv.org/abs/2405.10718
   image: images/paper/arxiv_2405_10718.png
   buttons:
@@ -354,7 +369,7 @@
   - James Zou
   - Liang Zheng
   publisher: arXiv
-  date: '2024-04-26'
+  date: '2024-04-30'
   link: https://arxiv.org/abs/2404.13016
   image: images/paper/arXiv_2404_13016.png
   buttons:
@@ -373,7 +388,7 @@
   - Jun Liu
   - Piotr Koniusz
   publisher: arXiv
-  date: '2021-12-24'
+  date: '2024-02-07'
   link: https://arxiv.org/abs/2112.12668
   image: images/paper/arXiv_2112_12668.png
   status:
