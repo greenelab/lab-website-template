@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plot</title>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        font-family: "Noto Sans", sans-serif;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continues">
+      <div class="continues_demo" id="imageContainer">
+        <div class="continues">
+          <img src="../images/continues/frame_0.png" class="demo-image" style="width: 100%;;"/>
+          <p style="font-size: 14pt;margin: 10pt;">original frame</p>
+        </div>
+        <div class="continues">
+          <img src="../images/continues/diff_0.png" class="demo-image" style="width: 100%;;"/>
+          <p style="font-size: 14pt;margin: 10pt;">frame differencing map</p>
+        </div>
+        <div class="continues">
+          <img src="../images/continues/attention_0.png" class="demo-image" style="width: 100%;;"/>
+          <p style="font-size: 14pt;margin: 10pt;">attention map</p>
+        </div>
+        <div class="continues">
+          <img src="../images/continues/output_0.png" class="demo-image" style="width: 100%;;"/>
+          <p style="font-size: 14pt;margin: 10pt;">motion prompt</p>
+        </div>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="8" value="0" class="slider" id="myRange">
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var slider = document.getElementById('myRange');
+          var images = document.querySelectorAll('.demo-image');
+          const img_prefix = {1:"../images/continues/frame_",
+              2:"../images/continues/diff_",
+              3:"../images/continues/attention_",
+              4:"../images/continues/output_",
+          }
+
+          function updateImages() {
+              images.forEach(function(img, index) {
+                  var path = img_prefix[index+1] + slider.value + ".png";
+                  img.src = path;
+              });
+          }
+
+          // Update images when the slider value changes
+          slider.addEventListener('input', updateImages);
+
+          // Initial update
+          updateImages();
+      });
+    </script>
+  </body>
+</html>

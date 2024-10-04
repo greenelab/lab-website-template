@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Linear Function Plot</title>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        font-family: "Noto Sans", sans-serif;
+        /* background-color: #f5f5f5; */
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div style="position: relative; margin-left: 28px" class="flex">
+        <div class="plot_1">
+          <div class="controls">
+            <label for="m">m = <span id="m-value">1</span></label>
+            <input
+              type="range"
+              id="m"
+              min="-5"
+              max="5"
+              value="1.05"
+              step="0.01"
+            />
+            <label for="n">n = <span id="n-value">1</span></label>
+            <input
+              type="range"
+              id="n"
+              min="-5"
+              max="5"
+              value="-2.67"
+              step="0.01"
+            />
+          </div>
+          <div id="plot"></div>
+
+          <script>
+            const mSlider = document.getElementById("m");
+            const nSlider = document.getElementById("n");
+            const mValue = document.getElementById("m-value");
+            const nValue = document.getElementById("n-value");
+
+            function updatePlot() {
+              const m = parseFloat(mSlider.value);
+              const n = parseFloat(nSlider.value);
+
+              mValue.textContent = m;
+              nValue.textContent = n;
+
+              const xValues = [];
+              const yValues = [];
+
+              for (let x = -1.1; x <= 1.1; x += 0.01) {
+                xValues.push(x);
+                const a = 5 / (0.45 * Math.abs(Math.tanh(m)) + 1e-1);
+                const b = 0.6 * Math.tanh(n);
+                const y = 1 / (1 + Math.exp(-a * (x - b)));
+                yValues.push(y);
+              }
+
+              const trace = {
+                x: xValues,
+                y: yValues,
+                type: "scatter",
+                mode: "lines",
+                line: { color: "#fc8b00", width: 3},
+              };
+
+              const layout = {
+                xaxis: {
+                  range: [-1.1, 1.1],
+                  fixedrange: true,
+                  tickmode: "linear",
+                  dtick: 0.5,
+                },
+                yaxis: {
+                  range: [-0.1, 1.1],
+                  fixedrange: true,
+                  tickmode: "linear",
+                  dtick: 0.25,
+                },
+                margin: { t: 10, b: 20, l: 35, r: 10 },
+              };
+              Plotly.react("plot", [trace], layout, { staticPlot: true });
+            }
+            updatePlot();
+          </script>
+        </div>
+        <p style="position: absolute; bottom: -45px; left: 10px; text-align:center; width: 100%">
+            our PN function
+        </p>
+        <p style="position: absolute; top: -50px; text-align:left; width: 100%; font-weight: bold; font-size: large;">
+          FineGym: <span style="font-style: italic">balance beam</span>
+        </p>
+      </div>
+
+      <div style="position: relative">
+        <div id="attention_map"></div>
+        <p style="position: absolute; bottom: -67px; text-align: center; width: 100%">
+            attention map
+        </p>
+      </div>
+
+      <script>
+        var globalZData;
+        const path = "../images/FineGym_diff.png";
+        const img = new Image();
+        img.src = path;
+        var layout = {}
+
+        // initialize the image
+        img.onload = function () {
+          let aspectRatioAttention = img.height / img.width;
+
+          layout = {
+            scene: {
+                aspectmode: "manual",
+                aspectratio: { x: aspectRatioAttention, y: 1, z: 0.618 },
+                xaxis: { visible: false },
+                yaxis: { visible: false },
+                zaxis: { visible: false },
+                camera: { eye: { x: 0, y: 0, z: 1.1 } },
+                dragmode: "turntable",
+            },
+            margin: { t: 0, b: 0, l: 0, r: 0 },
+            };
+
+          updateAttentionMap(img, layout);
+
+        };
+
+        function computeZData(imageData, m, n) {
+          const a_ = 5 / (0.45 * Math.abs(Math.tanh(m)) + 1e-1);
+          const b_ = 0.6 * Math.tanh(n);
+          const z_data = [];
+          const width = imageData.width;
+          const height = imageData.height;
+
+          for (let i = width - 1; i >= 0; i--) {
+            const col = [];
+            for (let j = height - 1; j >= 0; j--) {
+              const k = (j * width + i) * 4;
+              const r = imageData.data[k] / 255;
+              const g = imageData.data[k + 1] / 255;
+              const b = imageData.data[k + 2] / 255;
+              var gray = 0.299 * r + 0.587 * g + 0.114 * b;
+              gray = (gray - 0.5) * 2;
+              gray = 1 / (1 + Math.exp(-a_ * (gray - b_)));
+              col.push(gray);
+            }
+            z_data.push(col);
+          }
+
+          return z_data;
+        }
+
+        function updateAttentionMap(image, layout, m = 1.05, n = -2.67) {
+          const canvas = document.createElement("canvas");
+          const ctx = canvas.getContext("2d", { willReadFrequently: true });
+          canvas.width = image.width;
+          canvas.height = image.height;
+          ctx.drawImage(image, 0, 0, image.width, image.height);
+          const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+          globalZData = computeZData(imageData, m, n);
+
+          const trace = {
+            z: globalZData,
+            type: "surface",
+            colorscale: "peach",
+            cmin: -1.8,
+            cmax: 1.8,
+            lighting: { diffuse: 0.2 },
+            showscale: false,
+          };
+          Plotly.react("attention_map", [trace], layout, {
+            displayModeBar: false,
+          });
+        }
+
+        function debounce(func, delay) {
+          let debounceTimer;
+          return function () {
+            const context = this;
+            const args = arguments;
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => func.apply(context, args), delay);
+          };
+        }
+      </script>
+
+      <div id="output_frame">
+        <canvas id="canvas_output"></canvas>
+        <p class="caption" style="position: absolute; bottom: -42px; text-align: center; width: 100%;">
+            motion prompt
+        </p>
+        <script>
+          const output_canvas = document.getElementById("canvas_output");
+          const output_ctx = output_canvas.getContext("2d", {
+            willReadFrequently: true,
+          });
+          const output_img = new Image();
+
+          output_img.src = "../images/FineGym.png";
+          output_img.onload = () => {
+            let aspectRatioOutput = output_img.height / output_img.width;
+            output_canvas.width = output_img.width;
+            output_canvas.height = output_img.height;
+            output_ctx.drawImage(
+              output_img,
+              0,
+              0,
+              output_canvas.width,
+              output_canvas.height
+            );
+
+            if (globalZData) {
+              updateOutput(globalZData);
+            }
+          };
+
+          function jetColorMap(value) {
+            let fourValue = 4 * value;
+            let red = Math.min(fourValue - 1.5, -fourValue + 4.5);
+            let green = Math.min(fourValue - 0.5, -fourValue + 3.5);
+            let blue = Math.min(fourValue + 0.5, -fourValue + 2.5);
+            return [
+              Math.max(0, Math.min(1, red)) * 255,
+              Math.max(0, Math.min(1, green)) * 255,
+              Math.max(0, Math.min(1, blue)) * 255,
+            ];
+          }
+
+          function updateOutput(zData) {
+            output_ctx.drawImage(
+              output_img,
+              0,
+              0,
+              output_canvas.width,
+              output_canvas.height
+            );
+            const imageData = output_ctx.getImageData(
+              0,
+              0,
+              output_canvas.width,
+              output_canvas.height
+            );
+            const data = imageData.data;
+
+            for (let x = 0; x < output_canvas.width; x++) {
+              for (let y = 0; y < output_canvas.height; y++) {
+                const index = (y * output_canvas.width + x) * 4;
+                const zValue =
+                  zData[output_canvas.width - 1 - x][
+                    output_canvas.height - 1 - y
+                  ];
+                const color = jetColorMap(zValue);
+                const weight = 0.3;
+
+                data[index] =
+                  weight * color[0] + (1 - weight) * data[index] * zValue; // Red
+                data[index + 1] =
+                  weight * color[1] + (1 - weight) * data[index + 1] * zValue; // Green
+                data[index + 2] =
+                  weight * color[2] + (1 - weight) * data[index + 2] * zValue; // Blue
+              }
+            }
+            output_ctx.putImageData(imageData, 0, 0);
+          }
+
+          mSlider.addEventListener(
+            "input",
+            debounce(function () {
+              mValue.textContent = mSlider.value;
+              updateAll();
+            }, 10)
+          );
+
+          nSlider.addEventListener(
+            "input",
+            debounce(function () {
+              nValue.textContent = nSlider.value;
+              updateAll();
+            }, 10)
+          );
+
+          mSlider.addEventListener("dblclick", function () {
+            mSlider.value = 1.05;
+            mValue.textContent = mSlider.value;
+            updateAll();
+          });
+
+          nSlider.addEventListener("dblclick", function () {
+            nSlider.value = -2.67;
+            nValue.textContent = nSlider.value;
+            updateAll();
+          });
+
+          function updateAll() {
+            updatePlot();
+            updateAttentionMap(
+              img,
+              layout,
+              parseFloat(mSlider.value),
+              parseFloat(nSlider.value)
+            );
+            updateOutput(globalZData);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

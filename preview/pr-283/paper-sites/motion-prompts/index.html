@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="This website is the official page for the paper 'Motion meets Attention: Video Motion Prompts' by Qixiang Chen, Lei Wang, Piotr Koniusz, and Tom Gedeon." />
+    <meta property="og:title" content="Motion meets Attention: Video Motion Prompts" />
+    <meta
+      property="og:description"
+      content="Videos contain rich spatio-temporal information. Traditional methods for extracting motion, used in tasks such as action recognition, often rely on visual contents rather than precise motion features. This phenomenon is referred to as 'blind motion extraction' behavior, which proves inefficient in capturing motions of interest due to a lack of motion-guided cues. Recently, attention mechanisms have enhanced many computer vision tasks by effectively highlighting salient visual areas. Inspired by this, we propose using a modified Sigmoid function with learnable slope and shift parameters as an attention mechanism to activate and modulate motion signals derived from frame differencing maps. This approach generates a sequence of attention maps that enhance the processing of motion-related video content. To ensure temporally continuity and smoothness of the attention maps, we apply pair-wise temporal attention variation regularization to remove unwanted motions (e.g., noise) while preserving important ones. We then perform Hadamard product between each pair of attention maps and the original video frames to highlight the evolving motions of interest over time. These highlighted motions, termed video motion prompts, are subsequently used as inputs to the model instead of the original video frames. We formalize this process as a motion prompt layer and incorporate the regularization term into the loss function to learn better motion prompts. This layer serves as an adapter between the model and the video data, bridging the gap between traditional 'blind motion extraction' and the extraction of relevant motions of interest.
+    />
+    <meta property="og:url" content="https://q1xiangchen.github.io/motion-prompts/" />
+    <meta property="og:image" content="static/images/pipeline.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="220" />
+
+    <meta name="twitter:title" content="Motion meets Attention: Video Motion Prompts" />
+    <meta
+      name="twitter:description"
+      content="Videos contain rich spatio-temporal information. Traditional methods for extracting motion, used in tasks such as action recognition, often rely on visual contents rather than precise motion features. This phenomenon is referred to as 'blind motion extraction' behavior, which proves inefficient in capturing motions of interest due to a lack of motion-guided cues. Recently, attention mechanisms have enhanced many computer vision tasks by effectively highlighting salient visual areas. Inspired by this, we propose using a modified Sigmoid function with learnable slope and shift parameters as an attention mechanism to activate and modulate motion signals derived from frame differencing maps. This approach generates a sequence of attention maps that enhance the processing of motion-related video content. To ensure temporally continuity and smoothness of the attention maps, we apply pair-wise temporal attention variation regularization to remove unwanted motions (e.g., noise) while preserving important ones. We then perform Hadamard product between each pair of attention maps and the original video frames to highlight the evolving motions of interest over time. These highlighted motions, termed video motion prompts, are subsequently used as inputs to the model instead of the original video frames. We formalize this process as a motion prompt layer and incorporate the regularization term into the loss function to learn better motion prompts. This layer serves as an adapter between the model and the video data, bridging the gap between traditional 'blind motion extraction' and the extraction of relevant motions of interest."
+    />
+    <meta
+      name="twitter:image"
+      content="static/images/pipeline.png"
+      width="1200"
+      height="220"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="motion prompt, attention, action recognition" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Motion meets Attention: Video Motion Prompts</title>
+    <link rel="icon" type="image/x-icon" href="static/images/up.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body" style="margin-bottom: -30px;">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Motion meets Attention:<br />
+                Video Motion Prompts
+              </h1>
+
+              <div class="is-size-4 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://q1xiangchen.github.io/" target="_blank"
+                    >Qixiang Chen</a
+                  ><sup>1</sup>,</span
+                >&nbsp;&nbsp;&nbsp;
+                <span class="author-block">
+                  <a href="https://leiwangr.github.io/" target="_blank"
+                    >Lei Wang</a
+                  ><sup>1,2</sup>,</span
+                >&nbsp;&nbsp;&nbsp;
+                <span class="author-block">
+                  <a
+                    href="https://users.cecs.anu.edu.au/~koniusz/#"
+                    target="_blank"
+                    >Piotr Koniusz</a
+                  ><sup>2,1</sup>,</span
+                >&nbsp;&nbsp;&nbsp;
+                <span class="author-block">
+                  <a
+                    href="https://users.cecs.anu.edu.au/~Tom.Gedeon/"
+                    target="_blank"
+                    >Tom Gedeon</a
+                  ><sup>3</sup></span
+                >
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  ><sup>1</sup>Australian National University</span
+                >&nbsp;&nbsp;&nbsp;
+                <span class="author-block"><sup>2</sup>Data61/CSIRO</span
+                >&nbsp;&nbsp;&nbsp;
+                <span class="author-block"><sup>3</sup>Curtin University</span>
+                <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+              </div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/2407.03179.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2407.03179"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+
+                  <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="static/pdfs/supplementary_material.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/q1xiangchen/VMPs"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- continues frames -->
+    <hr style="border-top: 1px dashed #ff7300; margin-top: -5px; margin-bottom: 0px;">
+    <div class="container is-max-desktop">
+      <!-- <div class="header" style="position: absolute; text-align: left;">
+        <p style="font-weight: bold; font-size: large;">m & n Figures</p>
+      </div> -->
+      <iframe src="static/html/continues_frames.html" width="100%" height=250px style="align-items: center;"></iframe>
+    </div>
+    <hr style="border-top: 1px dashed #ff7300; margin-top: 5px;">
+    <!-- continues frames end -->
+
+    <!-- Paper abstract -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Videos contain rich spatio-temporal information. Traditional
+                methods for extracting motion, used in tasks such as action
+                recognition, often rely on visual contents rather than precise
+                motion features. This phenomenon is referred to as 'blind motion
+                extraction' behavior, which proves inefficient in capturing
+                motions of interest due to a lack of motion-guided cues.
+                <br /><br />Recently, attention mechanisms have enhanced many
+                computer vision tasks by effectively highlighting salient visual
+                areas. Inspired by this, we propose using a modified Sigmoid
+                function with learnable slope and shift parameters as an
+                attention mechanism to activate and modulate motion signals
+                derived from frame differencing maps. This approach generates a
+                sequence of attention maps that enhance the processing of
+                motion-related video content. To ensure temporally continuity
+                and smoothness of the attention maps, we apply pair-wise
+                temporal attention variation regularization to remove unwanted
+                motions (e.g., noise) while preserving important ones. We then
+                perform Hadamard product between each pair of attention maps and
+                the original video frames to highlight the evolving motions of
+                interest over time. These highlighted motions, termed video
+                motion prompts, are subsequently used as inputs to the model
+                instead of the original video frames. We formalize this process
+                as a motion prompt layer and incorporate the regularization term
+                into the loss function to learn better motion prompts.
+                <br /><br />This layer serves as an adapter between the model
+                and the video data, bridging the gap between traditional 'blind
+                motion extraction' and the extraction of relevant motions of
+                interest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <hr style="border-top: 1px dashed #ff7300; margin-top: 35px; margin-bottom: -20px;">
+
+    <!-- pipelie figure  -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Pipeline</h2>
+              <figure class="image">
+                <img
+                  src="static/images/pipeline.png"
+                  alt="Pipeline"
+                  style="max-width: 100%;"
+                />
+              </figure> 
+              <div class="content has-text-justified">
+                <br>
+                <p>Overview of the motion prompt layer. Learnable Power Normalization (PN) function \( f(\cdot) \) modulates motion, influencing how motion is enhanced or dampened in each frame differencing map \( \mathbf{D} \) to highlight relevant movements. The resulting attention maps are multiplied element-wise (\(\odot\)) with the original video frame to produce video motion prompts. We introduce a temporal attention variation regularization term for smoother attention maps, ensuring better motion prompts. This layer can be inserted between the video input and backbones such as TimeSformer, serving as an adapter. Training involves optimizing both the motion prompt layer and the backbone network using a generic loss function, e.g., cross-entropy, along with the new regularization term.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="border-top: 1px dashed #ff7300; margin-top: -5px; margin-bottom: 25px;">
+
+    <!-- m&n figures -->
+    <div class="container is-max-desktop">
+      <p style="position: absolute; text-align: center; width: 100%; font-weight: bold; font-size: 26px;">
+        Learnable slope and shift
+      </p>
+    </div>
+    <iframe src="static/html/m&n_FineGym.html" width="100%" height=350px style="margin-top: 55px;"></iframe>
+    <p style="text-align: right; font-size: small; color: #ff7300;">
+      *Double-click the slider thumb to reset its value; drag the middle chart to rotate.
+    </p>
+    <hr style="border-top: 1px dashed #ff7300; margin-top: -1px;">
+    <iframe src="static/html/m&n_MPII.html" width="100%" height=350px" ></iframe>
+    <hr style="border-top: 1px dashed #ff7300;">
+    <iframe src="static/html/m&n_UCF.html" width="100%" height=350px></iframe>
+    <hr style="border-top: 1px dashed #ff7300;">
+    <iframe src="static/html/m&n_HMDB.html" width="100%" height=350px></iframe>
+    <hr style="border-top: 1px dashed #ff7300; margin-bottom: 25px;">
+    <!-- m & n figures end -->
+
+    <p style="position: absolute; text-align: center; width: 100%; font-weight: bold; font-size: 26px;">
+      Effects of temporal attention variation regularization
+    </p>
+    <iframe src="static/html/lambda_FineGym.html" width="100%" height=350px style="margin-top: 55px;"></iframe>
+    <hr style="border-top: 1px dashed #ff7300; margin-bottom: 25px;">
+
+    <p style="position: absolute; text-align: center; width: 100%; font-weight: bold; font-size: 26px;">
+    Comparison of PN functions on motion modulation in 3D
+    </p>
+    <div class="container is-max-desktop" style="margin-top: 80px;">
+      <img src="static/images/3d_PNs/supp_hmdb_run_3d_PNs.png" alt="3d_PNs_run" style="width: 100%; margin-top: 5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (a) Action&nbsp;<span style="font-weight: bold;">run</span>&nbsp;from HMDB-51.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_hmdb_situp_3d_PNs.png" alt="3d_PNs_situp" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (b) Action&nbsp;<span style="font-weight: bold;">situp</span>&nbsp;from HMDB-51.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_mpii_push_down_3d_PNs.png" alt="3d_PNs_push_down" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (c) Action&nbsp;<span style="font-weight: bold;">push down</span>&nbsp;from MPII Cooking 2.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_mpii_whip_3d_PNs.png" alt="3d_PNs_whip" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (d) Action&nbsp;<span style="font-weight: bold;">whip</span>&nbsp;from MPII Cooking 2.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_FineGym_BB_switch_leap_(leap_forward_with_leg_change)_3d_PNs.png" alt="3d_PNs_BB_switch_leap" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (e) Action&nbsp;<span style="font-weight: bold;">(Balance Beam) leap forward with leg change</span>&nbsp;from FineGym.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_FineGym_UB_giant_circle_backward_3d_PNs.png" alt="3d_PNs_UB_giant_circle_backward" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (f) Action&nbsp;<span style="font-weight: bold;">(Uneven Bar) giant circle backward</span>&nbsp;from FineGym.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_ucf_explosion_3d_PNs.png" alt="3d_PNs_explosion" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (g) Action&nbsp;<span style="font-weight: bold;">explosion</span>&nbsp;from UCF-Crime.
+      </div>
+
+      <img src="static/images/3d_PNs/supp_ucf_fighting_3d_PNs.png" alt="3d_PNs_fighting" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (h) Action&nbsp;<span style="font-weight: bold;">fighting</span>&nbsp;from UCF-Crime.
+      </div>
+
+      <div class="columns is-centered has-text-centered"">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>We compare existing PN with our PN on motion modulation. The first two columns show consecutive video frames, and the third column displays 3D surface plots of the corresponding frame differencing maps. The 4th to 7th columns show output attentions in both attention maps and 3D surface plots for Gamma, MaxExp, SigmE, and AsinhE. The last column shows outputs from our PN function, which focuses on different motions across video types, such as human actions, fine-grained actions, static and moving cameras, and anomaly detection. For UCF-Crime, we use the learned slope and shift from MPII Cooking 2, as both are captured by static cameras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr style="border-top: 1px dashed #ff7300; margin-bottom: 25px;">
+
+    <p style="position: absolute; text-align: center; width: 100%; font-weight: bold; font-size: 26px;">
+      Comparison of PN functions on motion modulation in 2D
+    </p>
+    <div class="container is-max-desktop" style="margin-top: 80px;">
+      <img src="static/images/PNs/supp_hmdb_run_PNs.png" alt="PNs_run" style="width: 100%; margin-top: 5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (a) Action&nbsp;<span style="font-weight: bold;">run</span>&nbsp;from HMDB-51.
+      </div>
+
+      <img src="static/images/PNs/supp_hmdb_situp_PNs.png" alt="PNs_situp" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (b) Action&nbsp;<span style="font-weight: bold;">situp</span>&nbsp;from HMDB-51.
+      </div>
+
+      <img src="static/images/PNs/supp_mpii_push_down_PNs.png" alt="PNs_push_down" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (c) Action&nbsp;<span style="font-weight: bold;">push down</span>&nbsp;from MPII Cooking 2.
+      </div>
+
+      <img src="static/images/PNs/supp_mpii_whip_PNs.png" alt="PNs_whip" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (d) Action&nbsp;<span style="font-weight: bold;">whip</span>&nbsp;from MPII Cooking 2.
+      </div>
+
+      <img src="static/images/PNs/supp_FineGym_BB_switch_leap_(leap_forward_with_leg_change)_PNs.png" alt="PNs_BB_switch_leap" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (e) Action&nbsp;<span style="font-weight: bold;">(Balance Beam) leap forward with leg change</span>&nbsp;from FineGym.
+      </div>
+
+      <img src="static/images/PNs/supp_FineGym_UB_giant_circle_backward_PNs.png" alt="PNs_UB_giant_circle_backward" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (f) Action&nbsp;<span style="font-weight: bold;">(Uneven Bar) giant circle backward</span>&nbsp;from FineGym.
+      </div>
+
+      <img src="static/images/PNs/supp_ucf_explosion_PNs.png" alt="PNs_explosion" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (g) Action&nbsp;<span style="font-weight: bold;">explosion</span>&nbsp;from UCF-Crime.
+      </div>
+
+      <img src="static/images/PNs/supp_ucf_fighting_PNs.png" alt="PNs_fighting" style="width: 100%; margin-top: -5px;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0px;">
+        (h) Action&nbsp;<span style="font-weight: bold;">fighting</span>&nbsp;from UCF-Crime.
+      </div>
+
+      <div class="columns is-centered has-text-centered"">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>Visualizations include original consecutive frames (first two columns), frame differencing maps (third column), pairs of attention maps and motion prompts for Gamma, MaxExp, SigmE, and AsinhE (fourth to eleventh columns). The last two columns display our attention maps and motion prompts. Our attention maps (i) depict clear motion regions, (ii) highlight motions of interest and/or contextual environments relevant to the motions, and our motion prompts capture rich motion patterns. Existing PN functions only focus on motions, often capture noisy patterns and without emphasizing contexts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-top: 1px dashed #ff7300; margin-bottom: -15px;">
+
+    <!-- Youtube video -->
+    <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+    <!-- End youtube video -->
+
+    <!-- Paper poster -->
+    <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+    <!--End paper poster -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title" style="text-align: center;">BibTeX</h2>
+        <pre><code>@inproceedings{
+    chen2024motion,
+    title={Motion meets Attention: Video Motion Prompts},
+    author={Qixiang Chen and Lei Wang and Piotr Koniusz and Tom Gedeon},
+    booktitle={The 16th Asian Conference on Machine Learning (Conference Track)},
+    year={2024},
+    url={https://openreview.net/forum?id=nIDAT99Vhb}
+}</code></pre>
+      </div>
+    </section>
+
+    <!--End BibTex citation -->
+    <footer class="footer">
+      <div class="container">
+        <!--Acknowledgment citation -->
+        <section class="section" id="Acknowledgment" style="margin-top: -60px; margin-bottom: -100px;">
+          <h2 class="title" style="text-align: center;">Acknowledgment</h2>
+          <div class="columns is-centered">
+            <div class="column is-8 content">
+              <p>
+                Qixiang Chen conducted this research under the supervision of Lei Wang for his final year honors research project at ANU. He is a recipient of research sponsorship from Space Zero Investments Pty Ltd in Perth, Western Australia, including The Active Intelligence Research Challenge Award. This work was also supported by the NCI Adapter Scheme Q4 2023, the NCI National AI Flagship Merit Allocation Scheme, and the National Computational Merit Allocation Scheme 2024 (NCMAS 2024), with computational resources provided by NCI Australia, an NCRIS-enabled capability supported by the Australian Government.
+                <br /><br />
+                <p style="font-size:smaller;">
+                  This page was built upon the template provided by 
+                  <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">eliahuhorwitz</a> 
+                  and 
+                  <a href="https://nerfies.github.io/">Nerfies</a> project page.
+                  <br>
+                  This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--End Acknowledgment citation -->
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
+</html>
