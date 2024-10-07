@@ -44,6 +44,21 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/JSTARS.2024.3455891
+  title: "Spatial Reduction Attention in Multiscale Vision Transform for Surface Water\u2013\
+    Land Interface Zone Segmentation"
+  authors:
+  - Yu-Hsuan Chen
+  - Trong-An Bui
+  - Pei-Jun Lee
+  - Ching-Huo Hsu
+  publisher: IEEE Journal of Selected Topics in Applied Earth Observations and Remote
+    Sensing
+  date: '2024-01-01'
+  link: https://doi.org/g7g4fr
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ESTREAM61684.2024.10542578
   title: Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object
     Detection in Satellite Imagery
