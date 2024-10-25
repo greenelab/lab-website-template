@@ -2,7 +2,7 @@
   subtitle: UAAT-TAMUS Collaborative Project
   image: images/photo.jpg
   link: https://github.com/
-  description: (1) Implement Edge AI on satellites to process remote sensing data, enabling real-time detection and tracking of maritime activities in the Taiwan Strait. (2) Create an integrated communication network using LEO satellites and UAVs/Ships to optimize data rates and ensure reliable data transmission.
+  description: (1) Implement Edge AI on satellites to process remote sensing data, enabling real-time detection and tracking of maritime activities in the Taiwan Strait. <br/> (2) Create an integrated communication network using LEO satellites and UAVs/Ships to optimize data rates and ensure reliable data transmission.
   repo: greenelab/lab-website-template
   tags:
     - international research
