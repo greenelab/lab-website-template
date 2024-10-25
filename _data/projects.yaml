@@ -1,7 +1,9 @@
-- title: Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning
+- title: Cool Dataset
   subtitle: a subtitle
-  group: Research Project
+  group: featured
   image: images/photo.jpg
-  description: (1) Implement Edge AI on satellites to process remote sensing data, enabling real-time detection and tracking of maritime activities in the Taiwan Strait. (2) Create an integrated communication network using LEO satellites and UAVs/Ships to optimize data rates and ensure reliable data transmission.
+  link: https://github.com/
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
   tags:
-    - International Research Project
+    - resource
