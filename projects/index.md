@@ -7,10 +7,10 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-<!-- Will be Updated soon!
-More detail at [https://www.linkedin.com/in/trongan93](https://www.linkedin.com/in/trongan93/details/projects/) -->
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-{% include tags.html tags="research, publication" %}
+{% include tags.html tags="publication, resource, website" %}
 
 {% include search-info.html %}
 
@@ -24,4 +24,4 @@ More detail at [https://www.linkedin.com/in/trongan93](https://www.linkedin.com/
 
 ## More
 
-{% include list.html component="card" data="projects" filters="group: more" style="small" %}
+{% include list.html component="card" data="projects" filters="group: " style="small" %}
