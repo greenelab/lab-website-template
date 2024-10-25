@@ -18,10 +18,10 @@ More detail at [https://www.linkedin.com/in/trongan93](https://www.linkedin.com/
 
 ## Featured
 
-{% include list.html component="card" data="projects" filters="group: featured" %}
+{% include list.html component="card" data="research" filters="group: featured" %}
 
 {% include section.html %}
 
 ## More
 
-{% include list.html component="card" data="projects" filters="group: more" style="small" %}
+{% include list.html component="card" data="research" filters="group: more" style="small" %}
