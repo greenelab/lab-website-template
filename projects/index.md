@@ -10,7 +10,7 @@ nav:
 <!-- Will be Updated soon!
 More detail at [https://www.linkedin.com/in/trongan93](https://www.linkedin.com/in/trongan93/details/projects/) -->
 
-{% include tags.html tags="publication, resource, website, application" %}
+{% include tags.html tags="research, publication" %}
 
 {% include search-info.html %}
 
