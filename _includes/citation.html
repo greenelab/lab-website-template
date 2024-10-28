@@ -13,14 +13,14 @@
     {% if include.style == "rich" %}
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url }}"
+          href="{{ citation.link | relative_url | xml_escape }}"
         {% endif %}
         class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" }}"
+        aria-label="{{ citation.title | default: "citation link" | xml_escape }}"
       >
         <img
-          src="{{ citation.image | relative_url }}"
-          alt="{{ citation.title | default: "citation image" }}"
+          src="{{ citation.image | relative_url | xml_escape }}"
+          alt="{{ citation.title | default: "citation image" | xml_escape }}"
           loading="lazy"
           {% include fallback.html %}
         >
@@ -33,7 +33,7 @@
 
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url }}"
+          href="{{ citation.link | relative_url | xml_escape }}"
         {% endif %}
         class="citation-title"
       >
@@ -43,7 +43,7 @@
       <div
         class="citation-authors"
         {% if citation.authors.size > 10 %}
-          data-tooltip="{{ citation.authors | join: ", " }} "
+          data-tooltip="{{ citation.authors | join: ", " | xml_escape }}"
         {% endif %}
         tabindex="0"
       >

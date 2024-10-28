@@ -2,7 +2,7 @@
 {% assign data = site.data[include.data]
   | default: site[include.data]
   | default: emptyarray
-  | data_filter: include.filters
+  | data_filter: include.filter
 %}
 
 {% assign years = data

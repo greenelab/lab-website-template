@@ -9,15 +9,15 @@
   | split: ","
   | uniq
 %}
-{% assign link = include.link | default: page.dir | absolute_url %}
+{% assign link = include.link | default: page.dir %}
 {% if tags.size > 0 or include.repo %}
   <div
     class="tags"
     {% if include.repo %}
-      data-repo="{{ include.repo }}"
+      data-repo="{{ include.repo | xml_escape }}"
     {% endif %}
     {% if link %}
-      data-link="{{ link }}"
+      data-link="{{ link | relative_url | xml_escape }}"
     {% endif %}
   >
     {% for tag in tags %}

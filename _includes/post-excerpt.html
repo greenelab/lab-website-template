@@ -16,13 +16,13 @@
 
     {% if image %}
       <a
-        href="{{ url | relative_url }}"
+        href="{{ url | relative_url | xml_escape }}"
         class="post-excerpt-image"
-        aria-label="{{ title | default: "excerpt link" }}"
+        aria-label="{{ title | default: "excerpt link" | xml_escape }}"
       >
         <img
-          src="{{ image | relative_url }}"
-          alt="{{ title | default: "excerpt image" }}"
+          src="{{ image | relative_url | xml_escape }}"
+          alt="{{ title | default: "excerpt image" | xml_escape }}"
           loading="lazy"
           {% include fallback.html %}
         >
@@ -30,7 +30,7 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url | relative_url }}">{{ title }}</a>
+      <a href="{{ url | relative_url | xml_escape }}">{{ title }}</a>
 
       {%
         include post-info.html
@@ -52,7 +52,7 @@
         | strip_newlines
         | regex_strip
       %}
-      <p data-search="{{ search }}">
+      <p data-search="{{ search | xml_escape }}">
         {{ excerpt }}
       </p>
     </div>

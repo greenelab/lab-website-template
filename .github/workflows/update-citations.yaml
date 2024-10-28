@@ -28,16 +28,18 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      # for debugging
-      - uses: crazy-max/ghaction-dump-context@v2
+      - name: Debug dump
+        uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
+        if: github.event.action != 'closed'
         uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
       - name: Setup Python
+        if: github.event.action != 'closed'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -45,18 +47,21 @@ jobs:
           cache-dependency-path: "**/requirements.txt"
 
       - name: Install Python packages
+        if: github.event.action != 'closed'
         run: |
           python -m pip install --upgrade --requirement ./_cite/requirements.txt
 
-      # for debugging
-      - if: runner.debug == '1'
+      - name: SSH debug
+        if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
       - name: Build updated citations
+        if: github.event.action != 'closed'
         run: python _cite/cite.py
         timeout-minutes: 15
 
       - name: Check if citations changed
+        if: github.event.action != 'closed'
         id: changed
         uses: tj-actions/verify-changed-files@v18
         with:
@@ -65,6 +70,7 @@ jobs:
 
       - name: Commit updated citations to branch
         if: |
+          github.event.action != 'closed' &&
           steps.changed.outputs.files_changed == 'true' &&
           inputs.open-pr != true
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -73,12 +79,15 @@ jobs:
 
       - name: Open pull request with updated citations
         if: |
+          github.event.action != 'closed' &&
           steps.changed.outputs.files_changed == 'true' &&
           inputs.open-pr == true
         uses: peter-evans/create-pull-request@v6
         with:
           branch: citation-update
           title: Periodic citation update
+          body: |
+            To see a live preview of this PR, close (don't merge) and reopen it.
 
     outputs:
-      changed: ${{ steps.changed.outputs.files_changed }}
+      changed: ${{ steps.changed.outputs.files_changed || false }}
