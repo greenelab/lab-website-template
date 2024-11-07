@@ -61,7 +61,7 @@ jobs:
         timeout-minutes: 15
 
       - name: Commit cache
-        if: always()
+        if: failure()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           file_pattern: "**/.cache/**"
