@@ -2,7 +2,7 @@
   <span>
     {% if include.post.previous %}
       {% include icon.html icon="fa-solid fa-angle-left" %} Previous post<br>
-      <a href="{{ include.post.previous.url | relative_url | xml_escape }}">
+      <a href="{{ include.post.previous.url | relative_url }}">
         {{ include.post.previous.title }}
       </a>
     {% endif %}
@@ -10,7 +10,7 @@
   <span>
     {% if include.post.next %}
       Next post {% include icon.html icon="fa-solid fa-angle-right" %}<br>
-      <a href="{{ include.post.next.url | relative_url | xml_escape }}">
+      <a href="{{ include.post.next.url | relative_url }}">
         {{ include.post.next.title }}
       </a>
     {% endif %}

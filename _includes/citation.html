@@ -13,14 +13,14 @@
     {% if include.style == "rich" %}
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
+          href="{{ citation.link | relative_url | uri_escape }}"
         {% endif %}
         class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | xml_escape }}"
+        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
         <img
-          src="{{ citation.image | relative_url | xml_escape }}"
-          alt="{{ citation.title | default: "citation image" | xml_escape }}"
+          src="{{ citation.image | relative_url | uri_escape }}"
+          alt="{{ citation.title | default: "citation image" | regex_strip }}"
           loading="lazy"
           {% include fallback.html %}
         >
