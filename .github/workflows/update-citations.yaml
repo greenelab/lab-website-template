@@ -60,6 +60,13 @@ jobs:
         run: python _cite/cite.py
         timeout-minutes: 15
 
+      - name: Commit cache
+        if: failure()
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "**/.cache/**"
+          commit_message: "Commit cache"
+
       - name: Check if citations changed
         if: github.event.action != 'closed'
         id: changed

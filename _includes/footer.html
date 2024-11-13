@@ -3,7 +3,7 @@
 
 <footer
   class="background"
-  style="--image: url('{{ image | relative_url | xml_escape }}')"
+  style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}

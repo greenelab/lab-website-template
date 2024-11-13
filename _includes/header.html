@@ -8,7 +8,7 @@
 
 <header
   class="background"
-  style="--image: url('{{ image | relative_url | xml_escape }}')"
+  style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -22,7 +22,7 @@
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
-          <img src="{{ logo | relative_url | xml_escape }}" alt="logo">
+          <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
         {% endif %}
       </span>
     {% endif %}
@@ -48,7 +48,7 @@
     {% for page in pages %}
       {% if page.nav %}
         <a
-          href="{{ page.dir | relative_url | xml_escape }}"
+          href="{{ page.dir | relative_url | uri_escape }}"
           data-tooltip="{{ page.nav.tooltip | xml_escape }}"
         >
           {{ page.title }}
