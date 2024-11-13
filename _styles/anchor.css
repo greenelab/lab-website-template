@@ -1,12 +1,13 @@
 .anchor {
   display: inline-block;
   position: relative;
-  width: 0;
-  margin: 0;
+  top: -0.15em;
   left: 0.5em;
+  width: 0;
+  margin: 0 !important;
   color: var(--primary) !important;
   opacity: 0;
-  font-size: 0.75em;
+  font-size: 0.75em !important;
   text-decoration: none;
   transition: opacity var(--transition), color var(--transition);
 }

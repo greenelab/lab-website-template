@@ -2,6 +2,28 @@
 
 Reference: common-changelog.org
 
+## 1.3.1 - 2024-11-11
+
+### Changed
+
+- Update and improve workflows for building site and citations
+- Escape user inputs better in rare edge cases
+
+## 1.3.0 - 2024-08-16
+
+### Changed
+
+- List component `filters` parameter changed to `filter` and now takes any Ruby expression instead of the existing custom syntax.
+  Example: `filters="publisher: bioRxiv, date: ^2020"` becomes `filter="publisher == 'bioRxiv' and date =~ /^2020/"`.
+  See docs for more info.
+- Fix rare bug where data (e.g. a paper title) containing certain characters (e.g. a double quote) can mess up HTML rendering.
+- Fix "first time setup" workflow bug.
+- Tweak GitHub Actions debugging/logging.
+
+### Added
+
+- Styling for `<details>` HTML element.
+
 ## 1.2.2 - 2024-06-05
 
 ### Added
@@ -37,7 +59,7 @@ Reference: common-changelog.org
 
 - Add `image` param to support blog post thumbnails.
 - Add `html-proofer` plugin that checks for broken images/links/etc.
-- Add `remove` flag to remove a source from a metasource. 
+- Add `remove` flag to remove a source from a metasource.
 
 ## 1.1.6 - 2023-10-06
 

@@ -13,7 +13,7 @@ button {
   gap: 10px;
   max-width: calc(100% - 5px - 5px);
   margin: 5px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border: none;
   border-radius: var(--rounded);
   background: var(--primary);
