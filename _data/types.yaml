@@ -96,6 +96,12 @@ twitter:
   tooltip: Twitter
   link: https://twitter.com/$VALUE
 
+bluesky:
+  icon: fa-brands fa-bluesky
+  text: Bluesky
+  tooltip: Bluesky
+  link: https://bsky.app/profile/$VALUE
+
 facebook:
   icon: fa-brands fa-facebook
   text: Facebook
