@@ -6,3 +6,13 @@
   description: (1) Implement Edge AI on satellites to process remote sensing data, enabling real-time detection and tracking of maritime activities in the Taiwan Strait. <br/> (2) Create an integrated communication network using LEO satellites and UAVs/Ships to optimize data rates and ensure reliable data transmission.
   tags:
     - international-research
+
+- title: 基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型(Semi Super vised Learning Model)為重建部分雲層遮蔽災害物件區域之開發
+  subtitle: Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform
+  group: featured
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - resource
