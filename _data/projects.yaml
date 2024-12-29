@@ -10,7 +10,7 @@
 - title: 基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型(Semi Super vised Learning Model)為重建部分雲層遮蔽災害物件區域之開發
   subtitle: Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform
   group: featured
-  image: images/nstc-2024.png
+  image: images/projects/nstc-2024.png
   link: https://github.com/
   description: This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover. By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities. A key innovation of this research is its implementation in a CanSAT, a small satellite platform, demonstrating the feasibility of real-time disaster monitoring in space.
   tags:
