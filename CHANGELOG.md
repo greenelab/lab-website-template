@@ -6,7 +6,7 @@ Reference: common-changelog.org
 
 ### Changed
 
-- Misc bug fixes.
+- Misc enhancements and bug fixes.
 
 ## 1.3.1 - 2024-11-11
 
