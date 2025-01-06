@@ -10,18 +10,18 @@
 
 <div class="post-excerpt-container">
   <div class="post-excerpt">
-    {% assign url = post.url %}
+    {% assign url = post.url | relative_url | uri_escape %}
     {% assign title = post.title %}
-    {% assign image = post.image %}
+    {% assign image = post.image | relative_url | uri_escape %}
 
     {% if image %}
       <a
-        href="{{ url | relative_url | uri_escape }}"
+        href="{{ url }}"
         class="post-excerpt-image"
         aria-label="{{ title | default: "excerpt link" | regex_strip }}"
       >
         <img
-          src="{{ image | relative_url | uri_escape }}"
+          src="{{ image }}"
           alt="{{ title | default: "excerpt image" | regex_strip }}"
           loading="lazy"
           {% include fallback.html %}
@@ -30,7 +30,7 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url | relative_url | uri_escape }}">{{ title }}</a>
+      <a href="{{ url }}">{{ title }}</a>
 
       {%
         include post-info.html

@@ -2,12 +2,18 @@
 
 Reference: common-changelog.org
 
+## 1.3.2 - 2025-01-06
+
+### Changed
+
+- Misc enhancements and bug fixes.
+
 ## 1.3.1 - 2024-11-11
 
 ### Changed
 
-- Update and improve workflows for building site and citations
-- Escape user inputs better in rare edge cases
+- Update and improve workflows for building site and citations.
+- Escape user inputs better in rare edge cases.
 
 ## 1.3.0 - 2024-08-16
 

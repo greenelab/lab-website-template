@@ -2,7 +2,7 @@
 
 # team member roles
 
-pi:
+principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
@@ -95,6 +95,12 @@ twitter:
   text: Twitter
   tooltip: Twitter
   link: https://twitter.com/$VALUE
+
+bluesky:
+  icon: fa-brands fa-bluesky
+  text: Bluesky
+  tooltip: Bluesky
+  link: https://bsky.app/profile/$VALUE
 
 facebook:
   icon: fa-brands fa-facebook

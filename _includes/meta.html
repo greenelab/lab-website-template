@@ -7,6 +7,8 @@
   {% assign title = nil %}
 {% endif %}
 
+{% assign title = title | xml_escape %}
+
 {% assign fulltitle = "" | split: "," %}
 {% if title %}
   {% assign fulltitle = fulltitle | push: title %}
@@ -28,6 +30,8 @@
   {{ site.url }}{{ site.baseurl }}
 {%- endcapture %}
 
+{% assign description = description | xml_escape %}
+
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
 {% assign icon = png | default: jpg | relative_url %}
@@ -47,24 +51,24 @@
 
 <link rel="icon" href="{{ icon }}">
 
-<meta name="title" content="{{ title | xml_escape }}">
-<meta name="description" content="{{ description | xml_escape }}">
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">
 
-<meta property="og:title" content="{{ title | xml_escape }}">
+<meta property="og:title" content="{{ title }}">
 <meta property="og:site_title" content="{{ site.title | xml_escape }}">
-<meta property="og:description" content="{{ description | xml_escape }}">
+<meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}">
 <meta property="og:image" content="{{ share }}">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="{{ title | xml_escape }}">
-<meta property="twitter:description" content="{{ description | xml_escape }}">
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="{{ share }}">
 
 {% if page.author %}
-  <meta name="author" content="{{ page | xml_escape.author }}">
+  <meta name="author" content="{{ page.author | xml_escape }}">
   <meta property="og:type" content="article">
   <meta property="og:updated_time" content="{{ updated }}">
   <meta property="article:published_time" content="{{ published }}">
