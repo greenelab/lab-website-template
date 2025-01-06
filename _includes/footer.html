@@ -1,4 +1,4 @@
-{% assign image = page.footer | default: site.footer | relative_url %}
+{% assign image = page.footer | default: site.footer %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
 <footer

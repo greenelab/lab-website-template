@@ -1,4 +1,4 @@
-{% assign image = page.header | default: site.header | relative_url %}
+{% assign image = page.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
