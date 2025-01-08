@@ -1,8 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-  - name: 💬 Start a discussion
-    url: https://github.com/greenelab/lab-website-template/discussions
-    about: I need help, I have a question, or other discussion.
-  - name: 📚 Docs issue
-    url: https://github.com/greenelab/lab-website-template-docs/issues
-    about: I have a question or issue related to the template documentation.
