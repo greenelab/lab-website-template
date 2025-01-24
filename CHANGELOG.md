@@ -2,6 +2,17 @@
 
 Reference: common-changelog.org
 
+## 1.3.3 - 2025-01-25
+
+### Changed
+
+- Citation process logging enhancements.
+
+### Added
+
+- Add support for multiple authors in blog posts.
+- Add GitHub Actions workflow status badges to readme.
+
 ## 1.3.2 - 2025-01-06
 
 ### Changed
