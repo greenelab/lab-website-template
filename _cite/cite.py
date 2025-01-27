@@ -13,8 +13,9 @@ from util import *
 load_dotenv()
 
 
-# error flag
-error = False
+# save errors/warnings for reporting at end
+errors = []
+warnings = []
 
 # output citations file
 output_file = "_data/citations.yaml"
@@ -41,46 +42,46 @@ for plugin in plugins:
     files = Path.cwd().glob(f"_data/{plugin.stem}*.*")
     files = list(filter(lambda p: p.suffix in [".yaml", ".yml", ".json"], files))
 
-    log(f"Found {len(files)} {plugin.stem}* data file(s)", 1)
+    log(f"Found {len(files)} {plugin.stem}* data file(s)", indent=1)
 
     # loop through data files
     for file in files:
-        log(f"Processing data file {file.name}", 1)
+        log(f"Processing data file {file.name}", indent=1)
 
         # load data from file
         try:
             data = load_data(file)
             # check if file in correct format
             if not list_of_dicts(data):
-                raise Exception("File not a list of dicts")
+                raise Exception(f"{file.name} data file not a list of dicts")
         except Exception as e:
-            log(e, 2, "ERROR")
-            error = True
+            log(e, indent=2, level="ERROR")
+            errors.append(e)
             continue
 
         # loop through data entries
         for index, entry in enumerate(data):
-            log(f"Processing entry {index + 1} of {len(data)}, {label(entry)}", 2)
+            log(f"Processing entry {index + 1} of {len(data)}, {label(entry)}", level=2)
 
             # run plugin on data entry to expand into multiple sources
             try:
                 expanded = import_module(f"plugins.{plugin.stem}").main(entry)
                 # check that plugin returned correct format
                 if not list_of_dicts(expanded):
-                    raise Exception("Plugin didn't return list of dicts")
+                    raise Exception(f"{plugin.stem} plugin didn't return list of dicts")
             # catch any plugin error
             except Exception as e:
                 # log detailed pre-formatted/colored trace
                 print(traceback.format_exc())
                 # log high-level error
-                log(e, 3, "ERROR")
-                error = True
+                log(e, indent=3, level="ERROR")
+                errors.append(e)
                 continue
 
             # loop through sources
             for source in expanded:
                 if plugin.stem != "sources":
-                    log(label(source), 3)
+                    log(label(source), level=3)
 
                 # include meta info about source
                 source["plugin"] = plugin.name
@@ -90,7 +91,7 @@ for plugin in plugins:
                 sources.append(source)
 
             if plugin.stem != "sources":
-                log(f"{len(expanded)} source(s)", 3)
+                log(f"{len(expanded)} source(s)", indent=3)
 
 
 log("Merging sources by id")
@@ -103,7 +104,7 @@ for a in range(0, len(sources)):
     for b in range(a + 1, len(sources)):
         b_id = get_safe(sources, f"{b}.id", "")
         if b_id == a_id:
-            log(f"Found duplicate {b_id}", 2)
+            log(f"Found duplicate {b_id}", indent=2)
             sources[a].update(sources[b])
             sources[b] = {}
 sources = [entry for entry in sources if entry]
@@ -136,7 +137,7 @@ for index, source in enumerate(sources):
 
     # Manubot doesn't work without an id
     if _id:
-        log("Using Manubot to generate citation", 1)
+        log("Using Manubot to generate citation", indent=1)
 
         try:
             # run Manubot and set citation
@@ -144,13 +145,18 @@ for index, source in enumerate(sources):
 
         # if Manubot cannot cite source
         except Exception as e:
+            plugin = get_safe(source, "plugin", "")
+            file = get_safe(source, "file", "")
             # if regular source (id entered by user), throw error
-            if get_safe(source, "plugin", "") == "sources.py":
-                log(e, 3, "ERROR")
-                error = True
+            if plugin == "sources.py":
+                log(e, indent=3, level="ERROR")
+                errors.append(f"Manubot could not generate citation for source {_id}")
             # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
-                log(e, 3, "WARNING")
+                log(e, indent=3, level="WARNING")
+                warnings.append(
+                    f"Manubot could not generate citation for source {_id} (from {file} with {plugin})"
+                )
                 # discard source from citations
                 continue
 
@@ -175,14 +181,26 @@ try:
     save_data(output_file, citations)
 except Exception as e:
     log(e, level="ERROR")
-    error = True
+    errors.append(e)
 
 
-# exit at end, so user can see all errors in one run
-if error:
-    log("Error(s) occurred above", level="ERROR")
+log()
+
+
+# exit at end, so user can see all errors/warnings in one run
+if len(warnings):
+    log(f"{len(warnings)} warning(s) occurred above", level="WARNING")
+    for warning in warnings:
+        log(warning, indent=1, level="WARNING")
+
+if len(errors):
+    log(f"{len(errors)} error(s) occurred above", level="ERROR")
+    for error in errors:
+        log(error, indent=1, level="ERROR")
+    log()
     exit(1)
+
 else:
     log("All done!", level="SUCCESS")
 
-log("\n")
+log()

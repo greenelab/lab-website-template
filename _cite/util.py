@@ -39,20 +39,25 @@ def log(message="\n--------------------\n", indent=0, level="", newline=True):
     log to terminal, color determined by indent and level
     """
 
-    palette = {
+    colors = {
         0: "[orange1]",
         1: "[salmon1]",
         2: "[violet]",
         3: "[sky_blue1]",
-        "ERROR": "[white on #F43F5E]",
-        "WARNING": "[black on #EAB308]",
-        "SUCCESS": "[black on #10B981]",
+        "ERROR": "[#F43F5E]",
+        "WARNING": "[#EAB308]",
+        "SUCCESS": "[#10B981]",
         "INFO": "[grey70]",
     }
-    color = get_safe(palette, level, "") or get_safe(palette, indent, "") or "[white]"
+    prefixes = {
+        "ERROR": "🚫 ERROR: ",
+        "WARNING": "⚠️ WARNING: ",
+    }
+    color = get_safe(colors, level, "") or get_safe(colors, indent, "") or "[white]"
+    prefix = get_safe(prefixes, level, "")
     if newline:
         print()
-    print(indent * "    " + color + str(message) + "[/]", end="", flush=True)
+    print(indent * "    " + color + prefix + str(message) + "[/]", end="", flush=True)
 
 
 def label(entry):
@@ -179,7 +184,7 @@ def cite_with_manubot(_id):
         commands = ["manubot", "cite", _id, "--log-level=WARNING"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
     except Exception as e:
-        log(e, 3)
+        log(e, indent=3)
         raise Exception("Manubot could not generate citation")
 
     # parse results as json

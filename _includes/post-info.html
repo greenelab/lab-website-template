@@ -1,17 +1,25 @@
 <div class="post-info">
   {% if include.author %}
-    {% assign member = site.members
-      | where_exp: "member", "member.slug == include.author"
-      | first
+    {% assign authors = include.author
+      | join: ","
+      | downcase
+      | split: ","
+      | array_filter
     %}
-    {% if member %}
-      {% include portrait.html lookup=include.author style="tiny" %}
-    {% else %}
-      <span data-tooltip="Author">
-        {% include icon.html icon="fa-solid fa-feather-pointed" %}
-        <span>{{ include.author }}</span>
-      </span>
-    {% endif %}
+    {% for author in authors %}
+      {% assign member = site.members
+        | where_exp: "member", "member.slug == author"
+        | first
+      %}
+      {% if member %}
+        {% include portrait.html lookup=author style="tiny" %}
+      {% else %}
+        <span data-tooltip="Author">
+          {% include icon.html icon="fa-solid fa-feather-pointed" %}
+          <span>{{ author }}</span>
+        </span>
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {% assign published = include.published | date: "%B %d, %Y" %}
