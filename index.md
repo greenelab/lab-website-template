@@ -13,6 +13,24 @@ The DePasquale lab is located in the [Department of Biomedical Engineering](http
 # Research
 
 {% capture text %}
+Recent advances in machine learning methods for computational chemistry have opened exciting new avenues for understanding olfaction. We are utilizing graph neural networks and self-supervised learning to identify patterns in unlabeled molecular data, generating representations of odors that are useful for predicting olfactory sensory neuron activation. These learned representations more accurately predict how individual odor molecules interact with olfactory receptors compared to existing methods.
+
+Relevant poster: [_Improved odor-receptor interaction predictions via self supervised learning_](https://depasquale-lab.github.io/images/Poster_draft_2.pdf) \\
+McConachie, G, Duniec, E, Younger, M, DePasquale (2024) \\
+NAIsys CSHL 2024
+{:.center}
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/GNN-image.jpg"
+  caption="GNNs"
+  headline="Machine learning models of the early olfactory system"
+  text=text
+%}
+
+
+{% capture text %}
 Biological neural networks compute differently than most artificial neural networks used in machine learning. For example, although real neurons communicate with spikes, reproducing this feature in artificial models has been a challenge. We develop methods for training biophysically detailed neural networks and use thse models to understand how real biologial circuits compute. Through mathematical modeling, we focus on building tighter links between biologial neural networks and more abstract artifical neural network models used in machine learning. 
 
 Relevant paper: [_The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks_](https://doi.org/10.1016/j.neuron.2022.12.007) \\
