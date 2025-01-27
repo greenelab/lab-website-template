@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Ruby packages
-        uses: ruby/setup-ruby@v1.172.0
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
           bundler-cache: true
