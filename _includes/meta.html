@@ -10,10 +10,10 @@
 {% assign title = title | xml_escape %}
 
 {% assign fulltitle = "" | split: "," %}
-{% if title %}
+{% if title and title != "" %}
   {% assign fulltitle = fulltitle | push: title %}
 {% endif %}
-{% if site.title %}
+{% if site.title and site.title != "" %}
   {% assign fulltitle = fulltitle | push: site.title %}
 {% endif %}
 {% assign fulltitle = fulltitle | join: " | " %}
