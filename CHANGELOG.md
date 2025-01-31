@@ -2,6 +2,12 @@
 
 Reference: common-changelog.org
 
+## 1.3.4 - 2025-02-03
+
+### Changed
+
+- Fix section component parsing bug.
+
 ## 1.3.3 - 2025-01-25
 
 ### Changed
