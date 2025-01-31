@@ -10,12 +10,18 @@
 {% assign sections = content | split: "<!-- section break -->" | array_filter %}
 
 {% for section in sections %}
-  {% assign dark = section | regex_scan: "dark: (.*);" | default: "" %}
+  {% assign dark = section
+    | regex_scan: "<dark>(.*?)</dark>"
+    | default: ""
+  %}
   {% assign image = section
-    | regex_scan: "background: (.*);"
+    | regex_scan: "<background>(.*?)</background>"
     | default: nil
   %}
-  {% assign size = section | regex_scan: "size: (.*);" | default: "page" %}
+  {% assign size = section
+    | regex_scan: "<size>(.*?)</size>"
+    | default: "page"
+  %}
 
   <section
     class="background"
