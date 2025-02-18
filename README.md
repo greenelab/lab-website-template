@@ -5,6 +5,6 @@
 
   # cosinelab-iitism's Website
 
-  Visit **[cosinelab-iitism.github.io/cosinelab.github.io](https://cosinelab-iitism.github.io/cosinelab.github.io)** 🚀
+  Visit **[cosinelab-iitism.github.io](https://cosinelab-iitism.github.io)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
