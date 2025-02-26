@@ -1,6 +1,6 @@
 # site properties and page defaults
-title: cosinelab-iitism
-subtitle: 
+title: COSINE Lab
+subtitle: Computing for Secure and Intelligent Networks Lab.
 description: An engaging 1-3 sentence description of your lab.
 header: images/background.jpg
 footer: images/background.jpg
@@ -8,12 +8,12 @@ proofer: false
 
 # site social media and other links
 links:
-  email: contact@cosinelab-iitism.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: tamoghnaojha@iitism.ac.in
+  orcid: 0000-0001-5831-0632
+  google-scholar: gFFt6p4AAAAJ
   github: cosinelab-iitism
-  twitter: cosinelab-iitism
-  youtube: cosinelab-iitism
+  twitter: #cosinelab-iitism
+  youtube: #cosinelab-iitism
 
 ### jekyll settings
 
