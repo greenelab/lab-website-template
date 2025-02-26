@@ -1,7 +1,7 @@
 ---
 ---
 
-# Abous Us
+# About Us
 
 Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage. This is a research group of [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad.
 
