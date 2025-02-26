@@ -3,11 +3,11 @@
 
 # About Us
 
-Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage. This is a research group of [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad.
+Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage. This is a research group of [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad. Our work is focused on "distributed intelligence" in 
 
 The lab page is under maintenance. Stay tuned for the updates.
 
-### We are recruiting: PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad
+#### We are recruiting: PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad
 I am looking for self-motivated candidates interested working in areas such as AI/ML, UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Eligibility: M. Tech/M.Sc. in Mathematics & Computing / M.Tech. in Computer Science. More details: [in this link](https://admission.iitism.ac.in/index.php/admission/phd/add_phd/home).
 
 
@@ -15,7 +15,7 @@ I am looking for self-motivated candidates interested working in areas such as A
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Congratulations to Sreekar, Sonali and Amala for getting their works accepted at IEEE WCNC 2025, IEEE ANTS 2024 and IEEE OCIT 2024.
 
 {%
   include button.html
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We have received our initial grant: a _special lab setup grant_ of **29.97 Lakhs INR** from IIT (ISM) Dhanbad
 
 {%
   include button.html
@@ -63,7 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Scaria, Subham and Kimsie have joined us for M. Sc. project.
 
 {%
   include button.html
