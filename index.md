@@ -1,11 +1,15 @@
 ---
 ---
 
-# cosinelab-iitism's Website
+# Abous Us
 
-An engaging 1-3 sentence description of your lab.
+Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage. This is a research group of [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad.
 
-{% include section.html %}
+The lab page is under maintenance. Stay tuned for the updates.
+
+### We are recruiting: PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad
+I am looking for self-motivated candidates interested working in areas such as AI/ML, UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Eligibility: M. Tech/M.Sc. in Mathematics & Computing / M.Tech. in Computer Science. More details: [in this link](https://admission.iitism.ac.in/index.php/admission/phd/add_phd/home).
+
 
 ## Highlights
 
