@@ -7,6 +7,11 @@ Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage.
 
 The lab page is under maintenance. Stay tuned for the updates.
 
+<div style="border: 1px solid red; padding: 10px;">
+This is a text box with a 1px red border.
+</div>
+
+
 #### We are recruiting: PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad
 I am looking for self-motivated candidates interested working in areas such as AI/ML, UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Eligibility: M. Tech/M.Sc. in Mathematics & Computing / M.Tech. in Computer Science. More details: [in this link](https://admission.iitism.ac.in/index.php/admission/phd/add_phd/home).
 
