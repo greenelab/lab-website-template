@@ -3,17 +3,14 @@
 
 # About Us
 
-Welcome to _Computing for Secure and Intelligent Networks (COSINE) Lab_ webpage. This is a research group of [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad. Our work is focused on "distributed intelligence" in 
+We are _Computing for Secure and Intelligent Networks (COSINE) Lab_, led by [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad. Our work is focused on exploiting "distributed intelligence" in IoT networks, especially with resource-constrained nodes, to facilitate energy-efficient and secure decisions on resource allocation and management. Our current focus is on applying AI/ML techniques in UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Recently, we have received our initial lab establishment grant from IIT (ISM) Dhanbad. 
 
-The lab page is under maintenance. Stay tuned for the updates.
 
 <div style="border: 1px solid red; padding: 10px;">
-<b>We are recruiting: PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad</b>
-
-I am looking for self-motivated candidates interested working in areas such as AI/ML, UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Eligibility: M. Tech/M.Sc. in Mathematics & Computing / M.Tech. in Computer Science. More details: <a href=">https://admission.iitism.ac.in/index.php/admission/phd/add_phd/home"> in this link</a>.
+<b>We are recruiting:</b> PhD position available with me in the Department of Mathematics and Computing, IIT (ISM) Dhanbad. I am looking for self-motivated candidates interested working in areas such as AI/ML, UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. Eligibility: M. Tech/M.Sc. in Mathematics & Computing / M.Tech. in Computer Science. More details: <a href=">https://admission.iitism.ac.in/index.php/admission/phd/add_phd/home"> in this link</a>.
 </div>
 
-> **Note:** This is a simulated text box using a blockquote.
+
 
 
 ## Highlights
