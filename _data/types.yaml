@@ -6,6 +6,10 @@ pi:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+co:
+  icon: fa-solid fa-chalkboard-user
+  description: Co-Advisor
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
@@ -13,6 +17,10 @@ postdoc:
 phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: Master Student 碩士生
 
 undergrad:
   icon: fa-solid fa-user-graduate

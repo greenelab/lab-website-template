@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+
+  <p><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto;">
+  {% endif %}
+
+  <p><strong>Tags:</strong> {{ page.tags | join: ", " }}</p>
+
+  <p>{{ page.description }}</p>
+
+  <div>
+    {{ content }}
+  </div>
+</article>

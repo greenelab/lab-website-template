@@ -5,22 +5,27 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %} Projects
 
-Will be Updated soon! More detail at [https://www.linkedin.com/in/trongan93](https://www.linkedin.com/in/trongan93/details/projects/)
+{% include search-box.html %}
 
-{% include tags.html tags="publication, resource, website" %}
+{% for project in site.projects %}
+  <div class="post-excerpt-container">
+    <div class="post-excerpt">
+      {% assign url = project.url %}
+      {% assign title = project.title %}
+      {% assign image = project.image %}
 
-{% include search-info.html %}
+      {% if image %}
+        <a href="{{ url }}" class="post-excerpt-image">
+          <img src="{{ image | relative_url }}" alt="{{ title }}">
+        </a>
+      {% endif %}
 
-{% include section.html %}
-
-## Featured
-
-{% include list.html component="card" data="projects" filters="group: featured" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filters="group: " style="medium" %}
+      <div class="post-excerpt-text">
+        <a href="{{ url }}">{{ title }}</a>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}

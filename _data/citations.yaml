@@ -24,26 +24,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.5281/zenodo.14792938
-  title: Standard Dynamic Range (SDR) satellite images
-  authors:
-  - Trong-An Bui
-  publisher: Zenodo
-  date: '2025-01-01'
-  link: https://doi.org/g83v8r
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.5281/zenodo.14794441
-  title: Standard Dynamic Range (SDR) satellite images
-  authors:
-  - Trong-An Bui
-  publisher: Zenodo
-  date: '2025-01-01'
-  link: https://doi.org/g83v8s
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/aerospace11050336
   title: On-Board Image Enhancement on Remote Sensing Payload
   authors:

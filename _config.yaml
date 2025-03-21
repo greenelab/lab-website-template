@@ -35,6 +35,11 @@ defaults:
       type: "posts"
     values:
       layout: post
+  # markdown files in /_projects
+  - scope:
+      type: "projects"
+    values:
+      layout: project
 
 collections:
   # generate page for each member
@@ -43,6 +48,9 @@ collections:
   # generate page for each post
   posts:
     output: true
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # jekyll plugins
 plugins:

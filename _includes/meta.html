@@ -28,8 +28,8 @@
   {{ site.url }}{{ site.baseurl }}
 {%- endcapture %}
 
-{% assign png = "images/icon.png" | file_exists %}
-{% assign jpg = "images/icon.jpg" | file_exists %}
+{% assign png = "images/icon-lab.png" | file_exists %}
+{% assign jpg = "images/icon-lab.jpg" | file_exists %}
 {% assign icon = png | default: jpg | relative_url %}
 
 {% assign jpg = "images/share.jpg" | file_exists %}

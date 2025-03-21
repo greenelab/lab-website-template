@@ -5,14 +5,21 @@ nav:
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %} Team
 
 At the AeroSat Vision Lab, our team is comprised of dedicated professionals and talented students who are passionate about advancing the fields of artificial intelligence and aerospace technology. Led by Dr. Trong-An Bui, our diverse team combines expertise in engineering, electronic systems, computer science, and space technology to drive innovative research and development projects.
 
 {% include section.html %}
 
+## Principal Investigator
 {% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+
+{% include section.html %}
+
+## Members
+<div class="team-container">
+  {% include list.html data="members" component="portrait" filters="role: master" %}
+</div>
 
 {% include section.html background="images/background.jpg" dark=true %}
 
