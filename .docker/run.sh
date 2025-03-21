@@ -35,3 +35,5 @@ ${DOCKER_RUN} ${PLATFORM} \
     --publish 35729:35729 \
     --volume "${WORKING_DIR}:/usr/src/app" \
     ${IMAGE} "$@"
+
+#run "dos2unix .docker/entrypoint.sh" if entrypoint.sh is not executable
