@@ -3,7 +3,7 @@
 
 # About Us
 
-We are _Computing for Secure and Intelligent Networks (COSINE) Lab_, led by [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad. Our work is focused on exploiting "distributed intelligence" in IoT networks, especially with resource-constrained nodes, to facilitate energy-efficient and secure decisions on resource allocation and management. Our current focus is on applying AI/ML techniques in UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. We recently received our initial lab establishment grant from IIT (ISM) Dhanbad. 
+We are _Computing for Secure and Intelligent Networks (COSINE) Lab_, led by [Dr. Tamoghna Ojha](https://people.iitism.ac.in/~tamoghnaojha/) at the Department of Mathematics and Computing, IIT (ISM) Dhanbad. Our work is focused on exploiting "distributed intelligence" in IoT networks, especially with resource-constrained nodes, to facilitate energy-efficient and secure decisions on resource allocation and management. Our current focus is on applying AI/ML techniques in UAV-IoT networks, Edge computing, Non-terrestrial networks, digital twin, and edge-cloud-continuum. We have recently received a few research grants -- to develop **Low-resource AI Vision system for Mining** supported by TEXMiN Foundation (DST TIH) and a **special lab setup grant** from IIT (ISM) Dhanbad. 
 
 
 <div style="border: 1px solid red; padding: 10px;">
