@@ -40,7 +40,7 @@ We are _Computing for Secure and Intelligent Networks (COSINE) Lab_, led by [Dr.
 
 {% capture text %}
 
-We have received our initial grant: a _special lab setup grant_ of **29.97 Lakhs INR** from IIT (ISM) Dhanbad
+We have received our initial grants: to develop **Low-resource AI Vision system for Mining** supported by TEXMiN Foundation (DST TIH) and a **special lab setup grant** from IIT (ISM) Dhanbad
 
 {%
   include button.html
