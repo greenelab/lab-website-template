@@ -10,6 +10,8 @@ nav:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
+<img src="../images/research_areas.jpg" alt="research areas" width="250" height="250">
+
 {% include section.html %}
 
 ## Highlighted
