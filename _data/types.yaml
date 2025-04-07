@@ -3,7 +3,7 @@
 # team member roles
 
 principal-investigator:
-  icon: fa-solid fa-microscope
+  icon: fa-solid fa-network-wired
   description: Principal Investigator
 
 postdoc:
@@ -13,6 +13,10 @@ postdoc:
 phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
+
+msc:
+  icon: fa-solid fa-graduation-cap
+  description: MSc Student
 
 undergrad:
   icon: fa-solid fa-user-graduate
