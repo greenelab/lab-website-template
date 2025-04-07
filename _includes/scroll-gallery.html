@@ -1,0 +1,47 @@
+<div class="auto-scroll">
+  <div class="scroll-track">
+    {% for img in include.images %}
+      {% assign parts = img | split: "|" %}
+      <figure>
+        <img src="{{ parts[0] }}" alt="{{ parts[1] | default: '' }}">
+        {% if parts[2] %}
+          <figcaption>{{ parts[2] }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+    {% for img in include.images %}
+      {% assign parts = img | split: "|" %}
+      <figure>
+        <img src="{{ parts[0] }}" alt="{{ parts[1] | default: '' }}">
+        {% if parts[2] %}
+          <figcaption>{{ parts[2] }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.auto-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.scroll-track {
+  display: inline-block;
+  animation: scroll-left 10s linear infinite;
+}
+.scroll-track figure {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+.scroll-track img {
+  height: 200px;
+  display: block;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>

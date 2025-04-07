@@ -1,247 +1,325 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad1082
-  title: "The Monarch Initiative in 2024: an analytic platform integrating phenotypes,\
-    \ genes\_and diseases across species"
+- id: doi:10.1016/j.pmcj.2023.101820
+  title: 'Wireless power transfer with unmanned aerial vehicles: State of the art
+    and open challenges'
   authors:
-  - Tim E Putman
-  - Kevin Schaper
-  - Nicolas Matentzoglu
-  - "Vincent\_P Rubinetti"
-  - "Faisal\_S Alquaddoomi"
-  - Corey Cox
-  - J Harry Caufield
-  - Glass Elsarboukh
-  - Sarah Gehrke
-  - Harshad Hegde
-  - "Justin\_T Reese"
-  - Ian Braun
-  - "Richard\_M Bruskiewich"
-  - Luca Cappelletti
-  - Seth Carbon
-  - "Anita\_R Caron"
-  - "Lauren\_E Chan"
-  - "Christopher\_G Chute"
-  - "Katherina\_G Cortes"
-  - "Vin\xEDcius De\_Souza"
-  - Tommaso Fontana
-  - "Nomi\_L Harris"
-  - "Emily\_L Hartley"
-  - Eric Hurwitz
-  - "Julius\_O B Jacobsen"
-  - Madan Krishnamurthy
-  - "Bryan\_J Laraway"
-  - "James\_A McLaughlin"
-  - "Julie\_A McMurry"
-  - "Sierra\_A T Moxon"
-  - "Kathleen\_R Mullen"
-  - "Shawn\_T O\u2019Neil"
-  - "Kent\_A Shefchek"
-  - Ray Stefancsik
-  - Sabrina Toro
-  - "Nicole\_A Vasilevsky"
-  - "Ramona\_L Walls"
-  - "Patricia\_L Whetzel"
-  - David Osumi-Sutherland
-  - Damian Smedley
-  - "Peter\_N Robinson"
-  - "Christopher\_J Mungall"
-  - "Melissa\_A Haendel"
-  - "Monica\_C Munoz-Torres"
-  publisher: Nucleic Acids Research
-  date: '2023-11-24'
-  link: https://doi.org/gs6kmr
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Theofanis P. Raptis
+  - Andrea Passarella
+  - Marco Conti
+  publisher: Pervasive and Mobile Computing
+  date: '2023-06-01'
+  link: https://doi.org/g9dm5m
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.10.11.560955
-  title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
+- id: doi:10.1016/j.comnet.2022.108989
+  title: Balanced wireless crowd charging with mobility prediction and social awareness
   authors:
-  - Richard J. Abdill
-  - Samantha P. Graham
-  - Vincent Rubinetti
-  - Frank W. Albert
-  - Casey S. Greene
-  - Sean Davis
-  - Ran Blekhman
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-10-11'
-  link: https://doi.org/gsvf5z
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Theofanis P. Raptis
+  - Marco Conti
+  - Andrea Passarella
+  publisher: Computer Networks
+  date: '2022-07-01'
+  link: https://doi.org/g9dm5p
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: doi:10.1109/smartcomp55677.2022.00034
+  title: Wireless Crowd Charging with Battery Aging Mitigation
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Theofanis P. Raptis
+  - Marco Conti
+  - Andrea Passarella
+  publisher: 2022 IEEE International Conference on Smart Computing (SMARTCOMP)
+  date: '2022-06-01'
+  link: https://doi.org/g9dm5q
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.1109/GLOBECOM48099.2022.10001645
+  title: Heterogeneity-aware P2P Wireless Energy Transfer for Balanced Energy Distribution
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Theofanis P. Raptis
+  - Marco Conti
+  - Andrea Passarella
+  publisher: GLOBECOM 2022 - 2022 IEEE Global Communications Conference
+  date: '2022-12-04'
+  link: https://doi.org/g9dm5r
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
-  authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
+- id: wosuid:PPRN:13235486
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:13235486
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2022.02.18.461833
-  title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
-    and phylogeny'
+- id: doi:10.1109/JSYST.2021.3086150
+  title: 'PANDA: Preference-Based Bandwidth Allocation in Fog-Enabled Internet of
+    Underground-Mine Things'
   authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo M Sosinski
-  - Faisal S Alquaddoomi
-  - Evan P Brenner
-  - Ethan P Wolfe
-  - Vincent P Rubinetti
-  - Shaddai Amolitos
-  - Kellen M Reason
-  - John B Johnston
-  - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-22'
-  link: https://doi.org/gstx7j
-  orcid: 0000-0002-4655-3773
+  - Sudip Misra
+  - Minu Tiwari
+  - Tamoghna Ojha
+  - Yash Raj
+  publisher: IEEE Systems Journal
+  date: '2021-12-01'
+  link: https://doi.org/g9dm5s
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
+- id: doi:10.1109/JIOT.2021.3051418
+  title: 'Internet of Things for Agricultural Applications: The State of the Art'
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Narendra Singh Raghuwanshi
+  publisher: IEEE Internet of Things Journal
+  date: '2021-07-15'
+  link: https://doi.org/gm9m68
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
+- id: doi:10.1109/ISCC53001.2021.9631530
+  title: 'MobiWEB: Mobility-Aware Energy Balancing for P2P Wireless Power Transfer'
   authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
+  - Tamoghna Ojha
+  - Theofanis P. Raptis
+  - Marco Conti
+  - Andrea Passarella
+  publisher: 2021 IEEE Symposium on Computers and Communications (ISCC)
+  date: '2021-09-05'
+  link: https://doi.org/g9dm5v
+  orcid: 0000-0001-5831-0632
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1145/3431390
+  title: SecRET
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+  - Sudip Misra
+  - Tamoghna Ojha
+  - Madhusoodhanan P
+  publisher: ACM Transactions on Autonomous and Adaptive Systems
+  date: '2020-03-31'
+  link: https://doi.org/g6w2kw
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.COMCOM.2020.02.050
+  title: 'SEAL: Self-adaptive AUV-based localization for sparsely deployed Underwater
+    Sensor Networks'
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
-  plugin: sources.py
-  file: sources.yaml
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Mohammad S. Obaidat
+  publisher: Computer Communications
+  date: '2020-03-01'
+  link: https://doi.org/g9dm5w
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/JIOT.2019.2899949
+  title: "DVSP: Dynamic Virtual Sensor Provisioning in Sensor\u2013Cloud-Based Internet\
+    \ of Things"
+  authors:
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Narendra Singh Raghuwanshi
+  - Hitesh Poddar
+  publisher: IEEE Internet of Things Journal
+  date: '2019-06-01'
+  link: https://doi.org/grhhfs
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000465774304033
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000465774304033
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/DAC.2882
+  title: Oceanic forces and their impact on the performance of mobile underwater acoustic
+    sensor networks
+  authors:
+  - Amit Kumar Mandal
+  - Sudip Misra
+  - Tamoghna Ojha
+  - Mihir Kumar Dash
+  - Mohammad S. Obaidat
+  publisher: International Journal of Communication Systems
+  date: '2014-10-31'
+  link: https://doi.org/g9dm5x
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.COMPAG.2017.01.026
+  title: 'Sensing-cloud: Leveraging the benefits for agricultural applications'
+  authors:
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Narendra Singh Raghuwanshi
+  publisher: Computers and Electronics in Agriculture
+  date: '2017-04-01'
+  link: https://doi.org/g758ns
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.COMNET.2016.09.021
+  title: 'ENTRUST: Energy trading under uncertainty in smart grid systems'
+  authors:
+  - Sudip Misra
+  - Samaresh Bera
+  - Tamoghna Ojha
+  - Hussein T. Mouftah
+  - Alagan Anpalagan
+  publisher: Computer Networks
+  date: '2016-12-01'
+  link: https://doi.org/f9d4m6
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/JSEN.2015.2443012
+  title: Effects of Wind-Induced Near-Surface Bubble Plumes on the Performance of
+    Underwater Wireless Acoustic Sensor Networks
+  authors:
+  - Amit Kumar Mandal
+  - Sudip Misra
+  - Tamoghna Ojha
+  - Mihir Kumar Dash
+  - Mohammad S. Obaidat
+  publisher: IEEE Sensors Journal
+  date: '2016-06-01'
+  link: https://doi.org/f8nqss
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/DAC.2843
+  title: Performance analysis of distributed underwater wireless acoustic sensor networks
+    systems in the presence of internal solitons
+  authors:
+  - Amit Kumar Mandal
+  - Sudip Misra
+  - Mihir Kumar Dash
+  - Tamoghna Ojha
+  publisher: International Journal of Communication Systems
+  date: '2014-08-06'
+  link: https://doi.org/g9dm5z
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/GLOCOM.2015.7417591
+  title: Cloud-Based Optimal Energy Forecasting for Enabling Green Smart Grid Communication
+  authors:
+  - Samaresh Bera
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Mohammad S. Obaidat
+  publisher: 2015 IEEE Global Communications Conference (GLOBECOM)
+  date: '2015-12-01'
+  link: https://doi.org/ggpw7z
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/TPDS.2014.2315195
+  title: 'D2P: Distributed Dynamic Pricing Policyin Smart Grid for PHEVs Management'
+  authors:
+  - Sudip Misra
+  - Samaresh Bera
+  - Tamoghna Ojha
+  publisher: IEEE Transactions on Parallel and Distributed Systems
+  date: '2015-03-01'
+  link: https://doi.org/f63srq
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.JNCA.2015.05.008
+  title: 'ENTICE: Agent-based energy trading with incomplete information in the smart
+    grid'
+  authors:
+  - Sudip Misra
+  - Samaresh Bera
+  - Tamoghna Ojha
+  - Liang Zhou
+  publisher: Journal of Network and Computer Applications
+  date: '2015-09-01'
+  link: https://doi.org/g9dm53
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/TMC.2014.2338293
+  title: Game-Theoretic Topology Controlfor Opportunistic Localization in Sparse Underwater
+    Sensor Networks
+  authors:
+  - Sudip Misra
+  - Tamoghna Ojha
+  - Ayan Mondal
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2015-05-01'
+  link: https://doi.org/g9dm54
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.COMPAG.2015.08.011
+  title: 'Wireless sensor networks for agriculture: The state-of-the-art in practice
+    and future challenges'
+  authors:
+  - Tamoghna Ojha
+  - Sudip Misra
+  - Narendra Singh Raghuwanshi
+  publisher: Computers and Electronics in Agriculture
+  date: '2015-10-01'
+  link: https://doi.org/f7x7h4
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/CLOUDCOM.2014.169
+  title: Dynamic Duty Scheduling for Green Sensor-Cloud Applications
+  authors:
+  - Tamoghna Ojha
+  - Samaresh Bera
+  - Sudip Misra
+  - Narendra Singh Raghuwanshi
+  publisher: 2014 IEEE 6th International Conference on Cloud Computing Technology
+    and Science
+  date: '2014-12-01'
+  link: https://doi.org/g9dm55
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/NCC.2013.6488033
+  title: 'MobiL: A 3-dimensional localization scheme for Mobile Underwater Sensor
+    Networks'
+  authors:
+  - Tamoghna Ojha
+  - Sudip Misra
+  publisher: 2013 National Conference on Communications (NCC)
+  date: '2013-02-01'
+  link: https://doi.org/ghmnk4
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1049/IET-WSS.2012.0139
+  title: "Tic\u2010Tac\u2010Toe\u2010Arch: a self\u2010organising virtual architecture\
+    \ for Underwater Sensor Networks"
+  authors:
+  - Tamoghna Ojha
+  - Manas Khatua
+  - Sudip Misra
+  publisher: IET Wireless Sensor Systems
+  date: '2013-12-01'
+  link: https://doi.org/g9dm56
+  orcid: 0000-0001-5831-0632
+  plugin: orcid.py
+  file: orcid.yaml

@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: COSINE Lab
-subtitle: Computing for Secure and Intelligent Networks Lab.
-description: An engaging 1-3 sentence description of your lab.
+subtitle: Computing for Secure and Intelligent Networks Lab
+description: "Our work is focused on exploiting 'distributed intelligence' in IoT networks, especially with resource-constrained nodes, to facilitate energy-efficient and secure decisions on resource allocation and management."
 header: images/iitism_cover.jpg
 footer: images/iitism_cover.jpg
 proofer: false
