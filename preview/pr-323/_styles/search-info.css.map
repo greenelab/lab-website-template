@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["search-info.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA","sourcesContent":[".search-info {\n  margin: 20px 0;\n  text-align: center;\n  font-style: italic;\n  line-height: var(--spacing);\n}\n"],"file":"search-info.css"}
