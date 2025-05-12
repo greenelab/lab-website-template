@@ -42,8 +42,7 @@ jobs:
           bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
           ./actionlint -color
         shell: bash
-        with:
-          working-directory: pr
+        working-directory: pr
 
       - name: Install packages
         run: npm install yaml semver
