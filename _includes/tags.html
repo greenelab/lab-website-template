@@ -16,13 +16,10 @@
     {% if include.repo %}
       data-repo="{{ include.repo | xml_escape }}"
     {% endif %}
-    {% if link %}
-      data-link="{{ link | relative_url | xml_escape }}"
-    {% endif %}
   >
     {% for tag in tags %}
       <a
-        href="{{ link }}?search=&quot;tag: {{ tag }}&quot;"
+        href="{{ link | relative_url }}?search=&quot;tag: {{ tag }}&quot;"
         class="tag"
         data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
       >

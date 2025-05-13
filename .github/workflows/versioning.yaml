@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: Debug dump
         uses: crazy-max/ghaction-dump-context@v2
+
       - if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
@@ -35,6 +36,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: pr
+
+      - name: Lint actions
+        run: |
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          ./actionlint -color
+        shell: bash
+        working-directory: pr
 
       - name: Install packages
         run: npm install yaml semver

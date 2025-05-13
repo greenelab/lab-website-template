@@ -42,12 +42,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - uses: jwalton/gh-find-current-pr@master
-        if: github.event.action != 'closed'
-        id: pr
-        with:
-          state: all
-
       - name: SSH debug
         if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
@@ -55,9 +49,7 @@ jobs:
       - name: Build preview version of site
         if: github.event.action != 'closed'
         run: |
-          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ env.pr }}"
-        env:
-          pr: ${{ steps.pr.outputs.pr }}
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
 
       - name: Commit preview to Pages branch
         uses: rossjrw/pr-preview-action@v1.4.7
