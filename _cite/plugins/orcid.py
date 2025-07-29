@@ -47,7 +47,7 @@ def main(entry):
         # if id_type not in types:
         #     return False
 
-        # is id type one that manubot is capable of citing
+        # is id citable by manubot
         if id_type not in manubot_citable:
             return False
 
@@ -79,15 +79,15 @@ def main(entry):
         # pick first id
         _id = ids[0] if len(ids) > 0 else None
 
+        # id parts
+        id_type = get_safe(_id, "external-id-type", "")
+        id_value = get_safe(_id, "external-id-value", "")
+
         # create source
         source = {}
 
         # if id citable by manubot
-        if _id in manubot_citable:
-            # id parts
-            id_type = get_safe(_id, "external-id-type", "")
-            id_value = get_safe(_id, "external-id-value", "")
-
+        if id_type and id_value and id_type in manubot_citable:
             # id to cite with manubot
             source = {"id": f"{id_type}:{id_value}"}
 
