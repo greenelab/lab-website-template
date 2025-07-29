@@ -2,11 +2,15 @@
 
 Reference: common-changelog.org
 
+## 1.3.6 - 2025-07-30
+
+- Improve behavior and flexibility of ORCID cite plugin
+
 ## 1.3.5 - 2025-05-12
 
 ###
 
-- Fix workflow bug where PR previews on GitHub Actions have broken styles/links/etc. 
+- Fix workflow bug where PR previews on GitHub Actions have broken styles/links/etc.
 - Fix tags component relative link bug
 - Make Actions workflows a bit more robust
 
