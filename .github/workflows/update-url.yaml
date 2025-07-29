@@ -20,6 +20,7 @@ jobs:
 
     steps:
       - name: Debug dump
+        if: runner.debug == '1'
         uses: crazy-max/ghaction-dump-context@v2
 
       - name: Get Pages url
