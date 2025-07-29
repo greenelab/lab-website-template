@@ -138,11 +138,3 @@ def main(entry):
         sources.append(source)
 
     return sources
-
-
-# index of, with fallback
-def index_of(_list, value):
-    try:
-        return _list.index(value)
-    except ValueError:
-        return float("inf")
