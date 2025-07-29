@@ -55,16 +55,17 @@ def main(entry):
 
     # prefer some ids over others by some criteria. return lower number to prefer more.
     def sort_id(_id):
+        id_type = get_safe(_id, "external-id-type", "")
         types = [
             "doi",
             # "arxiv",
             # "url",
         ]
-        return index_of(types, get_safe(_id, "external-id-type", ""))
+        return index_of(types, id_type)
 
     # go through each source
     for work in response:
-        # list of ids in work
+        # list of ids in source
         ids = []
 
         # use "work-summary" field instead of top-level "external-ids" to reflect author-selected preferred sources
@@ -76,7 +77,7 @@ def main(entry):
         # sort ids by criteria
         ids.sort(key=sort_id)
 
-        # pick first id
+        # pick first available id
         _id = ids[0] if len(ids) > 0 else None
 
         # id parts
