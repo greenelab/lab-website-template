@@ -39,9 +39,9 @@ def main(entry):
         relationships = ["self", "version-of", "part-of"]
         if not get_safe(_id, "external-id-relationship", "") in relationships:
             return False
-        
+
         id_type = get_safe(_id, "external-id-type", "")
-        
+
         # is id of certain type
         # types = ["doi"]
         # if id_type not in types:
@@ -82,7 +82,8 @@ def main(entry):
         # create source
         source = {}
 
-        if _id:
+        # if id citable by manubot
+        if _id in manubot_citable:
             # id parts
             id_type = get_safe(_id, "external-id-type", "")
             id_value = get_safe(_id, "external-id-value", "")
@@ -90,7 +91,7 @@ def main(entry):
             # id to cite with manubot
             source = {"id": f"{id_type}:{id_value}"}
 
-        # if no id that meets all criteria, keep citation details from orcid
+        # if not citable by manubot, keep citation details from orcid
         else:
             # get summaries
             summaries = get_safe(work, "work-summary", [])

@@ -179,7 +179,7 @@ def cite_with_manubot(_id):
     generate citation data for source id with Manubot
     """
 
-    # run Manubot
+    # run manubot
     try:
         commands = ["manubot", "cite", _id, "--log-level=WARNING"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
