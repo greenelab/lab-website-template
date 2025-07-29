@@ -85,6 +85,17 @@ def get_safe(item, path, default=None):
     return item
 
 
+def index_of(_list, value, fallback=float("inf")):
+    """
+    index of, with fallback
+    """
+
+    try:
+        return _list.index(value)
+    except ValueError:
+        return fallback
+
+
 def list_of_dicts(data):
     """
     check if data is list of dicts
@@ -179,7 +190,7 @@ def cite_with_manubot(_id):
     generate citation data for source id with Manubot
     """
 
-    # run Manubot
+    # run manubot
     try:
         commands = ["manubot", "cite", _id, "--log-level=WARNING"]
         output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
