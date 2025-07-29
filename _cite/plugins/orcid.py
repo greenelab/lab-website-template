@@ -35,13 +35,20 @@ def main(entry):
 
     # filter id by some criteria. return true to accept, false to reject.
     def filter_id(_id):
-        # is id of particular "relationship" type
+        # is id of certain "relationship" type
         relationships = ["self", "version-of", "part-of"]
         if not get_safe(_id, "external-id-relationship", "") in relationships:
             return False
+        
+        id_type = get_safe(_id, "external-id-type", "")
+        
+        # is id of certain type
+        # types = ["doi"]
+        # if id_type not in types:
+        #     return False
 
         # is id type one that manubot is capable of citing
-        if get_safe(_id, "external-id-type", "") not in manubot_citable:
+        if id_type not in manubot_citable:
             return False
 
         return True
