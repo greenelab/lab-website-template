@@ -7,6 +7,7 @@ Reference: common-changelog.org
 ### Changed
 
 - Improve cleanup of PR preview folders in gh-pages branch.
+- Only run debug dump in debug mode to speed up workflow runs.
 
 ## 1.3.6 - 2025-07-30
 
