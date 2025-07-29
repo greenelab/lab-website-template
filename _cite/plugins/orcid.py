@@ -33,43 +33,58 @@ def main(entry):
     # list of sources to return
     sources = []
 
-    # pick id to cite for source, return blank if does not meet certain criteria
-    def get_id(_id):
-        # split id into parts
-        id_type = get_safe(_id, "external-id-type", "")
-        id_value = get_safe(_id, "external-id-value", "")
-
+    # filter id by some criteria. return true to accept, false to reject.
+    def filter_id(_id):
         # is id of particular "relationship" type
         relationships = ["self", "version-of", "part-of"]
         if not get_safe(_id, "external-id-relationship", "") in relationships:
-            return ""
+            return False
 
-        # is id that manubot is capable of citing
-        if id_type not in manubot_citable:
-            return ""
+        # is id type one that manubot is capable of citing
+        if get_safe(_id, "external-id-type", "") not in manubot_citable:
+            return False
 
-        return f"{id_type}:{id_value}"
+        return True
+
+    # prefer some ids over others by some criteria. return lower number to prefer more.
+    def sort_id(_id):
+        types = [
+            "doi",
+            # "arxiv",
+            # "url",
+        ]
+        return index_of(types, get_safe(_id, "external-id-type", ""))
 
     # go through each source
     for work in response:
         # list of ids in work
         ids = []
 
-        # use "work-summary" field instead of top-level "external-ids" to reflect preferred sources
+        # use "work-summary" field instead of top-level "external-ids" to reflect author-selected preferred sources
         for summary in get_safe(work, "work-summary", []):
             ids = ids + get_safe(summary, "external-ids.external-id", [])
 
-        # extract string ids from fields on work
-        ids = [get_id(_id) for _id in ids]
+        # filter ids by criteria
+        ids = list(filter(filter_id, ids))
+        # sort ids by criteria
+        ids.sort(key=sort_id)
 
-        # pick first id that meets all criteria
-        _id = next((_id for _id in ids if _id), "")
+        # pick first id
+        _id = ids[0] if len(ids) > 0 else None
 
         # create source
-        source = {"id": _id}
+        source = {}
+
+        if _id:
+            # id parts
+            id_type = get_safe(_id, "external-id-type", "")
+            id_value = get_safe(_id, "external-id-value", "")
+
+            # id to cite with manubot
+            source = {"id": f"{id_type}:{id_value}"}
 
         # if no id that meets all criteria, keep citation details from orcid
-        if not _id:
+        else:
             # get summaries
             summaries = get_safe(work, "work-summary", [])
 
@@ -114,3 +129,11 @@ def main(entry):
         sources.append(source)
 
     return sources
+
+
+# index of, with fallback
+def index_of(_list, value):
+    try:
+        return _list.index(value)
+    except ValueError:
+        return float("inf")
