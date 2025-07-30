@@ -22,9 +22,11 @@ jobs:
 
     steps:
       - name: Debug dump
+        if: runner.debug == '1'
         uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
+        if: github.event.action != 'closed'
         uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -52,7 +54,30 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
 
       - name: Commit preview to Pages branch
+        if: github.event.action != 'closed'
         uses: rossjrw/pr-preview-action@v1.4.7
         with:
           source-dir: _site
           umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
+
+      - name: Checkout Pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Clean up preview folders
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { rm } = require("fs").promises;
+            const { PREVIEWS_FOLDER } = process.env;
+            const { owner, repo } = context.repo;
+            const prs = (await github.rest.pulls.list({ owner, repo, state: "closed" })).data;
+            for (const { number } of prs)
+              await rm(`${PREVIEWS_FOLDER}/pr-${number}`, { recursive: true, force: true });
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: gh-pages
+          commit_message: "Clean up previews"
