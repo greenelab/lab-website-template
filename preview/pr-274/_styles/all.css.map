@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["all.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGE;EACA;EACA;EACA","sourcesContent":["*,\n::before,\n::after {\n  box-sizing: border-box;\n  -moz-text-size-adjust: none;\n  -webkit-text-size-adjust: none;\n  text-size-adjust: none;\n}\n"],"file":"all.css"}
