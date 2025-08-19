@@ -84,60 +84,61 @@ def main(entry):
         id_type = get_safe(_id, "external-id-type", "")
         id_value = get_safe(_id, "external-id-value", "")
 
-        # if there is an id
-        if id_type and id_value:
+        # if no available ids, skip source completely
+        # if not id_type or not id_value:
+            # continue
 
-            # create source
-            source = {}
+        # create source
+        source = {}
 
-            # if id is citable by manubot
-            if id_type in manubot_citable:
-                # id to cite with manubot
-                source = {"id": f"{id_type}:{id_value}"}
+        # if id citable by manubot
+        if id_type and id_value and id_type in manubot_citable:
+            # id to cite with manubot
+            source = {"id": f"{id_type}:{id_value}"}
 
-            # if not citable by manubot, keep citation details from orcid
-            else:
-                # get summaries
-                summaries = get_safe(work, "work-summary", [])
+        # if not citable by manubot, keep citation details from orcid
+        else:
+            # get summaries
+            summaries = get_safe(work, "work-summary", [])
 
-                # get first summary with defined sub-value
-                def first(get_func):
-                    return next(
-                        (value for value in map(get_func, summaries) if value), None
-                    )
-
-                # get title
-                title = first(lambda s: get_safe(s, "title.title.value", ""))
-
-                # get publisher
-                publisher = first(lambda s: get_safe(s, "journal-title.value", ""))
-
-                # get date
-                date = (
-                    get_safe(work, "last-modified-date.value")
-                    or first(lambda s: get_safe(s, "last-modified-date.value"))
-                    or get_safe(work, "created-date.value")
-                    or first(lambda s: get_safe(s, "created-date.value"))
-                    or 0
+            # get first summary with defined sub-value
+            def first(get_func):
+                return next(
+                    (value for value in map(get_func, summaries) if value), None
                 )
 
-                # get link
-                link = first(lambda s: get_safe(s, "url.value", ""))
+            # get title
+            title = first(lambda s: get_safe(s, "title.title.value", ""))
 
-                # keep available details
-                if title:
-                    source["title"] = title
-                if publisher:
-                    source["publisher"] = publisher
-                if date:
-                    source["date"] = format_date(date)
-                if link:
-                    source["link"] = link
+            # get publisher
+            publisher = first(lambda s: get_safe(s, "journal-title.value", ""))
 
-            # copy fields from entry to source
-            source.update(entry)
+            # get date
+            date = (
+                get_safe(work, "last-modified-date.value")
+                or first(lambda s: get_safe(s, "last-modified-date.value"))
+                or get_safe(work, "created-date.value")
+                or first(lambda s: get_safe(s, "created-date.value"))
+                or 0
+            )
 
-            # add source to list
-            sources.append(source)
+            # get link
+            link = first(lambda s: get_safe(s, "url.value", ""))
+
+            # keep available details
+            if title:
+                source["title"] = title
+            if publisher:
+                source["publisher"] = publisher
+            if date:
+                source["date"] = format_date(date)
+            if link:
+                source["link"] = link
+
+        # copy fields from entry to source
+        source.update(entry)
+
+        # add source to list
+        sources.append(source)
 
     return sources
