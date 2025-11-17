@@ -84,6 +84,10 @@ def main(entry):
         id_type = get_safe(_id, "external-id-type", "")
         id_value = get_safe(_id, "external-id-value", "")
 
+        # if no available ids, skip source completely
+        # if not id_type or not id_value:
+        #     continue
+
         # create source
         source = {}
 
