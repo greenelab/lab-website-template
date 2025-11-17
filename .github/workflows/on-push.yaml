@@ -18,6 +18,7 @@ jobs:
     # skip first run because nothing enabled or setup yet
     if: github.run_number != 1
     uses: ./.github/workflows/update-citations.yaml
+    secrets: inherit
 
   build-site:
     needs: update-citations

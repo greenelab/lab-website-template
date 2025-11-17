@@ -16,6 +16,7 @@ permissions:
 jobs:
   update-citations:
     uses: ./.github/workflows/update-citations.yaml
+    secrets: inherit
 
   build-preview:
     needs: update-citations

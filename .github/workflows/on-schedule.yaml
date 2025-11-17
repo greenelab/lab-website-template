@@ -18,5 +18,6 @@ jobs:
     # only run on user instance of template, not template itself
     if: github.repository != 'greenelab/lab-website-template'
     uses: ./.github/workflows/update-citations.yaml
+    secrets: inherit
     with:
       open-pr: true
