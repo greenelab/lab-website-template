@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["util.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;;;AAGF;EACE","sourcesContent":[".left {\n  text-align: left;\n}\n\n.center {\n  text-align: center;\n}\n\n.right {\n  text-align: right;\n}\n"],"file":"util.css"}
