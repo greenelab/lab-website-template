@@ -2,6 +2,12 @@
 
 Reference: common-changelog.org
 
+## 1.3.9 - 2026-06-02
+
+### Changed
+
+- Upgrade MathJax version in Jekyll Spaceship, avoid polyfill.io
+
 ## 1.3.8 - 2025-11-17
 
 ### Changed
