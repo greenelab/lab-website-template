@@ -1,0 +1,72 @@
+.tippy-box {
+  background: var(--background);
+  color: var(--text);
+  padding: 7.5px;
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.tippy-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.tippy-arrow:before {
+  width: 10px;
+  height: 10px;
+  background: var(--background);
+  box-shadow: var(--shadow);
+}
+
+.tippy-arrow {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tippy-box[data-placement=top] .tippy-arrow {
+  inset: unset;
+  top: 100%;
+}
+
+.tippy-box[data-placement=bottom] .tippy-arrow {
+  inset: unset;
+  bottom: 100%;
+}
+
+.tippy-box[data-placement=left] .tippy-arrow {
+  inset: unset;
+  left: 100%;
+}
+
+.tippy-box[data-placement=right] .tippy-arrow {
+  inset: unset;
+  right: 100%;
+}
+
+.tippy-arrow:before {
+  border: unset !important;
+  transform-origin: center !important;
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+
+.tippy-box[data-placement=top] .tippy-arrow:before {
+  left: 50% !important;
+  top: 0 !important;
+}
+
+.tippy-box[data-placement=bottom] .tippy-arrow:before {
+  left: 50% !important;
+  top: 100% !important;
+}
+
+.tippy-box[data-placement=left] .tippy-arrow:before {
+  left: 0 !important;
+  top: 50% !important;
+}
+
+.tippy-box[data-placement=right] .tippy-arrow:before {
+  left: 100% !important;
+  top: 50% !important;
+}
+
+/*# sourceMappingURL=tooltip.css.map */

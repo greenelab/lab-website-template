@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["checkbox.scss"],"names":[],"mappings":"AAAA;EACE","sourcesContent":["input[type=\"checkbox\"] {\n  cursor: pointer;\n}\n"],"file":"checkbox.css"}

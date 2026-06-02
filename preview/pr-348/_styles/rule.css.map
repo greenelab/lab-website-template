@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["rule.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA","sourcesContent":["hr {\n  margin: 40px 0;\n  background: var(--light-gray);\n  border: none;\n  height: 1px;\n}\n"],"file":"rule.css"}
