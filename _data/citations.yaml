@@ -1,5 +1,22 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.patter.2026.101514
+  title: Scalable data harmonization for single-cell image-based profiling with CytoTable
+  authors:
+  - Dave Bunten
+  - Jenna Tomkinson
+  - Erik Serrano
+  - Michael J. Lippincott
+  - Kenneth I. Brewer
+  - Vince Rubinetti
+  - Faisal Alquaddoomi
+  - Gregory P. Way
+  publisher: Patterns
+  date: '2026-05-01'
+  link: https://doi.org/hbvg3p
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/2025.06.19.660613
   title: Scalable data harmonization for single-cell image-based profiling with CytoTable
   authors:
@@ -11,7 +28,7 @@
   - Vince Rubinetti
   - Faisal Alquaddoomi
   - Gregory P. Way
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2025-06-25'
   link: https://doi.org/g9rfr3
   orcid: 0000-0002-4655-3773
@@ -81,7 +98,7 @@
   - Casey S. Greene
   - Sean Davis
   - Ran Blekhman
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2023-10-11'
   link: https://doi.org/gsvf5z
   orcid: 0000-0002-4655-3773
@@ -123,7 +140,7 @@
   - Blair D. Sullivan
   - Michael W. Nagle
   - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2023-01-07'
   link: https://doi.org/grmcb9
   orcid: 0000-0002-4655-3773
@@ -155,19 +172,20 @@
   title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
     and phylogeny'
   authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo M Sosinski
   - Faisal S Alquaddoomi
+  - Joseph T Burke
+  - Lo Sosinski
+  - David A Mayer
   - Evan P Brenner
+  - Samuel Z Chen
+  - Jacob D Krol
   - Ethan P Wolfe
   - Vincent P Rubinetti
   - Shaddai Amolitos
   - Kellen M Reason
   - John B Johnston
   - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2022-02-22'
   link: https://doi.org/gstx7j
   orcid: 0000-0002-4655-3773
@@ -229,7 +247,7 @@
   - Vincent Rubinetti
   - Daniel S. Himmelstein
   - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2019-03-11'
   link: https://doi.org/gfxjxf
   orcid: 0000-0002-4655-3773
