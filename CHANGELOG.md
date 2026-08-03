@@ -2,18 +2,24 @@
 
 Reference: common-changelog.org
 
+## 1.4.0 - 2026-08-03
+
+### Changed
+
+- Fix security vulnerability in GitHub Actions workflows.
+
 ## 1.3.9 - 2026-06-02
 
 ### Changed
 
-- Upgrade MathJax version in Jekyll Spaceship, avoid polyfill.io
+- Upgrade MathJax version in Jekyll Spaceship, avoid polyfill.io.
 
 ## 1.3.8 - 2025-11-17
 
 ### Changed
 
-- Inherit secrets in GitHub Actions workflows where appropriate
-- Add commented out ORCID plugin code to discard source if no ID
+- Inherit secrets in GitHub Actions workflows where appropriate.
+- Add commented out ORCID plugin code to discard source if no ID.
 
 ## 1.3.7 - 2025-07-31
 
