@@ -1,0 +1,30 @@
+.dark-toggle {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--primary);
+  appearance: none;
+  transition: background var(--transition);
+}
+
+.dark-toggle:after {
+  content: "\f185";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  color: var(--text);
+  font-size: 15px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  transition: left var(--transition);
+}
+
+.dark-toggle:checked:after {
+  content: "\f186";
+  left: calc(100% - 12px);
+}
+
+/*# sourceMappingURL=dark-toggle.css.map */
