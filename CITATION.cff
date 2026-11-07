@@ -1,8 +1,8 @@
 # citation metadata for the template itself
 
 title: "Lab Website Template"
-version: 1.4.0
-date-released: 2026-08-03
+version: 1.4.1
+date-released: 2026-11-07
 url: "https://github.com/greenelab/lab-website-template"
 authors:
   - family-names: "Rubinetti"
