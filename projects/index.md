@@ -21,12 +21,12 @@ nav:
 Non-invasive localization of human lesions remains a long-standing pursuit for clinical applications. Optical modalities are widely used for biomedical imaging and diagnosing. But due to the strong photon absorption and scattering of biological tissues, it is challenging to realize in vivo non-invasive detection via optical modalities.We address this issue with the use of in vivo surface-enhanced deep Raman spectroscopy (SEDRS) with a series of advancements toward non-invasive localization of deep lesions hidden in living animals. We made the first quantitative assessments of Raman spectroscopic detection depth into the biological tissues. We developed high-brightness SERS nanotags and a home-built transmission Raman system, enabling detection through >10 cm of biological tissue under safe laser exposure (Small Methods, 2022). We put forward a depth-prediction method based on Raman spectral peak ratios, leveraging tissue optical properties to accurately determine the depth of lesion phantoms, achieving the mean error of <11.8% . Based on this, the non-invasive localization of lesion phantom using multi-peak information of Raman spectra in ex vivo tissues or in live animals was achieved. We completed the first SEDRS-guided peri-operative lymph node biopsy on pig models. <br>
 <br>
 Representative papers:
-- Yutong Zhou, Yumin Zhang, Haoqiang Xie, Zongyu Wu, Bowen Shi, Linley Li Lin*, Jian Ye. [In Vivo surface-enhanced transmission Raman spectroscopy and impact of frozen biological tissues on lesion depth prediction](doi.org/10.1002/smtd.202201334). ACS Nano, 2024, 18, 35393.
-- Li Lin*, Haoqi He, Ruiyang Xue, Yumin Zhang, Ziwen Wang, Shuming Nie, Jian Ye. [Direct and quantitative assessments of near‑infrared light attenuation and spectroscopic detection depth in biological tissues using surface‑enhanced Raman scattering](doi.org/10.1007/s44258-023-00010-2). MED-X, 2023, 1, 9. 
-- Yumin Zhang, Ruoyu Chen, Peng Miao, Li Lin*, Jian Ye. [In vivo Surface‐enhanced transmission Raman spectroscopy under maximum permissible exposure: toward photosafe detection of deep‐seated tumors](doi.org/10.1002/smtd.202201334). Small Methods, 2022, 7, 2201334.
-- Yumin Zhang, Li Lin*, Jian Ye. [A rapid and universal method for depth estimation of lesions in heterogeneous tissues via photosafe ratiometric transmission Raman spectroscopy](doi.org/10.1002/viw.20230022). VIEW, 2023, 4, 20230022.
-- Zongyu Wu, Binge Deng, Yutong Zhou, Haoqiang Xie, Yumin Zhang, Li Lin*, and Jian Ye. [Non-Invasive detection, precise localization, and perioperative navigation of in vivo deep lesions using transmission Raman spectroscopy](doi.org/10.1002/advs.202301721). Advanced Science, 2023, 10, 2301721.
-- Haoqiang Xie, Yumin Zhang, Zongyu Wu, Zhouzhou Bao, Li Lin*, and Jian Ye. [Locating three-dimensional position of deep-seated SERS phantom lesions in thick tissues Using tomographic transmission Raman spectroscopy](doi.org/10.1021/acsami.3c07792). ACS Applied Materials & Interfaces, 2023, 15, 38, 44665.
+- Yutong Zhou, Yumin Zhang, Haoqiang Xie, Zongyu Wu, Bowen Shi, Linley Li Lin*, Jian Ye. [In Vivo surface-enhanced transmission Raman spectroscopy and impact of frozen biological tissues on lesion depth prediction](https://doi.org/10.1021/acsnano.4c12469). ACS Nano, 2024, 18, 35393.
+- Li Lin*, Haoqi He, Ruiyang Xue, Yumin Zhang, Ziwen Wang, Shuming Nie, Jian Ye. [Direct and quantitative assessments of near‑infrared light attenuation and spectroscopic detection depth in biological tissues using surface‑enhanced Raman scattering](https://doi.org/10.1007/s44258-023-00010-2). MED-X, 2023, 1, 9. 
+- Yumin Zhang, Ruoyu Chen, Peng Miao, Li Lin*, Jian Ye. [In vivo Surface‐enhanced transmission Raman spectroscopy under maximum permissible exposure: toward photosafe detection of deep‐seated tumors](https://doi.org/10.1002/smtd.202201334). Small Methods, 2022, 7, 2201334.
+- Yumin Zhang, Li Lin*, Jian Ye. [A rapid and universal method for depth estimation of lesions in heterogeneous tissues via photosafe ratiometric transmission Raman spectroscopy](https://doi.org/10.1002/viw.20230022). VIEW, 2023, 4, 20230022.
+- Zongyu Wu, Binge Deng, Yutong Zhou, Haoqiang Xie, Yumin Zhang, Li Lin*, and Jian Ye. [Non-Invasive detection, precise localization, and perioperative navigation of in vivo deep lesions using transmission Raman spectroscopy](https://doi.org/10.1002/advs.202301721). Advanced Science, 2023, 10, 2301721.
+- Haoqiang Xie, Yumin Zhang, Zongyu Wu, Zhouzhou Bao, Li Lin*, and Jian Ye. [Locating three-dimensional position of deep-seated SERS phantom lesions in thick tissues Using tomographic transmission Raman spectroscopy](https://doi.org/10.1021/acsami.3c07792). ACS Applied Materials & Interfaces, 2023, 15, 38, 44665.
 
 
 {% capture text %}
@@ -41,10 +41,10 @@ Modern cancer diagnosis requires histological, molecular and genomic tumor analy
 {% include feature.html image="images/projects/Projects-01.jpg"  title="Label-free Raman spectroscopy for cancer diagnosis" text=text %}
 
 Representative papers:
-- Bowen Shi, Wenfang Wang, Shiyan Fang, Siyi Wu, Lan Zhu, Yong Chen, Haipeng Dong, Fuhua Yan, Fei Yuan, Jian Ye*, Huan Zhang*, and Linley Li Lin*. [Raman spectroscopy analysis combined with computed tomography imaging to identify microsatellite instability in gastric cancers](doi.org/10.1016/j.saa.2024.125062). Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2025, 325, 125062.
+- Bowen Shi, Wenfang Wang, Shiyan Fang, Siyi Wu, Lan Zhu, Yong Chen, Haipeng Dong, Fuhua Yan, Fei Yuan, Jian Ye*, Huan Zhang*, and Linley Li Lin*. [Raman spectroscopy analysis combined with computed tomography imaging to identify microsatellite instability in gastric cancers](https://doi.org/10.1016/j.saa.2024.125062). Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2025, 325, 125062.
 - Shiyan Fang, Pei Xu, Siyi Wu, Zhou Chen, Junqing Yang, Haibo Xiao, Fangbao Ding, Shuchun Li, Jin Sun,·Zirui He, Jian Ye*, and Linley Li Lin*.
-[Raman fiber-optic probe for rapid diagnosis of gastric and esophageal tumors with machine learning analysis or similarity assessments: a comparative study](doi.org/10.1007/s00216-024-05545-w). Analytical and Bioanalytical Chemistry, 2024, 416, 6759.
-- Wenfang Wang, Bowen Shi, Chang He, Siyi Wu, Lan Zhu, Jiang Jiang, Lingyun Wang, Li Lin*, Jian Ye*, Huan Zhang*. [Euclidean distance-based Raman spectroscopy (EDRS) for the prognosis analysis of gastric cancer: a solution to tumor heterogeneity](doi.org/10.1016/j.saa.2022.122163). Spectrochimica Acta Part A: Molecular, 2023, 288, 122163.
+[Raman fiber-optic probe for rapid diagnosis of gastric and esophageal tumors with machine learning analysis or similarity assessments: a comparative study](https://doi.org/10.1007/s00216-024-05545-w). Analytical and Bioanalytical Chemistry, 2024, 416, 6759.
+- Wenfang Wang, Bowen Shi, Chang He, Siyi Wu, Lan Zhu, Jiang Jiang, Lingyun Wang, Li Lin*, Jian Ye*, Huan Zhang*. [Euclidean distance-based Raman spectroscopy (EDRS) for the prognosis analysis of gastric cancer: a solution to tumor heterogeneity](https://doi.org/10.1016/j.saa.2022.122163). Spectrochimica Acta Part A: Molecular, 2023, 288, 122163.
 
   
 {% capture text %}
@@ -59,8 +59,8 @@ Plasmonic nanostructures exhibit a unique combination of physical, chemical, and
 {% include feature.html image="images/projects/Projects-02.jpg" title="Inventing plasmonic nanomaterials" text=text %}
 
 Representative papers:
-- Binge Deng, Yan Wang, Xiangdong Bu, Jin Li, Jingsong Lu, Linley Li Lin, Yaohui Wang, Yao Chen, Jian Ye. [Sentinel lymph node identification using NIR-II ultrabright Raman nanotags on preclinical models](doi.org/10.1016/j.biomaterials.2024.122538). Biomaterials, 2024, 308, 122538.
-- Haoqi He, Yumin Zhang, Shuo Zhu, Jian Ye, and Li Lin*. [Resonant strategy in designing NIR-II SERS nanotags: a quantitative study](doi.org/10.1021/acs.jpcc.2c02512). The Journal of Physical Chemistry C, 2022, 126, 12575.
+- Binge Deng, Yan Wang, Xiangdong Bu, Jin Li, Jingsong Lu, Linley Li Lin, Yaohui Wang, Yao Chen, Jian Ye. [Sentinel lymph node identification using NIR-II ultrabright Raman nanotags on preclinical models](https://doi.org/10.1016/j.biomaterials.2024.122538). Biomaterials, 2024, 308, 122538.
+- Haoqi He, Yumin Zhang, Shuo Zhu, Jian Ye, and Li Lin*. [Resonant strategy in designing NIR-II SERS nanotags: a quantitative study](https://doi.org/10.1021/acs.jpcc.2c02512). The Journal of Physical Chemistry C, 2022, 126, 12575.
   
 {% capture text %}
 
@@ -74,4 +74,4 @@ Nanomaterials have emerging applications in medical implants, cell delivery, and
 {% include feature.html image="images/projects/cell3.jpg" title="Exploring bio-material interfaces in cellular scenarios" flip=true style="bare" text=text %}
 
 Representative papers:
-- Yuqing Gu, Siyi Wu, Zhewen Luo, Linley Li Lin*, and Jian Ye. [Oppositely-Charged Silver Nanoparticles Enable Selective SERS Molecular Enhancement through Electrostatic Interactions](doi.org/10.1016/j.saa.2024.124852). Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2024, 322, 124852.
+- Yuqing Gu, Siyi Wu, Zhewen Luo, Linley Li Lin*, and Jian Ye. [Oppositely-Charged Silver Nanoparticles Enable Selective SERS Molecular Enhancement through Electrostatic Interactions](https://doi.org/10.1016/j.saa.2024.124852). Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 2024, 322, 124852.

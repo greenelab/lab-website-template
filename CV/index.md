@@ -57,7 +57,7 @@ Dr. Linley Li Lin is currently an associate professor at Shanghai Jiao Tong Univ
 Since 2024, the published name has been changed from 'Li Lin' to 'Linley Li Lin'. So far, Dr. Lin has published over 50 journal papers with the citation of over 1900. See [publication list](http://linlab-sjtu.com/publications). <br>
 ##### Book Chapters
 - Yuqing Zhang, Han Gu, Zongyu Wu, Jian Ye, Linley Li Lin*. "Nano-engineering for gap-enhanced Raman tags (GERTs) and related plasmonic applications", In: Nano-Engineering at Functional Interfaces, Elsevier, 2025, Pages 75-91. (https://doi.org/10.1016/B978-0-443-21691-6.00005-6)<br> 
-- Li Lin, Ruiyang Xue, Shuming Nie. "Surface-enhanced Raman scattering (SERS) nanoparticles for biodiagnostics, bioimaging, and spectroscopy-guided cancer surgery", In: Reference Module in Materials Science and Materials Engineering, Elsevier, 2022, pp340-355. (https://dio.org/10.1016/B978-0-12-822425-0.00111-1) <br> 
+- Li Lin, Ruiyang Xue, Shuming Nie. "Surface-enhanced Raman scattering (SERS) nanoparticles for biodiagnostics, bioimaging, and spectroscopy-guided cancer surgery", In: Reference Module in Materials Science and Materials Engineering, Elsevier, 2022, pp340-355. (https://doi.org/10.1016/B978-0-12-822425-0.00111-1) <br> 
 - Li Lin, Jian Ye, “Spontaneous Raman and Surface-Enhanced Raman Scattering Bioimaging”, In: Wei X., Gu B. (eds) Optical imaging in Human Disease and Biological Research. Advances in Experimental Medicine and Biology, vol 3233. Springer, Singapore, 2021, pp177-195.<br> 
 ##### Approved patents (to be updated)
 -	A method to quantify the reflective index of nanometer-thick molecular layers, China Patent 2016
