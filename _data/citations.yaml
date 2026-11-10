@@ -183,12 +183,15 @@
   file: sources.yaml
   image: images/Papers/review.JPG
 - id: doi:10.1021/acsami.4c17502
-  title: 'Surface-Enhanced Raman Spectroscopy for Biomedical Applications: Recent
-    Advances and Future Challenges'
+  title: 'Surface-Enhanced
+
+    Raman Spectroscopy for Biomedical
+
+    Applications: Recent Advances and Future Challenges'
   authors:
   - Linley Li Lin
   - Ramon Alvarez-Puebla
-  - "Luis M. Liz-Marz\xE1n"
+  - "Luis M. Liz-Marza\u0301n"
   - Matt Trau
   - Jing Wang
   - Laura Fabris
@@ -233,7 +236,9 @@
   - Bing Zhao
   - Xing Yi Ling
   - Jian Ye
-  publisher: ACS Applied Materials &amp; Interfaces
+  publisher: 'ACS Applied Materials &amp;
+
+    Interfaces'
   date: '2025-02-24'
   link: https://doi.org/g86tj4
   orcid: 0000-0002-8079-5768
