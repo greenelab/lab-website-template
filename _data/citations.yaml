@@ -1,5 +1,14 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1093/molbev/msag265
+  title: pendingpublications
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://doi.org/hcpr59
+  orcid: 0000-0002-4655-3773
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.patter.2026.101514
   title: Scalable data harmonization for single-cell image-based profiling with CytoTable
   authors:
