@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["image.scss"],"names":[],"mappings":"AAAA;EACE;EACA","sourcesContent":["img {\n  max-width: 100%;\n  max-height: 100%;\n}\n"],"file":"image.css"}
