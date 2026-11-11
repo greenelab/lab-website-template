@@ -2,6 +2,14 @@
 
 Reference: common-changelog.org
 
+## 1.4.1 - 2026-11-07
+
+### Changed
+
+- Update Docker image to fix Linux package installation.
+- Update Ruby version in workflows to fix errors on GitHub Actions.
+- Update all Gem package versions.
+
 ## 1.4.0 - 2026-08-03
 
 ### Changed
