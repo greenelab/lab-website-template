@@ -1,19 +1,35 @@
 ---
 title: Contact
 nav:
-  order: 7
+  order: 8
   tooltip: Email, address, and location
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+{% include section.html size="full" %}
 
-<p class="center" style="font-size: 1.3em;">We are allways interested to collaborate and meet new colleagues, do not hesitate to reach out.</p>
+{% include page-hero.html title="Contact" icon="fa-regular fa-envelope" %}
+
+{% include section.html %}
 
 {%
   include button.html
   type="email"
-  link="P4MARS-AE@tudelft.nl"
+  link="r.sabzevari@tudelft.nl"
 %}
+{%
+  include button.html
+  icon="fa-regular fa-calendar-check"
+  text="Schedule a meeting"
+  tooltip="Schedule a meeting via Microsoft Bookings"
+  link="https://bookings.cloud.microsoft/bookwithme/user/7fcaff9dda37434d9343d10fc312cc4c@tudelft.nl/meetingtype/vhXb3wMD0kSkKbGIHRgMJg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+%}
+{% if site.links.linkedin %}
+{%
+  include button.html
+  type="linkedin"
+  link=site.links.linkedin
+%}
+{% endif %}
 <!-- {%
   include button.html
   type="address"

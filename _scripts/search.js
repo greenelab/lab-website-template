@@ -40,6 +40,11 @@
   window.normalizeTag = (tag) =>
     tag.trim().toLowerCase().replaceAll(/\s+/g, "-");
 
+  // canonical tag of a tag element. data-tag holds the real tag, so a chip
+  // that displays a shortened or restyled label still matches a search
+  window.tagValue = (element) =>
+    window.normalizeTag(element.dataset.tag || element.innerText);
+
   // get data attribute contents of element and children
   const getAttr = (element, attr) =>
     [element, ...element.querySelectorAll(`[data-${attr}]`)]
@@ -48,6 +53,11 @@
 
   // determine if element should show up in results based on query
   const elementMatches = (element, { terms, phrases, tags }) => {
+    // once a filter is active, only offer things that are still open:
+    // closed positions stay reachable by their own link, not through results
+    const filtering = terms.length || phrases.length || tags.length;
+    if (filtering && element.hasAttribute("data-unavailable")) return false;
+
     // tag elements within element
     const tagElements = [...element.querySelectorAll(".tag")];
 
@@ -62,7 +72,7 @@
         .includes(string);
     // check if text matches a tag in element
     const hasTag = (string) =>
-      tagElements.some((tag) => normalizeTag(tag.innerText) === string);
+      tagElements.some((tag) => tagValue(tag) === string);
 
     // match logic
     return (
@@ -154,7 +164,7 @@
     const { tags } = splitQuery(query);
     document.querySelectorAll(tagSelector).forEach((tag) => {
       // set active if tag is in query
-      if (tags.includes(normalizeTag(tag.innerText)))
+      if (tags.includes(tagValue(tag)))
         tag.setAttribute("data-active", "");
       else tag.removeAttribute("data-active");
     });

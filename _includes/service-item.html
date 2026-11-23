@@ -1,0 +1,26 @@
+{{ " " }}
+<div class="service-item">
+  <div class="service-item-head">
+    <span class="service-role">{{ include.role }}</span>
+    {% if include.period %}<span class="service-period">{{ include.period }}</span>{% endif %}
+  </div>
+  <p class="service-organization">
+    {% if include.link and include.link contains "http" %}
+      <a href="{{ include.link }}">{{ include.organization }}</a>
+    {% else %}
+      {{ include.organization }}
+    {% endif %}
+  </p>
+  {% if include.detail %}
+    <p class="service-detail">{{ include.detail }}</p>
+  {% endif %}
+  {% if include.person %}
+    {% assign member = site.members | where: "slug", include.person | first %}
+    {% if member %}
+      <a class="project-person" href="{{ member.url | relative_url }}">
+        <img src="{{ member.image | relative_url | uri_escape }}" alt="" loading="lazy" {% include fallback.html %}>
+        {{ member.name }}
+      </a>
+    {% endif %}
+  {% endif %}
+</div>

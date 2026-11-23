@@ -1,0 +1,326 @@
+---
+---
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 24px 0;
+  padding: 32px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--rounded);
+  background: var(--background);
+  text-align: left;
+}
+
+.project-text {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  p {
+    margin: 12px 0;
+    line-height: 1.75;
+  }
+
+  .tags {
+    justify-content: flex-start;
+  }
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 8px !important;
+  font-family: var(--heading);
+  font-size: 1.3rem;
+  font-weight: var(--bold);
+  line-height: 1.3 !important;
+
+  .pillar-icon {
+    flex-shrink: 0;
+    margin: 0;
+  }
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+
+.project-image {
+  flex: 0 0 38%;
+  border-radius: calc(var(--rounded) - 2px);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--light-gray);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .project {
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .project-image {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+// course cards on the Education page
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--rounded);
+  background: var(--background);
+  color: var(--text) !important;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color var(--transition), transform var(--transition);
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--light-gray));
+    transform: translateY(-2px);
+  }
+}
+
+.course-code {
+  color: var(--primary);
+  font-family: var(--code);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.course-title {
+  font-family: var(--heading);
+  font-size: 1.15rem;
+  font-weight: var(--bold);
+}
+
+.course-link {
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: var(--semi-bold);
+}
+
+.project-title a {
+  color: var(--text);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+// make illustrations and screenshots share one frame shape
+.project-image img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.project-image:has(img[src$=".png"]) img {
+  object-fit: contain;
+}
+
+// outcome entries on a project page
+.outcome .project-title {
+  font-size: 1.2rem;
+}
+
+.outcome-label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--primary);
+  font-family: var(--code);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+// thesis list on the Education page
+.thesis {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 14px 0;
+  padding: 16px 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--rounded);
+  background: var(--background);
+  text-align: left;
+}
+
+.thesis-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.thesis-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+}
+
+.thesis-author {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+// people and vacancies attached to a project
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.project-people,
+.project-vacancies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-links-label {
+  min-width: 120px;
+  color: var(--gray);
+  font-family: var(--code);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-person,
+.project-vacancy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border-radius: 999px;
+  background: var(--background-alt);
+  box-shadow: 0 0 0 1px var(--light-gray);
+  color: var(--text) !important;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: box-shadow var(--transition);
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--primary);
+  }
+
+  img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.project-vacancy {
+  padding-left: 12px;
+
+  .icon {
+    color: var(--primary);
+  }
+}
+
+.project-activities {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+// sponsor logos on project cards
+.project-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.sponsor {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: #fff; // logos are designed for light backgrounds, also in dark mode
+  box-shadow: 0 0 0 1px var(--light-gray);
+  text-decoration: none;
+  transition: box-shadow var(--transition);
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--primary);
+  }
+
+  img {
+    height: 28px;
+    width: auto;
+    max-width: 170px;
+    object-fit: contain;
+  }
+}
+
+.sponsor-caption {
+  padding-left: 10px;
+  border-left: 1px solid #dfe5ec;
+  color: #2d3643;
+  font-size: 0.78rem;
+  font-weight: var(--semi-bold);
+  line-height: 1.2;
+}
+
+// wide wordmarks need a bit more height to stay legible
+.sponsor img[src$="lit.png"] {
+  height: 34px;
+}
+
+// sponsor without a usable logo: typeset wordmark
+.sponsor-text {
+  color: #154273;
+  font-family: var(--heading);
+  font-size: 0.95rem;
+  font-weight: var(--bold);
+  white-space: nowrap;
+}

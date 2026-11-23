@@ -1,0 +1,10 @@
+# MSc theses supervised in the lab.
+# Fields: title, author (member slug), link, description (optional)
+
+- title: Physics-Informed Neural Networks for Aerospace Applications
+  author: tristan-hirs
+  link: https://repository.tudelft.nl/record/uuid:76d93202-df29-46b4-ba62-452cc5532b4d
+
+- title: A Framework for the Analysis, Transformation, and Validation of Rule-Based Parcel Sorting Plans
+  author: gijs-volkers
+  link: https://repository.tudelft.nl/record/uuid:49ec65be-12e6-4fad-b9e8-d4bf67269665

@@ -47,5 +47,11 @@
         {{ member.affiliation }}
       </span>
     {% endif %}
+
+    {% if member.note %}
+      <span class="portrait-affiliation">
+        {{ member.note }}
+      </span>
+    {% endif %}
   </a>
 </div>

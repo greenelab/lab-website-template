@@ -1,0 +1,48 @@
+{{ " " }}
+<div class="pillar research-area" id="{{ include.title | slugify }}">
+  {% if include.icon %}
+    <span class="pillar-icon"><i class="icon {{ include.icon }}"></i></span>
+  {% endif %}
+  <p class="pillar-title">{{ include.title }}</p>
+  {% if include.description %}
+    <p class="pillar-text">{{ include.description }}</p>
+  {% endif %}
+  {% if include.items %}
+    <div class="research-area-projects">
+      <span class="project-links-label">Related projects</span>
+      {% for item in include.items %}
+        {% assign item_title = nil %}
+        {% if item.project %}
+          {% assign p = site.data.projects | where: "title", item.project | first %}
+          {% if p %}
+            {% assign item_title = p.title %}
+            {% assign item_icon = p.icon | default: "fa-solid fa-wrench" %}
+            {% capture item_url %}{% if p.link %}{{ p.link | relative_url }}{% else %}{{ 'projects' | relative_url }}#{{ p.title | slugify }}{% endif %}{% endcapture %}
+          {% endif %}
+        {% elsif item.activity %}
+          {% for p in site.data.projects %}
+            {% assign a = p.activities | where: "title", item.activity | first %}
+            {% if a %}
+              {% assign item_title = a.title %}
+              {% assign item_icon = a.icon | default: "fa-solid fa-circle-nodes" %}
+              {% capture item_url %}{{ p.link | default: 'projects' | relative_url }}#{{ a.title | slugify }}{% endcapture %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% elsif item.post %}
+          {% assign post = site.posts | where: "slug", item.post | first %}
+          {% if post %}
+            {% assign item_title = post.title %}
+            {% assign item_icon = "fa-solid fa-user-graduate" %}
+            {% assign item_url = post.url | relative_url %}
+          {% endif %}
+        {% endif %}
+        {% if item_title %}
+          <a class="project-vacancy" href="{{ item_url | strip }}">
+            <i class="icon {{ item_icon }}"></i> {{ item_title }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

@@ -6,10 +6,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  line-height: var(--spacing);
-  box-shadow: var(--shadow);
+  gap: 18px;
+  padding: 48px 24px;
+  line-height: var(--compact);
+  border-top: 1px solid var(--light-gray);
+  background: var(--background-alt) !important;
+  font-size: 0.95rem;
 }
 
 footer a {
@@ -22,4 +24,22 @@ footer a:hover {
 
 footer .icon {
   font-size: var(--xl);
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-title {
+  font-family: var(--heading);
+  font-size: 1.1rem;
+  font-weight: var(--bold);
+}
+
+.footer-muted {
+  color: var(--gray);
+  font-size: 0.9rem;
 }

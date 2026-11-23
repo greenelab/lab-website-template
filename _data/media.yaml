@@ -1,0 +1,38 @@
+# Media items (press, interviews, talks), shown newest first on the Media page.
+# Fields: title, type (Interview / Talk / Press), outlet, date, description, link, image
+
+- title: "The race for 1,800 billion dollars: who will rule space?"
+  type: Press
+  outlet: Algemeen Dagblad (AD), in Dutch
+  date: "2026-01-23"
+  description: >-
+    In AD's long read on the new space race, Reza Sabzevari explains why robotics will be essential
+    beyond Earth. Experiments with "factories" in space have already begun on the ISS, and anyone who
+    wants to live on the Moon or Mars will have to produce things there rather than ship everything
+    from Earth. He describes swarms of communicating robots that map and help mine the lunar surface,
+    and notes that the European Space Agency has named robotics one of its key technologies.
+  link: https://www.ad.nl/redactie/2026/de-race-om-1-800-miljard-dollar-wie-wordt-baas-in-de-ruimte/
+  image: images/media/ad-space-race.jpg
+
+- title: "Opening Academic Year 2024–2025: Engineering the Future"
+  type: Interview
+  outlet: TU Delft, YouTube
+  date: "2024-09-02"
+  description: >-
+    Reza Sabzevari is interviewed during TU Delft's opening of the academic year 2024–2025, themed
+    "Engineering the Future", about how robotics and AI will shape that future. The link starts the
+    video at his interview.
+  link: https://youtu.be/V_ob4m-mG1s?t=2629
+  image: images/media/opening-academic-year-2024.jpg
+
+- title: "How Wall-E contributes to Europe's autonomy"
+  type: Talk
+  outlet: TU Delft Critical Raw Materials Week, Collegerama
+  date: "2024-05-16"
+  description: >-
+    A lunch lecture by the TU Delft Climate Action Programme and the Delft Energy Initiative during
+    Critical Raw Materials Week. Together with Feven Desta (Civil Engineering and Geosciences), Reza
+    Sabzevari discussed how robotics can help Europe secure critical raw materials, from exploration
+    and mining to recycling. The recording is available on Collegerama.
+  link: https://collegerama.tudelft.nl/mediasite/Showcase/delft-energy-initiative/Presentation/5d557c784fb745f980341134157520511d
+  image: images/media/wall-e-lecture.jpg

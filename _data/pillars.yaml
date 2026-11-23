@@ -1,0 +1,36 @@
+# Research pillars: shown as cards on the homepage (About) and on the Research page.
+# Fields: title, icon (Font Awesome), description, link (optional, used on the homepage),
+#         items: what each pillar covers, each one of
+#           project:  project title, exactly as in _data/projects.yaml
+#           activity: activity title inside a project in _data/projects.yaml
+#           post:     post slug (file name in _posts without the date), e.g. a master project
+
+- title: Spatial & Agentic Intelligence
+  icon: fa-solid fa-cube
+  description: Geometric and semantic scene understanding, 3D scene graphs, and open-vocabulary perception that let robots reason about where things are and what they can do with them.
+  link: research
+  items:
+    - project: Transferable Spatial Intelligence
+    - project: Open-Source Interactive Education Materials for ML and Foundation Models
+    - project: Modeling and Simulation of Disruption for Resilient Infrastructures
+    - post: master-project-foundation-models-slam
+    - post: master-project-swarm-localization
+
+- title: Actionable World Models
+  icon: fa-solid fa-earth-europe
+  description: Interaction-aware models of the physical world that couple perception with action, supporting active and distributed perception for embodied, physically grounded agents.
+  link: research
+  items:
+    - project: Transferable Spatial Intelligence
+    - activity: Automated Non-Destructive Testing (NDT)
+    - post: master-project-in-orbit-assembly
+    - post: master-project-perception-manipulation-in-orbit
+
+- title: Evolving Digital Twins
+  icon: fa-solid fa-diagram-project
+  description: High-fidelity digital models that stay in sync with a changing environment, from dynamic SLAM to 4D reconstruction of manufacturing processes.
+  link: research
+  items:
+    - activity: Fine-Detailed 3D Modeling for Monitoring Manufacturing Processes
+    - project: Modeling and Simulation of Disruption for Resilient Infrastructures
+    - project: ModalForcast

@@ -1,0 +1,45 @@
+{% comment %}
+  Full-width landing banner for the homepage.
+  Use inside a section with size="full", e.g.:
+  {% include section.html size="full" %}
+  {% include hero.html title="..." text="..." %}
+{% endcomment %}
+
+<div class="hero" data-dark="true" {% if include.banner %}data-banner="true"{% endif %}>
+  {% if include.banner %}
+    <div class="hero-banner">
+      <img src="{{ include.banner | relative_url | uri_escape }}" alt="{{ include.banner-alt | default: '' }}">
+    </div>
+  {% endif %}
+  <div class="hero-stars" aria-hidden="true"></div>
+  <div class="hero-orbit" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      {% if include.eyebrow %}
+        <p class="hero-eyebrow">{{ include.eyebrow }}</p>
+      {% endif %}
+      <p class="hero-title">{{ include.title }}</p>
+      {% if include.text %}
+        <p class="hero-text">{{ include.text }}</p>
+      {% endif %}
+      <div class="hero-actions">
+        {% if include.primary-link %}
+          <a class="hero-button" href="{{ include.primary-link | relative_url }}">
+            {{ include.primary-text }}
+            <i class="icon fa-solid fa-arrow-right"></i>
+          </a>
+        {% endif %}
+        {% if include.secondary-link %}
+          <a class="hero-button" data-style="ghost" href="{{ include.secondary-link | relative_url }}">
+            {{ include.secondary-text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    {% if include.image %}
+      <div class="hero-visual">
+        <img src="{{ include.image | relative_url | uri_escape }}" alt="{{ include.alt | default: 'p4MARS logo' }}">
+      </div>
+    {% endif %}
+  </div>
+</div>

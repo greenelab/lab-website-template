@@ -18,8 +18,9 @@ _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-tem
 | homepage | [`index.md`](index.md) |
 | research | [`research/index.md`](/research/index.md), modify citations following [this](https://greene-lab.gitbook.io/lab-website-template-docs/basics/citations). |
 | projects | [`projects/index.md`](/projects/index.md) |
-| teaching | [`teaching/index.md`](/teaching/index.md) |
+| education | [`education/index.md`](/education/index.md) |
 |  team    | [`team/index.md`](/team/index.md), modify page for individual member in `_members/xyz.md` |
 | vacancy  | [`vacancy/index.md`](/vacancy/index.md), a open position is associated with a Markdown file in `_posts/{date-type-position}.md` |
-|  events  | [`events/index.md`](/events/index.md), events can be added in [`_data/events.yaml`](/_data/events.yaml) |
+|  news  | [`news/index.md`](/news/index.md), events can be added in [`_data/events.yaml`](/_data/events.yaml) |
 | contact  | [`contact/index.md`](/contact/index.md) |
+| menue | create a new folder and follow the template as for example [`education`](education/index.md) |

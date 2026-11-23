@@ -20,7 +20,7 @@
 
       // filter out tags already present in row
       let existing = [...row.querySelectorAll(".tag")].map((tag) =>
-        window.normalizeTag(tag.innerText)
+        window.tagValue(tag)
       );
       tags = tags.filter((tag) => !existing.includes(normalizeTag(tag)));
 
@@ -29,6 +29,7 @@
         const a = document.createElement("a");
         a.classList.add("tag");
         a.innerHTML = tag;
+        a.dataset.tag = tag;
         a.href = `${link}?search="tag: ${tag}"`;
         a.dataset.tooltip = `Show items with the tag "${tag}"`;
         row.append(a);

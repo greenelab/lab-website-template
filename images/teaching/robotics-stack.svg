@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05080f"/><stop offset="1" stop-color="#0b1a2e"/></linearGradient><radialGradient id="glow" cx="0.6" cy="0.4" r="0.6"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.25"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient></defs><rect width="600" height="400" fill="url(#bg)"/><rect width="600" height="400" fill="url(#glow)"/>
+<g font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="20" text-anchor="middle">
+  <g transform="translate(110,200)"><circle r="62" fill="#0e1526" stroke="#38bdf8" stroke-width="3"/><text y="-6" fill="#e6edf5">SENSE</text><text y="18" font-size="10" font-weight="400" fill="#7dd3fc">perception · localization</text></g>
+  <g transform="translate(300,200)"><circle r="62" fill="#0e1526" stroke="#a78bfa" stroke-width="3"/><text y="-6" fill="#e6edf5">THINK</text><text y="18" font-size="10" font-weight="400" fill="#c4b5fd">planning · behavior trees</text></g>
+  <g transform="translate(490,200)"><circle r="62" fill="#0e1526" stroke="#f97316" stroke-width="3"/><text y="-6" fill="#e6edf5">ACT</text><text y="18" font-size="10" font-weight="400" fill="#fdba74">kinematics · control</text></g>
+</g>
+<g stroke="#7dd3fc" stroke-width="2.5" fill="none" stroke-linecap="round">
+  <path d="M176 200 H230"/><path d="M222 192 L232 200 L222 208"/>
+  <path d="M366 200 H420"/><path d="M412 192 L422 200 L412 208"/>
+  <path d="M490 270 C490 340 110 340 110 270" stroke-dasharray="6 7" stroke-opacity="0.6"/><path d="M102 280 L110 268 L118 280"/>
+</g>
+<g font-family="monospace" font-size="13" fill="#7dd3fc" text-anchor="middle"><text x="300" y="358">ROS · Gazebo · MCU · TF trees</text></g>
+<g font-family="monospace" font-size="13" fill="#7dd3fc" text-anchor="middle" opacity="0.8"><text x="300" y="70">WB3708-26</text></g>
+</svg>

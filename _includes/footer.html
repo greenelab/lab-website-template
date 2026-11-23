@@ -9,11 +9,15 @@
   {% endif %}
   data-size="wide"
 >
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
+  <div class="footer-about">
+    <span class="footer-title">{{ site.title }}</span>
+    {% if site.affiliation %}
+      <span>{{ site.affiliation }}</span>
+    {% endif %}
+    {% if site.address %}
+      <span class="footer-muted">{{ site.address }}</span>
+    {% endif %}
+  </div>
 
   <div>
     {% for link in site.links %}
@@ -23,7 +27,7 @@
     {% endfor %}
   </div>
 
-  <div>
+  <div class="footer-muted">
     &copy; {{ site.time | date: "%Y" }}
     {{ site.title }}
     &nbsp; | &nbsp; Built with

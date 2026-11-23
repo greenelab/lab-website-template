@@ -1,0 +1,69 @@
+{{ " " }}
+{% assign project_id = include.id | default: include.title | slugify %}
+<div class="project" id="{{ project_id }}">
+  <div class="project-text">
+    {% if include.label %}<span class="outcome-label">{{ include.label }}</span>{% endif %}
+    <p class="project-title">
+      {% if include.icon %}<span class="pillar-icon"><i class="icon {{ include.icon }}"></i></span>{% endif %}
+      {% if include.link %}
+        <a href="{{ include.link | relative_url | uri_escape }}">{{ include.title }}</a>
+      {% else %}
+        <span>{{ include.title }}</span>
+      {% endif %}
+    </p>
+    {{ include.description | markdownify }}
+    {% if include.buttons %}
+      <div class="project-buttons">
+        {% for button in include.buttons %}
+          {% include button.html type=button.type text=button.text link=button.link style="bare" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% assign no_items = "" | split: "," %}
+    {% assign vacancies = include.vacancies | default: no_items %}
+    {% for activity in include.activities %}
+      {% if activity.vacancies %}{% assign vacancies = vacancies | concat: activity.vacancies %}{% endif %}
+    {% endfor %}
+    {% assign vacancies = vacancies | uniq %}
+    {% if include.activities %}
+      <div class="project-activities">
+        <span class="project-links-label">Activities</span>
+        {% for activity in include.activities %}
+          <a class="project-vacancy" href="{{ include.link | relative_url }}#{{ activity.title | slugify }}">
+            <i class="icon {{ activity.icon | default: 'fa-solid fa-circle-nodes' }}"></i> {{ activity.title }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% assign titles = include.activities | map: "title" | default: no_items | push: include.title %}
+    {% assign areas = no_items %}
+    {% for area in site.data.pillars %}
+      {% for item in area.items %}
+        {% if titles contains item.project or titles contains item.activity %}
+          {% assign areas = areas | push: area %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if areas.size > 0 %}
+      <div class="project-activities">
+        <span class="project-links-label">Research pillars</span>
+        {% for area in areas %}
+          <a class="project-vacancy" href="{{ 'research' | relative_url }}#{{ area.title | slugify }}">
+            <i class="icon {{ area.icon }}"></i> {{ area.title }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% include project-links.html vacancies=vacancies %}
+    {% include sponsors.html sponsors=include.sponsors %}
+    {% if include.tags %}
+      {% include tags.html tags=include.tags %}
+    {% endif %}
+  </div>
+  {% if include.image %}
+    <div class="project-image">
+      <img src="{{ include.image | relative_url | uri_escape }}" alt="{{ include.title | regex_strip }}" loading="lazy" {% include fallback.html %}>
+    </div>
+  {% endif %}
+</div>

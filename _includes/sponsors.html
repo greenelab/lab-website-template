@@ -1,0 +1,15 @@
+{% if include.sponsors %}
+<div class="project-sponsors">
+<span class="project-links-label">Sponsored by</span>
+{% for sp in include.sponsors %}
+<a class="sponsor" href="{{ sp.link }}" title="{{ sp.name }}" aria-label="{{ sp.name }}">
+{% if sp.logo %}
+<img src="{{ sp.logo | relative_url }}" alt="{{ sp.name }} logo" loading="lazy">
+{% else %}
+<span class="sponsor-text">{{ sp.text | default: sp.name }}</span>
+{% endif %}
+{% if sp.caption %}<span class="sponsor-caption">{{ sp.caption }}</span>{% endif %}
+</a>
+{% endfor %}
+</div>
+{% endif %}

@@ -13,8 +13,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-  box-shadow: var(--shadow);
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--light-gray);
+  background: color-mix(in srgb, var(--background) 85%, transparent) !important;
+  backdrop-filter: saturate(1.4) blur(12px);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
 
   @if $sticky {
     position: sticky !important;
@@ -40,6 +43,11 @@ header a {
 
 .logo {
   height: $logo;
+  aspect-ratio: 1;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--light-gray);
 }
 
 .logo > * {
@@ -61,11 +69,20 @@ header a {
 .title {
   font-size: var(--large);
   font-weight: var(--bold);
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
-  opacity: 0.65;
+  color: var(--gray);
+  font-size: 0.85rem;
   font-weight: var(--regular);
+}
+
+// the subtitle is long; hide it on mid-size screens so the nav fits
+@media (max-width: 1150px) {
+  header:not([data-big]) .subtitle {
+    display: none;
+  }
 }
 
 .nav-toggle {
@@ -100,17 +117,27 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 4px;
   font-family: var(--heading);
-  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: var(--semi-bold);
 }
 
 nav > a {
-  padding: 5px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--dark-gray);
+  transition: background var(--transition), color var(--transition);
 }
 
 nav > a:hover {
   color: var(--primary);
+  background: var(--background-alt);
+}
+
+nav > a[aria-current="page"] {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
 }
 
 header:not([data-big]) {

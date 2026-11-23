@@ -62,3 +62,10 @@ $feature-text-width: 55%;
     max-width: calc($wrap / 2);
   }
 }
+
+// second line under a feature title, e.g. a course subtitle
+.feature-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 1em;
+}

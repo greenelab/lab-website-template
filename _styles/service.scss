@@ -1,0 +1,97 @@
+---
+---
+
+.service-section {
+  margin: 10px 0 40px;
+}
+
+.service-section-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.service-section-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+
+.service-section-title {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: 1.3rem;
+  font-weight: var(--bold);
+}
+
+.service-section-text {
+  margin: 0 0 18px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.service-item {
+  padding: 18px 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--rounded);
+  background: var(--background);
+  text-align: left;
+  transition: border-color var(--transition), box-shadow var(--transition);
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--light-gray));
+    box-shadow: var(--shadow);
+  }
+}
+
+.service-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.service-role {
+  font-family: var(--heading);
+  font-size: 1.02rem;
+  font-weight: var(--semi-bold);
+}
+
+.service-period {
+  color: var(--gray);
+  font-family: var(--code);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.service-organization {
+  margin: 4px 0 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.service-detail {
+  margin: 8px 0 0;
+  color: var(--gray);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.service-item .project-person {
+  margin-top: 12px;
+}

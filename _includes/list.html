@@ -5,6 +5,12 @@
   | data_filter: include.filter
 %}
 
+{% if include.limit %}
+  {% assign data = data | sort: "date" | reverse %}
+  {% assign cut = include.limit | plus: 0 %}
+  {% assign data = data | slice: 0, cut %}
+{% endif %}
+
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"
   | sort: "name"
@@ -16,6 +22,10 @@
 
   {% if years.size > 1 %}
     {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
+  {% endif %}
+
+  {% comment %} newest first, also when everything is in one year {% endcomment %}
+  {% if data.first.date %}
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
 
@@ -42,8 +52,14 @@
       link=d.link
       lookup=d.lookup
       name=d.name
+      note=d.note
       publisher=d.publisher
       pdf=d.pdf
+      precision=d.precision
+      people=d.people
+      activities=d.activities
+      sponsors=d.sponsors
+      vacancies=d.vacancies
       repo=d.repo
       role=d.role
       slug=d.slug
@@ -54,6 +70,7 @@
       title=d.title
       tooltip=d.tooltip
       type=d.type
+      unavailable=d.unavailable
       url=d.url
       venue=d.venue
       width=d.width

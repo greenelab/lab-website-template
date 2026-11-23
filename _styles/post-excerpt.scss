@@ -1,7 +1,10 @@
 ---
 ---
 
-$thumb-size: 200px;
+$thumb-size: 240px;
+// every excerpt thumbnail renders at this exact ratio, so the images match
+// regardless of how long the surrounding text is
+$thumb-ratio: 1.5; // 3:2, matching the 600x400 source artwork
 $wrap: 800px;
 
 .post-excerpt-container {
@@ -10,6 +13,7 @@ $wrap: 800px;
 
 .post-excerpt {
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
   border-radius: var(--rounded);
   background: var(--background);
@@ -17,11 +21,47 @@ $wrap: 800px;
   box-shadow: var(--shadow);
 }
 
+// status badge and position tags, leading the card above the image
+.post-excerpt-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 15px 0 15px;
+}
+
+.post-excerpt-header .tags {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+// badge and tag share one pill, sized to the title's line box so the row
+// lines up with the vacancy title beside it
+.post-excerpt-header .status-badge,
+.post-excerpt-header .tag {
+  display: inline-flex;
+  align-items: center;
+  height: calc(1rem * var(--compact));
+  padding: 0 12px;
+  font-family: var(--code);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.post-excerpt-body {
+  display: flex;
+}
+
 .post-excerpt-image {
   position: relative;
   width: $thumb-size;
+  aspect-ratio: $thumb-ratio;
+  align-self: center;
   flex-shrink: 0;
-  // box-shadow: var(--shadow);
+  margin: 15px 0 15px 15px;
+  border-radius: var(--rounded);
+  overflow: hidden;
 }
 
 .post-excerpt-image img {
@@ -44,10 +84,17 @@ $wrap: 800px;
   margin: 0 !important;
 }
 
-.post-excerpt-text > a:first-child {
+.post-excerpt-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   width: 100%;
-  font-weight: var(--semi-bold);
-  text-decoration: none;
+
+  a {
+    font-weight: var(--semi-bold);
+    text-decoration: none;
+  }
 }
 
 .post-excerpt-text > div {
@@ -59,12 +106,42 @@ $wrap: 800px;
 }
 
 @container (max-width: #{$wrap}) {
-  .post-excerpt {
+  .post-excerpt-body {
     flex-direction: column;
   }
 
   .post-excerpt-image {
     width: unset;
-    height: $thumb-size;
+    align-self: stretch;
+    max-height: $thumb-size;
+    margin: 15px 15px 0 15px;
+  }
+}
+
+// marker for positions that are no longer open
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--light-gray);
+  color: var(--gray);
+  font-family: var(--code);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.post-excerpt[data-unavailable] {
+  .post-excerpt-text > a {
+    color: var(--gray);
+  }
+
+  // dim the artwork only, so the badge on top of it stays legible
+  .post-excerpt-image img,
+  .post-excerpt-text p {
+    opacity: 0.65;
   }
 }
