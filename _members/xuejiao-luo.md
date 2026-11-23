@@ -1,6 +1,6 @@
 ---
 name: Xuejiao (Sheryl) Luo
-image: https://www.paam-lab.org/author/xuejiao-luo/avatar_hu6419129113947017748.jpg
+image: images/member/x_luo.jpg
 role: postdoc
 # group: alum
 aliases:
