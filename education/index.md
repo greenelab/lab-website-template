@@ -3,6 +3,8 @@ title: Education
 nav:
   order: 3
   tooltip: Courses and supervised theses
+seo_title: "Robotics Courses and MSc Theses | p4MARS Lab, TU Delft"
+seo_description: "Courses taught by the p4MARS Lab at TU Delft, from robot perception with ROS to deep learning for vision, plus the MSc theses we supervise."
 ---
 
 {% include section.html size="full" %}
@@ -63,6 +65,14 @@ A bachelor course in the TU Delft Robotics minor on everything it takes to build
   link="https://studiegids.tudelft.nl/courses/study-guide/educations/37221"
   text="Study guide"
   icon="fa-solid fa-arrow-up-right-from-square"
+  flip=true
+  style="bare"
+%}
+{%
+  include button.html
+  link="https://youtu.be/07NJn7Hbc40"
+  text="Course content"
+  icon="fa-brands fa-youtube"
   flip=true
   style="bare"
 %}

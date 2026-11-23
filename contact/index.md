@@ -3,6 +3,8 @@ title: Contact
 nav:
   order: 8
   tooltip: Email, address, and location
+seo_title: "Contact | p4MARS Lab, TU Delft Aerospace Engineering"
+seo_description: "Contact the p4MARS Lab at the TU Delft Faculty of Aerospace Engineering, Kluyverweg 1, Delft: email Reza Sabzevari or book a meeting."
 ---
 
 {% include section.html size="full" %}

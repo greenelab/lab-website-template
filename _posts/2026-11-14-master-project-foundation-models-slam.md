@@ -7,6 +7,8 @@ people:
   - francesco-de-patre
 tags:
   - master-project
+redirect_from:
+  - /2026/11/14/master-project-foundation-models-slam.html
 ---
 
 Classical SLAM builds a geometric map: points, surfaces and a trajectory. Foundation models add semantics and language, so that a map can also answer questions such as *where is the fire extinguisher* or *which door leads to the lab*. This project studies how to combine the two without giving up the metric accuracy and real-time behaviour that robots need.

@@ -5,6 +5,8 @@ unavailable: true
 author: reza-sabzevari
 tags:
   - master-project
+redirect_from:
+  - /2026/11/13/master-project-perception-manipulation-in-orbit.html
 ---
 
 In-orbit assembly comes down to a classic problem under unforgiving conditions: peg-in-hole. A robot has to insert a peg, a strut, a connector or a docking pin into its receptacle with sub-millimetre clearance, while illumination is harsh and changing, surfaces are specular and textureless, nothing settles under gravity, and no operator can correct a mistake in real time. This project asks whether **vision-language-action (VLA) models** can solve that insertion task end to end, instead of a hand-built pipeline of pose estimation, planning and control.

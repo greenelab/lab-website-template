@@ -3,6 +3,8 @@ title: Media
 nav:
   order: 7
   tooltip: Interviews, talks and press
+seo_title: "Talks, Interviews and Press | p4MARS Lab, TU Delft"
+seo_description: "Talks, lectures, interviews and press coverage of the p4MARS Lab's work on perception and AI for robotics, manufacturing and space."
 ---
 
 {% include section.html size="full" %}

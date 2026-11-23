@@ -1,5 +1,6 @@
 ---
 title: Luchtvaart in Transitie (LiT)
+seo_description: "Luchtvaart in Transitie (LiT): p4MARS develops 3D modeling of manufacturing processes and automated non-destructive testing for climate-neutral aviation."
 ---
 
 {% assign project = site.data.projects | where_exp: "p", "p.link == 'projects/lit'" | first %}

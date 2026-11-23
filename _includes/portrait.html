@@ -25,7 +25,7 @@
     <img
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
-      alt="member portrait"
+      alt="{{ member.name | default: 'Team member' }}, p4MARS Lab"
       loading="lazy"
       {% include fallback.html %}
     >

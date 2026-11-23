@@ -4,7 +4,7 @@ outcomes:
   - title: "T-FunS3D: Task-Driven Hierarchical Open-Vocabulary 3D Functionality Segmentation"
     label: Publication · ICRA 2026
     icon: fa-solid fa-file-lines
-    image: images/research/T-FunS3D_teaser.png
+    image: images/research/T-FunS3D_teaser.webp
     description: >-
       T-FunS3D segments the functional parts of a 3D scene (handles, knobs, buttons, drawers) directly
       from a natural-language task description. It builds an open-vocabulary 3D scene graph from posed
@@ -35,6 +35,7 @@ outcomes:
       - type: link
         text: Event page
         link: https://robohouse.tudelftcampus.nl/events/robots-in-business-the-robots-are-here
+seo_description: "Transferable Spatial Intelligence: open-vocabulary 3D scene graphs and vision-language models that tell robots where to act. Includes T-FunS3D (ICRA 2026)."
 ---
 
 <p class="eyebrow"><a href="{{ 'projects' | relative_url }}">Projects</a></p>

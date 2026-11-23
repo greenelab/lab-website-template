@@ -4,6 +4,8 @@ image: images/projects/education-materials.svg
 author: reza-sabzevari
 tags:
   - ra-position
+redirect_from:
+  - /2026/11/16/ra-foundation-models.html
 ---
 
 p4MARS develops open-source, interactive teaching material on machine learning and foundation models, so that students can experiment with modern perception and language models rather than only read about them. As a research assistant you help turn our research and course content into material that others can run.

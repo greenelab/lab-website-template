@@ -3,6 +3,8 @@ title: Vacancy
 nav:
   order: 5
   tooltip: Open positions and thesis projects
+seo_title: "PhD, Postdoc and MSc Thesis Positions | p4MARS Lab, TU Delft"
+seo_description: "Open PhD, postdoc, research assistant and MSc thesis positions in robot perception, SLAM and space robotics at the p4MARS Lab, TU Delft."
 ---
 
 {% include section.html size="full" %}

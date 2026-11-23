@@ -7,6 +7,8 @@ people:
   - philipp-kunze
 tags:
   - master-project
+redirect_from:
+  - /2026/11/15/master-project-swarm-localization.html
 ---
 
 A swarm of small planetary rovers can explore far more of the Moon or Mars than a single large rover, and can keep working when one member fails. On another planet there is no GNSS, no prepared map and no magnetic north, so every rover must work out where it is relative to the others from what it can sense itself. This project studies relative localization within such a rover swarm.
