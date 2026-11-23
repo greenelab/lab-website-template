@@ -1,4 +1,6 @@
 ---
+seo_title: "p4MARS Lab, TU Delft | Perception & AI for Robotics and Space"
+seo_description: "The p4MARS Lab at TU Delft builds perception and world models for robots in manufacturing and space: 3D scene understanding, SLAM and digital twins."
 ---
 
 {% include section.html size="full" %}

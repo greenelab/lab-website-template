@@ -211,7 +211,7 @@
   description: We introduce T-FunS3D, a task-driven hierarchical open-vocabulary 3D
     functionality segmentation method that provides actionable perception for robotic
     applications.
-  image: https://t-funs3d.github.io/static/images/T-FunS3D%20teaser.png
+  image: images/research/T-FunS3D_teaser.webp
   buttons:
   - type: paper
     text: PDF

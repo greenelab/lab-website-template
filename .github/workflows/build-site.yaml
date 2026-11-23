@@ -25,11 +25,13 @@ jobs:
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install Ruby packages
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
+          ruby-version: "3.4"
           bundler-cache: true
 
       - name: Get Pages url

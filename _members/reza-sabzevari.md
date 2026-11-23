@@ -11,7 +11,13 @@ links:
   email: R.Sabzevari@tudelft.nl
   home-page: https://www.tudelft.nl/en/staff/r.sabzevari/
   google-scholar: FLvPYqwAAAAJ
-  # orcid: 0000-0001-8713-9213
+  orcid: 0000-0002-6309-5890
+  pure: bba71e74-720a-4b4c-b116-3cf3678f8693
+  research-gate: Reza-Sabzevari-2
+  scopus: "16032197600"
+  web-of-science: H-8127-2014
+  linkedin: rezasabzevari
+  twitter: rezasabzevari
 hide_research_link: true
 ---
 

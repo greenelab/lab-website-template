@@ -5,6 +5,8 @@ author: jingkun-feng, reza-sabzevari
 unavailable: true
 tags: 
     ra-position
+redirect_from:
+  - /2026/08/16/TA-tfuns3d-demo.html
 ---
 
 This position supported the live demo built on **T-FunS3D**, our task-driven, open-vocabulary 3D functionality segmentation method, which was shown at Robots in Business 2026 at RoboHouse. The work consisted of turning a research prototype into a robot demo that runs reliably in front of an audience.

@@ -3,6 +3,8 @@ title: News
 nav:
   order: 6
   tooltip: Lab news, talks and events
+seo_title: "News | p4MARS Lab, TU Delft"
+seo_description: "News from the p4MARS Lab at TU Delft: papers, demos, events, awards and new team members in robot perception for manufacturing and space."
 ---
 
 {% include section.html size="full" %}

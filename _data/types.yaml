@@ -147,6 +147,30 @@ linkedin:
   tooltip: LinkedIn
   link: https://www.linkedin.com/in/$VALUE
 
+research-gate:
+  icon: fa-brands fa-researchgate
+  text: ResearchGate
+  tooltip: ResearchGate
+  link: https://www.researchgate.net/profile/$VALUE
+
+scopus:
+  icon: fa-solid fa-database
+  text: Scopus
+  tooltip: Scopus author profile
+  link: https://www.scopus.com/authid/detail.uri?authorId=$VALUE
+
+web-of-science:
+  icon: fa-solid fa-chart-line
+  text: Web of Science
+  tooltip: Web of Science researcher profile
+  link: https://www.webofscience.com/wos/author/record/$VALUE
+
+pure:
+  icon: fa-solid fa-building-columns
+  text: TU Delft Research Portal
+  tooltip: TU Delft Research Portal profile
+  link: https://research.tudelft.nl/en/persons/$VALUE
+
 # alerts
 
 tip:

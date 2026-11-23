@@ -1,103 +1,222 @@
-{% assign filename = page.path | split: "/" | last %}
-{% if page.name and page.name != filename %}
-  {% assign title = page.name %}
-{% elsif page.title %}
-  {% assign title = page.title %}
-{% else %}
-  {% assign title = nil %}
-{% endif %}
+{%- comment -%}
+  SEO and social metadata for every page.
 
-{% assign title = title | xml_escape %}
+  Optional front matter on any page or post:
+    seo_title:        full <title> text; replaces the default "Page | p4MARS Lab"
+    seo_description:  meta description, about 120-160 characters
+    share_image:      path to a 1200x630 JPG or PNG used in link previews
 
-{% assign fulltitle = "" | split: "," %}
-{% if title and title != "" %}
-  {% assign fulltitle = fulltitle | push: title %}
-{% endif %}
-{% if site.title and site.title != "" %}
-  {% assign fulltitle = fulltitle | push: site.title %}
-{% endif %}
-{% assign fulltitle = fulltitle | join: " | " %}
+  Optional front matter on a vacancy post, to add JobPosting structured data
+  (paid positions only; never on MSc thesis topics):
+    job:
+      employment_type: FULL_TIME        # FULL_TIME, PART_TIME, CONTRACTOR, TEMPORARY, INTERN
+      valid_through: 2027-01-31         # remove the page or set a past date when the job closes
+      apply_url: https://...            # the official TU Delft vacancy, if there is one
+{%- endcomment -%}
 
-{% assign subtitle = site.subtitle %}
+{%- assign filename = page.path | split: "/" | last -%}
+{%- if page.name and page.name != filename -%}
+  {%- assign title = page.name -%}
+{%- elsif page.title -%}
+  {%- assign title = page.title -%}
+{%- else -%}
+  {%- assign title = nil -%}
+{%- endif -%}
 
-{% assign description = page.description | default: site.description %}
-{% if site.subtitle %}
-  {% capture description -%}
-    {{ site.subtitle | strip_html }}. {{ description }}
-  {%- endcapture %}
-{% endif %}
-{% capture url -%}
-  {{ site.url }}{{ site.baseurl }}
-{%- endcapture %}
+{%- assign role = site.data.types[page.role].description -%}
+{%- assign role = page.description | default: role -%}
 
-{% assign description = description | xml_escape %}
+{%- comment -%} <title>: "Page | p4MARS Lab", members get their role, seo_title wins {%- endcomment -%}
+{%- assign parts = "" | split: "," -%}
+{%- if title and title != "" -%}
+  {%- if page.collection == "members" and role -%}
+    {%- capture title_with_role -%}{{ title }}, {{ role }}{%- endcapture -%}
+    {%- assign parts = parts | push: title_with_role -%}
+  {%- else -%}
+    {%- assign parts = parts | push: title -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if site.title and site.title != "" -%}
+  {%- assign parts = parts | push: site.title -%}
+{%- endif -%}
+{%- assign fulltitle = parts | join: " | " -%}
+{%- if title == nil and site.subtitle -%}
+  {%- capture fulltitle -%}{{ site.title }} | {{ site.subtitle }}{%- endcapture -%}
+{%- endif -%}
+{%- if page.seo_title -%}
+  {%- assign fulltitle = page.seo_title -%}
+{%- endif -%}
 
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{%- comment -%} meta description: seo_description > member sentence > post excerpt > page description > site description {%- endcomment -%}
+{%- assign excerpt = page.excerpt | strip_html | normalize_whitespace | strip -%}
+{%- if page.seo_description -%}
+  {%- assign description = page.seo_description -%}
+{%- elsif page.collection == "members" -%}
+  {%- capture description -%}
+    {{ page.name }}{% if page.group == "alum" %}, former {{ role }}{% elsif role %}, {{ role }}{% endif %} at the p4MARS Lab, TU Delft: perception and AI for manufacturing automation, robotics and space.
+  {%- endcapture -%}
+{%- elsif page.collection == "posts" and excerpt != "" -%}
+  {%- assign description = excerpt | truncate: 158 -%}
+{%- elsif page.description -%}
+  {%- assign description = page.description -%}
+{%- else -%}
+  {%- assign description = site.description -%}
+{%- endif -%}
+{%- assign description = description | normalize_whitespace | strip -%}
 
-{% assign jpg = "images/share.jpg" | file_exists %}
-{% assign png = "images/share.png" | file_exists %}
-{% assign share = png | default: jpg | relative_url %}
-
-{% assign published = page.date | date_to_xmlschema %}
-{% assign updated = page.last_modified_at | date_to_xmlschema %}
-
-{% assign feed = "feed.xml" | absolute_url %}
+{%- assign canonical = page.url | replace: "/index.html", "/" | absolute_url -%}
+{%- assign home = "/" | absolute_url -%}
+{%- assign icon = "images/logo.png" | relative_url -%}
+{%- assign logo = "images/logo.png" | absolute_url -%}
+{%- assign share = page.share_image | default: "images/share.png" | absolute_url -%}
+{%- assign published = page.date | date_to_xmlschema -%}
+{%- assign updated = page.last_modified_at | default: page.date | date_to_xmlschema -%}
+{%- assign feed = "feed.xml" | absolute_url -%}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{{ fulltitle }}</title>
-
+<title>{{ fulltitle | escape_once }}</title>
+<meta name="description" content="{{ description | escape_once }}">
+<link rel="canonical" href="{{ canonical }}">
 <link rel="icon" href="{{ icon }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | xml_escape }}" href="{{ feed }}">
 
-<meta name="title" content="{{ title }}">
-<meta name="description" content="{{ description }}">
-
-<meta property="og:title" content="{{ title }}">
-<meta property="og:site_title" content="{{ site.title | xml_escape }}">
-<meta property="og:description" content="{{ description }}">
-<meta property="og:url" content="{{ url }}">
+<meta property="og:site_name" content="{{ site.title | xml_escape }}">
+<meta property="og:title" content="{{ fulltitle | escape_once }}">
+<meta property="og:description" content="{{ description | escape_once }}">
+<meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ share }}">
 <meta property="og:locale" content="en_US">
+{%- if page.collection == "posts" %}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ published }}">
+<meta property="article:modified_time" content="{{ updated }}">
+{%- elsif page.collection == "members" %}
+<meta property="og:type" content="profile">
+{%- else %}
+<meta property="og:type" content="website">
+{%- endif %}
 
-<meta property="twitter:title" content="{{ title }}">
-<meta property="twitter:description" content="{{ description }}">
-<meta property="twitter:url" content="{{ url }}">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="{{ share }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ fulltitle | escape_once }}">
+<meta name="twitter:description" content="{{ description | escape_once }}">
+<meta name="twitter:image" content="{{ share }}">
 
-{% if page.author %}
-  <meta name="author" content="{{ page.author | xml_escape }}">
-  <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="{{ updated }}">
-  <meta property="article:published_time" content="{{ published }}">
-  <meta property="article:modified_time" content="{{ updated }}">
-  <meta name="revised" content="{{ updated }}">
-{% else %}
-  <meta property="og:type" content="website">
-{% endif %}
+{%- comment -%} the lab as an organisation, referenced from every other block by its @id {%- endcomment -%}
+{%- capture lab -%}
+{
+  "@type": "ResearchOrganization",
+  "@id": "{{ home }}#lab",
+  "name": {{ site.title | jsonify }},
+  "alternateName": {{ site.subtitle | jsonify }},
+  "url": "{{ home }}",
+  "logo": "{{ logo }}",
+  "email": {{ site.links.email | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kluyverweg 1",
+    "postalCode": "2629 HS",
+    "addressLocality": "Delft",
+    "addressCountry": "NL"
+  },
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "Delft University of Technology",
+    "url": "https://www.tudelft.nl/en/"
+  },
+  "sameAs": ["https://github.com/{{ site.links.github }}"]
+}
+{%- endcapture -%}
+
+{%- comment -%} sameAs links for a member, built from their front matter links {%- endcomment -%}
+{%- assign same = "" | split: "," -%}
+{%- for link in page.links -%}
+  {%- assign key = link[0] -%}
+  {%- assign value = link[1] -%}
+  {%- if value and key != "email" and key != "thesis" -%}
+    {%- if value contains "://" -%}
+      {%- assign href = value -%}
+    {%- else -%}
+      {%- assign href = site.data.types[key].link | replace: "$VALUE", value -%}
+    {%- endif -%}
+    {%- if href and href != "" -%}
+      {%- assign same = same | push: href -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor %}
 
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    {% if page.author %}
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "{{ title }}" },
-      "datePublished": "{{ published }}",
-      "dateModified": "{{ updated }}",
-    {% else %}
+{%- if page.url == "/" %}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{ lab }},
+    {
       "@type": "WebSite",
-    {% endif %}
-    "name": "{{ title }}",
-    "description": "{{ description }}",
-    "headline": "{{ title }}",
-    "publisher": {
-      "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
-    },
-    "url": "{{ url }}"
+      "@id": "{{ home }}#website",
+      "name": {{ site.title | jsonify }},
+      "url": "{{ home }}",
+      "publisher": { "@id": "{{ home }}#lab" }
+    }
+  ]
+}
+{%- elsif page.collection == "members" %}
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ canonical }}",
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ page.name | jsonify }},
+    "jobTitle": {{ role | jsonify }},
+    "image": "{{ page.image | absolute_url }}",
+    "url": "{{ canonical }}",
+    {%- if page.group == "alum" %}
+    "alumniOf": {{ lab }},
+    {%- else %}
+    "affiliation": {{ lab }},
+    {%- endif %}
+    "sameAs": {{ same | jsonify }}
   }
+}
+{%- elsif page.collection == "posts" and page.job %}
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": {{ page.title | jsonify }},
+  "description": {{ page.content | jsonify }},
+  "datePosted": "{{ page.date | date: '%Y-%m-%d' }}",
+  {%- if page.job.valid_through %}
+  "validThrough": "{{ page.job.valid_through | date: '%Y-%m-%d' }}",
+  {%- endif %}
+  "employmentType": {{ page.job.employment_type | default: "FULL_TIME" | jsonify }},
+  "hiringOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "Delft University of Technology",
+    "sameAs": "https://www.tudelft.nl/en/",
+    "logo": "{{ logo }}"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kluyverweg 1",
+      "postalCode": "2629 HS",
+      "addressLocality": "Delft",
+      "addressCountry": "NL"
+    }
+  },
+  "url": {{ page.job.apply_url | default: canonical | jsonify }}
+}
+{%- else %}
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ fulltitle | jsonify }},
+  "description": {{ description | jsonify }},
+  "url": "{{ canonical }}",
+  "isPartOf": { "@type": "WebSite", "url": "{{ home }}", "name": {{ site.title | jsonify }} },
+  "about": {{ lab }}
+}
+{%- endif %}
 </script>
-
-<link rel="alternate" type="application/rss+xml" href="{{ feed }}">

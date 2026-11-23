@@ -3,6 +3,8 @@ title: Team
 nav:
   order: 4
   tooltip: Members of our lab
+seo_title: "Team | p4MARS Lab, TU Delft Aerospace Engineering"
+seo_description: "Meet the p4MARS Lab at TU Delft: faculty, postdocs, PhD candidates, research assistants, visiting researchers and alumni working on robot perception."
 ---
 
 {% include section.html size="full" %}

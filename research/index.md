@@ -3,6 +3,8 @@ title: Research
 nav:
   order: 1
   tooltip: Published works
+seo_title: "Research: 3D Scene Understanding, SLAM, Digital Twins | p4MARS"
+seo_description: "Spatial and agentic intelligence, actionable world models and evolving digital twins: research and publications of the p4MARS Lab at TU Delft."
 ---
 
 {% include section.html size="full" %}
@@ -28,3 +30,13 @@ nav:
 ## Highlighted
 
 {% include citation.html lookup="T-FunS3D" style="rich" %}
+
+{% include section.html %}
+
+## Selected publications
+
+{% include search-box.html %}
+
+{% include search-info.html %}
+
+{% include list.html data="citations" component="citation" %}

@@ -4,6 +4,8 @@ image: images/vacancy/in-orbit-assembly.svg
 author: reza-sabzevari
 tags:
   - master-project
+redirect_from:
+  - /2026/11/16/master-project-in-orbit-assembly.html
 ---
 
 Large structures in space, such as telescopes, antennas and habitats, cannot be launched in one piece. They have to be assembled in orbit, by robots, with little or no human intervention and with very limited communication with the ground. This project studies the perception side of that problem: how a robot builds and maintains an understanding of the structure it is assembling.
