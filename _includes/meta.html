@@ -38,7 +38,7 @@
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% assign share = png | default: jpg | relative_url %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
