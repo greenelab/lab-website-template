@@ -9,11 +9,22 @@
 {% endif %}
 
 <div class="post-excerpt-container">
-  <div class="post-excerpt">
+  <div class="post-excerpt" {% if post.unavailable %}data-unavailable="true"{% endif %}>
     {% assign url = post.url | relative_url | uri_escape %}
     {% assign title = post.title %}
     {% assign image = post.image | relative_url | uri_escape %}
 
+    {% comment %}
+      status and position type lead the card, above both the image and the title
+    {% endcomment %}
+    {% if post.unavailable or post.tags %}
+      <div class="post-excerpt-header">
+        {% if post.unavailable %}<span class="status-badge">No longer available</span>{% endif %}
+        {% if post.tags %}{% include tags.html tags=post.tags link="blog" %}{% endif %}
+      </div>
+    {% endif %}
+
+    <div class="post-excerpt-body">
     {% if image %}
       <a
         href="{{ url }}"
@@ -30,14 +41,14 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url }}">{{ title }}</a>
+      <span class="post-excerpt-title">
+        <a href="{{ url }}">{{ title }}</a>
+      </span>
 
       {%
         include post-info.html
         author=post.author
         published=post.date
-        updated=post.last_modified_at
-        tags=post.tags
         show_author_image=false
       %}
 
@@ -57,6 +68,8 @@
         {{ excerpt }}
       </p>
 
+      {% include post-links.html post=post show_people=false %}
+
       {% if post.pdf %}
         {%
           include button.html
@@ -66,6 +79,7 @@
           style="bare"
         %}
       {% endif %}
+    </div>
     </div>
   </div>
 </div>

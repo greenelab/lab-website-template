@@ -34,7 +34,11 @@
 
       <div class="event-meta" data-search="{{ event.venue }} {{ event.date }} {{ event.end_date }}">
         <span class="event-date">
-          {{ event.date | date: "%b %-d, %Y" }}
+          {% if event.precision == "month" %}
+            {{ event.date | date: "%B %Y" }}
+          {% else %}
+            {{ event.date | date: "%b %-d, %Y" }}
+          {% endif %}
           {% if event.end_date %}
             - {{ event.end_date | date: "%b %-d, %Y" }}
           {% endif %}

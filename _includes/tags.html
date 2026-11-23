@@ -21,9 +21,11 @@
       <a
         href="{{ link | relative_url }}?search=&quot;tag: {{ tag }}&quot;"
         class="tag"
+        data-tag="{{ tag }}"
         data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
       >
-        {{ tag }}
+        {% comment %} "ra-position" reads as "ra" on the chip; the tag itself is unchanged {% endcomment %}
+        {{ tag | regex_replace: "-position$", "" }}
       </a>
     {% endfor %}
   </div>

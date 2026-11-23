@@ -11,14 +11,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px;
-  width: 175px;
+  margin: 14px;
+  width: 130px;
   max-width: calc(100% - 20px - 20px);
   text-decoration: none;
 }
 
 .portrait[data-style="small"] {
   width: 100px;
+}
+
+.portrait-description,
+.portrait-affiliation {
+  font-size: 0.82rem;
+  line-height: 1.4;
 }
 
 .portrait[data-style="tiny"] {
@@ -54,7 +60,7 @@
 
 .portrait-image {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   object-fit: cover;
@@ -68,7 +74,9 @@
 
 .portrait-name {
   font-family: var(--heading);
+  font-size: 0.92rem;
   font-weight: var(--semi-bold);
+  line-height: 1.3;
 }
 
 .portrait[data-style="tiny"] {

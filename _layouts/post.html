@@ -6,16 +6,21 @@ layout: default
 
 <h1 class="center">{{ page.title }}</h1>
 
+{% if page.unavailable %}
+<p class="center"><span class="status-badge">No longer available</span></p>
+{% endif %}
+
 {%
   include post-info.html
   author=page.author
   member=page.member
   published=page.date
-  updated=page.last_modified_at
   tags=page.tags
 %}
 
 {% include section.html %}
+
+{% include post-links.html post=page %}
 
 {{ content }}
 

@@ -1,0 +1,42 @@
+{% comment %}
+  Resolve vacancy slugs to posts, dropping any that are no longer available
+  so that filled/closed positions disappear from project pages. The posts
+  themselves stay published and keep their "No longer available" notice.
+{% endcomment %}
+{% assign no_items = "" | split: "," %}
+{% assign open_vacancies = no_items %}
+{% for slug in include.vacancies %}
+  {% assign post = site.posts | where: "slug", slug | first %}
+  {% if post and post.unavailable != true %}
+    {% assign open_vacancies = open_vacancies | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if include.people.size > 0 or open_vacancies.size > 0 %}
+  <div class="project-links">
+  {% if include.people.size > 0 %}
+  <div class="project-people">
+  <span class="project-links-label">People</span>
+  {% for slug in include.people %}
+  {% assign member = site.members | where: "slug", slug | first %}
+  {% if member %}
+  <a class="project-person" href="{{ member.url | relative_url }}">
+  <img src="{{ member.image | relative_url | uri_escape }}" alt="" loading="lazy" {% include fallback.html %}>
+  {{ member.name }}
+  </a>
+  {% endif %}
+  {% endfor %}
+  </div>
+  {% endif %}
+  {% if open_vacancies.size > 0 %}
+  <div class="project-vacancies">
+  <span class="project-links-label">Open positions</span>
+  {% for post in open_vacancies %}
+  <a class="project-vacancy" href="{{ post.url | relative_url }}">
+  <i class="icon fa-solid fa-user-plus"></i> {{ post.title }}
+  </a>
+  {% endfor %}
+  </div>
+  {% endif %}
+  </div>
+{% endif %}

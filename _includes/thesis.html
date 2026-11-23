@@ -1,0 +1,13 @@
+{{ " " }}
+<div class="thesis" id="thesis-{{ include.author }}">
+  <span class="thesis-icon"><i class="icon fa-solid fa-book"></i></span>
+  <div class="thesis-text">
+    <a class="thesis-title" href="{{ include.link | uri_escape }}">{{ include.title }}</a>
+    {% assign student = site.members | where: "slug", include.author | first %}
+    {% if student %}
+      <span class="thesis-author">
+        <a href="{{ student.url | relative_url }}">{{ student.name }}</a> &middot; MSc thesis, TU Delft Repository
+      </span>
+    {% endif %}
+  </div>
+</div>

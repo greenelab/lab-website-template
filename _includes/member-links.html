@@ -1,0 +1,44 @@
+{% comment %} Projects and vacancy topics a member is linked to {% endcomment %}
+{% assign slug = include.slug %}
+{% capture project_links %}
+  {% for p in site.data.projects %}
+    {% if p.people contains slug %}
+      <a class="project-vacancy" href="{{ p.link | default: 'projects' | relative_url }}"><i class="icon {{ p.icon }}"></i> {{ p.title }}</a>
+    {% endif %}
+    {% for a in p.activities %}
+      {% if a.people contains slug %}
+        <a class="project-vacancy" href="{{ p.link | relative_url }}#{{ a.title | slugify }}"><i class="icon {{ a.icon }}"></i> {{ a.title }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endcapture %}
+{% capture topic_links %}
+  {% for post in site.posts %}
+    {% if post.people contains slug %}
+      <a class="project-vacancy" href="{{ post.url | relative_url }}"><i class="icon fa-solid fa-flask"></i> {{ post.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% capture thesis_links %}
+  {% for t in site.data.theses %}
+    {% if t.author == slug %}
+      <a class="project-vacancy" href="{{ 'education' | relative_url }}#thesis-{{ slug }}"><i class="icon fa-solid fa-book"></i> {{ t.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign project_links = project_links | strip %}
+{% assign topic_links = topic_links | strip %}
+{% assign thesis_links = thesis_links | strip %}
+{% if project_links != "" or topic_links != "" or thesis_links != "" %}
+  <div class="project-links">
+    {% if project_links != "" %}
+      <div class="project-vacancies"><span class="project-links-label">Projects</span>{{ project_links }}</div>
+    {% endif %}
+    {% if topic_links != "" %}
+      <div class="project-vacancies"><span class="project-links-label">Working on</span>{{ topic_links }}</div>
+    {% endif %}
+    {% if thesis_links != "" %}
+      <div class="project-vacancies"><span class="project-links-label">MSc thesis</span>{{ thesis_links }}</div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,36 +1,46 @@
 ---
 ---
 
+// p4MARS theme
+// "deep space" palette derived from the lab logo: near-black navy with a sky-blue glow
+
 // colors
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
+  --primary: #0369a1;
+  --secondary: #bae6fd;
+  --accent: #38bdf8;
+  --text: #0b1220;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f3f6fa;
+  --light-gray: #dfe5ec;
+  --gray: #5b6675;
+  --dark-gray: #2d3643;
+  --overlay: #0b122014;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #38bdf8;
+  --secondary: #0c4a6e;
+  --accent: #7dd3fc;
+  --text: #e6edf5;
+  --background: #0a0f1c;
+  --background-alt: #0e1526;
+  --light-gray: #233047;
+  --gray: #8a97a8;
+  --dark-gray: #c3ccd8;
+  --overlay: #00000060;
 }
 
 :root {
+  // fixed "space" colors used by the hero and footer in both modes
+  --space: #05080f;
+  --space-alt: #0b1a2e;
+  --glow: #38bdf8;
+
   // font families
-  --title: "IBM Plex Sans", sans-serif;
-  --heading: "IBM Plex Sans", sans-serif;
-  --body: "IBM Plex Sans", sans-serif;
-  --code: "IBM Plex Mono", monospace;
+  --title: "Plus Jakarta Sans", sans-serif;
+  --heading: "Plus Jakarta Sans", sans-serif;
+  --body: "Inter", sans-serif;
+  --code: "JetBrains Mono", monospace;
 
   // font sizes
   --large: 1.2rem;
@@ -38,17 +48,17 @@
   --xxl: 1.6rem;
 
   // font weights
-  --thin: 200;
+  --thin: 300;
   --regular: 400;
-  --semi-bold: 500;
-  --bold: 600;
+  --semi-bold: 600;
+  --bold: 700;
 
   // text line spacing
   --spacing: 2;
-  --compact: 1.5;
+  --compact: 1.6;
 
   // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  --rounded: 10px;
+  --shadow: 0 1px 2px var(--overlay), 0 8px 24px var(--overlay);
   --transition: 0.2s ease;
 }

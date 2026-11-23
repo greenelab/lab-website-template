@@ -11,22 +11,20 @@ h6 {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 
 h1 {
   margin: 40px 0;
-  font-size: 1.6rem;
-  font-weight: var(--semi-bold);
-  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: var(--bold);
   text-align: center;
 }
 
 h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--semi-bold);
+  font-size: 1.7rem;
+  font-weight: var(--bold);
 }
 
 h3 {
@@ -46,6 +44,23 @@ h6 {
 }
 
 :where(h1, h2, h3, h4, h5, h6) > .icon {
-  margin-right: 1em;
-  color: var(--light-gray);
+  margin-right: 0.6em;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+// homepage section titles (About, Lab lead, ...) with a smaller subheading below
+h2.section-title {
+  margin: 0 0 6px;
+  color: var(--primary);
+  font-size: 2.4rem;
+  font-weight: var(--bold);
+  letter-spacing: -0.02em;
+
+  & + h3 {
+    margin-top: 0;
+    color: var(--text);
+    font-size: 1.35rem;
+    font-weight: var(--semi-bold);
+  }
 }

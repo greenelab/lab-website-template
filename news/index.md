@@ -1,17 +1,19 @@
 ---
-title: Events
+title: News
 nav:
   order: 6
-  tooltip: News and team events
+  tooltip: Lab news, talks and events
 ---
 
-# {% include icon.html icon="fa-solid fa-newspaper" %}Events
+{% include section.html size="full" %}
 
-Browse workshops, conferences, invited talks, and lab milestones.
+{% include page-hero.html title="News" icon="fa-solid fa-newspaper" %}
 
 {% include section.html %}
 
-## All Events
+{% include section.html %}
+
+## All News
 
 <!-- {% include search-box.html selector=".events-results .event" placeholder="Search events in this section" %}
 {% include search-info.html %} -->

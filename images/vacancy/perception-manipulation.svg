@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="overflow:hidden">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05080f"/><stop offset="1" stop-color="#0b1a2e"/></linearGradient>
+<radialGradient id="glow" cx="0.6" cy="0.45" r="0.6"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.2"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient></defs>
+<rect width="600" height="400" fill="url(#bg)"/><rect width="600" height="400" fill="url(#glow)"/>
+<g fill="#e6edf5" opacity="0.6">
+<circle cx="261" cy="379" r="1"/>
+<circle cx="542" cy="14" r="1"/>
+<circle cx="255" cy="332" r="0.8"/>
+<circle cx="160" cy="57" r="1"/>
+<circle cx="480" cy="126" r="1"/>
+<circle cx="556" cy="52" r="1.3"/>
+<circle cx="255" cy="6" r="1.3"/>
+<circle cx="221" cy="208" r="1"/>
+<circle cx="186" cy="392" r="1"/>
+<circle cx="163" cy="390" r="0.8"/>
+<circle cx="142" cy="316" r="1.3"/>
+<circle cx="455" cy="64" r="0.8"/>
+<circle cx="1" cy="2" r="0.8"/>
+<circle cx="220" cy="84" r="0.8"/>
+<circle cx="296" cy="160" r="0.8"/>
+<circle cx="552" cy="347" r="1.3"/>
+<circle cx="209" cy="93" r="1.3"/>
+<circle cx="201" cy="196" r="1"/>
+<circle cx="22" cy="184" r="1"/>
+<circle cx="169" cy="74" r="1"/>
+<circle cx="66" cy="169" r="1"/>
+<circle cx="600" cy="1" r="1.3"/>
+<circle cx="346" cy="33" r="1"/>
+<circle cx="363" cy="156" r="1"/>
+<circle cx="323" cy="94" r="1"/>
+<circle cx="483" cy="360" r="0.8"/>
+<circle cx="58" cy="131" r="0.8"/>
+<circle cx="366" cy="206" r="0.8"/>
+<circle cx="562" cy="214" r="1"/>
+<circle cx="385" cy="296" r="0.8"/>
+<circle cx="463" cy="23" r="1.3"/>
+<circle cx="185" cy="319" r="0.8"/>
+<circle cx="121" cy="386" r="0.8"/>
+<circle cx="473" cy="176" r="1.3"/>
+<circle cx="363" cy="268" r="1"/>
+<circle cx="473" cy="55" r="1.3"/>
+<circle cx="376" cy="151" r="0.8"/>
+<circle cx="443" cy="46" r="0.8"/>
+<circle cx="348" cy="262" r="1.3"/>
+<circle cx="371" cy="75" r="1"/>
+<circle cx="282" cy="359" r="1.3"/>
+<circle cx="94" cy="159" r="1.3"/>
+<circle cx="324" cy="156" r="0.8"/>
+<circle cx="80" cy="320" r="0.8"/>
+<circle cx="316" cy="247" r="0.8"/>
+</g>
+<g fill="#0e1526" stroke="#7dd3fc" stroke-width="2"><rect x="40" y="46" width="250" height="30" rx="15"/></g>
+<text x="56" y="66" font-family="monospace" font-size="13" fill="#9fe8ff">"insert the strut"</text>
+<rect x="60" y="120" width="150" height="74" rx="10" fill="#0e1526" stroke="#9fe8ff" stroke-width="2.5"/>
+<text x="78" y="152" font-family="monospace" font-size="13" fill="#9fe8ff">VLA policy</text>
+<text x="78" y="174" font-family="monospace" font-size="11" fill="#7dd3fc">vision + language</text>
+<line x1="165" y1="76" x2="140" y2="118" stroke="#7dd3fc" stroke-width="1.6" stroke-dasharray="5 6"/>
+<path d="M210 157 L 270 157" stroke="#9fe8ff" stroke-width="2.4" marker-end="url(#a)"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#9fe8ff"/></marker></defs>
+<g fill="none" stroke="#cfe0f2" stroke-width="13" stroke-linecap="round"><path d="M300 300 L 330 210"/><path d="M330 210 L 400 182"/></g>
+<g fill="#0e1526" stroke="#cfe0f2" stroke-width="3"><circle cx="330" cy="210" r="11"/><circle cx="400" cy="182" r="8"/></g>
+<path d="M300 312 l -30 24 h 60 z" fill="#cfe0f2" opacity="0.9"/>
+<g stroke="#cfe0f2" stroke-width="6" stroke-linecap="round"><path d="M400 182 l 20 -12"/><path d="M400 182 l 18 16"/></g>
+<rect x="418" y="168" width="18" height="60" rx="4" fill="#0e1526" stroke="#9fe8ff" stroke-width="2.5" transform="rotate(8 427 198)"/>
+<rect x="370" y="258" width="190" height="80" rx="6" fill="#0e1526" stroke="#9fe8ff" stroke-width="3"/>
+<rect x="420" y="258" width="26" height="40" rx="3" fill="#05080f" stroke="#7dd3fc" stroke-width="2"/>
+<g stroke="#7dd3fc" stroke-opacity="0.6" stroke-width="1.3">
+<line x1="380" y1="300" x2="380" y2="332"/>
+<line x1="402" y1="300" x2="402" y2="332"/>
+<line x1="424" y1="300" x2="424" y2="332"/>
+<line x1="446" y1="300" x2="446" y2="332"/>
+<line x1="468" y1="300" x2="468" y2="332"/>
+<line x1="490" y1="300" x2="490" y2="332"/>
+<line x1="512" y1="300" x2="512" y2="332"/>
+<line x1="534" y1="300" x2="534" y2="332"/>
+<line x1="556" y1="300" x2="556" y2="332"/>
+</g>
+<g stroke="#9fe8ff" stroke-width="1.5" stroke-dasharray="4 5"><line x1="433" y1="150" x2="433" y2="256"/></g>
+<text x="450" y="146" font-family="monospace" font-size="12" fill="#9fe8ff">peg-in-hole</text>
+<text x="30" y="372" font-family="monospace" font-size="13" fill="#7dd3fc">vision-language-action · contact-rich insertion</text>
+</svg>

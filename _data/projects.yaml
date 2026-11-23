@@ -1,47 +1,140 @@
-- title: Cool Dataset
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+# Research projects shown on the Projects page, in this order.
+# Fields: title, icon (Font Awesome), image, link (optional project page), description,
+#         buttons (optional), tags (optional),
+#         people (member slugs from _members), vacancies (post slugs: file name without the date),
+#         activities (optional list of sub-projects with the same fields; shown on the project page),
+#         sponsors (list of name, logo or text, caption (optional), link)
 
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: Transferable Spatial Intelligence
+  icon: fa-solid fa-cube
+  image: images/research/T-FunS3D_teaser.png
+  link: projects/transferable-spatial-intelligence
+  description: >-
+    Robots that understand a 3D scene not only as geometry, but as objects, their functional parts,
+    and what can be done with them, and that carry this understanding across environments, tasks
+    and embodiments. We combine 3D scene graphs with vision-language foundation models to obtain
+    open-vocabulary, task-driven perception that transfers to new settings without retraining.
+    Outcomes so far include **T-FunS3D** (ICRA 2026) and a live open-vocabulary navigation and
+    manipulation demo at **Robots in Business 2026**.
   tags:
-    - resource
+    - scene understanding
+    - foundation models
+  people:
+    - jingkun-feng
+    - antreas-kourris
+  vacancies:
+    - TA-tfuns3d-demo
+  sponsors:
+    - name: TU Delft Faculty of Aerospace Engineering
+      logo: images/sponsors/tudelft.svg
+      caption: Aerospace Engineering
+      link: https://www.tudelft.nl/en/ae
+    - name: TU Delft Robotics Institute
+      logo: images/sponsors/tudelft.svg
+      caption: Robotics Institute
+      link: https://www.tudelft.nl/en/robotics-institute
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: "Luchtvaart in Transitie (LiT): Aviation in Transition"
+  icon: fa-solid fa-plane
+  image: images/projects/aviation-transition.svg
+  link: projects/lit
+  description: >-
+    Luchtvaart in Transitie is a Dutch national programme that brings together government, knowledge
+    institutes and industry to accelerate the transition to climate-neutral aviation by 2050. Within
+    LiT, p4MARS contributes perception and AI for the production and maintenance of next-generation
+    aircraft through two activities: fine-detailed 3D modeling for monitoring manufacturing
+    processes, and automated non-destructive testing.
   tags:
-    - resource
-    - publication
+    - aviation
+    - sustainability
+  sponsors:
+    - name: Dutch National Growth Fund
+      text: Nationaal Groeifonds
+      caption: National Growth Fund
+      link: https://www.nationaalgroeifonds.nl/english
+  activities:
+    - title: Fine-Detailed 3D Modeling for Monitoring Manufacturing Processes
+      icon: fa-solid fa-industry
+      image: images/projects/manufacturing-3d.svg
+      description: >-
+        Advanced manufacturing needs to see what is happening to a part while it is being made.
+        We develop high-fidelity 3D and 4D reconstruction methods that capture fine geometric
+        detail and its evolution over time, turning sensor streams into evolving digital twins of
+        the process. Applications include in-process inspection and quality control, and the
+        manufacturing and recycling of composite structures.
+      tags:
+        - 4D reconstruction
+        - digital twins
+      people:
+        - samuel-bruin
+        - xuejiao-luo
+    - title: Automated Non-Destructive Testing (NDT)
+      icon: fa-solid fa-magnifying-glass-chart
+      image: images/projects/automated-ndt.svg
+      description: >-
+        Inspecting aircraft structures for hidden damage is slow, manual work. We develop robotic,
+        perception-driven non-destructive testing that plans and executes inspections autonomously,
+        registers sensor data to a digital model of the part, and flags defects for maintenance.
+      tags:
+        - inspection
+        - NDT
+      vacancies:
+        - postdoc-lit
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: ModalForcast
+  icon: fa-solid fa-satellite
+  image: images/projects/modalforcast.svg
+  description: >-
+    ModalForcast is a project with the European Space Agency (ESA).
+    <!-- TODO: add project description -->
   tags:
-    - software
+    - space
+  vacancies:
+    - postdoc-esa
+  sponsors:
+    - name: European Space Agency (ESA)
+      logo: images/sponsors/esa.svg
+      link: https://www.esa.int/
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: Modeling and Simulation of Disruption for Resilient Infrastructures
+  icon: fa-solid fa-tower-broadcast
+  image: images/projects/resilient-infrastructure.svg
+  description: >-
+    Critical infrastructure must keep working when parts of it fail. We build perception-driven
+    digital models of infrastructure and simulate how disruptions emerge and propagate through
+    them, so that operators can anticipate failures, stress-test response strategies, and plan
+    inspection, repair and maintenance for more resilient systems.
   tags:
-    - software
+    - simulation
+    - resilience
+  people:
+    - saman-behrouzi
+  sponsors:
+    - name: TU Delft Safety and Security Institute
+      logo: images/sponsors/tudelft.svg
+      caption: Safety & Security Institute
+      link: https://www.tudelft.nl/en/safety-security-institute
+
+- title: Open-Source Interactive Education Materials for ML and Foundation Models
+  icon: fa-solid fa-laptop-code
+  image: images/projects/education-materials.svg
+  description: >-
+    We develop open, interactive learning materials (notebooks, visual demos and hands-on
+    exercises) that let students explore machine learning and foundation models by running
+    and modifying them, rather than only reading about them. The materials are used in our
+    courses and are freely available for others to reuse.
+  tags:
+    - education
+    - open source
+  vacancies:
+    - ra-foundation-models
+    - ta-dl4cv
+  sponsors:
+    - name: ELLIS Unit Delft
+      logo: images/sponsors/ellis.png
+      caption: Unit Delft
+      link: https://ellis.eu/units/delft
+    - name: TU Delft Machine Learning Teachers Community
+      logo: images/sponsors/tudelft.svg
+      caption: ML Teachers Community
+      link: https://www.tudelft.nl/ai/onderwijs/ai-onderwijsinnovatie/machine-learning-teachers-community

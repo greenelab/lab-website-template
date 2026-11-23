@@ -1,0 +1,69 @@
+# Community contributions, grouped into sections on the Community page.
+# Fields per section: title, icon (Font Awesome), description (optional), items
+# Fields per item:
+#   role         what the contribution is (e.g. Associate Editor)
+#   organization the venue, journal, group or body
+#   detail       one optional line of extra context
+#   period       free text, e.g. "2025 - present", "2026" (optional)
+#   person       member slug from _members (optional)
+#   link         url (optional)
+#
+# TODO: these entries are drafted as a starting point. Please correct the venues,
+#       years and wording, and remove anything that does not apply.
+
+- title: Editorial and review service
+  icon: fa-solid fa-pen-nib
+  description: Editorial roles and programme committee service for journals and conferences in robotics, perception and AI.
+  items:
+    - role: Associate Editor
+      organization: IEEE Robotics and Automation Letters (RA-L)
+      period: 2023-2026
+      person: reza-sabzevari
+      link: https://www.ieee-ras.org/publications/ra-l/
+
+    - role: Area Chair
+      organization: "IROS, ICRA, CVPR, BMVC, ECCV"
+      period: "various years"
+      person: reza-sabzevari
+
+#    - role: Reviewer
+#      organization: IEEE Robotics and Automation Letters (RA-L), ICRA, IROS and CVPR
+#      detail: Regular reviewing for the main venues in robotics and computer vision.
+#      person: reza-sabzevari
+
+#- title: European working groups
+#  icon: fa-solid fa-sitemap
+#  description: Participation in European expert and working groups on robotics, AI and space.
+#  items:
+#    - role: Member
+#      organization: "TODO: EU working group name"
+#      detail: "TODO: one line on the group's remit and the lab's contribution."
+#      period: "TODO: period"
+#      person: reza-sabzevari
+
+- title: Mentoring
+  icon: fa-solid fa-user-graduate
+  description: Mentoring of early-career researchers beyond the lab's own students.
+  items:
+    - role: Mentor
+      organization: AI Grid
+      detail: >-
+        Accompanying a master's or doctoral researcher in AI for a year, within a network of
+        micro focus groups for early-career AI talent funded by the German Federal Ministry
+        of Education and Research.
+      person: reza-sabzevari
+      link: https://ai-grid.org/en/
+
+- title: Policy papers
+  icon: fa-solid fa-file-signature
+  description: Contributions to position and policy papers that feed into European research and innovation agendas.
+  items:
+    - role: Contributing author
+      organization: "Policy Paper and Technology Roadmap: GenAI and Robotics 4EU"
+      detail: >-
+        Adra Association paper on the convergence of generative AI and robotics in Europe,
+        covering safety, explainability, cybersecurity, sustainability, data and computing
+        infrastructure, and open-source digital commons.
+      period: 2024
+      person: reza-sabzevari
+      link: https://adr-association.eu/news/adra-releases-policy-paper-and-technology-roadmap-genai-and-robotics-4eu

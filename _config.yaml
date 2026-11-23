@@ -1,7 +1,9 @@
 # site properties and page defaults
-title: P4MARS Lab
-subtitle: <strong>P</strong>erception and <strong>A</strong>I for <strong>M</strong>anufacturing, <strong>R</strong>obotics, and <strong>S</strong>pace
-description: P4MARS is an interdisciplinary research group focused on Perception and AI for Manufacturing, Robotics, and Space.
+title: p4MARS Lab
+subtitle: Perception and AI for Manufacturing Automation, Robotics, and Space
+affiliation: Faculty of Aerospace Engineering, Delft University of Technology
+address: Kluyverweg 1, 2629 HS Delft, The Netherlands
+description: The p4MARS Lab is an interdisciplinary research group at TU Delft focused on Perception and AI for Manufacturing Automation, Robotics, and Space.
 # header: images/background.jpg
 # footer: images/background.jpg
 logo-text: true
@@ -11,10 +13,11 @@ proofer: false
 
 # site social media and other links
 links:
-  # email: contact@p4mars.com
+  email: r.sabzevari@tudelft.nl
   # orcid: 0000-0001-8713-9213
   # google-scholar: ETJoidYAAAAJ
-  github: github.com/p4mars
+  github: p4mars
+  linkedin: rezasabzevari
   # twitter: p4mars
   # youtube: p4mars
 

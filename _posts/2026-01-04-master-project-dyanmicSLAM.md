@@ -1,6 +1,6 @@
 ---
 title: Simultaneous Localization and Mapping in Dynamic Environments
-# image: images/photo.jpg
+image: images/vacancy/dynamic-slam.svg
 author: jingkun-feng, reza-sabzevari
 tags: 
     master-project

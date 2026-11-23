@@ -1,0 +1,18 @@
+{{ " " }}
+<a class="media-item" href="{{ include.link | relative_url | uri_escape }}">
+  <span class="media-image">
+    <img src="{{ include.image | relative_url | uri_escape }}" alt="{{ include.title | regex_strip }}" loading="lazy" {% include fallback.html %}>
+    {% if include.type == "Interview" or include.type == "Talk" %}
+      <span class="media-play"><i class="icon fa-solid fa-play"></i></span>
+    {% endif %}
+  </span>
+  <span class="media-text">
+    <span class="media-meta">
+      <span class="media-type">{{ include.type }}</span>
+      {{ include.date | date: "%B %Y" }}
+    </span>
+    <span class="media-title">{{ include.title }}</span>
+    <span class="media-outlet">{{ include.outlet }}</span>
+    <span class="media-description">{{ include.description }}</span>
+  </span>
+</a>

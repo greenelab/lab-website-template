@@ -1,16 +1,105 @@
-# Add one item per event. Events are grouped by year using "date".
-# Fields: title, description, date, end_date (optional), venue (optional), link (optional), image (optional)
+# Add one item per event; the list is sorted newest first automatically.
+# Fields: title, description, date, end_date (optional), venue (optional), link, image,
+#         precision (optional; "month" shows only month and year)
 
-- title: International Conference on Robotics and Automation (ICRA) 2026
-  description: Meet the group at ICRA26 in Vienna and learn about our latest research on open-vocabulary 3D functionality segmentation for robotics.
-  date: "2026-06-01"
-  end_date: "2026-06-05"
-  venue: VIECON / Messe Wien, Vienna, Austria
-  link: https://2026.ieee-icra.org/
-  image: images/events/icra26.png
+- title: p4MARS joins Robots in Business
+  description: p4MARS takes part in Robots in Business, the annual RoboHouse event on business applications of robotics and embodied AI, with a live demo of open-vocabulary navigation and manipulation built on T-FunS3D.
+  date: "2026-11-19"
+  venue: RoboHouse, Molengraaffsingel 29, Delft
+  link: https://robohouse.tudelftcampus.nl/events/robots-in-business-the-robots-are-here
+  image: images/events/robots-in-business-2026.png
 
-# - title: Lab Open Day
-#   description: Public demo day with project posters and robot demonstrations.
-#   date: "2025-10-11"
-#   venue: Delft
-#   image: images/photo.jpg
+- title: Welcome, Saman Behrouzi
+  description: Saman Behrouzi joins p4MARS as a postdoctoral researcher, working on modeling and simulation of disruption for resilient infrastructures.
+  date: "2026-10-01"
+  precision: month
+  venue: TU Delft
+  link: members/saman-behrouzi.html
+  image: images/member/s_behrouzi.jpg
+
+- title: Welcome, Antreas Kourris
+  description: Antreas Kourris joins p4MARS as a research assistant, working on transferable spatial intelligence.
+  date: "2026-10-01"
+  precision: month
+  venue: TU Delft
+  link: members/antreas-kourris.html
+  image: images/member/a_kourris.jpg
+
+- title: Welcome, Philipp Kunze
+  description: Philipp Kunze joins p4MARS as a visiting researcher on an Erasmus+ exchange from TU Berlin, working on swarm localization.
+  date: "2026-10-01"
+  precision: month
+  venue: TU Delft
+  link: members/philipp-kunze.html
+  image: images/member/p_kunze.jpg
+
+- title: T-FunS3D accepted at ICRA 2026
+  description: "Our paper T-FunS3D: Task-Driven Hierarchical Open-Vocabulary 3D Functionality Segmentation has been accepted at ICRA 2026. An earlier version of this work was nominated for the [Best Workshop Paper Award](https://autonomousrobots.nl/workshops/2025-iros) at an IROS 2025 workshop."
+  date: "2026-03-01"
+  precision: month
+  venue: ICRA 2026
+  link: https://t-funs3d.github.io/
+  image: images/research/T-FunS3D_teaser.png
+
+- title: Welcome, Samuel Bruin
+  description: Samuel Bruin joins p4MARS as a research assistant, working on fine-detailed 3D modeling for monitoring manufacturing processes.
+  date: "2026-05-01"
+  precision: month
+  venue: TU Delft
+  link: members/samuel-bruin.html
+  image: images/member/s_bruin.jpg
+
+- title: Welcome, Jingkun (Edward) Feng
+  description: Jingkun (Edward) Feng joins p4MARS as a PhD candidate, working on transferable spatial intelligence.
+  date: "2025-04-01"
+  precision: month
+  venue: TU Delft
+  link: members/jingkun-feng.html
+  image: images/member/j_feng.jpg
+
+- title: Welcome, Xuejiao (Sheryl) Luo
+  description: Xuejiao (Sheryl) Luo joins p4MARS as a postdoctoral researcher.
+  date: "2025-03-01"
+  precision: month
+  venue: TU Delft
+  link: members/xuejiao-luo.html
+  image: https://www.paam-lab.org/author/xuejiao-luo/avatar_hu6419129113947017748.jpg
+
+- title: "In the press: The race for 1,800 billion dollars, who will rule space?"
+  description: In AD's long read on the new space race, Reza Sabzevari explains why robotics will be essential beyond Earth, from swarms of robots mapping the lunar surface to producing things in space.
+  date: "2026-01-23"
+  venue: Algemeen Dagblad (AD)
+  link: https://www.ad.nl/redactie/2026/de-race-om-1-800-miljard-dollar-wie-wordt-baas-in-de-ruimte/
+  image: images/media/ad-space-race.jpg
+
+- title: "Interview: Opening Academic Year 2024–2025, Engineering the Future"
+  description: Reza Sabzevari is interviewed during TU Delft's opening of the academic year about how robotics and AI will shape the future.
+  date: "2024-09-02"
+  venue: TU Delft
+  link: https://youtu.be/V_ob4m-mG1s?t=2629
+  image: images/media/opening-academic-year-2024.jpg
+
+- title: "Talk: How Wall-E contributes to Europe's autonomy"
+  description: A lunch lecture during TU Delft's Critical Raw Materials Week on how robotics can help Europe secure critical raw materials, from exploration and mining to recycling.
+  date: "2024-05-16"
+  venue: TU Delft Critical Raw Materials Week
+  link: https://collegerama.tudelft.nl/mediasite/Showcase/delft-energy-initiative/Presentation/5d557c784fb745f980341134157520511d
+  image: images/media/wall-e-lecture.jpg
+
+- title: "Talk: Versatile Robots, the Key to Smart Automation Solutions"
+  description: >-
+    Reza Sabzevari gives a talk on "Versatile Robots: The Key to Smart Automation Solutions" at Robots in Business, the annual RoboHouse event on business applications of robotics.
+  date: "2024-11-01"
+  precision: month
+  venue: RoboHouse, Delft
+  link: https://robohouse.tudelftcampus.nl/
+  image: images/events/robots-in-business-2026.png
+
+- title: "Talk: Perception for Inspection"
+  description: Reza Sabzevari gives a talk on "Perception for Inspection" at the Development Center for Maintenance of Composites (DCMC).
+  date: "2024-05-01"
+  precision: month
+  venue: Aviolanda Business Park, Woensdrecht
+  link: https://www.composite-maintenance.com/
+  image: images/events/dcmc-logo.png
+

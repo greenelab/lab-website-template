@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05080f"/><stop offset="1" stop-color="#0b1a2e"/></linearGradient><radialGradient id="glow" cx="0.6" cy="0.4" r="0.6"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.25"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient></defs><rect width="600" height="400" fill="url(#bg)"/><rect width="600" height="400" fill="url(#glow)"/>
+<g font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#b7c3d1" text-anchor="middle">
+  <g transform="translate(60,120)"><rect width="100" height="120" rx="10" fill="#0e1526" stroke="#233047" stroke-width="2"/>
+    <g fill="#38bdf8" fill-opacity="0.7"><rect x="14" y="18" width="72" height="8" rx="3"/><rect x="14" y="36" width="56" height="8" rx="3"/><rect x="14" y="54" width="66" height="8" rx="3"/><rect x="14" y="72" width="44" height="8" rx="3"/><rect x="14" y="90" width="62" height="8" rx="3"/></g>
+    <text x="50" y="148">Data</text></g>
+  <g transform="translate(250,120)"><rect width="100" height="120" rx="10" fill="#0e1526" stroke="#233047" stroke-width="2"/>
+    <g fill="#a78bfa"><circle cx="24" cy="86" r="5"/><circle cx="38" cy="64" r="5"/><circle cx="50" cy="72" r="5"/><circle cx="62" cy="44" r="5"/><circle cx="76" cy="38" r="5"/><circle cx="44" cy="92" r="5"/><circle cx="70" cy="58" r="5"/></g>
+    <path d="M16 98 L86 28" stroke="#f97316" stroke-width="2.5" stroke-dasharray="5 5"/>
+    <text x="50" y="148">Analytics &amp; ML</text></g>
+  <g transform="translate(440,120)"><rect width="100" height="120" rx="10" fill="#0e1526" stroke="#233047" stroke-width="2"/>
+    <g fill="#38bdf8"><rect x="16" y="70" width="14" height="34" rx="2"/><rect x="36" y="50" width="14" height="54" rx="2"/><rect x="56" y="34" width="14" height="70" rx="2"/></g><rect x="76" y="20" width="14" height="84" rx="2" fill="#f97316"/>
+    <text x="50" y="148">Insight</text></g>
+</g>
+<g stroke="#7dd3fc" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M172 180 H238"/><path d="M230 172 L240 180 L230 188"/><path d="M362 180 H428"/><path d="M420 172 L430 180 L420 188"/></g>
+<g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf5" text-anchor="middle">
+  <circle cx="190" cy="330" r="16" fill="#0e1526" stroke="#7dd3fc" stroke-width="2"/><circle cx="230" cy="330" r="16" fill="#0e1526" stroke="#7dd3fc" stroke-width="2"/><circle cx="270" cy="330" r="16" fill="#0e1526" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="400" y="335" fill="#7dd3fc" font-family="monospace" font-size="13">teams × real stakeholders</text>
+</g>
+<g font-family="monospace" font-size="13" fill="#7dd3fc" text-anchor="middle" opacity="0.8"><text x="300" y="70">CIEM6306</text></g>
+</svg>

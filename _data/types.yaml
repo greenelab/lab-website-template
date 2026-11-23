@@ -12,7 +12,23 @@ postdoc:
 
 phd:
   icon: fa-solid fa-graduation-cap
-  description: PhD Student
+  description: PhD Candidate
+
+research-assistant:
+  icon: fa-solid fa-flask
+  description: Research Assistant
+
+teaching-assistant:
+  icon: fa-solid fa-chalkboard-user
+  description: Teaching Assistant
+
+visiting:
+  icon: fa-solid fa-plane-arrival
+  description: Visiting Researcher
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: MSc Student
 
 undergrad:
   icon: fa-solid fa-user-graduate
@@ -119,6 +135,11 @@ youtube:
   text: YouTube
   tooltip: YouTube
   link: https://youtube.com/$VALUE
+
+thesis:
+  icon: fa-solid fa-book
+  text: MSc thesis
+  tooltip: MSc thesis in the TU Delft Repository
 
 linkedin:
   icon: fa-brands fa-linkedin

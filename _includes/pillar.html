@@ -1,0 +1,16 @@
+{{ " " }}
+<div class="pillar">
+  {% if include.icon %}
+    <span class="pillar-icon"><i class="icon {{ include.icon }}"></i></span>
+  {% endif %}
+  <p class="pillar-title">
+    {% if include.link %}
+      <a href="{{ include.link | relative_url | uri_escape }}">{{ include.title }}</a>
+    {% else %}
+      {{ include.title }}
+    {% endif %}
+  </p>
+  {% if include.description %}
+    <p class="pillar-text">{{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  {% endif %}
+</div>

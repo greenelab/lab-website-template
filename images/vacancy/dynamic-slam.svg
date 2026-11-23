@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="overflow:hidden">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#05080f"/><stop offset="1" stop-color="#0b1a2e"/></linearGradient>
+<radialGradient id="glow" cx="0.55" cy="0.45" r="0.6">
+<stop offset="0" stop-color="#38bdf8" stop-opacity="0.22"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient></defs>
+<rect width="600" height="400" fill="url(#bg)"/><rect width="600" height="400" fill="url(#glow)"/>
+<g fill="#e6edf5" opacity="0.7">
+<circle cx="122" cy="85" r="1.4"/>
+<circle cx="165" cy="38" r="0.8"/>
+<circle cx="512" cy="254" r="1.4"/>
+<circle cx="225" cy="231" r="1"/>
+<circle cx="460" cy="218" r="0.8"/>
+<circle cx="560" cy="98" r="0.8"/>
+<circle cx="92" cy="89" r="1"/>
+<circle cx="569" cy="46" r="1"/>
+<circle cx="244" cy="188" r="1"/>
+<circle cx="583" cy="103" r="0.8"/>
+<circle cx="422" cy="196" r="1"/>
+<circle cx="536" cy="107" r="1"/>
+<circle cx="276" cy="173" r="0.8"/>
+<circle cx="510" cy="142" r="1.4"/>
+<circle cx="368" cy="64" r="1.4"/>
+<circle cx="515" cy="270" r="1.4"/>
+<circle cx="221" cy="47" r="1"/>
+<circle cx="254" cy="196" r="1"/>
+<circle cx="456" cy="221" r="1"/>
+<circle cx="22" cy="65" r="0.8"/>
+<circle cx="435" cy="363" r="1"/>
+<circle cx="501" cy="0" r="0.8"/>
+<circle cx="400" cy="270" r="1"/>
+<circle cx="459" cy="127" r="0.8"/>
+<circle cx="229" cy="79" r="0.8"/>
+<circle cx="534" cy="349" r="0.8"/>
+<circle cx="468" cy="43" r="1.4"/>
+<circle cx="40" cy="0" r="0.8"/>
+<circle cx="238" cy="291" r="0.8"/>
+<circle cx="311" cy="65" r="1.4"/>
+<circle cx="257" cy="270" r="1.4"/>
+<circle cx="447" cy="357" r="0.8"/>
+<circle cx="101" cy="36" r="1"/>
+<circle cx="537" cy="298" r="0.8"/>
+<circle cx="397" cy="133" r="0.8"/>
+<circle cx="1" cy="5" r="1.4"/>
+<circle cx="308" cy="235" r="1"/>
+<circle cx="323" cy="330" r="0.8"/>
+<circle cx="486" cy="269" r="0.8"/>
+<circle cx="560" cy="126" r="0.8"/>
+<circle cx="421" cy="360" r="1.4"/>
+<circle cx="314" cy="28" r="0.8"/>
+<circle cx="198" cy="255" r="1.4"/>
+<circle cx="430" cy="41" r="1"/>
+<circle cx="233" cy="341" r="1"/>
+<circle cx="379" cy="116" r="1"/>
+<circle cx="34" cy="356" r="1"/>
+<circle cx="430" cy="185" r="1.4"/>
+<circle cx="405" cy="101" r="0.8"/>
+<circle cx="299" cy="378" r="1.4"/>
+<circle cx="69" cy="105" r="1"/>
+<circle cx="205" cy="159" r="0.8"/>
+<circle cx="236" cy="238" r="0.8"/>
+<circle cx="271" cy="389" r="1"/>
+<circle cx="111" cy="319" r="1"/>
+<circle cx="191" cy="114" r="1"/>
+<circle cx="427" cy="340" r="0.8"/>
+<circle cx="149" cy="201" r="0.8"/>
+<circle cx="218" cy="12" r="1.4"/>
+<circle cx="145" cy="212" r="0.8"/>
+<circle cx="61" cy="94" r="1"/>
+<circle cx="460" cy="364" r="1"/>
+<circle cx="115" cy="40" r="0.8"/>
+<circle cx="337" cy="97" r="0.8"/>
+<circle cx="537" cy="382" r="1"/>
+<circle cx="32" cy="159" r="1.4"/>
+<circle cx="387" cy="191" r="1"/>
+<circle cx="453" cy="86" r="0.8"/>
+<circle cx="2" cy="40" r="1"/>
+<circle cx="82" cy="179" r="1"/>
+</g>
+<g stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.2">
+<line x1="30" y1="110" x2="570" y2="110"/><line x1="30" y1="150" x2="570" y2="150"/><line x1="30" y1="190" x2="570" y2="190"/><line x1="30" y1="230" x2="570" y2="230"/><line x1="30" y1="270" x2="570" y2="270"/><line x1="30" y1="310" x2="570" y2="310"/>
+<line x1="50" y1="100" x2="50" y2="340"/><line x1="104" y1="100" x2="104" y2="340"/><line x1="158" y1="100" x2="158" y2="340"/><line x1="212" y1="100" x2="212" y2="340"/><line x1="266" y1="100" x2="266" y2="340"/><line x1="320" y1="100" x2="320" y2="340"/><line x1="374" y1="100" x2="374" y2="340"/><line x1="428" y1="100" x2="428" y2="340"/><line x1="482" y1="100" x2="482" y2="340"/><line x1="536" y1="100" x2="536" y2="340"/>
+</g>
+<path d="M70 300 C 200 300 240 160 380 160 S 520 250 550 230" fill="none" stroke="#9fe8ff" stroke-width="3.5"/>
+<g fill="#0e1526" stroke="#f97316" stroke-width="2.5">
+<rect x="200" y="200" width="54" height="36" rx="6"/><rect x="330" y="250" width="46" height="30" rx="6"/></g>
+<g stroke="#f97316" stroke-width="2" stroke-dasharray="5 6" fill="none">
+<path d="M254 218 l 60 -22"/><path d="M376 265 l 58 -18"/></g>
+<circle cx="120" cy="160" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="180" cy="140" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="300" cy="130" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="430" cy="190" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="500" cy="150" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="90" cy="230" r="4" fill="#7dd3fc" opacity="0.8"/><circle cx="520" cy="300" r="4" fill="#7dd3fc" opacity="0.8"/>
+<text x="30" y="368" font-family="monospace" font-size="13" fill="#7dd3fc">static vs. moving</text>
+</svg>

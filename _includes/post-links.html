@@ -1,0 +1,45 @@
+{% comment %}
+  Shows which project a vacancy belongs to and who is working on it.
+  Projects are looked up from _data/projects.yaml (including activities);
+  people come from the post's `people` front matter.
+{% endcomment %}
+{% assign slug = include.post.slug %}
+{% capture project_links %}
+  {% for p in site.data.projects %}
+    {% if p.vacancies contains slug %}
+      <a class="project-vacancy" href="{{ p.link | default: 'projects' | relative_url }}"><i class="icon {{ p.icon }}"></i> {{ p.title }}</a>
+    {% endif %}
+    {% for a in p.activities %}
+      {% if a.vacancies contains slug %}
+        <a class="project-vacancy" href="{{ p.link | relative_url }}#{{ a.title | slugify }}"><i class="icon {{ a.icon }}"></i> {{ a.title }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endcapture %}
+{% assign project_links = project_links | strip %}
+{% assign show_people = include.show_people | default: true %}
+{% if include.show_people == false %}{% assign show_people = false %}{% endif %}
+{% if project_links != "" or include.post.people and show_people %}
+  <div class="project-links">
+    {% if project_links != "" %}
+      <div class="project-vacancies">
+        <span class="project-links-label">Project</span>
+        {{ project_links }}
+      </div>
+    {% endif %}
+    {% if include.post.people and show_people %}
+      <div class="project-people">
+        <span class="project-links-label">Working on it</span>
+        {% for s in include.post.people %}
+          {% assign member = site.members | where: "slug", s | first %}
+          {% if member %}
+            <a class="project-person" href="{{ member.url | relative_url }}">
+              <img src="{{ member.image | relative_url | uri_escape }}" alt="" loading="lazy" {% include fallback.html %}>
+              {{ member.name }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

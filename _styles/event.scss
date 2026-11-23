@@ -85,3 +85,18 @@ $year-indent: 18ch;
     width: min(100%, 340px);
   }
 }
+
+.event-title-row {
+  text-align: left;
+}
+
+// consistent thumbnail shape for every event
+.event-image {
+  aspect-ratio: 16 / 9;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--light-gray);
+}
+
+.event-image img[src$="logo.png"] {
+  object-fit: contain;
+}

@@ -1,0 +1,253 @@
+---
+---
+
+$hero-wrap: 860px;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 24px 120px;
+  color: #e6edf5;
+  text-align: left;
+  background:
+    radial-gradient(ellipse 60% 70% at 72% 45%, #38bdf833 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 10% 110%, #0c4a6e66 0%, transparent 70%),
+    linear-gradient(160deg, var(--space) 0%, var(--space-alt) 100%);
+}
+
+// faint star field, pure css
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  background-image:
+    radial-gradient(1px 1px at 12% 22%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 28% 68%, #fff 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 44% 14%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 58% 82%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 81% 12%, #fff 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 92% 58%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 6% 86%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 36% 40%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 67% 33%, #fff 50%, transparent 51%);
+  background-size: 420px 420px;
+}
+
+// tilted ring echoing the orbit in the logo
+.hero-orbit {
+  position: absolute;
+  width: 900px;
+  height: 260px;
+  right: -160px;
+  top: 50%;
+  border: 1px solid #38bdf840;
+  border-radius: 50%;
+  transform: translateY(-50%) rotate(-14deg);
+  box-shadow: 0 0 60px #38bdf81a inset;
+}
+
+.hero-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+.hero-eyebrow {
+  margin: 0 0 18px;
+  color: var(--glow);
+  font-family: var(--code);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 0 0 22px;
+  font-family: var(--title);
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  font-weight: var(--bold);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  strong {
+    color: var(--glow);
+    font-weight: inherit;
+  }
+}
+
+.hero-text {
+  margin: 0 0 34px;
+  color: #b7c3d1;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--glow);
+  color: var(--space) !important;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+  transition: transform var(--transition), background var(--transition);
+
+  &:hover {
+    background: #7dd3fc;
+    transform: translateY(-1px);
+  }
+
+  &[data-style="ghost"] {
+    background: transparent;
+    color: #e6edf5 !important;
+    box-shadow: inset 0 0 0 1px #ffffff40;
+
+    &:hover {
+      background: #ffffff12;
+    }
+  }
+}
+
+.hero-visual {
+  flex-shrink: 0;
+  width: 300px;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0 0 0 1px #ffffff14, 0 30px 80px -20px #38bdf866;
+  }
+}
+
+@media (max-width: $hero-wrap) {
+  .hero {
+    padding: 70px 20px 80px;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .hero-visual {
+    width: 120px;
+
+    img {
+      border-radius: 18px;
+    }
+  }
+
+  .hero-orbit {
+    display: none;
+  }
+}
+
+// full-bleed background image; the text sits in its empty lower-left area
+.hero[data-banner] {
+  display: flex;
+  align-items: flex-end;
+  min-height: clamp(430px, 31.25vw, calc(100vh - 70px));
+  padding: 0 24px clamp(40px, 5vw, 80px);
+  background: var(--space-alt);
+
+  .hero-stars,
+  .hero-orbit {
+    display: none;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .hero-copy {
+    max-width: min(780px, 60vw);
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 3vw, 3rem);
+  }
+
+  .hero-text {
+    max-width: 640px;
+  }
+
+  .hero-eyebrow,
+  .hero-title,
+  .hero-text {
+    text-shadow: 0 2px 16px #071a3a99;
+  }
+}
+
+.hero-banner {
+  position: absolute;
+  inset: 0 0 0 25%; // image takes 75% of the width, anchored right
+
+  // shade behind the text on the left so it stays readable over the photos
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 40% 45% at 8% 72%, #05101f99 0%, #05101f4d 55%, transparent 80%),
+      linear-gradient(100deg, var(--space-alt) 0%, #05101fb3 9%, #05101f4d 24%, transparent 46%);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+}
+
+// small screens: image on top, text below it
+@media (max-width: $hero-wrap) {
+  .hero[data-banner] {
+    display: block;
+    min-height: 0;
+    padding: 0 20px 60px;
+    background: linear-gradient(to bottom, #0f2c5c 0%, var(--space-alt) 100%);
+
+    .hero-copy {
+      max-width: none;
+    }
+  }
+
+  .hero-banner {
+    position: relative;
+    inset: auto;
+    margin: 0 -20px 30px;
+
+    &:after {
+      display: none;
+    }
+
+    img {
+      height: auto;
+      aspect-ratio: 12 / 5;
+      -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+    }
+  }
+}
