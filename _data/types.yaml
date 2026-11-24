@@ -134,7 +134,7 @@ youtube:
   icon: fa-brands fa-youtube
   text: YouTube
   tooltip: YouTube
-  link: https://youtube.com/$VALUE
+  link: https://www.youtube.com/$VALUE
 
 thesis:
   icon: fa-solid fa-book
