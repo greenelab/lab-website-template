@@ -13,6 +13,7 @@ links:
   github: p4mars
   youtube: "@p4mars"
   google-scholar: FLvPYqwAAAAJ
+  semantic-scholar: "2979011"
   orcid: 0000-0002-6309-5890
   pure: bba71e74-720a-4b4c-b116-3cf3678f8693
   research-gate: Reza-Sabzevari-2

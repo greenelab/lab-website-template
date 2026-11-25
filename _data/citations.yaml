@@ -227,3 +227,49 @@
   - Robotics
   plugin: sources.py
   file: sources.yaml
+- type: patent
+  title: Method for determining objects in an environment for SLAM
+  authors:
+  - Christian Juette
+  - Narunas Vaskevicius
+  - Peter Biber
+  - Reza Sabzevari
+  - Stefan Benz
+  - Timm Linder
+  publisher: US 2024/0027226 A1 &middot; Robert Bosch GmbH
+  date: '2024-01-25'
+  link: https://patents.google.com/patent/US20240027226A1/en
+  plugin: sources.py
+  file: sources.yaml
+- type: patent
+  title: Robot and method for determining a distance covered by a robot
+  authors:
+  - Reza Sabzevari
+  publisher: EP 4208764 A1 &middot; Robert Bosch GmbH
+  date: '2023-07-12'
+  link: https://patents.google.com/patent/EP4208764A1/en
+  plugin: sources.py
+  file: sources.yaml
+- type: patent
+  title: LiDAR system and method for operating a LiDAR system
+  authors:
+  - Marc Luther
+  - Reza Sabzevari
+  - Moritz Michael Knorr
+  publisher: DE 102021213158 A1 &middot; Robert Bosch GmbH
+  date: '2023-05-25'
+  link: https://patents.google.com/patent/DE102021213158A1/en
+  plugin: sources.py
+  file: sources.yaml
+- type: patent
+  title: Method for autonomous navigation of a moveable robotic unit and robotic system
+    with the robotic unit
+  authors:
+  - Charlotte Arndt
+  - Reza Sabzevari
+  - Javier Civera
+  publisher: DE 102020213337 A1 &middot; Robert Bosch GmbH
+  date: '2022-04-28'
+  link: https://patents.google.com/patent/DE102020213337A1/en
+  plugin: sources.py
+  file: sources.yaml
