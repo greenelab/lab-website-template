@@ -68,14 +68,6 @@ A bachelor course in the TU Delft Robotics minor on everything it takes to build
   flip=true
   style="bare"
 %}
-{%
-  include button.html
-  link="https://youtu.be/07NJn7Hbc40"
-  text="Course content"
-  icon="fa-brands fa-youtube"
-  flip=true
-  style="bare"
-%}
 
 {% endcapture %}
 
@@ -97,6 +89,14 @@ A project-based master course run in close collaboration with companies and gove
   link="https://studiegids.tudelft.nl/courses/study-guide/educations/37558"
   text="Study guide"
   icon="fa-solid fa-arrow-up-right-from-square"
+  flip=true
+  style="bare"
+%}
+{%
+  include button.html
+  link="https://youtu.be/07NJn7Hbc40"
+  text="Course content"
+  icon="fa-brands fa-youtube"
   flip=true
   style="bare"
 %}

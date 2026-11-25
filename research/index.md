@@ -33,7 +33,7 @@ seo_description: "Spatial and agentic intelligence, actionable world models and 
 
 {% include section.html %}
 
-## Selected publications
+## Selected publications and patents
 
 {% include search-box.html %}
 

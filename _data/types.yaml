@@ -100,6 +100,12 @@ google-scholar:
   tooltip: Google Scholar
   link: https://scholar.google.com/citations?user=$VALUE
 
+semantic-scholar:
+  icon: fa-solid fa-book-open-reader
+  text: Semantic Scholar
+  tooltip: Semantic Scholar author profile
+  link: https://www.semanticscholar.org/author/$VALUE
+
 github:
   icon: fa-brands fa-github
   text: GitHub
@@ -228,6 +234,11 @@ unpublished:
   icon: fa-regular fa-eye
   text: Unpublished
   tooltip: Unpublished
+
+patent:
+  icon: fa-solid fa-certificate
+  text: Patent
+  tooltip: Patent
 
 manubot:
   icon: manubot.svg
