@@ -1,0 +1,94 @@
+name: deploy-preview
+run-name: Deploy pull request preview
+
+on:
+  # run after on-pull-request completes
+  workflow_run:
+    workflows: [on-pull-request]
+    types:
+      - completed
+
+permissions:
+  actions: read
+  contents: write
+  pull-requests: write
+
+env:
+  PREVIEWS_FOLDER: preview
+
+jobs:
+  deploy-preview:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Pages branch
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+
+      - name: Clean up old previews
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { rm } = require("fs").promises;
+            const { PREVIEWS_FOLDER } = process.env;
+            const { owner, repo } = context.repo;
+            // get all closed PRs
+            const prs = (await github.rest.pulls.list({ owner, repo, state: "closed" })).data;
+            // remove their folders
+            for (const { number } of prs)
+              await rm(`${PREVIEWS_FOLDER}/pr-${number}`, { recursive: true, force: true });
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          branch: gh-pages
+          commit_message: "Clean up old previews"
+
+      # safely load limited artifact to write to repo
+      - name: Download preview artifact
+        uses: actions/download-artifact@v8
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+          name: preview
+          path: artifacts
+
+      - name: Load preview artifact metadata
+        run: |
+          NUMBER=$(cat artifacts/number.txt)
+          ACTION=$(cat artifacts/action.txt)
+          [[ "$NUMBER" =~ ^[0-9]+$ ]] || { echo "Invalid PR number"; exit 1; }
+          echo "PREVIEW_NUMBER=$NUMBER" >> "$GITHUB_ENV"
+          echo "PREVIEW_ACTION=$ACTION" >> "$GITHUB_ENV"
+
+      - name: Deploy preview to Pages branch
+        if: env.PREVIEW_ACTION != 'closed'
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        with:
+          folder: artifacts/preview
+          target-folder: ${{ env.PREVIEWS_FOLDER }}/pr-${{ env.PREVIEW_NUMBER }}
+          commit-message: "Deploy preview for PR ${{ env.PREVIEW_NUMBER }}"
+          force: false
+
+      - name: Get Pages URL
+        if: env.PREVIEW_ACTION != 'closed'
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Comment preview link on PR
+        if: env.PREVIEW_ACTION != 'closed'
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          number: ${{ env.PREVIEW_NUMBER }}
+          message: |
+            🚀 Preview: ${{ steps.pages.outputs.base_url }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ env.PREVIEW_NUMBER }}/
+            🚦 Status: https://github.com/${{ github.repository }}/actions
+
+      - name: Comment removed preview on PR
+        if: env.PREVIEW_ACTION == 'closed'
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          number: ${{ env.PREVIEW_NUMBER }}
+          message: "🗑️ Preview removed"

@@ -1,5 +1,5 @@
 # start with official ruby docker image as base
-FROM ruby:3.1.2
+FROM ruby:3.4-bookworm
 
 # set working directory within container
 WORKDIR /usr/src/app
@@ -16,10 +16,10 @@ RUN VERSION=$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs); \
 RUN apt update && apt install -y python3 python3-pip
 
 # install python packages
-RUN python3 -m pip install --no-cache-dir --upgrade --requirement requirements.txt
+RUN python3 -m pip install --no-cache-dir --upgrade --break-system-packages --requirement requirements.txt
 
 # install python package for listening for file changes
-RUN pip install "watchdog[watchmedo]==3.0.0"
+RUN pip install --break-system-packages "watchdog[watchmedo]==3.0.0"
 
 # ports used by jekyll
 EXPOSE 4000

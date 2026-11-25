@@ -1,58 +1,58 @@
 name: build-preview
-run-name: build pull request preview
+run-name: Build pull request preview
 
 on:
-  # run when called from another workflow
+  # called from on-pull-request
   workflow_call:
 
-  # run if user manually requests it
-  workflow_dispatch:
-
-# variables
-env:
-  PREVIEWS_FOLDER: preview
-
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   build-preview:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug dump
-        uses: crazy-max/ghaction-dump-context@v2
-
-      - name: Checkout branch contents
-        uses: actions/checkout@v4
+      - name: Checkout PR branch contents
+        if: github.event.action != 'closed'
+        # checks out potentially untrusted code
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
       - name: Install Ruby packages
         if: github.event.action != 'closed'
+        # runs potentially untrusted code
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.4"
           bundler-cache: true
 
-      - name: Get Pages url
+      - name: Get Pages URL
         if: github.event.action != 'closed'
         id: pages
-        uses: actions/configure-pages@v4
-
-      - name: SSH debug
-        if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
+        uses: actions/configure-pages@v6
 
       - name: Build preview version of site
         if: github.event.action != 'closed'
+        # runs potentially untrusted code
         run: |
-          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/preview/pr-${{ github.event.number }}"
 
-      - name: Commit preview to Pages branch
-        uses: rossjrw/pr-preview-action@v1.4.7
+      - name: Save preview artifact
+        run: |
+          mkdir -p artifacts
+          # save metadata about preview
+          printf "%s" "${{ github.event.number }}" > artifacts/number.txt
+          printf "%s" "${{ github.event.action }}" > artifacts/action.txt
+          # save built preview contents
+          if [ -d _site ]; then mv _site artifacts/preview; fi
+
+      # safely save limited artifact from potentially untrusted branch
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v7
         with:
-          source-dir: _site
-          umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
+          name: preview
+          path: artifacts
+          retention-days: 1

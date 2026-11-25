@@ -1,8 +1,8 @@
 name: first-time-setup
-run-name: first time setup of repo
+run-name: First time setup of repo
 
 on:
-  # run if user manually requests it
+  # run manually by user
   workflow_dispatch:
 
 permissions:
@@ -13,47 +13,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug dump
-        uses: crazy-max/ghaction-dump-context@v2
-
       - name: Create Pages branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
+        uses: peterjgrainger/action-create-branch@v4.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: "gh-pages"
 
       - name: Checkout Pages branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
-
-      - name: SSH debug
-        if: runner.debug == '1'
-        uses: mxschmitt/action-tmate@v3
 
       # clean slate, as if starting from orphan branch
       - name: Clear Pages branch
         run: rm -rf ./* .github .docker .gitignore
 
-      # prevent GitHub from running Jekyll a second time after build
+      # prevent GitHub from running built-in Jekyll a second time
       - name: Make .nojekyll file
         run: touch .nojekyll
 
       - name: Make placeholder homepage
         run: printf "Placeholder homepage" > index.html
 
-      - name: Commit changes to Pages branch
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: gh-pages
           commit_message: "Clear branch"
 
-      - name: Checkout main branch
-        uses: actions/checkout@v4
+      - name: Checkout main branch contents
+        uses: actions/checkout@v7
 
       - name: Remove files user doesn't need
         run: |
+          # remove files template itself needs, but user instance of template doesn't
           rm -rf \
             CHANGELOG.md \
             testbed.md \
@@ -64,6 +58,7 @@ jobs:
 
       - name: Rename files
         run: |
+          # add files user instance of template needs, but template itself doesn't
           mv -f .github/user_pull_request_template.md .github/pull_request_template.md
 
       - name: Set vars for personalization
@@ -73,7 +68,7 @@ jobs:
           printf "\nUSER=%s" "$user" >> "$GITHUB_ENV"
           printf "\nDESCRIPTION=%s" "$description" >> "$GITHUB_ENV"
 
-      - name: Personalize readme for user
+      - name: Personalize README for user
         run: |
           printf "
             ![on-push](../../actions/workflows/on-push.yaml/badge.svg)
@@ -82,13 +77,13 @@ jobs:
 
             # %s's Website
 
-            Visit **[website url](#)** 🚀
+            Visit **[website URL](#)** 🚀
 
             _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
-          " "${{ env.USER }}" > README.md 
+          " "${{ env.USER }}" > README.md
 
       - name: Personalize Jekyll config for user
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -105,7 +100,7 @@ jobs:
             writeFileSync(file, contents);
 
       - name: Personalize homepage for user
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -117,6 +112,6 @@ jobs:
             writeFileSync(file, contents);
 
       - name: Commit changed files
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Set up repo"
