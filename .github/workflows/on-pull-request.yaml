@@ -1,8 +1,9 @@
 name: on-pull-request
-run-name: on pull request activity
+run-name: On pull request activity
 
 on:
-  pull_request_target:
+  # run on any pull request activity
+  pull_request:
     types:
       - opened
       - reopened
@@ -10,13 +11,23 @@ on:
       - closed
 
 permissions:
+  actions: read
   contents: write
   pull-requests: write
 
 jobs:
+  get-sources:
+    if: github.event.action != 'closed'
+    uses: ./.github/workflows/get-sources.yaml
+
   update-citations:
+    if: github.event.action != 'closed'
+    needs: get-sources
     uses: ./.github/workflows/update-citations.yaml
+    secrets: inherit
 
   build-preview:
+    # still run when PR closed to trigger deploy-preview
+    if: ${{ !cancelled() && !failure() }}
     needs: update-citations
     uses: ./.github/workflows/build-preview.yaml

@@ -135,15 +135,15 @@ for index, source in enumerate(sources):
     # source id
     _id = get_safe(source, "id", "").strip()
 
-    # Manubot doesn't work without an id
+    # manubot doesn't work without an id
     if _id:
         log("Using Manubot to generate citation", indent=1)
 
         try:
-            # run Manubot and set citation
+            # run manubot and set citation
             citation = cite_with_manubot(_id)
 
-        # if Manubot cannot cite source
+        # if manubot cannot cite source
         except Exception as e:
             plugin = get_safe(source, "plugin", "")
             file = get_safe(source, "file", "")
@@ -151,7 +151,7 @@ for index, source in enumerate(sources):
             if plugin == "sources.py":
                 log(e, indent=3, level="ERROR")
                 errors.append(f"Manubot could not generate citation for source {_id}")
-            # otherwise, if from metasource (id retrieved from some third-party API), just warn
+            # otherwise, if from metasource (id retrieved from some third-party api), just warn
             else:
                 log(e, indent=3, level="WARNING")
                 warnings.append(

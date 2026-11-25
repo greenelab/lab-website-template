@@ -1,0 +1,30 @@
+name: get-sources
+run-name: Build pull request citations
+
+on:
+  # called from on-pull-request
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  get-sources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch contents
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+
+      # save limited artifact
+      - name: Upload sources artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: sources
+          path: |
+            _data/**/*.yaml
+            _data/**/*.yml
+          retention-days: 1
